@@ -12,7 +12,6 @@
 <meta content="https://www.texasspecialed.com/store" property="og:url"/>
 <meta content="https://www.texasspecialed.com/about" property="og:url"/>
 <meta content="website" property="og:type"/>
-<link href="/styles/global.css" rel="stylesheet"/>
 <script type="application/ld+json">
       {
          "@context": "https://schema.org",
@@ -194,7 +193,7 @@
 
 
 
-<main class="main-container"><main>
+<main class="main-container">
 <section class="about-hero">
 <div class="container">
 <h1>About TexasSpecialEd.com</h1>
@@ -334,7 +333,7 @@
 </div>
 </div>
 </section>
-</main></main>
+</main>
  <script>
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
 

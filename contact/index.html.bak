@@ -12,7 +12,6 @@
 <meta content="Reach out for questions, district requests, corrections, or partnership inquiries. We help Texas families navigate special education." property="og:description"/>
 <meta content="https://www.texasspecialed.com/contact" property="og:url"/>
 <meta content="website" property="og:type"/>
-<link href="/styles/global.css" rel="stylesheet"/>
 <script type="application/ld+json">
       {
          "@context": "https://schema.org",
@@ -212,7 +211,7 @@
 <p><i>Note: We are not a law firm and cannot provide legal advice.</i></p>
 <a class="contact-email" href="mailto:support@texasspecialedresources.com">support@texasspecialedresources.com</a>
 </div>
-</main></main>
+</main>
 
 
 

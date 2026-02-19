@@ -1,22 +1,20 @@
 """
-fix_html_issues.py
-==================
-Fixes two issues across all specified HTML files:
+fix_html_issues.py  (v2)
+========================
+Fixes ALL known issues across TexasSpecialEd HTML files:
 
-1. Removes the duplicate/conflicting stylesheet:
-      <link href="/styles/global.css" rel="stylesheet"/>
+  Fix 1 : Remove conflicting  <link href="/styles/global.css" ...>  stylesheet
+  Fix 2 : Resolve Git merge conflict markers (keeps HEAD version, drops other)
+  Fix 3 : Collapse double opening <main> tags (handles any class combinations)
+  Fix 4 : Collapse double closing </main></main> -> </main>
+  Fix 5 : Remove duplicate <script> blocks (identical content appearing twice)
 
-2. Fixes the broken double <main> tag:
-      <main class="main-container"><main>  →  <main class="main-container">
-   And the corresponding double closing tag:
-      </main></main>  →  </main>
+Usage
+-----
+  Place this script in the ROOT of your website folder, then run:
 
-Usage:
-    Place this script in the ROOT of your website folder and run:
-        python fix_html_issues.py
-
-    Dry-run (preview changes without writing):
-        python fix_html_issues.py --dry-run
+      python fix_html_issues.py           # apply fixes (writes .bak backups)
+      python fix_html_issues.py --dry-run # preview only, no files written
 """
 
 import os
@@ -54,114 +52,172 @@ TARGET_FILES = [
     r"download\ef-mastery-9k4x.html",
 ]
 
-# ── Fixes ────────────────────────────────────────────────────────────────────
+# ── Individual fix functions ─────────────────────────────────────────────────
 
-def fix_content(content: str, filepath: str) -> tuple[str, list[str]]:
-    """Apply all fixes to the file content. Returns (new_content, list_of_changes)."""
-    changes = []
-    original = content
-
-    # Fix 1: Remove the conflicting global.css stylesheet link
-    # Matches the line with optional whitespace/newline
-    pattern_css = re.compile(
+def fix_global_css(content):
+    """Remove the conflicting /styles/global.css <link> tag."""
+    pattern = re.compile(
         r'[ \t]*<link\s+href=["\']\/styles\/global\.css["\']\s+rel=["\']stylesheet["\']\s*\/?>[ \t]*\n?',
-        re.IGNORECASE
+        re.IGNORECASE,
     )
-    new_content, count = pattern_css.subn("", content)
-    if count:
-        changes.append(f"  [Fix 1] Removed {count} instance(s) of /styles/global.css <link>")
-        content = new_content
+    result, n = pattern.subn("", content)
+    return result, n
 
-    # Fix 2a: Fix double opening <main> tag
-    # Handles: <main class="main-container"><main> (with optional whitespace/attrs on inner tag)
-    pattern_main_open = re.compile(
-        r'(<main\s[^>]*>)\s*<main\s*>',
-        re.IGNORECASE
-    )
-    new_content, count = pattern_main_open.subn(r'\1', content)
-    if count:
-        changes.append(f"  [Fix 2a] Fixed {count} double opening <main> tag(s)")
-        content = new_content
 
-    # Fix 2b: Fix double closing </main></main> → </main>
-    # Only collapse if they appear directly adjacent (no content between)
-    pattern_main_close = re.compile(
-        r'<\/main>\s*<\/main>',
-        re.IGNORECASE
+def fix_git_conflicts(content):
+    """
+    Resolve Git merge conflict markers.
+    Keeps the HEAD section (between <<<<<<< and =======).
+    Discards the incoming section (between ======= and >>>>>>>).
+    """
+    pattern = re.compile(
+        r'<{7}[^\n]*\n'   # <<<<<<< HEAD  (any branch label)
+        r'(.*?)'           # HEAD content  (captured, keep this)
+        r'={7}\n'          # =======
+        r'.*?'             # incoming content (discarded)
+        r'>{7}[^\n]*\n?',  # >>>>>>> hash
+        re.DOTALL,
     )
-    new_content, count = pattern_main_close.subn('</main>', content)
-    if count:
-        changes.append(f"  [Fix 2b] Fixed {count} double closing </main> tag(s)")
-        content = new_content
+    result, n = pattern.subn(r'\1', content)
+    return result, n
+
+
+def fix_double_main_open(content):
+    """
+    Collapse two consecutive opening <main> tags into one.
+
+    Handles all variants:
+      <main class="main-container"><main>
+      <main class="main-container"><main class="store-page">
+      <main class="X">  <main class="Y">   (with whitespace between)
+
+    Strategy: when two <main ...> tags appear back-to-back (optional
+    whitespace allowed), keep only the INNER tag so the page-specific
+    class is preserved.
+    """
+    pattern = re.compile(
+        r'<main(?:\s[^>]*)?>[ \t]*\n?[ \t]*(<main(?:\s[^>]*)?>)',
+        re.IGNORECASE,
+    )
+    result, n = pattern.subn(r'\1', content)
+    return result, n
+
+
+def fix_double_main_close(content):
+    """Collapse </main>  </main> -> </main>."""
+    pattern = re.compile(r'<\/main>[ \t]*\n?[ \t]*<\/main>', re.IGNORECASE)
+    result, n = pattern.subn('</main>', content)
+    return result, n
+
+
+def fix_duplicate_scripts(content):
+    """
+    Remove exact duplicate <script>...</script> blocks.
+    The first occurrence is kept; subsequent identical copies are removed.
+    """
+    pattern = re.compile(r'(<script\b[^>]*>)(.*?)(</script>)', re.DOTALL | re.IGNORECASE)
+    seen = set()
+    removed = [0]   # use list so nested fn can mutate
+
+    def replace(m):
+        key = m.group(2).strip()   # normalised inner text as the identity key
+        if key in seen:
+            removed[0] += 1
+            return ""              # drop duplicate
+        seen.add(key)
+        return m.group(0)          # keep first occurrence
+
+    result = pattern.sub(replace, content)
+    return result, removed[0]
+
+
+# ── Orchestrator ─────────────────────────────────────────────────────────────
+
+def apply_all_fixes(content):
+    """Run every fix in order. Returns (fixed_content, list_of_change_descriptions)."""
+    changes = []
+
+    content, n = fix_global_css(content)
+    if n:
+        changes.append(f"  [Fix 1] Removed {n} /styles/global.css <link> tag(s)")
+
+    content, n = fix_git_conflicts(content)
+    if n:
+        changes.append(f"  [Fix 2] Resolved {n} Git merge conflict block(s) (kept HEAD version)")
+
+    content, n = fix_double_main_open(content)
+    if n:
+        changes.append(f"  [Fix 3] Collapsed {n} double opening <main> tag(s)")
+
+    content, n = fix_double_main_close(content)
+    if n:
+        changes.append(f"  [Fix 4] Collapsed {n} double closing </main> tag(s)")
+
+    content, n = fix_duplicate_scripts(content)
+    if n:
+        changes.append(f"  [Fix 5] Removed {n} duplicate <script> block(s)")
 
     return content, changes
 
 
-def process_file(filepath: Path, dry_run: bool = False) -> bool:
-    """Read, fix, and optionally write a single file. Returns True if changes were made."""
+def process_file(filepath, dry_run=False):
     if not filepath.exists():
-        print(f"  [SKIP] File not found: {filepath}")
+        print(f"  [SKIP] Not found: {filepath}")
         return False
 
     try:
-        original_content = filepath.read_text(encoding="utf-8")
+        original = filepath.read_text(encoding="utf-8")
     except Exception as e:
-        print(f"  [ERROR] Could not read {filepath}: {e}")
+        print(f"  [ERROR] Cannot read {filepath}: {e}")
         return False
 
-    fixed_content, changes = fix_content(original_content, str(filepath))
+    fixed, changes = apply_all_fixes(original)
 
     if not changes:
-        print(f"  [OK] No changes needed: {filepath}")
+        print(f"  [OK]   No changes needed: {filepath}")
         return False
 
     print(f"\nUpdating {filepath}...")
-    for change in changes:
-        print(change)
+    for c in changes:
+        print(c)
 
     if not dry_run:
-        # Back up original
-        backup_path = filepath.with_suffix(filepath.suffix + ".bak")
-        shutil.copy2(filepath, backup_path)
-
+        backup = filepath.with_suffix(filepath.suffix + ".bak")
+        shutil.copy2(filepath, backup)
         try:
-            filepath.write_text(fixed_content, encoding="utf-8")
-            print(f"  [SAVED] (backup at {backup_path.name})")
+            filepath.write_text(fixed, encoding="utf-8")
+            print(f"  [SAVED] Backup -> {backup.name}")
         except Exception as e:
-            print(f"  [ERROR] Could not write {filepath}: {e}")
+            print(f"  [ERROR] Cannot write {filepath}: {e}")
             return False
     else:
-        print(f"  [DRY RUN] No file written.")
+        print("  [DRY RUN] No file written.")
 
     return True
 
 
 def main():
     dry_run = "--dry-run" in sys.argv
-    root = Path(".")  # Run from the website root folder
+    root = Path(".")
 
     if dry_run:
         print("=" * 60)
-        print("DRY RUN MODE — no files will be modified")
+        print("DRY RUN MODE - no files will be modified")
         print("=" * 60)
 
-    total_files = len(TARGET_FILES)
-    changed = 0
-    skipped = 0
+    changed = skipped = 0
 
-    for rel_path in TARGET_FILES:
-        # Normalise path separators for the current OS
-        filepath = root / Path(rel_path.replace("\\", os.sep))
-        was_changed = process_file(filepath, dry_run=dry_run)
-        if was_changed:
+    for rel in TARGET_FILES:
+        path = root / Path(rel.replace("\\", os.sep))
+        if process_file(path, dry_run):
             changed += 1
         else:
             skipped += 1
 
     print("\n" + "=" * 60)
-    print(f"Done. {changed} file(s) updated, {skipped} file(s) skipped.")
+    print(f"Done.  {changed} file(s) updated,  {skipped} unchanged/skipped.")
     if not dry_run and changed:
-        print("Backup copies saved with .bak extension next to each changed file.")
+        print("Original files backed up as <filename>.bak")
     print("=" * 60)
 
 
