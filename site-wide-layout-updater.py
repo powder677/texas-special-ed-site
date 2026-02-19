@@ -1,6 +1,5 @@
 import os
 import re
-from bs4 import BeautifulSoup
 
 # Define directories to scan
 DISTRICTS_DIR = 'districts'
@@ -12,7 +11,8 @@ DISTRICT_TARGET_PAGES = [
     'evaluation-child-find.html',
     'grievance-dispute-resolution.html',
     'leadership-directory.html',
-    'ard-process-guide.html'
+    'ard-process-guide.html',
+    'index.html'
 ]
 
 # Folders outside of the district subfolders that contain HTML we want to fix
@@ -235,55 +235,56 @@ document.addEventListener('DOMContentLoaded', function() {
 """
 
 def update_file_layout(filepath):
-    """Safely updates styles, nav, and footer using string injection to prevent parser bugs."""
+    """Safely updates styles, nav, and footer using PURE REGEX string replacement."""
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
-            html_content = f.read()
-        
-        # Step 1: Use BeautifulSoup ONLY to gently pluck out the old layout blocks 
-        # (This prevents accidental deletion of <main> content if tags were unclosed)
-        soup = BeautifulSoup(html_content, 'html.parser')
-        
-        # Remove old header
-        for header in soup.find_all('header'):
-            header.decompose()
-            
-        # Also remove old standalone navs if they exist
-        for nav in soup.find_all('nav', class_='navbar'):
-            nav.decompose()
-            
-        # Remove old footer
-        for footer in soup.find_all('footer'):
-            footer.decompose()
-            
-        # Remove global <style> tags (only from inside <head> to protect body widgets)
-        if soup.head:
-            for style in soup.head.find_all('style'):
-                style.decompose()
+            content = f.read()
 
-        # Step 2: Convert the cleaned HTML back to a string 
-        clean_html = str(soup)
-
-        # Step 3: Use Regex to inject the new components perfectly 
-        # (This guarantees no serialization/escaping bugs from the parser)
+        # Step 1: AGGRESSIVE DELETION of all existing layouts 
+        # (This bypasses BeautifulSoup completely to prevent tag mangling)
+        content = re.sub(r'<style[^>]*>.*?</style>', '', content, flags=re.DOTALL | re.IGNORECASE)
+        content = re.sub(r'<header[^>]*>.*?</header>', '', content, flags=re.DOTALL | re.IGNORECASE)
+        content = re.sub(r'<nav[^>]*>.*?</nav>', '', content, flags=re.DOTALL | re.IGNORECASE)
+        content = re.sub(r'<footer[^>]*>.*?</footer>', '', content, flags=re.DOTALL | re.IGNORECASE)
         
-        # Inject CSS block right before closing </head>
-        css_block = f"\n<style>\n{NEW_CSS}\n</style>\n"
-        clean_html = re.sub(r'(</head>)', lambda m: css_block + m.group(1), clean_html, count=1, flags=re.IGNORECASE)
+        # Eliminate old broken scripts
+        content = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\'.*?</script>', '', content, flags=re.DOTALL | re.IGNORECASE)
 
-        # Inject Header block right after opening <body>
+        # Step 2: SAFE INJECTION (Using functions so regex doesn't mistake \1 or { as special chars)
+        
+        def insert_css(match):
+            return "\n<style>\n" + NEW_CSS + "\n</style>\n" + match.group(1)
+            
         def insert_header(match):
             return match.group(1) + "\n" + NEW_HEADER + "\n"
-        clean_html = re.sub(r'(<body[^>]*>)', insert_header, clean_html, count=1, flags=re.IGNORECASE)
-
-        # Inject Footer & JS block right before closing </body>
+            
         def insert_footer(match):
             return "\n" + NEW_FOOTER + "\n" + NAV_JS + "\n" + match.group(1)
-        clean_html = re.sub(r'(</body>)', insert_footer, clean_html, count=1, flags=re.IGNORECASE)
 
-        # Save the successfully updated file
+        # Inject CSS before </head>
+        if re.search(r'</head\s*>', content, re.IGNORECASE):
+            content = re.sub(r'(</head\s*>)', insert_css, content, count=1, flags=re.IGNORECASE)
+        else:
+            # Fallback
+            content = re.sub(r'(<body[^>]*>)', insert_css, content, count=1, flags=re.IGNORECASE)
+
+        # Inject Header after <body>
+        if re.search(r'<body[^>]*>', content, re.IGNORECASE):
+            content = re.sub(r'(<body[^>]*>)', insert_header, content, count=1, flags=re.IGNORECASE)
+        else:
+            # Fallback
+            content = NEW_HEADER + "\n" + content
+
+        # Inject Footer & JS before </body>
+        if re.search(r'</body\s*>', content, re.IGNORECASE):
+            content = re.sub(r'(</body\s*>)', insert_footer, content, count=1, flags=re.IGNORECASE)
+        else:
+            # Fallback
+            content = content + "\n" + NEW_FOOTER + "\n" + NAV_JS
+
+        # Save it securely
         with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(clean_html)
+            f.write(content)
             
         return True
     except Exception as e:
@@ -321,7 +322,7 @@ def process_all_pages():
                 if update_file_layout(filepath):
                     updated_count += 1
                 
-    print(f"\n✅ Operation Complete! Surgically updated the layout on {updated_count} total pages.")
+    print(f"\n✅ Operation Complete! Safely updated the layout on {updated_count} total pages.")
 
 if __name__ == "__main__":
     process_all_pages()

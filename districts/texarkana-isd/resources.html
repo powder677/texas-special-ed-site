@@ -8,6 +8,8 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 <link href="/style.css" rel="stylesheet"/>
 
+
+
 <style>
 
   /* Base Styles */
@@ -150,6 +152,10 @@
 </header>
 
 
+
+
+
+
 <main class="main-container">
 <main>
 <section class="authority-header">
@@ -277,28 +283,14 @@
 </div>
 </section>
 </main></main>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const toggle = document.querySelector('.mobile-menu-toggle');
-    const menu = document.querySelector('.nav-menu');
-    if(toggle && menu) {
-        toggle.addEventListener('click', function() {
-            menu.classList.toggle('active');
-            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-            toggle.setAttribute('aria-expanded', !isExpanded);
-        });
-    }
-    const dropdowns = document.querySelectorAll('.dropdown-toggle');
-    dropdowns.forEach(drop => {
-        drop.addEventListener('click', function(e) {
-            if (window.innerWidth <= 900) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('active');
-            }
-        });
-    });
-});
-</script>
+
+
+
+
+
+
+
+
 
 
 <footer class="site-footer">

@@ -14,6 +14,8 @@
 <meta content="summary" name="twitter:card"/>
 <link href="/style.css" rel="stylesheet"/>
 
+
+
 <style>
 
   /* Base Styles */
@@ -156,6 +158,10 @@
 </header>
 
 
+
+
+
+
 <main class="main-container">
 <main class="container">
 <div class="alert-box" style="background:#fee2e2;padding:15px 20px;border-left:4px solid #ef4444;border-radius:4px;">
@@ -207,6 +213,13 @@
 <h2>Due Process</h2>
 <p>The IDEA guarantees students with disabilities the right to "due process." This means you have the right to participate in decisions regarding your child's education and to challenge those decisions if you disagree. You have the right to access your child's educational records, request evaluations, and participate in IEP meetings. <strong>If you are facing a disciplinary action that could result in a Change of Placement, you have the right to request a due process hearing.</strong> This is a formal legal proceeding where you can present evidence and argue your case before an impartial hearing officer. Due process hearings can be complex, so seeking legal representation is strongly recommended.</p>
 <p><strong>This is a stressful situation. Advocate fiercely for your child. Document everything. Seek legal advice immediately.</strong></p>
+
+
+
+
+
+
+
 
 
 <footer class="site-footer">
@@ -302,28 +315,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="https://texasspecialed.com/districts/killeen-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Killeen ISD</a><a href="https://texasspecialed.com/districts/waco-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Waco ISD</a><a href="https://texasspecialed.com/districts/temple-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Temple ISD</a><a href="https://texasspecialed.com/districts/copperas-cove-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Copperas Cove ISD</a><a href="https://texasspecialed.com/districts/midway-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Midway ISD</a>
 </section>
 </main></main>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const toggle = document.querySelector('.mobile-menu-toggle');
-    const menu = document.querySelector('.nav-menu');
-    if(toggle && menu) {
-        toggle.addEventListener('click', function() {
-            menu.classList.toggle('active');
-            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-            toggle.setAttribute('aria-expanded', !isExpanded);
-        });
-    }
-    const dropdowns = document.querySelectorAll('.dropdown-toggle');
-    dropdowns.forEach(drop => {
-        drop.addEventListener('click', function(e) {
-            if (window.innerWidth <= 900) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('active');
-            }
-        });
-    });
-});
-</script>
+
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",

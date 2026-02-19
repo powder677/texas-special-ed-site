@@ -14,6 +14,8 @@
 <meta content="summary" name="twitter:card"/>
 <link href="/style.css" rel="stylesheet"/>
 
+
+
 <style>
 
   /* Base Styles */
@@ -156,6 +158,10 @@
 </header>
 
 
+
+
+
+
 <main class="main-container">
 <main class="container">
 <div class="alert-box" style="background:#fee2e2;padding:15px 20px;border-left:4px solid #ef4444;border-radius:4px;">
@@ -288,6 +294,13 @@
 <p><strong>REMEMBER:</strong> Document everything. Keep copies of all correspondence, disciplinary records, IEPs, and other relevant documents. Act quickly, know your rights, and seek legal counsel if needed. Protecting your child is paramount.</p>
 
 
+
+
+
+
+
+
+
 <footer class="site-footer">
   <div class="footer-container">
     <div class="footer-about">
@@ -381,28 +394,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="https://texasspecialed.com/districts/houston-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Houston ISD</a><a href="https://texasspecialed.com/districts/cypress-fairbanks-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Cypress-Fairbanks ISD</a><a href="https://texasspecialed.com/districts/katy-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Katy ISD</a><a href="https://texasspecialed.com/districts/conroe-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Conroe ISD</a><a href="https://texasspecialed.com/districts/aldine-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Aldine ISD</a>
 </section>
 </main></main>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const toggle = document.querySelector('.mobile-menu-toggle');
-    const menu = document.querySelector('.nav-menu');
-    if(toggle && menu) {
-        toggle.addEventListener('click', function() {
-            menu.classList.toggle('active');
-            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-            toggle.setAttribute('aria-expanded', !isExpanded);
-        });
-    }
-    const dropdowns = document.querySelectorAll('.dropdown-toggle');
-    dropdowns.forEach(drop => {
-        drop.addEventListener('click', function(e) {
-            if (window.innerWidth <= 900) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('active');
-            }
-        });
-    });
-});
-</script>
+
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",

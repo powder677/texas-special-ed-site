@@ -91,6 +91,8 @@
    </script>
 <link href="/style.css" rel="stylesheet"/>
 
+
+
 <style>
 
   /* Base Styles */
@@ -231,6 +233,10 @@
     </div>
   </nav>
 </header>
+
+
+
+
 
 
 <main class="main-container"><main class="store-page">
@@ -505,28 +511,7 @@
 </div>
 </section>
 </main></main>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const toggle = document.querySelector('.mobile-menu-toggle');
-    const menu = document.querySelector('.nav-menu');
-    if(toggle && menu) {
-        toggle.addEventListener('click', function() {
-            menu.classList.toggle('active');
-            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-            toggle.setAttribute('aria-expanded', !isExpanded);
-        });
-    }
-    const dropdowns = document.querySelectorAll('.dropdown-toggle');
-    dropdowns.forEach(drop => {
-        drop.addEventListener('click', function(e) {
-            if (window.innerWidth <= 900) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('active');
-            }
-        });
-    });
-});
-</script>
+
 <!-- FAQ Toggle -->
 <script>
    document.querySelectorAll('.faq-question').forEach(function(btn) {
@@ -570,6 +555,13 @@ document.addEventListener('DOMContentLoaded', function() {
       });
    });
    </script>
+
+
+
+
+
+
+
 
 
 <footer class="site-footer">

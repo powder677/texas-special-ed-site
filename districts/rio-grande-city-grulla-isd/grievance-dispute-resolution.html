@@ -14,6 +14,8 @@
 <meta content="summary" name="twitter:card"/>
 <link href="/style.css" rel="stylesheet"/>
 
+
+
 <style>
 
   /* Base Styles */
@@ -156,6 +158,10 @@
 </header>
 
 
+
+
+
+
 <main class="main-container">
 <main class="container">
 <div class="alert-box" style="background:#fee2e2;padding:15px 20px;border-left:4px solid #ef4444;border-radius:4px;">
@@ -213,6 +219,13 @@
 <p>IDEA provides for due process rights if you disagree with the school district's decisions regarding your child's special education. Due process hearings are formal legal proceedings that can be time-consuming and expensive. Seek legal counsel immediately if you believe your child's rights have been violated to the point where due process is necessary.</p>
 <p><b>ACTION REQUIRED:</b> Consult with an attorney specializing in special education law to understand your due process rights and options. This is a complex legal process and requires expert guidance.</p>
 <p><b>PROTECT YOUR CHILD! Knowledge is power. Don't hesitate to seek legal assistance.</b></p>
+
+
+
+
+
+
+
 
 
 <footer class="site-footer">
@@ -308,28 +321,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="https://texasspecialed.com/districts/idea-public-schools/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">IDEA Public Schools</a><a href="https://texasspecialed.com/districts/united-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">United ISD</a><a href="https://texasspecialed.com/districts/pharr-san-juan-alamo-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Pharr-San Juan-Alamo ISD</a><a href="https://texasspecialed.com/districts/edinburg-cisd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Edinburg CISD</a><a href="https://texasspecialed.com/districts/la-joya-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">La Joya ISD</a>
 </section>
 </main></main>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const toggle = document.querySelector('.mobile-menu-toggle');
-    const menu = document.querySelector('.nav-menu');
-    if(toggle && menu) {
-        toggle.addEventListener('click', function() {
-            menu.classList.toggle('active');
-            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-            toggle.setAttribute('aria-expanded', !isExpanded);
-        });
-    }
-    const dropdowns = document.querySelectorAll('.dropdown-toggle');
-    dropdowns.forEach(drop => {
-        drop.addEventListener('click', function(e) {
-            if (window.innerWidth <= 900) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('active');
-            }
-        });
-    });
-});
-</script>
+
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
