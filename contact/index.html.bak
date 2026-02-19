@@ -2,22 +2,24 @@
 
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+   <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Contact Us | TexasSpecialEd.com</title>
 <meta content="Contact TexasSpecialEd.com for questions, district requests, corrections, or partnership inquiries. We're here to help Texas special education families." name="description"/>
-<link href="https://texasspecialed.com/contact/" rel="canonical"/>
+<link href="https://www.texasspecialed.com/contact" rel="canonical"/>
 <meta content="Contact TexasSpecialEd.com" property="og:title"/>
 <meta content="Reach out for questions, district requests, corrections, or partnership inquiries. We help Texas families navigate special education." property="og:description"/>
-<meta content="https://texasspecialed.com/contact/" property="og:url"/>
+<meta content="https://www.texasspecialed.com/contact" property="og:url"/>
 <meta content="website" property="og:type"/>
+<link href="/styles/global.css" rel="stylesheet"/>
 <script type="application/ld+json">
       {
          "@context": "https://schema.org",
          "@type": "ContactPage",
          "name": "Contact TexasSpecialEd.com",
          "description": "Contact page for TexasSpecialEd.com. Submit questions, district requests, corrections, or partnership inquiries.",
-         "url": "https://texasspecialed.com/contact/",
+         "url": "https://www.texasspecialed.com/contact",
          "mainEntity": {
             "@type": "Organization",
             "name": "Texas Special Ed",
@@ -27,6 +29,14 @@
       }
    </script>
 <link href="/style.css" rel="stylesheet"/>
+=======
+    <meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Texas Special Education Resources</title>
+<meta content="Get in touch with Texas Special Education Resources. Have questions about the ARD process or need help finding district resources?" name="description"/>
+<link href="/style.css" rel="stylesheet"/>
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 828ccde0c91f3580c6d9c03c03705339b41b3c76
 
 
 
@@ -189,6 +199,20 @@
 
 
 
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+   
+=======
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 828ccde0c91f3580c6d9c03c03705339b41b3c76
+
+
+<main class="main-container"><main class="contact-container">
+<div class="contact-header">
+<h1>Contact Us</h1>
+<p class="contact-info">Have questions about navigating the Texas Special Education system? We're here to help.</p>
+<p><i>Note: We are not a law firm and cannot provide legal advice.</i></p>
+<a class="contact-email" href="mailto:support@texasspecialedresources.com">support@texasspecialedresources.com</a>
+</div>
+</main></main>
 
 
 
@@ -271,4 +295,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-</body></html>
+</body>
+</html>

@@ -4,25 +4,53 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact Us | TexasSpecialEd.com</title>
-<meta content="Contact TexasSpecialEd.com for questions, district requests, corrections, or partnership inquiries. We're here to help Texas special education families." name="description"/>
-<link href="https://texasspecialed.com/contact/" rel="canonical"/>
-<meta content="Contact TexasSpecialEd.com" property="og:title"/>
-<meta content="Reach out for questions, district requests, corrections, or partnership inquiries. We help Texas families navigate special education." property="og:description"/>
-<meta content="https://texasspecialed.com/contact/" property="og:url"/>
+<title>Free Special Education Resources for Texas Parents | TexasSpecialEd.com</title>
+<meta content="Free downloadable resources for Texas special education parents. ARD meeting checklists, evaluation request letter templates, IEP goal trackers, and parent rights guides." name="description"/>
+<link href="https://www.texasspecialed.com/resources/" rel="canonical"/>
+<meta content="Free Special Education Resources for Texas Parents" property="og:title"/>
+<meta content="Download free ARD checklists, evaluation request templates, IEP goal trackers, and parent rights guides for Texas special education." property="og:description"/>
+<meta content="https://www.texasspecialed.com/resources/" property="og:url"/>
 <meta content="website" property="og:type"/>
+<link href="/styles/global.css" rel="stylesheet"/>
 <script type="application/ld+json">
       {
          "@context": "https://schema.org",
-         "@type": "ContactPage",
-         "name": "Contact TexasSpecialEd.com",
-         "description": "Contact page for TexasSpecialEd.com. Submit questions, district requests, corrections, or partnership inquiries.",
-         "url": "https://texasspecialed.com/contact/",
-         "mainEntity": {
+         "@type": "CollectionPage",
+         "name": "Free Special Education Resources for Texas Parents",
+         "description": "Downloadable tools and templates to help Texas parents navigate ARD meetings, IEP goals, evaluations, and their rights under IDEA and Texas Education Code.",
+         "url": "https://www.texasspecialed.com/resources/",
+         "publisher": {
             "@type": "Organization",
             "name": "Texas Special Ed",
-            "url": "https://texasspecialed.com",
-            "email": "hello@texasspecialed.com"
+            "url": "https://texasspecialed.com"
+         },
+         "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [{
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "ARD Meeting Preparation Checklist",
+                  "url": "https://www.texasspecialed.com/resources/ard-checklist.pdf"
+               },
+               {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Evaluation Request Letter Template",
+                  "url": "https://www.texasspecialed.com/resources/evaluation-request-template.pdf
+               },
+               {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "IEP Goal Tracker",
+                  "url": "https://www.texasspecialed.com/resources/iep-goal-tracker.pdf"
+               },
+               {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Parent Rights Guide",
+                  "url": "https://www.texasspecialed.com/resources/parent-rights-guide.pdf"
+               }
+            ]
          }
       }
    </script>
@@ -188,8 +216,133 @@
 
 
 
+<main class="main-container"><main>
+<section class="resources-hero">
+<div class="container">
+<h1>Free Special Education Resources for Texas Parents</h1>
+<p class="lead">Downloadable checklists, letter templates, trackers, and guides to help you advocate effectively for your child at every stage of the special education process.</p>
+</div>
+</section>
+<section>
+<div class="container">
+<h2>Download Our Most Popular Tools</h2>
+<p>Every resource below is 100% free — no email required. These are the same tools Texas families use to stay organized before, during, and after ARD meetings.</p>
+<div class="resource-grid">
+<div class="resource-card-full">
+<div class="resource-icon">📋</div>
+<h3>ARD Meeting Preparation Checklist</h3>
+<p>A step-by-step printable checklist to help you prepare for your child's ARD committee meeting — from gathering documents to writing down your top concerns.</p>
+<ul class="resource-features">
+<li>Pre-meeting document checklist</li>
+<li>Questions to ask the ARD committee</li>
+<li>Post-meeting follow-up reminders</li>
+</ul>
+<a class="button-primary" href="/resources/ard-checklist.pdf">Download Free Checklist</a>
+</div>
+<div class="resource-card-full">
+<div class="resource-icon">📝</div>
+<h3>Evaluation Request Letter Template</h3>
+<p>A ready-to-use letter template for requesting a Full Individual Initial Evaluation (FIIE) from your Texas school district. Fill in your child's details and send.</p>
+<ul class="resource-features">
+<li>Pre-written formal language</li>
+<li>Triggers the 15-school-day consent timeline</li>
+<li>Works for any Texas district</li>
+</ul>
+<a class="button-primary" href="/resources/evaluation-request-template.pdf">Download Free Template</a>
+</div>
+<div class="resource-card-full">
+<div class="resource-icon">📊</div>
+<h3>IEP Goal Tracker</h3>
+<p>Track your child's progress toward their annual IEP goals. Use this spreadsheet to log data points, monitor benchmarks, and prepare for progress reviews.</p>
+<ul class="resource-features">
+<li>Printable or digital-friendly format</li>
+<li>Organized by goal area (academic, social, behavioral)</li>
+<li>Space for parent observations</li>
+</ul>
+<a class="button-primary" href="/resources/iep-goal-tracker.pdf">Download Free Tracker</a>
+</div>
+<div class="resource-card-full">
+<div class="resource-icon">📖</div>
+<h3>Texas Parent Rights Guide</h3>
+<p>A plain-language summary of your rights under IDEA, Section 504, and the Texas Education Code. Understand consent, timelines, dispute resolution, and more.</p>
+<ul class="resource-features">
+<li>Written in parent-friendly language</li>
+<li>Covers IDEA, Section 504, and TEC Chapter 29</li>
+<li>Includes key deadlines and timelines</li>
+</ul>
+<a class="button-primary" href="/resources/parent-rights-guide.pdf">Download Free Guide</a>
+</div>
+</div>
+</div>
+</section>
+<section class="aeo-faq-container">
+<div class="container">
+<h2>Common Questions About These Resources</h2>
+<div class="aeo-block">
+<h3>Are these resources really free?</h3>
+<p><strong>Yes — every resource on this page is completely free with no email signup required.</strong> We believe every Texas family deserves access to clear, practical tools for navigating the special education process. There are no hidden fees, upsells, or locked content.</p>
+</div>
+<div class="aeo-block">
+<h3>Can I use the evaluation request letter for any Texas school district?</h3>
+<p><strong>Yes.</strong> The evaluation request letter template uses formal language that triggers IDEA's legal timelines in any Texas district. Simply fill in your child's name, date of birth, campus, and specific concerns. The district then has 15 school days to respond with a consent form or a Prior Written Notice explaining their decision.</p>
+</div>
+<div class="aeo-block">
+<h3>What should I bring to an ARD meeting?</h3>
+<p><strong>Bring your child's most recent IEP, progress reports, any private evaluations, and a list of your top concerns.</strong> Our ARD Meeting Preparation Checklist walks you through everything step by step — including questions to ask, documents to request in advance, and what to do after the meeting ends.</p>
+</div>
+<div class="aeo-block">
+<h3>How do I track my child's IEP goals at home?</h3>
+<p><strong>Use our IEP Goal Tracker to log progress between report cards.</strong> Write down each annual goal, the baseline measurement, and the target. Then record observations from homework, teacher notes, and therapy sessions. Bringing this data to your next ARD meeting shows the committee exactly where your child stands — and whether the current services are working.</p>
+</div>
+<div class="aeo-block">
+<h3>What are my rights as a parent in Texas special education?</h3>
+<p><strong>Under IDEA and Texas Education Code Chapter 29, you have the right to request evaluations, participate in all ARD meetings, review your child's records, and disagree with the committee's decisions.</strong> Our Parent Rights Guide breaks down these protections in plain language, including timelines for evaluations (45 school days), ARD meetings (30 calendar days after evaluation), and how to file a complaint with TEA if your rights are violated.</p>
+</div>
+</div>
+</section>
+<section class="newsletter-section">
+<div class="container">
+<h2>Get New Resources Delivered to Your Inbox</h2>
+<p>We release new tools, templates, and guides throughout the year. Subscribe for updates — no spam, just practical resources for Texas parents.</p>
+<form action="/subscribe" class="newsletter-form" method="post">
+<input aria-label="Email address" name="email" placeholder="Your email address" required="" type="email"/>
+<button class="button-primary" type="submit">Subscribe</button>
+</form>
+</div>
+</section>
+</main></main>
+ <script>
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
 
-
+document.querySelectorAll('.subscribe-form, .footer-subscribe').forEach(function(form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var button = form.querySelector('button[type="submit"]');
+    var email = form.querySelector('input[type="email"]').value;
+    var districtInput = form.querySelector('input[name="district"]');
+    var district = districtInput ? districtInput.value : '';
+    
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, district: district })
+    })
+    .then(function() {
+      form.innerHTML = '<p style="color: green; font-weight: 600;">✓ You\'re subscribed!</p>';
+    })
+    .catch(function() {
+      button.disabled = false;
+      button.textContent = 'Subscribe';
+      alert('Something went wrong. Please try again.');
+    });
+  });
+});
+</script>
 
 
 
@@ -271,4 +424,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-</body></html>
+</body>
+</html>

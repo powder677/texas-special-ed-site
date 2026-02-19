@@ -11,6 +11,7 @@
 <meta content="Reach out for questions, district requests, corrections, or partnership inquiries. We help Texas families navigate special education." property="og:description"/>
 <meta content="https://texasspecialed.com/contact/" property="og:url"/>
 <meta content="website" property="og:type"/>
+<link href="/styles/global.css" rel="stylesheet"/>
 <script type="application/ld+json">
       {
          "@context": "https://schema.org",

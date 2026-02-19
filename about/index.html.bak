@@ -4,25 +4,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact Us | TexasSpecialEd.com</title>
-<meta content="Contact TexasSpecialEd.com for questions, district requests, corrections, or partnership inquiries. We're here to help Texas special education families." name="description"/>
-<link href="https://texasspecialed.com/contact/" rel="canonical"/>
-<meta content="Contact TexasSpecialEd.com" property="og:title"/>
-<meta content="Reach out for questions, district requests, corrections, or partnership inquiries. We help Texas families navigate special education." property="og:description"/>
-<meta content="https://texasspecialed.com/contact/" property="og:url"/>
+<title>About TexasSpecialEd.com | Building Clarity in Texas Special Education</title>
+<meta content="TexasSpecialEd.com is a district-specific resource for Texas families. We help parents understand evaluations, ARD meetings, and IEPs using clear language grounded in local policy." name="description"/>
+<link href="https://www.texasspecialed.com/about" rel="canonical"/>
+<meta content="About TexasSpecialEd.com" property="og:title"/>
+<meta content="Building clarity in Texas special education — one district at a time. Free, district-specific resources for families." property="og:description"/>
+<meta content="https://www.texasspecialed.com/store" property="og:url"/>
+<meta content="https://www.texasspecialed.com/about" property="og:url"/>
 <meta content="website" property="og:type"/>
+<link href="/styles/global.css" rel="stylesheet"/>
 <script type="application/ld+json">
       {
          "@context": "https://schema.org",
-         "@type": "ContactPage",
-         "name": "Contact TexasSpecialEd.com",
-         "description": "Contact page for TexasSpecialEd.com. Submit questions, district requests, corrections, or partnership inquiries.",
-         "url": "https://texasspecialed.com/contact/",
+         "@type": "AboutPage",
+         "name": "About TexasSpecialEd.com",
+         "description": "TexasSpecialEd.com is a district-specific resource for Texas families navigating special education.",
+         "url": "https://www.texasspecialed.com/about",
          "mainEntity": {
             "@type": "Organization",
             "name": "Texas Special Ed",
             "url": "https://texasspecialed.com",
-            "email": "hello@texasspecialed.com"
+            "description": "Building clarity in Texas special education — one district at a time.",
+            "areaServed": {
+               "@type": "State",
+               "name": "Texas"
+            }
          }
       }
    </script>
@@ -188,8 +194,211 @@
 
 
 
+<main class="main-container"><main>
+<section class="about-hero">
+<div class="container">
+<h1>About TexasSpecialEd.com</h1>
+<p class="lead">Building clarity in Texas special education — one district at a time</p>
+</div>
+</section>
+<section class="intro-section">
+<div class="container">
+<div class="intro-text">
+<p>TexasSpecialEd.com is a district‑specific resource for Texas families navigating special education. We help parents understand evaluations, ARD meetings, IEPs, and dispute processes using clear language grounded in local policy and publicly available information.</p>
+<br/>
+<p>Our work focuses on what families actually need in the moment: who to contact, what timelines apply, and how processes differ from one school district to the next.</p>
+</div>
+</div>
+</section>
+<section class="mission-section">
+<div class="container">
+<h2>Our Mission</h2>
+<p>No parent should have to navigate special education alone or piece together critical information from dozens of policy manuals, board documents, and outdated webpages.</p>
+<p>Texas has more than 1,200 school districts, each with its own leadership structures, timelines, and local procedures. While federal and state laws set the framework, what families experience day‑to‑day is shaped by district‑level implementation. That gap is where TexasSpecialEd.com exists.</p>
+<p>We provide district‑specific guidance that helps families:</p>
+<ul style="max-width: 750px; margin-bottom: 1.5rem; color: #444; line-height: 1.7;">
+<li>Request evaluations and understand legal timelines</li>
+<li>Prepare for ARD meetings with confidence</li>
+<li>Track services, goals, and progress</li>
+<li>Escalate concerns using appropriate district channels</li>
+</ul>
+<p>Much of our educational content is publicly available because access to basic information should not depend on income. As the site grows, we also develop optional tools, alerts, and advanced resources that help families stay organized, meet deadlines, and advocate more effectively — while supporting the continued expansion and upkeep of this work.</p>
+</div>
+</section>
+<section class="what-we-cover">
+<div class="container">
+<h2>What We Cover</h2>
+<p>For each district in our directory, we research and publish guidance across four core areas of the special education journey:</p>
+<div class="coverage-cards">
+<div class="coverage-card">
+<h3>Evaluations &amp; Child Find</h3>
+<p>How to request a Full Individual Initial Evaluation (FIIE), understand district‑specific timelines, and know your options if a request is delayed or denied.</p>
+</div>
+<div class="coverage-card">
+<h3>ARD Meeting Process</h3>
+<p>What happens before, during, and after an ARD meeting, how decisions are made, and how parents can meaningfully participate — even when there is disagreement.</p>
+</div>
+<div class="coverage-card">
+<h3>Dispute Resolution</h3>
+<p>Local grievance procedures, TEA complaints, mediation, and due process pathways, with district‑specific contacts and timelines.</p>
+</div>
+<div class="coverage-card">
+<h3>Leadership &amp; Decision‑Makers</h3>
+<p>Up‑to‑date information on the administrators and departments responsible for special education decisions within each district.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="values-section">
+<div class="container">
+<h2>What Guides Our Work</h2>
+<div class="values-grid">
+<div class="value-item">
+<h3>Accuracy First</h3>
+<p>District pages are researched against official policies, board documents, and publicly available leadership directories. When information changes, we update it.</p>
+</div>
+<div class="value-item">
+<h3>Plain Language</h3>
+<p>Special education is full of acronyms and legal terminology. We translate complex processes into clear, parent‑friendly explanations without oversimplifying the substance.</p>
+</div>
+<div class="value-item">
+<h3>Accessible by Design</h3>
+<p>Core educational information is available without barriers. Families who want deeper support can choose optional tools designed to save time, reduce stress, and improve follow‑through.</p>
+</div>
+<div class="value-item">
+<h3>District‑Specific Focus</h3>
+<p>Generic advice often fails families. Our guides are tailored to the specific policies, contacts, and procedures of each district we cover.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="districts-covered">
+<div class="container">
+<h2>Districts We Cover</h2>
+<p style="max-width: 800px; margin-bottom: 2rem;">We are actively expanding coverage across Texas based on parent demand and available data. Our directory currently includes major districts across multiple regions, with new districts added on an ongoing basis.</p>
+<div class="district-list-grid">
+<a href="/districts/aldine-isd">Aldine ISD</a>
+<a href="/districts/carroll-isd">Carroll ISD</a>
+<a href="/districts/conroe-isd">Conroe ISD</a>
+<a href="/districts/cypress-fairbanks-isd">Cypress-Fairbanks ISD</a>
+<a href="/districts/eanes-isd">Eanes ISD</a>
+<a href="/districts/fort-bend-isd">Fort Bend ISD</a>
+<a href="/districts/frisco-isd">Frisco ISD</a>
+<a href="/districts/humble-isd">Humble ISD</a>
+<a href="/districts/katy-isd">Katy ISD</a>
+<a href="/districts/klein-isd">Klein ISD</a>
+<a href="/districts/lamar-isd">Lamar CISD</a>
+<a href="/districts/lewisville-isd">Lewisville ISD</a>
+<a href="/districts/north-east-isd">North East ISD</a>
+<a href="/districts/northside-isd">Northside ISD</a>
+<a href="/districts/pasadena-isd">Pasadena ISD</a>
+<a href="/districts/plano-isd">Plano ISD</a>
+<a href="/districts/round-rock-isd">Round Rock ISD</a>
+<a href="/districts/socorro-isd">Socorro ISD</a>
+</div>
+<p style="margin-top: 2rem; color: #555;">If your district is not yet listed, you can request coverage through our <a href="/contact">contact page</a>. District requests help guide our expansion priorities.</p>
+</div>
+</section>
+<section class="aeo-faq-container">
+<div class="container">
+<h2>Frequently Asked Questions</h2>
+<div class="aeo-block">
+<h3>Who is TexasSpecialEd.com for?</h3>
+<p>TexasSpecialEd.com is for parents, caregivers, and guardians of students with disabilities — or suspected disabilities — who want clear, district‑specific information about the special education process in Texas.</p>
+</div>
+<div class="aeo-block">
+<h3>Is this website a substitute for legal advice?</h3>
+<p>No. TexasSpecialEd.com provides educational information. We are not attorneys, and nothing on this site should be considered legal advice. For legal guidance, families should consult a licensed special education attorney.</p>
+</div>
+<div class="aeo-block">
+<h3>How is TexasSpecialEd.com funded?</h3>
+<p>TexasSpecialEd.com is supported through optional paid tools, premium features, and partnerships that help fund research, updates, and expansion. This model allows us to keep core educational content publicly available while continuing to build more advanced resources for families who want them.</p>
+</div>
+<div class="aeo-block">
+<h3>How often is information updated?</h3>
+<p>District pages are reviewed regularly, particularly leadership directories and procedural details. If you spot outdated or incorrect information, we encourage you to contact us so it can be verified and corrected.</p>
+</div>
+<div class="aeo-block">
+<h3>Can I request a district to be added?</h3>
+<p>Yes. New district coverage is prioritized based on parent requests and available data. You can submit a request through our <a href="/contact">contact page</a>.</p>
+</div>
+</div>
+</section>
+<section class="commitment-section">
+<div class="container">
+<h2>Our Commitment</h2>
+<p>TexasSpecialEd.com is an independent educational resource. We are not affiliated with, endorsed by, or acting on behalf of any school district or government agency.</p>
+<p>Our commitment is simple: provide clear, district‑specific information that helps Texas families make informed decisions — and build sustainable tools that allow this work to continue and expand.</p>
+<div class="button-group">
+<a class="button-primary-large" href="/districts/" style="background: #fff; color: #002868; padding: 1rem 2rem; border-radius: 4px; text-decoration: none; font-weight: bold;">Browse Districts</a>
+</div>
+</div>
+</section>
+</main></main>
+ <script>
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
 
+document.querySelectorAll('.subscribe-form, .footer-subscribe').forEach(function(form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var button = form.querySelector('button[type="submit"]');
+    var email = form.querySelector('input[type="email"]').value;
+    var districtInput = form.querySelector('input[name="district"]');
+    var district = districtInput ? districtInput.value : '';
+    
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, district: district })
+    })
+    .then(function() {
+      form.innerHTML = '<p style="color: green; font-weight: 600;">✓ You\'re subscribed!</p>';
+    })
+    .catch(function() {
+      button.disabled = false;
+      button.textContent = 'Subscribe';
+      alert('Something went wrong. Please try again.');
+    });
+  });
+});
+</script>
+<script>
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
 
+document.querySelectorAll('.subscribe-form, .footer-subscribe').forEach(function(form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var button = form.querySelector('button[type="submit"]');
+    var email = form.querySelector('input[type="email"]').value;
+    var districtInput = form.querySelector('input[name="district"]');
+    var district = districtInput ? districtInput.value : '';
+    
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, district: district })
+    })
+    .then(function() {
+      form.innerHTML = '<p style="color: green; font-weight: 600;">✓ You\'re subscribed!</p>';
+    })
+    .catch(function() {
+      button.disabled = false;
+      button.textContent = 'Subscribe';
+      alert('Something went wrong. Please try again.');
+    });
+  });
+});
+</script>
 
 
 
@@ -271,4 +480,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-</body></html>
+</body>
+</html>

@@ -4,28 +4,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact Us | TexasSpecialEd.com</title>
-<meta content="Contact TexasSpecialEd.com for questions, district requests, corrections, or partnership inquiries. We're here to help Texas special education families." name="description"/>
-<link href="https://texasspecialed.com/contact/" rel="canonical"/>
-<meta content="Contact TexasSpecialEd.com" property="og:title"/>
-<meta content="Reach out for questions, district requests, corrections, or partnership inquiries. We help Texas families navigate special education." property="og:description"/>
-<meta content="https://texasspecialed.com/contact/" property="og:url"/>
-<meta content="website" property="og:type"/>
-<script type="application/ld+json">
-      {
-         "@context": "https://schema.org",
-         "@type": "ContactPage",
-         "name": "Contact TexasSpecialEd.com",
-         "description": "Contact page for TexasSpecialEd.com. Submit questions, district requests, corrections, or partnership inquiries.",
-         "url": "https://texasspecialed.com/contact/",
-         "mainEntity": {
-            "@type": "Organization",
-            "name": "Texas Special Ed",
-            "url": "https://texasspecialed.com",
-            "email": "hello@texasspecialed.com"
-         }
-      }
-   </script>
+<title>Download: Texas Accommodations Encyclopedia | TexasSpecialEd.com</title>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,700;8..60,800&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="/styles/global.css" rel="stylesheet"/>
 <link href="/style.css" rel="stylesheet"/>
 
 
@@ -188,7 +172,39 @@
 
 
 
-
+<main class="main-container"><div class="dl-wrapper">
+<div class="dl-card">
+<div class="dl-accent"></div>
+<div class="dl-body">
+<div class="dl-check">✓</div>
+<h1>Thank You for Your Purchase</h1>
+<p class="tagline">Your toolkit is ready to download.</p>
+<a class="dl-btn" download="" href="/files/texas-accommodations-encyclopedia.pdf">⬇ Download Texas Accommodations Encyclopedia</a>
+<div class="dl-meta">
+<div class="dl-meta-item">
+<span class="label">Format</span>
+<span class="value">PDF</span>
+</div>
+<div class="dl-meta-item">
+<span class="label">License</span>
+<span class="value">Personal Use</span>
+</div>
+</div>
+</div>
+<div class="dl-help">
+<h3>Quick Start</h3>
+<ul>
+<li>Click the download button above to save to your device</li>
+<li>ZIP files: extract the folder first, then open the PDFs inside</li>
+<li>Print the pages you need or use fillable versions on a tablet</li>
+<li>Bookmark this page in case you need to re-download later</li>
+</ul>
+</div>
+</div>
+<div class="dl-footer">
+<a href="/">← Back to TexasSpecialEd.com</a>
+</div>
+</div></main>
 
 
 
@@ -271,4 +287,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-</body></html>
+</body>
+</html>

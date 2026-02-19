@@ -4,30 +4,74 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>What to Do When Your Texas School District Denies an Evaluation Request | TexasSpecialEd.com</title>
-<meta content="If your Texas school district denied your child's evaluation request, here are your legal options — from Prior Written Notice to TEA complaints. Step-by-step guide for parents." name="description"/>
-<link href="https://www.texasspecialed.com/blog/what-to-do-when-school-denies-evaluation/" rel="canonical"/>
-<meta content="What to Do When Your Texas School District Denies an Evaluation Request" property="og:title"/>
-<meta content="If your Texas school district denied your child's evaluation request, here are your legal options — from Prior Written Notice to TEA complaints. Step-by-step guide for parents." property="og:description"/>
-<meta content="https://www.texasspecialed.com/blog/what-to-do-when-school-denies-evaluation/" property="og:url"/>
-<meta content="article" property="og:type"/>
+<title>Texas Special Education Blog | ARD Tips, IEP Advice &amp; Parent Guides</title>
+<meta content="Expert articles on Texas special education. ARD meeting tips, IEP goal writing, evaluation timelines, parent rights, and district-specific updates for Texas families." name="description"/>
+<link href="https://www.texasspecialed.com/blog" rel="canonical"/>
+<meta content="Texas Special Education Blog" property="og:title"/>
+<meta content="Practical articles for Texas parents navigating special education. ARD tips, IEP advice, evaluation guides, and parent rights." property="og:description"/>
+<meta content="https://www.texasspecialed.com/blog" property="og:url"/>
+<meta content="website" property="og:type"/>
+<link href="/styles/global.css" rel="stylesheet"/>
 <script type="application/ld+json">
       {
          "@context": "https://schema.org",
-         "@type": "Article",
-         "headline": "What to Do When Your Texas School District Denies an Evaluation Request",
-         "description": "If your Texas school district denied your child's evaluation request, here are your legal options — from Prior Written Notice to TEA complaints. Step-by-step guide for parents.",
-         "url": "https://www.texasspecialed.com/blog/what-to-do-when-school-denies-evaluation/",
-         "datePublished": "2026-01-15",
+         "@type": "Blog",
+         "name": "Texas Special Education Blog",
+         "description": "Practical guides, tips, and updates for Texas parents navigating ARD meetings, IEPs, evaluations, and special education rights.",
+         "url": "https://www.texasspecialed.com/blog",
          "publisher": {
             "@type": "Organization",
             "name": "Texas Special Ed",
-            "url": "https://texasspecialed.com"
+            "url": "https://texasspecialed.com",
+            "logo": {
+               "@type": "ImageObject",
+               "url": "https://www.texasspecialed.com/images/texasspecialed-logo.png"
+            }
          },
-         "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://www.texasspecialed.com/blog/what-to-do-when-school-denies-evaluation/"
-         }
+         "blogPost": [
+            {
+               "@type": "BlogPosting",
+               "headline": "What to Do When Your Texas School District Denies an Evaluation Request",
+               "url": "https://www.texasspecialed.com/blog/what-to-do-when-school-denies-evaluation/",
+               "datePublished": "2026-01-15"
+            },
+            {
+               "@type": "BlogPosting",
+               "headline": "10 Questions Every Texas Parent Should Ask at Their ARD Meeting",
+               "url": "https://www.texasspecialed.com/blog/10-questions-to-ask-at-ard-meeting/",
+               "datePublished": "2026-01-08"
+            },
+            {
+               "@type": "BlogPosting",
+               "headline": "Understanding the FIIE: What Texas Parents Need to Know About Evaluations",
+               "url": "https://www.texasspecialed.com/blog/understanding-fiie-texas/",
+               "datePublished": "2026-01-02"
+            },
+            {
+               "@type": "BlogPosting",
+               "headline": "How to Write Measurable IEP Goals (With Texas TEKS Alignment Examples)",
+               "url": "https://www.texasspecialed.com/blog/how-to-write-measurable-iep-goals/",
+               "datePublished": "2025-12-18"
+            },
+            {
+               "@type": "BlogPosting",
+               "headline": "Your Rights as a Texas Special Education Parent: A Complete Guide",
+               "url": "https://www.texasspecialed.com/blog/texas-parent-rights-special-education/",
+               "datePublished": "2025-12-10"
+            },
+            {
+               "@type": "BlogPosting",
+               "headline": "How to Disagree at an ARD Meeting Without Burning Bridges",
+               "url": "https://www.texasspecialed.com/blog/how-to-disagree-at-ard-meeting/",
+               "datePublished": "2025-11-20"
+            },
+            {
+               "@type": "BlogPosting",
+               "headline": "When and How to Request an Independent Educational Evaluation (IEE) in Texas",
+               "url": "https://www.texasspecialed.com/blog/independent-educational-evaluation-texas/",
+               "datePublished": "2025-11-05"
+            }
+         ]
       }
    </script>
 <link href="/style.css" rel="stylesheet"/>
@@ -192,120 +236,128 @@
 
 
 
-<main class="main-container">
-<section class="article-hero">
+<main class="main-container"><main>
+<section class="blog-hero">
 <div class="container">
-<div class="article-meta">
-<span class="category-badge">Evaluations</span>
-<span>January 15, 2026</span>
-</div>
-<h1>What to Do When Your Texas School District Denies an Evaluation Request</h1>
+<h1>Texas Special Education Blog</h1>
+<p class="lead">Practical guides, actionable tips, and the latest updates to help Texas families navigate ARD meetings, IEPs, evaluations, and parent rights.</p>
 </div>
 </section>
-<article class="article-body">
-<p class="lead" style="font-size:1.15rem;color:#555;margin-bottom:2rem;">You submitted a written request for a special education evaluation. The school said no. Now what? Texas law gives you specific options — here's exactly what to do, step by step.</p>
-<div class="callout-box">
-<p><strong>Key takeaway:</strong> A school district cannot simply say "no" to an evaluation request without providing a formal Prior Written Notice (PWN) explaining their reasoning. If they deny your request without documentation, they may already be in violation of IDEA.</p>
+<section>
+<div class="container">
+<div aria-label="Filter blog posts by category" class="blog-categories" role="tablist">
+<button aria-selected="true" class="category-tag active" data-filter="all" role="tab">All Posts</button>
+<button aria-selected="false" class="category-tag" data-filter="ard-meetings" role="tab">ARD Meetings</button>
+<button aria-selected="false" class="category-tag" data-filter="evaluations" role="tab">Evaluations</button>
+<button aria-selected="false" class="category-tag" data-filter="iep-goals" role="tab">IEP Goals</button>
+<button aria-selected="false" class="category-tag" data-filter="parent-rights" role="tab">Parent Rights</button>
+<button aria-selected="false" class="category-tag" data-filter="district-updates" role="tab">District Updates</button>
 </div>
-<h2>Step 1: Request Prior Written Notice</h2>
-<p>Under IDEA (34 CFR § 300.503), whenever a school district refuses to initiate an evaluation, they are required to provide you with a <strong>Prior Written Notice (PWN)</strong>. This is a formal document that must explain what the school is refusing to do, why they are refusing, what data they used to make the decision, and what other options they considered.</p>
-<p>If the school gave you a verbal "no" — in a meeting, a phone call, or a hallway conversation — that is not sufficient. You have the right to a written explanation.</p>
-<p><strong>What to do:</strong> Send an email or letter to the principal saying: <em>"I am requesting Prior Written Notice regarding the district's decision to deny my evaluation request for [Child's Name], submitted on [Date]. Please provide this notice within 5 school days."</em></p>
-<h2>Step 2: Review Their Reasoning</h2>
-<p>Once you receive the PWN, read it carefully. Common reasons districts deny evaluations include:</p>
-<ul>
-<li>The student is "making progress" in the general curriculum</li>
-<li>The student is currently receiving RTI (Response to Intervention) and the school wants to wait</li>
-<li>The student's grades are satisfactory</li>
-<li>The school attributes challenges to attendance, behavior, or a language barrier</li>
-</ul>
-<p>Here's the critical point: <strong>none of these reasons, on their own, are legally sufficient to deny an evaluation</strong> if there is a reasonable suspicion of a disability. A child can have passing grades and still qualify for special education. RTI cannot be used to delay or deny an evaluation request from a parent.</p>
-<div class="callout-warning callout-box">
-<p><strong>Important:</strong> Texas Education Code § 29.004 and federal IDEA regulations are clear — RTI (Response to Intervention) cannot be used to delay or deny a parent's written request for a special education evaluation. If a school tells you they need to "finish the RTI process first," this is not a valid reason to refuse your request.</p>
+<div class="no-results" style="display:none; text-align:center; padding:3rem 1rem; color:#666;">
+<p style="font-size:1.1rem;">No posts in this category yet. Check back soon — new articles are published monthly.</p>
+<button class="category-tag" data-filter="all" style="margin-top:1rem;">View All Posts</button>
 </div>
-<h2>Step 3: Put Your Disagreement in Writing</h2>
-<p>If you believe the district's refusal is wrong, send a written response explaining why you disagree. Reference specific concerns and any data you have. For example:</p>
-<ul>
-<li>Specific academic struggles (failing assignments, below-grade-level reading scores)</li>
-<li>Teacher or tutor observations about attention, behavior, or comprehension</li>
-<li>Private evaluations or diagnoses from medical professionals</li>
-<li>Reports from therapists (speech, occupational, behavioral)</li>
-<li>Your own observations of your child at home</li>
-</ul>
-<h2>Step 4: Know Your Escalation Options</h2>
-<p>If the district continues to deny your request after you've submitted your written disagreement, you have several paths forward:</p>
-<h3>Option A: File a TEA Complaint</h3>
-<p>You can file a formal complaint with the <strong>Texas Education Agency (TEA)</strong>. TEA will investigate whether the district violated IDEA or state law by denying your request. Complaints must be filed within <strong>one year</strong> of the alleged violation. This process is free and does not require an attorney.</p>
-<h3>Option B: Request Mediation</h3>
-<p>TEA offers free mediation services where a neutral third party helps you and the district reach an agreement. Mediation is voluntary — both sides must agree to participate — but it is often faster and less adversarial than a formal hearing.</p>
-<h3>Option C: Request a Due Process Hearing</h3>
-<p>This is the formal legal route. A due process hearing is conducted by an impartial hearing officer who reviews evidence and makes a binding decision. You have the right to representation by an attorney. This must be filed within <strong>two years</strong> of the violation.</p>
-<h3>Option D: Request a Meeting with the Special Education Director</h3>
-<p>Before going to TEA, consider requesting a meeting with the district's Special Education Director or Executive Director. Sometimes the campus-level decision doesn't reflect the district's position, and a higher-level administrator may approve the evaluation.</p>
-<table class="timeline-table">
-<thead>
-<tr>
-<th>Option</th>
-<th>Cost</th>
-<th>Timeline</th>
-<th>Attorney Needed?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>TEA Complaint</strong></td>
-<td>Free</td>
-<td>Filed within 1 year</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>Mediation</strong></td>
-<td>Free (state-funded)</td>
-<td>Flexible</td>
-<td>No</td>
-</tr>
-<tr>
-<td><strong>Due Process Hearing</strong></td>
-<td>May need attorney</td>
-<td>Filed within 2 years</td>
-<td>Recommended</td>
-</tr>
-<tr>
-<td><strong>District-Level Meeting</strong></td>
-<td>Free</td>
-<td>Immediate</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-<h2>Step 5: Document Everything</h2>
-<p>Throughout this entire process, documentation is your most powerful tool. Keep copies of every email, every letter, every PWN, and every meeting note. Create a communication log with dates, names, and summaries of every interaction.</p>
-<p>If you eventually file a TEA complaint or due process hearing, your documentation will be the evidence that supports your case.</p>
-<div class="callout-success callout-box">
-<p><strong>Remember:</strong> You are your child's strongest advocate. Requesting an evaluation is your legal right under IDEA and Texas law. A denial is not the end of the road — it's the beginning of a paper trail that protects your child.</p>
+<!-- ═══ FEATURED POST ═══ -->
+<div class="featured-post" data-category="evaluations">
+<span class="featured-label">Featured</span>
+<h3><a href="/blog/what-to-do-when-school-denies-evaluation">What to Do When Your Texas School District Denies an Evaluation Request</a></h3>
+<p>If your district denied your child's evaluation request, don't panic. Texas law gives you specific options — from requesting Prior Written Notice to filing a TEA complaint. Here's exactly what to do next, step by step.</p>
+<a class="read-more" href="/blog/what-to-do-when-school-denies-evaluation">Read the full guide →</a>
 </div>
-<div class="article-cta">
-<h3>Need Help Getting Started?</h3>
-<p>Download our free Evaluation Request Letter Template — it uses formal language that triggers IDEA's legal timelines in any Texas district.</p>
-<a class="button-primary-large" href="/resources/evaluation-request-template.pdf">Download Free Template</a>
+<!-- ═══ BLOG GRID ═══ -->
+<div class="blog-grid">
+<!-- Card 1: 10 Questions – ARD Meetings -->
+<article class="blog-card" data-category="ard-meetings">
+<div class="blog-card-image">🏫</div>
+<div class="blog-card-body">
+<div class="blog-card-meta">
+<span>January 8, 2026</span>
+<span>ARD Meetings</span>
+</div>
+<h3><a href="/blog">10 Questions Every Texas Parent Should Ask at Their ARD Meeting</a></h3>
+<p>Walking into an ARD meeting without a plan is like showing up to court without a lawyer. These 10 questions will help you stay focused and get answers.</p>
+<a class="read-more" href="/blog">Read more →</a>
 </div>
 </article>
-<section class="related-posts">
-<div class="container">
-<h2 style="text-align:center;">Related Articles</h2>
-<div class="related-grid">
-<a class="related-card" href="/blog/understanding-fiie-texas/">
-<h4>Understanding the FIIE: What Texas Parents Need to Know</h4>
-<p>What gets tested, how long it takes, and what happens after.</p>
-</a>
-<a class="related-card" href="/blog/texas-parent-rights-special-education/">
-<h4>Your Rights as a Texas Special Education Parent</h4>
-<p>A complete guide to IDEA, Section 504, and Texas law.</p>
-</a>
+<!-- Card 2: FIIE – Evaluations -->
+<article class="blog-card" data-category="evaluations">
+<div class="blog-card-image">📋</div>
+<div class="blog-card-body">
+<div class="blog-card-meta">
+<span>January 2, 2026</span>
+<span>Evaluations</span>
+</div>
+<h3><a href="/blog/understanding-fiie-texas">Understanding the FIIE: What Texas Parents Need to Know About Evaluations</a></h3>
+<p>A Full Individual Initial Evaluation is the gateway to special education services. Here's what gets tested, how long it takes, and what happens after.</p>
+<a class="read-more" href="/blog/understanding-fiie-texas">Read more →</a>
+</div>
+</article>
+<!-- Card 3: Measurable Goals – IEP Goals -->
+<article class="blog-card" data-category="iep-goals">
+<div class="blog-card-image">🎯</div>
+<div class="blog-card-body">
+<div class="blog-card-meta">
+<span>December 18, 2025</span>
+<span>IEP Goals</span>
+</div>
+<h3><a href="/blog">How to Write Measurable IEP Goals (With Texas TEKS Alignment Examples)</a></h3>
+<p>Vague IEP goals lead to vague progress. Learn the formula for writing goals that are specific, measurable, and aligned to Texas standards.</p>
+<a class="read-more" href="/blog">Read more →</a>
+</div>
+</article>
+<!-- Card 4: Parent Rights – Parent Rights -->
+<article class="blog-card" data-category="parent-rights">
+<div class="blog-card-image">⚖️</div>
+<div class="blog-card-body">
+<div class="blog-card-meta">
+<span>December 10, 2025</span>
+<span>Parent Rights</span>
+</div>
+<h3><a href="/blog">Your Rights as a Texas Special Education Parent: A Complete Guide</a></h3>
+<p>IDEA gives you powerful protections. Texas adds more. Here's a plain-language breakdown of every right you have — from consent to due process.</p>
+<a class="read-more" href="/blog">Read more →</a>
+</div>
+</article>
+<!-- Card 5: How to Disagree – ARD Meetings -->
+<article class="blog-card" data-category="ard-meetings">
+<div class="blog-card-image">📧</div>
+<div class="blog-card-body">
+<div class="blog-card-meta">
+<span>November 20, 2025</span>
+<span>ARD Meetings</span>
+</div>
+<h3><a href="/blog">How to Disagree at an ARD Meeting Without Burning Bridges</a></h3>
+<p>You have the right to disagree — and you don't have to sign the IEP. Here's how to push back effectively while keeping the relationship constructive.</p>
+<a class="read-more" href="/blog">Read more →</a>
+</div>
+</article>
+<!-- Card 6: IEE – Evaluations -->
+<article class="blog-card" data-category="evaluations">
+<div class="blog-card-image">🔍</div>
+<div class="blog-card-body">
+<div class="blog-card-meta">
+<span>November 5, 2025</span>
+<span>Evaluations</span>
+</div>
+<h3><a href="/blog/independent-educational-evaluation-texas">When and How to Request an Independent Educational Evaluation (IEE) in Texas</a></h3>
+<p>If you disagree with the school's evaluation, you may be entitled to an Independent Educational Evaluation at the district's expense. Here's how it works.</p>
+<a class="read-more" href="/blog/independent-educational-evaluation-texas/">Read more →</a>
+</div>
+</article>
 </div>
 </div>
 </section>
-</main>
+<section class="newsletter-inline">
+<div class="container">
+<h2>New Articles Every Month</h2>
+<p>Get our latest guides and district updates delivered straight to your inbox. No spam — just practical information for Texas parents.</p>
+<form action="/subscribe" class="newsletter-inline-form" method="post">
+<input aria-label="Email address" name="email" placeholder="Your email address" required="" type="email"/>
+<button class="button-primary" type="submit">Subscribe</button>
+</form>
+</div>
+</section>
+</main></main>
  <script>
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
 
@@ -338,6 +390,53 @@ document.querySelectorAll('.subscribe-form, .footer-subscribe').forEach(function
   });
 });
 </script>
+<script>
+      (function () {
+         var buttons = document.querySelectorAll('[data-filter]');
+         var featured = document.querySelector('.featured-post');
+         var cards = document.querySelectorAll('.blog-card');
+         var grid = document.querySelector('.blog-grid');
+         var noResults = document.querySelector('.no-results');
+
+         function filterPosts(category) {
+            // Update active button
+            buttons.forEach(function (btn) {
+               var isActive = btn.getAttribute('data-filter') === category;
+               btn.classList.toggle('active', isActive);
+               btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            var visibleCount = 0;
+
+            // Filter featured post
+            if (category === 'all' || featured.getAttribute('data-category') === category) {
+               featured.style.display = '';
+               visibleCount++;
+            } else {
+               featured.style.display = 'none';
+            }
+
+            // Filter cards
+            cards.forEach(function (card) {
+               if (category === 'all' || card.getAttribute('data-category') === category) {
+                  card.style.display = '';
+                  visibleCount++;
+               } else {
+                  card.style.display = 'none';
+               }
+            });
+
+            // Show/hide no-results message
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+         }
+
+         buttons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+               filterPosts(this.getAttribute('data-filter'));
+            });
+         });
+      })();
+   </script>
 
 
 

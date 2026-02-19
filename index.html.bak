@@ -4,26 +4,24 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact Us | TexasSpecialEd.com</title>
-<meta content="Contact TexasSpecialEd.com for questions, district requests, corrections, or partnership inquiries. We're here to help Texas special education families." name="description"/>
-<link href="https://texasspecialed.com/contact/" rel="canonical"/>
-<meta content="Contact TexasSpecialEd.com" property="og:title"/>
-<meta content="Reach out for questions, district requests, corrections, or partnership inquiries. We help Texas families navigate special education." property="og:description"/>
-<meta content="https://texasspecialed.com/contact/" property="og:url"/>
+<title>Texas Special Education Resources | ARD Meetings &amp; IEP Support</title>
+<meta content="Comprehensive special education resources for 20+ Texas school districts. ARD meeting guides, IEP support, evaluation help, and parent rights information." name="description"/>
+<link href="https://www.texasspecialed.com/" rel="canonical"/>
+<meta content="Texas Special Education Resources" property="og:title"/>
+<meta content="ARD meetings, evaluations, and IEP support for Texas families. District-specific guides for 20+ school districts." property="og:description"/>
+<meta content="https://www.texasspecialed.com/" property="og:url"/>
 <meta content="website" property="og:type"/>
+<meta content="https://www.texasspecialed.com/images/og-image.png" property="og:image"/>
+<link href="/styles/global.css" rel="stylesheet"/>
 <script type="application/ld+json">
       {
          "@context": "https://schema.org",
-         "@type": "ContactPage",
-         "name": "Contact TexasSpecialEd.com",
-         "description": "Contact page for TexasSpecialEd.com. Submit questions, district requests, corrections, or partnership inquiries.",
-         "url": "https://texasspecialed.com/contact/",
-         "mainEntity": {
-            "@type": "Organization",
-            "name": "Texas Special Ed",
-            "url": "https://texasspecialed.com",
-            "email": "hello@texasspecialed.com"
-         }
+         "@type": "Organization",
+         "name": "Texas Special Ed",
+         "url": "https://texasspecialed.com",
+         "logo": "https://www.texasspecialed.com/images/texasspecialed-logo.png",
+         "description": "Texas special education resources and support for families navigating ARD meetings and IEP processes",
+         "sameAs": []
       }
    </script>
 <link href="/style.css" rel="stylesheet"/>
@@ -188,8 +186,210 @@
 
 
 
+<main class="main-container"><main>
+<section class="hero">
+<div class="container">
+<h1>Texas Special Education Resources</h1>
+<p class="lead">Navigate ARD meetings, IEP processes, and special education services with confidence. District-specific guides for 20+ Texas school districts.</p>
+<div class="hero-stats">
+<div class="stat">
+<div class="stat-number">857K+</div>
+<div class="stat-label">Texas Students in Special Education</div>
+</div>
+<div class="stat">
+<div class="stat-number">20</div>
+<div class="stat-label">Districts Covered</div>
+</div>
+<div class="stat">
+<div class="stat-number">100%</div>
+<div class="stat-label">Free Resources</div>
+</div>
+</div>
+<div class="hero-cta">
+<a class="button-primary-large" href="/resources/ard-checklist.pdf">Get Free ARD Checklist</a>
+<a class="button-secondary-large" href="/districts/">Browse Districts</a>
+</div>
+</div>
+</section>
+<section class="why-texas-specific">
+<div class="container">
+<h2>Why Texas-Specific Resources Matter</h2>
+<div class="reasons-grid">
+<div class="reason-card">
+<h3>ARD vs. IEP</h3>
+<p>Texas uses unique terminology. What other states call an "IEP Team," Texas calls an "ARD Committee" (Admission, Review, and Dismissal).</p>
+</div>
+<div class="reason-card">
+<h3>TEKS, Not Common Core</h3>
+<p>Texas IEP goals must align with TEKS (Texas Essential Knowledge and Skills), not Common Core standards used in most states.</p>
+</div>
+<div class="reason-card">
+<h3>HB 3928 Dyslexia Changes</h3>
+<p>Recent Texas legislation moved dyslexia services from Section 504 to special education, requiring new evaluation approaches.</p>
+</div>
+<div class="reason-card">
+<h3>60-Day Evaluation Timeline</h3>
+<p>Texas requires evaluations to be completed within 60 calendar days (not school days) of signed consent.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="featured-districts">
+<div class="container">
+<h2>Find Your School District</h2>
+<p>Select your district for comprehensive, district-specific special education resources:</p>
+<div class="districts-grid">
+<a class="district-card" href="/districts/round-rock-isd">
+<h3>Round Rock ISD</h3>
+<p>Austin Area • 46,197 students</p>
+</a>
+<a class="district-card" href="/districts/lewisville-isd">
+<h3>Lewisville ISD</h3>
+<p>DFW Area • 48,440 students</p>
+</a>
+<a class="district-card" href="/districts/frisco-isd">
+<h3>Frisco ISD</h3>
+<p>DFW Area • 66,698 students</p>
+</a>
+<a class="district-card" href="/districts/plano-isd">
+<h3>Plano ISD</h3>
+<p>DFW Area • 47,899 students</p>
+</a>
+<a class="district-card" href="/districts/conroe-isd">
+<h3>Conroe ISD</h3>
+<p>Houston Area • 72,352 students</p>
+</a>
+<a class="district-card" href="/districts/cypress-fairbanks-isd">
+<h3>Cypress-Fairbanks ISD</h3>
+<p>Houston Area • 118,470 students</p>
+</a>
+<a class="district-card" href="/districts/katy-isd">
+<h3>Katy ISD</h3>
+<p>Houston Area • 94,785 students</p>
+</a>
+<a class="district-card" href="/districts/northside-isd">
+<h3>Northside ISD</h3>
+<p>San Antonio • 101,095 students</p>
+</a>
+</div>
+<div class="text-center">
+<a class="button-secondary" href="/districts/">View All 20 Districts →</a>
+</div>
+</div>
+</section>
+<section class="what-we-cover">
+<div class="container">
+<h2>What Each District Guide Includes</h2>
+<div class="coverage-grid">
+<div class="coverage-card">
+<h3>📋 ARD Meeting Guide</h3>
+<p>Prepare for your ARD committee meeting with district-specific tips, who attends, your rights, and what to expect.</p>
+</div>
+<div class="coverage-card">
+<h3>🔍 Evaluation Process</h3>
+<p>Step-by-step guide to requesting a special education evaluation, understanding the 60-day timeline, and Child Find rights.</p>
+</div>
+<div class="coverage-card">
+<h3>📞 Leadership Directory</h3>
+<p>Direct contact information for special education directors, coordinators, and staff in your district.</p>
+</div>
+<div class="coverage-card">
+<h3>⚖️ Dispute Resolution</h3>
+<p>How to file complaints, navigate grievance processes, TEA complaints, due process, and OCR options.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="free-resources">
+<div class="container">
+<h2>Free Resources for Texas Parents</h2>
+<div class="resources-grid">
+<div class="resource-card">
+<h3>📋 ARD Meeting Checklist</h3>
+<p>Comprehensive checklist to prepare for your ARD committee meeting</p>
+<a class="button-small" href="/resources/ard-checklist.pdf">Download Free</a>
+</div>
+<div class="resource-card">
+<h3>📝 Evaluation Request Letter</h3>
+<p>Template letter to request a special education evaluation</p>
+<a class="button-small" href="/resources/evaluation-request-template.pdf">Download Free</a>
+</div>
+<div class="resource-card">
+<h3>📊 IEP Goal Tracker</h3>
+<p>Track your child's progress toward IEP goals</p>
+<a class="button-small" href="/resources/iep-goal-tracker.pdf">Download Free</a>
+</div>
+<div class="resource-card">
+<h3>📖 Parent Rights Guide</h3>
+<p>Understand your rights under Texas special education law</p>
+<a class="button-small" href="/resources/parent-rights-guide.pdf">Download Free</a>
+</div>
+</div>
+</div>
+</section>
+<section class="cta-section">
+<div class="container">
+<div class="cta-box primary">
+<h2>Get District-Specific Updates</h2>
+<p>Subscribe to receive updates about special education changes, deadlines, and resources for your district.</p>
+<form action="/subscribe" class="subscribe-form" method="post">
+<input aria-label="Email address" name="email" placeholder="Your email address" required="" type="email"/>
+<button class="button-primary" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+</section>
+</main></main>
+ <script>
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
 
+document.querySelectorAll('.subscribe-form, .footer-subscribe').forEach(function(form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var button = form.querySelector('button[type="submit"]');
+    var email = form.querySelector('input[type="email"]').value;
+    var districtInput = form.querySelector('input[name="district"]');
+    var district = districtInput ? districtInput.value : '';
+    
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, district: district })
+    })
+    .then(function() {
+      form.innerHTML = '<p style="color: green; font-weight: 600;">✓ You\'re subscribed!</p>';
+    })
+    .catch(function() {
+      button.disabled = false;
+      button.textContent = 'Subscribe';
+      alert('Something went wrong. Please try again.');
+    });
+  });
+});
+</script>
+<script>
+      document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
+         this.classList.toggle('active');
+         document.querySelector('.nav-menu')?.classList.toggle('active');
+         const expanded = this.getAttribute('aria-expanded') === 'true';
+         this.setAttribute('aria-expanded', !expanded);
+      });
 
+      document.addEventListener('click', function(event) {
+         const nav = document.querySelector('.navbar');
+         const toggle = document.querySelector('.mobile-menu-toggle');
+         if (!nav?.contains(event.target)) {
+            toggle?.classList.remove('active');
+            document.querySelector('.nav-menu')?.classList.remove('active');
+            toggle?.setAttribute('aria-expanded', 'false');
+         }
+      });
+   </script>
 
 
 
@@ -271,4 +471,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-</body></html>
+</body>
+</html>
