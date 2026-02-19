@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dyslexia Services in Arlington ISD | Texas Dyslexia Handbook Rights</title>
+<meta content="Understand your child's dyslexia rights in Arlington ISD: mandatory screening, structured literacy, 504 Plans, IEPs, and the 2024 Texas Dyslexia Handbook update." name="description"/>
+<link href="https://texasspecialed.com/districts/arlington-isd/dyslexia-services.html" rel="canonical"/>
+<meta content="Dyslexia Services in Arlington ISD | Texas Dyslexia Handbook Rights" property="og:title"/>
+<meta content="Understand your child's dyslexia rights in Arlington ISD: mandatory screening, structured literacy, 504 Plans, IEPs, and the 2024 Texas Dyslexia Handbook update." property="og:description"/>
+<meta content="https://texasspecialed.com/districts/arlington-isd/dyslexia-services.html" property="og:url"/>
+<meta content="article" property="og:type"/>
+<meta content="summary" name="twitter:card"/>
+<link href="/style.css" rel="stylesheet"/>
+
+
+
+
+
+
+
+<style>
+
+  /* Base Styles */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1e293b; background: #fff; line-height: 1.6; }
+  
+  /* Typography */
+  h1 { font-size: 2.25rem; margin-bottom: 20px; color: #0f172a; }
+  h2 { font-size: 1.5rem; margin: 30px 0 10px; color: #0f172a; }
+  h3 { font-size: 1.2rem; margin: 20px 0 8px; color: #0f172a; }
+  p { margin-bottom: 14px; color: #374151; }
+  a { color: #2563eb; }
+
+  /* Layout Containers */
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; min-height: 50vh; }
+  
+  /* Navbar */
+  .site-header { background: #0f172a; padding: 14px 0; position: relative; z-index: 100; }
+  .nav-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; width: 100%; }
+  .nav-logo img { height: auto; width: 200px; display: block; }
+  .nav-menu { display: flex; list-style: none; gap: 24px; align-items: center; margin: 0; padding: 0; }
+  .nav-link { color: #fff; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: opacity 0.2s; }
+  .nav-link:hover { opacity: 0.8; }
+  
+  /* Dropdown Styles */
+  .dropdown { position: relative; }
+  .dropdown-menu { display: none; position: absolute; background: #fff; padding: 10px 0; border-radius: 6px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); top: 100%; left: 0; min-width: 220px; list-style: none; }
+  .dropdown:hover .dropdown-menu { display: block; }
+  .dropdown-menu a { color: #1e293b; text-decoration: none; padding: 10px 20px; display: block; font-size: 0.9rem; }
+  .dropdown-menu a:hover { background: #f1f5f9; color: #2563eb; }
+  .dropdown-divider { height: 1px; background: #e2e8f0; margin: 8px 0; }
+  .dropdown-arrow { font-size: 0.7rem; margin-left: 4px; vertical-align: middle; }
+
+  /* Buttons */
+  .button-primary { background: #2563eb; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+  .button-primary:hover { background: #1d4ed8; }
+  
+  /* Mobile Menu Toggle */
+  .mobile-menu-toggle { display: none; background: transparent; border: none; cursor: pointer; padding: 5px; }
+  .hamburger { display: block; width: 25px; height: 3px; background: #fff; margin: 5px 0; border-radius: 2px; }
+
+  /* Internal Page Content Areas */
+  .content-section { background: #f8fafc; border: 1px solid #e2e8f0; padding: 30px; border-radius: 8px; margin-bottom: 30px; }
+  ul.custom-list { list-style: none; margin-bottom: 20px; padding-left: 0; }
+  ul.custom-list li { margin-bottom: 10px; padding-left: 24px; position: relative; }
+  ul.custom-list li::before { content: "•"; color: #2563eb; font-weight: bold; position: absolute; left: 0; }
+
+  /* Index Layouts (Grids & Ads) */
+  .sales-card { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 35px; border-radius: 12px; text-align: center; margin: 40px 0; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+  .sales-card .badge { background: #d4af37; color: #000; padding: 5px 15px; font-weight: bold; border-radius: 20px; font-size: 0.8rem; }
+  .sales-card h2, .sales-card h3 { color: white; margin-top: 15px; font-size: 1.6rem; }
+  .sales-card p { color: #e2e8f0; margin-bottom: 20px; }
+  .cta-gold { background: #d4af37; color: #000 !important; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 4px; display: inline-block; }
+  .grid-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+  .resource-box { background: #fff; border: 1px solid #e2e8f0; padding: 25px; border-radius: 8px; text-decoration: none; display: block; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+  .resource-box:hover { border-color: #2563eb; transform: translateY(-3px); box-shadow: 0 8px 16px rgba(0,0,0,0.08); }
+  .resource-box h3 { margin-top: 0; color: #0f172a; font-size: 1.15rem; margin-bottom: 8px; }
+  .resource-box p { font-size: 0.95rem; color: #64748b; margin: 0; }
+  .resource-box.warning-box { border-left: 5px solid #ef4444; background: #fef2f2; }
+  .resource-box.warning-box:hover { border-color: #ef4444; }
+  .featured-ad-container { margin: 50px 0 20px 0; background: #f8fafc; border: 2px dashed #cbd5e1; border-radius: 12px; padding: 40px 30px; text-align: center; position: relative; transition: all 0.3s; }
+  .featured-ad-container:hover { border-color: #94a3b8; background: #f1f5f9; }
+  .ad-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #e2e8f0; color: #475569; padding: 6px 16px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; border-radius: 20px; }
+  .ad-content h2 { margin: 10px 0 15px; font-size: 1.8rem; color: #0f172a; }
+  .ad-content p { color: #475569; max-width: 600px; margin: 0 auto 25px auto; font-size: 1.05rem; }
+  .btn-ad { background: #10b981; color: #fff; padding: 14px 35px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 1.05rem; display: inline-block; transition: background 0.2s; box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.3); }
+  .btn-ad:hover { background: #059669; color: #fff; }
+
+  /* Tightened Footer */
+  .site-footer { background: #0f172a; color: #94a3b8; padding: 40px 20px 20px; margin-top: 50px; font-size: 0.9rem; }
+  .footer-container { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between; }
+  .footer-about { flex: 2; min-width: 250px; }
+  .footer-about img { margin-bottom: 12px; }
+  .footer-links { flex: 1; min-width: 150px; }
+  .footer-links h3 { color: #fff; margin-bottom: 12px; font-size: 1.05rem; }
+  .footer-links ul { list-style: none; padding: 0; }
+  .footer-links ul li { margin-bottom: 8px; }
+  .footer-links ul a { color: #94a3b8; text-decoration: none; transition: color 0.2s; }
+  .footer-links ul a:hover { color: #fff; }
+  .footer-bottom { max-width: 1100px; margin: 25px auto 0; padding-top: 15px; border-top: 1px solid #334155; text-align: center; font-size: 0.85rem; }
+
+  @media (max-width: 900px) {
+    .nav-menu { display: none; flex-direction: column; width: 100%; position: absolute; top: 100%; left: 0; background: #0f172a; padding: 20px 0; border-top: 1px solid #1e293b; }
+    .nav-menu.active { display: flex; }
+    .nav-item { width: 100%; text-align: center; }
+    .nav-link { display: block; padding: 10px; }
+    .mobile-menu-toggle { display: block; }
+    .dropdown-menu { position: static; box-shadow: none; background: #1e293b; display: none; margin-top: 10px; padding: 10px 0; }
+    .dropdown.active .dropdown-menu { display: block; }
+    .dropdown-menu a { color: #e2e8f0; }
+    .dropdown-menu a:hover { background: #334155; color: #fff; }
+    .nav-cta { margin-top: 15px; }
+  }
+
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav aria-label="Main navigation" class="navbar" role="navigation">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a aria-label="Texas Special Ed Home" href="/">
+          <img alt="Texas Special Ed" height="auto" src="/images/texasspecialed-logo.png" width="200"/>
+        </a>
+      </div>
+      <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item dropdown">
+          <a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
+            <li class="dropdown-divider"></li>
+            <li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+            <li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
+            <li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
+            <li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
+            <li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
+            <li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+            <li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+            <li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/resources/index.html">Free Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="/store/index.html">Toolkits</a></li>
+        <li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
+        <li class="nav-item nav-cta"><a class="button-primary" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main class="main-container">
+<main class="container">
+<h1>Dyslexia Services in Arlington ISD</h1>
+<div class="quick-answer" style="background:#f0fdf4;border-left:5px solid #16a34a;padding:20px;border-radius:4px;margin:0 0 30px;">
+<p style="font-size:0.75rem;text-transform:uppercase;color:#16a34a;font-weight:700;margin:0 0 8px;">⚡ Quick Answer</p>
+<p style="margin:0;font-size:1rem;"><strong>What are my child's dyslexia rights in Texas?</strong><br/>
+  Under the <strong>Texas Dyslexia Handbook (2024 update)</strong>, all districts must screen students for dyslexia in grades K–2 and provide evidence-based intervention programs. If your child is identified, they are entitled to a structured literacy program and — if eligible — a <strong>504 Plan or IEP</strong> with accommodations like extended time and audio support.</p>
+</div>
+<div class="premium-offers-container">
+<div class="offers-header-badge">Targeted Reading Support</div>
+<div class="premium-offers-header">
+<h2>Don't Let the School "Wait and See"</h2>
+<p>Get the definitive Texas roadmap for HB 3928 and the dyslexia evaluation process.</p>
+</div>
+<div class="stacked-card border-red">
+<div class="card-inner">
+<div class="card-main-content">
+<span class="topic-tag tag-red">Dyslexia / Reading</span>
+<h3 class="card-title">Dyslexia Parent Support Toolkit</h3>
+<p class="card-tagline">Don't Let the School "Wait and See."</p>
+<p class="card-desc">The definitive Texas roadmap for HB 3928 and the dyslexia evaluation process. Includes legally cited request templates, the 15-45-30 timeline breakdown, and structured literacy progress logs.</p>
+<ul class="card-bullets">
+<li>Pre-written FIIE request letters</li>
+<li>HB 3928 timeline decoder</li>
+<li>504 → IEP transition guide</li>
+<li>Structured literacy progress tracker</li>
+</ul>
+</div>
+<div class="card-checkout-zone">
+<div class="price-block">
+<span class="price-label">Complete Kit</span>
+<span class="price-amount">$37.00</span>
+</div>
+<a class="btn-premium" href="https://buy.stripe.com/14A00i5S5eesd0jgXbbbG0J">Buy Now →</a>
+</div>
+</div>
+</div>
+</div>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dyslexia Services in Arlington ISD</title>
+<link href="/style.css" rel="stylesheet"/>
+</head>
+<body>
+<h1>Dyslexia Services in Arlington ISD</h1>
+<p>This guide provides information about dyslexia services available to students in Arlington Independent School District (AISD), based on Texas state law and the Texas Dyslexia Handbook (2024). It covers screening, intervention programs, support options, and how to request an evaluation.</p>
+<h2>Texas Dyslexia Handbook 2024</h2>
+<p>The <em>Texas Dyslexia Handbook: 2024 Update</em> (referred to hereafter as the Handbook) is the primary guide for identifying and supporting students with dyslexia in Texas public schools. AISD adheres to the guidelines and recommendations outlined in this document. The Handbook provides comprehensive information about:</p>
+<ul>
+<li><strong>Definition of Dyslexia:</strong> A specific learning disability that is neurological in origin. It is characterized by difficulties with accurate and/or fluent word recognition and by poor spelling and decoding abilities. These difficulties typically result from a deficit in the phonological component of language that is often unexpected in relation to other cognitive abilities and the provision of effective classroom instruction. Secondary consequences may include problems in reading comprehension and reduced reading experience that can impede growth of vocabulary and background knowledge.</li>
+<li><strong>Identification Procedures:</strong> Including screening and evaluation processes.</li>
+<li><strong>Instructional Practices:</strong> Recommended structured literacy approaches for intervention.</li>
+<li><strong>Accommodations:</strong> Strategies to support students with dyslexia in the classroom.</li>
+<li><strong>Legal Requirements:</strong> Outlining the responsibilities of school districts in serving students with dyslexia.</li>
+</ul>
+<p><strong>Key Updates in the 2024 Handbook:</strong> While this document doesn't know the specific nuances of future versions, some typical updates include refined definitions, clarified screening processes, updated research on effective interventions, and enhanced guidance on assistive technology. Please consult the official <a href="https://tea.texas.gov/academics/special-student-populations/dyslexia-and-related-disorders">Texas Education Agency (TEA) website</a> for the most current version of the Texas Dyslexia Handbook.</p>
+<p>Parents are strongly encouraged to review the Handbook to understand their rights and the support available for their child. You can typically find the latest version on the TEA website.</p>
+<h2>Mandatory Screening</h2>
+<p>Arlington ISD is required by Texas law to conduct dyslexia screening for all students in kindergarten and first grade. Some districts also screen in other grades, as deemed necessary. These screenings are designed to identify students who are at risk for dyslexia.</p>
+<p><strong>Screening Procedures:</strong></p>
+<ul>
+<li><strong>Kindergarten:</strong> Screening typically focuses on pre-literacy skills such as phonological awareness (rhyming, blending, segmenting), letter knowledge, and rapid automatized naming (RAN).</li>
+<li><strong>First Grade:</strong> Screening usually involves assessments of phonological awareness, decoding skills, and reading fluency.</li>
+</ul>
+<p><strong>What Happens After Screening?</strong> If a student's screening results indicate a risk for dyslexia, AISD will:</p>
+<ul>
+<li><strong>Provide Tiered Interventions:</strong> Implement research-based interventions to address the student's specific needs.</li>
+<li><strong>Monitor Progress:</strong> Regularly monitor the student's progress to determine the effectiveness of the interventions.</li>
+<li><strong>Consider Further Evaluation:</strong> If the student does not make adequate progress with interventions, a comprehensive evaluation for dyslexia may be recommended.</li>
+<li><strong>Notify Parents:</strong> Parents will be informed of the screening results and any interventions implemented.</li>
+</ul>
+<p>It's important to note that screening is not a diagnosis. It is a tool to identify students who may need further evaluation and support.</p>
+<h2>Structured Literacy Programs</h2>
+<p>Texas law mandates that school districts use structured literacy programs for students identified with dyslexia. Structured literacy is an explicit, systematic, cumulative, and multisensory approach to teaching reading and spelling.</p>
+<p><strong>Key Components of Structured Literacy:</strong></p>
+<ul>
+<li><strong>Phonology:</strong> Understanding the sound structure of language.</li>
+<li><strong>Sound-Symbol Association:</strong> Connecting sounds to letters and letter combinations.</li>
+<li><strong>Syllable Instruction:</strong> Teaching syllable types and patterns.</li>
+<li><strong>Morphology:</strong> Studying the meaning-bearing parts of words (prefixes, suffixes, roots).</li>
+<li><strong>Syntax:</strong> Understanding sentence structure and grammar.</li>
+<li><strong>Semantics:</strong> Vocabulary development and comprehension.</li>
+</ul>
+<p><strong>AISD's Approach:</strong> Arlington ISD utilizes research-based structured literacy programs. While specific program names are subject to change based on district evaluation and effectiveness, AISD commonly considers programs like:</p>
+<ul>
+<li><strong>Take Flight: A Comprehensive Intervention for Students with Dyslexia:</strong> Developed by the Scottish Rite Hospital, this program focuses on multisensory instruction and provides intensive intervention.</li>
+<li><strong>Neuhaus Education Center Programs:</strong> Neuhaus offers various programs that address reading, spelling, and writing difficulties using a structured literacy approach.</li>
+<li><strong>Other Evidence-Based Programs:</strong> AISD may use other programs aligned with the principles of structured literacy and supported by research. Consult with your child's school for information on the specific program used.</li>
+</ul>
+<p>The goal of these programs is to provide students with the foundational skills they need to become successful readers and spellers. The programs are delivered by trained educators who understand the principles of structured literacy.</p>
+<h2>504 vs IEP for Dyslexia</h2>
+<p>Students with dyslexia may be eligible for support through a 504 plan or an Individualized Education Program (IEP) under the Individuals with Disabilities Education Act (IDEA). The determination of which plan is appropriate depends on the student's individual needs.</p>
+<p><strong>Section 504 Plan:</strong></p>
+<ul>
+<li><strong>Eligibility:</strong> Students are eligible if they have a physical or mental impairment that substantially limits one or more major life activities (e.g., reading, learning).</li>
+<li><strong>Focus:</strong> Provides accommodations and modifications to ensure equal access to the general education curriculum.</li>
+<li><strong>Services:</strong> May include accommodations such as extended time on tests, preferential seating, and assistive technology.</li>
+<li><strong>Funding:</strong> Funded through the general education budget.</li>
+</ul>
+<p><strong>Individualized Education Program (IEP):</strong></p>
+<ul>
+<li><strong>Eligibility:</strong> Students are eligible if they have a disability listed under IDEA (including a specific learning disability like dyslexia) that adversely affects their educational performance and requires specialized instruction.</li>
+<li><strong>Focus:</strong> Provides specialized instruction and related services to address the student's unique needs.</li>
+<li><strong>Services:</strong> May include specialized reading instruction, speech therapy, occupational therapy, and counseling, in addition to accommodations.</li>
+<li><strong>Funding:</strong> Funded through special education funding.</li>
+</ul>
+<p><strong>Key Differences:</strong></p>
+<ul>
+<li><strong>Severity of Need:</strong> Students with more significant needs who require specialized instruction are typically served under an IEP. Students who primarily need accommodations to access the general education curriculum may be served under a 504 plan.</li>
+<li><strong>Instructional Focus:</strong> IEPs involve specialized instruction tailored to the student's specific learning needs. 504 plans primarily focus on accommodations.</li>
+</ul>
+<p>The ARD (Admission, Review, and Dismissal) committee, which includes parents, educators, and other professionals, determines whether a student is eligible for special education services and develops the IEP. The 504 committee determines eligibility for a 504 plan.</p>
+<h2>Accommodations List</h2>
+<p>Accommodations are adjustments to the learning environment or instructional practices that help students with dyslexia access the curriculum and demonstrate their knowledge. Accommodations do not change the content of the curriculum or lower expectations.</p>
+<p><strong>Common Accommodations for Students with Dyslexia:</strong></p>
+<ul>
+<li><strong>Reading Accommodations:</strong>
+<ul>
+<li>Audiobooks or text-to-speech software</li>
+<li>Highlighted text</li>
+<li>Chunking of text</li>
+<li>Pre-teaching vocabulary</li>
+<li>Reduced reading load</li>
+</ul>
+</li>
+<li><strong>Spelling Accommodations:</strong>
+<ul>
+<li>Word banks</li>
+<li>Spell check</li>
+<li>Use of a scribe</li>
+<li>Reduced spelling expectations</li>
+</ul>
+</li>
+<li><strong>Writing Accommodations:</strong>
+<ul>
+<li>Use of graphic organizers</li>
+<li>Sentence starters</li>
+<li>Assistive technology (e.g., speech-to-text software)</li>
+<li>Extended time for writing assignments</li>
+</ul>
+</li>
+<li><strong>Testing Accommodations:</strong>
+<ul>
+<li>Extended time</li>
+<li>Quiet testing environment</li>
+<li>Oral administration of tests</li>
+<li>Use of assistive technology</li>
+</ul>
+</li>
+<li><strong>Classroom Accommodations:</strong>
+<ul>
+<li>Preferential seating</li>
+<li>Copies of notes</li>
+<li>Visual aids</li>
+<li>Breaks</li>
+<li>Multi-sensory instruction</li>
+</ul>
+</li>
+</ul>
+<p>The specific accommodations provided to a student will be determined based on their individual needs and outlined in their 504 plan or IEP. It's crucial to collaborate with the school to identify the most effective accommodations for your child.</p>
+<h2>How to Request Evaluation</h2>
+<p>If you suspect your child may have dyslexia, you have the right to request a comprehensive evaluation from Arlington ISD. The evaluation process is designed to determine whether your child meets the criteria for dyslexia and requires specialized instruction.</p>
+<p><strong>Steps to Request an Evaluation:</strong></p>
+<ol>
+<li><strong>Contact the School:</strong> Begin by contacting your child's teacher, school counselor, or principal to express your concerns.</li>
+<li><strong>Submit a Written Request:</strong> Provide a written request for a dyslexia evaluation to the school principal or special education director. This request should include your child's name, date of birth, grade level, and a brief explanation of your concerns. It is highly recommended to keep a copy of this request for your records.</li>
+<li><strong>Consent for Evaluation:</strong> AISD will provide you with a consent form to sign, granting permission for the evaluation to proceed.</li>
+<li><strong>Evaluation Process:</strong> The evaluation will be conducted by qualified professionals, such as educational diagnosticians, licensed specialists in school psychology (LSSPs), or speech-language pathologists. The evaluation may include assessments of reading, spelling, writing, phonological awareness, and other relevant skills.</li>
+<li><strong>ARD Meeting:</strong> Once the evaluation is complete, an ARD meeting will be scheduled to discuss the results and determine whether your child is eligible for special education services. You, as the parent, are a critical member of the ARD committee.</li>
+<li><strong>504 Committee Meeting:</strong> If the student does not meet the criteria for an IEP but qualifies for 504 services, a 504 committee meeting will be held to determine appropriate accommodations.</li>
+</ol>
+<p><strong>Timeline:</strong> AISD is required to complete the evaluation process within a specific timeframe outlined in the Texas Education Code. Be sure to inquire about the timeline from the school to understand the expected duration of the evaluation process.</p>
+<p><strong>Parent Rights:</strong> As a parent, you have the right to:</p>
+<ul>
+<li>Request an evaluation at any time.</li>
+<li>Participate in all meetings regarding your child's education.</li>
+<li>Review your child's educational records.</li>
+<li>Obtain an independent educational evaluation (IEE) at public expense if you disagree with the results of the school's evaluation (under certain circumstances).</li>
+<li>File a complaint with the Texas Education Agency (TEA) if you believe the school district has violated your child's rights under IDEA or Section 504.</li>
+</ul>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><strong>Texas Education Agency (TEA):</strong> <a href="https://tea.texas.gov/academics/special-student-populations/dyslexia-and-related-disorders">https://tea.texas.gov/academics/special-student-populations/dyslexia-and-related-disorders</a></li>
+<li><strong>International Dyslexia Association (IDA):</strong> <a href="https://dyslexiaida.org/">https://dyslexiaida.org/</a></li>
+<li><strong>Arlington ISD Special Education Department:</strong> Contact information can be found on the AISD website.</li>
+</ul>
+<p>This guide is for informational purposes only and should not be considered legal advice. It is essential to consult with Arlington ISD and qualified professionals for specific guidance regarding your child's needs.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="180"/>
+      <p style="margin-top:10px;line-height:1.6;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/districts/index.html">School Districts</a></li>
+        <li><a href="/resources/index.html">Free Resources</a></li>
+        <li><a href="/store/index.html">Toolkits &amp; Guides</a></li>
+        <li><a href="/blog/index.html">Parent Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="/about/index.html">About Us</a></li>
+        <li><a href="/contact/index.html">Contact</a></li>
+        <li><a href="/disclaimer/index.html">Disclaimer</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-of-service">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+  </div>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const menu = document.querySelector('.nav-menu');
+    
+    if(toggle && menu) {
+        toggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !isExpanded);
+        });
+    }
+
+    const dropdowns = document.querySelectorAll('.dropdown-toggle');
+    dropdowns.forEach(drop => {
+        drop.addEventListener('click', function(e) {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                this.parentElement.classList.toggle('active');
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
+<section class="faq-section" style="margin:50px 0;">
+<h2 style="font-size:1.4rem;margin-bottom:5px;">Frequently Asked Questions</h2>
+<p style="color:#64748b;margin-bottom:20px;">Answers every parent in Texas needs to know.</p>
+<details style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        Is my child entitled to dyslexia testing in Texas? <span style="font-size:1.3rem;color:#64748b;">+</span>
+</summary>
+<p style="margin:10px 0 0;color:#475569;line-height:1.7;">Yes. Texas law requires all districts to screen students for dyslexia and related disorders in Kindergarten and First Grade, and at any grade level if a parent or teacher requests it.</p>
+</details>
+<details style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        What accommodations can a dyslexic child get in Texas? <span style="font-size:1.3rem;color:#64748b;">+</span>
+</summary>
+<p style="margin:10px 0 0;color:#475569;line-height:1.7;">Accommodations may include extended time on tests, text-to-speech software, oral administration of tests, reduced-answer-choice formats, and use of a calculator. These can be provided through a 504 Plan or an IEP.</p>
+</details>
+<details style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
+<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+        What is the Texas Dyslexia Handbook? <span style="font-size:1.3rem;color:#64748b;">+</span>
+</summary>
+<p style="margin:10px 0 0;color:#475569;line-height:1.7;">The Texas Dyslexia Handbook is a state guidance document updated in 2024 that outlines districts' responsibilities for identifying, evaluating, and serving students with dyslexia using structured literacy methods.</p>
+</details>
+</section>
+<section class="cluster-links" style="margin:50px 0;padding:25px;background:#f8fafc;border-radius:8px;">
+<p style="font-size:0.75rem;text-transform:uppercase;color:#64748b;font-weight:700;margin:0 0 12px;">
+    📍 Other Districts in Region 11 (TEA ESC)
+  </p>
+<p style="font-size:0.9rem;color:#475569;margin:0 0 15px;">
+    Parents across the region share the same TEA oversight and ESC support. These districts follow the same timelines:
+  </p>
+<a href="https://texasspecialed.com/districts/fort-worth-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Fort Worth ISD</a><a href="https://texasspecialed.com/districts/mansfield-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Mansfield ISD</a><a href="https://texasspecialed.com/districts/keller-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Keller ISD</a><a href="https://texasspecialed.com/districts/northwest-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Northwest ISD</a><a href="https://texasspecialed.com/districts/eagle-mountain-saginaw-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Eagle Mountain-Saginaw ISD</a>
+</section>
+</main></main>
+
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Arlington ISD Special Education Department",
+  "url": "https://texasspecialed.com/districts/arlington-isd/dyslexia-services.html",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "sped@arlington.edu",
+    "contactType": "Special Education Director"
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://texasspecialed.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Arlington ISD Hub",
+      "item": "https://texasspecialed.com/districts/arlington-isd/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dyslexia Guide",
+      "item": "https://texasspecialed.com/districts/arlington-isd/dyslexia-services.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is my child entitled to dyslexia testing in Texas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Texas law requires all districts to screen students for dyslexia and related disorders in Kindergarten and First Grade, and at any grade level if a parent or teacher requests it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What accommodations can a dyslexic child get in Texas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Accommodations may include extended time on tests, text-to-speech software, oral administration of tests, reduced-answer-choice formats, and use of a calculator. These can be provided through a 504 Plan or an IEP."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Texas Dyslexia Handbook?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Texas Dyslexia Handbook is a state guidance document updated in 2024 that outlines districts' responsibilities for identifying, evaluating, and serving students with dyslexia using structured literacy methods."
+      }
+    }
+  ]
+}</script>
+</body></html>
