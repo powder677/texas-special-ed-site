@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -13,134 +12,187 @@
 <meta content="article" property="og:type"/>
 <meta content="summary" name="twitter:card"/>
 <style>
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1e293b;background:#fff;line-height:1.6;}
-  .site-header{background:#0f172a;padding:14px 0;}
-  .navbar{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;align-items:center;}
-  .container{max-width:860px;margin:0 auto;padding:40px 20px;}
-  h1{font-size:2rem;margin-bottom:20px;color:#0f172a;}
-  h2{font-size:1.5rem;margin:30px 0 10px;color:#0f172a;}
-  h3{font-size:1.2rem;margin:20px 0 8px;color:#0f172a;}
-  p{margin-bottom:14px;color:#374151;}
-  a{color:#2563eb;}
-  .grid-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px;}
-  .btn{background:#0f172a;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;}
-  .btn.warning{background:#ef4444;}
-  .alert-box{margin-bottom:25px;}
-  .site-footer{background:#0f172a;color:#94a3b8;text-align:center;padding:30px 20px;margin-top:60px;font-size:0.85rem;}
-  details summary::-webkit-details-marker{display:none;}
+  /* Base Styles */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1e293b; background: #fff; line-height: 1.6; }
+  
+  /* Typography */
+  h1 { font-size: 2.25rem; margin-bottom: 20px; color: #0f172a; }
+  h2 { font-size: 1.5rem; margin: 30px 0 10px; color: #0f172a; }
+  h3 { font-size: 1.2rem; margin: 20px 0 8px; color: #0f172a; }
+  p { margin-bottom: 14px; color: #374151; }
+  a { color: #2563eb; }
+
+  /* Layout Containers */
+  .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+  
+  /* Navbar (Fixed - No longer stuck) */
+  .site-header { background: #0f172a; padding: 14px 0; position: relative; z-index: 100; }
+  .nav-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; width: 100%; }
+  .nav-logo img { height: auto; width: 200px; display: block; }
+  .nav-menu { display: flex; list-style: none; gap: 24px; align-items: center; margin: 0; padding: 0; }
+  .nav-link { color: #fff; text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: opacity 0.2s; }
+  .nav-link:hover { opacity: 0.8; }
+  
+  /* Dropdown Styles */
+  .dropdown { position: relative; }
+  .dropdown-menu { display: none; position: absolute; background: #fff; padding: 10px 0; border-radius: 6px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); top: 100%; left: 0; min-width: 220px; list-style: none; }
+  .dropdown:hover .dropdown-menu { display: block; }
+  .dropdown-menu a { color: #1e293b; text-decoration: none; padding: 10px 20px; display: block; font-size: 0.9rem; }
+  .dropdown-menu a:hover { background: #f1f5f9; color: #2563eb; }
+  .dropdown-divider { height: 1px; background: #e2e8f0; margin: 8px 0; }
+  .dropdown-arrow { font-size: 0.7rem; margin-left: 4px; vertical-align: middle; }
+
+  /* Buttons */
+  .button-primary { background: #2563eb; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+  .button-primary:hover { background: #1d4ed8; }
+  
+  /* Mobile Menu Toggle */
+  .mobile-menu-toggle { display: none; background: transparent; border: none; cursor: pointer; padding: 5px; }
+  .hamburger { display: block; width: 25px; height: 3px; background: #fff; margin: 5px 0; border-radius: 2px; }
+
+  /* Resource Grid */
+  .grid-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
+  .resource-box { background: #fff; border: 1px solid #e2e8f0; padding: 25px; border-radius: 8px; text-decoration: none; display: block; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+  .resource-box:hover { border-color: #2563eb; transform: translateY(-3px); box-shadow: 0 8px 16px rgba(0,0,0,0.08); }
+  .resource-box h3 { margin-top: 0; color: #0f172a; font-size: 1.15rem; margin-bottom: 8px; }
+  .resource-box p { font-size: 0.95rem; color: #64748b; margin: 0; }
+  .resource-box.warning-box { border-left: 5px solid #ef4444; background: #fef2f2; }
+  .resource-box.warning-box:hover { border-color: #ef4444; }
+
+  /* Featured Partner Ad Box */
+  .featured-ad-container { margin: 50px 0 20px 0; background: #f8fafc; border: 2px dashed #cbd5e1; border-radius: 12px; padding: 40px 30px; text-align: center; position: relative; transition: all 0.3s; }
+  .featured-ad-container:hover { border-color: #94a3b8; background: #f1f5f9; }
+  .ad-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #e2e8f0; color: #475569; padding: 6px 16px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; border-radius: 20px; }
+  .ad-content h2 { margin: 10px 0 15px; font-size: 1.8rem; color: #0f172a; }
+  .ad-content p { color: #475569; max-width: 600px; margin: 0 auto 25px auto; font-size: 1.05rem; }
+  .btn-ad { background: #10b981; color: #fff; padding: 14px 35px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 1.05rem; display: inline-block; transition: background 0.2s; box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.3); }
+  .btn-ad:hover { background: #059669; color: #fff; }
+
+  /* Footer */
+  .site-footer { background: #0f172a; color: #94a3b8; padding: 50px 20px 30px; margin-top: 60px; font-size: 0.9rem; }
+  .footer-container { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; }
+  .footer-about { flex: 2; min-width: 280px; }
+  .footer-about img { margin-bottom: 15px; }
+  .footer-links { flex: 1; min-width: 160px; }
+  .footer-links h3 { color: #fff; margin-bottom: 15px; font-size: 1.1rem; }
+  .footer-links ul { list-style: none; padding: 0; }
+  .footer-links ul li { margin-bottom: 10px; }
+  .footer-links ul a { color: #94a3b8; text-decoration: none; transition: color 0.2s; }
+  .footer-links ul a:hover { color: #fff; }
+  .footer-bottom { max-width: 1100px; margin: 30px auto 0; padding-top: 20px; border-top: 1px solid #334155; text-align: center; }
+
+  @media (max-width: 900px) {
+    .nav-menu { display: none; flex-direction: column; width: 100%; position: absolute; top: 100%; left: 0; background: #0f172a; padding: 20px 0; border-top: 1px solid #1e293b; }
+    .nav-menu.active { display: flex; }
+    .nav-item { width: 100%; text-align: center; }
+    .nav-link { display: block; padding: 10px; }
+    .mobile-menu-toggle { display: block; }
+    .dropdown-menu { position: static; box-shadow: none; background: #1e293b; display: none; margin-top: 10px; padding: 10px 0; }
+    .dropdown.active .dropdown-menu { display: block; }
+    .dropdown-menu a { color: #e2e8f0; }
+    .dropdown-menu a:hover { background: #334155; color: #fff; }
+    .nav-cta { margin-top: 15px; }
+  }
 </style>
-<link href="/style.css" rel="stylesheet"/>
 </head>
 <body>
 
+<header class="site-header">
+  <nav aria-label="Main navigation" class="navbar" role="navigation">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a aria-label="Texas Special Ed Home" href="/">
+          <img alt="Texas Special Ed" height="auto" src="/images/texasspecialed-logo.png" width="200"/>
+        </a>
+      </div>
+      <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item dropdown">
+          <a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
+            <li class="dropdown-divider"></li>
+            <li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+            <li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
+            <li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
+            <li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
+            <li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
+            <li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+            <li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+            <li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/resources/index.html">Free Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="/store/index.html">Toolkits</a></li>
+        <li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
+        <li class="nav-item nav-cta"><a class="button-primary" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-<main class="main-container"><header class="site-header"><nav aria-label="Main navigation" class="navbar" role="navigation">
-<div class="nav-container">
-<div class="nav-logo">
-<a aria-label="Texas Special Ed Home" href="/">
-<img alt="Texas Special Ed" height="auto" src="/images/texasspecialed-logo.png" width="200"/>
-</a>
-</div>
-<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
-<span class="hamburger"></span>
-<span class="hamburger"></span>
-<span class="hamburger"></span>
-</button>
-<ul class="nav-menu">
-<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-<li class="nav-item dropdown">
-<a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
-<ul class="dropdown-menu">
-<li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
-<li class="dropdown-divider"></li>
-<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
-<li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
-<li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
-<li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
-<li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
-<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
-<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
-<li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
-<li class="dropdown-divider"></li>
-<li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
-</ul>
-</li>
-<li class="nav-item"><a class="nav-link" href="/resources/index.html">Free Resources</a></li>
-<li class="nav-item"><a class="nav-link" href="/store/index.html">Toolkits</a></li>
-<li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
-<li class="nav-item nav-cta"><a class="button-primary" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a></li>
-</ul>
-</div>
-</nav></header><main class="container">
-<h1>Mission CISD Special Education Resources</h1>
-<div class="quick-answer" style="background:#f0fdf4;border-left:5px solid #16a34a;padding:20px;border-radius:4px;margin:0 0 30px;">
-<p style="font-size:0.75rem;text-transform:uppercase;color:#16a34a;font-weight:700;margin:0 0 8px;">⚡ Quick Answer</p>
-<p style="margin:0 0 10px;font-size:1rem;"><strong>What can I do right now if Mission CISD is ignoring my child's needs?</strong></p>
-<p style="margin:0;font-size:0.95rem;">
-    Submit a <strong>written evaluation request</strong> today — verbal requests do not start the legal clock.
-    Mission CISD has <strong>45 school days</strong> from your written consent to complete the evaluation.
-    If your child is being disciplined or suspended, that timeline is even more urgent.
-    Use the guides below to take action now.
-  </p>
-</div>
-<div class="intro"><h2>Special Education in Mission CISD: What Every Parent Needs to Know</h2>
-<p>Special education is a system of specially designed instruction and related services for children with disabilities. Both the federal Individuals with Disabilities Education Act (IDEA) and Texas law guarantee eligible children the right to a free appropriate public education (FAPE) designed to meet their unique needs. This means your child, if eligible, is entitled to specialized instruction and supports designed to help them make progress in school. Mission CISD, like all school districts in Texas, operates under the oversight of the Texas Education Agency (TEA). </p>
-<p>TEA provides guidance and resources to school districts through its regional Education Service Centers. Mission CISD is supported by TEA Region 1 Education Service Center, which offers professional development, technical assistance, and other resources to help the district effectively serve students with disabilities. Understanding this broader framework helps you navigate the special education system effectively within Mission CISD.</p>
-<p>It's critically important to remember that as a parent, you possess enforceable legal rights throughout the entire special education process. From initial evaluation to the development and implementation of your child's Individualized Education Program (IEP), you have the right to be informed, involved, and to advocate for your child's needs. These rights are protected by law, and understanding them is the first step in ensuring your child receives the appropriate education and support within Mission CISD. Do not hesitate to assert these rights. If you are feeling lost, confused, or overwhelmed, reach out to an advocate.</p>
-<p><b>Take Action:</b> Familiarize yourself with the Texas Education Agency's website on Special Education to understand your rights and responsibilities.</p>
-<h2>How to Request a Special Education Evaluation in Mission CISD</h2>
-<p>The process of determining if your child is eligible for special education services begins with a Full Individual Evaluation (FIE). To formally initiate this process, you must submit a written request for an evaluation to Mission CISD. It's crucial to understand that a verbal request is not sufficient; the timeline for the evaluation only begins once the district receives your written request. In your letter, clearly state your concerns about your child's academic or developmental progress and why you believe they may have a disability that requires special education services.</p>
-<p>Once Mission CISD receives your written consent to evaluate your child, the district has 45 school days to complete the FIE. This evaluation will assess your child's strengths and weaknesses in various areas, such as academic achievement, cognitive abilities, and social-emotional development. It's important to know that Child Find laws mandate that Mission CISD proactively identify students within the district who may have disabilities and may need special education services, regardless of whether a parent has requested an evaluation. If you suspect your child may need special education, don't wait - initiate the process.</p>
-<p><b>Take Action:</b> Write a letter requesting a Full Individual Evaluation for your child. Keep a copy for your records, and send the original via certified mail with return receipt requested to ensure proof of delivery to the Mission CISD special education director.</p>
-<h2>ARD Meetings in Mission CISD: Your Rights at the Table</h2>
-<p>ARD stands for Admission, Review, and Dismissal. An ARD committee is the group of people, including you, who make decisions about your child's special education program. Mission CISD is legally obligated to provide you with at least five calendar days' written notice before any ARD meeting. This notice should include the purpose of the meeting, the proposed agenda, and a list of attendees. It's crucial to review this notice carefully and contact the school if anything is unclear. Remember, this is your meeting just as much as it is the school's.</p>
-<p>You have the right to request a 10-day recess of the ARD meeting at any time. This means that if you feel overwhelmed, unprepared, or need more time to consider the proposed IEP, you can ask for a break in the meeting. The ARD committee must grant this request. It gives you a chance to step back, review the information, consult with experts, or simply process everything that has been discussed. Never feel pressured to make a decision on the spot.</p>
-<p>Finally, you are not required to sign the IEP the same day as the ARD meeting. Take the document home, review it carefully, and ensure that you fully understand and agree with all of its provisions before signing. Your signature indicates your agreement with the IEP, so it's important to take your time and make sure it accurately reflects your child's needs and goals. Do not let anyone pressure you into immediate agreement.</p>
-<p><b>Take Action:</b> Before your next ARD meeting in Mission CISD, download our free ARD preparation checklist to ensure you are fully prepared and know your rights.</p>
-<h2>Dyslexia Services in Mission CISD</h2>
-<p>Texas law mandates that Mission CISD screen all students for dyslexia. This screening is designed to identify students who may be at risk for reading difficulties. If the screening indicates that your child may be dyslexic, Mission CISD is required to provide further evaluation and, if appropriate, implement structured literacy interventions. These interventions are research-based and designed to address the specific needs of students with dyslexia.</p>
-<p>The 2024 Texas Dyslexia Handbook sets the standards for how Mission CISD must address dyslexia. It provides guidance on screening, evaluation, intervention, and accommodations. Students identified with dyslexia may be eligible for accommodations through a 504 Plan, or if their needs are more significant, they may qualify for special education services under an IEP. Understanding these options and advocating for the appropriate supports is critical for your child's success. Do not hesitate to ask for the district's dyslexia specialist by name and contact information.</p>
-<p><b>Take Action:</b> If your child has not been screened for dyslexia in Mission CISD, submit a written request for screening to the school principal immediately.</p>
-<h2>Discipline, Suspensions, and Your Child's Rights in Mission CISD</h2>
-<p>Discipline can be a complex issue, especially for students with disabilities. If your child is a special education student in Mission CISD and is suspended for more than 10 cumulative days in a school year, this triggers a Manifestation Determination Review (MDR). This review is an ARD meeting where the committee determines whether the behavior that led to the suspension was a manifestation of your child's disability or a result of the school's failure to properly implement the IEP. This also constitutes a Change of Placement under IDEA, requiring a more formal review.</p>
-<p>This is one of the most time-sensitive situations you will face as a parent of a special education student. The school must convene the MDR within a matter of days. It is absolutely essential that you attend this meeting and advocate for your child. If the ARD committee determines that the behavior was a manifestation of the disability or a result of the school's failure to implement the IEP, the school cannot suspend your child for the behavior. This is a critical protection for your child, so it's important to understand your rights and act quickly. Failing to act within days can severely impact your child's educational future.</p>
-<p><b>Take Action:</b> If your child has been suspended, immediately use the Discipline Defense Kit for special education students to understand your rights and prepare for the Manifestation Determination Review.</p>
-<h2>Filing a Complaint Against Mission CISD</h2>
-<p>If you believe that Mission CISD is not complying with special education laws or that your child's rights are being violated, you have several avenues for filing a complaint. The first is a TEA State Complaint, which is a free process where you submit a written complaint to the Texas Education Agency outlining your concerns. TEA has 60 days to investigate and resolve the complaint. This process is often the quickest way to achieve a resolution, though it may not always address all your concerns.</p>
-<p>You also have the option of requesting Mediation through TEA, which is another free service. A neutral mediator will facilitate a discussion between you and Mission CISD representatives in an attempt to reach a mutually agreeable resolution. If mediation is unsuccessful, you can pursue a Due Process Hearing, which is a more formal legal process where an impartial hearing officer hears evidence and makes a decision. Finally, you can file a complaint with the Federal Office for Civil Rights (OCR), which investigates allegations of discrimination based on disability. Remember, these rights exist regardless of what any staff member at Mission CISD might tell you. Do not let anyone discourage you from exercising your rights.</p>
-<p><b>Take Action:</b> If you feel Mission CISD has violated your child's rights, research the TEA State Complaint process and begin gathering documentation to support your claim.</p></div>
-<div class="sales-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);color:white;padding:30px;border-radius:8px;text-align:center;margin:40px 0;"><span style="background:#d4af37;color:#000;padding:5px 15px;font-weight:bold;border-radius:20px;font-size:0.8rem;">BEST VALUE</span><h3 style="color:white;margin-top:15px;">"I'm overwhelmed. Give me everything."</h3><p style="color:#e2e8f0;">Get the complete <strong>Parent Protection Bundle</strong>: ARD Prep, Behavior Defense, Dyslexia, and Accommodations.</p><a href="https://buy.stripe.com/YOUR_BUNDLE_LINK" style="background:#d4af37;color:#000;padding:12px 25px;text-decoration:none;font-weight:bold;border-radius:4px;display:inline-block;margin-top:10px;">Get All 6 Kits for $97</a></div>
-<div class="grid-links">
-<a class="btn" href="ard-process-guide.html">ARD Meeting Guide</a>
-<a class="btn" href="evaluation-child-find.html">Request an Evaluation (FIE)</a>
-<a class="btn" href="dyslexia-services.html">Dyslexia Services</a>
-<a class="btn warning" href="grievance-dispute-resolution.html">Discipline &amp; Grievance (Crisis)</a>
-<a class="btn" href="leadership-directory.html">Contact Directory</a>
-</div>
-<section class="faq-section" style="margin:50px 0;">
-<h2 style="font-size:1.4rem;margin-bottom:5px;">Frequently Asked Questions About Mission CISD Special Education</h2>
-<p style="color:#64748b;margin-bottom:20px;">The questions every Mission CISD parent should know the answer to.</p>
-<details style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
-<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;">How do I request a special education evaluation in Mission CISD? <span style="font-size:1.3rem;color:#64748b;">+</span></summary>
-<p style="margin:10px 0 0;color:#475569;line-height:1.7;">Submit a written request to the Mission CISD Special Education Director. The district has 45 school days from your written consent to complete the Full Individual Evaluation (FIE). Always keep a dated copy of everything you send and follow up in writing.</p>
-</details>
-<details style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
-<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;">What are my rights at an ARD meeting in Mission CISD? <span style="font-size:1.3rem;color:#64748b;">+</span></summary>
-<p style="margin:10px 0 0;color:#475569;line-height:1.7;">You have the right to 5 days written notice before any ARD meeting, the right to bring an advocate or attorney, the right to request a 10-day recess at any time before decisions are finalized, and the right to refuse to sign the IEP the same day. You can also record the meeting with advance notice under Texas law.</p>
-</details>
-<details style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
-<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;">Does Mission CISD have to screen my child for dyslexia? <span style="font-size:1.3rem;color:#64748b;">+</span></summary>
-<p style="margin:10px 0 0;color:#475569;line-height:1.7;">Yes. Texas law requires Mission CISD to screen all students for dyslexia. If your child has not been screened, submit a written request to the campus principal immediately. The 2024 Texas Dyslexia Handbook governs how Mission CISD must identify and serve students with dyslexia.</p>
-</details>
-<details style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
-<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;">What if Mission CISD suspends my special education child for more than 10 days? <span style="font-size:1.3rem;color:#64748b;">+</span></summary>
-<p style="margin:10px 0 0;color:#475569;line-height:1.7;">A suspension exceeding 10 cumulative school days triggers a Manifestation Determination Review (MDR) and is a Change of Placement under IDEA. Mission CISD must convene an ARD meeting. This is a legal emergency — contact a special education advocate immediately.</p>
-</details>
-</section>
-<section class="cluster-links" style="margin:50px 0;padding:25px;background:#f8fafc;border-radius:8px;">
+<main class="container">
+  <h1>Mission CISD Special Education Resources</h1>
+  
+  <div class="intro">
+    Welcome to the Mission CISD Special Education Resource Hub, your comprehensive source for information, support, and actionable strategies for navigating special education services within our district. We are committed to empowering students with disabilities to thrive academically, socially, and emotionally, and this hub is designed to provide families, educators, and community members with the tools to make that happen. Explore resources covering evaluations, individualized education programs (IEPs), related services, and transition planning. We encourage you to actively engage with the content, connect with our team, and utilize these resources to advocate for the success of every student. Together, we can build a brighter future for all.
+  </div>
+  
+  <div class="sales-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);color:white;padding:35px;border-radius:12px;text-align:center;margin:40px 0;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);">
+    <span style="background:#d4af37;color:#000;padding:5px 15px;font-weight:bold;border-radius:20px;font-size:0.8rem;">BEST VALUE</span>
+    <h3 style="color:white;margin-top:15px;font-size:1.6rem;">"I'm overwhelmed. Give me everything."</h3>
+    <p style="color:#e2e8f0;font-size:1.05rem;margin-bottom:20px;">Get the complete <strong>Parent Protection Bundle</strong>: ARD Prep, Behavior Defense, Dyslexia, and Accommodations.</p>
+    <a href="https://buy.stripe.com/YOUR_BUNDLE_LINK" style="background:#d4af37;color:#000;padding:14px 30px;text-decoration:none;font-weight:bold;border-radius:6px;display:inline-block;font-size:1.05rem;">Get All 6 Kits for $97</a>
+  </div>
+
+  <!-- Resource Cards Grid -->
+  <div class="grid-links">
+    <a href="ard-process-guide.html" class="resource-box">
+      <h3>📋 ARD Meeting Guide</h3>
+      <p>Step-by-step preparation for your next ARD meeting.</p>
+    </a>
+    <a href="evaluation-child-find.html" class="resource-box">
+      <h3>🔍 Request an Evaluation</h3>
+      <p>How to secure a Full Individual Evaluation (FIE).</p>
+    </a>
+    
+    <!-- Grievance Link placed in the middle as a warning card -->
+    <a href="grievance-dispute-resolution.html" class="resource-box warning-box">
+      <h3 style="color:#b91c1c;">⚠️ Discipline & Grievance</h3>
+      <p>Crisis support, discipline defense, and formal grievance resolution.</p>
+    </a>
+    
+    <a href="dyslexia-services.html" class="resource-box">
+      <h3>📖 Dyslexia Services</h3>
+      <p>Mission CISD screening and instructional rights.</p>
+    </a>
+    <a href="leadership-directory.html" class="resource-box">
+      <h3>📞 Contact Directory</h3>
+      <p>Direct contacts for district special education leadership.</p>
+    </a>
+  </div>
+
+  <!-- Staged Premium Ad Box -->
+  <div class="featured-ad-container">
+    <span class="ad-badge">Featured Partner</span>
+    <div class="ad-content">
+      <h2>🤝 Need Professional Advocacy in Your District?</h2>
+      <p>Connect with our highest-rated local partner. Get hands-on help from experienced educational advocates who know Mission CISD inside and out. Perfect for difficult ARDs, mediations, and complex IEP negotiations.</p>
+      <a href="#" class="btn-ad">Partner Name - Learn More & Get Support</a>
+    </div>
+  </div>
+
+  <section class="cluster-links" style="margin:50px 0;padding:25px;background:#f8fafc;border-radius:8px;">
 <p style="font-size:0.75rem;text-transform:uppercase;color:#64748b;font-weight:700;margin:0 0 12px;">
     📍 Other Districts in Region 1 (TEA ESC)
   </p>
@@ -149,41 +201,46 @@
   </p>
 <a href="https://texasspecialed.com/districts/idea-public-schools/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">IDEA Public Schools</a><a href="https://texasspecialed.com/districts/united-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">United ISD</a><a href="https://texasspecialed.com/districts/pharr-san-juan-alamo-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Pharr-San Juan-Alamo ISD</a><a href="https://texasspecialed.com/districts/edinburg-cisd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Edinburg CISD</a><a href="https://texasspecialed.com/districts/la-joya-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">La Joya ISD</a>
 </section>
-</main></main><footer class="site-footer">
-<div class="footer-container">
-<div class="footer-about">
-<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="180"/>
-<p>Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
-</div>
-<div class="footer-links">
-<h3>Quick Links</h3>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/districts/index.html">School Districts</a></li>
-<li><a href="/resources/index.html">Free Resources</a></li>
-<li><a href="/store/index.html">Toolkits &amp; Guides</a></li>
-<li><a href="/blog/index.html">Parent Blog</a></li>
-</ul>
-</div>
-<div class="footer-links">
-<h3>Support</h3>
-<ul>
-<li><a href="/about/index.html">About Us</a></li>
-<li><a href="/contact/index.html">Contact</a></li>
-<li><a href="/disclaimer/index.html">Disclaimer</a></li>
-<li><a href="/privacy-policy">Privacy Policy</a></li>
-<li><a href="/terms-of-service">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<div class="footer-bottom">
-<p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
-</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="180"/>
+      <p style="margin-top:15px;line-height:1.7;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/districts/index.html">School Districts</a></li>
+        <li><a href="/resources/index.html">Free Resources</a></li>
+        <li><a href="/store/index.html">Toolkits &amp; Guides</a></li>
+        <li><a href="/blog/index.html">Parent Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="/about/index.html">About Us</a></li>
+        <li><a href="/contact/index.html">Contact</a></li>
+        <li><a href="/disclaimer/index.html">Disclaimer</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-of-service">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+  </div>
 </footer>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const toggle = document.querySelector('.mobile-menu-toggle');
     const menu = document.querySelector('.nav-menu');
+    
     if(toggle && menu) {
         toggle.addEventListener('click', function() {
             menu.classList.toggle('active');
@@ -191,6 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
             toggle.setAttribute('aria-expanded', !isExpanded);
         });
     }
+
     const dropdowns = document.querySelectorAll('.dropdown-toggle');
     dropdowns.forEach(drop => {
         drop.addEventListener('click', function(e) {
@@ -202,6 +260,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
@@ -211,11 +270,6 @@ document.addEventListener('DOMContentLoaded', function() {
     "@type": "PostalAddress",
     "addressRegion": "TX",
     "addressCountry": "US"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "sped@mission.edu",
-    "contactType": "Special Education Director"
   }
 }</script>
 <script type="application/ld+json">{
@@ -248,36 +302,13 @@ document.addEventListener('DOMContentLoaded', function() {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How do I request a special education evaluation in Mission CISD?",
+      "name": "What special education resources does Mission CISD offer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Submit a written request to the Mission CISD Special Education Director. The district has 45 school days from your written consent to complete the Full Individual Evaluation (FIE). Keep a dated copy of everything you send."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are my rights at an ARD meeting in Mission CISD?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You have the right to 5 days written notice before any ARD meeting, the right to bring an advocate, the right to request a 10-day recess at any time, and the right to refuse to sign the IEP the same day."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Mission CISD have to screen my child for dyslexia?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Texas law requires Mission CISD to screen all students for dyslexia. If your child has not been screened, submit a written request to the campus principal immediately."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens if Mission CISD suspends my special education child for more than 10 days?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A suspension exceeding 10 cumulative school days triggers a Manifestation Determination Review (MDR) and constitutes a Change of Placement under IDEA. Mission CISD must convene an ARD meeting. Contact an advocate immediately."
+        "text": "Mission CISD Special Education department provides ARD/IEP services, dyslexia screening, evaluation (FIE), and grievance support."
       }
     }
   ]
 }</script>
-</body></html>
+</body>
+</html>

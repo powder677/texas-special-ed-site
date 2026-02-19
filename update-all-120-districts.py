@@ -1,14 +1,24 @@
-<!DOCTYPE html>
+import os
+import glob
+from bs4 import BeautifulSoup
+
+# Define the root directory where the district folders are located
+# Adjust this path if your script is located elsewhere
+DISTRICTS_DIR = 'districts'
+
+# This is the master template. We use placeholders like {{DISTRICT_NAME}} 
+# and {{DISTRICT_SLUG}} so the script can inject the right text for all 120+ pages.
+HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Aldine ISD Special Education Resources | Parent Rights Guide</title>
-<meta content="Complete special education resource hub for Aldine ISD families. ARD rights, FIE timelines, dyslexia services, and discipline defense - all in one place." name="description"/>
-<link href="https://texasspecialed.com/districts/aldine-isd/" rel="canonical"/>
-<meta content="Aldine ISD Special Education Resources | Parent Rights Guide" property="og:title"/>
-<meta content="Complete special education resource hub for Aldine ISD families. ARD rights, FIE timelines, dyslexia services, and discipline defense - all in one place." property="og:description"/>
-<meta content="https://texasspecialed.com/districts/aldine-isd/" property="og:url"/>
+<title>{{DISTRICT_NAME}} Special Education Resources | Parent Rights Guide</title>
+<meta content="Complete special education resource hub for {{DISTRICT_NAME}} families. ARD rights, FIE timelines, dyslexia services, and discipline defense - all in one place." name="description"/>
+<link href="https://texasspecialed.com/districts/{{DISTRICT_SLUG}}/" rel="canonical"/>
+<meta content="{{DISTRICT_NAME}} Special Education Resources | Parent Rights Guide" property="og:title"/>
+<meta content="Complete special education resource hub for {{DISTRICT_NAME}} families. ARD rights, FIE timelines, dyslexia services, and discipline defense - all in one place." property="og:description"/>
+<meta content="https://texasspecialed.com/districts/{{DISTRICT_SLUG}}/" property="og:url"/>
 <meta content="article" property="og:type"/>
 <meta content="summary" name="twitter:card"/>
 <style>
@@ -142,10 +152,10 @@
 </header>
 
 <main class="container">
-  <h1>Aldine ISD Special Education Resources</h1>
+  <h1>{{DISTRICT_NAME}} Special Education Resources</h1>
   
   <div class="intro">
-    Welcome to the Aldine ISD Special Education Resource Hub, your comprehensive source for information, support, and actionable strategies for navigating special education services within our district. We are committed to empowering students with disabilities to thrive academically, socially, and emotionally, and this hub is designed to provide families, educators, and community members with the tools to make that happen. Explore resources covering evaluations, individualized education programs (IEPs), related services, and transition planning. We encourage you to actively engage with the content, connect with our team, and utilize these resources to advocate for the success of every student. Together, we can build a brighter future for all.
+    Welcome to the {{DISTRICT_NAME}} Special Education Resource Hub, your comprehensive source for information, support, and actionable strategies for navigating special education services within our district. We are committed to empowering students with disabilities to thrive academically, socially, and emotionally, and this hub is designed to provide families, educators, and community members with the tools to make that happen. Explore resources covering evaluations, individualized education programs (IEPs), related services, and transition planning. We encourage you to actively engage with the content, connect with our team, and utilize these resources to advocate for the success of every student. Together, we can build a brighter future for all.
   </div>
   
   <div class="sales-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);color:white;padding:35px;border-radius:12px;text-align:center;margin:40px 0;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);">
@@ -174,7 +184,7 @@
     
     <a href="dyslexia-services.html" class="resource-box">
       <h3>📖 Dyslexia Services</h3>
-      <p>Aldine ISD screening and instructional rights.</p>
+      <p>{{DISTRICT_NAME}} screening and instructional rights.</p>
     </a>
     <a href="leadership-directory.html" class="resource-box">
       <h3>📞 Contact Directory</h3>
@@ -187,20 +197,12 @@
     <span class="ad-badge">Featured Partner</span>
     <div class="ad-content">
       <h2>🤝 Need Professional Advocacy in Your District?</h2>
-      <p>Connect with our highest-rated local partner. Get hands-on help from experienced educational advocates who know Aldine ISD inside and out. Perfect for difficult ARDs, mediations, and complex IEP negotiations.</p>
+      <p>Connect with our highest-rated local partner. Get hands-on help from experienced educational advocates who know {{DISTRICT_NAME}} inside and out. Perfect for difficult ARDs, mediations, and complex IEP negotiations.</p>
       <a href="#" class="btn-ad">Partner Name - Learn More & Get Support</a>
     </div>
   </div>
 
-  <section class="cluster-links" style="margin:50px 0;padding:25px;background:#f8fafc;border-radius:8px;">
-<p style="font-size:0.75rem;text-transform:uppercase;color:#64748b;font-weight:700;margin:0 0 12px;">
-    📍 Other Districts in Region 4 (TEA ESC)
-  </p>
-<p style="font-size:0.9rem;color:#475569;margin:0 0 15px;">
-    Parents across the region share the same TEA oversight and ESC support. These districts follow the same timelines:
-  </p>
-<a href="https://texasspecialed.com/districts/houston-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Houston ISD</a><a href="https://texasspecialed.com/districts/cypress-fairbanks-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Cypress-Fairbanks ISD</a><a href="https://texasspecialed.com/districts/katy-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Katy ISD</a><a href="https://texasspecialed.com/districts/fort-bend-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Fort Bend ISD</a><a href="https://texasspecialed.com/districts/conroe-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Conroe ISD</a>
-</section>
+  {{CLUSTER_LINKS}}
 
 </main>
 
@@ -264,8 +266,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
-  "name": "Aldine ISD Special Education Department",
-  "url": "https://texasspecialed.com/districts/aldine-isd/",
+  "name": "{{DISTRICT_NAME}} Special Education Department",
+  "url": "https://texasspecialed.com/districts/{{DISTRICT_SLUG}}/",
   "address": {
     "@type": "PostalAddress",
     "addressRegion": "TX",
@@ -285,14 +287,14 @@ document.addEventListener('DOMContentLoaded', function() {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Aldine ISD Hub",
-      "item": "https://texasspecialed.com/districts/aldine-isd/"
+      "name": "{{DISTRICT_NAME}} Hub",
+      "item": "https://texasspecialed.com/districts/{{DISTRICT_SLUG}}/"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Special Education Hub",
-      "item": "https://texasspecialed.com/districts/aldine-isd/"
+      "item": "https://texasspecialed.com/districts/{{DISTRICT_SLUG}}/"
     }
   ]
 }</script>
@@ -302,13 +304,69 @@ document.addEventListener('DOMContentLoaded', function() {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What special education resources does Aldine ISD offer?",
+      "name": "What special education resources does {{DISTRICT_NAME}} offer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aldine ISD Special Education department provides ARD/IEP services, dyslexia screening, evaluation (FIE), and grievance support."
+        "text": "{{DISTRICT_NAME}} Special Education department provides ARD/IEP services, dyslexia screening, evaluation (FIE), and grievance support."
       }
     }
   ]
 }</script>
 </body>
 </html>
+"""
+
+def update_all_indexes():
+    # 1. Find all index.html files inside the districts folders
+    search_pattern = os.path.join(DISTRICTS_DIR, '*', 'index.html')
+    index_files = glob.glob(search_pattern)
+    
+    updated_count = 0
+    
+    for filepath in index_files:
+        # Skip the main directory index if it gets caught
+        if filepath == os.path.join(DISTRICTS_DIR, 'index.html'):
+            continue
+            
+        print(f"Processing {filepath}...")
+        
+        # 2. Extract the slug from the directory name (e.g. 'dallas-isd')
+        district_slug = os.path.basename(os.path.dirname(filepath))
+        
+        # 3. Read the existing file to pull the specific district data
+        with open(filepath, 'r', encoding='utf-8') as f:
+            soup = BeautifulSoup(f.read(), 'html.parser')
+            
+        # Try to find the h1 tag to get the exact District Name (e.g. "Dallas ISD")
+        h1_tag = soup.find('h1')
+        if h1_tag:
+            # Strip out " Special Education Resources" to just get the name
+            district_name = h1_tag.text.replace(" Special Education Resources", "").strip()
+        else:
+            # Fallback if h1 is missing: Format slug "dallas-isd" -> "Dallas ISD"
+            district_name = district_slug.replace('-', ' ').title()
+            district_name = district_name.replace('Isd', 'ISD').replace('Cisd', 'CISD')
+            
+        # Try to extract the unique region "cluster-links" section so it isn't lost
+        cluster_links_tag = soup.find('section', class_='cluster-links')
+        if cluster_links_tag:
+            cluster_links_html = str(cluster_links_tag)
+        else:
+            cluster_links_html = "<!-- Add Region cluster links here -->"
+            
+        # 4. Generate the new HTML using the template
+        new_html = HTML_TEMPLATE.replace('{{DISTRICT_NAME}}', district_name)
+        new_html = new_html.replace('{{DISTRICT_SLUG}}', district_slug)
+        new_html = new_html.replace('{{CLUSTER_LINKS}}', cluster_links_html)
+        
+        # 5. Write the new HTML back to the file
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(new_html)
+            
+        updated_count += 1
+        
+    print(f"\nSuccess! Updated {updated_count} district index pages.")
+
+if __name__ == "__main__":
+    # Ensure you have beautifulsoup4 installed: `pip install beautifulsoup4`
+    update_all_indexes()
