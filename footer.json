@@ -1,133 +1,54 @@
 <footer class="site-footer">
-  <div class="footer-container">
-    
-    <!-- Footer Top Section -->
-    <div class="footer-top">
-      
-      <!-- Column 1: About -->
-      <div class="footer-column">
-        <img src="/images/texasspecialed-logo.png" alt="Texas Special Ed" width="180" height="54" class="footer-logo">
-        <p class="footer-tagline">Empowering Texas families with special education resources, ARD meeting support, and district-specific guidance.</p>
-        <div class="footer-social">
-          <!-- Optional: Add social media links when ready -->
-          <!-- <a href="#" aria-label="Facebook"><svg>...</svg></a> -->
-        </div>
+   <div class="footer-container">
+      <div class="footer-about">
+         <img src="/images/texasspecialed-logo.png" alt="Texas Special Ed Logo" width="180" height="auto">
+         <p>Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
       </div>
-      
-      <!-- Column 2: Quick Links -->
-      <div class="footer-column">
-        <h3 class="footer-heading">Quick Links</h3>
-        <ul class="footer-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/districts">Browse Districts</a></li>
-          <li><a href="/resources">Free Resources</a></li>
-          <li><a href="/blog">Blog & Articles</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/contact">Contact Us</a></li>
-        </ul>
+      <div class="footer-links">
+         <h3>Quick Links</h3>
+         <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/districts/index.html">School Districts</a></li>
+            <li><a href="/resources/index.html">Free Resources</a></li>
+            <li><a href="/store/index.html">Toolkits & Guides</a></li>
+            <li><a href="/blog/index.html">Parent Blog</a></li>
+         </ul>
       </div>
-      
-      <!-- Column 3: Popular Districts -->
-      <div class="footer-column">
-        <h3 class="footer-heading">Popular Districts</h3>
-        <ul class="footer-links">
-          <li><a href="/districts/round-rock-isd">Round Rock ISD</a></li>
-          <li><a href="/districts/frisco-isd">Frisco ISD</a></li>
-          <li><a href="/districts/plano-isd">Plano ISD</a></li>
-          <li><a href="/districts/lewisville-isd">Lewisville ISD</a></li>
-          <li><a href="/districts/conroe-isd">Conroe ISD</a></li>
-          <li><a href="/districts/">View All Districts →</a></li>
-        </ul>
+      <div class="footer-links">
+         <h3>Support</h3>
+         <ul>
+            <li><a href="/about/index.html">About Us</a></li>
+            <li><a href="/contact/index.html">Contact</a></li>
+            <li><a href="/disclaimer/index.html">Disclaimer</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service">Terms of Service</a></li>
+         </ul>
       </div>
-      
-      <!-- Column 4: Resources -->
-      <div class="footer-column">
-        <h3 class="footer-heading">Free Resources</h3>
-        <ul class="footer-links">
-          <li><a href="/resources/ard-checklist.pdf" target="_blank">ARD Meeting Checklist</a></li>
-          <li><a href="/resources/evaluation-request-template.pdf">Evaluation Request Letter</a></li>
-          <li><a href="/resources/iep-goal-tracker.pdf">IEP Goal Tracker</a></li>
-          <li><a href="/resources/parent-rights-guide.pdf">Parent Rights Guide</a></li>
-        </ul>
-        
-        <h3 class="footer-heading" style="margin-top: 1.5rem;">Stay Updated</h3>
-        <form action="/subscribe" method="post" class="footer-subscribe">
-          <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
-          <button type="submit" class="button-small">Subscribe</button>
-        </form>
-      </div>
-      
-    </div>
-    
-    <!-- Footer Bottom Section -->
-    <div class="footer-bottom">
-      <div class="footer-legal">
-        <p>&copy; 2026 TexasSpecialEd.com. All rights reserved.</p>
-        <nav class="footer-legal-links">
-          <a href="/privacy-policy/">Privacy Policy</a>
-          <span class="separator">|</span>
-          <a href="/terms-of-service/">Terms of Service</a>
-          <span class="separator">|</span>
-          <a href="/disclaimer/">Disclaimer</a>
-        </nav>
-      </div>
-      
-      <div class="footer-disclaimer">
-        <p><small>This website provides educational information about special education in Texas and is not legal advice. For specific legal questions, consult a licensed special education attorney. We are not affiliated with any Texas school district or the Texas Education Agency.</small></p>
-      </div>
-    </div>
-    
-  </div>
-</footer>                                    <script>
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
+   </div>
+   <div class="footer-bottom">
+      <p>&copy; 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+   </div>
+</footer>
 
-document.querySelectorAll('.subscribe-form, .footer-subscribe').forEach(function(form) {
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    var button = form.querySelector('button[type="submit"]');
-    var email = form.querySelector('input[type="email"]').value;
-    var districtInput = form.querySelector('input[name="district"]');
-    var district = districtInput ? districtInput.value : '';
-    
-    button.disabled = true;
-    button.textContent = 'Sending...';
-    
-    fetch(GOOGLE_SCRIPT_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email, district: district })
-    })
-    .then(function() {
-      form.innerHTML = '<p style="color: green; font-weight: 600;">✓ You\'re subscribed!</p>';
-    })
-    .catch(function() {
-      button.disabled = false;
-      button.textContent = 'Subscribe';
-      alert('Something went wrong. Please try again.');
-    });
-  });
-});
-</script>
-
-<!-- Optional: Mobile Menu Toggle Script -->
 <script>
-document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
-  this.classList.toggle('active');
-  document.querySelector('.nav-menu')?.classList.toggle('active');
-  const expanded = this.getAttribute('aria-expanded') === 'true';
-  this.setAttribute('aria-expanded', !expanded);
-});
-
-// Close mobile menu when clicking outside
-document.addEventListener('click', function(event) {
-  const nav = document.querySelector('.navbar');
-  const toggle = document.querySelector('.mobile-menu-toggle');
-  if (!nav?.contains(event.target)) {
-    toggle?.classList.remove('active');
-    document.querySelector('.nav-menu')?.classList.remove('active');
-    toggle?.setAttribute('aria-expanded', 'false');
-  }
+document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const menu = document.querySelector('.nav-menu');
+    if(toggle && menu) {
+        toggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !isExpanded);
+        });
+    }
+    const dropdowns = document.querySelectorAll('.dropdown-toggle');
+    dropdowns.forEach(drop => {
+        drop.addEventListener('click', function(e) {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                this.parentElement.classList.toggle('active');
+            }
+        });
+    });
 });
 </script>
