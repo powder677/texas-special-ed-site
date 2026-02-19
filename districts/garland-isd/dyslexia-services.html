@@ -12,9 +12,10 @@
 <meta content="https://texasspecialed.com/districts/garland-isd/dyslexia-services.html" property="og:url"/>
 <meta content="article" property="og:type"/>
 <meta content="summary" name="twitter:card"/>
-
 <link href="/style.css" rel="stylesheet"/>
+
 <style>
+
   /* Base Styles */
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1e293b; background: #fff; line-height: 1.6; }
@@ -29,7 +30,7 @@
   /* Layout Containers */
   .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; min-height: 50vh; }
   
-  /* Navbar (Fixed - No longer stuck) */
+  /* Navbar */
   .site-header { background: #0f172a; padding: 14px 0; position: relative; z-index: 100; }
   .nav-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; width: 100%; }
   .nav-logo img { height: auto; width: 200px; display: block; }
@@ -106,49 +107,55 @@
     .dropdown-menu a:hover { background: #334155; color: #fff; }
     .nav-cta { margin-top: 15px; }
   }
-</style></head>
-<body><header class="site-header">
-<nav aria-label="Main navigation" class="navbar" role="navigation">
-<div class="nav-container">
-<div class="nav-logo">
-<a aria-label="Texas Special Ed Home" href="/">
-<img alt="Texas Special Ed" height="auto" src="/images/texasspecialed-logo.png" width="200"/>
-</a>
-</div>
-<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
-<span class="hamburger"></span>
-<span class="hamburger"></span>
-<span class="hamburger"></span>
-</button>
-<ul class="nav-menu">
-<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-<li class="nav-item dropdown">
-<a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
-<ul class="dropdown-menu">
-<li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
-<li class="dropdown-divider"></li>
-<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
-<li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
-<li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
-<li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
-<li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
-<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
-<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
-<li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
-<li class="dropdown-divider"></li>
-<li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
-</ul>
-</li>
-<li class="nav-item"><a class="nav-link" href="/resources/index.html">Free Resources</a></li>
-<li class="nav-item"><a class="nav-link" href="/store/index.html">Toolkits</a></li>
-<li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
-<li class="nav-item nav-cta"><a class="button-primary" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a></li>
-</ul>
-</div>
-</nav>
+
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav aria-label="Main navigation" class="navbar" role="navigation">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a aria-label="Texas Special Ed Home" href="/">
+          <img alt="Texas Special Ed" height="auto" src="/images/texasspecialed-logo.png" width="200"/>
+        </a>
+      </div>
+      <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item dropdown">
+          <a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
+            <li class="dropdown-divider"></li>
+            <li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+            <li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
+            <li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
+            <li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
+            <li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
+            <li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+            <li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+            <li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/resources/index.html">Free Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="/store/index.html">Toolkits</a></li>
+        <li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
+        <li class="nav-item nav-cta"><a class="button-primary" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
+
+
 <main class="main-container">
 <main class="container">
 <h1>Dyslexia Services in Garland ISD</h1>
@@ -157,7 +164,6 @@
 <p style="margin:0;font-size:1rem;"><strong>What are my child's dyslexia rights in Texas?</strong><br/>
   Under the <strong>Texas Dyslexia Handbook (2024 update)</strong>, all districts must screen students for dyslexia in grades K–2 and provide evidence-based intervention programs. If your child is identified, they are entitled to a structured literacy program and — if eligible — a <strong>504 Plan or IEP</strong> with accommodations like extended time and audio support.</p>
 </div>
-
 <div class="premium-offers-container">
 <div class="offers-header-badge">Targeted Reading Support</div>
 <div class="premium-offers-header">
@@ -280,6 +286,66 @@
 <p>Upon receiving your written request, the school is required to respond within a reasonable timeframe, typically within 15 school days. The school will convene a meeting to discuss your concerns and determine whether an evaluation is warranted. If the team decides to evaluate your child, you will be asked to provide written consent. The evaluation will be conducted by qualified professionals, such as educational diagnosticians, speech-language pathologists, and psychologists. The evaluation will assess your child's reading skills, as well as other areas that may be affected by dyslexia, such as phonological awareness, phonics, fluency, vocabulary, and reading comprehension.</p>
 <p>After the evaluation is completed, the team will meet again to review the results and determine whether your child has dyslexia and is eligible for special education services or a 504 plan. If your child is found to have dyslexia, the team will develop an individualized plan to address their specific needs. This plan may include specialized instruction, accommodations, and related services.</p>
 <p>Garland ISD is committed to providing appropriate services and support to students with dyslexia.  Parents are encouraged to be active participants in the evaluation and intervention process.  If you have any questions or concerns, please do not hesitate to contact your child's teacher, school principal, or the special education department.</p>
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="180"/>
+      <p style="margin-top:10px;line-height:1.6;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/districts/index.html">School Districts</a></li>
+        <li><a href="/resources/index.html">Free Resources</a></li>
+        <li><a href="/store/index.html">Toolkits &amp; Guides</a></li>
+        <li><a href="/blog/index.html">Parent Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="/about/index.html">About Us</a></li>
+        <li><a href="/contact/index.html">Contact</a></li>
+        <li><a href="/disclaimer/index.html">Disclaimer</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-of-service">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+  </div>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const menu = document.querySelector('.nav-menu');
+    
+    if(toggle && menu) {
+        toggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !isExpanded);
+        });
+    }
+
+    const dropdowns = document.querySelectorAll('.dropdown-toggle');
+    dropdowns.forEach(drop => {
+        drop.addEventListener('click', function(e) {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                this.parentElement.classList.toggle('active');
+            }
+        });
+    });
+});
+</script>
+
 </body>
 </html>
 <section class="faq-section" style="margin:50px 0;">
@@ -406,34 +472,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   ]
 }</script>
-<footer class="site-footer">
-<div class="footer-container">
-<div class="footer-about">
-<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="180"/>
-<p style="margin-top:10px;line-height:1.6;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
-</div>
-<div class="footer-links">
-<h3>Quick Links</h3>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/districts/index.html">School Districts</a></li>
-<li><a href="/resources/index.html">Free Resources</a></li>
-<li><a href="/store/index.html">Toolkits &amp; Guides</a></li>
-<li><a href="/blog/index.html">Parent Blog</a></li>
-</ul>
-</div>
-<div class="footer-links">
-<h3>Support</h3>
-<ul>
-<li><a href="/about/index.html">About Us</a></li>
-<li><a href="/contact/index.html">Contact</a></li>
-<li><a href="/disclaimer/index.html">Disclaimer</a></li>
-<li><a href="/privacy-policy">Privacy Policy</a></li>
-<li><a href="/terms-of-service">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<div class="footer-bottom">
-<p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
-</div>
-</footer></body></html>
+</body></html>

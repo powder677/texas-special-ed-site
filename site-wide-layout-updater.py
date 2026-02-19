@@ -1,5 +1,5 @@
 import os
-import glob
+import re
 from bs4 import BeautifulSoup
 
 # Define directories to scan
@@ -19,7 +19,7 @@ DISTRICT_TARGET_PAGES = [
 # '.' targets the root directory (like your main index.html)
 NON_DISTRICT_DIRS = [
     '.', 
-    'districts', # catches districts/index.html
+    'districts', 
     'about', 
     'blog', 
     'contact', 
@@ -31,7 +31,6 @@ NON_DISTRICT_DIRS = [
 ]
 
 # 1. NEW MASTER STYLES 
-# (Combined internal styles + index grid styles to prevent breaking the home page)
 NEW_CSS = """
   /* Base Styles */
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -47,7 +46,7 @@ NEW_CSS = """
   /* Layout Containers */
   .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; min-height: 50vh; }
   
-  /* Navbar (Fixed - No longer stuck) */
+  /* Navbar */
   .site-header { background: #0f172a; padding: 14px 0; position: relative; z-index: 100; }
   .nav-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; width: 100%; }
   .nav-logo img { height: auto; width: 200px; display: block; }
@@ -126,7 +125,7 @@ NEW_CSS = """
   }
 """
 
-# 2. NEW HEADER (Freed from container)
+# 2. NEW HEADER
 NEW_HEADER = """
 <header class="site-header">
   <nav aria-label="Main navigation" class="navbar" role="navigation">
@@ -172,7 +171,7 @@ NEW_HEADER = """
 </header>
 """
 
-# 3. NEW FOOTER (Tightened spacing)
+# 3. NEW FOOTER
 NEW_FOOTER = """
 <footer class="site-footer">
   <div class="footer-container">
@@ -236,47 +235,55 @@ document.addEventListener('DOMContentLoaded', function() {
 """
 
 def update_file_layout(filepath):
-    """Surgically updates the styles, nav, and footer of a single HTML file."""
+    """Safely updates styles, nav, and footer using string injection to prevent parser bugs."""
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
-            soup = BeautifulSoup(f.read(), 'html.parser')
+            html_content = f.read()
         
-        # 1. SWAP STYLES - Eradicate all existing styles to prevent conflicts
-        for old_style in soup.find_all('style'):
-            old_style.decompose()
+        # Step 1: Use BeautifulSoup ONLY to gently pluck out the old layout blocks 
+        # (This prevents accidental deletion of <main> content if tags were unclosed)
+        soup = BeautifulSoup(html_content, 'html.parser')
+        
+        # Remove old header
+        for header in soup.find_all('header'):
+            header.decompose()
             
-        new_style_element = BeautifulSoup(f"<style>{NEW_CSS}</style>", 'html.parser').find('style')
-        if soup.head and new_style_element:
-            soup.head.append(new_style_element)
+        # Also remove old standalone navs if they exist
+        for nav in soup.find_all('nav', class_='navbar'):
+            nav.decompose()
+            
+        # Remove old footer
+        for footer in soup.find_all('footer'):
+            footer.decompose()
+            
+        # Remove global <style> tags (only from inside <head> to protect body widgets)
+        if soup.head:
+            for style in soup.head.find_all('style'):
+                style.decompose()
 
-        # 2. AGGRESSIVE NAV/HEADER REMOVAL & REPLACEMENT
-        # Eradicate any existing <header> OR <nav> anywhere so they don't get stuck inside the container
-        for old_tag in soup.find_all(['header', 'nav']):
-            old_tag.decompose()
+        # Step 2: Convert the cleaned HTML back to a string 
+        clean_html = str(soup)
+
+        # Step 3: Use Regex to inject the new components perfectly 
+        # (This guarantees no serialization/escaping bugs from the parser)
         
-        # Insert the fresh, un-contained header at the very top of the <body>
-        new_header_element = BeautifulSoup(NEW_HEADER, 'html.parser').find('header')
-        if soup.body and new_header_element:
-            soup.body.insert(0, new_header_element)
+        # Inject CSS block right before closing </head>
+        css_block = f"\n<style>\n{NEW_CSS}\n</style>\n"
+        clean_html = re.sub(r'(</head>)', lambda m: css_block + m.group(1), clean_html, count=1, flags=re.IGNORECASE)
 
-        # 3. SWAP FOOTER - Eradicate old and insert new
-        for old_footer in soup.find_all('footer'):
-            old_footer.decompose()
-        
-        new_footer_element = BeautifulSoup(NEW_FOOTER, 'html.parser').find('footer')
-        if soup.body and new_footer_element:
-            soup.body.append(new_footer_element)
+        # Inject Header block right after opening <body>
+        def insert_header(match):
+            return match.group(1) + "\n" + NEW_HEADER + "\n"
+        clean_html = re.sub(r'(<body[^>]*>)', insert_header, clean_html, count=1, flags=re.IGNORECASE)
 
-        # 4. INJECT JS (if missing)
-        html_str = str(soup)
-        if 'mobile-menu-toggle' not in html_str or 'DOMContentLoaded' not in html_str:
-            js_soup = BeautifulSoup(NAV_JS, 'html.parser')
-            if soup.body:
-                soup.body.append(js_soup)
+        # Inject Footer & JS block right before closing </body>
+        def insert_footer(match):
+            return "\n" + NEW_FOOTER + "\n" + NAV_JS + "\n" + match.group(1)
+        clean_html = re.sub(r'(</body>)', insert_footer, clean_html, count=1, flags=re.IGNORECASE)
 
-        # Save the successfully manipulated file
+        # Save the successfully updated file
         with open(filepath, 'w', encoding='utf-8') as f:
-            f.write(str(soup))
+            f.write(clean_html)
             
         return True
     except Exception as e:
