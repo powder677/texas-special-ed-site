@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<<<<<<< HEAD
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -242,12 +242,36 @@
       }
    </style>
     <link rel="stylesheet" href="/style.css">
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Texas Special Education Resources</title>
+    <meta name="description" content="Get in touch with Texas Special Education Resources. Have questions about the ARD process or need help finding district resources?">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .contact-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .contact-header { text-align: center; margin-bottom: 2rem; }
+        .contact-header h1 { color: var(--primary-color); font-size: 2.5rem; }
+        .contact-info { text-align: center; font-size: 1.1rem; color: var(--text-light); }
+        .contact-email { display: inline-block; margin-top: 1.5rem; font-size: 1.2rem; font-weight: bold; color: var(--primary-color); }
+    </style>
+>>>>>>> 828ccde0c91f3580c6d9c03c03705339b41b3c76
 </head>
-
 <body>
 
+<<<<<<< HEAD
    <header class="site-header">
       <nav class="navbar" role="navigation" aria-label="Main navigation">
+=======
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+>>>>>>> 828ccde0c91f3580c6d9c03c03705339b41b3c76
    <div class="nav-container">
       <div class="nav-logo">
          <a href="/" aria-label="Texas Special Ed Home">
@@ -287,61 +311,75 @@
       </ul>
    </div>
 </nav>
+<<<<<<< HEAD
    </header>
+=======
+>>>>>>> 828ccde0c91f3580c6d9c03c03705339b41b3c76
 
+<main class="contact-container">
+    <div class="contact-header">
+        <h1>Contact Us</h1>
+        <p class="contact-info">Have questions about navigating the Texas Special Education system? We're here to help.</p>
+        <p><i>Note: We are not a law firm and cannot provide legal advice.</i></p>
+        
+        <a href="mailto:support@texasspecialedresources.com" class="contact-email">support@texasspecialedresources.com</a>
+    </div>
+</main>
 
-   <main>
-      <nav aria-label="breadcrumb" class="breadcrumb">
-         <div class="container">
-            <a href="/">Home</a> ›
-            <span>Contact</span>
-         </div>
-      </nav>
+<footer class="site-footer">
+   <div class="footer-container">
+      <div class="footer-about">
+         <img src="/images/texasspecialed-logo.png" alt="Texas Special Ed Logo" width="180" height="auto">
+         <p>Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+      </div>
+      <div class="footer-links">
+         <h3>Quick Links</h3>
+         <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/districts/index.html">School Districts</a></li>
+            <li><a href="/resources/index.html">Free Resources</a></li>
+            <li><a href="/store/index.html">Toolkits & Guides</a></li>
+            <li><a href="/blog/index.html">Parent Blog</a></li>
+         </ul>
+      </div>
+      <div class="footer-links">
+         <h3>Support</h3>
+         <ul>
+            <li><a href="/about/index.html">About Us</a></li>
+            <li><a href="/contact/index.html">Contact</a></li>
+            <li><a href="/disclaimer/index.html">Disclaimer</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service">Terms of Service</a></li>
+         </ul>
+      </div>
+   </div>
+   <div class="footer-bottom">
+      <p>&copy; 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+   </div>
+</footer>
 
-      <section class="contact-hero">
-         <div class="container">
-            <h1>Contact Us</h1>
-            <p class="lead">Have a question, found an error, or want to request a new district? We'd love to hear from you.</p>
-         </div>
-      </section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    const menu = document.querySelector('.nav-menu');
+    if(toggle && menu) {
+        toggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !isExpanded);
+        });
+    }
+    const dropdowns = document.querySelectorAll('.dropdown-toggle');
+    dropdowns.forEach(drop => {
+        drop.addEventListener('click', function(e) {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                this.parentElement.classList.toggle('active');
+            }
+        });
+    });
+});
+</script>
 
-      <section>
-         <div class="container">
-            <div class="contact-layout">
-               <div class="contact-form-section">
-                  <h2>Send Us a Message</h2>
-                  <p>Fill out the form below and we'll get back to you as soon as possible.</p>
-
-                  <form action="/contact/submit" method="post" class="contact-form">
-                     <div class="form-group">
-                        <label for="name">Your Name <span style="color: #c8102e;">*</span></label>
-                        <input type="text" id="name" name="name" required placeholder="First and last name">
-                     </div>
-
-                     <div class="form-group">
-                        <label for="email">Email Address <span style="color: #c8102e;">*</span></label>
-                        <input type="email" id="email" name="email" required placeholder="you@example.com">
-                     </div>
-
-                     <div class="form-group">
-                        <label for="subject">What is this about? <span style="color: #c8102e;">*</span></label>
-                        <select id="subject" name="subject" required>
-                           <option value="" disabled selected>Select a topic</option>
-                           <option value="question">General Question</option>
-                           <option value="district-request">Request a New District</option>
-                           <option value="correction">Report an Error or Outdated Information</option>
-                           <option value="partnership">Partnership or Media Inquiry</option>
-                           <option value="feedback">Feedback or Suggestion</option>
-                           <option value="other">Other</option>
-                        </select>
-                     </div>
-
-                     <div class="form-group">
-                        <label for="district">Which district is this about? (optional)</label>
-                        <input type="text" id="district" name="district" placeholder="e.g., Frisco ISD">
-                        <span class="hint">Leave blank if your message is not about a specific district.</span>
-                     </div>
-
-                     <div class="form-group">
-                        <label for="message">Your Message <span style="color: #c8102e;">*</span></label>
-                        <textarea id="message" name="message" required placeholder="Tell us how we can help...">
+</body>
+</html>
