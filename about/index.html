@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>About TexasSpecialEd.com | Building Clarity in Texas Special Education</title>
@@ -117,6 +118,284 @@
          border-color: #002868;
       }
    </style>
+=======
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About TexasSpecialEd.com | Building Clarity in Texas Special Education</title>
+  <meta name="description" content="TexasSpecialEd.com is a district-specific resource for Texas families. We help parents understand evaluations, ARD meetings, and IEPs using clear language grounded in local policy." />
+  <link rel="canonical" href="https://www.texasspecialed.com/about" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About TexasSpecialEd.com",
+    "description": "TexasSpecialEd.com is a district-specific resource for Texas families navigating special education.",
+    "url": "https://www.texasspecialed.com/about",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Texas Special Ed",
+      "url": "https://texasspecialed.com",
+      "areaServed": { "@type": "State", "name": "Texas" }
+    }
+  }
+  </script>
+
+  <style>
+    /* =========================================
+       VARIABLES & RESET
+    ========================================= */
+    :root {
+      --primary: #0a3d6b;
+      --primary-light: #1560a8;
+      --accent: #e8822a;
+      --accent-hover: #c96e1e;
+      --bg: #f5f7fa;
+      --white: #ffffff;
+      --text: #1e2530;
+      --text-muted: #5a6472;
+      --border: #dde3eb;
+      --card-shadow: 0 2px 16px rgba(10,61,107,0.08);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    main { flex: 1; }
+
+    /* =========================================
+       NAV
+    ========================================= */
+    .site-header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 9999; }
+    .navbar { width: 100%; }
+    .nav-container { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0.75rem 1.5rem; }
+    .nav-logo img { display: block; }
+    .nav-menu { display: flex; list-style: none; align-items: center; gap: 1.5rem; }
+    .nav-link { color: var(--text); font-weight: 500; font-size: 0.95rem; padding: 0.4rem 0; transition: color 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--primary-light); }
+    .dropdown { position: relative; }
+    .dropdown-arrow { font-size: 0.65rem; margin-left: 2px; }
+    .dropdown-menu { display: none; position: absolute; top: calc(100% + 8px); left: 0; background: var(--white); min-width: 260px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); border-radius: 6px; list-style: none; padding: 0.5rem 0; border: 1px solid var(--border); }
+    .dropdown:hover .dropdown-menu { display: block; }
+    .dropdown-menu a { display: block; padding: 0.5rem 1.25rem; font-size: 0.9rem; color: var(--text); transition: background 0.15s; }
+    .dropdown-menu a:hover { background: var(--bg); color: var(--primary-light); }
+    .dropdown-divider { height: 1px; background: var(--border); margin: 0.4rem 0; }
+    .view-all-link { font-weight: 600; color: var(--primary-light) !important; }
+    .button-primary { background: var(--accent); color: #fff !important; padding: 0.55rem 1.15rem; border-radius: 5px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s, transform 0.1s; display: inline-block; }
+    .button-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .mobile-menu-toggle { display: none; background: transparent; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 0.4rem; }
+    .hamburger { width: 24px; height: 2.5px; background: var(--primary); border-radius: 2px; display: block; }
+
+    /* =========================================
+       BREADCRUMB
+    ========================================= */
+    .breadcrumb { background: var(--white); border-bottom: 1px solid var(--border); padding: 0.6rem 1.5rem; font-size: 0.85rem; color: var(--text-muted); }
+    .breadcrumb-inner { max-width: 1200px; margin: 0 auto; }
+    .breadcrumb a { color: var(--primary-light); }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* =========================================
+       HERO
+    ========================================= */
+    .about-hero {
+      background: linear-gradient(135deg, #0a3d6b 0%, #1560a8 100%);
+      color: #fff;
+      padding: 4.5rem 1.5rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .about-hero-inner { position: relative; max-width: 720px; margin: 0 auto; }
+    .about-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.85rem;
+    }
+    .about-hero p { color: rgba(255,255,255,0.88); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+
+    /* =========================================
+       MISSION SECTION
+    ========================================= */
+    .mission-section { padding: 4.5rem 1.5rem; }
+    .mission-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.65rem;
+    }
+    .mission-inner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--primary);
+      margin-bottom: 1.25rem;
+    }
+    .mission-inner > p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 780px;
+      line-height: 1.8;
+      margin-bottom: 2.75rem;
+    }
+
+    /* Coverage cards */
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .coverage-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.75rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .coverage-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--primary-light));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .coverage-card:hover::before { transform: scaleX(1); }
+    .coverage-card:hover { box-shadow: var(--card-shadow); transform: translateY(-3px); }
+    .coverage-icon {
+      width: 42px; height: 42px;
+      background: linear-gradient(135deg, #eef3fa, #dce8f7);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .coverage-card h3 { font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; }
+    .coverage-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; }
+
+    /* =========================================
+       DISTRICT PILLS SECTION
+    ========================================= */
+    .districts-section { background: var(--white); padding: 4.5rem 1.5rem; border-top: 1px solid var(--border); }
+    .districts-inner { max-width: 1200px; margin: 0 auto; }
+    .districts-inner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .districts-inner > p { color: var(--text-muted); font-size: 1rem; margin-bottom: 1.75rem; }
+    .district-pills { display: flex; flex-wrap: wrap; gap: 0.65rem; }
+    .district-pill {
+      padding: 0.45rem 1.1rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      color: var(--primary);
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .district-pill:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .view-all-pill {
+      padding: 0.45rem 1.1rem;
+      background: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: 50px;
+      color: #fff;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .view-all-pill:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+
+    /* =========================================
+       NEWSLETTER
+    ========================================= */
+    .newsletter-section {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      padding: 4rem 1.5rem;
+      text-align: center;
+      color: #fff;
+    }
+    .newsletter-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      margin-bottom: 0.7rem;
+    }
+    .newsletter-section p { color: rgba(255,255,255,0.85); margin-bottom: 1.75rem; font-size: 1rem; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .newsletter-form { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; max-width: 480px; margin: 0 auto; }
+    .newsletter-form input[type="email"] { flex: 1; min-width: 200px; padding: 0.8rem 1.1rem; border: none; border-radius: 6px; font-size: 0.95rem; font-family: 'DM Sans', sans-serif; outline: none; color: var(--text); }
+    .newsletter-form button { background: var(--accent); color: #fff; border: none; padding: 0.8rem 1.6rem; border-radius: 6px; font-weight: 700; font-size: 0.95rem; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; }
+    .newsletter-form button:hover { background: var(--accent-hover); }
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+    .site-footer { background: #111820; color: #fff; padding: 4rem 1.5rem 1.5rem; }
+    .footer-container { max-width: 1200px; margin: 0 auto 2.5rem; display: grid; grid-template-columns: 2.2fr 1fr 1fr 1fr; gap: 3rem; }
+    .footer-about img { background: #fff; padding: 0.5rem 0.75rem; border-radius: 6px; margin-bottom: 1rem; }
+    .footer-about p { color: #8fa3b8; font-size: 0.9rem; line-height: 1.7; max-width: 320px; }
+    .footer-col h3 { font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 0.65rem; }
+    .footer-col a { color: #8fa3b8; font-size: 0.9rem; transition: color 0.15s; }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom { max-width: 1200px; margin: 0 auto; text-align: center; padding-top: 1.5rem; border-top: 1px solid #1e2c3a; color: #4a6070; font-size: 0.82rem; }
+
+    /* =========================================
+       RESPONSIVE
+    ========================================= */
+    @media (max-width: 900px) {
+      .mobile-menu-toggle { display: flex; }
+      .nav-menu { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: var(--white); box-shadow: 0 6px 16px rgba(0,0,0,0.1); padding: 1rem 0; gap: 0; align-items: flex-start; }
+      .nav-menu.active { display: flex; }
+      .nav-item { width: 100%; }
+      .nav-link { display: block; padding: 0.85rem 1.5rem; border-bottom: 1px solid var(--bg); }
+      .dropdown-menu { display: none !important; position: static; box-shadow: none; border: none; background: #f0f5fc; }
+      .dropdown.active .dropdown-menu { display: block !important; }
+      .nav-cta { padding: 1rem 1.5rem; }
+      .button-primary { display: block; text-align: center; }
+      .footer-container { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .footer-about { grid-column: 1 / -1; }
+    }
+    @media (max-width: 560px) {
+      .footer-container { grid-template-columns: 1fr; }
+      .coverage-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+>>>>>>> b536b9da838985714ddef8846d534a1accc954a1
 </head>
 
 <body>
@@ -138,6 +417,7 @@
       </nav>
    </header>
 
+<<<<<<< HEAD
    <main>
       <section class="about-hero">
          <div class="container">
@@ -202,6 +482,208 @@
          <p>© 2026 TexasSpecialEd.com. All rights reserved. Not affiliated with the TEA or any school district.</p>
       </div>
    </footer>
+=======
+<!-- ========== NAV ========== -->
+<header class="site-header">
+  <nav aria-label="Main navigation" class="navbar" role="navigation">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a aria-label="Texas Special Ed Home" href="/">
+          <img alt="Texas Special Ed" height="auto" src="/images/texasspecialed-logo.png" width="200"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <span style="display:none; font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:800; color:#0a3d6b;">Texas Special Ed</span>
+        </a>
+      </div>
+      <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item dropdown">
+          <a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">&#9660;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
+            <li class="dropdown-divider"></li>
+            <li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+            <li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
+            <li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
+            <li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
+            <li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
+            <li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+            <li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+            <li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="view-all-link" href="/districts/index.html">View All 20+ Districts &#8594;</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="/resources/index.html">Free Resources</a></li>
+        <li class="nav-item"><a class="nav-link" href="/store/index.html">Toolkits</a></li>
+        <li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/about/index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
+        <li class="nav-item nav-cta"><a class="button-primary" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- BREADCRUMB -->
+  <nav aria-label="breadcrumb" class="breadcrumb">
+    <div class="breadcrumb-inner">
+      <a href="/">Home</a> &rsaquo; <span>About</span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="about-hero">
+    <div class="about-hero-inner">
+      <h1>Building Clarity in Texas Special Education</h1>
+      <p>Empowering families with district-specific guidance to navigate the ARD process with confidence.</p>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission-section">
+    <div class="mission-inner">
+      <span class="section-label">Our Mission</span>
+      <h2>Bridging the Gap Between Law and Practice</h2>
+      <p>Texas has more than 1,200 school districts, and while federal law provides the framework, your day-to-day experience is shaped by local implementation. <strong>TexasSpecialEd.com</strong> was created to bridge the gap between complex legal manuals and the practical information families need at the kitchen table.</p>
+
+      <div class="coverage-grid">
+        <div class="coverage-card">
+          <div class="coverage-icon">🔍</div>
+          <h3>Evaluations</h3>
+          <p>Clear steps for requesting a Full Individual Initial Evaluation (FIIE) and tracking district-specific timelines.</p>
+        </div>
+        <div class="coverage-card">
+          <div class="coverage-icon">📋</div>
+          <h3>ARD Meetings</h3>
+          <p>Practical advice on preparing for meetings and advocating effectively for your child's unique needs.</p>
+        </div>
+        <div class="coverage-card">
+          <div class="coverage-icon">📞</div>
+          <h3>Local Leadership</h3>
+          <p>Connecting you with the special education directors and decision-makers in your specific district.</p>
+        </div>
+        <div class="coverage-card">
+          <div class="coverage-icon">⚖️</div>
+          <h3>Parent Rights</h3>
+          <p>Plain-language guides to your rights under IDEA and Texas law, from consent to due process and beyond.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISTRICTS -->
+  <section class="districts-section">
+    <div class="districts-inner">
+      <span class="section-label">Coverage</span>
+      <h2>Districts We Currently Cover</h2>
+      <p>We provide localized resources for major districts across Texas, including:</p>
+      <div class="district-pills">
+        <a class="district-pill" href="/districts/round-rock-isd/index.html">Round Rock ISD</a>
+        <a class="district-pill" href="/districts/frisco-isd/index.html">Frisco ISD</a>
+        <a class="district-pill" href="/districts/plano-isd/index.html">Plano ISD</a>
+        <a class="district-pill" href="/districts/lewisville-isd/index.html">Lewisville ISD</a>
+        <a class="district-pill" href="/districts/conroe-isd/index.html">Conroe ISD</a>
+        <a class="district-pill" href="/districts/katy-isd/index.html">Katy ISD</a>
+        <a class="district-pill" href="/districts/humble-isd/index.html">Humble ISD</a>
+        <a class="district-pill" href="/districts/aldine-isd/index.html">Aldine ISD</a>
+        <a class="district-pill" href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a>
+        <a class="district-pill" href="/districts/houston-isd/index.html">Houston ISD</a>
+        <a class="district-pill" href="/districts/dallas-isd/index.html">Dallas ISD</a>
+        <a class="district-pill" href="/districts/austin-isd/index.html">Austin ISD</a>
+        <a class="view-all-pill" href="/districts/index.html">View All Districts &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <h2>Stay Informed</h2>
+    <p>Get district updates and special education guides delivered to your inbox. No spam — just practical information for Texas parents.</p>
+    <form class="newsletter-form" action="/subscribe" method="post">
+      <input type="email" name="email" placeholder="Your email address" required aria-label="Email address" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      <span style="display:none; font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:800; color:#fff;">Texas Special Ed</span>
+      <p style="margin-top:0.75rem;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/districts/index.html">Browse Districts</a></li>
+        <li><a href="/resources/index.html">Free Resources</a></li>
+        <li><a href="/blog/index.html">Blog &amp; Articles</a></li>
+        <li><a href="/about/index.html">About Us</a></li>
+        <li><a href="/contact/index.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Popular Districts</h3>
+      <ul>
+        <li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
+        <li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+        <li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+        <li><a href="/districts/lewisville-isd/index.html">Lewisville ISD</a></li>
+        <li><a href="/districts/conroe-isd/index.html">Conroe ISD</a></li>
+        <li><a href="/districts/index.html">View All Districts &#8594;</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Free Resources</h3>
+      <ul>
+        <li><a href="/resources/ard-checklist.pdf" target="_blank">ARD Meeting Checklist</a></li>
+        <li><a href="/resources/evaluation-request-letter.pdf" target="_blank">Evaluation Request Letter</a></li>
+        <li><a href="/resources/iep-goal-tracker.pdf" target="_blank">IEP Goal Tracker</a></li>
+        <li><a href="/resources/parent-rights-guide.pdf" target="_blank">Parent Rights Guide</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&#169; 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+  </div>
+</footer>
+
+<!-- ========== MOBILE NAV JS ========== -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var toggle = document.querySelector('.mobile-menu-toggle');
+  var menu = document.querySelector('.nav-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', function () {
+      menu.classList.toggle('active');
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+    });
+  }
+  document.querySelectorAll('.dropdown-toggle').forEach(function (drop) {
+    drop.addEventListener('click', function (e) {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      }
+    });
+  });
+});
+</script>
+
+>>>>>>> b536b9da838985714ddef8846d534a1accc954a1
 </body>
 
 </html>
