@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Special Education Toolkits & Store | Texas Special Education Resources</title>
-  <meta name="description" content="Navigate ARD meetings, IEP processes, and special education services with confidence in Texas." />
+  <title>Special Education Toolkits & Guides | Texas Special Education Resources</title>
+  <meta name="description" content="Premium Texas special education toolkits for parents. In-depth ARD preparation guides, IEP advocacy bundles, and district-specific resources to help you advocate effectively." />
+  <link rel="canonical" href="https://www.texasspecialed.com/store" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
-    /* =========================================
-       VARIABLES & RESET
-    ========================================= */
     :root {
       --primary: #0a3d6b;
       --primary-light: #1560a8;
@@ -23,193 +21,222 @@
       --text-muted: #5a6472;
       --border: #dde3eb;
       --card-shadow: 0 2px 16px rgba(10,61,107,0.08);
+      --green: #2e7d32;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; display: flex; flex-direction: column; min-height: 100vh; }
     a { text-decoration: none; color: inherit; }
     img { max-width: 100%; display: block; }
     main { flex: 1; }
 
-    /* =========================================
-       NAV
-    ========================================= */
-    .site-header {
-      background: var(--white);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-      position: sticky;
-      top: 0;
-      z-index: 9999;
-    }
+    /* NAV */
+    .site-header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.07); position: sticky; top: 0; z-index: 9999; }
     .navbar { width: 100%; }
-    .nav-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0.75rem 1.5rem;
-    }
+    .nav-container { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0.75rem 1.5rem; }
     .nav-logo img { display: block; }
-    .nav-menu {
-      display: flex;
-      list-style: none;
-      align-items: center;
-      gap: 1.5rem;
-    }
-    .nav-link {
-      color: var(--text);
-      font-weight: 500;
-      font-size: 0.95rem;
-      padding: 0.4rem 0;
-      transition: color 0.2s;
-    }
-    .nav-link:hover { color: var(--primary-light); }
+    .nav-menu { display: flex; list-style: none; align-items: center; gap: 1.5rem; }
+    .nav-link { color: var(--text); font-weight: 500; font-size: 0.95rem; padding: 0.4rem 0; transition: color 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--primary-light); }
     .dropdown { position: relative; }
     .dropdown-arrow { font-size: 0.65rem; margin-left: 2px; }
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: calc(100% + 8px);
-      left: 0;
-      background: var(--white);
-      min-width: 260px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-      border-radius: 6px;
-      list-style: none;
-      padding: 0.5rem 0;
-      border: 1px solid var(--border);
-    }
+    .dropdown-menu { display: none; position: absolute; top: calc(100% + 8px); left: 0; background: var(--white); min-width: 260px; box-shadow: 0 8px 24px rgba(0,0,0,0.12); border-radius: 6px; list-style: none; padding: 0.5rem 0; border: 1px solid var(--border); }
     .dropdown:hover .dropdown-menu { display: block; }
-    .dropdown-menu a {
-      display: block;
-      padding: 0.5rem 1.25rem;
-      font-size: 0.9rem;
-      color: var(--text);
-      transition: background 0.15s;
-    }
+    .dropdown-menu a { display: block; padding: 0.5rem 1.25rem; font-size: 0.9rem; color: var(--text); transition: background 0.15s; }
     .dropdown-menu a:hover { background: var(--bg); color: var(--primary-light); }
     .dropdown-divider { height: 1px; background: var(--border); margin: 0.4rem 0; }
     .view-all-link { font-weight: 600; color: var(--primary-light) !important; }
-    .button-primary {
-      background: var(--accent);
-      color: #fff !important;
-      padding: 0.55rem 1.15rem;
-      border-radius: 5px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      transition: background 0.2s, transform 0.1s;
-    }
+    .button-primary { background: var(--accent); color: #fff !important; padding: 0.55rem 1.15rem; border-radius: 5px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s, transform 0.1s; display: inline-block; }
     .button-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
-    .mobile-menu-toggle {
-      display: none;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      flex-direction: column;
-      gap: 5px;
-      padding: 0.4rem;
-    }
+    .mobile-menu-toggle { display: none; background: transparent; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 0.4rem; }
     .hamburger { width: 24px; height: 2.5px; background: var(--primary); border-radius: 2px; display: block; }
 
-    /* =========================================
-       SECTION SHARED (For Pages)
-    ========================================= */
-    .section { padding: 4.5rem 1.5rem; }
-    .section-alt { background: var(--white); }
-    .section-inner { max-width: 1200px; margin: 0 auto; }
-    .page-header { text-align: center; margin-bottom: 2.5rem; }
-    .page-header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      color: var(--primary);
-      margin-bottom: 0.6rem;
+    /* BREADCRUMB */
+    .breadcrumb { background: var(--white); border-bottom: 1px solid var(--border); padding: 0.6rem 1.5rem; font-size: 0.85rem; color: var(--text-muted); }
+    .breadcrumb-inner { max-width: 1200px; margin: 0 auto; }
+    .breadcrumb a { color: var(--primary-light); }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* HERO */
+    .page-hero {
+      background: linear-gradient(135deg, #0a3d6b 0%, #1560a8 100%);
+      color: #fff;
+      padding: 4.5rem 1.5rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
     }
-    .page-content-box {
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .page-hero-inner { position: relative; max-width: 680px; margin: 0 auto; }
+    .hero-badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #fff; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 50px; margin-bottom: 1.1rem; }
+    .page-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 800; color: #fff; margin-bottom: 0.85rem; }
+    .page-hero p { color: rgba(255,255,255,0.88); font-size: 1.05rem; max-width: 560px; margin: 0 auto; }
+
+    /* TRUST BAR */
+    .trust-bar { background: var(--white); border-bottom: 1px solid var(--border); padding: 1rem 1.5rem; }
+    .trust-bar-inner { max-width: 1200px; margin: 0 auto; display: flex; gap: 2.5rem; justify-content: center; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; color: var(--text-muted); font-weight: 500; }
+    .trust-item span:first-child { font-size: 1.1rem; }
+
+    /* PRODUCT GRID */
+    .store-section { padding: 4rem 1.5rem; }
+    .store-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.65rem; }
+    .store-inner > h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 3vw, 2rem); color: var(--primary); margin-bottom: 0.5rem; }
+    .store-inner > p { color: var(--text-muted); font-size: 1rem; margin-bottom: 2.5rem; }
+
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.75rem; }
+
+    .product-card {
       background: var(--white);
-      padding: 3rem;
-      border-radius: 10px;
       border: 1px solid var(--border);
-      box-shadow: var(--card-shadow);
-      min-height: 400px;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+      position: relative;
     }
-    .page-content-box h2 {
-      color: var(--primary-light);
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
+    .product-card:hover { box-shadow: 0 10px 32px rgba(10,61,107,0.14); transform: translateY(-3px); border-color: var(--primary-light); }
+
+    .product-badge {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.7rem;
+      border-radius: 50px;
+      z-index: 1;
+    }
+    .product-badge.featured { background: var(--primary); }
+    .product-badge.free { background: var(--green); }
+
+    .product-img {
+      background: linear-gradient(135deg, #eef3fa 0%, #dce8f7 100%);
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      flex-shrink: 0;
     }
 
-    /* =========================================
-       FOOTER
-    ========================================= */
-    .site-footer {
-      background: #111820;
+    .product-body { padding: 1.5rem 1.5rem 1.4rem; display: flex; flex-direction: column; flex: 1; }
+    .product-body h3 { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; line-height: 1.3; }
+    .product-body p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1rem; flex: 1; }
+
+    .product-includes { list-style: none; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.35rem; }
+    .product-includes li { font-size: 0.85rem; color: var(--text-muted); display: flex; align-items: flex-start; gap: 0.5rem; }
+    .product-includes li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; margin-top: 0.05rem; }
+
+    .product-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--border); }
+    .product-price { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 800; color: var(--primary); line-height: 1; }
+    .product-price small { display: block; font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 500; color: var(--text-muted); margin-top: 0.15rem; }
+    .product-price.free-price { color: var(--green); font-size: 1.3rem; }
+
+    .btn-buy {
+      background: var(--accent);
       color: #fff;
-      padding: 4rem 1.5rem 1.5rem;
-      margin-top: auto;
-    }
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto 2.5rem;
-      display: grid;
-      grid-template-columns: 2.2fr 1fr 1fr 1fr;
-      gap: 3rem;
-    }
-    .footer-about img {
-      background: #fff;
-      padding: 0.5rem 0.75rem;
+      padding: 0.65rem 1.3rem;
       border-radius: 6px;
-      margin-bottom: 1rem;
-    }
-    .footer-about p { color: #8fa3b8; font-size: 0.9rem; line-height: 1.7; max-width: 320px; }
-    .footer-col h3 {
-      font-size: 0.9rem;
       font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1rem;
+      font-size: 0.88rem;
+      transition: background 0.2s, transform 0.15s;
+      white-space: nowrap;
     }
+    .btn-buy:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-buy.btn-secondary { background: var(--primary); }
+    .btn-buy.btn-secondary:hover { background: var(--primary-light); }
+    .btn-buy.btn-free { background: var(--green); }
+    .btn-buy.btn-free:hover { background: #1b5e20; }
+
+    /* BUNDLE CALLOUT */
+    .bundle-section { background: var(--white); border-top: 1px solid var(--border); padding: 4rem 1.5rem; }
+    .bundle-inner { max-width: 1200px; margin: 0 auto; }
+    .bundle-card {
+      background: linear-gradient(135deg, #0a3d6b 0%, #1560a8 100%);
+      border-radius: 14px;
+      padding: 3rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .bundle-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .bundle-text { position: relative; }
+    .bundle-label { display: inline-block; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.25rem 0.8rem; border-radius: 50px; margin-bottom: 0.9rem; }
+    .bundle-text h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 0.6rem; }
+    .bundle-text p { color: rgba(255,255,255,0.85); font-size: 0.95rem; max-width: 500px; margin-bottom: 0; }
+    .bundle-price-wrap { position: relative; text-align: center; flex-shrink: 0; }
+    .bundle-price { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 800; line-height: 1; }
+    .bundle-price-orig { font-size: 1rem; color: rgba(255,255,255,0.6); text-decoration: line-through; margin-bottom: 0.25rem; }
+    .bundle-savings { background: var(--accent); color: #fff; font-size: 0.78rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 50px; margin: 0.5rem auto 1.25rem; display: inline-block; }
+    .btn-bundle {
+      background: var(--accent);
+      color: #fff;
+      padding: 0.85rem 2rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-block;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 4px 20px rgba(232,130,42,0.4);
+    }
+    .btn-bundle:hover { background: var(--accent-hover); transform: translateY(-2px); }
+
+    /* FAQ */
+    .faq-section { padding: 4rem 1.5rem; }
+    .faq-inner { max-width: 760px; margin: 0 auto; }
+    .faq-inner h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.4rem, 3vw, 1.9rem); color: var(--primary); margin-bottom: 2rem; text-align: center; }
+    .faq-item { background: var(--white); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 0.75rem; overflow: hidden; }
+    .faq-q { width: 100%; background: none; border: none; padding: 1.1rem 1.4rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 0.97rem; font-weight: 600; color: var(--primary); text-align: left; gap: 1rem; }
+    .faq-q svg { flex-shrink: 0; transition: transform 0.25s; }
+    .faq-item.open .faq-q svg { transform: rotate(180deg); }
+    .faq-a { display: none; padding: 0 1.4rem 1.2rem; font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* NEWSLETTER */
+    .newsletter-section { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); padding: 4rem 1.5rem; text-align: center; color: #fff; }
+    .newsletter-section h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 3vw, 2.1rem); margin-bottom: 0.7rem; }
+    .newsletter-section p { color: rgba(255,255,255,0.85); margin-bottom: 1.75rem; font-size: 1rem; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .newsletter-form { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; max-width: 480px; margin: 0 auto; }
+    .newsletter-form input[type="email"] { flex: 1; min-width: 200px; padding: 0.8rem 1.1rem; border: none; border-radius: 6px; font-size: 0.95rem; font-family: 'DM Sans', sans-serif; outline: none; color: var(--text); }
+    .newsletter-form button { background: var(--accent); color: #fff; border: none; padding: 0.8rem 1.6rem; border-radius: 6px; font-weight: 700; font-size: 0.95rem; cursor: pointer; font-family: 'DM Sans', sans-serif; transition: background 0.2s; }
+    .newsletter-form button:hover { background: var(--accent-hover); }
+
+    /* FOOTER */
+    .site-footer { background: #111820; color: #fff; padding: 4rem 1.5rem 1.5rem; }
+    .footer-container { max-width: 1200px; margin: 0 auto 2.5rem; display: grid; grid-template-columns: 2.2fr 1fr 1fr 1fr; gap: 3rem; }
+    .footer-about img { background: #fff; padding: 0.5rem 0.75rem; border-radius: 6px; margin-bottom: 1rem; }
+    .footer-about p { color: #8fa3b8; font-size: 0.9rem; line-height: 1.7; max-width: 320px; }
+    .footer-col h3 { font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
     .footer-col ul { list-style: none; }
     .footer-col ul li { margin-bottom: 0.65rem; }
     .footer-col a { color: #8fa3b8; font-size: 0.9rem; transition: color 0.15s; }
     .footer-col a:hover { color: #fff; }
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-      padding-top: 1.5rem;
-      border-top: 1px solid #1e2c3a;
-      color: #4a6070;
-      font-size: 0.82rem;
-    }
+    .footer-bottom { max-width: 1200px; margin: 0 auto; text-align: center; padding-top: 1.5rem; border-top: 1px solid #1e2c3a; color: #4a6070; font-size: 0.82rem; }
 
-    /* =========================================
-       RESPONSIVE
-    ========================================= */
+    /* RESPONSIVE */
     @media (max-width: 900px) {
       .mobile-menu-toggle { display: flex; }
-      .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: var(--white);
-        box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-        padding: 1rem 0;
-        gap: 0;
-        align-items: flex-start;
-      }
+      .nav-menu { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: var(--white); box-shadow: 0 6px 16px rgba(0,0,0,0.1); padding: 1rem 0; gap: 0; align-items: flex-start; }
       .nav-menu.active { display: flex; }
       .nav-item { width: 100%; }
       .nav-link { display: block; padding: 0.85rem 1.5rem; border-bottom: 1px solid var(--bg); }
@@ -219,15 +246,19 @@
       .button-primary { display: block; text-align: center; }
       .footer-container { grid-template-columns: 1fr 1fr; gap: 2rem; }
       .footer-about { grid-column: 1 / -1; }
-      .page-content-box { padding: 1.5rem; }
+      .bundle-card { grid-template-columns: 1fr; text-align: center; }
+      .bundle-text p { margin: 0 auto; }
     }
     @media (max-width: 560px) {
       .footer-container { grid-template-columns: 1fr; }
+      .product-grid { grid-template-columns: 1fr; }
+      .trust-bar-inner { gap: 1.25rem; justify-content: flex-start; }
     }
   </style>
 </head>
 <body>
 
+<!-- NAV -->
 <header class="site-header">
   <nav aria-label="Main navigation" class="navbar" role="navigation">
     <div class="nav-container">
@@ -246,9 +277,7 @@
       <ul class="nav-menu">
         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
         <li class="nav-item dropdown">
-          <a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">
-            Districts <span class="dropdown-arrow">&#9660;</span>
-          </a>
+          <a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">&#9660;</span></a>
           <ul class="dropdown-menu">
             <li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
             <li class="dropdown-divider"></li>
@@ -265,13 +294,11 @@
           </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="/resources/index.html">Free Resources</a></li>
-        <li class="nav-item"><a class="nav-link" href="/store/index.html">Toolkits</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/store/index.html">Toolkits</a></li>
         <li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
-        <li class="nav-item nav-cta">
-          <a class="button-primary" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
-        </li>
+        <li class="nav-item nav-cta"><a class="button-primary" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a></li>
       </ul>
     </div>
   </nav>
@@ -279,20 +306,206 @@
 
 <main>
 
-    <section class="section">
-      <div class="section-inner">
-        <div class="page-header">
-          <h1>Special Education Toolkits & Store</h1>
+  <!-- BREADCRUMB -->
+  <nav aria-label="breadcrumb" class="breadcrumb">
+    <div class="breadcrumb-inner">
+      <a href="/">Home</a> &rsaquo; <span>Toolkits &amp; Guides</span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="hero-badge">Texas-Specific Advocacy Tools</span>
+      <h1>Toolkits &amp; Guides for Texas Parents</h1>
+      <p>In-depth resources that go beyond the basics — written specifically for Texas law, timelines, and terminology.</p>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item"><span>🔒</span><span>Secure checkout via Stripe</span></div>
+      <div class="trust-item"><span>📥</span><span>Instant PDF download</span></div>
+      <div class="trust-item"><span>♻️</span><span>Free updates included</span></div>
+      <div class="trust-item"><span>✅</span><span>Texas law &amp; IDEA aligned</span></div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="store-section">
+    <div class="store-inner">
+      <span class="section-label">Available Now</span>
+      <h2>Individual Toolkits</h2>
+      <p>Each toolkit is a deep-dive guide written specifically for Texas parents, not a generic special education overview.</p>
+
+      <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+          <span class="product-badge featured">Most Popular</span>
+          <div class="product-img">📋</div>
+          <div class="product-body">
+            <h3>The Complete ARD Preparation Toolkit</h3>
+            <p>Everything you need to walk into your ARD meeting prepared, confident, and ready to advocate. Covers all meeting types: initial, annual, and amendment.</p>
+            <ul class="product-includes">
+              <li>Pre-meeting preparation checklist (12 pages)</li>
+              <li>Question bank with 45 proven questions</li>
+              <li>What to do if you disagree with the IEP</li>
+              <li>Understanding Prior Written Notice (PWN)</li>
+              <li>Script templates for common meeting scenarios</li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">$19<small>one-time, instant download</small></div>
+              <a class="btn-buy" href="/store/ard-preparation-toolkit">Get Toolkit</a>
+            </div>
+          </div>
         </div>
-        <div class="page-content-box">
-          <p><em>Content for <strong>Special Education Toolkits & Store</strong> goes here.</em></p>
-          <p>Open <code>store/index.html</code> in your editor to replace this placeholder with your final content.</p>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-img">🔍</div>
+          <div class="product-body">
+            <h3>Texas Evaluation &amp; FIIE Guide</h3>
+            <p>A step-by-step guide through the Full Individual Initial Evaluation (FIIE) process in Texas — from your written request to receiving the report and understanding what comes next.</p>
+            <ul class="product-includes">
+              <li>Sample evaluation request letters (3 versions)</li>
+              <li>60-day timeline tracker and calendar template</li>
+              <li>How to read and interpret evaluation reports</li>
+              <li>When and how to request an IEE</li>
+              <li>Child Find rights explained in plain language</li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">$17<small>one-time, instant download</small></div>
+              <a class="btn-buy" href="/store/evaluation-guide">Get Toolkit</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-img">⚖️</div>
+          <div class="product-body">
+            <h3>Dispute Resolution &amp; Complaint Guide</h3>
+            <p>When the district isn't following the IEP or has denied your child services, this guide walks you through every formal option available to Texas parents.</p>
+            <ul class="product-includes">
+              <li>State complaint vs. due process: when to use each</li>
+              <li>How to file a TEA complaint (step-by-step)</li>
+              <li>OCR complaint process explained</li>
+              <li>How to document violations effectively</li>
+              <li>Sample complaint letter templates</li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price">$17<small>one-time, instant download</small></div>
+              <a class="btn-buy" href="/store/dispute-resolution-guide">Get Toolkit</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 — Free -->
+        <div class="product-card">
+          <span class="product-badge free">Free</span>
+          <div class="product-img">📋</div>
+          <div class="product-body">
+            <h3>ARD Meeting Checklist</h3>
+            <p>Our most downloaded resource. A concise, printable checklist to prepare before, during, and after your ARD committee meeting.</p>
+            <ul class="product-includes">
+              <li>Documents to bring to the meeting</li>
+              <li>Key questions to ask</li>
+              <li>What to do before you sign anything</li>
+              <li>Post-meeting follow-up steps</li>
+            </ul>
+            <div class="product-footer">
+              <div class="product-price free-price">Free<small>no sign-up required</small></div>
+              <a class="btn-buy btn-free" href="/resources/ard-checklist.pdf" target="_blank">Download</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BUNDLE -->
+  <section class="bundle-section">
+    <div class="bundle-inner">
+      <div class="bundle-card">
+        <div class="bundle-text">
+          <span class="bundle-label">Best Value</span>
+          <h2>The Texas Parent Advocacy Bundle</h2>
+          <p>Get the ARD Preparation Toolkit, the Evaluation &amp; FIIE Guide, and the Dispute Resolution Guide together at a significant discount. Everything you need from evaluation through resolution.</p>
+        </div>
+        <div class="bundle-price-wrap">
+          <div class="bundle-price-orig">$53 separately</div>
+          <div class="bundle-price">$37</div>
+          <div class="bundle-savings">Save $16 (30% off)</div>
+          <a class="btn-bundle" href="/store/texas-parent-advocacy-bundle">Get the Bundle</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="faq-inner">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How do I receive my purchase?
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">All toolkits are delivered as instant PDF downloads. After completing checkout via Stripe, you'll receive an email with a download link immediately. No shipping, no waiting.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Are these resources specific to Texas?
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Yes — all content is written specifically for Texas. References are to Texas Education Code, the Texas Administrative Code, TEA policy, and Texas-specific timelines like the 60-calendar-day evaluation window. Generic national resources often don't reflect how Texas law works in practice.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do you offer refunds?
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Because these are digital downloads, all sales are final. If you have a question about whether a specific toolkit is right for your situation before purchasing, please <a href="/contact/index.html" style="color:var(--primary-light);">contact us</a> and we'll help you decide.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Will these be updated as Texas law changes?
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">Yes. All toolkit purchases include free lifetime updates. When Texas law changes — such as with new legislative sessions or TEA policy updates — we update the guides and send the new version to all past purchasers automatically.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What's the difference between the free resources and the paid toolkits?
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-a">The free resources (checklists, letter templates, trackers) are concise tools for immediate use. The paid toolkits are comprehensive guides — typically 20–40 pages — that explain the why behind each step, include sample scripts, cover edge cases, and give you a much deeper understanding of the process.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <h2>New Toolkits Coming Soon</h2>
+    <p>Subscribe to be notified when new guides are released, including district-specific toolkits and a dyslexia services guide.</p>
+    <form class="newsletter-form" action="/subscribe" method="post">
+      <input type="email" name="email" placeholder="Your email address" required aria-label="Email address" />
+      <button type="submit">Notify Me</button>
+    </form>
+  </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
   <div class="footer-container">
     <div class="footer-about">
@@ -339,6 +552,7 @@
 </footer>
 
 <script>
+// Mobile nav
 document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.mobile-menu-toggle');
   var menu = document.querySelector('.nav-menu');
@@ -355,6 +569,17 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         this.parentElement.classList.toggle('active');
       }
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = this.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function (i) { i.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+      this.setAttribute('aria-expanded', String(!isOpen));
     });
   });
 });
