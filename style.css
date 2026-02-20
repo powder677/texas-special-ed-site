@@ -23,7 +23,7 @@ a { text-decoration: none; color: inherit; transition: color 0.2s; }
 .navbar {
     background-color: var(--secondary-color, #ffffff); 
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    position: sticky;
+    position: ;
     top: 0;
     z-index: 9999;
     background-color: #ffffff; /*
