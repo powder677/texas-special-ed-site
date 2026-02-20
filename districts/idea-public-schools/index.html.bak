@@ -231,6 +231,27 @@
 <a href="https://texasspecialed.com/districts/united-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">United ISD</a><a href="https://texasspecialed.com/districts/pharr-san-juan-alamo-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Pharr-San Juan-Alamo ISD</a><a href="https://texasspecialed.com/districts/edinburg-cisd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Edinburg CISD</a><a href="https://texasspecialed.com/districts/la-joya-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">La Joya ISD</a><a href="https://texasspecialed.com/districts/harlingen-cisd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Harlingen CISD</a>
 </section>
 
+```html
+<div class="content-section" data-generated="district-expansion">
+<h2>About Special Education in Idea Public Schools</h2>
+<p>Idea Public Schools serves the Texas area and is dedicated to providing a comprehensive special education program for students with disabilities. The district operates under the oversight of TEA Region unknown and strives to meet the unique needs of each student through individualized support and services. We understand that navigating the special education process can be challenging, and we are committed to working collaboratively with parents and families to ensure the best possible outcomes for their children.</p>
+<p>Idea Public Schools adheres to the Individuals with Disabilities Education Act (IDEA) and Texas state regulations regarding special education. This includes a timeline of 45 school days to complete a Full and Individual Evaluation (FIE) after receiving parental consent. Parents will also receive a written notice at least five school days before any Admission, Review, and Dismissal (ARD) committee meeting. This notice will outline the purpose of the meeting, who will be in attendance, and any relevant information pertaining to your child's educational needs.</p>
+
+<h2>Common Questions from Idea Public Schools Families</h2>
+
+<h3>What types of special education services are available at my child's Idea campus?</h3>
+<p>Idea Public Schools offers a range of services including, but not limited to, specialized instruction, speech therapy, occupational therapy, counseling, and assistive technology. The specific services provided are determined by your child's ARD committee based on the results of their evaluation and individual needs. Your child's IEP will detail the specific services provided and how they will be implemented.</p>
+
+<h3>How can I be involved in my child's ARD meetings?</h3>
+<p>Parent participation is crucial in the ARD process. You are an integral member of the ARD committee and have the right to share your insights, concerns, and goals for your child. We encourage you to prepare for the meeting by reviewing your child's evaluation reports, documenting any observations you have, and creating a list of questions you want to ask.</p>
+
+<h3>What happens if I disagree with the ARD committee's decision?</h3>
+<p>If you disagree with the decisions made by the ARD committee, you have several options, including requesting another ARD meeting to further discuss your concerns. You also have the right to pursue mediation or file a formal complaint with the Texas Education Agency (TEA). Idea Public Schools is committed to working with families to resolve any disagreements and ensure the best possible educational experience for your child.</p>
+
+<h2>Practical Tip for Idea Public Schools Parents</h2>
+<p>With a student population around 10,000, Idea Public Schools is considered a smaller district. Often, small districts have a single special education director overseeing all special education services. Because this individual is likely managing numerous responsibilities, it's often best to communicate via email. This provides a written record of your communication and ensures your requests are documented. This paper trail can be helpful should any misunderstandings or discrepancies arise.</p>
+</div>
+```
 </main>
 
 

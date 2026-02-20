@@ -231,6 +231,28 @@
 <a href="https://texasspecialed.com/districts/dallas-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Dallas ISD</a><a href="https://texasspecialed.com/districts/garland-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Garland ISD</a><a href="https://texasspecialed.com/districts/lewisville-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Lewisville ISD</a><a href="https://texasspecialed.com/districts/plano-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Plano ISD</a><a href="https://texasspecialed.com/districts/denton-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Denton ISD</a>
 </section>
 
+```html
+<div class="content-section" data-generated="district-expansion">
+<h2>About Special Education in Frisco ISD</h2>
+<p>Frisco ISD serves the DFW area and is committed to providing a high-quality education for all students, including those with disabilities. The district operates under the oversight of TEA Region 10, ensuring adherence to state and federal special education laws. Frisco ISD strives to create inclusive environments where students with disabilities can thrive academically, socially, and emotionally.</p>
+
+<p>When a student is suspected of having a disability and requires special education services, Frisco ISD follows a specific timeline. After parental consent, the district has 45 school days to complete a Full and Individual Evaluation (FIE). Once the FIE is complete, the Admission, Review, and Dismissal (ARD) committee meeting will be scheduled. Parents will receive written notice of the ARD meeting at least 5 school days prior to the meeting date, allowing ample time for preparation.</p>
+
+<h2>Common Questions from Frisco ISD Families</h2>
+
+<h3>My child's teacher suggested special education. What happens next?</h3>
+<p>The next step is typically a referral for a Full and Individual Evaluation (FIE). The school will need your written consent to conduct the evaluation, which will assess your child's strengths and needs in various areas. Once complete, the evaluation results will be discussed with you at an ARD committee meeting.</p>
+
+<h3>What if I disagree with the ARD committee's decisions?</h3>
+<p>You have the right to disagree with the ARD committee's decisions. You can request another ARD meeting, seek mediation, or file a formal complaint with the Texas Education Agency (TEA). Frisco ISD is committed to working collaboratively with families to resolve disagreements.</p>
+
+<h3>How can I get more involved in my child's special education program?</h3>
+<p>There are many ways to get involved! Attend all ARD meetings, communicate regularly with your child's teachers and special education staff, and consider joining the Frisco ISD Special Education PTA (SEPTA). Your active participation is crucial to your child's success.</p>
+
+<h2>Tip for Parents in a Large District</h2>
+<p>Navigating a large district like Frisco ISD (with over 66,000 students) can sometimes feel overwhelming. Remember that each campus has dedicated special education staff, including a campus special education coordinator. Before escalating concerns to the district-level special education office, start by connecting with your child's teacher and the campus special education coordinator. They are your primary point of contact and often best equipped to address your immediate needs.</p>
+</div>
+```
 </main>
 
 

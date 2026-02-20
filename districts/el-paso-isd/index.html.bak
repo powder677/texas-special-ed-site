@@ -231,6 +231,26 @@
 <a href="https://texasspecialed.com/districts/socorro-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Socorro ISD</a><a href="https://texasspecialed.com/districts/ysleta-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Ysleta ISD</a><a href="https://texasspecialed.com/districts/clint-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Clint ISD</a>
 </section>
 
+```html
+<div class="content-section" data-generated="district-expansion">
+  <h2>About Special Education in El Paso ISD</h2>
+  <p>El Paso ISD serves the El Paso area and is committed to providing quality special education services to eligible students. The district operates under the oversight of the Texas Education Agency (TEA) Region 19, ensuring compliance with state and federal regulations for students with disabilities.</p>
+  <p>In El Paso ISD, the Admission, Review, and Dismissal (ARD) process follows a specific timeline to ensure timely evaluation and support for students. Once parental consent for a Full and Individual Evaluation (FIE) is received, the district has approximately 45 school days to complete the evaluation. Parents will receive written notice of an ARD meeting at least five school days prior to the meeting date.</p>
+
+  <h2>Common Questions from El Paso ISD Families</h2>
+  <h3>What types of support services are available for my child with dyslexia in El Paso ISD?</h3>
+  <p>El Paso ISD offers a range of dyslexia services, including specialized reading instruction, assistive technology, and accommodations within the classroom. Your child's ARD committee will determine the most appropriate supports based on their individual needs and the results of their evaluations.</p>
+
+  <h3>My child's ARD meeting is coming up. What should I expect?</h3>
+  <p>At the ARD meeting, you will collaborate with school staff, including teachers, administrators, and specialists, to develop your child's Individualized Education Program (IEP). This IEP will outline specific goals, accommodations, and services designed to help your child succeed. Be prepared to share your insights about your child's strengths and needs.</p>
+
+  <h3>Who do I contact if I have concerns about the implementation of my child's IEP?</h3>
+  <p>The first point of contact is usually your child's special education teacher or case manager. If you still have concerns after speaking with them, you can then contact the campus special education coordinator for further assistance. </p>
+
+  <h2>Practical Tip for Parents</h2>
+  <p>El Paso ISD is a large district with approximately 57,000 students. A helpful tip for navigating special education services is to start by contacting the dedicated special education coordinator at your child's campus. These coordinators are familiar with the specific resources and supports available at their school and can often address concerns more quickly than the district office. Contact information for campus coordinators should be available on the school's website or by contacting the school directly.</p>
+</div>
+```
 </main>
 
 
