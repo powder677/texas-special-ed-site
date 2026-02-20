@@ -4,22 +4,22 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>10 Questions Every Texas Parent Should Ask at Their ARD Meeting | TexasSpecialEd.com</title>
-   <meta name="description" content="Walking into an ARD meeting prepared makes all the difference. These 10 questions help Texas parents get clear answers about progress, services, goals, and rights.">
-   <link rel="canonical" href="https://www.texasspecialed.com/blog/10-questions-to-ask-at-ard-meeting/">
-   <meta property="og:title" content="10 Questions Every Texas Parent Should Ask at Their ARD Meeting">
-   <meta property="og:description" content="Walking into an ARD meeting prepared makes all the difference. These 10 questions help Texas parents get clear answers about progress, services, goals, and rights.">
-   <meta property="og:url" content="https://www.texasspecialed.com/blog/10-questions-to-ask-at-ard-meeting/">
+   <title>Understanding the FIIE: What Texas Parents Need to Know About Evaluations | TexasSpecialEd.com</title>
+   <meta name="description" content="A Full Individual Initial Evaluation is the gateway to special education in Texas. Learn what gets tested, the 45-school-day timeline, and what happens after results come in.">
+   <link rel="canonical" href="https://www.texasspecialed.com/blog/understanding-fiie-texas/">
+   <meta property="og:title" content="Understanding the FIIE: What Texas Parents Need to Know About Evaluations">
+   <meta property="og:description" content="A Full Individual Initial Evaluation is the gateway to special education in Texas. Learn what gets tested, the 45-school-day timeline, and what happens after results come in.">
+   <meta property="og:url" content="https://www.texasspecialed.com/blog/understanding-fiie-texas/">
    <meta property="og:type" content="article">
    <link rel="stylesheet" href="/styles/global.css">
    <script type="application/ld+json">
       {
          "@context": "https://schema.org",
          "@type": "Article",
-         "headline": "10 Questions Every Texas Parent Should Ask at Their ARD Meeting",
-         "description": "Walking into an ARD meeting prepared makes all the difference. These 10 questions help Texas parents get clear answers about progress, services, goals, and rights.",
-         "url": "https://www.texasspecialed.com/blog/10-questions-to-ask-at-ard-meeting/",
-         "datePublished": "2026-01-08",
+         "headline": "Understanding the FIIE: What Texas Parents Need to Know About Evaluations",
+         "description": "A Full Individual Initial Evaluation is the gateway to special education in Texas. Learn what gets tested, the 45-school-day timeline, and what happens after results come in.",
+         "url": "https://www.texasspecialed.com/blog/understanding-fiie-texas/",
+         "datePublished": "2026-01-02",
          "publisher": {
             "@type": "Organization",
             "name": "Texas Special Ed",
@@ -27,7 +27,7 @@
          },
          "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.texasspecialed.com/blog/10-questions-to-ask-at-ard-meeting/"
+            "@id": "https://www.texasspecialed.com/blog/understanding-fiie-texas/"
          }
       }
    </script>
@@ -72,7 +72,8 @@
       .article-body {
          max-width: 800px;
          margin: 0 auto;
-         padding: 3rem 1rem; display: flex; flex-direction: column; min-height: 100vh; }
+         padding: 3rem 1rem;
+      }
 
       .article-body h2 {
          font-size: 1.6rem;
@@ -277,79 +278,114 @@
          </div>
       </nav>
    </header>
-   <main style="flex:1">
+   <main>
       <nav aria-label="breadcrumb" class="breadcrumb">
          <div class="container">
             <a href="/">Home</a> ›
             <a href="/blog">Blog</a> ›
-            <span>10 Questions Every Texas Parent Should Ask at Their ARD Meeting</span>
+            <span>Understanding the FIIE: What Texas Parents Need to Know About Evaluations</span>
          </div>
       </nav>
       <section class="article-hero">
          <div class="container">
             <div class="article-meta">
-               <span class="category-badge">ARD Meetings</span>
-               <span>January 8, 2026</span>
+               <span class="category-badge">Evaluations</span>
+               <span>January 2, 2026</span>
             </div>
-            <h1>10 Questions Every Texas Parent Should Ask at Their ARD Meeting</h1>
+            <h1>Understanding the FIIE: What Texas Parents Need to Know About Evaluations</h1>
          </div>
       </section>
       <article class="article-body">
 
-         <p class="lead" style="font-size:1.15rem;color:#555;margin-bottom:2rem;">Walking into an ARD meeting without a plan is like showing up to court without a lawyer. These 10 questions will help you stay focused, get clear answers, and make sure your child's IEP actually works.</p>
+         <p class="lead" style="font-size:1.15rem;color:#555;margin-bottom:2rem;">A Full Individual Initial Evaluation is the gateway to special education services in Texas. Here's what gets tested, how long it takes, who conducts it, and what happens after the results come in.</p>
+
+         <h2>What Is a FIIE?</h2>
+         <p>A <strong>Full Individual Initial Evaluation (FIIE)</strong> — sometimes called an FIE — is the comprehensive assessment a Texas school district conducts to determine whether a child has a disability that qualifies them for special education services under IDEA. It is the first formal step in the eligibility process.</p>
+         <p>The evaluation is conducted by a team of qualified professionals and must assess the child in all areas related to the suspected disability. It is provided at no cost to the family.</p>
 
          <div class="callout-box">
-            <p><strong>Pro tip:</strong> Print this list and bring it to the meeting. There's no rule against reading from notes — and the ARD committee will take your concerns more seriously when they're written down.</p>
+            <p><strong>Quick fact:</strong> The terms FIIE and FIE are used interchangeably in Texas. FIIE stands for Full Individual Initial Evaluation. FIE stands for Full Individual Evaluation, which can refer to both initial evaluations and reevaluations.</p>
          </div>
 
-         <h2>Before the Meeting Starts</h2>
+         <h2>How to Request an Evaluation</h2>
+         <p>Any parent, legal guardian, teacher, or school staff member can refer a child for an evaluation. However, the most effective approach is a <strong>written request from the parent</strong> — this triggers a legal timeline that the district must follow.</p>
+         <p>Submit your written request to the campus principal or the district's Special Education Department. Your letter should include your child's name, date of birth, campus, and the specific areas of concern. Our <a href="/resources/evaluation-request-template.pdf">Evaluation Request Letter Template</a> provides ready-to-use language.</p>
 
-         <h3>1. "Can everyone introduce themselves and their role?"</h3>
-         <p>This seems basic, but it matters. You need to know who is in the room and what their role is on the ARD committee. Under IDEA, certain members are required — a general education teacher, a special education teacher, an LEA representative (someone who can commit district resources), and someone who can interpret evaluation results. If any required member is missing, the meeting may not be valid unless you've signed a waiver.</p>
+         <h2>The Texas Evaluation Timeline</h2>
+         <table class="timeline-table">
+            <thead>
+               <tr>
+                  <th>Step</th>
+                  <th>Timeline</th>
+                  <th>What Happens</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td><strong>1. Written request submitted</strong></td>
+                  <td>Day 0</td>
+                  <td>You submit a formal written request to the school.</td>
+               </tr>
+               <tr>
+                  <td><strong>2. District responds</strong></td>
+                  <td>15 school days</td>
+                  <td>District provides consent form or Prior Written Notice of refusal.</td>
+               </tr>
+               <tr>
+                  <td><strong>3. Parent signs consent</strong></td>
+                  <td>Your timeline</td>
+                  <td>The clock starts when you sign and return the consent form.</td>
+               </tr>
+               <tr>
+                  <td><strong>4. Evaluation completed</strong></td>
+                  <td>45 school days from consent</td>
+                  <td>All testing, observations, and report writing must be finished.</td>
+               </tr>
+               <tr>
+                  <td><strong>5. ARD meeting held</strong></td>
+                  <td>30 calendar days from evaluation</td>
+                  <td>The ARD committee meets to review results and determine eligibility.</td>
+               </tr>
+            </tbody>
+         </table>
 
-         <h3>2. "Can I get a copy of the draft IEP before we start?"</h3>
-         <p>Many Texas districts prepare a draft IEP before the meeting. You have every right to see it in advance — ideally 3 to 5 school days before the ARD. If you're seeing it for the first time at the table, ask for a few minutes to review it before discussion begins. Remember: a draft is a starting point, not a final document. You can propose changes.</p>
+         <h2>What Gets Tested?</h2>
+         <p>The evaluation must assess the child in <strong>all areas related to the suspected disability</strong>. Depending on the concerns, this may include:</p>
+         <ul>
+            <li><strong>Cognitive ability</strong> — IQ testing to measure intellectual functioning</li>
+            <li><strong>Academic achievement</strong> — reading, writing, and math assessments compared to grade-level expectations</li>
+            <li><strong>Speech and language</strong> — receptive and expressive language skills, articulation, pragmatics</li>
+            <li><strong>Social-emotional functioning</strong> — behavior rating scales completed by parents, teachers, and the student</li>
+            <li><strong>Adaptive behavior</strong> — daily living skills, social skills, and independence</li>
+            <li><strong>Motor skills</strong> — fine motor (handwriting, cutting) and gross motor (balance, coordination)</li>
+            <li><strong>Sensory processing</strong> — how the child processes sensory input in the school environment</li>
+            <li><strong>Assistive technology needs</strong> — whether the child would benefit from tools or devices</li>
+         </ul>
+         <p>The evaluation team must also review existing data: grades, report cards, state assessment results, teacher observations, attendance records, and any private evaluations the parent provides.</p>
 
-         <h2>About Your Child's Progress</h2>
+         <h2>Who Conducts the Evaluation?</h2>
+         <p>The evaluation is conducted by a multidisciplinary team that typically includes a Licensed Specialist in School Psychology (LSSP), educational diagnostician, speech-language pathologist, and any other specialists relevant to the suspected disability (occupational therapist, behavior analyst, etc.).</p>
 
-         <h3>3. "Is my child making meaningful progress toward their current IEP goals?"</h3>
-         <p>This is the most important question you can ask. "Meaningful progress" means more than just showing up. Ask for specific data — percentages, scores, work samples. If the school can't show you data, that's a red flag. Goals without data tracking are goals without accountability.</p>
+         <h2>What Happens After the Evaluation?</h2>
+         <p>Once the evaluation is complete, the district will provide you with a copy of the evaluation report. Within <strong>30 calendar days</strong>, the ARD committee will meet to:</p>
+         <ol>
+            <li>Review the evaluation results as a team</li>
+            <li>Determine whether your child meets eligibility criteria for one of the 13 disability categories under IDEA</li>
+            <li>If eligible, develop the Individualized Education Program (IEP)</li>
+            <li>Determine appropriate services, accommodations, and placement</li>
+         </ol>
 
-         <h3>4. "How are you measuring progress, and how often?"</h3>
-         <p>Texas requires progress reports at least as often as general education report cards (usually every 6 or 9 weeks). Ask what tools the teacher is using to measure progress: curriculum-based measures, probes, observations, rubrics? If the answer is vague, request more specific data collection methods be written into the IEP.</p>
-
-         <h2>About Services and Accommodations</h2>
-
-         <h3>5. "How many minutes of each service is my child actually receiving per week?"</h3>
-         <p>The IEP lists service minutes — but are they actually being delivered? Ask for a service log or attendance record. If your child is supposed to receive 150 minutes of speech therapy per week and they're only getting 90, the district is not implementing the IEP as written. That's a compliance issue.</p>
-
-         <h3>6. "What accommodations are being used in the general education classroom, and are they working?"</h3>
-         <p>Accommodations like extended time, preferential seating, or modified assignments are only useful if teachers are actually using them. Ask whether the general education teachers are aware of and implementing the accommodations listed in the IEP. If not, ask what the district will do to ensure compliance.</p>
-
-         <h2>About Goals and Placement</h2>
-
-         <h3>7. "Are these goals ambitious enough?"</h3>
-         <p>The Supreme Court's 2017 <em>Endrew F.</em> decision established that IEP goals must be "appropriately ambitious" in light of the child's circumstances. If a goal asks your child to improve from reading 20 words per minute to 25 words per minute over an entire year, that may not be ambitious enough. Push for goals that challenge your child to make real progress — not just maintain the status quo.</p>
-
-         <h3>8. "Is this the Least Restrictive Environment for my child?"</h3>
-         <p>Under IDEA, your child should be educated alongside non-disabled peers to the maximum extent appropriate. If the school is proposing a more restrictive placement — moving from inclusion to a resource room, or from a resource room to a self-contained classroom — ask what data supports that decision and what supplementary aids and services were tried first.</p>
-
-         <h2>About Your Rights</h2>
-
-         <h3>9. "Can I get Prior Written Notice for the changes being proposed today?"</h3>
-         <p>Any time the school proposes to change (or refuses to change) your child's identification, evaluation, placement, or services, they must provide you with Prior Written Notice. This is a legal document that explains what they're proposing, why, and what alternatives they considered. Always request it.</p>
-
-         <h3>10. "What happens if I disagree?"</h3>
-         <p>You are not required to agree with the ARD committee. In Texas, you have the right to a <strong>10-school-day recess</strong> to consider the proposal. You can also submit a written statement of disagreement, request mediation, file a TEA complaint, or request a due process hearing. Knowing your options gives you leverage.</p>
-
-         <div class="callout-success callout-box">
-            <p><strong>Final tip:</strong> After the meeting, send a follow-up email summarizing what was discussed and decided. This creates a written record and gives the school a chance to correct any misunderstandings before the IEP is finalized.</p>
+         <div class="callout-box">
+            <p><strong>The 13 IDEA disability categories include:</strong> Autism, Deaf-Blindness, Deafness, Emotional Disturbance, Hearing Impairment, Intellectual Disability, Multiple Disabilities, Orthopedic Impairment, Other Health Impairment, Specific Learning Disability, Speech or Language Impairment, Traumatic Brain Injury, and Visual Impairment.</p>
          </div>
+
+         <h2>What If You Disagree with the Results?</h2>
+         <p>If you disagree with the school's evaluation, you have the right to request an <strong>Independent Educational Evaluation (IEE) at public expense</strong>. The district must either fund the IEE or file for a due process hearing to defend their evaluation. Read our full guide: <a href="/blog/independent-educational-evaluation-texas/">When and How to Request an IEE in Texas</a>.</p>
 
          <div class="article-cta">
-            <h3>Get Our Complete ARD Meeting Checklist</h3>
-            <p>A step-by-step printable guide with everything you need before, during, and after your child's ARD meeting.</p>
-            <a href="/resources/ard-checklist.pdf" class="button-primary-large">Download Free Checklist</a>
+            <h3>Ready to Request an Evaluation?</h3>
+            <p>Download our free letter template with pre-written formal language that works for any Texas district.</p>
+            <a href="/resources/evaluation-request-template.pdf" class="button-primary-large">Download Free Template</a>
          </div>
 
       </article>
@@ -358,13 +394,13 @@
             <h2 style="text-align:center;">Related Articles</h2>
             <div class="related-grid">
 
-               <a href="/blog/how-to-disagree-at-ard-meeting/" class="related-card">
-                  <h4>How to Disagree at an ARD Meeting Without Burning Bridges</h4>
-                  <p>Push back effectively while keeping the relationship constructive.</p>
+               <a href="/blog/what-to-do-when-school-denies-evaluation/" class="related-card">
+                  <h4>What to Do When Your School Denies an Evaluation</h4>
+                  <p>Step-by-step options when the district says no.</p>
                </a>
-               <a href="/blog/how-to-write-measurable-iep-goals/" class="related-card">
-                  <h4>How to Write Measurable IEP Goals</h4>
-                  <p>With Texas TEKS alignment examples.</p>
+               <a href="/blog/independent-educational-evaluation-texas/" class="related-card">
+                  <h4>When and How to Request an IEE in Texas</h4>
+                  <p>Your right to an independent evaluation at public expense.</p>
                </a>
 
             </div>

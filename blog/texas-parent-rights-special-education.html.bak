@@ -4,22 +4,22 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>10 Questions Every Texas Parent Should Ask at Their ARD Meeting | TexasSpecialEd.com</title>
-   <meta name="description" content="Walking into an ARD meeting prepared makes all the difference. These 10 questions help Texas parents get clear answers about progress, services, goals, and rights.">
-   <link rel="canonical" href="https://www.texasspecialed.com/blog/10-questions-to-ask-at-ard-meeting/">
-   <meta property="og:title" content="10 Questions Every Texas Parent Should Ask at Their ARD Meeting">
-   <meta property="og:description" content="Walking into an ARD meeting prepared makes all the difference. These 10 questions help Texas parents get clear answers about progress, services, goals, and rights.">
-   <meta property="og:url" content="https://www.texasspecialed.com/blog/10-questions-to-ask-at-ard-meeting/">
+   <title>Your Rights as a Texas Special Education Parent: A Complete Guide | TexasSpecialEd.com</title>
+   <meta name="description" content="A plain-language guide to your rights under IDEA, Section 504, and Texas Education Code. Covers evaluations, ARD meetings, disagreement, records, IEE, and dispute resolution.">
+   <link rel="canonical" href="https://www.texasspecialed.com/blog/texas-parent-rights-special-education/">
+   <meta property="og:title" content="Your Rights as a Texas Special Education Parent: A Complete Guide">
+   <meta property="og:description" content="A plain-language guide to your rights under IDEA, Section 504, and Texas Education Code. Covers evaluations, ARD meetings, disagreement, records, IEE, and dispute resolution.">
+   <meta property="og:url" content="https://www.texasspecialed.com/blog/texas-parent-rights-special-education/">
    <meta property="og:type" content="article">
    <link rel="stylesheet" href="/styles/global.css">
    <script type="application/ld+json">
       {
          "@context": "https://schema.org",
          "@type": "Article",
-         "headline": "10 Questions Every Texas Parent Should Ask at Their ARD Meeting",
-         "description": "Walking into an ARD meeting prepared makes all the difference. These 10 questions help Texas parents get clear answers about progress, services, goals, and rights.",
-         "url": "https://www.texasspecialed.com/blog/10-questions-to-ask-at-ard-meeting/",
-         "datePublished": "2026-01-08",
+         "headline": "Your Rights as a Texas Special Education Parent: A Complete Guide",
+         "description": "A plain-language guide to your rights under IDEA, Section 504, and Texas Education Code. Covers evaluations, ARD meetings, disagreement, records, IEE, and dispute resolution.",
+         "url": "https://www.texasspecialed.com/blog/texas-parent-rights-special-education/",
+         "datePublished": "2025-12-10",
          "publisher": {
             "@type": "Organization",
             "name": "Texas Special Ed",
@@ -27,7 +27,7 @@
          },
          "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://www.texasspecialed.com/blog/10-questions-to-ask-at-ard-meeting/"
+            "@id": "https://www.texasspecialed.com/blog/texas-parent-rights-special-education/"
          }
       }
    </script>
@@ -72,7 +72,8 @@
       .article-body {
          max-width: 800px;
          margin: 0 auto;
-         padding: 3rem 1rem; display: flex; flex-direction: column; min-height: 100vh; }
+         padding: 3rem 1rem;
+      }
 
       .article-body h2 {
          font-size: 1.6rem;
@@ -277,79 +278,75 @@
          </div>
       </nav>
    </header>
-   <main style="flex:1">
+   <main>
       <nav aria-label="breadcrumb" class="breadcrumb">
          <div class="container">
             <a href="/">Home</a> ›
             <a href="/blog">Blog</a> ›
-            <span>10 Questions Every Texas Parent Should Ask at Their ARD Meeting</span>
+            <span>Your Rights as a Texas Special Education Parent: A Complete Guide</span>
          </div>
       </nav>
       <section class="article-hero">
          <div class="container">
             <div class="article-meta">
-               <span class="category-badge">ARD Meetings</span>
-               <span>January 8, 2026</span>
+               <span class="category-badge">Parent Rights</span>
+               <span>December 10, 2025</span>
             </div>
-            <h1>10 Questions Every Texas Parent Should Ask at Their ARD Meeting</h1>
+            <h1>Your Rights as a Texas Special Education Parent: A Complete Guide</h1>
          </div>
       </section>
       <article class="article-body">
 
-         <p class="lead" style="font-size:1.15rem;color:#555;margin-bottom:2rem;">Walking into an ARD meeting without a plan is like showing up to court without a lawyer. These 10 questions will help you stay focused, get clear answers, and make sure your child's IEP actually works.</p>
+         <p class="lead" style="font-size:1.15rem;color:#555;margin-bottom:2rem;">IDEA gives you powerful protections. Texas adds more. Here's a plain-language breakdown of every right you have — from the moment you suspect a disability to the day your child graduates.</p>
 
-         <div class="callout-box">
-            <p><strong>Pro tip:</strong> Print this list and bring it to the meeting. There's no rule against reading from notes — and the ARD committee will take your concerns more seriously when they're written down.</p>
-         </div>
+         <h2>The Foundation: IDEA and Texas Law</h2>
+         <p>Your rights as a special education parent come from two main sources: the <strong>Individuals with Disabilities Education Act (IDEA)</strong>, which is the federal law, and the <strong>Texas Education Code (TEC) Chapter 29</strong>, which adds state-specific protections. Together, they create a framework that gives you significant power in the decision-making process for your child's education.</p>
 
-         <h2>Before the Meeting Starts</h2>
+         <h2>Your Right to Request an Evaluation</h2>
+         <p>You can request a special education evaluation at any time if you suspect your child has a disability. The district has <strong>15 school days</strong> to respond with either a consent form or a Prior Written Notice explaining why they will not evaluate. Once you sign consent, the evaluation must be completed within <strong>45 school days</strong>.</p>
+         <p>The evaluation is free, must cover all areas of suspected disability, and cannot be delayed because the school wants to continue RTI (Response to Intervention) first.</p>
 
-         <h3>1. "Can everyone introduce themselves and their role?"</h3>
-         <p>This seems basic, but it matters. You need to know who is in the room and what their role is on the ARD committee. Under IDEA, certain members are required — a general education teacher, a special education teacher, an LEA representative (someone who can commit district resources), and someone who can interpret evaluation results. If any required member is missing, the meeting may not be valid unless you've signed a waiver.</p>
+         <h2>Your Right to Participate in the ARD</h2>
+         <p>You are an <strong>equal member</strong> of the ARD committee. The school must notify you in writing at least 5 school days before the meeting, schedule it at a mutually agreeable time, and ensure all required members are present. You can bring anyone you choose — an advocate, attorney, family member, or friend.</p>
+         <p>In Texas, you also have the right to <strong>audio record the ARD meeting</strong>. We recommend notifying the team at the start of the meeting that you will be recording.</p>
 
-         <h3>2. "Can I get a copy of the draft IEP before we start?"</h3>
-         <p>Many Texas districts prepare a draft IEP before the meeting. You have every right to see it in advance — ideally 3 to 5 school days before the ARD. If you're seeing it for the first time at the table, ask for a few minutes to review it before discussion begins. Remember: a draft is a starting point, not a final document. You can propose changes.</p>
+         <h2>Your Right to Disagree</h2>
+         <p>If the ARD committee proposes something you don't agree with, you have options:</p>
+         <ul>
+            <li><strong>Don't sign "agree"</strong> — you can sign that you attended but disagreed</li>
+            <li><strong>Request a 10-school-day recess</strong> — Texas law requires the school to grant this</li>
+            <li><strong>Submit a written statement of disagreement</strong> — this must be attached to the IEP</li>
+            <li><strong>Request mediation</strong> — free and confidential, arranged through TEA</li>
+            <li><strong>File a TEA complaint</strong> — within one year of the alleged violation</li>
+            <li><strong>Request due process</strong> — within two years, with a formal hearing officer</li>
+         </ul>
 
-         <h2>About Your Child's Progress</h2>
+         <h2>Your Right to Access Records</h2>
+         <p>Under FERPA and IDEA, you can inspect and review all educational records related to your child. The district must respond to your request within 45 calendar days. You can request copies (a reasonable fee may apply), request amendments to inaccurate records, and review records before any ARD meeting.</p>
 
-         <h3>3. "Is my child making meaningful progress toward their current IEP goals?"</h3>
-         <p>This is the most important question you can ask. "Meaningful progress" means more than just showing up. Ask for specific data — percentages, scores, work samples. If the school can't show you data, that's a red flag. Goals without data tracking are goals without accountability.</p>
+         <h2>Your Right to an Independent Evaluation</h2>
+         <p>If you disagree with the school's evaluation, you can request an <strong>Independent Educational Evaluation (IEE) at public expense</strong>. The district must either pay for the IEE or file for due process to defend their evaluation. The IEE results must be considered by the ARD committee.</p>
 
-         <h3>4. "How are you measuring progress, and how often?"</h3>
-         <p>Texas requires progress reports at least as often as general education report cards (usually every 6 or 9 weeks). Ask what tools the teacher is using to measure progress: curriculum-based measures, probes, observations, rubrics? If the answer is vague, request more specific data collection methods be written into the IEP.</p>
+         <h2>Your Right to FAPE</h2>
+         <p>Your child has the right to a <strong>Free Appropriate Public Education (FAPE)</strong> in the <strong>Least Restrictive Environment (LRE)</strong>. This means the school must provide the services, supports, and accommodations necessary for your child to receive a meaningful educational benefit — and must do so alongside non-disabled peers to the maximum extent appropriate.</p>
 
-         <h2>About Services and Accommodations</h2>
+         <h2>Section 504 Protections</h2>
+         <p>Even if your child does not qualify for special education under IDEA, they may still be eligible for a <strong>Section 504 plan</strong>. Section 504 provides accommodations in the general education setting for students with disabilities that substantially limit a major life activity, including learning.</p>
 
-         <h3>5. "How many minutes of each service is my child actually receiving per week?"</h3>
-         <p>The IEP lists service minutes — but are they actually being delivered? Ask for a service log or attendance record. If your child is supposed to receive 150 minutes of speech therapy per week and they're only getting 90, the district is not implementing the IEP as written. That's a compliance issue.</p>
-
-         <h3>6. "What accommodations are being used in the general education classroom, and are they working?"</h3>
-         <p>Accommodations like extended time, preferential seating, or modified assignments are only useful if teachers are actually using them. Ask whether the general education teachers are aware of and implementing the accommodations listed in the IEP. If not, ask what the district will do to ensure compliance.</p>
-
-         <h2>About Goals and Placement</h2>
-
-         <h3>7. "Are these goals ambitious enough?"</h3>
-         <p>The Supreme Court's 2017 <em>Endrew F.</em> decision established that IEP goals must be "appropriately ambitious" in light of the child's circumstances. If a goal asks your child to improve from reading 20 words per minute to 25 words per minute over an entire year, that may not be ambitious enough. Push for goals that challenge your child to make real progress — not just maintain the status quo.</p>
-
-         <h3>8. "Is this the Least Restrictive Environment for my child?"</h3>
-         <p>Under IDEA, your child should be educated alongside non-disabled peers to the maximum extent appropriate. If the school is proposing a more restrictive placement — moving from inclusion to a resource room, or from a resource room to a self-contained classroom — ask what data supports that decision and what supplementary aids and services were tried first.</p>
-
-         <h2>About Your Rights</h2>
-
-         <h3>9. "Can I get Prior Written Notice for the changes being proposed today?"</h3>
-         <p>Any time the school proposes to change (or refuses to change) your child's identification, evaluation, placement, or services, they must provide you with Prior Written Notice. This is a legal document that explains what they're proposing, why, and what alternatives they considered. Always request it.</p>
-
-         <h3>10. "What happens if I disagree?"</h3>
-         <p>You are not required to agree with the ARD committee. In Texas, you have the right to a <strong>10-school-day recess</strong> to consider the proposal. You can also submit a written statement of disagreement, request mediation, file a TEA complaint, or request a due process hearing. Knowing your options gives you leverage.</p>
-
-         <div class="callout-success callout-box">
-            <p><strong>Final tip:</strong> After the meeting, send a follow-up email summarizing what was discussed and decided. This creates a written record and gives the school a chance to correct any misunderstandings before the IEP is finalized.</p>
-         </div>
+         <h2>When Rights Are Violated</h2>
+         <p>If you believe the district has violated your child's rights, you can:</p>
+         <ol>
+            <li>File a <strong>local grievance</strong> under the district's FNG policy (typically within 15 business days)</li>
+            <li>File a <strong>TEA complaint</strong> (within 1 year)</li>
+            <li>Request <strong>mediation</strong> (free, voluntary)</li>
+            <li>Request a <strong>due process hearing</strong> (within 2 years)</li>
+            <li>Contact the <strong>Office for Civil Rights (OCR)</strong> for Section 504 violations</li>
+         </ol>
 
          <div class="article-cta">
-            <h3>Get Our Complete ARD Meeting Checklist</h3>
-            <p>A step-by-step printable guide with everything you need before, during, and after your child's ARD meeting.</p>
-            <a href="/resources/ard-checklist.pdf" class="button-primary-large">Download Free Checklist</a>
+            <h3>Download the Complete Parent Rights Guide</h3>
+            <p>Our free PDF breaks down every right in plain language, with key timelines and legal references.</p>
+            <a href="/resources/parent-rights-guide.pdf" class="button-primary-large" target="_blank">Download Free Guide</a>
          </div>
 
       </article>
@@ -358,13 +355,13 @@
             <h2 style="text-align:center;">Related Articles</h2>
             <div class="related-grid">
 
-               <a href="/blog/how-to-disagree-at-ard-meeting/" class="related-card">
-                  <h4>How to Disagree at an ARD Meeting Without Burning Bridges</h4>
-                  <p>Push back effectively while keeping the relationship constructive.</p>
+               <a href="/blog/what-to-do-when-school-denies-evaluation/" class="related-card">
+                  <h4>What to Do When Your School Denies an Evaluation</h4>
+                  <p>Your legal options when the district says no.</p>
                </a>
-               <a href="/blog/how-to-write-measurable-iep-goals/" class="related-card">
-                  <h4>How to Write Measurable IEP Goals</h4>
-                  <p>With Texas TEKS alignment examples.</p>
+               <a href="/blog/how-to-disagree-at-ard-meeting/" class="related-card">
+                  <h4>How to Disagree at an ARD Meeting</h4>
+                  <p>Push back effectively while keeping the relationship constructive.</p>
                </a>
 
             </div>
