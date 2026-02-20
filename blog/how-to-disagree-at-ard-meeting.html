@@ -1,364 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How to Disagree at an ARD Meeting | Texas Special Education Resources</title>
-  <meta name="description" content="Navigate ARD meetings, IEP processes, and special education services with confidence in Texas." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    /* =========================================
-       VARIABLES & RESET
-    ========================================= */
-    :root {
-      --primary: #0a3d6b;
-      --primary-light: #1560a8;
-      --accent: #e8822a;
-      --accent-hover: #c96e1e;
-      --bg: #f5f7fa;
-      --white: #ffffff;
-      --text: #1e2530;
-      --text-muted: #5a6472;
-      --border: #dde3eb;
-      --card-shadow: 0 2px 16px rgba(10,61,107,0.08);
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    a { text-decoration: none; color: inherit; }
-    img { max-width: 100%; display: block; }
-    main { flex: 1; }
-
-    /* =========================================
-       NAV
-    ========================================= */
-    .site-header {
-      background: var(--white);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-      position: sticky;
-      top: 0;
-      z-index: 9999;
-    }
-    .navbar { width: 100%; }
-    .nav-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0.75rem 1.5rem;
-    }
-    .nav-logo img { display: block; }
-    .nav-menu {
-      display: flex;
-      list-style: none;
-      align-items: center;
-      gap: 1.5rem;
-    }
-    .nav-link {
-      color: var(--text);
-      font-weight: 500;
-      font-size: 0.95rem;
-      padding: 0.4rem 0;
-      transition: color 0.2s;
-    }
-    .nav-link:hover { color: var(--primary-light); }
-    .dropdown { position: relative; }
-    .dropdown-arrow { font-size: 0.65rem; margin-left: 2px; }
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: calc(100% + 8px);
-      left: 0;
-      background: var(--white);
-      min-width: 260px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-      border-radius: 6px;
-      list-style: none;
-      padding: 0.5rem 0;
-      border: 1px solid var(--border);
-    }
-    .dropdown:hover .dropdown-menu { display: block; }
-    .dropdown-menu a {
-      display: block;
-      padding: 0.5rem 1.25rem;
-      font-size: 0.9rem;
-      color: var(--text);
-      transition: background 0.15s;
-    }
-    .dropdown-menu a:hover { background: var(--bg); color: var(--primary-light); }
-    .dropdown-divider { height: 1px; background: var(--border); margin: 0.4rem 0; }
-    .view-all-link { font-weight: 600; color: var(--primary-light) !important; }
-    .button-primary {
-      background: var(--accent);
-      color: #fff !important;
-      padding: 0.55rem 1.15rem;
-      border-radius: 5px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      transition: background 0.2s, transform 0.1s;
-    }
-    .button-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
-    .mobile-menu-toggle {
-      display: none;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      flex-direction: column;
-      gap: 5px;
-      padding: 0.4rem;
-    }
-    .hamburger { width: 24px; height: 2.5px; background: var(--primary); border-radius: 2px; display: block; }
-
-    /* =========================================
-       SECTION SHARED (For Pages)
-    ========================================= */
-    .section { padding: 4.5rem 1.5rem; }
-    .section-alt { background: var(--white); }
-    .section-inner { max-width: 1200px; margin: 0 auto; }
-    .page-header { text-align: center; margin-bottom: 2.5rem; }
-    .page-header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      color: var(--primary);
-      margin-bottom: 0.6rem;
-    }
-    .page-content-box {
-      background: var(--white);
-      padding: 3rem;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      box-shadow: var(--card-shadow);
-      min-height: 400px;
-    }
-    .page-content-box h2 {
-      color: var(--primary-light);
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    /* =========================================
-       FOOTER
-    ========================================= */
-    .site-footer {
-      background: #111820;
-      color: #fff;
-      padding: 4rem 1.5rem 1.5rem;
-      margin-top: auto;
-    }
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto 2.5rem;
-      display: grid;
-      grid-template-columns: 2.2fr 1fr 1fr 1fr;
-      gap: 3rem;
-    }
-    .footer-about img {
-      background: #fff;
-      padding: 0.5rem 0.75rem;
-      border-radius: 6px;
-      margin-bottom: 1rem;
-    }
-    .footer-about p { color: #8fa3b8; font-size: 0.9rem; line-height: 1.7; max-width: 320px; }
-    .footer-col h3 {
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-    .footer-col ul { list-style: none; }
-    .footer-col ul li { margin-bottom: 0.65rem; }
-    .footer-col a { color: #8fa3b8; font-size: 0.9rem; transition: color 0.15s; }
-    .footer-col a:hover { color: #fff; }
-    .footer-bottom {
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-      padding-top: 1.5rem;
-      border-top: 1px solid #1e2c3a;
-      color: #4a6070;
-      font-size: 0.82rem;
-    }
-
-    /* =========================================
-       RESPONSIVE
-    ========================================= */
-    @media (max-width: 900px) {
-      .mobile-menu-toggle { display: flex; }
-      .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: var(--white);
-        box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-        padding: 1rem 0;
-        gap: 0;
-        align-items: flex-start;
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>How to Disagree at an ARD Meeting Without Burning Bridges | TexasSpecialEd.com</title>
+   <meta name="description" content="You have the right to disagree at an ARD meeting and you don't have to sign the IEP. Here's how to push back effectively while keeping the working relationship constructive.">
+   <link rel="canonical" href="https://www.texasspecialed.com/blog/how-to-disagree-at-ard-meeting/">
+   <meta property="og:title" content="How to Disagree at an ARD Meeting Without Burning Bridges">
+   <meta property="og:description" content="You have the right to disagree at an ARD meeting and you don't have to sign the IEP. Here's how to push back effectively while keeping the working relationship constructive.">
+   <meta property="og:url" content="https://www.texasspecialed.com/blog/how-to-disagree-at-ard-meeting/">
+   <meta property="og:type" content="article">
+   <link rel="stylesheet" href="/styles/global.css">
+   <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "Article",
+         "headline": "How to Disagree at an ARD Meeting Without Burning Bridges",
+         "description": "You have the right to disagree at an ARD meeting and you don't have to sign the IEP. Here's how to push back effectively while keeping the working relationship constructive.",
+         "url": "https://www.texasspecialed.com/blog/how-to-disagree-at-ard-meeting/",
+         "datePublished": "2025-11-20",
+         "publisher": {
+            "@type": "Organization",
+            "name": "Texas Special Ed",
+            "url": "https://texasspecialed.com"
+         },
+         "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.texasspecialed.com/blog/how-to-disagree-at-ard-meeting/"
+         }
       }
-      .nav-menu.active { display: flex; }
-      .nav-item { width: 100%; }
-      .nav-link { display: block; padding: 0.85rem 1.5rem; border-bottom: 1px solid var(--bg); }
-      .dropdown-menu { display: none !important; position: static; box-shadow: none; border: none; background: #f0f5fc; }
-      .dropdown.active .dropdown-menu { display: block !important; }
-      .nav-cta { padding: 1rem 1.5rem; }
-      .button-primary { display: block; text-align: center; }
-      .footer-container { grid-template-columns: 1fr 1fr; gap: 2rem; }
-      .footer-about { grid-column: 1 / -1; }
-      .page-content-box { padding: 1.5rem; }
-    }
-    @media (max-width: 560px) {
-      .footer-container { grid-template-columns: 1fr; }
-    }
-  </style>
+   </script>
+   <style>
+      .article-hero {
+         background: linear-gradient(135deg, #002868 0%, #004080 100%);
+         color: #fff;
+         padding: 3.5rem 0;
+      }
+
+      .article-hero h1 {
+         color: #fff;
+         font-size: 2.4rem;
+         margin-bottom: 1rem;
+         max-width: 800px;
+      }
+
+      .article-hero .lead {
+         color: rgba(255, 255, 255, 0.9);
+         font-size: 1.15rem;
+         max-width: 750px;
+         margin-bottom: 1.5rem;
+      }
+
+      .article-meta {
+         display: flex;
+         gap: 1.5rem;
+         font-size: 0.9rem;
+         color: rgba(255, 255, 255, 0.75);
+         flex-wrap: wrap;
+      }
+
+      .article-meta .category-badge {
+         background: #c8102e;
+         color: #fff;
+         padding: 0.2rem 0.75rem;
+         border-radius: 12px;
+         font-weight: 600;
+         font-size: 0.8rem;
+      }
+
+      .article-body {
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 3rem 1rem;
+      }
+
+      .article-body h2 {
+         font-size: 1.6rem;
+         margin-top: 2.5rem;
+         margin-bottom: 1rem;
+         color: #002868;
+      }
+
+      .article-body h3 {
+         font-size: 1.25rem;
+         margin-top: 2rem;
+         margin-bottom: 0.75rem;
+         color: #002868;
+      }
+
+      .article-body p {
+         font-size: 1.05rem;
+         line-height: 1.8;
+         color: #444;
+         margin-bottom: 1.25rem;
+      }
+
+      .article-body ul,
+      .article-body ol {
+         margin: 1rem 0 1.5rem 1.5rem;
+      }
+
+      .article-body li {
+         font-size: 1.05rem;
+         line-height: 1.7;
+         color: #444;
+         margin-bottom: 0.5rem;
+      }
+
+      .callout-box {
+         background: #f0f4f8;
+         border-left: 4px solid #002868;
+         padding: 1.25rem 1.5rem;
+         margin: 2rem 0;
+         border-radius: 0 8px 8px 0;
+      }
+
+      .callout-box p {
+         margin-bottom: 0.5rem;
+      }
+
+      .callout-box p:last-child {
+         margin-bottom: 0;
+      }
+
+      .callout-warning {
+         background: #fff8e1;
+         border-left-color: #f0ad4e;
+      }
+
+      .callout-success {
+         background: #e8f5e9;
+         border-left-color: #28a745;
+      }
+
+      .timeline-table {
+         width: 100%;
+         border-collapse: collapse;
+         margin: 1.5rem 0;
+      }
+
+      .timeline-table th {
+         background: #002868;
+         color: #fff;
+         padding: 0.75rem 1rem;
+         text-align: left;
+         font-size: 0.95rem;
+      }
+
+      .timeline-table td {
+         padding: 0.75rem 1rem;
+         border-bottom: 1px solid #e0e0e0;
+         font-size: 0.95rem;
+      }
+
+      .timeline-table tr:nth-child(even) {
+         background: #f9f9f9;
+      }
+
+      .article-cta {
+         background: #002868;
+         color: #fff;
+         padding: 2rem;
+         border-radius: 8px;
+         text-align: center;
+         margin: 2.5rem 0;
+      }
+
+      .article-cta h3 {
+         color: #fff;
+         margin-bottom: 0.75rem;
+      }
+
+      .article-cta p {
+         color: rgba(255, 255, 255, 0.85);
+         margin-bottom: 1rem;
+      }
+
+      .related-posts {
+         background: #f9f9f9;
+         padding: 3rem 0;
+      }
+
+      .related-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+         gap: 1.5rem;
+         max-width: 800px;
+         margin: 1.5rem auto 0;
+      }
+
+      .related-card {
+         background: #fff;
+         border: 1px solid #e0e0e0;
+         border-radius: 8px;
+         padding: 1.25rem;
+         text-decoration: none;
+         transition: box-shadow 0.3s;
+      }
+
+      .related-card:hover {
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      .related-card h4 {
+         color: #002868;
+         font-size: 1rem;
+         margin-bottom: 0.5rem;
+      }
+
+      .related-card p {
+         color: #666;
+         font-size: 0.9rem;
+         margin: 0;
+      }
+
+      .sample-letter {
+         background: #f8f9fa;
+         border: 1px dashed #999;
+         padding: 1.5rem;
+         font-family: monospace;
+         font-size: 0.95rem;
+         line-height: 1.7;
+         margin: 1.5rem 0;
+         white-space: pre-wrap;
+         border-radius: 4px;
+      }
+
+      @media (max-width: 768px) {
+         .article-hero h1 {
+            font-size: 1.8rem;
+         }
+
+         .related-grid {
+            grid-template-columns: 1fr;
+         }
+      }
+   </style>
 </head>
+
 <body>
+   <header class="site-header">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+         <div class="nav-container">
+            <div class="nav-logo">
+               <a href="/" aria-label="Texas Special Ed Home">
+                  <img src="/images/texasspecialed-logo.png" alt="Texas Special Ed" width="200" height="60">
+               </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+               <span class="hamburger"></span>
+               <span class="hamburger"></span>
+               <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+               <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+               <li class="nav-item dropdown">
+                  <a href="/districts/" class="nav-link dropdown-toggle" aria-haspopup="true">Districts <span class="dropdown-arrow">▼</span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="/districts/">All Texas Districts</a></li>
+                     <li class="dropdown-divider"></li>
+                     <li><a href="/districts/round-rock-isd">Round Rock ISD</a></li>
+                     <li><a href="/districts/lewisville-isd">Lewisville ISD</a></li>
+                     <li><a href="/districts/frisco-isd">Frisco ISD</a></li>
+                     <li><a href="/districts/plano-isd">Plano ISD</a></li>
+                     <li><a href="/districts/conroe-isd">Conroe ISD</a></li>
+                     <li class="dropdown-divider"></li>
+                     <li><a href="/districts/">View All 20 Districts →</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item"><a href="/resources/" class="nav-link">Free Resources</a></li>
+               <li class="nav-item"><a href="/blog" class="nav-link active">Blog</a></li>
+               <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+               <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+               <li class="nav-item nav-cta"><a href="/resources/ard-checklist.pdf" class="button-primary">Get Free ARD Checklist</a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <nav aria-label="breadcrumb" class="breadcrumb">
+         <div class="container">
+            <a href="/">Home</a> ›
+            <a href="/blog">Blog</a> ›
+            <span>How to Disagree at an ARD Meeting Without Burning Bridges</span>
+         </div>
+      </nav>
+      <section class="article-hero">
+         <div class="container">
+            <div class="article-meta">
+               <span class="category-badge">ARD Meetings</span>
+               <span>November 20, 2025</span>
+            </div>
+            <h1>How to Disagree at an ARD Meeting Without Burning Bridges</h1>
+         </div>
+      </section>
+      <article class="article-body">
 
-<header class="site-header">
-  <nav aria-label="Main navigation" class="navbar" role="navigation">
-    <div class="nav-container">
-      <div class="nav-logo">
-        <a aria-label="Texas Special Ed Home" href="/">
-          <img alt="Texas Special Ed" height="auto" src="/images/texasspecialed-logo.png" width="200"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-          <span style="display:none; font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:800; color:#0a3d6b;">Texas Special Ed</span>
-        </a>
+         <p class="lead" style="font-size:1.15rem;color:#555;margin-bottom:2rem;">You have the right to disagree at an ARD meeting — and you don't have to sign the IEP. Here's how to push back effectively while keeping the working relationship constructive.</p>
+
+         <h2>You Have the Right to Disagree</h2>
+         <p>Let's start with the most important thing: <strong>disagreeing at an ARD meeting is not confrontational — it's your legal right.</strong> The ARD committee operates on a consensus model, and you are an equal member of that committee. If you don't agree with what's being proposed, saying so is not just okay — it's necessary for your child's education.</p>
+
+         <h2>When to Speak Up</h2>
+         <p>Common situations where parents should consider disagreeing:</p>
+         <ul>
+            <li>The school wants to <strong>reduce services</strong> (fewer speech minutes, less resource room time) without data showing improvement</li>
+            <li>IEP goals are being <strong>copied from last year</strong> with no meaningful change</li>
+            <li>The proposed placement is <strong>more restrictive</strong> than you believe is necessary</li>
+            <li>The school wants to <strong>dismiss your child from special education</strong> and you believe they still need services</li>
+            <li>Accommodations are being <strong>removed</strong> without your input</li>
+            <li>The school is <strong>refusing to evaluate</strong> in an area you've raised concerns about</li>
+         </ul>
+
+         <h2>How to Disagree Effectively</h2>
+
+         <h3>1. Stay Calm and Specific</h3>
+         <p>Instead of saying "I don't agree with this," say <em>"I'm concerned about reducing speech services from 150 minutes to 90 minutes per week because the progress report shows Maria has only met 2 of her 4 speech goals. Can you explain the data that supports this reduction?"</em></p>
+
+         <h3>2. Ask for Data</h3>
+         <p>Every proposal should be backed by data. If the school can't show you the numbers that support their recommendation, that's your strongest argument for why the change shouldn't happen. Use phrases like <em>"What data supports this decision?"</em> and <em>"Can you show me the progress monitoring results?"</em></p>
+
+         <h3>3. Reference Your Own Evidence</h3>
+         <p>Bring your documentation: private evaluations, therapy reports, homework samples, your own observations. The ARD committee must consider parent input — it's not just a courtesy, it's a legal requirement under IDEA.</p>
+
+         <h3>4. Use the 10-Day Recess</h3>
+         <p>If you feel pressured to agree to something on the spot, request a <strong>10-school-day recess</strong>. Under Texas law (19 TAC § 89.1050(g)), the school <em>must</em> grant this. Use the time to review the proposal, consult with an advocate or attorney, and gather additional information.</p>
+
+         <h3>5. Put It in Writing</h3>
+         <p>After the meeting, send a follow-up email that documents your disagreement. Example: <em>"Per our ARD meeting on [date], I want to confirm that I disagreed with the proposal to reduce James's resource room time from 5 hours to 3 hours per week. I am requesting that my written disagreement be attached to the IEP."</em></p>
+
+         <h2>What NOT to Do</h2>
+         <ul>
+            <li><strong>Don't sign "agree" if you don't.</strong> You can sign "attended" or "disagree" — you do not need to sign "agree."</li>
+            <li><strong>Don't accept verbal promises.</strong> If the school says "we'll try it and adjust later," insist that any changes be written into the IEP with a specific review date.</li>
+            <li><strong>Don't let urgency pressure you.</strong> The school may say they need a decision today. They don't. You have the right to take time.</li>
+         </ul>
+
+         <div class="callout-success callout-box">
+            <p><strong>Remember:</strong> Disagreeing doesn't make you a difficult parent — it makes you an informed one. The best ARD committees welcome parent input because it leads to better outcomes for the student.</p>
+         </div>
+
+         <div class="article-cta">
+            <h3>Be Prepared for Your Next ARD</h3>
+            <p>Download our complete ARD Meeting Checklist with pre-meeting prep, questions to ask, and follow-up reminders.</p>
+            <a href="/resources/ard-checklist.pdf" class="button-primary-large">Download Free Checklist</a>
+         </div>
+
+      </article>
+      <section class="related-posts">
+         <div class="container">
+            <h2 style="text-align:center;">Related Articles</h2>
+            <div class="related-grid">
+
+               <a href="/blog/10-questions-to-ask-at-ard-meeting/" class="related-card">
+                  <h4>10 Questions Every Parent Should Ask at ARD</h4>
+                  <p>Walk in prepared with the right questions.</p>
+               </a>
+               <a href="/blog/texas-parent-rights-special-education/" class="related-card">
+                  <h4>Your Rights as a Texas Special Education Parent</h4>
+                  <p>A complete guide from evaluation to due process.</p>
+               </a>
+
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="site-footer">
+      <div class="footer-container">
+         <div class="footer-top">
+            <div class="footer-column">
+               <img src="/images/texasspecialed-logo.png" alt="Texas Special Ed" width="180" height="54" class="footer-logo">
+               <p class="footer-tagline">Empowering Texas families with special education resources, ARD meeting support, and district-specific guidance.</p>
+            </div>
+            <div class="footer-column">
+               <h3 class="footer-heading">Quick Links</h3>
+               <ul class="footer-links">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/districts/">Browse Districts</a></li>
+                  <li><a href="/resources/">Free Resources</a></li>
+                  <li><a href="/blog">Blog</a></li>
+                  <li><a href="/about">About</a></li>
+                  <li><a href="/contact">Contact</a></li>
+               </ul>
+            </div>
+            <div class="footer-column">
+               <h3 class="footer-heading">Popular Districts</h3>
+               <ul class="footer-links">
+                  <li><a href="/districts/round-rock-isd">Round Rock ISD</a></li>
+                  <li><a href="/districts/frisco-isd">Frisco ISD</a></li>
+                  <li><a href="/districts/plano-isd">Plano ISD</a></li>
+                  <li><a href="/districts/lewisville-isd">Lewisville ISD</a></li>
+                  <li><a href="/districts/conroe-isd">Conroe ISD</a></li>
+                  <li><a href="/districts/">View All Districts →</a></li>
+               </ul>
+            </div>
+            <div class="footer-column">
+               <h3 class="footer-heading">Free Resources</h3>
+               <ul class="footer-links">
+                  <li><a href="/resources/ard-checklist.pdf" target="_blank">ARD Meeting Checklist</a></li>
+                  <li><a href="/resources/evaluation-request-template.pdf">Evaluation Request Letter</a></li>
+                  <li><a href="/resources/iep-goal-tracker.pdf">IEP Goal Tracker</a></li>
+                  <li><a href="/resources/parent-rights-guide.pdf" target="_blank">Parent Rights Guide</a></li>
+               </ul>
+               <h3 class="footer-heading" style="margin-top: 1.5rem;">Stay Updated</h3>
+               <form action="/subscribe" method="post" class="footer-subscribe">
+                  <input type="email" name="email" placeholder="Your email" required aria-label="Email address">
+                  <button type="submit" class="button-small">Subscribe</button>
+               </form>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="footer-legal">
+               <p>© 2026 TexasSpecialEd.com. All rights reserved.</p>
+               <nav class="footer-legal-links">
+                  <a href="/privacy-policy/">Privacy Policy</a>
+                  <span class="separator">|</span>
+                  <a href="/terms-of-service/">Terms of Service</a>
+                  <span class="separator">|</span>
+                  <a href="/disclaimer/">Disclaimer</a>
+               </nav>
+            </div>
+            <div class="footer-disclaimer">
+               <p><small>This website provides educational information about special education in Texas and is not legal advice. For specific legal questions, consult a licensed special education attorney.</small></p>
+            </div>
+         </div>
       </div>
-      <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-      </button>
-      <ul class="nav-menu">
-        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item dropdown">
-          <a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">
-            Districts <span class="dropdown-arrow">&#9660;</span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
-            <li class="dropdown-divider"></li>
-            <li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
-            <li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
-            <li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
-            <li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
-            <li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
-            <li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
-            <li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
-            <li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
-            <li class="dropdown-divider"></li>
-            <li><a class="view-all-link" href="/districts/index.html">View All 20+ Districts &#8594;</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="/resources/index.html">Free Resources</a></li>
-        <li class="nav-item"><a class="nav-link" href="/store/index.html">Toolkits</a></li>
-        <li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
-        <li class="nav-item nav-cta">
-          <a class="button-primary" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+   </footer>                                    <script>
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
 
-<main>
-
-    <section class="section">
-      <div class="section-inner">
-        <div class="page-header">
-          <h1>How to Disagree at an ARD Meeting</h1>
-        </div>
-        <div class="page-content-box">
-          <p><em>Content for <strong>How to Disagree at an ARD Meeting</strong> goes here.</em></p>
-          <p>Open <code>blog/how-to-disagree-at-ard-meeting.html</code> in your editor to replace this placeholder with your final content.</p>
-        </div>
-      </div>
-    </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-about">
-      <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-      <span style="display:none; font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:800; color:#fff;">Texas Special Ed</span>
-      <p style="margin-top:0.75rem;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
-    </div>
-    <div class="footer-col">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/districts/index.html">Browse Districts</a></li>
-        <li><a href="/resources/index.html">Free Resources</a></li>
-        <li><a href="/blog/index.html">Blog &amp; Articles</a></li>
-        <li><a href="/about/index.html">About Us</a></li>
-        <li><a href="/contact/index.html">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h3>Popular Districts</h3>
-      <ul>
-        <li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
-        <li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
-        <li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
-        <li><a href="/districts/lewisville-isd/index.html">Lewisville ISD</a></li>
-        <li><a href="/districts/conroe-isd/index.html">Conroe ISD</a></li>
-        <li><a href="/districts/index.html">View All Districts &#8594;</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h3>Free Resources</h3>
-      <ul>
-        <li><a href="/resources/ard-checklist.pdf" target="_blank">ARD Meeting Checklist</a></li>
-        <li><a href="/resources/evaluation-request-letter.pdf" target="_blank">Evaluation Request Letter</a></li>
-        <li><a href="/resources/iep-goal-tracker.pdf" target="_blank">IEP Goal Tracker</a></li>
-        <li><a href="/resources/parent-rights-guide.pdf" target="_blank">Parent Rights Guide</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&#169; 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
-  </div>
-</footer>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var toggle = document.querySelector('.mobile-menu-toggle');
-  var menu = document.querySelector('.nav-menu');
-  if (toggle && menu) {
-    toggle.addEventListener('click', function () {
-      menu.classList.toggle('active');
-      var expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-    });
-  }
-  document.querySelectorAll('.dropdown-toggle').forEach(function (drop) {
-    drop.addEventListener('click', function (e) {
-      if (window.innerWidth <= 900) {
-        e.preventDefault();
-        this.parentElement.classList.toggle('active');
-      }
+document.querySelectorAll('.subscribe-form, .footer-subscribe').forEach(function(form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var button = form.querySelector('button[type="submit"]');
+    var email = form.querySelector('input[type="email"]').value;
+    var districtInput = form.querySelector('input[name="district"]');
+    var district = districtInput ? districtInput.value : '';
+    
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, district: district })
+    })
+    .then(function() {
+      form.innerHTML = '<p style="color: green; font-weight: 600;">✓ You\'re subscribed!</p>';
+    })
+    .catch(function() {
+      button.disabled = false;
+      button.textContent = 'Subscribe';
+      alert('Something went wrong. Please try again.');
     });
   });
 });
 </script>
-
 </body>
+
 </html>
