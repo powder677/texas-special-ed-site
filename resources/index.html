@@ -3,11 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Free Special Education Resources | Texas Special Education Resources</title>
-  <meta name="description" content="Navigate ARD meetings, IEP processes, and special education services with confidence in Texas." />
+  <title>Free Special Education Resources for Texas Parents | TexasSpecialEd.com</title>
+  
+  <meta name="description" content="Free downloadable resources for Texas special education parents. ARD meeting checklists, evaluation request letter templates, IEP goal trackers, and parent rights guides." />
+  <link rel="canonical" href="https://www.texasspecialed.com/resources/">
+
+  <meta property="og:title" content="Free Special Education Resources for Texas Parents">
+  <meta property="og:description" content="Download free ARD checklists, evaluation request templates, IEP goal trackers, and parent rights guides for Texas special education.">
+  <meta property="og:url" content="https://www.texasspecialed.com/resources/">
+  <meta property="og:type" content="website">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+     "@context": "https://schema.org",
+     "@type": "CollectionPage",
+     "name": "Free Special Education Resources for Texas Parents",
+     "description": "Downloadable tools and templates to help Texas parents navigate ARD meetings, IEP goals, evaluations, and their rights under IDEA and Texas Education Code.",
+     "url": "https://www.texasspecialed.com/resources/",
+     "publisher": {
+        "@type": "Organization",
+        "name": "Texas Special Ed",
+        "url": "https://texasspecialed.com"
+     },
+     "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [{
+              "@type": "ListItem",
+              "position": 1,
+              "name": "ARD Meeting Preparation Checklist",
+              "url": "https://www.texasspecialed.com/resources/ard-checklist.pdf"
+           },
+           {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Evaluation Request Letter Template",
+              "url": "https://www.texasspecialed.com/resources/evaluation-request-template.pdf"
+           },
+           {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "IEP Goal Tracker",
+              "url": "https://www.texasspecialed.com/resources/iep-goal-tracker.pdf"
+           },
+           {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Parent Rights Guide",
+              "url": "https://www.texasspecialed.com/resources/parent-rights-guide.pdf"
+           }
+        ]
+     }
+  }
+  </script>
+
   <style>
     /* =========================================
        VARIABLES & RESET
@@ -107,6 +159,8 @@
       font-weight: 600;
       font-size: 0.9rem;
       transition: background 0.2s, transform 0.1s;
+      display: inline-block;
+      text-align: center;
     }
     .button-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
     .mobile-menu-toggle {
@@ -121,30 +175,186 @@
     .hamburger { width: 24px; height: 2.5px; background: var(--primary); border-radius: 2px; display: block; }
 
     /* =========================================
-       SECTION SHARED (For Pages)
+       SECTION SHARED
     ========================================= */
     .section { padding: 4.5rem 1.5rem; }
-    .section-alt { background: var(--white); }
     .section-inner { max-width: 1200px; margin: 0 auto; }
-    .page-header { text-align: center; margin-bottom: 2.5rem; }
-    .page-header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-      color: var(--primary);
-      margin-bottom: 0.6rem;
+    
+    /* =========================================
+       NEW RESOURCES PAGE STYLES
+    ========================================= */
+    .breadcrumb {
+        padding: 1rem 0;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        background: var(--bg);
     }
-    .page-content-box {
-      background: var(--white);
-      padding: 3rem;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      box-shadow: var(--card-shadow);
-      min-height: 400px;
+    
+    .resources-hero {
+        background: linear-gradient(135deg, var(--primary) 0%, #002868 100%);
+        color: #fff;
+        padding: 4rem 1.5rem;
+        text-align: center;
+        border-radius: 0 0 8px 8px; /* Optional slight curve */
+        margin-bottom: 2rem;
     }
-    .page-content-box h2 {
-      color: var(--primary-light);
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
+
+    .resources-hero h1 {
+        font-family: 'Playfair Display', serif;
+        color: #fff;
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 1rem;
+    }
+
+    .resources-hero .lead {
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 750px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+    }
+
+    .resource-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .resource-card-full {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 2rem;
+        transition: box-shadow 0.3s, transform 0.2s;
+        box-shadow: var(--card-shadow);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resource-card-full:hover {
+        box-shadow: 0 8px 24px rgba(10, 61, 107, 0.15);
+        transform: translateY(-3px);
+    }
+
+    .resource-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .resource-card-full h3 {
+        font-size: 1.3rem;
+        color: var(--primary);
+        margin-bottom: 0.75rem;
+        font-weight: 700;
+    }
+
+    .resource-card-full p {
+        color: var(--text-muted);
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+        flex-grow: 1;
+    }
+
+    .resource-features {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.5rem;
+    }
+
+    .resource-features li {
+        padding: 0.35rem 0;
+        color: var(--text);
+        font-size: 0.95rem;
+    }
+
+    .resource-features li::before {
+        content: "✓ ";
+        color: #28a745;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    /* FAQ Section */
+    .aeo-faq-container {
+        background: #fff;
+        padding: 4rem 1.5rem;
+        border-top: 1px solid var(--border);
+        margin-top: 4rem;
+    }
+
+    .aeo-faq-container h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: var(--primary);
+        font-family: 'Playfair Display', serif;
+    }
+
+    .aeo-block {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--border);
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aeo-block:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .aeo-block h3 {
+        font-size: 1.25rem;
+        color: var(--primary-light);
+        margin-bottom: 0.75rem;
+    }
+
+    .aeo-block p {
+        color: var(--text);
+        line-height: 1.7;
+    }
+
+    /* Newsletter Section */
+    .newsletter-section {
+        background: var(--primary);
+        color: #fff;
+        padding: 4rem 1.5rem;
+        text-align: center;
+    }
+
+    .newsletter-section h2 {
+        color: #fff;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 0.75rem;
+    }
+
+    .newsletter-section p {
+        color: rgba(255, 255, 255, 0.85);
+        max-width: 600px;
+        margin: 0 auto 1.5rem;
+    }
+
+    .newsletter-form {
+        display: flex;
+        gap: 0.5rem;
+        max-width: 450px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .newsletter-form input[type="email"] {
+        flex: 1;
+        padding: 0.75rem 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .newsletter-form input[type="email"]::placeholder {
+        color: rgba(255, 255, 255, 0.6);
     }
 
     /* =========================================
@@ -219,7 +429,8 @@
       .button-primary { display: block; text-align: center; }
       .footer-container { grid-template-columns: 1fr 1fr; gap: 2rem; }
       .footer-about { grid-column: 1 / -1; }
-      .page-content-box { padding: 1.5rem; }
+      
+      .newsletter-form { flex-direction: column; }
     }
     @media (max-width: 560px) {
       .footer-container { grid-template-columns: 1fr; }
@@ -278,16 +489,115 @@
 </header>
 
 <main>
+    <nav aria-label="breadcrumb" class="breadcrumb">
+      <div class="section-inner" style="padding: 0 1.5rem;">
+         <a href="/">Home</a> › <span>Free Resources</span>
+      </div>
+    </nav>
 
-    <section class="section">
+    <section class="resources-hero">
       <div class="section-inner">
-        <div class="page-header">
-          <h1>Free Special Education Resources</h1>
-        </div>
-        <div class="page-content-box">
-          <p><em>Content for <strong>Free Special Education Resources</strong> goes here.</em></p>
-          <p>Open <code>resources/index.html</code> in your editor to replace this placeholder with your final content.</p>
-        </div>
+         <h1>Free Special Education Resources for Texas Parents</h1>
+         <p class="lead">Downloadable checklists, letter templates, trackers, and guides to help you advocate effectively for your child at every stage of the special education process.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="section-inner">
+         <h2>Download Our Most Popular Tools</h2>
+         <p>Every resource below is 100% free — no email required. These are the same tools Texas families use to stay organized before, during, and after ARD meetings.</p>
+
+         <div class="resource-grid">
+            <div class="resource-card-full">
+               <div class="resource-icon">📋</div>
+               <h3>ARD Meeting Preparation Checklist</h3>
+               <p>A step-by-step printable checklist to help you prepare for your child's ARD committee meeting — from gathering documents to writing down your top concerns.</p>
+               <ul class="resource-features">
+                  <li>Pre-meeting document checklist</li>
+                  <li>Questions to ask the ARD committee</li>
+                  <li>Post-meeting follow-up reminders</li>
+               </ul>
+              <a href="/resources/ard-checklist.pdf" class="button-primary">Download Free Checklist</a>
+            </div>
+
+            <div class="resource-card-full">
+               <div class="resource-icon">📝</div>
+               <h3>Evaluation Request Letter Template</h3>
+               <p>A ready-to-use letter template for requesting a Full Individual Initial Evaluation (FIIE) from your Texas school district. Fill in your child's details and send.</p>
+               <ul class="resource-features">
+                  <li>Pre-written formal language</li>
+                  <li>Triggers the 15-school-day consent timeline</li>
+                  <li>Works for any Texas district</li>
+               </ul>
+               <a href="/resources/evaluation-request-template.pdf" class="button-primary">Download Free Template</a>
+            </div>
+
+            <div class="resource-card-full">
+               <div class="resource-icon">📊</div>
+               <h3>IEP Goal Tracker</h3>
+               <p>Track your child's progress toward their annual IEP goals. Use this spreadsheet to log data points, monitor benchmarks, and prepare for progress reviews.</p>
+               <ul class="resource-features">
+                  <li>Printable or digital-friendly format</li>
+                  <li>Organized by goal area (academic, social, behavioral)</li>
+                  <li>Space for parent observations</li>
+               </ul>
+              <a href="/resources/iep-goal-tracker.pdf" class="button-primary">Download Free Tracker</a>
+            </div>
+
+            <div class="resource-card-full">
+               <div class="resource-icon">📖</div>
+               <h3>Texas Parent Rights Guide</h3>
+               <p>A plain-language summary of your rights under IDEA, Section 504, and the Texas Education Code. Understand consent, timelines, dispute resolution, and more.</p>
+               <ul class="resource-features">
+                  <li>Written in parent-friendly language</li>
+                  <li>Covers IDEA, Section 504, and TEC Chapter 29</li>
+                  <li>Includes key deadlines and timelines</li>
+               </ul>
+               <a href="/resources/parent-rights-guide.pdf" class="button-primary">Download Free Guide</a>
+            </div>
+         </div>
+      </div>
+    </section>
+
+    <section class="aeo-faq-container">
+      <div class="section-inner">
+         <h2>Common Questions About These Resources</h2>
+
+         <div class="aeo-block">
+            <h3>Are these resources really free?</h3>
+            <p><strong>Yes — every resource on this page is completely free with no email signup required.</strong> We believe every Texas family deserves access to clear, practical tools for navigating the special education process. There are no hidden fees, upsells, or locked content.</p>
+         </div>
+
+         <div class="aeo-block">
+            <h3>Can I use the evaluation request letter for any Texas school district?</h3>
+            <p><strong>Yes.</strong> The evaluation request letter template uses formal language that triggers IDEA's legal timelines in any Texas district. Simply fill in your child's name, date of birth, campus, and specific concerns. The district then has 15 school days to respond with a consent form or a Prior Written Notice explaining their decision.</p>
+         </div>
+
+         <div class="aeo-block">
+            <h3>What should I bring to an ARD meeting?</h3>
+            <p><strong>Bring your child's most recent IEP, progress reports, any private evaluations, and a list of your top concerns.</strong> Our ARD Meeting Preparation Checklist walks you through everything step by step — including questions to ask, documents to request in advance, and what to do after the meeting ends.</p>
+         </div>
+
+         <div class="aeo-block">
+            <h3>How do I track my child's IEP goals at home?</h3>
+            <p><strong>Use our IEP Goal Tracker to log progress between report cards.</strong> Write down each annual goal, the baseline measurement, and the target. Then record observations from homework, teacher notes, and therapy sessions. Bringing this data to your next ARD meeting shows the committee exactly where your child stands — and whether the current services are working.</p>
+         </div>
+
+         <div class="aeo-block">
+            <h3>What are my rights as a parent in Texas special education?</h3>
+            <p><strong>Under IDEA and Texas Education Code Chapter 29, you have the right to request evaluations, participate in all ARD meetings, review your child's records, and disagree with the committee's decisions.</strong> Our Parent Rights Guide breaks down these protections in plain language, including timelines for evaluations (45 school days), ARD meetings (30 calendar days after evaluation), and how to file a complaint with TEA if your rights are violated.</p>
+         </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="section-inner">
+         <h2>Get New Resources Delivered to Your Inbox</h2>
+         <p>We release new tools, templates, and guides throughout the year. Subscribe for updates — no spam, just practical resources for Texas parents.</p>
+         <form action="/subscribe" method="post" class="newsletter-form">
+            <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+            <button type="submit" class="button-primary" style="background: #e8822a; color: #fff;">Subscribe</button>
+         </form>
       </div>
     </section>
 
@@ -339,6 +649,7 @@
 </footer>
 
 <script>
+// Main Menu Script
 document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.querySelector('.mobile-menu-toggle');
   var menu = document.querySelector('.nav-menu');
@@ -355,6 +666,38 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         this.parentElement.classList.toggle('active');
       }
+    });
+  });
+});
+
+// Subscription Form Script
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
+
+document.querySelectorAll('.newsletter-form').forEach(function(form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var button = form.querySelector('button[type="submit"]');
+    var email = form.querySelector('input[type="email"]').value;
+    // Default district to empty if not present in this specific form
+    var district = ''; 
+    
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, district: district })
+    })
+    .then(function() {
+      form.innerHTML = '<p style="color: #fff; font-weight: 600; font-size: 1.1rem; padding: 10px; border: 1px solid #fff; border-radius: 4px;">✓ You\'re subscribed!</p>';
+    })
+    .catch(function() {
+      button.disabled = false;
+      button.textContent = 'Subscribe';
+      alert('Something went wrong. Please try again.');
     });
   });
 });
