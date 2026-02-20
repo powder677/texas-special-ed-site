@@ -1,0 +1,842 @@
+file,slug,filename,title,words,thin,placeholders
+index.html,(root),index.html,Texas School Districts Directory | Texas Special Education Resources,180,True,
+conroe-isd\leadership-directory.html,conroe-isd,leadership-directory.html,Conroe ISD Special Education Contacts | Staff Directory,265,True,
+katy-isd\leadership-directory.html,katy-isd,leadership-directory.html,Katy ISD Special Education Contacts | Staff Directory,272,True,
+belton-isd\leadership-directory.html,belton-isd,leadership-directory.html,Belton ISD Special Education Contacts | Staff Directory,273,True,
+hurst-euless-bedford-isd\leadership-directory.html,hurst-euless-bedford-isd,leadership-directory.html,Hurst-Euless-Bedford ISD Special Education Contacts | Staff Directory,273,True,
+mckinney-isd\leadership-directory.html,mckinney-isd,leadership-directory.html,McKinney ISD Special Education Contacts | Staff Directory,273,True,
+pasadena-isd\leadership-directory.html,pasadena-isd,leadership-directory.html,Pasadena ISD Special Education Contacts | Staff Directory,273,True,
+temple-isd\leadership-directory.html,temple-isd,leadership-directory.html,Temple ISD Special Education Contacts | Staff Directory,273,True,
+mesquite-isd\leadership-directory.html,mesquite-isd,leadership-directory.html,Mesquite ISD Special Education Contacts | Staff Directory,276,True,
+leander-isd\leadership-directory.html,leander-isd,leadership-directory.html,Leander ISD Special Education Contacts | Staff Directory,277,True,
+grand-prairie-isd\leadership-directory.html,grand-prairie-isd,leadership-directory.html,Grand Prairie ISD Special Education Contacts | Staff Directory,278,True,
+seguin-isd\leadership-directory.html,seguin-isd,leadership-directory.html,Seguin ISD Special Education Contacts | Staff Directory,278,True,
+magnolia-isd\leadership-directory.html,magnolia-isd,leadership-directory.html,Magnolia ISD Special Education Contacts | Staff Directory,279,True,
+mcallen-isd\leadership-directory.html,mcallen-isd,leadership-directory.html,McAllen ISD Special Education Contacts | Staff Directory,279,True,
+san-benito-cisd\leadership-directory.html,san-benito-cisd,leadership-directory.html,San Benito CISD Special Education Contacts | Staff Directory,279,True,
+arlington-isd\leadership-directory.html,arlington-isd,leadership-directory.html,Arlington ISD Special Education Contacts | Staff Directory,280,True,
+beaumont-isd\leadership-directory.html,beaumont-isd,leadership-directory.html,Beaumont ISD Special Education Contacts | Staff Directory,280,True,
+clint-isd\leadership-directory.html,clint-isd,leadership-directory.html,Clint ISD Special Education Contacts | Staff Directory,280,True,
+comal-isd\leadership-directory.html,comal-isd,leadership-directory.html,Comal ISD Special Education Contacts | Staff Directory,280,True,
+fort-worth-isd\leadership-directory.html,fort-worth-isd,leadership-directory.html,Fort Worth ISD Special Education Contacts | Staff Directory,280,True,
+frisco-isd\leadership-directory.html,frisco-isd,leadership-directory.html,Frisco ISD Special Education Contacts | Staff Directory,280,True,
+irving-isd\leadership-directory.html,irving-isd,leadership-directory.html,Irving ISD Special Education Contacts | Staff Directory,280,True,
+lubbock-isd\leadership-directory.html,lubbock-isd,leadership-directory.html,Lubbock ISD Special Education Contacts | Staff Directory,280,True,
+prosper-isd\leadership-directory.html,prosper-isd,leadership-directory.html,Prosper ISD Special Education Contacts | Staff Directory,280,True,
+richardson-isd\leadership-directory.html,richardson-isd,leadership-directory.html,Richardson ISD Special Education Contacts | Staff Directory,280,True,
+forney-isd\leadership-directory.html,forney-isd,leadership-directory.html,Forney ISD Special Education Contacts | Staff Directory,281,True,
+goose-creek-cisd\leadership-directory.html,goose-creek-cisd,leadership-directory.html,Goose Creek CISD Special Education Contacts | Staff Directory,281,True,
+laredo-isd\leadership-directory.html,laredo-isd,leadership-directory.html,Laredo ISD Special Education Contacts | Staff Directory,281,True,
+carrollton-farmers-branch-isd\leadership-directory.html,carrollton-farmers-branch-isd,leadership-directory.html,Carrollton-Farmers Branch ISD Special Education Contacts | Staff Directory,282,True,
+dallas-isd\leadership-directory.html,dallas-isd,leadership-directory.html,Dallas ISD Special Education Contacts | Staff Directory,282,True,
+wichita-falls-isd\leadership-directory.html,wichita-falls-isd,leadership-directory.html,Wichita Falls ISD Special Education Contacts | Staff Directory,282,True,
+ysleta-isd\leadership-directory.html,ysleta-isd,leadership-directory.html,Ysleta ISD Special Education Contacts | Staff Directory,282,True,
+midway-isd\leadership-directory.html,midway-isd,leadership-directory.html,Midway ISD Special Education Contacts | Staff Directory,283,True,
+san-marcos-cisd\leadership-directory.html,san-marcos-cisd,leadership-directory.html,San Marcos CISD Special Education Contacts | Staff Directory,283,True,
+bryan-isd\leadership-directory.html,bryan-isd,leadership-directory.html,Bryan ISD Special Education Contacts | Staff Directory,284,True,
+montgomery-isd\leadership-directory.html,montgomery-isd,leadership-directory.html,Montgomery ISD Special Education Contacts | Staff Directory,284,True,
+san-angelo-isd\leadership-directory.html,san-angelo-isd,leadership-directory.html,San Angelo ISD Special Education Contacts | Staff Directory,284,True,
+austin-isd\leadership-directory.html,austin-isd,leadership-directory.html,Austin ISD Special Education Contacts | Staff Directory,285,True,
+crosby-isd\leadership-directory.html,crosby-isd,leadership-directory.html,Crosby ISD Special Education Contacts | Staff Directory,285,True,
+denton-isd\leadership-directory.html,denton-isd,leadership-directory.html,Denton ISD Special Education Contacts | Staff Directory,285,True,
+harlingen-cisd\leadership-directory.html,harlingen-cisd,leadership-directory.html,Harlingen CISD Special Education Contacts | Staff Directory,285,True,
+humble-isd\leadership-directory.html,humble-isd,leadership-directory.html,Humble ISD Special Education Contacts | Staff Directory,285,True,
+keller-isd\leadership-directory.html,keller-isd,leadership-directory.html,Keller ISD Special Education Contacts | Staff Directory,285,True,
+killeen-isd\leadership-directory.html,killeen-isd,leadership-directory.html,Killeen ISD Special Education Contacts | Staff Directory,285,True,
+lamar-cisd\leadership-directory.html,lamar-cisd,leadership-directory.html,Lamar CISD Special Education Contacts | Staff Directory,285,True,
+longview-isd\leadership-directory.html,longview-isd,leadership-directory.html,Longview ISD Special Education Contacts | Staff Directory,285,True,
+sherman-isd\leadership-directory.html,sherman-isd,leadership-directory.html,Sherman ISD Special Education Contacts | Staff Directory,285,True,
+waco-isd\leadership-directory.html,waco-isd,leadership-directory.html,Waco ISD Special Education Contacts | Staff Directory,285,True,
+waller-isd\leadership-directory.html,waller-isd,leadership-directory.html,Waller ISD Special Education Contacts | Staff Directory,285,True,
+brownsville-isd\leadership-directory.html,brownsville-isd,leadership-directory.html,Brownsville ISD Special Education Contacts | Staff Directory,286,True,
+donna-isd\leadership-directory.html,donna-isd,leadership-directory.html,Donna ISD Special Education Contacts | Staff Directory,286,True,
+hays-cisd\leadership-directory.html,hays-cisd,leadership-directory.html,Hays CISD Special Education Contacts | Staff Directory,286,True,
+melissa-isd\leadership-directory.html,melissa-isd,leadership-directory.html,Melissa ISD Special Education Contacts | Staff Directory,286,True,
+socorro-isd\leadership-directory.html,socorro-isd,leadership-directory.html,Socorro ISD Special Education Contacts | Staff Directory,286,True,
+abilene-isd\leadership-directory.html,abilene-isd,leadership-directory.html,Abilene ISD Special Education Contacts | Staff Directory,287,True,
+alief-isd\leadership-directory.html,alief-isd,leadership-directory.html,Alief ISD Special Education Contacts | Staff Directory,287,True,
+burleson-isd\leadership-directory.html,burleson-isd,leadership-directory.html,Burleson ISD Special Education Contacts | Staff Directory,287,True,
+corpus-christi-isd\leadership-directory.html,corpus-christi-isd,leadership-directory.html,Corpus Christi ISD Special Education Contacts | Staff Directory,287,True,
+dickinson-isd\leadership-directory.html,dickinson-isd,leadership-directory.html,Dickinson ISD Special Education Contacts | Staff Directory,287,True,
+east-central-isd\leadership-directory.html,east-central-isd,leadership-directory.html,East Central ISD Special Education Contacts | Staff Directory,287,True,
+royse-city-isd\leadership-directory.html,royse-city-isd,leadership-directory.html,Royse City ISD Special Education Contacts | Staff Directory,287,True,
+spring-isd\leadership-directory.html,spring-isd,leadership-directory.html,Spring ISD Special Education Contacts | Staff Directory,287,True,
+amarillo-isd\leadership-directory.html,amarillo-isd,leadership-directory.html,Amarillo ISD Special Education Contacts | Staff Directory,288,True,
+crowley-isd\leadership-directory.html,crowley-isd,leadership-directory.html,Crowley ISD Special Education Contacts | Staff Directory,288,True,
+round-rock-isd\leadership-directory.html,round-rock-isd,leadership-directory.html,Round Rock ISD Special Education Contacts | Staff Directory,288,True,
+eagle-mountain-saginaw-isd\leadership-directory.html,eagle-mountain-saginaw-isd,leadership-directory.html,Eagle Mountain-Saginaw ISD Special Education Contacts | Staff Directory,289,True,
+weslaco-isd\leadership-directory.html,weslaco-isd,leadership-directory.html,Weslaco ISD Special Education Contacts | Staff Directory,289,True,
+aldine-isd\leadership-directory.html,aldine-isd,leadership-directory.html,Aldine ISD Special Education Contacts | Staff Directory,290,True,
+allen-isd\leadership-directory.html,allen-isd,leadership-directory.html,Allen ISD Special Education Contacts | Staff Directory,290,True,
+copperas-cove-isd\leadership-directory.html,copperas-cove-isd,leadership-directory.html,Copperas Cove ISD Special Education Contacts | Staff Directory,290,True,
+garland-isd\leadership-directory.html,garland-isd,leadership-directory.html,Garland ISD Special Education Contacts | Staff Directory,290,True,
+new-caney-isd\leadership-directory.html,new-caney-isd,leadership-directory.html,New Caney ISD Special Education Contacts | Staff Directory,290,True,
+princeton-isd\leadership-directory.html,princeton-isd,leadership-directory.html,Princeton ISD Special Education Contacts | Staff Directory,290,True,
+texas-city-isd\leadership-directory.html,texas-city-isd,leadership-directory.html,Texas City ISD Special Education Contacts | Staff Directory,290,True,
+edinburg-cisd\leadership-directory.html,edinburg-cisd,leadership-directory.html,Edinburg CISD Special Education Contacts | Staff Directory,291,True,
+georgetown-isd\leadership-directory.html,georgetown-isd,leadership-directory.html,Georgetown ISD Special Education Contacts | Staff Directory,291,True,
+mansfield-isd\leadership-directory.html,mansfield-isd,leadership-directory.html,Mansfield ISD Special Education Contacts | Staff Directory,291,True,
+northside-isd\leadership-directory.html,northside-isd,leadership-directory.html,Northside ISD Special Education Contacts | Staff Directory,291,True,
+rio-grande-city-grulla-isd\leadership-directory.html,rio-grande-city-grulla-isd,leadership-directory.html,Rio Grande City Grulla ISD Special Education Contacts | Staff Directory,291,True,
+victoria-isd\leadership-directory.html,victoria-isd,leadership-directory.html,Victoria ISD Special Education Contacts | Staff Directory,291,True,
+wylie-isd\leadership-directory.html,wylie-isd,leadership-directory.html,Wylie ISD Special Education Contacts | Staff Directory,291,True,
+bastrop-isd\leadership-directory.html,bastrop-isd,leadership-directory.html,Bastrop ISD Special Education Contacts | Staff Directory,292,True,
+lewisville-isd\leadership-directory.html,lewisville-isd,leadership-directory.html,Lewisville ISD Special Education Contacts | Staff Directory,292,True,
+pflugerville-isd\leadership-directory.html,pflugerville-isd,leadership-directory.html,Pflugerville ISD Special Education Contacts | Staff Directory,292,True,
+plano-isd\leadership-directory.html,plano-isd,leadership-directory.html,Plano ISD Special Education Contacts | Staff Directory,292,True,
+tyler-isd\leadership-directory.html,tyler-isd,leadership-directory.html,Tyler ISD Special Education Contacts | Staff Directory,292,True,
+birdville-isd\leadership-directory.html,birdville-isd,leadership-directory.html,Birdville ISD Special Education Contacts | Staff Directory,293,True,
+clear-creek-isd\leadership-directory.html,clear-creek-isd,leadership-directory.html,Clear Creek ISD Special Education Contacts | Staff Directory,293,True,
+friendswood-isd\leadership-directory.html,friendswood-isd,leadership-directory.html,Friendswood ISD Special Education Contacts | Staff Directory,293,True,
+lake-travis-isd\leadership-directory.html,lake-travis-isd,leadership-directory.html,Lake Travis ISD Special Education Contacts | Staff Directory,293,True,
+northwest-isd\leadership-directory.html,northwest-isd,leadership-directory.html,Northwest ISD Special Education Contacts | Staff Directory,293,True,
+texarkana-isd\leadership-directory.html,texarkana-isd,leadership-directory.html,Texarkana ISD Special Education Contacts | Staff Directory,293,True,
+united-isd\leadership-directory.html,united-isd,leadership-directory.html,United ISD Special Education Contacts | Staff Directory,293,True,
+channelview-isd\leadership-directory.html,channelview-isd,leadership-directory.html,Channelview ISD Special Education Contacts | Staff Directory,294,True,
+college-station-isd\leadership-directory.html,college-station-isd,leadership-directory.html,College Station ISD Special Education Contacts | Staff Directory,294,True,
+el-paso-isd\leadership-directory.html,el-paso-isd,leadership-directory.html,El Paso ISD Special Education Contacts | Staff Directory,294,True,
+fort-bend-isd\leadership-directory.html,fort-bend-isd,leadership-directory.html,Fort Bend ISD Special Education Contacts | Staff Directory,294,True,
+san-antonio-isd\leadership-directory.html,san-antonio-isd,leadership-directory.html,San Antonio ISD Special Education Contacts | Staff Directory,294,True,
+coppell-isd\leadership-directory.html,coppell-isd,leadership-directory.html,Coppell ISD Special Education Contacts | Staff Directory,295,True,
+del-valle-isd\leadership-directory.html,del-valle-isd,leadership-directory.html,Del Valle ISD Special Education Contacts | Staff Directory,295,True,
+klein-isd\leadership-directory.html,klein-isd,leadership-directory.html,Klein ISD Special Education Contacts | Staff Directory,295,True,
+mission-cisd\leadership-directory.html,mission-cisd,leadership-directory.html,Mission CISD Special Education Contacts | Staff Directory,295,True,
+alvin-isd\leadership-directory.html,alvin-isd,leadership-directory.html,Alvin ISD Special Education Contacts | Staff Directory,296,True,
+cypress-fairbanks-isd\leadership-directory.html,cypress-fairbanks-isd,leadership-directory.html,Cypress-Fairbanks ISD Special Education Contacts | Staff Directory,296,True,
+ector-county-isd\leadership-directory.html,ector-county-isd,leadership-directory.html,Ector County ISD Special Education Contacts | Staff Directory,296,True,
+midland-isd\leadership-directory.html,midland-isd,leadership-directory.html,Midland ISD Special Education Contacts | Staff Directory,296,True,
+rockwall-isd\leadership-directory.html,rockwall-isd,leadership-directory.html,Rockwall ISD Special Education Contacts | Staff Directory,296,True,
+grapevine-colleyville-isd\leadership-directory.html,grapevine-colleyville-isd,leadership-directory.html,Grapevine-Colleyville ISD Special Education Contacts | Staff Directory,297,True,
+houston-isd\leadership-directory.html,houston-isd,leadership-directory.html,Houston ISD Special Education Contacts | Staff Directory,298,True,
+judson-isd\leadership-directory.html,judson-isd,leadership-directory.html,Judson ISD Special Education Contacts | Staff Directory,298,True,
+spring-branch-isd\leadership-directory.html,spring-branch-isd,leadership-directory.html,Spring Branch ISD Special Education Contacts | Staff Directory,298,True,
+idea-public-schools\leadership-directory.html,idea-public-schools,leadership-directory.html,IDEA Public Schools Special Education Contacts | Staff Directory,299,True,
+santa-fe-isd\leadership-directory.html,santa-fe-isd,leadership-directory.html,Santa Fe ISD Special Education Contacts | Staff Directory,300,True,
+schertz-cibolo-universal-city-isd\leadership-directory.html,schertz-cibolo-universal-city-isd,leadership-directory.html,Schertz-Cibolo-Universal City ISD Special Education Contacts | Staff Directory,300,True,
+la-joya-isd\leadership-directory.html,la-joya-isd,leadership-directory.html,La Joya ISD Special Education Contacts | Staff Directory,301,True,
+pharr-san-juan-alamo-isd\leadership-directory.html,pharr-san-juan-alamo-isd,leadership-directory.html,Pharr-San Juan-Alamo ISD Special Education Contacts | Staff Directory,301,True,
+little-elm-isd\leadership-directory.html,little-elm-isd,leadership-directory.html,Little Elm ISD Special Education Contacts | Staff Directory,302,True,
+north-east-isd\leadership-directory.html,north-east-isd,leadership-directory.html,North East ISD Special Education Contacts | Staff Directory,302,True,
+tomball-isd\leadership-directory.html,tomball-isd,leadership-directory.html,Tomball ISD Special Education Contacts | Staff Directory,302,True,
+harmony-public-schools-combined\leadership-directory.html,harmony-public-schools-combined,leadership-directory.html,Harmony Public Schools (Combined) Special Education Contacts | Staff Directory,304,True,
+eanes-isd\leadership-directory.html,eanes-isd,leadership-directory.html,Eanes ISD Special Education Contacts | Staff Directory,331,True,
+abilene-isd\index.html,abilene-isd,index.html,Abilene ISD Special Education Resources | Parent Rights Guide,342,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+amarillo-isd\index.html,amarillo-isd,index.html,Amarillo ISD Special Education Resources | Parent Rights Guide,342,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+beaumont-isd\index.html,beaumont-isd,index.html,Beaumont ISD Special Education Resources | Parent Rights Guide,342,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+lubbock-isd\index.html,lubbock-isd,index.html,Lubbock ISD Special Education Resources | Parent Rights Guide,342,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+texarkana-isd\index.html,texarkana-isd,index.html,Texarkana ISD Special Education Resources | Parent Rights Guide,342,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+victoria-isd\index.html,victoria-isd,index.html,Victoria ISD Special Education Resources | Parent Rights Guide,342,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+corpus-christi-isd\index.html,corpus-christi-isd,index.html,Corpus Christi ISD Special Education Resources | Parent Rights Guide,347,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+san-angelo-isd\index.html,san-angelo-isd,index.html,San Angelo ISD Special Education Resources | Parent Rights Guide,347,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+wichita-falls-isd\index.html,wichita-falls-isd,index.html,Wichita Falls ISD Special Education Resources | Parent Rights Guide,347,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+longview-isd\resources.html,longview-isd,resources.html,Special Education Services &amp; Support in Longview ISD | Texas Special Ed,358,True,
+houston-isd\resources.html,houston-isd,resources.html,Special Education Services &amp; Support in Houston ISD | Texas Special Ed,362,True,
+lamar-cisd\resources.html,lamar-cisd,resources.html,Special Education Services &amp; Support in Lamar CISD | Texas Special Ed,362,True,
+killeen-isd\resources.html,killeen-isd,resources.html,Special Education Services &amp; Support in Killeen ISD | Texas Special Ed,363,True,
+georgetown-isd\resources.html,georgetown-isd,resources.html,Special Education Services &amp; Support in Georgetown ISD | Texas Special Ed,364,True,
+grapevine-colleyville-isd\resources.html,grapevine-colleyville-isd,resources.html,Special Education Services &amp; Support in Grapevine-Colleyville ISD | Texas Special Ed,364,True,
+mansfield-isd\resources.html,mansfield-isd,resources.html,Special Education Services &amp; Support in Mansfield ISD | Texas Special Ed,365,True,
+northside-isd\resources.html,northside-isd,resources.html,Special Education Services &amp; Support in Northside ISD | Texas Special Ed,365,True,
+temple-isd\resources.html,temple-isd,resources.html,Special Education Services &amp; Support in Temple ISD | Texas Special Ed,365,True,
+united-isd\resources.html,united-isd,resources.html,Special Education Services &amp; Support in United ISD | Texas Special Ed,365,True,
+midland-isd\resources.html,midland-isd,resources.html,Special Education Services &amp; Support in Midland ISD | Texas Special Ed,366,True,
+sherman-isd\resources.html,sherman-isd,resources.html,Special Education Services &amp; Support in Sherman ISD | Texas Special Ed,366,True,
+socorro-isd\resources.html,socorro-isd,resources.html,Special Education Services &amp; Support in Socorro ISD | Texas Special Ed,367,True,
+austin-isd\resources.html,austin-isd,resources.html,Special Education Services &amp; Support in Austin ISD | Texas Special Ed,368,True,
+montgomery-isd\resources.html,montgomery-isd,resources.html,Special Education Services &amp; Support in Montgomery ISD | Texas Special Ed,368,True,
+texarkana-isd\resources.html,texarkana-isd,resources.html,Special Education Services &amp; Support in Texarkana ISD | Texas Special Ed,368,True,
+waco-isd\resources.html,waco-isd,resources.html,Special Education Services &amp; Support in Waco ISD | Texas Special Ed,368,True,
+lewisville-isd\resources.html,lewisville-isd,resources.html,Special Education Services &amp; Support in Lewisville ISD | Texas Special Ed,369,True,
+garland-isd\resources.html,garland-isd,resources.html,Special Education Services &amp; Support in Garland ISD | Texas Special Ed,370,True,
+hays-cisd\resources.html,hays-cisd,resources.html,Special Education Services &amp; Support in Hays CISD | Texas Special Ed,370,True,
+longview-isd\index.html,longview-isd,index.html,Longview ISD Special Education Resources | Parent Rights Guide,370,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+magnolia-isd\resources.html,magnolia-isd,resources.html,Special Education Services &amp; Support in Magnolia ISD | Texas Special Ed,370,True,
+prosper-isd\resources.html,prosper-isd,resources.html,Special Education Services &amp; Support in Prosper ISD | Texas Special Ed,370,True,
+tyler-isd\index.html,tyler-isd,index.html,Tyler ISD Special Education Resources | Parent Rights Guide,370,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+bryan-isd\index.html,bryan-isd,index.html,Bryan ISD Special Education Resources | Parent Rights Guide,371,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+midland-isd\index.html,midland-isd,index.html,Midland ISD Special Education Resources | Parent Rights Guide,371,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+pflugerville-isd\resources.html,pflugerville-isd,resources.html,Special Education Services &amp; Support in Pflugerville ISD | Texas Special Ed,371,True,
+mckinney-isd\resources.html,mckinney-isd,resources.html,Special Education Services &amp; Support in McKinney ISD | Texas Special Ed,372,True,
+midway-isd\resources.html,midway-isd,resources.html,Special Education Services &amp; Support in Midway ISD | Texas Special Ed,372,True,
+north-east-isd\resources.html,north-east-isd,resources.html,Special Education Services &amp; Support in North East ISD | Texas Special Ed,372,True,
+conroe-isd\resources.html,conroe-isd,resources.html,Special Education Services &amp; Support in Conroe ISD | Texas Special Ed,373,True,
+la-joya-isd\resources.html,la-joya-isd,resources.html,Special Education Services &amp; Support in La Joya ISD | Texas Special Ed,373,True,
+mcallen-isd\resources.html,mcallen-isd,resources.html,Special Education Services &amp; Support in McAllen ISD | Texas Special Ed,373,True,
+northwest-isd\resources.html,northwest-isd,resources.html,Special Education Services &amp; Support in Northwest ISD | Texas Special Ed,373,True,
+arlington-isd\resources.html,arlington-isd,resources.html,Special Education Services &amp; Support in Arlington ISD | Texas Special Ed,374,True,
+bryan-isd\resources.html,bryan-isd,resources.html,Special Education Services &amp; Support in Bryan ISD | Texas Special Ed,374,True,
+victoria-isd\resources.html,victoria-isd,resources.html,Special Education Services &amp; Support in Victoria ISD | Texas Special Ed,374,True,
+wylie-isd\resources.html,wylie-isd,resources.html,Special Education Services &amp; Support in Wylie ISD | Texas Special Ed,374,True,
+clint-isd\index.html,clint-isd,index.html,Clint ISD Special Education Resources | Parent Rights Guide,375,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+college-station-isd\index.html,college-station-isd,index.html,College Station ISD Special Education Resources | Parent Rights Guide,375,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+college-station-isd\resources.html,college-station-isd,resources.html,Special Education Services &amp; Support in College Station ISD | Texas Special Ed,375,True,
+dickinson-isd\resources.html,dickinson-isd,resources.html,Special Education Services &amp; Support in Dickinson ISD | Texas Special Ed,375,True,
+ector-county-isd\index.html,ector-county-isd,index.html,Ector County ISD Special Education Resources | Parent Rights Guide,375,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+new-caney-isd\resources.html,new-caney-isd,resources.html,Special Education Services &amp; Support in New Caney ISD | Texas Special Ed,375,True,
+socorro-isd\index.html,socorro-isd,index.html,Socorro ISD Special Education Resources | Parent Rights Guide,375,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+ysleta-isd\index.html,ysleta-isd,index.html,Ysleta ISD Special Education Resources | Parent Rights Guide,375,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+burleson-isd\resources.html,burleson-isd,resources.html,Special Education Services &amp; Support in Burleson ISD | Texas Special Ed,376,True,
+judson-isd\resources.html,judson-isd,resources.html,Special Education Services &amp; Support in Judson ISD | Texas Special Ed,376,True,
+lake-travis-isd\resources.html,lake-travis-isd,resources.html,Special Education Services &amp; Support in Lake Travis ISD | Texas Special Ed,376,True,
+laredo-isd\resources.html,laredo-isd,resources.html,Special Education Services &amp; Support in Laredo ISD | Texas Special Ed,376,True,
+round-rock-isd\resources.html,round-rock-isd,resources.html,Special Education Services &amp; Support in Round Rock ISD | Texas Special Ed,376,True,
+spring-isd\resources.html,spring-isd,resources.html,Special Education Services &amp; Support in Spring ISD | Texas Special Ed,376,True,
+clint-isd\resources.html,clint-isd,resources.html,Special Education Services &amp; Support in Clint ISD | Texas Special Ed,377,True,
+melissa-isd\resources.html,melissa-isd,resources.html,Special Education Services &amp; Support in Melissa ISD | Texas Special Ed,377,True,
+plano-isd\resources.html,plano-isd,resources.html,Special Education Services &amp; Support in Plano ISD | Texas Special Ed,377,True,
+rockwall-isd\resources.html,rockwall-isd,resources.html,Special Education Services &amp; Support in Rockwall ISD | Texas Special Ed,377,True,
+texas-city-isd\resources.html,texas-city-isd,resources.html,Special Education Services &amp; Support in Texas City ISD | Texas Special Ed,377,True,
+allen-isd\index.html,allen-isd,index.html,Allen ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+belton-isd\resources.html,belton-isd,resources.html,Special Education Services &amp; Support in Belton ISD | Texas Special Ed,378,True,
+coppell-isd\index.html,coppell-isd,index.html,Coppell ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+dallas-isd\index.html,dallas-isd,index.html,Dallas ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+denton-isd\index.html,denton-isd,index.html,Denton ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+forney-isd\index.html,forney-isd,index.html,Forney ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+frisco-isd\index.html,frisco-isd,index.html,Frisco ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+garland-isd\index.html,garland-isd,index.html,Garland ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+humble-isd\resources.html,humble-isd,resources.html,Special Education Services &amp; Support in Humble ISD | Texas Special Ed,378,True,
+irving-isd\index.html,irving-isd,index.html,Irving ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+irving-isd\resources.html,irving-isd,resources.html,Special Education Services &amp; Support in Irving ISD | Texas Special Ed,378,True,
+lewisville-isd\index.html,lewisville-isd,index.html,Lewisville ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+mckinney-isd\index.html,mckinney-isd,index.html,McKinney ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+melissa-isd\index.html,melissa-isd,index.html,Melissa ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+mesquite-isd\index.html,mesquite-isd,index.html,Mesquite ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+pharr-san-juan-alamo-isd\resources.html,pharr-san-juan-alamo-isd,resources.html,Special Education Services &amp; Support in Pharr-San Juan-Alamo ISD | Texas Special Ed,378,True,
+plano-isd\index.html,plano-isd,index.html,Plano ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+princeton-isd\index.html,princeton-isd,index.html,Princeton ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+prosper-isd\index.html,prosper-isd,index.html,Prosper ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+richardson-isd\index.html,richardson-isd,index.html,Richardson ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+rockwall-isd\index.html,rockwall-isd,index.html,Rockwall ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+schertz-cibolo-universal-city-isd\resources.html,schertz-cibolo-universal-city-isd,resources.html,Special Education Services &amp; Support in Schertz-Cibolo-Universal City ISD | Texas Special Ed,378,True,
+sherman-isd\index.html,sherman-isd,index.html,Sherman ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+wylie-isd\index.html,wylie-isd,index.html,Wylie ISD Special Education Resources | Parent Rights Guide,378,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+aldine-isd\index.html,aldine-isd,index.html,Aldine ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+alief-isd\index.html,alief-isd,index.html,Alief ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+alvin-isd\index.html,alvin-isd,index.html,Alvin ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+belton-isd\index.html,belton-isd,index.html,Belton ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+birdville-isd\index.html,birdville-isd,index.html,Birdville ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+burleson-isd\index.html,burleson-isd,index.html,Burleson ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+channelview-isd\index.html,channelview-isd,index.html,Channelview ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+conroe-isd\index.html,conroe-isd,index.html,Conroe ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+crosby-isd\index.html,crosby-isd,index.html,Crosby ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+crowley-isd\index.html,crowley-isd,index.html,Crowley ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+cypress-fairbanks-isd\index.html,cypress-fairbanks-isd,index.html,Cypress-Fairbanks ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+dickinson-isd\index.html,dickinson-isd,index.html,Dickinson ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+el-paso-isd\index.html,el-paso-isd,index.html,El Paso ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+friendswood-isd\index.html,friendswood-isd,index.html,Friendswood ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+grapevine-colleyville-isd\index.html,grapevine-colleyville-isd,index.html,Grapevine-Colleyville ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+houston-isd\index.html,houston-isd,index.html,Houston ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+humble-isd\index.html,humble-isd,index.html,Humble ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+hurst-euless-bedford-isd\index.html,hurst-euless-bedford-isd,index.html,Hurst-Euless-Bedford ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+katy-isd\index.html,katy-isd,index.html,Katy ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+killeen-isd\index.html,killeen-isd,index.html,Killeen ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+klein-isd\index.html,klein-isd,index.html,Klein ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+lamar-cisd\index.html,lamar-cisd,index.html,Lamar CISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+magnolia-isd\index.html,magnolia-isd,index.html,Magnolia ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+midway-isd\index.html,midway-isd,index.html,Midway ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+mission-cisd\resources.html,mission-cisd,resources.html,Special Education Services &amp; Support in Mission CISD | Texas Special Ed,379,True,
+montgomery-isd\index.html,montgomery-isd,index.html,Montgomery ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+pasadena-isd\index.html,pasadena-isd,index.html,Pasadena ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+spring-isd\index.html,spring-isd,index.html,Spring ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+temple-isd\index.html,temple-isd,index.html,Temple ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+tomball-isd\index.html,tomball-isd,index.html,Tomball ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+waco-isd\index.html,waco-isd,index.html,Waco ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+waller-isd\index.html,waller-isd,index.html,Waller ISD Special Education Resources | Parent Rights Guide,379,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+alief-isd\resources.html,alief-isd,resources.html,Special Education Services &amp; Support in Alief ISD | Texas Special Ed,380,True,
+arlington-isd\index.html,arlington-isd,index.html,Arlington ISD Special Education Resources | Parent Rights Guide,380,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+austin-isd\index.html,austin-isd,index.html,Austin ISD Special Education Resources | Parent Rights Guide,380,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+bastrop-isd\index.html,bastrop-isd,index.html,Bastrop ISD Special Education Resources | Parent Rights Guide,380,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+eanes-isd\index.html,eanes-isd,index.html,Eanes ISD Special Education Resources | Parent Rights Guide,380,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+forney-isd\resources.html,forney-isd,resources.html,Special Education Services &amp; Support in Forney ISD | Texas Special Ed,380,True,
+fort-worth-isd\resources.html,fort-worth-isd,resources.html,Special Education Services &amp; Support in Fort Worth ISD | Texas Special Ed,380,True,
+georgetown-isd\index.html,georgetown-isd,index.html,Georgetown ISD Special Education Resources | Parent Rights Guide,380,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+hays-cisd\index.html,hays-cisd,index.html,Hays CISD Special Education Resources | Parent Rights Guide,380,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+keller-isd\index.html,keller-isd,index.html,Keller ISD Special Education Resources | Parent Rights Guide,380,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+leander-isd\index.html,leander-isd,index.html,Leander ISD Special Education Resources | Parent Rights Guide,380,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+mansfield-isd\index.html,mansfield-isd,index.html,Mansfield ISD Special Education Resources | Parent Rights Guide,380,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+northwest-isd\index.html,northwest-isd,index.html,Northwest ISD Special Education Resources | Parent Rights Guide,380,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+pflugerville-isd\index.html,pflugerville-isd,index.html,Pflugerville ISD Special Education Resources | Parent Rights Guide,380,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+brownsville-isd\index.html,brownsville-isd,index.html,Brownsville ISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+carrollton-farmers-branch-isd\resources.html,carrollton-farmers-branch-isd,resources.html,Special Education Services &amp; Support in Carrollton-Farmers Branch ISD | Texas Special Ed,381,True,
+clear-creek-isd\resources.html,clear-creek-isd,resources.html,Special Education Services &amp; Support in Clear Creek ISD | Texas Special Ed,381,True,
+comal-isd\index.html,comal-isd,index.html,Comal ISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+donna-isd\index.html,donna-isd,index.html,Donna ISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+edinburg-cisd\index.html,edinburg-cisd,index.html,Edinburg CISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+harlingen-cisd\index.html,harlingen-cisd,index.html,Harlingen CISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+judson-isd\index.html,judson-isd,index.html,Judson ISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+keller-isd\resources.html,keller-isd,resources.html,Special Education Services &amp; Support in Keller ISD | Texas Special Ed,381,True,
+laredo-isd\index.html,laredo-isd,index.html,Laredo ISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+little-elm-isd\resources.html,little-elm-isd,resources.html,Special Education Services &amp; Support in Little Elm ISD | Texas Special Ed,381,True,
+mcallen-isd\index.html,mcallen-isd,index.html,McAllen ISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+mission-cisd\index.html,mission-cisd,index.html,Mission CISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+northside-isd\index.html,northside-isd,index.html,Northside ISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+santa-fe-isd\resources.html,santa-fe-isd,resources.html,Special Education Services &amp; Support in Santa Fe ISD | Texas Special Ed,381,True,
+seguin-isd\index.html,seguin-isd,index.html,Seguin ISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+united-isd\index.html,united-isd,index.html,United ISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+weslaco-isd\index.html,weslaco-isd,index.html,Weslaco ISD Special Education Resources | Parent Rights Guide,381,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+channelview-isd\resources.html,channelview-isd,resources.html,Special Education Services &amp; Support in Channelview ISD | Texas Special Ed,382,True,
+corpus-christi-isd\resources.html,corpus-christi-isd,resources.html,Special Education Services &amp; Support in Corpus Christi ISD | Texas Special Ed,382,True,
+del-valle-isd\resources.html,del-valle-isd,resources.html,Special Education Services &amp; Support in Del Valle ISD | Texas Special Ed,382,True,
+east-central-isd\resources.html,east-central-isd,resources.html,Special Education Services &amp; Support in East Central ISD | Texas Special Ed,382,True,
+edinburg-cisd\resources.html,edinburg-cisd,resources.html,Special Education Services &amp; Support in Edinburg CISD | Texas Special Ed,382,True,
+frisco-isd\resources.html,frisco-isd,resources.html,Special Education Services &amp; Support in Frisco ISD | Texas Special Ed,382,True,
+klein-isd\resources.html,klein-isd,resources.html,Special Education Services &amp; Support in Klein ISD | Texas Special Ed,382,True,
+princeton-isd\resources.html,princeton-isd,resources.html,Special Education Services &amp; Support in Princeton ISD | Texas Special Ed,382,True,
+waller-isd\resources.html,waller-isd,resources.html,Special Education Services &amp; Support in Waller ISD | Texas Special Ed,382,True,
+abilene-isd\resources.html,abilene-isd,resources.html,Special Education Services &amp; Support in Abilene ISD | Texas Special Ed,383,True,
+carrollton-farmers-branch-isd\index.html,carrollton-farmers-branch-isd,index.html,Carrollton-Farmers Branch ISD Special Education Resources | Parent Rights Guide,383,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+copperas-cove-isd\index.html,copperas-cove-isd,index.html,Copperas Cove ISD Special Education Resources | Parent Rights Guide,383,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+crosby-isd\resources.html,crosby-isd,resources.html,Special Education Services &amp; Support in Crosby ISD | Texas Special Ed,383,True,
+fort-bend-isd\index.html,fort-bend-isd,index.html,Fort Bend ISD Special Education Resources | Parent Rights Guide,383,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+grand-prairie-isd\index.html,grand-prairie-isd,index.html,Grand Prairie ISD Special Education Resources | Parent Rights Guide,383,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+little-elm-isd\index.html,little-elm-isd,index.html,Little Elm ISD Special Education Resources | Parent Rights Guide,383,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+royse-city-isd\index.html,royse-city-isd,index.html,Royse City ISD Special Education Resources | Parent Rights Guide,383,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+clear-creek-isd\index.html,clear-creek-isd,index.html,Clear Creek ISD Special Education Resources | Parent Rights Guide,384,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+copperas-cove-isd\resources.html,copperas-cove-isd,resources.html,Special Education Services &amp; Support in Copperas Cove ISD | Texas Special Ed,384,True,
+del-valle-isd\index.html,del-valle-isd,index.html,Del Valle ISD Special Education Resources | Parent Rights Guide,384,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+denton-isd\resources.html,denton-isd,resources.html,Special Education Services &amp; Support in Denton ISD | Texas Special Ed,384,True,
+donna-isd\resources.html,donna-isd,resources.html,Special Education Services &amp; Support in Donna ISD | Texas Special Ed,384,True,
+eagle-mountain-saginaw-isd\index.html,eagle-mountain-saginaw-isd,index.html,Eagle Mountain-Saginaw ISD Special Education Resources | Parent Rights Guide,384,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+fort-worth-isd\index.html,fort-worth-isd,index.html,Fort Worth ISD Special Education Resources | Parent Rights Guide,384,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+goose-creek-cisd\index.html,goose-creek-cisd,index.html,Goose Creek CISD Special Education Resources | Parent Rights Guide,384,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+leander-isd\resources.html,leander-isd,resources.html,Special Education Services &amp; Support in Leander ISD | Texas Special Ed,384,True,
+mesquite-isd\resources.html,mesquite-isd,resources.html,Special Education Services &amp; Support in Mesquite ISD | Texas Special Ed,384,True,
+new-caney-isd\index.html,new-caney-isd,index.html,New Caney ISD Special Education Resources | Parent Rights Guide,384,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+round-rock-isd\index.html,round-rock-isd,index.html,Round Rock ISD Special Education Resources | Parent Rights Guide,384,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+santa-fe-isd\index.html,santa-fe-isd,index.html,Santa Fe ISD Special Education Resources | Parent Rights Guide,384,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+spring-branch-isd\index.html,spring-branch-isd,index.html,Spring Branch ISD Special Education Resources | Parent Rights Guide,384,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+texas-city-isd\index.html,texas-city-isd,index.html,Texas City ISD Special Education Resources | Parent Rights Guide,384,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+tomball-isd\resources.html,tomball-isd,resources.html,Special Education Services &amp; Support in Tomball ISD | Texas Special Ed,384,True,
+aldine-isd\resources.html,aldine-isd,resources.html,Special Education Services &amp; Support in Aldine ISD | Texas Special Ed,385,True,
+brownsville-isd\resources.html,brownsville-isd,resources.html,Special Education Services &amp; Support in Brownsville ISD | Texas Special Ed,385,True,
+idea-public-schools\index.html,idea-public-schools,index.html,IDEA Public Schools Special Education Resources | Parent Rights Guide,385,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+la-joya-isd\index.html,la-joya-isd,index.html,La Joya ISD Special Education Resources | Parent Rights Guide,385,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+lake-travis-isd\index.html,lake-travis-isd,index.html,Lake Travis ISD Special Education Resources | Parent Rights Guide,385,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+north-east-isd\index.html,north-east-isd,index.html,North East ISD Special Education Resources | Parent Rights Guide,385,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+pharr-san-juan-alamo-isd\index.html,pharr-san-juan-alamo-isd,index.html,Pharr-San Juan-Alamo ISD Special Education Resources | Parent Rights Guide,385,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+san-antonio-isd\index.html,san-antonio-isd,index.html,San Antonio ISD Special Education Resources | Parent Rights Guide,385,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+san-marcos-cisd\index.html,san-marcos-cisd,index.html,San Marcos CISD Special Education Resources | Parent Rights Guide,385,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+schertz-cibolo-universal-city-isd\index.html,schertz-cibolo-universal-city-isd,index.html,Schertz-Cibolo-Universal City ISD Special Education Resources | Parent Rights Guide,385,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+cypress-fairbanks-isd\resources.html,cypress-fairbanks-isd,resources.html,Special Education Services &amp; Support in Cypress-Fairbanks ISD | Texas Special Ed,386,True,
+east-central-isd\index.html,east-central-isd,index.html,East Central ISD Special Education Resources | Parent Rights Guide,386,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+hurst-euless-bedford-isd\resources.html,hurst-euless-bedford-isd,resources.html,Special Education Services &amp; Support in Hurst-Euless-Bedford ISD | Texas Special Ed,386,True,
+rio-grande-city-grulla-isd\resources.html,rio-grande-city-grulla-isd,resources.html,Special Education Services &amp; Support in Rio Grande City Grulla ISD | Texas Special Ed,386,True,
+san-benito-cisd\index.html,san-benito-cisd,index.html,San Benito CISD Special Education Resources | Parent Rights Guide,386,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+allen-isd\resources.html,allen-isd,resources.html,Special Education Services &amp; Support in Allen ISD | Texas Special Ed,387,True,
+beaumont-isd\resources.html,beaumont-isd,resources.html,Special Education Services &amp; Support in Beaumont ISD | Texas Special Ed,387,True,
+san-antonio-isd\resources.html,san-antonio-isd,resources.html,Special Education Services &amp; Support in San Antonio ISD | Texas Special Ed,387,True,
+seguin-isd\resources.html,seguin-isd,resources.html,Special Education Services &amp; Support in Seguin ISD | Texas Special Ed,388,True,
+tyler-isd\resources.html,tyler-isd,resources.html,Special Education Services &amp; Support in Tyler ISD | Texas Special Ed,388,True,
+crowley-isd\resources.html,crowley-isd,resources.html,Special Education Services &amp; Support in Crowley ISD | Texas Special Ed,389,True,
+eagle-mountain-saginaw-isd\resources.html,eagle-mountain-saginaw-isd,resources.html,Special Education Services &amp; Support in Eagle Mountain-Saginaw ISD | Texas Special Ed,389,True,
+ector-county-isd\resources.html,ector-county-isd,resources.html,Special Education Services &amp; Support in Ector County ISD | Texas Special Ed,389,True,
+harmony-public-schools-combined\index.html,harmony-public-schools-combined,index.html,Harmony Public Schools (Combined) Special Education Resources | Parent Rights Guide,389,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+san-benito-cisd\resources.html,san-benito-cisd,resources.html,Special Education Services &amp; Support in San Benito CISD | Texas Special Ed,389,True,
+coppell-isd\resources.html,coppell-isd,resources.html,Special Education Services &amp; Support in Coppell ISD | Texas Special Ed,390,True,
+dallas-isd\resources.html,dallas-isd,resources.html,Special Education Services &amp; Support in Dallas ISD | Texas Special Ed,390,True,
+fort-bend-isd\resources.html,fort-bend-isd,resources.html,Special Education Services &amp; Support in Fort Bend ISD | Texas Special Ed,390,True,
+goose-creek-cisd\resources.html,goose-creek-cisd,resources.html,Special Education Services &amp; Support in Goose Creek CISD | Texas Special Ed,390,True,
+idea-public-schools\resources.html,idea-public-schools,resources.html,Special Education Services &amp; Support in IDEA Public Schools | Texas Special Ed,390,True,
+san-marcos-cisd\resources.html,san-marcos-cisd,resources.html,Special Education Services &amp; Support in San Marcos CISD | Texas Special Ed,390,True,
+ysleta-isd\resources.html,ysleta-isd,resources.html,Special Education Services &amp; Support in Ysleta ISD | Texas Special Ed,390,True,
+alvin-isd\resources.html,alvin-isd,resources.html,Special Education Services &amp; Support in Alvin ISD | Texas Special Ed,391,True,
+birdville-isd\resources.html,birdville-isd,resources.html,Special Education Services &amp; Support in Birdville ISD | Texas Special Ed,391,True,
+spring-branch-isd\resources.html,spring-branch-isd,resources.html,Special Education Services &amp; Support in Spring Branch ISD | Texas Special Ed,391,True,
+wichita-falls-isd\resources.html,wichita-falls-isd,resources.html,Special Education Services &amp; Support in Wichita Falls ISD | Texas Special Ed,391,True,
+amarillo-isd\resources.html,amarillo-isd,resources.html,Special Education Services &amp; Support in Amarillo ISD | Texas Special Ed,393,True,
+bastrop-isd\resources.html,bastrop-isd,resources.html,Special Education Services &amp; Support in Bastrop ISD | Texas Special Ed,393,True,
+harlingen-cisd\resources.html,harlingen-cisd,resources.html,Special Education Services &amp; Support in Harlingen CISD | Texas Special Ed,393,True,
+katy-isd\resources.html,katy-isd,resources.html,Special Education Services &amp; Support in Katy ISD | Texas Special Ed,393,True,
+lubbock-isd\resources.html,lubbock-isd,resources.html,Special Education Services &amp; Support in Lubbock ISD | Texas Special Ed,393,True,
+richardson-isd\resources.html,richardson-isd,resources.html,Special Education Services &amp; Support in Richardson ISD | Texas Special Ed,393,True,
+grand-prairie-isd\resources.html,grand-prairie-isd,resources.html,Special Education Services &amp; Support in Grand Prairie ISD | Texas Special Ed,394,True,
+harmony-public-schools-combined\resources.html,harmony-public-schools-combined,resources.html,Special Education Services &amp; Support in Harmony Public Schools (Combined) | Texas Special Ed,394,True,
+pasadena-isd\resources.html,pasadena-isd,resources.html,Special Education Services &amp; Support in Pasadena ISD | Texas Special Ed,394,True,
+san-angelo-isd\resources.html,san-angelo-isd,resources.html,Special Education Services &amp; Support in San Angelo ISD | Texas Special Ed,394,True,
+weslaco-isd\resources.html,weslaco-isd,resources.html,Special Education Services &amp; Support in Weslaco ISD | Texas Special Ed,395,True,
+rio-grande-city-grulla-isd\index.html,rio-grande-city-grulla-isd,index.html,Rio Grande City Grulla ISD Special Education Resources | Parent Rights Guide,396,True,"YOUR_BUNDLE_LINK, buy.stripe.com/YOUR_"
+comal-isd\resources.html,comal-isd,resources.html,Special Education Services &amp; Support in Comal ISD | Texas Special Ed,399,True,
+royse-city-isd\resources.html,royse-city-isd,resources.html,Special Education Services &amp; Support in Royse City ISD | Texas Special Ed,401,True,
+el-paso-isd\resources.html,el-paso-isd,resources.html,Special Education Services &amp; Support in El Paso ISD | Texas Special Ed,405,True,
+eanes-isd\resources.html,eanes-isd,resources.html,Special Education Services &amp; Support in Eanes ISD | Texas Special Ed,409,True,
+friendswood-isd\resources.html,friendswood-isd,resources.html,Special Education Services &amp; Support in Friendswood ISD | Texas Special Ed,413,True,
+friendswood-isd\dyslexia-services.html,friendswood-isd,dyslexia-services.html,Dyslexia Services in Friendswood ISD | Texas Dyslexia Handbook Rights,1032,False,
+coppell-isd\dyslexia-services.html,coppell-isd,dyslexia-services.html,Dyslexia Services in Coppell ISD | Texas Dyslexia Handbook Rights,1047,False,
+east-central-isd\dyslexia-services.html,east-central-isd,dyslexia-services.html,Dyslexia Services in East Central ISD | Texas Dyslexia Handbook Rights,1056,False,
+abilene-isd\dyslexia-services.html,abilene-isd,dyslexia-services.html,Dyslexia Services in Abilene ISD | Texas Dyslexia Handbook Rights,1058,False,
+wylie-isd\dyslexia-services.html,wylie-isd,dyslexia-services.html,Dyslexia Services in Wylie ISD | Texas Dyslexia Handbook Rights,1064,False,
+bryan-isd\dyslexia-services.html,bryan-isd,dyslexia-services.html,Dyslexia Services in Bryan ISD | Texas Dyslexia Handbook Rights,1070,False,
+texarkana-isd\dyslexia-services.html,texarkana-isd,dyslexia-services.html,Dyslexia Services in Texarkana ISD | Texas Dyslexia Handbook Rights,1074,False,
+tyler-isd\dyslexia-services.html,tyler-isd,dyslexia-services.html,Dyslexia Services in Tyler ISD | Texas Dyslexia Handbook Rights,1074,False,
+seguin-isd\dyslexia-services.html,seguin-isd,dyslexia-services.html,Dyslexia Services in Seguin ISD | Texas Dyslexia Handbook Rights,1075,False,
+harlingen-cisd\dyslexia-services.html,harlingen-cisd,dyslexia-services.html,Dyslexia Services in Harlingen CISD | Texas Dyslexia Handbook Rights,1076,False,
+montgomery-isd\grievance-dispute-resolution.html,montgomery-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Montgomery ISD | MDR &amp; Suspension Defense,1076,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+little-elm-isd\dyslexia-services.html,little-elm-isd,dyslexia-services.html,Dyslexia Services in Little Elm ISD | Texas Dyslexia Handbook Rights,1078,False,
+mission-cisd\dyslexia-services.html,mission-cisd,dyslexia-services.html,Dyslexia Services in Mission CISD | Texas Dyslexia Handbook Rights,1078,False,
+waller-isd\dyslexia-services.html,waller-isd,dyslexia-services.html,Dyslexia Services in Waller ISD | Texas Dyslexia Handbook Rights,1078,False,
+beaumont-isd\dyslexia-services.html,beaumont-isd,dyslexia-services.html,Dyslexia Services in Beaumont ISD | Texas Dyslexia Handbook Rights,1083,False,
+dickinson-isd\dyslexia-services.html,dickinson-isd,dyslexia-services.html,Dyslexia Services in Dickinson ISD | Texas Dyslexia Handbook Rights,1084,False,
+montgomery-isd\dyslexia-services.html,montgomery-isd,dyslexia-services.html,Dyslexia Services in Montgomery ISD | Texas Dyslexia Handbook Rights,1086,False,
+del-valle-isd\dyslexia-services.html,del-valle-isd,dyslexia-services.html,Dyslexia Services in Del Valle ISD | Texas Dyslexia Handbook Rights,1087,False,
+donna-isd\dyslexia-services.html,donna-isd,dyslexia-services.html,Dyslexia Services in Donna ISD | Texas Dyslexia Handbook Rights,1087,False,
+wichita-falls-isd\dyslexia-services.html,wichita-falls-isd,dyslexia-services.html,Dyslexia Services in Wichita Falls ISD | Texas Dyslexia Handbook Rights,1091,False,
+burleson-isd\dyslexia-services.html,burleson-isd,dyslexia-services.html,Dyslexia Services in Burleson ISD | Texas Dyslexia Handbook Rights,1095,False,
+weslaco-isd\dyslexia-services.html,weslaco-isd,dyslexia-services.html,Dyslexia Services in Weslaco ISD | Texas Dyslexia Handbook Rights,1098,False,
+rio-grande-city-grulla-isd\dyslexia-services.html,rio-grande-city-grulla-isd,dyslexia-services.html,Dyslexia Services in Rio Grande City Grulla ISD | Texas Dyslexia Handbook Rights,1100,False,
+victoria-isd\grievance-dispute-resolution.html,victoria-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Victoria ISD | MDR &amp; Suspension Defense,1100,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+belton-isd\dyslexia-services.html,belton-isd,dyslexia-services.html,Dyslexia Services in Belton ISD | Texas Dyslexia Handbook Rights,1102,False,
+bastrop-isd\dyslexia-services.html,bastrop-isd,dyslexia-services.html,Dyslexia Services in Bastrop ISD | Texas Dyslexia Handbook Rights,1103,False,
+santa-fe-isd\dyslexia-services.html,santa-fe-isd,dyslexia-services.html,Dyslexia Services in Santa Fe ISD | Texas Dyslexia Handbook Rights,1103,False,
+crowley-isd\dyslexia-services.html,crowley-isd,dyslexia-services.html,Dyslexia Services in Crowley ISD | Texas Dyslexia Handbook Rights,1106,False,
+rockwall-isd\dyslexia-services.html,rockwall-isd,dyslexia-services.html,Dyslexia Services in Rockwall ISD | Texas Dyslexia Handbook Rights,1107,False,
+san-angelo-isd\dyslexia-services.html,san-angelo-isd,dyslexia-services.html,Dyslexia Services in San Angelo ISD | Texas Dyslexia Handbook Rights,1107,False,
+beaumont-isd\grievance-dispute-resolution.html,beaumont-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Beaumont ISD | MDR &amp; Suspension Defense,1109,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+channelview-isd\dyslexia-services.html,channelview-isd,dyslexia-services.html,Dyslexia Services in Channelview ISD | Texas Dyslexia Handbook Rights,1110,False,
+forney-isd\dyslexia-services.html,forney-isd,dyslexia-services.html,Dyslexia Services in Forney ISD | Texas Dyslexia Handbook Rights,1111,False,
+waco-isd\dyslexia-services.html,waco-isd,dyslexia-services.html,Dyslexia Services in Waco ISD | Texas Dyslexia Handbook Rights,1111,False,
+princeton-isd\dyslexia-services.html,princeton-isd,dyslexia-services.html,Dyslexia Services in Princeton ISD | Texas Dyslexia Handbook Rights,1114,False,
+texas-city-isd\dyslexia-services.html,texas-city-isd,dyslexia-services.html,Dyslexia Services in Texas City ISD | Texas Dyslexia Handbook Rights,1115,False,
+sherman-isd\dyslexia-services.html,sherman-isd,dyslexia-services.html,Dyslexia Services in Sherman ISD | Texas Dyslexia Handbook Rights,1116,False,
+royse-city-isd\dyslexia-services.html,royse-city-isd,dyslexia-services.html,Dyslexia Services in Royse City ISD | Texas Dyslexia Handbook Rights,1119,False,
+magnolia-isd\dyslexia-services.html,magnolia-isd,dyslexia-services.html,Dyslexia Services in Magnolia ISD | Texas Dyslexia Handbook Rights,1121,False,
+victoria-isd\dyslexia-services.html,victoria-isd,dyslexia-services.html,Dyslexia Services in Victoria ISD | Texas Dyslexia Handbook Rights,1122,False,
+channelview-isd\grievance-dispute-resolution.html,channelview-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Channelview ISD | MDR &amp; Suspension Defense,1124,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+bastrop-isd\grievance-dispute-resolution.html,bastrop-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Bastrop ISD | MDR &amp; Suspension Defense,1129,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+new-caney-isd\dyslexia-services.html,new-caney-isd,dyslexia-services.html,Dyslexia Services in New Caney ISD | Texas Dyslexia Handbook Rights,1139,False,
+melissa-isd\dyslexia-services.html,melissa-isd,dyslexia-services.html,Dyslexia Services in Melissa ISD | Texas Dyslexia Handbook Rights,1142,False,
+midway-isd\dyslexia-services.html,midway-isd,dyslexia-services.html,Dyslexia Services in Midway ISD | Texas Dyslexia Handbook Rights,1144,False,
+san-benito-cisd\dyslexia-services.html,san-benito-cisd,dyslexia-services.html,Dyslexia Services in San Benito CISD | Texas Dyslexia Handbook Rights,1145,False,
+college-station-isd\dyslexia-services.html,college-station-isd,dyslexia-services.html,Dyslexia Services in College Station ISD | Texas Dyslexia Handbook Rights,1147,False,
+eanes-isd\dyslexia-services.html,eanes-isd,dyslexia-services.html,Dyslexia Services in Eanes ISD | Texas Dyslexia Handbook Rights,1150,False,
+grapevine-colleyville-isd\dyslexia-services.html,grapevine-colleyville-isd,dyslexia-services.html,Dyslexia Services in Grapevine-Colleyville ISD | Texas Dyslexia Handbook Rights,1152,False,
+schertz-cibolo-universal-city-isd\dyslexia-services.html,schertz-cibolo-universal-city-isd,dyslexia-services.html,Dyslexia Services in Schertz-Cibolo-Universal City ISD | Texas Dyslexia Handbook Rights,1152,False,
+copperas-cove-isd\grievance-dispute-resolution.html,copperas-cove-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Copperas Cove ISD | MDR &amp; Suspension Defense,1153,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+belton-isd\grievance-dispute-resolution.html,belton-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Belton ISD | MDR &amp; Suspension Defense,1160,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+copperas-cove-isd\dyslexia-services.html,copperas-cove-isd,dyslexia-services.html,Dyslexia Services in Copperas Cove ISD | Texas Dyslexia Handbook Rights,1160,False,
+melissa-isd\grievance-dispute-resolution.html,melissa-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Melissa ISD | MDR &amp; Suspension Defense,1160,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+clint-isd\dyslexia-services.html,clint-isd,dyslexia-services.html,Dyslexia Services in Clint ISD | Texas Dyslexia Handbook Rights,1163,False,
+san-marcos-cisd\dyslexia-services.html,san-marcos-cisd,dyslexia-services.html,Dyslexia Services in San Marcos CISD | Texas Dyslexia Handbook Rights,1166,False,
+santa-fe-isd\grievance-dispute-resolution.html,santa-fe-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Santa Fe ISD | MDR &amp; Suspension Defense,1173,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+longview-isd\dyslexia-services.html,longview-isd,dyslexia-services.html,Dyslexia Services in Longview ISD | Texas Dyslexia Handbook Rights,1177,False,
+forney-isd\grievance-dispute-resolution.html,forney-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Forney ISD | MDR &amp; Suspension Defense,1179,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+donna-isd\grievance-dispute-resolution.html,donna-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Donna ISD | MDR &amp; Suspension Defense,1183,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+coppell-isd\grievance-dispute-resolution.html,coppell-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Coppell ISD | MDR &amp; Suspension Defense,1184,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+san-benito-cisd\grievance-dispute-resolution.html,san-benito-cisd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in San Benito CISD | MDR &amp; Suspension Defense,1188,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+eanes-isd\grievance-dispute-resolution.html,eanes-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Eanes ISD | MDR &amp; Suspension Defense,1189,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+tyler-isd\grievance-dispute-resolution.html,tyler-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Tyler ISD | MDR &amp; Suspension Defense,1192,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+grapevine-colleyville-isd\grievance-dispute-resolution.html,grapevine-colleyville-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Grapevine-Colleyville ISD | MDR &amp; Suspension Defense,1193,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+schertz-cibolo-universal-city-isd\grievance-dispute-resolution.html,schertz-cibolo-universal-city-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Schertz-Cibolo-Universal City ISD | MDR &amp; Suspension Defense,1193,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+rockwall-isd\grievance-dispute-resolution.html,rockwall-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Rockwall ISD | MDR &amp; Suspension Defense,1196,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+georgetown-isd\dyslexia-services.html,georgetown-isd,dyslexia-services.html,Dyslexia Services in Georgetown ISD | Texas Dyslexia Handbook Rights,1199,False,
+sherman-isd\grievance-dispute-resolution.html,sherman-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Sherman ISD | MDR &amp; Suspension Defense,1205,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+seguin-isd\grievance-dispute-resolution.html,seguin-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Seguin ISD | MDR &amp; Suspension Defense,1206,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+waco-isd\grievance-dispute-resolution.html,waco-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Waco ISD | MDR &amp; Suspension Defense,1209,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+temple-isd\dyslexia-services.html,temple-isd,dyslexia-services.html,Dyslexia Services in Temple ISD | Texas Dyslexia Handbook Rights,1214,False,
+friendswood-isd\grievance-dispute-resolution.html,friendswood-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Friendswood ISD | MDR &amp; Suspension Defense,1217,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+magnolia-isd\grievance-dispute-resolution.html,magnolia-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Magnolia ISD | MDR &amp; Suspension Defense,1220,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+lake-travis-isd\grievance-dispute-resolution.html,lake-travis-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Lake Travis ISD | MDR &amp; Suspension Defense,1224,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+crowley-isd\grievance-dispute-resolution.html,crowley-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Crowley ISD | MDR &amp; Suspension Defense,1227,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+midway-isd\grievance-dispute-resolution.html,midway-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Midway ISD | MDR &amp; Suspension Defense,1228,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+college-station-isd\grievance-dispute-resolution.html,college-station-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in College Station ISD | MDR &amp; Suspension Defense,1234,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+san-angelo-isd\grievance-dispute-resolution.html,san-angelo-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in San Angelo ISD | MDR &amp; Suspension Defense,1239,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+temple-isd\grievance-dispute-resolution.html,temple-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Temple ISD | MDR &amp; Suspension Defense,1239,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+georgetown-isd\grievance-dispute-resolution.html,georgetown-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Georgetown ISD | MDR &amp; Suspension Defense,1241,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+abilene-isd\grievance-dispute-resolution.html,abilene-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Abilene ISD | MDR &amp; Suspension Defense,1243,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+wylie-isd\grievance-dispute-resolution.html,wylie-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Wylie ISD | MDR &amp; Suspension Defense,1243,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+harlingen-cisd\grievance-dispute-resolution.html,harlingen-cisd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Harlingen CISD | MDR &amp; Suspension Defense,1248,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+little-elm-isd\grievance-dispute-resolution.html,little-elm-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Little Elm ISD | MDR &amp; Suspension Defense,1248,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+texarkana-isd\grievance-dispute-resolution.html,texarkana-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Texarkana ISD | MDR &amp; Suspension Defense,1249,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+lake-travis-isd\dyslexia-services.html,lake-travis-isd,dyslexia-services.html,Dyslexia Services in Lake Travis ISD | Texas Dyslexia Handbook Rights,1254,False,
+burleson-isd\grievance-dispute-resolution.html,burleson-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Burleson ISD | MDR &amp; Suspension Defense,1256,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+clint-isd\grievance-dispute-resolution.html,clint-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Clint ISD | MDR &amp; Suspension Defense,1259,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+crosby-isd\grievance-dispute-resolution.html,crosby-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Crosby ISD | MDR &amp; Suspension Defense,1262,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+wichita-falls-isd\grievance-dispute-resolution.html,wichita-falls-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Wichita Falls ISD | MDR &amp; Suspension Defense,1262,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+mission-cisd\grievance-dispute-resolution.html,mission-cisd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Mission CISD | MDR &amp; Suspension Defense,1263,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+dickinson-isd\grievance-dispute-resolution.html,dickinson-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Dickinson ISD | MDR &amp; Suspension Defense,1264,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+princeton-isd\grievance-dispute-resolution.html,princeton-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Princeton ISD | MDR &amp; Suspension Defense,1265,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+texas-city-isd\grievance-dispute-resolution.html,texas-city-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Texas City ISD | MDR &amp; Suspension Defense,1266,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+san-marcos-cisd\grievance-dispute-resolution.html,san-marcos-cisd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in San Marcos CISD | MDR &amp; Suspension Defense,1269,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+crosby-isd\dyslexia-services.html,crosby-isd,dyslexia-services.html,Dyslexia Services in Crosby ISD | Texas Dyslexia Handbook Rights,1270,False,
+east-central-isd\grievance-dispute-resolution.html,east-central-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in East Central ISD | MDR &amp; Suspension Defense,1274,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+royse-city-isd\grievance-dispute-resolution.html,royse-city-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Royse City ISD | MDR &amp; Suspension Defense,1275,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+beaumont-isd\evaluation-child-find.html,beaumont-isd,evaluation-child-find.html,How to Request an Evaluation in Beaumont ISD | FIE Timeline,1277,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+longview-isd\grievance-dispute-resolution.html,longview-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Longview ISD | MDR &amp; Suspension Defense,1281,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+bryan-isd\grievance-dispute-resolution.html,bryan-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Bryan ISD | MDR &amp; Suspension Defense,1299,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+del-valle-isd\grievance-dispute-resolution.html,del-valle-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Del Valle ISD | MDR &amp; Suspension Defense,1308,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+rio-grande-city-grulla-isd\grievance-dispute-resolution.html,rio-grande-city-grulla-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Rio Grande City Grulla ISD | MDR &amp; Suspension Defense,1313,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+abilene-isd\evaluation-child-find.html,abilene-isd,evaluation-child-find.html,How to Request an Evaluation in Abilene ISD | FIE Timeline,1322,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+new-caney-isd\grievance-dispute-resolution.html,new-caney-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in New Caney ISD | MDR &amp; Suspension Defense,1330,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+weslaco-isd\grievance-dispute-resolution.html,weslaco-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Weslaco ISD | MDR &amp; Suspension Defense,1339,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+waller-isd\grievance-dispute-resolution.html,waller-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Waller ISD | MDR &amp; Suspension Defense,1355,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+sherman-isd\evaluation-child-find.html,sherman-isd,evaluation-child-find.html,How to Request an Evaluation in Sherman ISD | FIE Timeline,1356,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+wichita-falls-isd\evaluation-child-find.html,wichita-falls-isd,evaluation-child-find.html,How to Request an Evaluation in Wichita Falls ISD | FIE Timeline,1366,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+san-angelo-isd\evaluation-child-find.html,san-angelo-isd,evaluation-child-find.html,How to Request an Evaluation in San Angelo ISD | FIE Timeline,1371,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+victoria-isd\evaluation-child-find.html,victoria-isd,evaluation-child-find.html,How to Request an Evaluation in Victoria ISD | FIE Timeline,1376,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+eanes-isd\evaluation-child-find.html,eanes-isd,evaluation-child-find.html,How to Request an Evaluation in Eanes ISD | FIE Timeline,1382,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+longview-isd\evaluation-child-find.html,longview-isd,evaluation-child-find.html,How to Request an Evaluation in Longview ISD | FIE Timeline,1387,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+burleson-isd\evaluation-child-find.html,burleson-isd,evaluation-child-find.html,How to Request an Evaluation in Burleson ISD | FIE Timeline,1391,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+coppell-isd\evaluation-child-find.html,coppell-isd,evaluation-child-find.html,How to Request an Evaluation in Coppell ISD | FIE Timeline,1394,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+georgetown-isd\evaluation-child-find.html,georgetown-isd,evaluation-child-find.html,How to Request an Evaluation in Georgetown ISD | FIE Timeline,1396,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+channelview-isd\evaluation-child-find.html,channelview-isd,evaluation-child-find.html,How to Request an Evaluation in Channelview ISD | FIE Timeline,1397,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+montgomery-isd\evaluation-child-find.html,montgomery-isd,evaluation-child-find.html,How to Request an Evaluation in Montgomery ISD | FIE Timeline,1398,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+del-valle-isd\evaluation-child-find.html,del-valle-isd,evaluation-child-find.html,How to Request an Evaluation in Del Valle ISD | FIE Timeline,1399,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+bastrop-isd\evaluation-child-find.html,bastrop-isd,evaluation-child-find.html,How to Request an Evaluation in Bastrop ISD | FIE Timeline,1405,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+weslaco-isd\evaluation-child-find.html,weslaco-isd,evaluation-child-find.html,How to Request an Evaluation in Weslaco ISD | FIE Timeline,1408,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+clint-isd\evaluation-child-find.html,clint-isd,evaluation-child-find.html,How to Request an Evaluation in Clint ISD | FIE Timeline,1409,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+waller-isd\evaluation-child-find.html,waller-isd,evaluation-child-find.html,How to Request an Evaluation in Waller ISD | FIE Timeline,1409,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+friendswood-isd\evaluation-child-find.html,friendswood-isd,evaluation-child-find.html,How to Request an Evaluation in Friendswood ISD | FIE Timeline,1410,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+texarkana-isd\evaluation-child-find.html,texarkana-isd,evaluation-child-find.html,How to Request an Evaluation in Texarkana ISD | FIE Timeline,1414,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+san-benito-cisd\evaluation-child-find.html,san-benito-cisd,evaluation-child-find.html,How to Request an Evaluation in San Benito CISD | FIE Timeline,1416,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+temple-isd\evaluation-child-find.html,temple-isd,evaluation-child-find.html,How to Request an Evaluation in Temple ISD | FIE Timeline,1423,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+copperas-cove-isd\evaluation-child-find.html,copperas-cove-isd,evaluation-child-find.html,How to Request an Evaluation in Copperas Cove ISD | FIE Timeline,1427,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+schertz-cibolo-universal-city-isd\evaluation-child-find.html,schertz-cibolo-universal-city-isd,evaluation-child-find.html,How to Request an Evaluation in Schertz-Cibolo-Universal City ISD | FIE Timeline,1429,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+east-central-isd\evaluation-child-find.html,east-central-isd,evaluation-child-find.html,How to Request an Evaluation in East Central ISD | FIE Timeline,1430,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+grapevine-colleyville-isd\evaluation-child-find.html,grapevine-colleyville-isd,evaluation-child-find.html,How to Request an Evaluation in Grapevine-Colleyville ISD | FIE Timeline,1435,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+texas-city-isd\evaluation-child-find.html,texas-city-isd,evaluation-child-find.html,How to Request an Evaluation in Texas City ISD | FIE Timeline,1436,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+waco-isd\evaluation-child-find.html,waco-isd,evaluation-child-find.html,How to Request an Evaluation in Waco ISD | FIE Timeline,1436,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+dickinson-isd\evaluation-child-find.html,dickinson-isd,evaluation-child-find.html,How to Request an Evaluation in Dickinson ISD | FIE Timeline,1438,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+princeton-isd\evaluation-child-find.html,princeton-isd,evaluation-child-find.html,How to Request an Evaluation in Princeton ISD | FIE Timeline,1440,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+mission-cisd\evaluation-child-find.html,mission-cisd,evaluation-child-find.html,How to Request an Evaluation in Mission CISD | FIE Timeline,1442,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+san-marcos-cisd\evaluation-child-find.html,san-marcos-cisd,evaluation-child-find.html,How to Request an Evaluation in San Marcos CISD | FIE Timeline,1455,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+forney-isd\evaluation-child-find.html,forney-isd,evaluation-child-find.html,How to Request an Evaluation in Forney ISD | FIE Timeline,1457,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+melissa-isd\evaluation-child-find.html,melissa-isd,evaluation-child-find.html,How to Request an Evaluation in Melissa ISD | FIE Timeline,1458,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+belton-isd\evaluation-child-find.html,belton-isd,evaluation-child-find.html,How to Request an Evaluation in Belton ISD | FIE Timeline,1467,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+santa-fe-isd\evaluation-child-find.html,santa-fe-isd,evaluation-child-find.html,How to Request an Evaluation in Santa Fe ISD | FIE Timeline,1467,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+tyler-isd\evaluation-child-find.html,tyler-isd,evaluation-child-find.html,How to Request an Evaluation in Tyler ISD | FIE Timeline,1475,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+donna-isd\evaluation-child-find.html,donna-isd,evaluation-child-find.html,How to Request an Evaluation in Donna ISD | FIE Timeline,1477,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+bryan-isd\evaluation-child-find.html,bryan-isd,evaluation-child-find.html,How to Request an Evaluation in Bryan ISD | FIE Timeline,1482,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+crowley-isd\evaluation-child-find.html,crowley-isd,evaluation-child-find.html,How to Request an Evaluation in Crowley ISD | FIE Timeline,1485,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+midway-isd\evaluation-child-find.html,midway-isd,evaluation-child-find.html,How to Request an Evaluation in Midway ISD | FIE Timeline,1491,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+lake-travis-isd\evaluation-child-find.html,lake-travis-isd,evaluation-child-find.html,How to Request an Evaluation in Lake Travis ISD | FIE Timeline,1497,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+seguin-isd\evaluation-child-find.html,seguin-isd,evaluation-child-find.html,How to Request an Evaluation in Seguin ISD | FIE Timeline,1497,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+little-elm-isd\evaluation-child-find.html,little-elm-isd,evaluation-child-find.html,How to Request an Evaluation in Little Elm ISD | FIE Timeline,1498,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+magnolia-isd\evaluation-child-find.html,magnolia-isd,evaluation-child-find.html,How to Request an Evaluation in Magnolia ISD | FIE Timeline,1562,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+new-caney-isd\evaluation-child-find.html,new-caney-isd,evaluation-child-find.html,How to Request an Evaluation in New Caney ISD | FIE Timeline,1564,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+wylie-isd\evaluation-child-find.html,wylie-isd,evaluation-child-find.html,How to Request an Evaluation in Wylie ISD | FIE Timeline,1577,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+crosby-isd\evaluation-child-find.html,crosby-isd,evaluation-child-find.html,How to Request an Evaluation in Crosby ISD | FIE Timeline,1587,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+royse-city-isd\evaluation-child-find.html,royse-city-isd,evaluation-child-find.html,How to Request an Evaluation in Royse City ISD | FIE Timeline,1590,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+college-station-isd\evaluation-child-find.html,college-station-isd,evaluation-child-find.html,How to Request an Evaluation in College Station ISD | FIE Timeline,1596,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+rockwall-isd\evaluation-child-find.html,rockwall-isd,evaluation-child-find.html,How to Request an Evaluation in Rockwall ISD | FIE Timeline,1598,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+rio-grande-city-grulla-isd\evaluation-child-find.html,rio-grande-city-grulla-isd,evaluation-child-find.html,How to Request an Evaluation in Rio Grande City Grulla ISD | FIE Timeline,1618,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+tomball-isd\dyslexia-services.html,tomball-isd,dyslexia-services.html,Dyslexia Services in Tomball ISD | Texas Dyslexia Handbook Rights,1870,False,
+harlingen-cisd\evaluation-child-find.html,harlingen-cisd,evaluation-child-find.html,How to Request an Evaluation in Harlingen CISD | FIE Timeline,1877,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+laredo-isd\dyslexia-services.html,laredo-isd,dyslexia-services.html,Dyslexia Services in Laredo ISD | Texas Dyslexia Handbook Rights,1950,False,
+edinburg-cisd\dyslexia-services.html,edinburg-cisd,dyslexia-services.html,Dyslexia Services in Edinburg CISD | Texas Dyslexia Handbook Rights,1954,False,
+leander-isd\dyslexia-services.html,leander-isd,dyslexia-services.html,Dyslexia Services in Leander ISD | Texas Dyslexia Handbook Rights,1958,False,
+arlington-isd\dyslexia-services.html,arlington-isd,dyslexia-services.html,Dyslexia Services in Arlington ISD | Texas Dyslexia Handbook Rights,1975,False,
+alvin-isd\dyslexia-services.html,alvin-isd,dyslexia-services.html,Dyslexia Services in Alvin ISD | Texas Dyslexia Handbook Rights,1976,False,
+fort-bend-isd\grievance-dispute-resolution.html,fort-bend-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Fort Bend ISD | MDR &amp; Suspension Defense,2006,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+arlington-isd\grievance-dispute-resolution.html,arlington-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Arlington ISD | MDR &amp; Suspension Defense,2031,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+lamar-cisd\ard-process-guide.html,lamar-cisd,ard-process-guide.html,ARD Meeting Guide: Lamar CISD | Parent Rights,2044,False,
+judson-isd\dyslexia-services.html,judson-isd,dyslexia-services.html,Dyslexia Services in Judson ISD | Texas Dyslexia Handbook Rights,2049,False,
+brownsville-isd\dyslexia-services.html,brownsville-isd,dyslexia-services.html,Dyslexia Services in Brownsville ISD | Texas Dyslexia Handbook Rights,2053,False,
+amarillo-isd\dyslexia-services.html,amarillo-isd,dyslexia-services.html,Dyslexia Services in Amarillo ISD | Texas Dyslexia Handbook Rights,2062,False,
+birdville-isd\dyslexia-services.html,birdville-isd,dyslexia-services.html,Dyslexia Services in Birdville ISD | Texas Dyslexia Handbook Rights,2064,False,
+mansfield-isd\grievance-dispute-resolution.html,mansfield-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Mansfield ISD | MDR &amp; Suspension Defense,2065,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+mansfield-isd\dyslexia-services.html,mansfield-isd,dyslexia-services.html,Dyslexia Services in Mansfield ISD | Texas Dyslexia Handbook Rights,2066,False,
+spring-branch-isd\dyslexia-services.html,spring-branch-isd,dyslexia-services.html,Dyslexia Services in Spring Branch ISD | Texas Dyslexia Handbook Rights,2090,False,
+lamar-cisd\dyslexia-services.html,lamar-cisd,dyslexia-services.html,Dyslexia Services in Lamar CISD | Texas Dyslexia Handbook Rights,2094,False,
+houston-isd\dyslexia-services.html,houston-isd,dyslexia-services.html,Dyslexia Services in Houston ISD | Texas Dyslexia Handbook Rights,2099,False,
+aldine-isd\dyslexia-services.html,aldine-isd,dyslexia-services.html,Dyslexia Services in Aldine ISD | Texas Dyslexia Handbook Rights,2111,False,
+tomball-isd\grievance-dispute-resolution.html,tomball-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Tomball ISD | MDR &amp; Suspension Defense,2140,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+ector-county-isd\grievance-dispute-resolution.html,ector-county-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Ector County ISD | MDR &amp; Suspension Defense,2146,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+round-rock-isd\dyslexia-services.html,round-rock-isd,dyslexia-services.html,Dyslexia Services in Round Rock ISD | Texas Dyslexia Handbook Rights,2147,False,
+spring-isd\dyslexia-services.html,spring-isd,dyslexia-services.html,Dyslexia Services in Spring ISD | Texas Dyslexia Handbook Rights,2155,False,
+houston-isd\grievance-dispute-resolution.html,houston-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Houston ISD | MDR &amp; Suspension Defense,2156,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+frisco-isd\grievance-dispute-resolution.html,frisco-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Frisco ISD | MDR &amp; Suspension Defense,2157,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+fort-bend-isd\dyslexia-services.html,fort-bend-isd,dyslexia-services.html,Dyslexia Services in Fort Bend ISD | Texas Dyslexia Handbook Rights,2168,False,
+plano-isd\ard-process-guide.html,plano-isd,ard-process-guide.html,ARD Meeting Guide: Plano ISD | Parent Rights,2171,False,
+dallas-isd\grievance-dispute-resolution.html,dallas-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Dallas ISD | MDR &amp; Suspension Defense,2180,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+alief-isd\grievance-dispute-resolution.html,alief-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Alief ISD | MDR &amp; Suspension Defense,2185,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+prosper-isd\grievance-dispute-resolution.html,prosper-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Prosper ISD | MDR &amp; Suspension Defense,2187,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+grand-prairie-isd\dyslexia-services.html,grand-prairie-isd,dyslexia-services.html,Dyslexia Services in Grand Prairie ISD | Texas Dyslexia Handbook Rights,2188,False,
+laredo-isd\grievance-dispute-resolution.html,laredo-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Laredo ISD | MDR &amp; Suspension Defense,2188,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+mesquite-isd\ard-process-guide.html,mesquite-isd,ard-process-guide.html,ARD Meeting Guide: Mesquite ISD | Parent Rights,2190,False,
+alvin-isd\evaluation-child-find.html,alvin-isd,evaluation-child-find.html,How to Request an Evaluation in Alvin ISD | FIE Timeline,2193,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+north-east-isd\dyslexia-services.html,north-east-isd,dyslexia-services.html,Dyslexia Services in North East ISD | Texas Dyslexia Handbook Rights,2195,False,
+harmony-public-schools-combined\grievance-dispute-resolution.html,harmony-public-schools-combined,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Harmony Public Schools (Combined) | MDR &amp; Suspension Defense,2197,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+idea-public-schools\dyslexia-services.html,idea-public-schools,dyslexia-services.html,Dyslexia Services in IDEA Public Schools | Texas Dyslexia Handbook Rights,2197,False,
+northwest-isd\dyslexia-services.html,northwest-isd,dyslexia-services.html,Dyslexia Services in Northwest ISD | Texas Dyslexia Handbook Rights,2197,False,
+harmony-public-schools-combined\dyslexia-services.html,harmony-public-schools-combined,dyslexia-services.html,Dyslexia Services in Harmony Public Schools (Combined) | Texas Dyslexia Handbook Rights,2199,False,
+mckinney-isd\dyslexia-services.html,mckinney-isd,dyslexia-services.html,Dyslexia Services in McKinney ISD | Texas Dyslexia Handbook Rights,2205,False,
+denton-isd\ard-process-guide.html,denton-isd,ard-process-guide.html,ARD Meeting Guide: Denton ISD | Parent Rights,2208,False,
+midland-isd\dyslexia-services.html,midland-isd,dyslexia-services.html,Dyslexia Services in Midland ISD | Texas Dyslexia Handbook Rights,2212,False,
+fort-worth-isd\grievance-dispute-resolution.html,fort-worth-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Fort Worth ISD | MDR &amp; Suspension Defense,2219,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+san-antonio-isd\ard-process-guide.html,san-antonio-isd,ard-process-guide.html,ARD Meeting Guide: San Antonio ISD | Parent Rights,2220,False,
+allen-isd\dyslexia-services.html,allen-isd,dyslexia-services.html,Dyslexia Services in Allen ISD | Texas Dyslexia Handbook Rights,2222,False,
+katy-isd\grievance-dispute-resolution.html,katy-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Katy ISD | MDR &amp; Suspension Defense,2227,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+lubbock-isd\dyslexia-services.html,lubbock-isd,dyslexia-services.html,Dyslexia Services in Lubbock ISD | Texas Dyslexia Handbook Rights,2234,False,
+garland-isd\dyslexia-services.html,garland-isd,dyslexia-services.html,Dyslexia Services in Garland ISD | Texas Dyslexia Handbook Rights,2235,False,
+san-antonio-isd\grievance-dispute-resolution.html,san-antonio-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in San Antonio ISD | MDR &amp; Suspension Defense,2235,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+spring-branch-isd\grievance-dispute-resolution.html,spring-branch-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Spring Branch ISD | MDR &amp; Suspension Defense,2237,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+cypress-fairbanks-isd\ard-process-guide.html,cypress-fairbanks-isd,ard-process-guide.html,ARD Meeting Guide: Cypress-Fairbanks ISD | Parent Rights,2238,False,
+comal-isd\dyslexia-services.html,comal-isd,dyslexia-services.html,Dyslexia Services in Comal ISD | Texas Dyslexia Handbook Rights,2241,False,
+grand-prairie-isd\grievance-dispute-resolution.html,grand-prairie-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Grand Prairie ISD | MDR &amp; Suspension Defense,2243,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+plano-isd\dyslexia-services.html,plano-isd,dyslexia-services.html,Dyslexia Services in Plano ISD | Texas Dyslexia Handbook Rights,2244,False,
+ysleta-isd\dyslexia-services.html,ysleta-isd,dyslexia-services.html,Dyslexia Services in Ysleta ISD | Texas Dyslexia Handbook Rights,2246,False,
+northwest-isd\ard-process-guide.html,northwest-isd,ard-process-guide.html,ARD Meeting Guide: Northwest ISD | Parent Rights,2248,False,
+austin-isd\ard-process-guide.html,austin-isd,ard-process-guide.html,ARD Meeting Guide: Austin ISD | Parent Rights,2256,False,
+richardson-isd\grievance-dispute-resolution.html,richardson-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Richardson ISD | MDR &amp; Suspension Defense,2256,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+mesquite-isd\dyslexia-services.html,mesquite-isd,dyslexia-services.html,Dyslexia Services in Mesquite ISD | Texas Dyslexia Handbook Rights,2257,False,
+united-isd\grievance-dispute-resolution.html,united-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in United ISD | MDR &amp; Suspension Defense,2260,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+pflugerville-isd\dyslexia-services.html,pflugerville-isd,dyslexia-services.html,Dyslexia Services in Pflugerville ISD | Texas Dyslexia Handbook Rights,2261,False,
+goose-creek-cisd\dyslexia-services.html,goose-creek-cisd,dyslexia-services.html,Dyslexia Services in Goose Creek CISD | Texas Dyslexia Handbook Rights,2263,False,
+san-marcos-cisd\ard-process-guide.html,san-marcos-cisd,ard-process-guide.html,ARD Meeting Guide: San Marcos CISD | Parent Rights,2265,False,
+alief-isd\ard-process-guide.html,alief-isd,ard-process-guide.html,ARD Meeting Guide: Alief ISD | Parent Rights,2267,False,
+aldine-isd\ard-process-guide.html,aldine-isd,ard-process-guide.html,ARD Meeting Guide: Aldine ISD | Parent Rights,2269,False,
+san-antonio-isd\dyslexia-services.html,san-antonio-isd,dyslexia-services.html,Dyslexia Services in San Antonio ISD | Texas Dyslexia Handbook Rights,2276,False,
+aldine-isd\grievance-dispute-resolution.html,aldine-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Aldine ISD | MDR &amp; Suspension Defense,2279,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+alvin-isd\grievance-dispute-resolution.html,alvin-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Alvin ISD | MDR &amp; Suspension Defense,2285,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+melissa-isd\ard-process-guide.html,melissa-isd,ard-process-guide.html,ARD Meeting Guide: Melissa ISD | Parent Rights,2288,False,
+dallas-isd\dyslexia-services.html,dallas-isd,dyslexia-services.html,Dyslexia Services in Dallas ISD | Texas Dyslexia Handbook Rights,2289,False,
+el-paso-isd\grievance-dispute-resolution.html,el-paso-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in El Paso ISD | MDR &amp; Suspension Defense,2289,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+corpus-christi-isd\dyslexia-services.html,corpus-christi-isd,dyslexia-services.html,Dyslexia Services in Corpus Christi ISD | Texas Dyslexia Handbook Rights,2294,False,
+killeen-isd\grievance-dispute-resolution.html,killeen-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Killeen ISD | MDR &amp; Suspension Defense,2295,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+north-east-isd\ard-process-guide.html,north-east-isd,ard-process-guide.html,ARD Meeting Guide: North East ISD | Parent Rights,2299,False,
+el-paso-isd\dyslexia-services.html,el-paso-isd,dyslexia-services.html,Dyslexia Services in El Paso ISD | Texas Dyslexia Handbook Rights,2302,False,
+lamar-cisd\grievance-dispute-resolution.html,lamar-cisd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Lamar CISD | MDR &amp; Suspension Defense,2302,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+corpus-christi-isd\grievance-dispute-resolution.html,corpus-christi-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Corpus Christi ISD | MDR &amp; Suspension Defense,2305,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+ysleta-isd\grievance-dispute-resolution.html,ysleta-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Ysleta ISD | MDR &amp; Suspension Defense,2315,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+killeen-isd\ard-process-guide.html,killeen-isd,ard-process-guide.html,ARD Meeting Guide: Killeen ISD | Parent Rights,2319,False,
+hays-cisd\grievance-dispute-resolution.html,hays-cisd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Hays CISD | MDR &amp; Suspension Defense,2322,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+mckinney-isd\grievance-dispute-resolution.html,mckinney-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in McKinney ISD | MDR &amp; Suspension Defense,2322,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+keller-isd\grievance-dispute-resolution.html,keller-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Keller ISD | MDR &amp; Suspension Defense,2324,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+ysleta-isd\ard-process-guide.html,ysleta-isd,ard-process-guide.html,ARD Meeting Guide: Ysleta ISD | Parent Rights,2324,False,
+northside-isd\grievance-dispute-resolution.html,northside-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Northside ISD | MDR &amp; Suspension Defense,2326,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+arlington-isd\ard-process-guide.html,arlington-isd,ard-process-guide.html,ARD Meeting Guide: Arlington ISD | Parent Rights,2329,False,
+clear-creek-isd\dyslexia-services.html,clear-creek-isd,dyslexia-services.html,Dyslexia Services in Clear Creek ISD | Texas Dyslexia Handbook Rights,2331,False,
+amarillo-isd\grievance-dispute-resolution.html,amarillo-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Amarillo ISD | MDR &amp; Suspension Defense,2333,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+pasadena-isd\dyslexia-services.html,pasadena-isd,dyslexia-services.html,Dyslexia Services in Pasadena ISD | Texas Dyslexia Handbook Rights,2336,False,
+lewisville-isd\dyslexia-services.html,lewisville-isd,dyslexia-services.html,Dyslexia Services in Lewisville ISD | Texas Dyslexia Handbook Rights,2341,False,
+lewisville-isd\ard-process-guide.html,lewisville-isd,ard-process-guide.html,ARD Meeting Guide: Lewisville ISD | Parent Rights,2347,False,
+socorro-isd\dyslexia-services.html,socorro-isd,dyslexia-services.html,Dyslexia Services in Socorro ISD | Texas Dyslexia Handbook Rights,2348,False,
+ector-county-isd\dyslexia-services.html,ector-county-isd,dyslexia-services.html,Dyslexia Services in Ector County ISD | Texas Dyslexia Handbook Rights,2349,False,
+klein-isd\dyslexia-services.html,klein-isd,dyslexia-services.html,Dyslexia Services in Klein ISD | Texas Dyslexia Handbook Rights,2353,False,
+new-caney-isd\ard-process-guide.html,new-caney-isd,ard-process-guide.html,ARD Meeting Guide: New Caney ISD | Parent Rights,2354,False,
+pharr-san-juan-alamo-isd\dyslexia-services.html,pharr-san-juan-alamo-isd,dyslexia-services.html,Dyslexia Services in Pharr-San Juan-Alamo ISD | Texas Dyslexia Handbook Rights,2355,False,
+cypress-fairbanks-isd\dyslexia-services.html,cypress-fairbanks-isd,dyslexia-services.html,Dyslexia Services in Cypress-Fairbanks ISD | Texas Dyslexia Handbook Rights,2357,False,
+prosper-isd\dyslexia-services.html,prosper-isd,dyslexia-services.html,Dyslexia Services in Prosper ISD | Texas Dyslexia Handbook Rights,2360,False,
+mcallen-isd\dyslexia-services.html,mcallen-isd,dyslexia-services.html,Dyslexia Services in McAllen ISD | Texas Dyslexia Handbook Rights,2370,False,
+garland-isd\ard-process-guide.html,garland-isd,ard-process-guide.html,ARD Meeting Guide: Garland ISD | Parent Rights,2371,False,
+richardson-isd\dyslexia-services.html,richardson-isd,dyslexia-services.html,Dyslexia Services in Richardson ISD | Texas Dyslexia Handbook Rights,2371,False,
+northwest-isd\grievance-dispute-resolution.html,northwest-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Northwest ISD | MDR &amp; Suspension Defense,2373,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+fort-worth-isd\ard-process-guide.html,fort-worth-isd,ard-process-guide.html,ARD Meeting Guide: Fort Worth ISD | Parent Rights,2374,False,
+round-rock-isd\grievance-dispute-resolution.html,round-rock-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Round Rock ISD | MDR &amp; Suspension Defense,2374,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+eagle-mountain-saginaw-isd\dyslexia-services.html,eagle-mountain-saginaw-isd,dyslexia-services.html,Dyslexia Services in Eagle Mountain-Saginaw ISD | Texas Dyslexia Handbook Rights,2378,False,
+katy-isd\dyslexia-services.html,katy-isd,dyslexia-services.html,Dyslexia Services in Katy ISD | Texas Dyslexia Handbook Rights,2379,False,
+mansfield-isd\ard-process-guide.html,mansfield-isd,ard-process-guide.html,ARD Meeting Guide: Mansfield ISD | Parent Rights,2380,False,
+northside-isd\dyslexia-services.html,northside-isd,dyslexia-services.html,Dyslexia Services in Northside ISD | Texas Dyslexia Handbook Rights,2383,False,
+round-rock-isd\ard-process-guide.html,round-rock-isd,ard-process-guide.html,ARD Meeting Guide: Round Rock ISD | Parent Rights,2392,False,
+coppell-isd\ard-process-guide.html,coppell-isd,ard-process-guide.html,ARD Meeting Guide: Coppell ISD | Parent Rights,2393,False,
+frisco-isd\dyslexia-services.html,frisco-isd,dyslexia-services.html,Dyslexia Services in Frisco ISD | Texas Dyslexia Handbook Rights,2395,False,
+leander-isd\grievance-dispute-resolution.html,leander-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Leander ISD | MDR &amp; Suspension Defense,2395,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+spring-branch-isd\ard-process-guide.html,spring-branch-isd,ard-process-guide.html,ARD Meeting Guide: Spring Branch ISD | Parent Rights,2398,False,
+fort-worth-isd\dyslexia-services.html,fort-worth-isd,dyslexia-services.html,Dyslexia Services in Fort Worth ISD | Texas Dyslexia Handbook Rights,2402,False,
+judson-isd\grievance-dispute-resolution.html,judson-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Judson ISD | MDR &amp; Suspension Defense,2402,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+humble-isd\ard-process-guide.html,humble-isd,ard-process-guide.html,ARD Meeting Guide: Humble ISD | Parent Rights,2404,False,
+midland-isd\grievance-dispute-resolution.html,midland-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Midland ISD | MDR &amp; Suspension Defense,2404,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+beaumont-isd\ard-process-guide.html,beaumont-isd,ard-process-guide.html,ARD Meeting Guide: Beaumont ISD | Parent Rights,2405,False,
+pflugerville-isd\grievance-dispute-resolution.html,pflugerville-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Pflugerville ISD | MDR &amp; Suspension Defense,2405,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+clint-isd\ard-process-guide.html,clint-isd,ard-process-guide.html,ARD Meeting Guide: Clint ISD | Parent Rights,2410,False,
+united-isd\dyslexia-services.html,united-isd,dyslexia-services.html,Dyslexia Services in United ISD | Texas Dyslexia Handbook Rights,2411,False,
+abilene-isd\ard-process-guide.html,abilene-isd,ard-process-guide.html,ARD Meeting Guide: Abilene ISD | Parent Rights,2414,False,
+austin-isd\dyslexia-services.html,austin-isd,dyslexia-services.html,Dyslexia Services in Austin ISD | Texas Dyslexia Handbook Rights,2415,False,
+lake-travis-isd\ard-process-guide.html,lake-travis-isd,ard-process-guide.html,ARD Meeting Guide: Lake Travis ISD | Parent Rights,2418,False,
+alief-isd\dyslexia-services.html,alief-isd,dyslexia-services.html,Dyslexia Services in Alief ISD | Texas Dyslexia Handbook Rights,2421,False,
+frisco-isd\ard-process-guide.html,frisco-isd,ard-process-guide.html,ARD Meeting Guide: Frisco ISD | Parent Rights,2421,False,
+la-joya-isd\grievance-dispute-resolution.html,la-joya-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in La Joya ISD | MDR &amp; Suspension Defense,2428,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+mesquite-isd\grievance-dispute-resolution.html,mesquite-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Mesquite ISD | MDR &amp; Suspension Defense,2428,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+irving-isd\grievance-dispute-resolution.html,irving-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Irving ISD | MDR &amp; Suspension Defense,2430,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+spring-isd\ard-process-guide.html,spring-isd,ard-process-guide.html,ARD Meeting Guide: Spring ISD | Parent Rights,2430,False,
+eagle-mountain-saginaw-isd\ard-process-guide.html,eagle-mountain-saginaw-isd,ard-process-guide.html,ARD Meeting Guide: Eagle Mountain-Saginaw ISD | Parent Rights,2431,False,
+irving-isd\dyslexia-services.html,irving-isd,dyslexia-services.html,Dyslexia Services in Irving ISD | Texas Dyslexia Handbook Rights,2431,False,
+lubbock-isd\ard-process-guide.html,lubbock-isd,ard-process-guide.html,ARD Meeting Guide: Lubbock ISD | Parent Rights,2436,False,
+conroe-isd\grievance-dispute-resolution.html,conroe-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Conroe ISD | MDR &amp; Suspension Defense,2441,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+garland-isd\grievance-dispute-resolution.html,garland-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Garland ISD | MDR &amp; Suspension Defense,2446,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+pflugerville-isd\evaluation-child-find.html,pflugerville-isd,evaluation-child-find.html,How to Request an Evaluation in Pflugerville ISD | FIE Timeline,2446,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+conroe-isd\dyslexia-services.html,conroe-isd,dyslexia-services.html,Dyslexia Services in Conroe ISD | Texas Dyslexia Handbook Rights,2453,False,
+goose-creek-cisd\grievance-dispute-resolution.html,goose-creek-cisd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Goose Creek CISD | MDR &amp; Suspension Defense,2453,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+ector-county-isd\ard-process-guide.html,ector-county-isd,ard-process-guide.html,ARD Meeting Guide: Ector County ISD | Parent Rights,2459,False,
+hurst-euless-bedford-isd\dyslexia-services.html,hurst-euless-bedford-isd,dyslexia-services.html,Dyslexia Services in Hurst-Euless-Bedford ISD | Texas Dyslexia Handbook Rights,2460,False,
+wylie-isd\ard-process-guide.html,wylie-isd,ard-process-guide.html,ARD Meeting Guide: Wylie ISD | Parent Rights,2463,False,
+la-joya-isd\dyslexia-services.html,la-joya-isd,dyslexia-services.html,Dyslexia Services in La Joya ISD | Texas Dyslexia Handbook Rights,2464,False,
+magnolia-isd\ard-process-guide.html,magnolia-isd,ard-process-guide.html,ARD Meeting Guide: Magnolia ISD | Parent Rights,2467,False,
+plano-isd\grievance-dispute-resolution.html,plano-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Plano ISD | MDR &amp; Suspension Defense,2468,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+pasadena-isd\evaluation-child-find.html,pasadena-isd,evaluation-child-find.html,How to Request an Evaluation in Pasadena ISD | FIE Timeline,2469,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+donna-isd\ard-process-guide.html,donna-isd,ard-process-guide.html,ARD Meeting Guide: Donna ISD | Parent Rights,2477,False,
+leander-isd\ard-process-guide.html,leander-isd,ard-process-guide.html,ARD Meeting Guide: Leander ISD | Parent Rights,2477,False,
+judson-isd\ard-process-guide.html,judson-isd,ard-process-guide.html,ARD Meeting Guide: Judson ISD | Parent Rights,2478,False,
+carrollton-farmers-branch-isd\dyslexia-services.html,carrollton-farmers-branch-isd,dyslexia-services.html,Dyslexia Services in Carrollton-Farmers Branch ISD | Texas Dyslexia Handbook Rights,2482,False,
+dallas-isd\ard-process-guide.html,dallas-isd,ard-process-guide.html,ARD Meeting Guide: Dallas ISD | Parent Rights,2484,False,
+pasadena-isd\grievance-dispute-resolution.html,pasadena-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Pasadena ISD | MDR &amp; Suspension Defense,2488,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+victoria-isd\ard-process-guide.html,victoria-isd,ard-process-guide.html,ARD Meeting Guide: Victoria ISD | Parent Rights,2490,False,
+allen-isd\grievance-dispute-resolution.html,allen-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Allen ISD | MDR &amp; Suspension Defense,2493,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+midway-isd\ard-process-guide.html,midway-isd,ard-process-guide.html,ARD Meeting Guide: Midway ISD | Parent Rights,2497,False,
+humble-isd\grievance-dispute-resolution.html,humble-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Humble ISD | MDR &amp; Suspension Defense,2499,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+montgomery-isd\ard-process-guide.html,montgomery-isd,ard-process-guide.html,ARD Meeting Guide: Montgomery ISD | Parent Rights,2501,False,
+forney-isd\ard-process-guide.html,forney-isd,ard-process-guide.html,ARD Meeting Guide: Forney ISD | Parent Rights,2506,False,
+pharr-san-juan-alamo-isd\grievance-dispute-resolution.html,pharr-san-juan-alamo-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Pharr-San Juan-Alamo ISD | MDR &amp; Suspension Defense,2509,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+allen-isd\ard-process-guide.html,allen-isd,ard-process-guide.html,ARD Meeting Guide: Allen ISD | Parent Rights,2515,False,
+rio-grande-city-grulla-isd\ard-process-guide.html,rio-grande-city-grulla-isd,ard-process-guide.html,ARD Meeting Guide: Rio Grande City Grulla ISD | Parent Rights,2516,False,
+idea-public-schools\grievance-dispute-resolution.html,idea-public-schools,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in IDEA Public Schools | MDR &amp; Suspension Defense,2518,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+houston-isd\ard-process-guide.html,houston-isd,ard-process-guide.html,ARD Meeting Guide: Houston ISD | Parent Rights,2520,False,
+denton-isd\dyslexia-services.html,denton-isd,dyslexia-services.html,Dyslexia Services in Denton ISD | Texas Dyslexia Handbook Rights,2522,False,
+del-valle-isd\ard-process-guide.html,del-valle-isd,ard-process-guide.html,ARD Meeting Guide: Del Valle ISD | Parent Rights,2523,False,
+northside-isd\ard-process-guide.html,northside-isd,ard-process-guide.html,ARD Meeting Guide: Northside ISD | Parent Rights,2526,False,
+keller-isd\dyslexia-services.html,keller-isd,dyslexia-services.html,Dyslexia Services in Keller ISD | Texas Dyslexia Handbook Rights,2530,False,
+clear-creek-isd\grievance-dispute-resolution.html,clear-creek-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Clear Creek ISD | MDR &amp; Suspension Defense,2533,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+crosby-isd\ard-process-guide.html,crosby-isd,ard-process-guide.html,ARD Meeting Guide: Crosby ISD | Parent Rights,2534,False,
+killeen-isd\dyslexia-services.html,killeen-isd,dyslexia-services.html,Dyslexia Services in Killeen ISD | Texas Dyslexia Handbook Rights,2536,False,
+carrollton-farmers-branch-isd\grievance-dispute-resolution.html,carrollton-farmers-branch-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Carrollton-Farmers Branch ISD | MDR &amp; Suspension Defense,2556,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+eagle-mountain-saginaw-isd\grievance-dispute-resolution.html,eagle-mountain-saginaw-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Eagle Mountain-Saginaw ISD | MDR &amp; Suspension Defense,2557,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+klein-isd\grievance-dispute-resolution.html,klein-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Klein ISD | MDR &amp; Suspension Defense,2565,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+waller-isd\ard-process-guide.html,waller-isd,ard-process-guide.html,ARD Meeting Guide: Waller ISD | Parent Rights,2568,False,
+mesquite-isd\evaluation-child-find.html,mesquite-isd,evaluation-child-find.html,How to Request an Evaluation in Mesquite ISD | FIE Timeline,2569,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+fort-bend-isd\ard-process-guide.html,fort-bend-isd,ard-process-guide.html,ARD Meeting Guide: Fort Bend ISD | Parent Rights,2573,False,
+humble-isd\dyslexia-services.html,humble-isd,dyslexia-services.html,Dyslexia Services in Humble ISD | Texas Dyslexia Handbook Rights,2573,False,
+hurst-euless-bedford-isd\grievance-dispute-resolution.html,hurst-euless-bedford-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Hurst-Euless-Bedford ISD | MDR &amp; Suspension Defense,2576,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+royse-city-isd\ard-process-guide.html,royse-city-isd,ard-process-guide.html,ARD Meeting Guide: Royse City ISD | Parent Rights,2578,False,
+el-paso-isd\ard-process-guide.html,el-paso-isd,ard-process-guide.html,ARD Meeting Guide: El Paso ISD | Parent Rights,2580,False,
+idea-public-schools\ard-process-guide.html,idea-public-schools,ard-process-guide.html,ARD Meeting Guide: IDEA Public Schools | Parent Rights,2581,False,
+schertz-cibolo-universal-city-isd\ard-process-guide.html,schertz-cibolo-universal-city-isd,ard-process-guide.html,ARD Meeting Guide: Schertz-Cibolo-Universal City ISD | Parent Rights,2588,False,
+santa-fe-isd\ard-process-guide.html,santa-fe-isd,ard-process-guide.html,ARD Meeting Guide: Santa Fe ISD | Parent Rights,2591,False,
+spring-isd\grievance-dispute-resolution.html,spring-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Spring ISD | MDR &amp; Suspension Defense,2592,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+college-station-isd\ard-process-guide.html,college-station-isd,ard-process-guide.html,ARD Meeting Guide: College Station ISD | Parent Rights,2597,False,
+pflugerville-isd\ard-process-guide.html,pflugerville-isd,ard-process-guide.html,ARD Meeting Guide: Pflugerville ISD | Parent Rights,2605,False,
+hays-cisd\dyslexia-services.html,hays-cisd,dyslexia-services.html,Dyslexia Services in Hays CISD | Texas Dyslexia Handbook Rights,2607,False,
+edinburg-cisd\grievance-dispute-resolution.html,edinburg-cisd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Edinburg CISD | MDR &amp; Suspension Defense,2609,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+harmony-public-schools-combined\ard-process-guide.html,harmony-public-schools-combined,ard-process-guide.html,ARD Meeting Guide: Harmony Public Schools (Combined) | Parent Rights,2611,False,
+georgetown-isd\ard-process-guide.html,georgetown-isd,ard-process-guide.html,ARD Meeting Guide: Georgetown ISD | Parent Rights,2613,False,
+harlingen-cisd\ard-process-guide.html,harlingen-cisd,ard-process-guide.html,ARD Meeting Guide: Harlingen CISD | Parent Rights,2617,False,
+birdville-isd\grievance-dispute-resolution.html,birdville-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Birdville ISD | MDR &amp; Suspension Defense,2625,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+katy-isd\ard-process-guide.html,katy-isd,ard-process-guide.html,ARD Meeting Guide: Katy ISD | Parent Rights,2631,False,
+wichita-falls-isd\ard-process-guide.html,wichita-falls-isd,ard-process-guide.html,ARD Meeting Guide: Wichita Falls ISD | Parent Rights,2634,False,
+cypress-fairbanks-isd\grievance-dispute-resolution.html,cypress-fairbanks-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Cypress-Fairbanks ISD | MDR &amp; Suspension Defense,2638,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+alvin-isd\ard-process-guide.html,alvin-isd,ard-process-guide.html,ARD Meeting Guide: Alvin ISD | Parent Rights,2642,False,
+comal-isd\ard-process-guide.html,comal-isd,ard-process-guide.html,ARD Meeting Guide: Comal ISD | Parent Rights,2644,False,
+conroe-isd\ard-process-guide.html,conroe-isd,ard-process-guide.html,ARD Meeting Guide: Conroe ISD | Parent Rights,2644,False,
+el-paso-isd\evaluation-child-find.html,el-paso-isd,evaluation-child-find.html,How to Request an Evaluation in El Paso ISD | FIE Timeline,2644,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+austin-isd\grievance-dispute-resolution.html,austin-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Austin ISD | MDR &amp; Suspension Defense,2650,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+brownsville-isd\grievance-dispute-resolution.html,brownsville-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Brownsville ISD | MDR &amp; Suspension Defense,2650,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+clear-creek-isd\ard-process-guide.html,clear-creek-isd,ard-process-guide.html,ARD Meeting Guide: Clear Creek ISD | Parent Rights,2651,False,
+carrollton-farmers-branch-isd\evaluation-child-find.html,carrollton-farmers-branch-isd,evaluation-child-find.html,How to Request an Evaluation in Carrollton-Farmers Branch ISD | FIE Timeline,2661,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+lewisville-isd\grievance-dispute-resolution.html,lewisville-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Lewisville ISD | MDR &amp; Suspension Defense,2669,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+pasadena-isd\ard-process-guide.html,pasadena-isd,ard-process-guide.html,ARD Meeting Guide: Pasadena ISD | Parent Rights,2669,False,
+carrollton-farmers-branch-isd\ard-process-guide.html,carrollton-farmers-branch-isd,ard-process-guide.html,ARD Meeting Guide: Carrollton-Farmers Branch ISD | Parent Rights,2671,False,
+hays-cisd\ard-process-guide.html,hays-cisd,ard-process-guide.html,ARD Meeting Guide: Hays CISD | Parent Rights,2671,False,
+socorro-isd\grievance-dispute-resolution.html,socorro-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Socorro ISD | MDR &amp; Suspension Defense,2671,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+little-elm-isd\ard-process-guide.html,little-elm-isd,ard-process-guide.html,ARD Meeting Guide: Little Elm ISD | Parent Rights,2687,False,
+irving-isd\ard-process-guide.html,irving-isd,ard-process-guide.html,ARD Meeting Guide: Irving ISD | Parent Rights,2689,False,
+klein-isd\evaluation-child-find.html,klein-isd,evaluation-child-find.html,How to Request an Evaluation in Klein ISD | FIE Timeline,2700,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+lubbock-isd\evaluation-child-find.html,lubbock-isd,evaluation-child-find.html,How to Request an Evaluation in Lubbock ISD | FIE Timeline,2706,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+pharr-san-juan-alamo-isd\ard-process-guide.html,pharr-san-juan-alamo-isd,ard-process-guide.html,ARD Meeting Guide: Pharr-San Juan-Alamo ISD | Parent Rights,2706,False,
+friendswood-isd\ard-process-guide.html,friendswood-isd,ard-process-guide.html,ARD Meeting Guide: Friendswood ISD | Parent Rights,2712,False,
+united-isd\ard-process-guide.html,united-isd,ard-process-guide.html,ARD Meeting Guide: United ISD | Parent Rights,2714,False,
+ysleta-isd\evaluation-child-find.html,ysleta-isd,evaluation-child-find.html,How to Request an Evaluation in Ysleta ISD | FIE Timeline,2716,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+weslaco-isd\ard-process-guide.html,weslaco-isd,ard-process-guide.html,ARD Meeting Guide: Weslaco ISD | Parent Rights,2723,False,
+crowley-isd\ard-process-guide.html,crowley-isd,ard-process-guide.html,ARD Meeting Guide: Crowley ISD | Parent Rights,2734,False,
+richardson-isd\evaluation-child-find.html,richardson-isd,evaluation-child-find.html,How to Request an Evaluation in Richardson ISD | FIE Timeline,2743,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+north-east-isd\grievance-dispute-resolution.html,north-east-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in North East ISD | MDR &amp; Suspension Defense,2745,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+waco-isd\ard-process-guide.html,waco-isd,ard-process-guide.html,ARD Meeting Guide: Waco ISD | Parent Rights,2747,False,
+klein-isd\ard-process-guide.html,klein-isd,ard-process-guide.html,ARD Meeting Guide: Klein ISD | Parent Rights,2749,False,
+dickinson-isd\ard-process-guide.html,dickinson-isd,ard-process-guide.html,ARD Meeting Guide: Dickinson ISD | Parent Rights,2753,False,
+longview-isd\ard-process-guide.html,longview-isd,ard-process-guide.html,ARD Meeting Guide: Longview ISD | Parent Rights,2756,False,
+comal-isd\grievance-dispute-resolution.html,comal-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Comal ISD | MDR &amp; Suspension Defense,2760,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+brownsville-isd\evaluation-child-find.html,brownsville-isd,evaluation-child-find.html,How to Request an Evaluation in Brownsville ISD | FIE Timeline,2776,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+denton-isd\grievance-dispute-resolution.html,denton-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Denton ISD | MDR &amp; Suspension Defense,2778,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+northside-isd\evaluation-child-find.html,northside-isd,evaluation-child-find.html,How to Request an Evaluation in Northside ISD | FIE Timeline,2791,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+richardson-isd\ard-process-guide.html,richardson-isd,ard-process-guide.html,ARD Meeting Guide: Richardson ISD | Parent Rights,2791,False,
+laredo-isd\ard-process-guide.html,laredo-isd,ard-process-guide.html,ARD Meeting Guide: Laredo ISD | Parent Rights,2803,False,
+channelview-isd\ard-process-guide.html,channelview-isd,ard-process-guide.html,ARD Meeting Guide: Channelview ISD | Parent Rights,2805,False,
+laredo-isd\evaluation-child-find.html,laredo-isd,evaluation-child-find.html,How to Request an Evaluation in Laredo ISD | FIE Timeline,2806,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+clear-creek-isd\evaluation-child-find.html,clear-creek-isd,evaluation-child-find.html,How to Request an Evaluation in Clear Creek ISD | FIE Timeline,2807,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+eanes-isd\ard-process-guide.html,eanes-isd,ard-process-guide.html,ARD Meeting Guide: Eanes ISD | Parent Rights,2828,False,
+mcallen-isd\grievance-dispute-resolution.html,mcallen-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in McAllen ISD | MDR &amp; Suspension Defense,2834,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+amarillo-isd\ard-process-guide.html,amarillo-isd,ard-process-guide.html,ARD Meeting Guide: Amarillo ISD | Parent Rights,2838,False,
+sherman-isd\ard-process-guide.html,sherman-isd,ard-process-guide.html,ARD Meeting Guide: Sherman ISD | Parent Rights,2843,False,
+fort-worth-isd\evaluation-child-find.html,fort-worth-isd,evaluation-child-find.html,How to Request an Evaluation in Fort Worth ISD | FIE Timeline,2853,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+belton-isd\ard-process-guide.html,belton-isd,ard-process-guide.html,ARD Meeting Guide: Belton ISD | Parent Rights,2854,False,
+brownsville-isd\ard-process-guide.html,brownsville-isd,ard-process-guide.html,ARD Meeting Guide: Brownsville ISD | Parent Rights,2856,False,
+northwest-isd\evaluation-child-find.html,northwest-isd,evaluation-child-find.html,How to Request an Evaluation in Northwest ISD | FIE Timeline,2864,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+goose-creek-cisd\evaluation-child-find.html,goose-creek-cisd,evaluation-child-find.html,How to Request an Evaluation in Goose Creek CISD | FIE Timeline,2867,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+alief-isd\evaluation-child-find.html,alief-isd,evaluation-child-find.html,How to Request an Evaluation in Alief ISD | FIE Timeline,2875,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+san-angelo-isd\ard-process-guide.html,san-angelo-isd,ard-process-guide.html,ARD Meeting Guide: San Angelo ISD | Parent Rights,2875,False,
+texas-city-isd\ard-process-guide.html,texas-city-isd,ard-process-guide.html,ARD Meeting Guide: Texas City ISD | Parent Rights,2878,False,
+austin-isd\evaluation-child-find.html,austin-isd,evaluation-child-find.html,How to Request an Evaluation in Austin ISD | FIE Timeline,2882,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+lubbock-isd\grievance-dispute-resolution.html,lubbock-isd,grievance-dispute-resolution.html,Discipline Rights &amp; Grievances in Lubbock ISD | MDR &amp; Suspension Defense,2884,False,"YOUR_BEHAVIOR_LINK, buy.stripe.com/YOUR_"
+socorro-isd\evaluation-child-find.html,socorro-isd,evaluation-child-find.html,How to Request an Evaluation in Socorro ISD | FIE Timeline,2885,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+tomball-isd\ard-process-guide.html,tomball-isd,ard-process-guide.html,ARD Meeting Guide: Tomball ISD | Parent Rights,2887,False,
+grand-prairie-isd\ard-process-guide.html,grand-prairie-isd,ard-process-guide.html,ARD Meeting Guide: Grand Prairie ISD | Parent Rights,2907,False,
+cypress-fairbanks-isd\evaluation-child-find.html,cypress-fairbanks-isd,evaluation-child-find.html,How to Request an Evaluation in Cypress-Fairbanks ISD | FIE Timeline,2910,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+mckinney-isd\ard-process-guide.html,mckinney-isd,ard-process-guide.html,ARD Meeting Guide: McKinney ISD | Parent Rights,2915,False,
+rockwall-isd\ard-process-guide.html,rockwall-isd,ard-process-guide.html,ARD Meeting Guide: Rockwall ISD | Parent Rights,2918,False,
+eagle-mountain-saginaw-isd\evaluation-child-find.html,eagle-mountain-saginaw-isd,evaluation-child-find.html,How to Request an Evaluation in Eagle Mountain-Saginaw ISD | FIE Timeline,2933,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+grapevine-colleyville-isd\ard-process-guide.html,grapevine-colleyville-isd,ard-process-guide.html,ARD Meeting Guide: Grapevine-Colleyville ISD | Parent Rights,2935,False,
+bastrop-isd\ard-process-guide.html,bastrop-isd,ard-process-guide.html,ARD Meeting Guide: Bastrop ISD | Parent Rights,2941,False,
+corpus-christi-isd\evaluation-child-find.html,corpus-christi-isd,evaluation-child-find.html,How to Request an Evaluation in Corpus Christi ISD | FIE Timeline,2947,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+mission-cisd\ard-process-guide.html,mission-cisd,ard-process-guide.html,ARD Meeting Guide: Mission CISD | Parent Rights,2947,False,
+midland-isd\ard-process-guide.html,midland-isd,ard-process-guide.html,ARD Meeting Guide: Midland ISD | Parent Rights,2951,False,
+princeton-isd\ard-process-guide.html,princeton-isd,ard-process-guide.html,ARD Meeting Guide: Princeton ISD | Parent Rights,2952,False,
+hurst-euless-bedford-isd\ard-process-guide.html,hurst-euless-bedford-isd,ard-process-guide.html,ARD Meeting Guide: Hurst-Euless-Bedford ISD | Parent Rights,2959,False,
+bryan-isd\ard-process-guide.html,bryan-isd,ard-process-guide.html,ARD Meeting Guide: Bryan ISD | Parent Rights,2960,False,
+la-joya-isd\ard-process-guide.html,la-joya-isd,ard-process-guide.html,ARD Meeting Guide: La Joya ISD | Parent Rights,2969,False,
+keller-isd\evaluation-child-find.html,keller-isd,evaluation-child-find.html,How to Request an Evaluation in Keller ISD | FIE Timeline,2975,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+prosper-isd\evaluation-child-find.html,prosper-isd,evaluation-child-find.html,How to Request an Evaluation in Prosper ISD | FIE Timeline,2977,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+seguin-isd\ard-process-guide.html,seguin-isd,ard-process-guide.html,ARD Meeting Guide: Seguin ISD | Parent Rights,2983,False,
+edinburg-cisd\ard-process-guide.html,edinburg-cisd,ard-process-guide.html,ARD Meeting Guide: Edinburg CISD | Parent Rights,2985,False,
+tyler-isd\ard-process-guide.html,tyler-isd,ard-process-guide.html,ARD Meeting Guide: Tyler ISD | Parent Rights,2986,False,
+edinburg-cisd\evaluation-child-find.html,edinburg-cisd,evaluation-child-find.html,How to Request an Evaluation in Edinburg CISD | FIE Timeline,2992,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+texarkana-isd\ard-process-guide.html,texarkana-isd,ard-process-guide.html,ARD Meeting Guide: Texarkana ISD | Parent Rights,2994,False,
+grand-prairie-isd\evaluation-child-find.html,grand-prairie-isd,evaluation-child-find.html,How to Request an Evaluation in Grand Prairie ISD | FIE Timeline,2995,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+spring-branch-isd\evaluation-child-find.html,spring-branch-isd,evaluation-child-find.html,How to Request an Evaluation in Spring Branch ISD | FIE Timeline,3000,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+hurst-euless-bedford-isd\evaluation-child-find.html,hurst-euless-bedford-isd,evaluation-child-find.html,How to Request an Evaluation in Hurst-Euless-Bedford ISD | FIE Timeline,3003,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+mcallen-isd\ard-process-guide.html,mcallen-isd,ard-process-guide.html,ARD Meeting Guide: McAllen ISD | Parent Rights,3041,False,
+garland-isd\evaluation-child-find.html,garland-isd,evaluation-child-find.html,How to Request an Evaluation in Garland ISD | FIE Timeline,3045,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+houston-isd\evaluation-child-find.html,houston-isd,evaluation-child-find.html,How to Request an Evaluation in Houston ISD | FIE Timeline,3045,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+la-joya-isd\evaluation-child-find.html,la-joya-isd,evaluation-child-find.html,How to Request an Evaluation in La Joya ISD | FIE Timeline,3052,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+mansfield-isd\evaluation-child-find.html,mansfield-isd,evaluation-child-find.html,How to Request an Evaluation in Mansfield ISD | FIE Timeline,3053,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+irving-isd\evaluation-child-find.html,irving-isd,evaluation-child-find.html,How to Request an Evaluation in Irving ISD | FIE Timeline,3060,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+katy-isd\evaluation-child-find.html,katy-isd,evaluation-child-find.html,How to Request an Evaluation in Katy ISD | FIE Timeline,3084,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+prosper-isd\ard-process-guide.html,prosper-isd,ard-process-guide.html,ARD Meeting Guide: Prosper ISD | Parent Rights,3112,False,
+pharr-san-juan-alamo-isd\evaluation-child-find.html,pharr-san-juan-alamo-isd,evaluation-child-find.html,How to Request an Evaluation in Pharr-San Juan-Alamo ISD | FIE Timeline,3115,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+birdville-isd\ard-process-guide.html,birdville-isd,ard-process-guide.html,ARD Meeting Guide: Birdville ISD | Parent Rights,3122,False,
+arlington-isd\evaluation-child-find.html,arlington-isd,evaluation-child-find.html,How to Request an Evaluation in Arlington ISD | FIE Timeline,3130,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+east-central-isd\ard-process-guide.html,east-central-isd,ard-process-guide.html,ARD Meeting Guide: East Central ISD | Parent Rights,3137,False,
+hays-cisd\evaluation-child-find.html,hays-cisd,evaluation-child-find.html,How to Request an Evaluation in Hays CISD | FIE Timeline,3139,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+fort-bend-isd\evaluation-child-find.html,fort-bend-isd,evaluation-child-find.html,How to Request an Evaluation in Fort Bend ISD | FIE Timeline,3145,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+spring-isd\evaluation-child-find.html,spring-isd,evaluation-child-find.html,How to Request an Evaluation in Spring ISD | FIE Timeline,3153,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+dallas-isd\evaluation-child-find.html,dallas-isd,evaluation-child-find.html,How to Request an Evaluation in Dallas ISD | FIE Timeline,3156,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+killeen-isd\evaluation-child-find.html,killeen-isd,evaluation-child-find.html,How to Request an Evaluation in Killeen ISD | FIE Timeline,3159,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+birdville-isd\evaluation-child-find.html,birdville-isd,evaluation-child-find.html,How to Request an Evaluation in Birdville ISD | FIE Timeline,3161,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+goose-creek-cisd\ard-process-guide.html,goose-creek-cisd,ard-process-guide.html,ARD Meeting Guide: Goose Creek CISD | Parent Rights,3171,False,
+allen-isd\evaluation-child-find.html,allen-isd,evaluation-child-find.html,How to Request an Evaluation in Allen ISD | FIE Timeline,3189,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+denton-isd\evaluation-child-find.html,denton-isd,evaluation-child-find.html,How to Request an Evaluation in Denton ISD | FIE Timeline,3190,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+mckinney-isd\evaluation-child-find.html,mckinney-isd,evaluation-child-find.html,How to Request an Evaluation in McKinney ISD | FIE Timeline,3202,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+round-rock-isd\evaluation-child-find.html,round-rock-isd,evaluation-child-find.html,How to Request an Evaluation in Round Rock ISD | FIE Timeline,3212,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+north-east-isd\evaluation-child-find.html,north-east-isd,evaluation-child-find.html,How to Request an Evaluation in North East ISD | FIE Timeline,3217,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+temple-isd\ard-process-guide.html,temple-isd,ard-process-guide.html,ARD Meeting Guide: Temple ISD | Parent Rights,3224,False,
+amarillo-isd\evaluation-child-find.html,amarillo-isd,evaluation-child-find.html,How to Request an Evaluation in Amarillo ISD | FIE Timeline,3241,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+frisco-isd\evaluation-child-find.html,frisco-isd,evaluation-child-find.html,How to Request an Evaluation in Frisco ISD | FIE Timeline,3248,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+san-antonio-isd\evaluation-child-find.html,san-antonio-isd,evaluation-child-find.html,How to Request an Evaluation in San Antonio ISD | FIE Timeline,3248,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+aldine-isd\evaluation-child-find.html,aldine-isd,evaluation-child-find.html,How to Request an Evaluation in Aldine ISD | FIE Timeline,3269,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+comal-isd\evaluation-child-find.html,comal-isd,evaluation-child-find.html,How to Request an Evaluation in Comal ISD | FIE Timeline,3275,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+socorro-isd\ard-process-guide.html,socorro-isd,ard-process-guide.html,ARD Meeting Guide: Socorro ISD | Parent Rights,3280,False,
+judson-isd\evaluation-child-find.html,judson-isd,evaluation-child-find.html,How to Request an Evaluation in Judson ISD | FIE Timeline,3321,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+conroe-isd\evaluation-child-find.html,conroe-isd,evaluation-child-find.html,How to Request an Evaluation in Conroe ISD | FIE Timeline,3326,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+leander-isd\evaluation-child-find.html,leander-isd,evaluation-child-find.html,How to Request an Evaluation in Leander ISD | FIE Timeline,3339,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+san-benito-cisd\ard-process-guide.html,san-benito-cisd,ard-process-guide.html,ARD Meeting Guide: San Benito CISD | Parent Rights,3340,False,
+united-isd\evaluation-child-find.html,united-isd,evaluation-child-find.html,How to Request an Evaluation in United ISD | FIE Timeline,3342,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+burleson-isd\ard-process-guide.html,burleson-isd,ard-process-guide.html,ARD Meeting Guide: Burleson ISD | Parent Rights,3343,False,
+copperas-cove-isd\ard-process-guide.html,copperas-cove-isd,ard-process-guide.html,ARD Meeting Guide: Copperas Cove ISD | Parent Rights,3345,False,
+mcallen-isd\evaluation-child-find.html,mcallen-isd,evaluation-child-find.html,How to Request an Evaluation in McAllen ISD | FIE Timeline,3345,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+keller-isd\ard-process-guide.html,keller-isd,ard-process-guide.html,ARD Meeting Guide: Keller ISD | Parent Rights,3413,False,
+humble-isd\evaluation-child-find.html,humble-isd,evaluation-child-find.html,How to Request an Evaluation in Humble ISD | FIE Timeline,3435,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+midland-isd\evaluation-child-find.html,midland-isd,evaluation-child-find.html,How to Request an Evaluation in Midland ISD | FIE Timeline,3456,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+tomball-isd\evaluation-child-find.html,tomball-isd,evaluation-child-find.html,How to Request an Evaluation in Tomball ISD | FIE Timeline,3478,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+lewisville-isd\evaluation-child-find.html,lewisville-isd,evaluation-child-find.html,How to Request an Evaluation in Lewisville ISD | FIE Timeline,3487,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+idea-public-schools\evaluation-child-find.html,idea-public-schools,evaluation-child-find.html,How to Request an Evaluation in IDEA Public Schools | FIE Timeline,3520,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+harmony-public-schools-combined\evaluation-child-find.html,harmony-public-schools-combined,evaluation-child-find.html,How to Request an Evaluation in Harmony Public Schools (Combined) | FIE Timeline,3673,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+corpus-christi-isd\ard-process-guide.html,corpus-christi-isd,ard-process-guide.html,ARD Meeting Guide: Corpus Christi ISD | Parent Rights,3677,False,
+ector-county-isd\evaluation-child-find.html,ector-county-isd,evaluation-child-find.html,How to Request an Evaluation in Ector County ISD | FIE Timeline,3768,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+plano-isd\evaluation-child-find.html,plano-isd,evaluation-child-find.html,How to Request an Evaluation in Plano ISD | FIE Timeline,3783,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
+lamar-cisd\evaluation-child-find.html,lamar-cisd,evaluation-child-find.html,How to Request an Evaluation in Lamar CISD | FIE Timeline,3842,False,"YOUR_DYSLEXIA_LINK, YOUR_AUTISM_LINK, buy.stripe.com/YOUR_"
