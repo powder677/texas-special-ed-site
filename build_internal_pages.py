@@ -1,9 +1,39 @@
-<!DOCTYPE html>
+import os
+
+# ==============================================================================
+# 1. DEFINE THE PAGES TO BUILD
+# ==============================================================================
+PAGES = {
+    "about/index.html": "About Us",
+    "blog/10-questions-to-ask-at-ard-meeting.html": "10 Questions to Ask at an ARD Meeting",
+    "blog/how-to-disagree-at-ard-meeting.html": "How to Disagree at an ARD Meeting",
+    "blog/how-to-write-measurable-iep-goals.html": "How to Write Measurable IEP Goals",
+    "blog/independent-educational-evaluation-texas.html": "Independent Educational Evaluation (IEE) in Texas",
+    "blog/index.html": "Texas Special Education Blog",
+    "blog/texas-parent-rights-special-education.html": "Texas Parent Rights in Special Education",
+    "blog/understanding-fiie-texas.html": "Understanding the FIIE in Texas",
+    "blog/what-to-do-when-school-denies-evaluation.html": "What to Do When the School Denies an Evaluation",
+    "contact/index.html": "Contact Us",
+    "contact-us/index.html": "Contact Us",
+    "disclaimer/index.html": "Disclaimer",
+    "resources/index.html": "Free Special Education Resources",
+    "store/index.html": "Special Education Toolkits & Store",
+    "districts/index.html": "Texas School Districts Directory",
+}
+
+# ==============================================================================
+# 2. DEFINE THE TEMPLATE PARTS
+#    NOTE: We use __PAGE_TITLE__ as a placeholder instead of {title} so that
+#    the CSS curly braces don't interfere with str.format(). We swap it out
+#    with a simple str.replace() call at the end.
+# ==============================================================================
+
+TEMPLATE_HEAD_AND_NAV = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Free Special Education Resources | Texas Special Education Resources</title>
+  <title>__PAGE_TITLE__ | Texas Special Education Resources</title>
   <meta name="description" content="Navigate ARD meetings, IEP processes, and special education services with confidence in Texas." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -278,19 +308,9 @@
 </header>
 
 <main>
+"""
 
-    <section class="section">
-      <div class="section-inner">
-        <div class="page-header">
-          <h1>Free Special Education Resources</h1>
-        </div>
-        <div class="page-content-box">
-          <p><em>Content for <strong>Free Special Education Resources</strong> goes here.</em></p>
-          <p>Open <code>resources/index.html</code> in your editor to replace this placeholder with your final content.</p>
-        </div>
-      </div>
-    </section>
-
+TEMPLATE_FOOTER_AND_JS = """
 </main>
 
 <footer class="site-footer">
@@ -362,3 +382,74 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </body>
 </html>
+"""
+
+
+# ==============================================================================
+# 3. GENERATE THE FILES
+# ==============================================================================
+
+def generate_page(filepath, title):
+    # Build page-specific inner content
+    if filepath == "districts/index.html":
+        inner_content = """
+    <section class="section">
+      <div class="section-inner">
+        <div class="page-header">
+          <h1>__PAGE_TITLE__</h1>
+          <p style="color: var(--text-muted); font-size: 1.1rem;">
+            Select your school district below to access customised ARD guides,
+            contact directories, and dispute resolution information.
+          </p>
+        </div>
+        <div class="page-content-box">
+          <h2>Browse by Region</h2>
+          <p>We are currently updating our database. A grid of all 120+ supported Texas districts will appear here.</p>
+          <br />
+          <a href="/" class="button-primary">Return to Home</a>
+        </div>
+      </div>
+    </section>
+"""
+    else:
+        inner_content = """
+    <section class="section">
+      <div class="section-inner">
+        <div class="page-header">
+          <h1>__PAGE_TITLE__</h1>
+        </div>
+        <div class="page-content-box">
+          <p><em>Content for <strong>__PAGE_TITLE__</strong> goes here.</em></p>
+          <p>Open <code>__PAGE_PATH__</code> in your editor to replace this placeholder with your final content.</p>
+        </div>
+      </div>
+    </section>
+"""
+
+    # Assemble and inject the title using plain string replacement —
+    # this avoids str.format() clashing with CSS curly braces.
+    full_html = (
+        TEMPLATE_HEAD_AND_NAV
+        + inner_content
+        + TEMPLATE_FOOTER_AND_JS
+    )
+    full_html = full_html.replace("__PAGE_TITLE__", title)
+    full_html = full_html.replace("__PAGE_PATH__", filepath)
+
+    # Create directories if needed
+    directory = os.path.dirname(filepath)
+    if directory and not os.path.exists(directory):
+        os.makedirs(directory)
+
+    # Write the file
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(full_html)
+
+    print(f"  Generated: {filepath}")
+
+
+if __name__ == "__main__":
+    print("Building internal pages...\n" + "-" * 40)
+    for path, page_title in PAGES.items():
+        generate_page(path, page_title)
+    print("-" * 40 + "\nAll pages generated successfully!")
