@@ -31,7 +31,7 @@
   .mobile-menu-toggle { display: none; background: transparent; border: none; cursor: pointer; padding: 5px; }
   .hamburger { display: block; width: 25px; height: 3px; background: #0a3d6b; margin: 5px 0; border-radius: 2px; }
   @media (max-width: 900px) {
-    .nav-menu { display: none; flex-direction: column; width: 100%; position: absolute; top: 100%; left: 0; background: #ffffff; box-shadow: 0 6px 16px rgba(0,0,0,0.1); padding: 20px 0; border-top: 1px solid #dde3eb; }
+    .nav-menu { display: none; flex-direction: column; width: 100%; position: absolute; top: 100%; left: 0; background: #ffffff; padding: 20px 0; }
     .nav-menu.active { display: flex; }
     .mobile-menu-toggle { display: block; }
   }
