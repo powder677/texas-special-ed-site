@@ -1,0 +1,11 @@
+# Add to your netlify.toml or _redirects file
+
+# _redirects file content:
+https://www.texasspecialed.com/* https://texasspecialed.com/:splat 301!
+
+# OR netlify.toml:
+# [[redirects]]
+#   from = "https://www.texasspecialed.com/*"
+#   to = "https://texasspecialed.com/:splat"
+#   status = 301
+#   force = true

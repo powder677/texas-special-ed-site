@@ -1,0 +1,771 @@
+texasspecialed.com - Canonical Fix Report
+Generated: 2026-02-21 00:35
+==========================================
+
+DIAGNOSIS
+---------
+Total non-indexable pages:  369
+Root cause:                 www vs non-www canonical mismatch (100%)
+
+Google crawls:    https://www.texasspecialed.com/...
+Canonical points: https://texasspecialed.com/...
+
+Fix: one redirect rule (www -> non-www 301)
+See: fix_www_vercel.json  (already generated)
+
+BREAKDOWN
+---------
+District index pages:  133
+District subpages:     235
+  - /evaluation-child-find  (~112 pages)
+  - /ard-process-guide      (~112 pages)
+
+AFTER FIX — CHECKLIST
+----------------------
+[ ] Merge fix_www_vercel.json redirects into your vercel.json
+[ ] git commit + push (Vercel auto-deploys)
+[ ] Verify: https://www.texasspecialed.com/ redirects to non-www
+[ ] Google Search Console > Sitemaps > Resubmit
+[ ] GSC > URL Inspection > Request indexing on 10 key pages
+[ ] Rerun Screaming Frog in 2-4 weeks
+
+ALL 369 AFFECTED URLs
+==================================================
+https://www.texasspecialed.com/blog
+  -> https://texasspecialed.com/blog/
+https://www.texasspecialed.com/districts/lewisville-isd
+  -> https://texasspecialed.com/districts/lewisville-isd/
+https://www.texasspecialed.com/districts/conroe-isd
+  -> https://texasspecialed.com/districts/conroe-isd/
+https://www.texasspecialed.com/districts/round-rock-isd
+  -> https://texasspecialed.com/districts/round-rock-isd/
+https://www.texasspecialed.com/districts/plano-isd
+  -> https://texasspecialed.com/districts/plano-isd/
+https://www.texasspecialed.com/districts/frisco-isd
+  -> https://texasspecialed.com/districts/frisco-isd/
+https://www.texasspecialed.com/districts/pasadena-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/pasadena-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/humble-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/humble-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/victoria-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/victoria-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/amarillo-isd
+  -> https://texasspecialed.com/districts/amarillo-isd/
+https://www.texasspecialed.com/districts/cypress-fairbanks-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/cypress-fairbanks-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/united-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/united-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/prosper-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/prosper-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/ector-county-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/ector-county-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/frisco-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/frisco-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/santa-fe-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/santa-fe-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/abilene-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/abilene-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/san-marcos-cisd/ard-process-guide
+  -> https://texasspecialed.com/districts/san-marcos-cisd/ard-process-guide.html
+https://www.texasspecialed.com/districts/goose-creek-cisd/evaluation-child-find
+  -> https://texasspecialed.com/districts/goose-creek-cisd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/forney-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/forney-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/laredo-isd
+  -> https://texasspecialed.com/districts/laredo-isd/
+https://www.texasspecialed.com/districts/georgetown-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/georgetown-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/grand-prairie-isd
+  -> https://texasspecialed.com/districts/grand-prairie-isd/
+https://www.texasspecialed.com/districts/judson-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/judson-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/mckinney-isd
+  -> https://texasspecialed.com/districts/mckinney-isd/
+https://www.texasspecialed.com/districts/burleson-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/burleson-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/montgomery-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/montgomery-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/seguin-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/seguin-isd/ard-process-guide.html
+https://www.texasspecialed.com/blog/due-process-texas
+  -> https://texasspecialed.com/blog/due-process-texas.html
+https://www.texasspecialed.com/districts/royse-city-isd
+  -> https://texasspecialed.com/districts/royse-city-isd/
+https://www.texasspecialed.com/districts/tyler-isd
+  -> https://texasspecialed.com/districts/tyler-isd/
+https://www.texasspecialed.com/blog/ard-rights-parents
+  -> https://texasspecialed.com/blog/ard-rights-parents.html
+https://www.texasspecialed.com/districts/leander-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/leander-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/san-marcos-cisd/evaluation-child-find
+  -> https://texasspecialed.com/districts/san-marcos-cisd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/clint-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/clint-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/eagle-mountain-saginaw-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/eagle-mountain-saginaw-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/harmony-public-schools-combined/evaluation-child-find
+  -> https://texasspecialed.com/districts/harmony-public-schools-combined/evaluation-child-find.html
+https://www.texasspecialed.com/districts/san-marcos-cisd
+  -> https://texasspecialed.com/districts/san-marcos-cisd/
+https://www.texasspecialed.com/districts/waco-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/waco-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/harlingen-cisd/evaluation-child-find
+  -> https://texasspecialed.com/districts/harlingen-cisd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/rockwall-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/rockwall-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/pasadena-isd
+  -> https://texasspecialed.com/districts/pasadena-isd/
+https://www.texasspecialed.com/districts/north-east-isd
+  -> https://texasspecialed.com/districts/north-east-isd/
+https://www.texasspecialed.com/districts/weslaco-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/weslaco-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/victoria-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/victoria-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/abilene-isd
+  -> https://texasspecialed.com/districts/abilene-isd/
+https://www.texasspecialed.com/districts/conroe-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/conroe-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/san-angelo-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/san-angelo-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/tomball-isd
+  -> https://texasspecialed.com/districts/tomball-isd/
+https://www.texasspecialed.com/districts/college-station-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/college-station-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/mcallen-isd
+  -> https://texasspecialed.com/districts/mcallen-isd/
+https://www.texasspecialed.com/blog/manifestation-determination
+  -> https://texasspecialed.com/blog/manifestation-determination.html
+https://www.texasspecialed.com/districts/frisco-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/frisco-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/irving-isd
+  -> https://texasspecialed.com/districts/irving-isd/
+https://www.texasspecialed.com/districts/del-valle-isd
+  -> https://texasspecialed.com/districts/del-valle-isd/
+https://www.texasspecialed.com/districts/clint-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/clint-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/georgetown-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/georgetown-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/princeton-isd
+  -> https://texasspecialed.com/districts/princeton-isd/
+https://www.texasspecialed.com/districts/texarkana-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/texarkana-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/la-joya-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/la-joya-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/birdville-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/birdville-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/judson-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/judson-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/comal-isd
+  -> https://texasspecialed.com/districts/comal-isd/
+https://www.texasspecialed.com/districts/idea-public-schools/evaluation-child-find
+  -> https://texasspecialed.com/districts/idea-public-schools/evaluation-child-find.html
+https://www.texasspecialed.com/districts/aldine-isd
+  -> https://texasspecialed.com/districts/aldine-isd/
+https://www.texasspecialed.com/districts/harmony-public-schools-combined
+  -> https://texasspecialed.com/districts/harmony-public-schools-combined/
+https://www.texasspecialed.com/districts/austin-isd
+  -> https://texasspecialed.com/districts/austin-isd/
+https://www.texasspecialed.com/districts/united-isd
+  -> https://texasspecialed.com/districts/united-isd/
+https://www.texasspecialed.com/districts/princeton-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/princeton-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/santa-fe-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/santa-fe-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/clear-creek-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/clear-creek-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/lake-travis-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/lake-travis-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/georgetown-isd
+  -> https://texasspecialed.com/districts/georgetown-isd/
+https://www.texasspecialed.com/districts/spring-isd
+  -> https://texasspecialed.com/districts/spring-isd/
+https://www.texasspecialed.com/districts/dallas-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/dallas-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/ysleta-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/ysleta-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/crosby-isd
+  -> https://texasspecialed.com/districts/crosby-isd/
+https://www.texasspecialed.com/districts/carrollton-farmers-branch-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/carrollton-farmers-branch-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/alvin-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/alvin-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/hays-cisd/evaluation-child-find
+  -> https://texasspecialed.com/districts/hays-cisd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/ector-county-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/ector-county-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/eagle-mountain-saginaw-isd
+  -> https://texasspecialed.com/districts/eagle-mountain-saginaw-isd/
+https://www.texasspecialed.com/districts/copperas-cove-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/copperas-cove-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/fort-worth-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/fort-worth-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/prosper-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/prosper-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/arlington-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/arlington-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/waller-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/waller-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/prosper-isd
+  -> https://texasspecialed.com/districts/prosper-isd/
+https://www.texasspecialed.com/blog/child-find-obligations
+  -> https://texasspecialed.com/blog/child-find-obligations.html
+https://www.texasspecialed.com/districts/tyler-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/tyler-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/friendswood-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/friendswood-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/goose-creek-cisd
+  -> https://texasspecialed.com/districts/goose-creek-cisd/
+https://www.texasspecialed.com/districts/spring-branch-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/spring-branch-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/lewisville-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/lewisville-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/spring-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/spring-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/bastrop-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/bastrop-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/lamar-cisd/evaluation-child-find
+  -> https://texasspecialed.com/districts/lamar-cisd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/denton-isd
+  -> https://texasspecialed.com/districts/denton-isd/
+https://www.texasspecialed.com/districts/dallas-isd
+  -> https://texasspecialed.com/districts/dallas-isd/
+https://www.texasspecialed.com/districts/princeton-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/princeton-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/del-valle-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/del-valle-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/crowley-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/crowley-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/irving-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/irving-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/plano-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/plano-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/hays-cisd
+  -> https://texasspecialed.com/districts/hays-cisd/
+https://www.texasspecialed.com/districts/melissa-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/melissa-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/richardson-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/richardson-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/burleson-isd
+  -> https://texasspecialed.com/districts/burleson-isd/
+https://www.texasspecialed.com/districts/lake-travis-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/lake-travis-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/spring-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/spring-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/temple-isd
+  -> https://texasspecialed.com/districts/temple-isd/
+https://www.texasspecialed.com/districts/college-station-isd
+  -> https://texasspecialed.com/districts/college-station-isd/
+https://www.texasspecialed.com/districts/round-rock-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/round-rock-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/allen-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/allen-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/clear-creek-isd
+  -> https://texasspecialed.com/districts/clear-creek-isd/
+https://www.texasspecialed.com/districts/mcallen-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/mcallen-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/lake-travis-isd
+  -> https://texasspecialed.com/districts/lake-travis-isd/
+https://www.texasspecialed.com/blog/how-to-request-evaluation
+  -> https://texasspecialed.com/blog/how-to-request-evaluation.html
+https://www.texasspecialed.com/blog/fie-evaluation-timeline
+  -> https://texasspecialed.com/blog/fie-evaluation-timeline.html
+https://www.texasspecialed.com/districts/lubbock-isd
+  -> https://texasspecialed.com/districts/lubbock-isd/
+https://www.texasspecialed.com/districts/round-rock-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/round-rock-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/schertz-cibolo-universal-city-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/schertz-cibolo-universal-city-isd/evaluation-child-find.html
+https://www.texasspecialed.com/blog/ard-meeting-tips
+  -> https://texasspecialed.com/blog/ard-meeting-tips.html
+https://www.texasspecialed.com/districts/bastrop-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/bastrop-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/montgomery-isd
+  -> https://texasspecialed.com/districts/montgomery-isd/
+https://www.texasspecialed.com/districts/little-elm-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/little-elm-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/fort-bend-isd/
+  -> https://texasspecialed.com/districts/fort-bend-isd/
+https://www.texasspecialed.com/districts/east-central-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/east-central-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/ysleta-isd
+  -> https://texasspecialed.com/districts/ysleta-isd/
+https://www.texasspecialed.com/districts/longview-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/longview-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/melissa-isd
+  -> https://texasspecialed.com/districts/melissa-isd/
+https://www.texasspecialed.com/districts/channelview-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/channelview-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/harlingen-cisd
+  -> https://texasspecialed.com/districts/harlingen-cisd/
+https://www.texasspecialed.com/districts/sherman-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/sherman-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/mckinney-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/mckinney-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/san-benito-cisd
+  -> https://texasspecialed.com/districts/san-benito-cisd/
+https://www.texasspecialed.com/districts/waller-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/waller-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/harlingen-cisd/ard-process-guide
+  -> https://texasspecialed.com/districts/harlingen-cisd/ard-process-guide.html
+https://www.texasspecialed.com/districts/longview-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/longview-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/rio-grande-city-grulla-isd
+  -> https://texasspecialed.com/districts/rio-grande-city-grulla-isd/
+https://www.texasspecialed.com/districts/lewisville-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/lewisville-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/goose-creek-cisd/ard-process-guide
+  -> https://texasspecialed.com/districts/goose-creek-cisd/ard-process-guide.html
+https://www.texasspecialed.com/districts/wylie-isd
+  -> https://texasspecialed.com/districts/wylie-isd/
+https://www.texasspecialed.com/districts/alief-isd/
+  -> https://texasspecialed.com/districts/alief-isd/
+https://www.texasspecialed.com/districts/killeen-isd
+  -> https://texasspecialed.com/districts/killeen-isd/
+https://www.texasspecialed.com/districts/houston-isd
+  -> https://texasspecialed.com/districts/houston-isd/
+https://www.texasspecialed.com/districts/texas-city-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/texas-city-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/alvin-isd
+  -> https://texasspecialed.com/districts/alvin-isd/
+https://www.texasspecialed.com/districts/alief-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/alief-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/edinburg-cisd
+  -> https://texasspecialed.com/districts/edinburg-cisd/
+https://www.texasspecialed.com/blog/dyslexia-hb3928-changes
+  -> https://texasspecialed.com/blog/dyslexia-hb3928-changes.html
+https://www.texasspecialed.com/districts/lamar-cisd
+  -> https://texasspecialed.com/districts/lamar-cisd/
+https://www.texasspecialed.com/districts/weslaco-isd
+  -> https://texasspecialed.com/districts/weslaco-isd/
+https://www.texasspecialed.com/districts/laredo-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/laredo-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/judson-isd
+  -> https://texasspecialed.com/districts/judson-isd/
+https://www.texasspecialed.com/districts/mesquite-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/mesquite-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/midland-isd
+  -> https://texasspecialed.com/districts/midland-isd/
+https://www.texasspecialed.com/districts/longview-isd
+  -> https://texasspecialed.com/districts/longview-isd/
+https://www.texasspecialed.com/districts/allen-isd
+  -> https://texasspecialed.com/districts/allen-isd/
+https://www.texasspecialed.com/districts/socorro-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/socorro-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/san-antonio-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/san-antonio-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/montgomery-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/montgomery-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/klein-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/klein-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/eanes-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/eanes-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/clint-isd
+  -> https://texasspecialed.com/districts/clint-isd/
+https://www.texasspecialed.com/districts/abilene-isd/
+  -> https://texasspecialed.com/districts/abilene-isd/
+https://www.texasspecialed.com/districts/melissa-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/melissa-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/la-joya-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/la-joya-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/idea-public-schools/ard-process-guide
+  -> https://texasspecialed.com/districts/idea-public-schools/ard-process-guide.html
+https://www.texasspecialed.com/districts/texas-city-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/texas-city-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/katy-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/katy-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/hurst-euless-bedford-isd
+  -> https://texasspecialed.com/districts/hurst-euless-bedford-isd/
+https://www.texasspecialed.com/districts/burleson-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/burleson-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/mansfield-isd
+  -> https://texasspecialed.com/districts/mansfield-isd/
+https://www.texasspecialed.com/districts/mission-cisd/evaluation-child-find
+  -> https://texasspecialed.com/districts/mission-cisd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/brownsville-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/brownsville-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/socorro-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/socorro-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/katy-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/katy-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/wichita-falls-isd
+  -> https://texasspecialed.com/districts/wichita-falls-isd/
+https://www.texasspecialed.com/districts/little-elm-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/little-elm-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/pasadena-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/pasadena-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/northwest-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/northwest-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/austin-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/austin-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/garland-isd
+  -> https://texasspecialed.com/districts/garland-isd/
+https://www.texasspecialed.com/districts/alvin-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/alvin-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/eanes-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/eanes-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/spring-branch-isd
+  -> https://texasspecialed.com/districts/spring-branch-isd/
+https://www.texasspecialed.com/districts/hays-cisd/ard-process-guide
+  -> https://texasspecialed.com/districts/hays-cisd/ard-process-guide.html
+https://www.texasspecialed.com/districts/garland-isd/
+  -> https://texasspecialed.com/districts/garland-isd/
+https://www.texasspecialed.com/districts/northwest-isd
+  -> https://texasspecialed.com/districts/northwest-isd/
+https://www.texasspecialed.com/districts/crowley-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/crowley-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/donna-isd
+  -> https://texasspecialed.com/districts/donna-isd/
+https://www.texasspecialed.com/districts/ector-county-isd
+  -> https://texasspecialed.com/districts/ector-county-isd/
+https://www.texasspecialed.com/districts/idea-public-schools
+  -> https://texasspecialed.com/districts/idea-public-schools/
+https://www.texasspecialed.com/districts/sherman-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/sherman-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/san-angelo-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/san-angelo-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/wichita-falls-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/wichita-falls-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/san-benito-cisd/ard-process-guide
+  -> https://texasspecialed.com/districts/san-benito-cisd/ard-process-guide.html
+https://www.texasspecialed.com/districts/belton-isd
+  -> https://texasspecialed.com/districts/belton-isd/
+https://www.texasspecialed.com/districts/magnolia-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/magnolia-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/weslaco-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/weslaco-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/texarkana-isd
+  -> https://texasspecialed.com/districts/texarkana-isd/
+https://www.texasspecialed.com/districts/cypress-fairbanks-isd/
+  -> https://texasspecialed.com/districts/cypress-fairbanks-isd/
+https://www.texasspecialed.com/districts/east-central-isd
+  -> https://texasspecialed.com/districts/east-central-isd/
+https://www.texasspecialed.com/districts/mesquite-isd
+  -> https://texasspecialed.com/districts/mesquite-isd/
+https://www.texasspecialed.com/districts/cypress-fairbanks-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/cypress-fairbanks-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/northside-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/northside-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/keller-isd
+  -> https://texasspecialed.com/districts/keller-isd/
+https://www.texasspecialed.com/districts/corpus-christi-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/corpus-christi-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/pflugerville-isd
+  -> https://texasspecialed.com/districts/pflugerville-isd/
+https://www.texasspecialed.com/districts/klein-isd
+  -> https://texasspecialed.com/districts/klein-isd/
+https://www.texasspecialed.com/districts/carrollton-farmers-branch-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/carrollton-farmers-branch-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/college-station-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/college-station-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/copperas-cove-isd
+  -> https://texasspecialed.com/districts/copperas-cove-isd/
+https://www.texasspecialed.com/districts/fort-bend-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/fort-bend-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/richardson-isd
+  -> https://texasspecialed.com/districts/richardson-isd/
+https://www.texasspecialed.com/districts/sherman-isd
+  -> https://texasspecialed.com/districts/sherman-isd/
+https://www.texasspecialed.com/districts/donna-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/donna-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/north-east-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/north-east-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/waller-isd
+  -> https://texasspecialed.com/districts/waller-isd/
+https://www.texasspecialed.com/districts/waco-isd
+  -> https://texasspecialed.com/districts/waco-isd/
+https://www.texasspecialed.com/districts/dickinson-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/dickinson-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/beaumont-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/beaumont-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/el-paso-isd
+  -> https://texasspecialed.com/districts/el-paso-isd/
+https://www.texasspecialed.com/districts/pharr-san-juan-alamo-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/pharr-san-juan-alamo-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/midway-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/midway-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/houston-isd/
+  -> https://texasspecialed.com/districts/houston-isd/
+https://www.texasspecialed.com/districts/birdville-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/birdville-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/eagle-mountain-saginaw-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/eagle-mountain-saginaw-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/tomball-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/tomball-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/la-joya-isd
+  -> https://texasspecialed.com/districts/la-joya-isd/
+https://www.texasspecialed.com/districts/mckinney-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/mckinney-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/santa-fe-isd
+  -> https://texasspecialed.com/districts/santa-fe-isd/
+https://www.texasspecialed.com/districts/east-central-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/east-central-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/new-caney-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/new-caney-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/rockwall-isd
+  -> https://texasspecialed.com/districts/rockwall-isd/
+https://www.texasspecialed.com/blog/what-is-an-ard-meeting
+  -> https://texasspecialed.com/blog/what-is-an-ard-meeting.html
+https://www.texasspecialed.com/districts/grand-prairie-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/grand-prairie-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/conroe-isd/
+  -> https://texasspecialed.com/districts/conroe-isd/
+https://www.texasspecialed.com/districts/pharr-san-juan-alamo-isd
+  -> https://texasspecialed.com/districts/pharr-san-juan-alamo-isd/
+https://www.texasspecialed.com/districts/san-antonio-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/san-antonio-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/mcallen-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/mcallen-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/rockwall-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/rockwall-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/victoria-isd
+  -> https://texasspecialed.com/districts/victoria-isd/
+https://www.texasspecialed.com/districts/forney-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/forney-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/hurst-euless-bedford-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/hurst-euless-bedford-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/amarillo-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/amarillo-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/irving-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/irving-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/san-benito-cisd/evaluation-child-find
+  -> https://texasspecialed.com/districts/san-benito-cisd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/channelview-isd
+  -> https://texasspecialed.com/districts/channelview-isd/
+https://www.texasspecialed.com/districts/mesquite-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/mesquite-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/comal-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/comal-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/magnolia-isd
+  -> https://texasspecialed.com/districts/magnolia-isd/
+https://www.texasspecialed.com/districts/channelview-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/channelview-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/midland-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/midland-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/bastrop-isd
+  -> https://texasspecialed.com/districts/bastrop-isd/
+https://www.texasspecialed.com/districts/new-caney-isd
+  -> https://texasspecialed.com/districts/new-caney-isd/
+https://www.texasspecialed.com/districts/san-antonio-isd
+  -> https://texasspecialed.com/districts/san-antonio-isd/
+https://www.texasspecialed.com/districts/edinburg-cisd/ard-process-guide
+  -> https://texasspecialed.com/districts/edinburg-cisd/ard-process-guide.html
+https://www.texasspecialed.com/districts/friendswood-isd
+  -> https://texasspecialed.com/districts/friendswood-isd/
+https://www.texasspecialed.com/districts/houston-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/houston-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/allen-isd/
+  -> https://texasspecialed.com/districts/allen-isd/
+https://www.texasspecialed.com/districts/laredo-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/laredo-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/dickinson-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/dickinson-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/seguin-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/seguin-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/mansfield-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/mansfield-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/humble-isd
+  -> https://texasspecialed.com/districts/humble-isd/
+https://www.texasspecialed.com/districts/birdville-isd
+  -> https://texasspecialed.com/districts/birdville-isd/
+https://www.texasspecialed.com/districts/keller-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/keller-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/alief-isd
+  -> https://texasspecialed.com/districts/alief-isd/
+https://www.texasspecialed.com/districts/grapevine-colleyville-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/grapevine-colleyville-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/coppell-isd
+  -> https://texasspecialed.com/districts/coppell-isd/
+https://www.texasspecialed.com/districts/pflugerville-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/pflugerville-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/arlington-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/arlington-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/seguin-isd
+  -> https://texasspecialed.com/districts/seguin-isd/
+https://www.texasspecialed.com/districts/alief-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/alief-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/houston-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/houston-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/grapevine-colleyville-isd
+  -> https://texasspecialed.com/districts/grapevine-colleyville-isd/
+https://www.texasspecialed.com/districts/friendswood-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/friendswood-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/belton-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/belton-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/wylie-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/wylie-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/edinburg-cisd/evaluation-child-find
+  -> https://texasspecialed.com/districts/edinburg-cisd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/harmony-public-schools-combined/ard-process-guide
+  -> https://texasspecialed.com/districts/harmony-public-schools-combined/ard-process-guide.html
+https://www.texasspecialed.com/districts/ysleta-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/ysleta-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/midland-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/midland-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/temple-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/temple-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/midway-isd
+  -> https://texasspecialed.com/districts/midway-isd/
+https://www.texasspecialed.com/districts/schertz-cibolo-universal-city-isd
+  -> https://texasspecialed.com/districts/schertz-cibolo-universal-city-isd/
+https://www.texasspecialed.com/districts/royse-city-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/royse-city-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/mission-cisd
+  -> https://texasspecialed.com/districts/mission-cisd/
+https://www.texasspecialed.com/districts/rio-grande-city-grulla-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/rio-grande-city-grulla-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/northside-isd
+  -> https://texasspecialed.com/districts/northside-isd/
+https://www.texasspecialed.com/districts/fort-bend-isd
+  -> https://texasspecialed.com/districts/fort-bend-isd/
+https://www.texasspecialed.com/districts/forney-isd
+  -> https://texasspecialed.com/districts/forney-isd/
+https://www.texasspecialed.com/districts/clear-creek-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/clear-creek-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/mission-cisd/ard-process-guide
+  -> https://texasspecialed.com/districts/mission-cisd/ard-process-guide.html
+https://www.texasspecialed.com/districts/crosby-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/crosby-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/dallas-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/dallas-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/humble-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/humble-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/leander-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/leander-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/tyler-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/tyler-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/carrollton-farmers-branch-isd
+  -> https://texasspecialed.com/districts/carrollton-farmers-branch-isd/
+https://www.texasspecialed.com/districts/bryan-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/bryan-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/spring-branch-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/spring-branch-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/fort-bend-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/fort-bend-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/coppell-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/coppell-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/magnolia-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/magnolia-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/fort-worth-isd
+  -> https://texasspecialed.com/districts/fort-worth-isd/
+https://www.texasspecialed.com/districts/northside-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/northside-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/garland-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/garland-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/little-elm-isd
+  -> https://texasspecialed.com/districts/little-elm-isd/
+https://www.texasspecialed.com/districts/pflugerville-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/pflugerville-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/pharr-san-juan-alamo-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/pharr-san-juan-alamo-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/mansfield-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/mansfield-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/corpus-christi-isd
+  -> https://texasspecialed.com/districts/corpus-christi-isd/
+https://www.texasspecialed.com/districts/united-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/united-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/donna-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/donna-isd/ard-process-guide.html
+https://www.texasspecialed.com/blog/prior-written-notice-texas
+  -> https://texasspecialed.com/blog/prior-written-notice-texas.html
+https://www.texasspecialed.com/districts/schertz-cibolo-universal-city-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/schertz-cibolo-universal-city-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/leander-isd
+  -> https://texasspecialed.com/districts/leander-isd/
+https://www.texasspecialed.com/districts/socorro-isd
+  -> https://texasspecialed.com/districts/socorro-isd/
+https://www.texasspecialed.com/blog/iep-vs-504-texas
+  -> https://texasspecialed.com/blog/iep-vs-504-texas.html
+https://www.texasspecialed.com/districts/el-paso-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/el-paso-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/denton-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/denton-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/katy-isd/
+  -> https://texasspecialed.com/districts/katy-isd/
+https://www.texasspecialed.com/districts/wichita-falls-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/wichita-falls-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/conroe-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/conroe-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/wylie-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/wylie-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/texas-city-isd
+  -> https://texasspecialed.com/districts/texas-city-isd/
+https://www.texasspecialed.com/districts/el-paso-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/el-paso-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/lubbock-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/lubbock-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/rio-grande-city-grulla-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/rio-grande-city-grulla-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/grapevine-colleyville-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/grapevine-colleyville-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/bryan-isd
+  -> https://texasspecialed.com/districts/bryan-isd/
+https://www.texasspecialed.com/districts/killeen-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/killeen-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/dickinson-isd
+  -> https://texasspecialed.com/districts/dickinson-isd/
+https://www.texasspecialed.com/districts/fort-worth-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/fort-worth-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/abilene-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/abilene-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/grand-prairie-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/grand-prairie-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/belton-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/belton-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/austin-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/austin-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/crowley-isd
+  -> https://texasspecialed.com/districts/crowley-isd/
+https://www.texasspecialed.com/districts/alvin-isd/
+  -> https://texasspecialed.com/districts/alvin-isd/
+https://www.texasspecialed.com/blog/special-ed-discipline-texas
+  -> https://texasspecialed.com/blog/special-ed-discipline-texas.html
+https://www.texasspecialed.com/blog/
+  -> https://texasspecialed.com/blog/
+https://www.texasspecialed.com/districts/garland-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/garland-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/hurst-euless-bedford-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/hurst-euless-bedford-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/san-angelo-isd
+  -> https://texasspecialed.com/districts/san-angelo-isd/
+https://www.texasspecialed.com/districts/arlington-isd
+  -> https://texasspecialed.com/districts/arlington-isd/
+https://www.texasspecialed.com/districts/texarkana-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/texarkana-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/plano-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/plano-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/north-east-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/north-east-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/katy-isd
+  -> https://texasspecialed.com/districts/katy-isd/
+https://www.texasspecialed.com/districts/copperas-cove-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/copperas-cove-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/allen-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/allen-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/aldine-isd/
+  -> https://texasspecialed.com/districts/aldine-isd/
+https://www.texasspecialed.com/districts/killeen-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/killeen-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/royse-city-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/royse-city-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/cypress-fairbanks-isd
+  -> https://texasspecialed.com/districts/cypress-fairbanks-isd/
+https://www.texasspecialed.com/districts/beaumont-isd
+  -> https://texasspecialed.com/districts/beaumont-isd/
+https://www.texasspecialed.com/districts/new-caney-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/new-caney-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/lubbock-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/lubbock-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/aldine-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/aldine-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/lamar-cisd/ard-process-guide
+  -> https://texasspecialed.com/districts/lamar-cisd/ard-process-guide.html
+https://www.texasspecialed.com/districts/denton-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/denton-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/brownsville-isd
+  -> https://texasspecialed.com/districts/brownsville-isd/
+https://www.texasspecialed.com/districts/klein-isd/ard-process-guide
+  -> https://texasspecialed.com/districts/klein-isd/ard-process-guide.html
+https://www.texasspecialed.com/districts/amarillo-isd/evaluation-child-find
+  -> https://texasspecialed.com/districts/amarillo-isd/evaluation-child-find.html
+https://www.texasspecialed.com/districts/eanes-isd
+  -> https://texasspecialed.com/districts/eanes-isd/

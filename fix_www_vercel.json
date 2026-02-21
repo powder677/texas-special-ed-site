@@ -1,5 +1,4 @@
 {
-  "cleanUrls": true,
   "redirects": [
     {
       "source": "/:path*",
@@ -14,4 +13,3 @@
     }
   ]
 }
-
