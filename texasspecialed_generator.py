@@ -42,21 +42,6 @@ Usage:
 """
 
 import anthropic
-import json
-import re
-import argparse
-import time
-import shutil
-from datetime import datetime
-from pathlib import Path
-
-# ─── Configuration ─────────────────────────────────────────────────────────────
-
-
-HUB_DIR    = Path("./hub_pages")             # your existing district HTML files go here
-MODEL      = "claude-opus-4-6"
-
-# ─── Priority Districts ────────────────────────────────────────────────────────
 
 PRIORITY_DISTRICTS = [
     {
