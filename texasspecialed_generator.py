@@ -52,8 +52,7 @@ from pathlib import Path
 
 # ─── Configuration ─────────────────────────────────────────────────────────────
 
-API_KEY    = "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"   # <- paste your key here
-OUTPUT_DIR = Path("./generated_pages")        # generated + patched files land here
+
 HUB_DIR    = Path("./hub_pages")             # your existing district HTML files go here
 MODEL      = "claude-opus-4-6"
 
