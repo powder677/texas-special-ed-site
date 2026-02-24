@@ -1,0 +1,2354 @@
+13:10:17  INFO      Loaded 222 rows from texas_special_ed_leads_top20.csv
+13:10:17  INFO      After deduplication: 222 unique leads
+13:10:17  INFO      Already completed: 222 rows — will skip these
+13:10:17  INFO      [1/222] SKIP (already done): Shields Law - Special Needs & Special Education Law
+13:10:17  INFO      [2/222] SKIP (already done): Marc Whitehead & Associates Attorney at Law, LLP
+13:10:17  INFO      [3/222] SKIP (already done): Bowen Law Firm, PLLC
+13:10:17  INFO      [4/222] SKIP (already done): Thompson & Horton LLP
+13:10:17  INFO      [5/222] SKIP (already done): Filis Law Firm
+13:10:17  INFO      [6/222] SKIP (already done): Advocate Well
+13:10:17  INFO      [7/222] SKIP (already done): National ARD/IEP Advocates
+13:10:17  INFO      [8/222] SKIP (already done): The Center for Assisted Learning
+13:10:17  INFO      [9/222] SKIP (already done): Dyslexia School of Houston - Training Center and Lab School
+13:10:17  INFO      [10/222] SKIP (already done): Dyslexia School of Houston
+13:10:17  INFO      [11/222] SKIP (already done): Lindamood-Bell Houston Learning Center
+13:10:17  INFO      [12/222] SKIP (already done): Neuhaus Education Center
+13:10:17  INFO      [13/222] SKIP (already done): Achievement Zone, LLC
+13:10:17  INFO      [14/222] SKIP (already done): Family Literacy Network
+13:10:17  INFO      [15/222] SKIP (already done): Diagnostic Learning Services - Houston
+13:10:17  INFO      [16/222] SKIP (already done): LearningRx Houston
+13:10:17  INFO      [17/222] SKIP (already done): Law Office of Madeline M. McIntosh
+13:10:17  INFO      [18/222] SKIP (already done): The Law Office of Ruthe Belachew, PLLC
+13:10:17  INFO      [19/222] SKIP (already done): Bailey & Galyen Attorneys at Law
+13:10:17  INFO      [20/222] SKIP (already done): Glover Luck, LLP
+13:10:17  INFO      [21/222] SKIP (already done): Daspit Law Firm
+13:10:17  INFO      [22/222] SKIP (already done): Lento Law Firm Student Defense and Title IX Attorneys
+13:10:17  INFO      [23/222] SKIP (already done): Forester Haynie
+13:10:17  INFO      [24/222] SKIP (already done): Literacy Love
+13:10:17  INFO      [25/222] SKIP (already done): I Heart Learning Academy
+13:10:17  INFO      [26/222] SKIP (already done): Dallas Learning Center - Private School & Tutoring
+13:10:17  INFO      [27/222] SKIP (already done): Star Tutoring Centers
+13:10:17  INFO      [28/222] SKIP (already done): Hope Academy For Dyslexia
+13:10:17  INFO      [29/222] SKIP (already done): Hola HP
+13:10:17  INFO      [30/222] SKIP (already done): Smart and Special Teaching
+13:10:17  INFO      [31/222] SKIP (already done): Altshuler Learning Enhancement Center
+13:10:17  INFO      [32/222] SKIP (already done): Reading Ranch North Dallas - Reading Tutoring
+13:10:17  INFO      [33/222] SKIP (already done): Marc Whitehead & Associates, Attorneys at Law
+13:10:17  INFO      [34/222] SKIP (already done): Tyler and Maderer, PLLC
+13:10:17  INFO      [35/222] SKIP (already done): S. Green Legal, PLLC
+13:10:17  INFO      [36/222] SKIP (already done): Cypress Dyslexia Services
+13:10:17  INFO      [37/222] SKIP (already done): Huntington Learning Center Cypress
+13:10:17  INFO      [38/222] SKIP (already done): The Tutoring Center of Cypress TX
+13:10:17  INFO      [39/222] SKIP (already done): Best Brains Learning Center - Cypress
+13:10:17  INFO      [40/222] SKIP (already done): Sylvan Learning of Cypress & Houston
+13:10:17  INFO      [41/222] SKIP (already done): Aspire Advancement Center
+13:10:17  INFO      [42/222] SKIP (already done): Eye Level Learning Center of Cypress SouthWest
+13:10:17  INFO      [43/222] SKIP (already done): Marc Whitehead & Associates, Attorneys at Law LLP
+13:10:17  INFO      [44/222] SKIP (already done): Karen Seal Law Office
+13:10:17  INFO      [45/222] SKIP (already done): Escamilla & Poneck, LLP
+13:10:17  INFO      [46/222] SKIP (already done): Heard & Smith LLP
+13:10:17  INFO      [47/222] SKIP (already done): Dillard Advocacy and Consulting, LLC
+13:10:17  INFO      [48/222] SKIP (already done): Law Office of Jill Mitchell-Thein
+13:10:17  INFO      [49/222] SKIP (already done): The Law Office Of Brent Lee Klender
+13:10:17  INFO      [50/222] SKIP (already done): Law Office of Dirk Ashbaugh, P.C.
+13:10:17  INFO      [51/222] SKIP (already done): Weisinger Law Firm, PLLC
+13:10:17  INFO      [52/222] SKIP (already done): North East Educational Foundation
+13:10:17  INFO      [53/222] SKIP (already done): Special Reach Inc.
+13:10:17  INFO      [54/222] SKIP (already done): Northside Education Foundation
+13:10:17  INFO      [55/222] SKIP (already done): The Arc of San Antonio
+13:10:17  INFO      [56/222] SKIP (already done): Northside ISD Family Engagement
+13:10:17  INFO      [57/222] SKIP (already done): Fearless Readers - Virtual Reading, Spelling, & Dyslexia Services
+13:10:17  INFO      [58/222] SKIP (already done): Learning Foundations- Cognitive & Dyslexia Training Center
+13:10:17  INFO      [59/222] SKIP (already done): LearningRx San Antonio NE
+13:10:17  INFO      [60/222] SKIP (already done): The LD Expert
+13:10:17  INFO      [61/222] SKIP (already done): LearningRx San Antonio NW
+13:10:17  INFO      [62/222] SKIP (already done): Finally Fair Learning Solutions
+13:10:17  INFO      [63/222] SKIP (already done): The Dyslexia Solution
+13:10:17  INFO      [64/222] SKIP (already done): Brain Balance of North San Antonio
+13:10:17  INFO      [65/222] SKIP (already done): LearningRx
+13:10:17  INFO      [66/222] SKIP (already done): The Tutoring Center, Katy TX
+13:10:17  INFO      [67/222] SKIP (already done): Huntington Learning Center Katy
+13:10:17  INFO      [68/222] SKIP (already done): Counter's Tutoring Connection
+13:10:17  INFO      [69/222] SKIP (already done): The Tutoring Center, Katy/Greentrails
+13:10:17  INFO      [70/222] SKIP (already done): Junker Law, PLLC
+13:10:17  INFO      [71/222] SKIP (already done): LearningRx Sugar Land
+13:10:17  INFO      [72/222] SKIP (already done): Fort Bend Learning Commons
+13:10:17  INFO      [73/222] SKIP (already done): Omega Learning Center - Fort Bend
+13:10:17  INFO      [74/222] SKIP (already done): The Tutoring Center, Sugar Land
+13:10:17  INFO      [75/222] SKIP (already done): Odediran Law Firm
+13:10:17  INFO      [76/222] SKIP (already done): Special Education Advocates
+13:10:17  INFO      [77/222] SKIP (already done): Social Butterfly Educational Advocacy
+13:10:17  INFO      [78/222] SKIP (already done): Lumen Advocacy LLC
+13:10:17  INFO      [79/222] SKIP (already done): Dyslexia Therapy Associates of South Texas
+13:10:17  INFO      [80/222] SKIP (already done): Hill Country Dyslexia Services LLC
+13:10:17  INFO      [81/222] SKIP (already done): Alsbrooks Law Firm
+13:10:17  INFO      [82/222] SKIP (already done): Casey Loring Lawyer PLLC
+13:10:17  INFO      [83/222] SKIP (already done): Dossey & Jones, PLLC
+13:10:17  INFO      [84/222] SKIP (already done): The Law Office of Jessica Day, PLLC
+13:10:17  INFO      [85/222] SKIP (already done): Napier Law Firm
+13:10:17  INFO      [86/222] SKIP (already done): Hope & Causey, P.C.
+13:10:17  INFO      [87/222] SKIP (already done): Raphael Ortega Law PLLC
+13:10:17  INFO      [88/222] SKIP (already done): Law Office of Matlak and Morrison
+13:10:17  INFO      [89/222] SKIP (already done): The Dyslexia Therapy Center
+13:10:17  INFO      [90/222] SKIP (already done): Diagnostic Learning Services - Woodlands
+13:10:17  INFO      [91/222] SKIP (already done): Read Frog Dyslexia & Educational Services
+13:10:17  INFO      [92/222] SKIP (already done): Sylvan Learning of North Conroe
+13:10:17  INFO      [93/222] SKIP (already done): Ivey Educational Solutions
+13:10:17  INFO      [94/222] SKIP (already done): Sylvan Learning of The Woodlands and Magnolia
+13:10:17  INFO      [95/222] SKIP (already done): Joy To Learn
+13:10:17  INFO      [96/222] SKIP (already done): Bianca’s Private Tutoring
+13:10:17  INFO      [97/222] SKIP (already done): AZ Law Firm
+13:10:17  INFO      [98/222] SKIP (already done): The Law Office of Nicole Conger, PLLC
+13:10:17  INFO      [99/222] SKIP (already done): Tully Rinckey PLLC
+13:10:17  INFO      [100/222] SKIP (already done): Bemis, Roach & Reed
+13:10:17  INFO      [101/222] SKIP (already done): The Law Office of Diana E. Buss
+13:10:17  INFO      [102/222] SKIP (already done): PearlTX-Educational Consultants, Diagnostics and Advocacy (ECDA)
+13:10:17  INFO      [103/222] SKIP (already done): Education Austin
+13:10:17  INFO      [104/222] SKIP (already done): Austin Partners In Education
+13:10:17  INFO      [105/222] SKIP (already done): Austin Learning Solutions
+13:10:17  INFO      [106/222] SKIP (already done): Austin Learning Center
+13:10:17  INFO      [107/222] SKIP (already done): Diagnostic Learning Services - Austin
+13:10:17  INFO      [108/222] SKIP (already done): Lindamood-Bell Austin Learning Center
+13:10:17  INFO      [109/222] SKIP (already done): Hearts and Minds Learning Center
+13:10:17  INFO      [110/222] SKIP (already done): Texas Center for Learning Disabilities
+13:10:17  INFO      [111/222] SKIP (already done): Rawson Saunders School
+13:10:17  INFO      [112/222] SKIP (already done): Rawson Saunders Institute
+13:10:17  INFO      [113/222] SKIP (already done): Kelly Decker Law, PLLC
+13:10:17  INFO      [114/222] SKIP (already done): McGee Law Firm
+13:10:17  INFO      [115/222] SKIP (already done): McDonald Law Firm
+13:10:17  INFO      [116/222] SKIP (already done): Dale O'Neal Attorneys
+13:10:17  INFO      [117/222] SKIP (already done): Law Offices of Robert Keating, PLLC
+13:10:17  INFO      [118/222] SKIP (already done): Cantey Hanger LLP
+13:10:17  INFO      [119/222] SKIP (already done): Hutchison & Foreman, PLLC
+13:10:17  INFO      [120/222] SKIP (already done): The Center for Educational Diagnostics & Assessment
+13:10:17  INFO      [121/222] SKIP (already done): The Reading Center of Fort Worth
+13:10:17  INFO      [122/222] SKIP (already done): Reading Connection
+13:10:17  INFO      [123/222] SKIP (already done): Diagnostic Learning Services - Fort Worth
+13:10:17  INFO      [124/222] SKIP (already done): The Learning Center of North Texas
+13:10:17  INFO      [125/222] SKIP (already done): Sylvan Learning of North Fort Worth
+13:10:17  INFO      [126/222] SKIP (already done): Sylvan Learning of South Fort Worth
+13:10:17  INFO      [127/222] SKIP (already done): Texas Dyslexia Services
+13:10:17  INFO      [128/222] SKIP (already done): Kids First Dyslexia Services
+13:10:17  INFO      [129/222] SKIP (already done): LinkED
+13:10:17  INFO      [130/222] SKIP (already done): ProLearning
+13:10:17  INFO      [131/222] SKIP (already done): The Ramage Law Group
+13:10:17  INFO      [132/222] SKIP (already done): D.A.D. Law Firm, P.C.
+13:10:17  INFO      [133/222] SKIP (already done): Law Office of Adriane S. Grace, PLLC
+13:10:17  INFO      [134/222] SKIP (already done): Hanshaw Kennedy Hafen
+13:10:17  INFO      [135/222] SKIP (already done): McCathern
+13:10:17  INFO      [136/222] SKIP (already done): Hogue Barnett, PLLC
+13:10:17  INFO      [137/222] SKIP (already done): Barbieri Law Firm
+13:10:17  INFO      [138/222] SKIP (already done): True Education Frisco
+13:10:17  INFO      [139/222] SKIP (already done): Dyscoveread Dyslexia Services
+13:10:17  INFO      [140/222] SKIP (already done): The Tutoring Center Frisco Tx
+13:10:17  INFO      [141/222] SKIP (already done): Moving Minds Learning Solutions
+13:10:17  INFO      [142/222] SKIP (already done): Huntington Learning Center Frisco
+13:10:17  INFO      [143/222] SKIP (already done): Eye Level Learning Center - Frisco Central
+13:10:17  INFO      [144/222] SKIP (already done): Sylvan Learning of Frisco & McKinney
+13:10:17  INFO      [145/222] SKIP (already done): Makris, Dulevitz & Cooper Disability Attorneys
+13:10:17  INFO      [146/222] SKIP (already done): Makris Law Firm Houston Disability Lawyers
+13:10:17  INFO      [147/222] SKIP (already done): Multisensory Tutorial Center
+13:10:17  INFO      [148/222] SKIP (already done): Worlow Tutoring
+13:10:17  INFO      [149/222] SKIP (already done): The Law Offices of George Escobedo
+13:10:17  INFO      [150/222] SKIP (already done): Morales Padia Law, P.L.L.C.
+13:10:17  INFO      [151/222] SKIP (already done): The Law Office of Nathaniel Gilbert, PLLC
+13:10:17  INFO      [152/222] SKIP (already done): Herrman & Herrman, P.L.L.C.
+13:10:17  INFO      [153/222] SKIP (already done): PIETRAZEK LAW, PLLC
+13:10:17  INFO      [154/222] SKIP (already done): Boortz Law Texas
+13:10:17  INFO      [155/222] SKIP (already done): The Law Offices of Shann M. Chaudhry, ESQ
+13:10:17  INFO      [156/222] SKIP (already done): Sylvan Learning of East San Antonio
+13:10:17  INFO      [157/222] SKIP (already done): The Law Office of Jonathan A. Heeps
+13:10:17  INFO      [158/222] SKIP (already done): Law Firm of Victoriano Rodriguez
+13:10:17  INFO      [159/222] SKIP (already done): Wes Dauphinot Law Firm
+13:10:17  INFO      [160/222] SKIP (already done): Reyes & Reyes Law Firm, PLLC
+13:10:17  INFO      [161/222] SKIP (already done): Allen Roger D
+13:10:17  INFO      [162/222] SKIP (already done): Law Office of Leigh Ann Schenk
+13:10:17  INFO      [163/222] SKIP (already done): AISD Special Education Department
+13:10:17  INFO      [164/222] SKIP (already done): Kids Read Here Reading Center
+13:10:17  INFO      [165/222] SKIP (already done): Sylvan Learning of Arlington & Mansfield
+13:10:17  INFO      [166/222] SKIP (already done): Brighter Life Solutions
+13:10:17  INFO      [167/222] SKIP (already done): Huntington Learning Center Mansfield
+13:10:17  INFO      [168/222] SKIP (already done): Sylvan Learning of West Spring and Klein
+13:10:17  INFO      [169/222] SKIP (already done): The Tutoring Center - Tomball, TX
+13:10:17  INFO      [170/222] SKIP (already done): The Willis Law Group P.L.L.C.
+13:10:17  INFO      [171/222] SKIP (already done): Cao & Associates, P.C.
+13:10:17  INFO      [172/222] SKIP (already done): EDWARD SALDAÑA, Attorney
+13:10:17  INFO      [173/222] SKIP (already done): The Beltz Law Firm
+13:10:17  INFO      [174/222] SKIP (already done): Dyslexia Learning Solutions
+13:10:17  INFO      [175/222] SKIP (already done): The Tutoring Center Garland
+13:10:17  INFO      [176/222] SKIP (already done): Diagnostic Learning Services - Plano
+13:10:17  INFO      [177/222] SKIP (already done): Gideon Math and Reading - Garland
+13:10:17  INFO      [178/222] SKIP (already done): Sylvan Learning of Rowlett
+13:10:17  INFO      [179/222] SKIP (already done): Blanco Ordoñez Mata & Wechsler, P.C.
+13:10:17  INFO      [180/222] SKIP (already done): Law Rhinos
+13:10:17  INFO      [181/222] SKIP (already done): Spencer Trial Attorneys, P.C.
+13:10:17  INFO      [182/222] SKIP (already done): Anderson Bright & Associates PC
+13:10:17  INFO      [183/222] SKIP (already done): Mounce, Green, Myers, Safi, Paxson & Galatzan
+13:10:17  INFO      [184/222] SKIP (already done): Lopez Molinar & Hirsh PLLC
+13:10:17  INFO      [185/222] SKIP (already done): Law Offices of Ruben Ortiz, PLLC
+13:10:17  INFO      [186/222] SKIP (already done): EPISD SPECIAL EDUCATION HEALTH SERVICES CENTER
+13:10:17  INFO      [187/222] SKIP (already done): Children’s Disabilities Information Coalition
+13:10:17  INFO      [188/222] SKIP (already done): Advocacy Center For Children
+13:10:17  INFO      [189/222] SKIP (already done): Sylvan Learning of El Paso Eastside
+13:10:17  INFO      [190/222] SKIP (already done): Sylvan Learning of El Paso Westside
+13:10:17  INFO      [191/222] SKIP (already done): Okó Learning Center LLC
+13:10:17  INFO      [192/222] SKIP (already done): Dynamis Learning Center
+13:10:17  INFO      [193/222] SKIP (already done): Ysleta Community Learning Center
+13:10:17  INFO      [194/222] SKIP (already done): Bridges Academy
+13:10:17  INFO      [195/222] SKIP (already done): San Jacinto Adult Learning Center
+13:10:17  INFO      [196/222] SKIP (already done): The Law Offices of Eric G. Ransleben
+13:10:17  INFO      [197/222] SKIP (already done): Chermol & Fishman, LLC - Texas Office
+13:10:17  INFO      [198/222] SKIP (already done): The Jimenez Law Firm, P.C.
+13:10:17  INFO      [199/222] SKIP (already done): David S. Kohm & Associates
+13:10:17  INFO      [200/222] SKIP (already done): Gehi & Associates - Free Consultation
+13:10:17  INFO      [201/222] SKIP (already done): Texas Center for Educational Testing-TxCet LLC
+13:10:17  INFO      [202/222] SKIP (already done): Reading Ranch Lewisville
+13:10:17  INFO      [203/222] SKIP (already done): Lewisville ISD Learning Center
+13:10:17  INFO      [204/222] SKIP (already done): Reading Ranch Frisco - Reading Tutoring
+13:10:17  INFO      [205/222] SKIP (already done): Weeks Law Firm
+13:10:17  INFO      [206/222] SKIP (already done): Lizardo Law Firm
+13:10:17  INFO      [207/222] SKIP (already done): Brad Thomas Disability PLLC
+13:10:17  INFO      [208/222] SKIP (already done): DLL-Law Group
+13:10:17  INFO      [209/222] SKIP (already done): Wilder Law Firm
+13:10:17  INFO      [210/222] SKIP (already done): Dunham & Jones
+13:10:17  INFO      [211/222] SKIP (already done): The Tutoring Center
+13:10:17  INFO      [212/222] SKIP (already done): Reading Ranch Plano - Reading Tutoring
+13:10:17  INFO      [213/222] SKIP (already done): Eye Level Learning Center Plano Central
+13:10:17  INFO      [214/222] SKIP (already done): Ghuneim Law Firm
+13:10:17  INFO      [215/222] SKIP (already done): Law Office Of Daniel Corno
+13:10:17  INFO      [216/222] SKIP (already done): Glover, Shari L - (Giddens & Burns Building)
+13:10:17  INFO      [217/222] SKIP (already done): Shane Pellerin Law Firm
+13:10:17  INFO      [218/222] SKIP (already done): Law Office of Hollie Hale
+13:10:17  INFO      [219/222] SKIP (already done): Schechter, Shaffer & Harris, LLP
+13:10:17  INFO      [220/222] SKIP (already done): Bay Area Learning Center
+13:10:17  INFO      [221/222] SKIP (already done): Irlen Clinic Krist Samaritan Center
+13:10:17  INFO      [222/222] SKIP (already done): The Tutoring Center, Friendswood TX
+13:10:17  INFO      
+13:10:17  INFO      ══════════════════════════════════════════════════
+13:10:17  INFO        Done.
+13:10:17  INFO        Total input rows : 222
+13:10:17  INFO        Unique leads     : 222
+13:10:17  INFO        Newly processed  : 0
+13:10:17  INFO        Skipped (done)   : 222
+13:10:17  INFO        Scrape failures  : 0
+13:10:17  INFO        Output file      : texas_leads_ready_to_send.csv
+13:10:17  INFO      ══════════════════════════════════════════════════
+13:16:39  INFO      Loaded 222 rows from texas_special_ed_leads_top20.csv
+13:16:39  INFO      After deduplication: 222 unique leads
+13:16:39  INFO      Already completed: 0 rows — will skip these
+13:16:39  INFO      [1/222] Processing: Shields Law - Special Needs & Special Education Law (Houston ISD)
+13:16:57  INFO        -> Attorney
+13:16:59  INFO      [2/222] Processing: Marc Whitehead & Associates Attorney at Law, LLP (Houston ISD)
+13:17:01  INFO        -> Irrelevant
+13:17:02  INFO      [3/222] Processing: Bowen Law Firm, PLLC (Houston ISD)
+13:17:04  INFO        -> Irrelevant
+13:17:05  INFO      [4/222] Processing: Thompson & Horton LLP (Houston ISD)
+13:17:05  WARNING     HTTP 403 for http://www.thompsonhorton.com/ — skipping
+13:17:05  WARNING     -> Scrape failed. Marked and continuing.
+13:17:05  INFO      [5/222] Processing: Filis Law Firm (Houston ISD)
+13:17:10  INFO        -> Attorney
+13:17:12  INFO      [6/222] Processing: Advocate Well (Houston ISD)
+13:17:13  WARNING     HTTP 403 for https://www.advocate-well.com/ — skipping
+13:17:13  WARNING     -> Scrape failed. Marked and continuing.
+13:17:13  INFO      [7/222] Processing: National ARD/IEP Advocates (Houston ISD)
+13:17:15  INFO        -> Advocate
+13:17:17  INFO      [8/222] Processing: The Center for Assisted Learning (Houston ISD)
+13:17:18  WARNING     HTTP 403 for http://www.tutor2success.com/ — skipping
+13:17:18  WARNING     -> Scrape failed. Marked and continuing.
+13:17:18  INFO      [9/222] Processing: Dyslexia School of Houston - Training Center and Lab School (Houston ISD)
+13:17:21  INFO        -> Tutor
+13:17:22  INFO      [10/222] Processing: Dyslexia School of Houston (Houston ISD)
+13:17:27  INFO        -> Tutor
+13:17:28  INFO      [11/222] Processing: Lindamood-Bell Houston Learning Center (Houston ISD)
+13:17:31  INFO        -> Tutor
+13:17:32  INFO      [12/222] Processing: Neuhaus Education Center (Houston ISD)
+13:17:36  INFO        -> Tutor
+13:17:38  INFO      [13/222] Processing: Achievement Zone, LLC (Houston ISD)
+13:17:40  INFO        -> Tutor
+13:17:41  INFO      [14/222] Processing: Family Literacy Network (Houston ISD)
+13:17:45  INFO        -> Tutor
+13:17:46  INFO      [15/222] Processing: Diagnostic Learning Services - Houston (Houston ISD)
+13:20:39  INFO        -> Tutor
+13:20:41  INFO      [16/222] Processing: LearningRx Houston (Houston ISD)
+13:20:45  INFO        -> Tutor
+13:20:46  INFO      [17/222] Processing: Law Office of Madeline M. McIntosh (Dallas ISD)
+13:20:48  INFO        -> Irrelevant
+13:20:50  INFO      [18/222] Processing: The Law Office of Ruthe Belachew, PLLC (Dallas ISD)
+13:20:51  INFO        -> Irrelevant
+13:20:53  INFO      [19/222] Processing: Bailey & Galyen Attorneys at Law (Dallas ISD)
+13:20:54  INFO        -> Irrelevant
+13:20:56  INFO      [20/222] Processing: Glover Luck, LLP (Dallas ISD)
+13:20:58  INFO        -> Irrelevant
+13:20:59  INFO      [21/222] Processing: Daspit Law Firm (Dallas ISD)
+13:21:00  INFO        -> Irrelevant
+13:21:02  INFO      [22/222] Processing: Lento Law Firm Student Defense and Title IX Attorneys (Dallas ISD)
+13:21:03  WARNING     HTTP 403 for https://www.studentdisciplinedefense.com/?utm_source=organic+search&utm_medium=Yext&utm_id=Yext — skipping
+13:21:03  WARNING     -> Scrape failed. Marked and continuing.
+13:21:03  INFO      [23/222] Processing: Forester Haynie (Dallas ISD)
+13:21:07  INFO        -> Irrelevant
+13:21:09  INFO      [24/222] Processing: Literacy Love (Dallas ISD)
+13:21:11  INFO        -> Tutor
+13:21:13  INFO      [25/222] Processing: I Heart Learning Academy (Dallas ISD)
+13:21:17  INFO        -> Tutor
+13:21:18  INFO      [26/222] Processing: Dallas Learning Center - Private School & Tutoring (Dallas ISD)
+13:21:21  INFO        -> Tutor
+13:21:23  INFO      [27/222] Processing: Star Tutoring Centers (Dallas ISD)
+13:21:25  INFO        -> Tutor
+13:21:27  INFO      [28/222] Processing: Hope Academy For Dyslexia (Dallas ISD)
+13:21:29  INFO        -> Tutor
+13:21:31  INFO      [29/222] Processing: Hola HP (Dallas ISD)
+13:21:33  INFO        -> Tutor
+13:21:35  INFO      [30/222] Processing: Smart and Special Teaching (Dallas ISD)
+13:21:39  INFO        -> Tutor
+13:21:40  INFO      [31/222] Processing: Altshuler Learning Enhancement Center (Dallas ISD)
+13:21:44  INFO        -> Tutor
+13:21:45  INFO      [32/222] Processing: Reading Ranch North Dallas - Reading Tutoring (Dallas ISD)
+13:21:50  INFO        -> Tutor
+13:21:51  INFO      [33/222] Processing: Marc Whitehead & Associates, Attorneys at Law (Cypress-Fairbanks ISD)
+13:21:53  INFO        -> Irrelevant
+13:21:54  INFO      [34/222] Processing: Tyler and Maderer, PLLC (Cypress-Fairbanks ISD)
+13:21:59  INFO        -> Irrelevant
+13:22:00  INFO      [35/222] Processing: S. Green Legal, PLLC (Cypress-Fairbanks ISD)
+13:22:03  INFO        -> Attorney
+13:22:04  INFO      [36/222] Processing: Cypress Dyslexia Services (Cypress-Fairbanks ISD)
+13:22:07  INFO        -> Tutor
+13:22:08  INFO      [37/222] Processing: Huntington Learning Center Cypress (Cypress-Fairbanks ISD)
+13:22:09  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/cypress-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+13:22:09  WARNING     -> Scrape failed. Marked and continuing.
+13:22:09  INFO      [38/222] Processing: The Tutoring Center of Cypress TX (Cypress-Fairbanks ISD)
+13:22:11  INFO        -> Tutor
+13:22:13  INFO      [39/222] Processing: Best Brains Learning Center - Cypress (Cypress-Fairbanks ISD)
+13:22:17  INFO        -> Tutor
+13:22:18  INFO      [40/222] Processing: Sylvan Learning of Cypress & Houston (Cypress-Fairbanks ISD)
+13:22:22  INFO        -> Tutor
+13:22:24  INFO      [41/222] Processing: Aspire Advancement Center (Cypress-Fairbanks ISD)
+13:22:27  INFO        -> Tutor
+13:22:28  INFO      [42/222] Processing: Eye Level Learning Center of Cypress SouthWest (Cypress-Fairbanks ISD)
+13:22:32  INFO        -> Tutor
+13:22:34  INFO      [43/222] Processing: Marc Whitehead & Associates, Attorneys at Law LLP (Northside ISD)
+13:22:35  INFO        -> Irrelevant
+13:22:36  INFO      [44/222] Processing: Karen Seal Law Office (Northside ISD)
+13:22:38  INFO        -> Attorney
+13:22:40  INFO      [45/222] Processing: Escamilla & Poneck, LLP (Northside ISD)
+13:22:48  INFO        -> Attorney
+13:22:49  INFO      [46/222] Processing: Heard & Smith LLP (Northside ISD)
+13:22:51  INFO        -> Irrelevant
+13:22:52  INFO      [47/222] Processing: Dillard Advocacy and Consulting, LLC (Northside ISD)
+13:22:54  INFO        -> Advocate
+13:22:56  INFO      [48/222] Processing: Law Office of Jill Mitchell-Thein (Northside ISD)
+13:23:00  INFO        -> Irrelevant
+13:23:02  INFO      [49/222] Processing: The Law Office Of Brent Lee Klender (Northside ISD)
+13:23:04  INFO        -> Attorney
+13:23:05  INFO      [50/222] Processing: Law Office of Dirk Ashbaugh, P.C. (Northside ISD)
+13:23:14  INFO        -> Irrelevant
+13:23:15  INFO      [51/222] Processing: Weisinger Law Firm, PLLC (Northside ISD)
+13:23:17  INFO        -> Irrelevant
+13:23:19  INFO      [52/222] Processing: North East Educational Foundation (Northside ISD)
+13:23:20  INFO        -> Irrelevant
+13:23:21  INFO      [53/222] Processing: Special Reach Inc. (Northside ISD)
+13:23:23  INFO        -> Irrelevant
+13:23:25  INFO      [54/222] Processing: Northside Education Foundation (Northside ISD)
+13:23:26  INFO        -> Irrelevant
+13:23:27  INFO      [55/222] Processing: The Arc of San Antonio (Northside ISD)
+13:23:29  INFO        -> Irrelevant
+13:23:31  INFO      [56/222] Processing: Northside ISD Family Engagement (Northside ISD)
+13:23:33  INFO        -> Irrelevant
+13:23:34  INFO      [57/222] Processing: Fearless Readers - Virtual Reading, Spelling, & Dyslexia Services (Northside ISD)
+13:23:43  INFO        -> Tutor
+13:23:44  INFO      [58/222] Processing: Learning Foundations- Cognitive & Dyslexia Training Center (Northside ISD)
+13:23:48  INFO        -> Tutor
+13:23:49  INFO      [59/222] Processing: LearningRx San Antonio NE (Northside ISD)
+13:23:53  INFO        -> Tutor
+13:23:54  INFO      [60/222] Processing: The LD Expert (Northside ISD)
+13:23:57  INFO        -> Tutor
+13:23:58  INFO      [61/222] Processing: LearningRx San Antonio NW (Northside ISD)
+13:24:03  INFO        -> Tutor
+13:24:05  INFO      [62/222] Processing: Finally Fair Learning Solutions (Northside ISD)
+13:24:07  WARNING     -> Scrape failed. Marked and continuing.
+13:24:07  INFO      [63/222] Processing: The Dyslexia Solution (Northside ISD)
+13:24:08  WARNING     HTTP 403 for https://www.thedyslexiasolution.com/ — skipping
+13:24:08  WARNING     -> Scrape failed. Marked and continuing.
+13:24:08  INFO      [64/222] Processing: Brain Balance of North San Antonio (Northside ISD)
+13:24:11  INFO        -> Tutor
+13:24:13  INFO      [65/222] Processing: LearningRx (Katy ISD)
+13:24:16  INFO        -> Tutor
+13:24:17  INFO      [66/222] Processing: The Tutoring Center, Katy TX (Katy ISD)
+13:24:22  INFO        -> Tutor
+13:24:23  INFO      [67/222] Processing: Huntington Learning Center Katy (Katy ISD)
+13:24:24  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/katy-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+13:24:24  WARNING     -> Scrape failed. Marked and continuing.
+13:24:24  INFO      [68/222] Processing: Counter's Tutoring Connection (Katy ISD)
+13:24:27  INFO        -> Tutor
+13:24:29  INFO      [69/222] Processing: The Tutoring Center, Katy/Greentrails (Katy ISD)
+13:24:33  INFO        -> Tutor
+13:24:34  INFO      [70/222] Processing: Junker Law, PLLC (Fort Bend ISD)
+13:24:39  INFO        -> Irrelevant
+13:24:41  INFO      [71/222] Processing: LearningRx Sugar Land (Fort Bend ISD)
+13:24:44  INFO        -> Tutor
+13:24:46  INFO      [72/222] Processing: Fort Bend Learning Commons (Fort Bend ISD)
+13:24:48  INFO        -> Tutor
+13:24:50  INFO      [73/222] Processing: Omega Learning Center - Fort Bend (Fort Bend ISD)
+13:24:52  INFO        -> Tutor
+13:24:54  INFO      [74/222] Processing: The Tutoring Center, Sugar Land (Fort Bend ISD)
+13:24:57  INFO        -> Tutor
+13:24:59  INFO      [75/222] Processing: Odediran Law Firm (IDEA Public Schools)
+13:25:04  WARNING   Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+13:25:05  INFO        -> Attorney
+13:25:07  INFO      [76/222] Processing: Special Education Advocates (IDEA Public Schools)
+13:25:11  INFO        -> Advocate
+13:25:12  INFO      [77/222] Processing: Social Butterfly Educational Advocacy (IDEA Public Schools)
+13:25:15  INFO        -> Advocate
+13:25:16  INFO      [78/222] Processing: Lumen Advocacy LLC (IDEA Public Schools)
+13:25:22  INFO        -> Advocate
+13:25:23  INFO      [79/222] Processing: Dyslexia Therapy Associates of South Texas (IDEA Public Schools)
+13:25:27  INFO        -> Tutor
+13:25:28  INFO      [80/222] Processing: Hill Country Dyslexia Services LLC (IDEA Public Schools)
+13:25:31  INFO        -> Tutor
+13:25:32  INFO      [81/222] Processing: Alsbrooks Law Firm (Conroe ISD)
+13:25:33  INFO        -> Irrelevant
+13:25:35  INFO      [82/222] Processing: Casey Loring Lawyer PLLC (Conroe ISD)
+13:25:35  WARNING     HTTP 403 for http://www.loringlawyer.com/ — skipping
+13:25:35  WARNING     -> Scrape failed. Marked and continuing.
+13:25:35  INFO      [83/222] Processing: Dossey & Jones, PLLC (Conroe ISD)
+13:25:37  INFO        -> Irrelevant
+13:25:39  INFO      [84/222] Processing: The Law Office of Jessica Day, PLLC (Conroe ISD)
+13:25:40  INFO        -> Irrelevant
+13:25:42  INFO      [85/222] Processing: Napier Law Firm (Conroe ISD)
+13:25:43  INFO        -> Irrelevant
+13:25:45  INFO      [86/222] Processing: Hope & Causey, P.C. (Conroe ISD)
+13:25:46  WARNING     HTTP 403 for https://www.hope-causey.com/ — skipping
+13:25:46  WARNING     -> Scrape failed. Marked and continuing.
+13:25:46  INFO      [87/222] Processing: Raphael Ortega Law PLLC (Conroe ISD)
+13:25:48  INFO        -> Irrelevant
+13:25:50  INFO      [88/222] Processing: Law Office of Matlak and Morrison (Conroe ISD)
+13:25:53  INFO        -> Irrelevant
+13:25:55  INFO      [89/222] Processing: The Dyslexia Therapy Center (Conroe ISD)
+13:25:58  INFO        -> Tutor
+13:26:00  INFO      [90/222] Processing: Diagnostic Learning Services - Woodlands (Conroe ISD)
+13:26:22  INFO        -> Tutor
+13:26:23  INFO      [91/222] Processing: Read Frog Dyslexia & Educational Services (Conroe ISD)
+13:26:27  INFO        -> Tutor
+13:26:29  INFO      [92/222] Processing: Sylvan Learning of North Conroe (Conroe ISD)
+13:26:34  INFO        -> Tutor
+13:26:36  INFO      [93/222] Processing: Ivey Educational Solutions (Conroe ISD)
+13:26:36  WARNING     Scrape attempt 1 failed (HTTPConnectionPool(host='www.iveyedsolutions.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='www.iveyedsolutions.com', port=80): Failed to resolve 'www.iveyedsolutions.com' ([Errno 11001] getaddrinfo failed)"))). Retrying in 2.1s...
+13:26:38  WARNING     Scrape attempt 2 failed (HTTPConnectionPool(host='www.iveyedsolutions.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='www.iveyedsolutions.com', port=80): Failed to resolve 'www.iveyedsolutions.com' ([Errno 11001] getaddrinfo failed)"))). Retrying in 4.7s...
+13:26:43  WARNING     All scrape attempts failed for http://www.iveyedsolutions.com/: HTTPConnectionPool(host='www.iveyedsolutions.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='www.iveyedsolutions.com', port=80): Failed to resolve 'www.iveyedsolutions.com' ([Errno 11001] getaddrinfo failed)"))
+13:26:43  WARNING     -> Scrape failed. Marked and continuing.
+13:26:43  INFO      [94/222] Processing: Sylvan Learning of The Woodlands and Magnolia (Conroe ISD)
+13:26:47  INFO        -> Tutor
+13:26:49  INFO      [95/222] Processing: Joy To Learn (Conroe ISD)
+13:26:51  INFO        -> Tutor
+13:26:53  INFO      [96/222] Processing: Bianca’s Private Tutoring (Conroe ISD)
+13:26:55  INFO        -> Tutor
+13:26:57  INFO      [97/222] Processing: AZ Law Firm (Austin ISD)
+13:27:00  INFO        -> Irrelevant
+13:27:02  INFO      [98/222] Processing: The Law Office of Nicole Conger, PLLC (Austin ISD)
+13:27:03  WARNING   Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+13:27:04  INFO        -> Attorney
+13:27:06  INFO      [99/222] Processing: Tully Rinckey PLLC (Austin ISD)
+13:27:10  INFO        -> Attorney
+13:27:11  INFO      [100/222] Processing: Bemis, Roach & Reed (Austin ISD)
+13:27:12  WARNING     HTTP 403 for https://www.brrlaw.com/ — skipping
+13:27:12  WARNING     -> Scrape failed. Marked and continuing.
+13:27:12  INFO      [101/222] Processing: The Law Office of Diana E. Buss (Austin ISD)
+13:27:13  WARNING     HTTP 403 for http://www.bussted.com/ — skipping
+13:27:13  WARNING     -> Scrape failed. Marked and continuing.
+13:27:13  INFO      [102/222] Processing: PearlTX-Educational Consultants, Diagnostics and Advocacy (ECDA) (Austin ISD)
+13:27:16  INFO        -> Advocate
+13:27:17  INFO      [103/222] Processing: Education Austin (Austin ISD)
+13:27:19  INFO        -> Irrelevant
+13:27:20  INFO      [104/222] Processing: Austin Partners In Education (Austin ISD)
+13:27:24  INFO        -> Irrelevant
+13:27:25  INFO      [105/222] Processing: Austin Learning Solutions (Austin ISD)
+13:27:28  INFO        -> Tutor
+13:27:29  INFO      [106/222] Processing: Austin Learning Center (Austin ISD)
+13:27:32  INFO        -> Tutor
+13:27:34  INFO      [107/222] Processing: Diagnostic Learning Services - Austin (Austin ISD)
+13:27:37  INFO        -> Tutor
+13:27:39  INFO      [108/222] Processing: Lindamood-Bell Austin Learning Center (Austin ISD)
+13:27:43  INFO        -> Tutor
+13:27:44  INFO      [109/222] Processing: Hearts and Minds Learning Center (Austin ISD)
+13:27:46  INFO        -> Tutor
+13:27:48  INFO      [110/222] Processing: Texas Center for Learning Disabilities (Austin ISD)
+13:27:51  INFO        -> Irrelevant
+13:27:52  INFO      [111/222] Processing: Rawson Saunders School (Austin ISD)
+13:27:55  INFO        -> Tutor
+13:27:56  INFO      [112/222] Processing: Rawson Saunders Institute (Austin ISD)
+13:27:58  INFO        -> Tutor
+13:28:00  INFO      [113/222] Processing: Kelly Decker Law, PLLC (Fort Worth ISD)
+13:28:02  INFO        -> Irrelevant
+13:28:04  INFO      [114/222] Processing: McGee Law Firm (Fort Worth ISD)
+13:28:04  WARNING     HTTP 403 for https://mcgeelawdfw.com/ — skipping
+13:28:04  WARNING     -> Scrape failed. Marked and continuing.
+13:28:04  INFO      [115/222] Processing: McDonald Law Firm (Fort Worth ISD)
+13:28:06  INFO        -> Irrelevant
+13:28:07  INFO      [116/222] Processing: Dale O'Neal Attorneys (Fort Worth ISD)
+13:28:09  INFO        -> Irrelevant
+13:28:10  INFO      [117/222] Processing: Law Offices of Robert Keating, PLLC (Fort Worth ISD)
+13:28:12  INFO        -> Irrelevant
+13:28:14  INFO      [118/222] Processing: Cantey Hanger LLP (Fort Worth ISD)
+13:28:17  INFO        -> Attorney
+13:28:18  INFO      [119/222] Processing: Hutchison & Foreman, PLLC (Fort Worth ISD)
+13:28:20  INFO        -> Irrelevant
+13:28:21  INFO      [120/222] Processing: The Center for Educational Diagnostics & Assessment (Fort Worth ISD)
+13:28:24  INFO        -> Tutor
+13:28:26  INFO      [121/222] Processing: The Reading Center of Fort Worth (Fort Worth ISD)
+13:28:29  INFO        -> Tutor
+13:28:30  INFO      [122/222] Processing: Reading Connection (Fort Worth ISD)
+13:28:33  INFO        -> Tutor
+13:28:34  INFO      [123/222] Processing: Diagnostic Learning Services - Fort Worth (Fort Worth ISD)
+13:28:38  INFO        -> Tutor
+13:28:40  INFO      [124/222] Processing: The Learning Center of North Texas (Fort Worth ISD)
+13:28:43  INFO        -> Tutor
+13:28:44  INFO      [125/222] Processing: Sylvan Learning of North Fort Worth (Fort Worth ISD)
+13:28:50  INFO        -> Tutor
+13:28:51  INFO      [126/222] Processing: Sylvan Learning of South Fort Worth (Fort Worth ISD)
+13:28:57  INFO        -> Tutor
+13:28:58  INFO      [127/222] Processing: Texas Dyslexia Services (Fort Worth ISD)
+13:28:59  WARNING     -> Scrape failed. Marked and continuing.
+13:28:59  INFO      [128/222] Processing: Kids First Dyslexia Services (Fort Worth ISD)
+13:29:03  INFO        -> Tutor
+13:29:05  INFO      [129/222] Processing: LinkED (Fort Worth ISD)
+13:29:07  INFO        -> Tutor
+13:29:09  INFO      [130/222] Processing: ProLearning (Fort Worth ISD)
+13:29:11  INFO        -> Tutor
+13:29:12  INFO      [131/222] Processing: The Ramage Law Group (Frisco ISD)
+13:29:13  WARNING     HTTP 403 for https://www.ramagefamilylawfirm.com/texas/locations/mckinney?utm_source=google&utm_medium=organic&utm_campaign=gbp — skipping
+13:29:13  WARNING     -> Scrape failed. Marked and continuing.
+13:29:13  INFO      [132/222] Processing: D.A.D. Law Firm, P.C. (Frisco ISD)
+13:29:15  INFO        -> Irrelevant
+13:29:17  INFO      [133/222] Processing: Law Office of Adriane S. Grace, PLLC (Frisco ISD)
+13:29:18  INFO        -> Irrelevant
+13:29:20  INFO      [134/222] Processing: Hanshaw Kennedy Hafen (Frisco ISD)
+13:29:22  INFO        -> Irrelevant
+13:29:24  INFO      [135/222] Processing: McCathern (Frisco ISD)
+13:29:25  INFO        -> Irrelevant
+13:29:26  INFO      [136/222] Processing: Hogue Barnett, PLLC (Frisco ISD)
+13:29:27  WARNING   Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+13:29:29  INFO        -> Attorney
+13:29:30  INFO      [137/222] Processing: Barbieri Law Firm (Frisco ISD)
+13:29:31  INFO        -> Irrelevant
+13:29:33  INFO      [138/222] Processing: True Education Frisco (Frisco ISD)
+13:29:35  INFO        -> Tutor
+13:29:36  INFO      [139/222] Processing: Dyscoveread Dyslexia Services (Frisco ISD)
+13:29:39  INFO        -> Tutor
+13:29:40  INFO      [140/222] Processing: The Tutoring Center Frisco Tx (Frisco ISD)
+13:29:43  INFO        -> Tutor
+13:29:45  INFO      [141/222] Processing: Moving Minds Learning Solutions (Frisco ISD)
+13:29:48  INFO        -> Tutor
+13:29:50  INFO      [142/222] Processing: Huntington Learning Center Frisco (Frisco ISD)
+13:29:50  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/frisco-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+13:29:50  WARNING     -> Scrape failed. Marked and continuing.
+13:29:50  INFO      [143/222] Processing: Eye Level Learning Center - Frisco Central (Frisco ISD)
+13:29:55  INFO        -> Tutor
+13:29:57  INFO      [144/222] Processing: Sylvan Learning of Frisco & McKinney (Frisco ISD)
+13:30:01  INFO        -> Tutor
+13:30:03  INFO      [145/222] Processing: Makris, Dulevitz & Cooper Disability Attorneys (Aldine ISD)
+13:30:03  WARNING     HTTP 403 for https://socialsecuritydisabilitylawyershouston.com/ — skipping
+13:30:03  WARNING     -> Scrape failed. Marked and continuing.
+13:30:03  INFO      [146/222] Processing: Makris Law Firm Houston Disability Lawyers (Aldine ISD)
+13:30:05  INFO        -> Irrelevant
+13:30:06  INFO      [147/222] Processing: Multisensory Tutorial Center (Aldine ISD)
+13:30:10  INFO        -> Tutor
+13:30:11  INFO      [148/222] Processing: Worlow Tutoring (Aldine ISD)
+13:30:12  WARNING     HTTP 400 for http://www.facebook.com/vwtutoring/ — skipping
+13:30:12  WARNING     -> Scrape failed. Marked and continuing.
+13:30:12  INFO      [149/222] Processing: The Law Offices of George Escobedo (North East ISD)
+13:30:14  INFO        -> Irrelevant
+13:30:15  INFO      [150/222] Processing: Morales Padia Law, P.L.L.C. (North East ISD)
+13:30:17  INFO        -> Irrelevant
+13:30:18  INFO      [151/222] Processing: The Law Office of Nathaniel Gilbert, PLLC (North East ISD)
+13:30:20  INFO        -> Irrelevant
+13:30:21  INFO      [152/222] Processing: Herrman & Herrman, P.L.L.C. (North East ISD)
+13:30:23  INFO        -> Irrelevant
+13:30:24  INFO      [153/222] Processing: PIETRAZEK LAW, PLLC (North East ISD)
+13:30:26  INFO        -> Irrelevant
+13:30:28  INFO      [154/222] Processing: Boortz Law Texas (North East ISD)
+13:30:31  INFO        -> Irrelevant
+13:30:33  INFO      [155/222] Processing: The Law Offices of Shann M. Chaudhry, ESQ (North East ISD)
+13:30:34  INFO        -> Irrelevant
+13:30:36  INFO      [156/222] Processing: Sylvan Learning of East San Antonio (North East ISD)
+13:30:41  INFO        -> Tutor
+13:30:42  INFO      [157/222] Processing: The Law Office of Jonathan A. Heeps (Arlington ISD)
+13:30:44  INFO        -> Irrelevant
+13:30:46  INFO      [158/222] Processing: Law Firm of Victoriano Rodriguez (Arlington ISD)
+13:30:50  INFO        -> Irrelevant
+13:30:52  INFO      [159/222] Processing: Wes Dauphinot Law Firm (Arlington ISD)
+13:30:53  INFO        -> Irrelevant
+13:30:54  INFO      [160/222] Processing: Reyes & Reyes Law Firm, PLLC (Arlington ISD)
+13:30:56  INFO        -> Irrelevant
+13:30:57  INFO      [161/222] Processing: Allen Roger D (Arlington ISD)
+13:30:59  INFO        -> Irrelevant
+13:31:01  INFO      [162/222] Processing: Law Office of Leigh Ann Schenk (Arlington ISD)
+13:31:05  INFO        -> Irrelevant
+13:31:07  INFO      [163/222] Processing: AISD Special Education Department (Arlington ISD)
+13:31:08  INFO        -> Irrelevant
+13:31:10  INFO      [164/222] Processing: Kids Read Here Reading Center (Arlington ISD)
+13:31:12  INFO        -> Tutor
+13:31:14  INFO      [165/222] Processing: Sylvan Learning of Arlington & Mansfield (Arlington ISD)
+13:31:22  INFO        -> Tutor
+13:31:23  INFO      [166/222] Processing: Brighter Life Solutions (Arlington ISD)
+13:31:26  INFO        -> Tutor
+13:31:27  INFO      [167/222] Processing: Huntington Learning Center Mansfield (Arlington ISD)
+13:31:28  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/mansfield-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+13:31:28  WARNING     -> Scrape failed. Marked and continuing.
+13:31:28  INFO      [168/222] Processing: Sylvan Learning of West Spring and Klein (Klein ISD)
+13:31:33  INFO        -> Tutor
+13:31:34  INFO      [169/222] Processing: The Tutoring Center - Tomball, TX (Klein ISD)
+13:31:37  INFO        -> Tutor
+13:31:39  INFO      [170/222] Processing: The Willis Law Group P.L.L.C. (Garland ISD)
+13:31:41  INFO        -> Irrelevant
+13:31:43  INFO      [171/222] Processing: Cao & Associates, P.C. (Garland ISD)
+13:31:45  INFO        -> Irrelevant
+13:31:47  INFO      [172/222] Processing: EDWARD SALDAÑA, Attorney (Garland ISD)
+13:31:47  WARNING     HTTP 404 for https://saunderswalsh.com/team-member/edward-saldana/ — skipping
+13:31:47  WARNING     -> Scrape failed. Marked and continuing.
+13:31:47  INFO      [173/222] Processing: The Beltz Law Firm (Garland ISD)
+13:31:50  INFO        -> Irrelevant
+13:31:51  INFO      [174/222] Processing: Dyslexia Learning Solutions (Garland ISD)
+13:31:54  INFO        -> Tutor
+13:31:56  INFO      [175/222] Processing: The Tutoring Center Garland (Garland ISD)
+13:32:00  INFO        -> Tutor
+13:32:02  INFO      [176/222] Processing: Diagnostic Learning Services - Plano (Garland ISD)
+13:32:08  INFO        -> Tutor
+13:32:10  INFO      [177/222] Processing: Gideon Math and Reading - Garland (Garland ISD)
+13:32:17  INFO        -> Tutor
+13:32:18  INFO      [178/222] Processing: Sylvan Learning of Rowlett (Garland ISD)
+13:32:23  INFO        -> Tutor
+13:32:25  INFO      [179/222] Processing: Blanco Ordoñez Mata & Wechsler, P.C. (El Paso ISD)
+13:32:27  INFO        -> Irrelevant
+13:32:28  INFO      [180/222] Processing: Law Rhinos (El Paso ISD)
+13:32:30  INFO        -> Irrelevant
+13:32:31  INFO      [181/222] Processing: Spencer Trial Attorneys, P.C. (El Paso ISD)
+13:32:33  INFO        -> Irrelevant
+13:32:35  INFO      [182/222] Processing: Anderson Bright & Associates PC (El Paso ISD)
+13:32:36  INFO        -> Irrelevant
+13:32:38  INFO      [183/222] Processing: Mounce, Green, Myers, Safi, Paxson & Galatzan (El Paso ISD)
+13:32:40  INFO        -> Irrelevant
+13:32:41  INFO      [184/222] Processing: Lopez Molinar & Hirsh PLLC (El Paso ISD)
+13:32:44  INFO        -> Attorney
+13:32:45  INFO      [185/222] Processing: Law Offices of Ruben Ortiz, PLLC (El Paso ISD)
+13:32:47  INFO        -> Irrelevant
+13:32:48  INFO      [186/222] Processing: EPISD SPECIAL EDUCATION HEALTH SERVICES CENTER (El Paso ISD)
+13:32:50  INFO        -> Irrelevant
+13:32:51  INFO      [187/222] Processing: Children’s Disabilities Information Coalition (El Paso ISD)
+13:32:55  INFO        -> Advocate
+13:32:56  INFO      [188/222] Processing: Advocacy Center For Children (El Paso ISD)
+13:32:57  INFO        -> Irrelevant
+13:32:59  INFO      [189/222] Processing: Sylvan Learning of El Paso Eastside (El Paso ISD)
+13:33:04  INFO        -> Tutor
+13:33:06  INFO      [190/222] Processing: Sylvan Learning of El Paso Westside (El Paso ISD)
+13:33:11  INFO        -> Tutor
+13:33:12  INFO      [191/222] Processing: Okó Learning Center LLC (El Paso ISD)
+13:33:14  INFO        -> Irrelevant
+13:33:16  INFO      [192/222] Processing: Dynamis Learning Center (El Paso ISD)
+13:33:17  INFO        -> Irrelevant
+13:33:19  INFO      [193/222] Processing: Ysleta Community Learning Center (El Paso ISD)
+13:33:21  INFO        -> Tutor
+13:33:22  INFO      [194/222] Processing: Bridges Academy (El Paso ISD)
+13:33:25  INFO        -> Tutor
+13:33:26  INFO      [195/222] Processing: San Jacinto Adult Learning Center (El Paso ISD)
+13:33:28  INFO        -> Irrelevant
+13:33:30  INFO      [196/222] Processing: The Law Offices of Eric G. Ransleben (Lewisville ISD)
+13:33:33  INFO        -> Attorney
+13:33:35  INFO      [197/222] Processing: Chermol & Fishman, LLC - Texas Office (Lewisville ISD)
+13:33:36  INFO        -> Irrelevant
+13:33:38  INFO      [198/222] Processing: The Jimenez Law Firm, P.C. (Lewisville ISD)
+13:33:40  INFO        -> Irrelevant
+13:33:42  INFO      [199/222] Processing: David S. Kohm & Associates (Lewisville ISD)
+13:33:45  INFO        -> Irrelevant
+13:33:47  INFO      [200/222] Processing: Gehi & Associates - Free Consultation (Lewisville ISD)
+13:33:49  WARNING     HTTP 403 for https://gehilaw.com/gehilawtexas/ — skipping
+13:33:49  WARNING     -> Scrape failed. Marked and continuing.
+13:33:49  INFO      [201/222] Processing: Texas Center for Educational Testing-TxCet LLC (Lewisville ISD)
+13:33:53  INFO        -> Tutor
+13:33:54  INFO      [202/222] Processing: Reading Ranch Lewisville (Lewisville ISD)
+13:33:59  INFO        -> Tutor
+13:34:00  INFO      [203/222] Processing: Lewisville ISD Learning Center (Lewisville ISD)
+13:34:06  INFO        -> Irrelevant
+13:34:07  INFO      [204/222] Processing: Reading Ranch Frisco - Reading Tutoring (Lewisville ISD)
+13:34:12  INFO        -> Tutor
+13:34:13  INFO      [205/222] Processing: Weeks Law Firm (Plano ISD)
+13:34:14  WARNING     HTTP 403 for https://weekslawfirm.com/?utm_source=Google&utm_medium=Local&utm_campaign=GMB — skipping
+13:34:14  WARNING     -> Scrape failed. Marked and continuing.
+13:34:14  INFO      [206/222] Processing: Lizardo Law Firm (Plano ISD)
+13:34:19  INFO        -> Irrelevant
+13:34:21  INFO      [207/222] Processing: Brad Thomas Disability PLLC (Plano ISD)
+13:34:22  INFO        -> Irrelevant
+13:34:24  INFO      [208/222] Processing: DLL-Law Group (Plano ISD)
+13:34:25  INFO        -> Irrelevant
+13:34:27  INFO      [209/222] Processing: Wilder Law Firm (Plano ISD)
+13:34:28  INFO        -> Irrelevant
+13:34:30  INFO      [210/222] Processing: Dunham & Jones (Plano ISD)
+13:34:31  INFO        -> Irrelevant
+13:34:33  INFO      [211/222] Processing: The Tutoring Center (Plano ISD)
+13:34:36  INFO        -> Tutor
+13:34:37  INFO      [212/222] Processing: Reading Ranch Plano - Reading Tutoring (Plano ISD)
+13:34:44  INFO        -> Tutor
+13:34:45  INFO      [213/222] Processing: Eye Level Learning Center Plano Central (Plano ISD)
+13:34:49  INFO        -> Tutor
+13:34:51  INFO      [214/222] Processing: Ghuneim Law Firm (Pasadena ISD)
+13:34:53  INFO        -> Irrelevant
+13:34:54  INFO      [215/222] Processing: Law Office Of Daniel Corno (Pasadena ISD)
+13:34:56  INFO        -> Irrelevant
+13:34:57  INFO      [216/222] Processing: Glover, Shari L - (Giddens & Burns Building) (Pasadena ISD)
+13:34:59  INFO        -> Irrelevant
+13:35:00  INFO      [217/222] Processing: Shane Pellerin Law Firm (Pasadena ISD)
+13:35:04  INFO        -> Irrelevant
+13:35:06  INFO      [218/222] Processing: Law Office of Hollie Hale (Pasadena ISD)
+13:35:07  INFO        -> Irrelevant
+13:35:09  INFO      [219/222] Processing: Schechter, Shaffer & Harris, LLP (Pasadena ISD)
+13:35:11  INFO        -> Irrelevant
+13:35:12  INFO      [220/222] Processing: Bay Area Learning Center (Pasadena ISD)
+13:35:15  INFO        -> Tutor
+13:35:17  INFO      [221/222] Processing: Irlen Clinic Krist Samaritan Center (Pasadena ISD)
+13:35:21  INFO        -> Tutor
+13:35:22  INFO      [222/222] Processing: The Tutoring Center, Friendswood TX (Pasadena ISD)
+13:35:25  INFO        -> Tutor
+13:35:25  INFO      
+13:35:25  INFO      ══════════════════════════════════════════════════
+13:35:25  INFO        Done.
+13:35:25  INFO        Total input rows : 222
+13:35:25  INFO        Unique leads     : 222
+13:35:25  INFO        Newly processed  : 199
+13:35:25  INFO        Skipped (done)   : 0
+13:35:25  INFO        Scrape failures  : 23
+13:35:25  INFO        Output file      : texas_leads_ready_to_send.csv
+13:35:25  INFO      ══════════════════════════════════════════════════
+14:10:09  INFO      Loaded 222 rows from texas_special_ed_leads_top20.csv
+14:10:09  INFO      After deduplication: 222 unique leads
+14:10:09  INFO      Already completed: 222 rows — skipping
+14:10:39  INFO      Loaded 222 rows from texas_special_ed_leads_top20.csv
+14:10:39  INFO      After deduplication: 222 unique leads
+14:10:39  INFO      Already completed: 222 rows — skipping
+14:10:39  INFO      [1/222] SKIP: Shields Law - Special Needs & Special Education Law
+14:10:39  INFO      [2/222] SKIP: Marc Whitehead & Associates Attorney at Law, LLP
+14:10:39  INFO      [3/222] SKIP: Bowen Law Firm, PLLC
+14:10:39  INFO      [4/222] SKIP: Thompson & Horton LLP
+14:10:39  INFO      [5/222] SKIP: Filis Law Firm
+14:10:39  INFO      [6/222] SKIP: Advocate Well
+14:10:39  INFO      [7/222] SKIP: National ARD/IEP Advocates
+14:10:39  INFO      [8/222] SKIP: The Center for Assisted Learning
+14:10:39  INFO      [9/222] SKIP: Dyslexia School of Houston - Training Center and Lab School
+14:10:39  INFO      [10/222] SKIP: Dyslexia School of Houston
+14:10:39  INFO      [11/222] SKIP: Lindamood-Bell Houston Learning Center
+14:10:39  INFO      [12/222] SKIP: Neuhaus Education Center
+14:10:39  INFO      [13/222] SKIP: Achievement Zone, LLC
+14:10:39  INFO      [14/222] SKIP: Family Literacy Network
+14:10:39  INFO      [15/222] SKIP: Diagnostic Learning Services - Houston
+14:10:39  INFO      [16/222] SKIP: LearningRx Houston
+14:10:39  INFO      [17/222] SKIP: Law Office of Madeline M. McIntosh
+14:10:39  INFO      [18/222] SKIP: The Law Office of Ruthe Belachew, PLLC
+14:10:39  INFO      [19/222] SKIP: Bailey & Galyen Attorneys at Law
+14:10:39  INFO      [20/222] SKIP: Glover Luck, LLP
+14:10:39  INFO      [21/222] SKIP: Daspit Law Firm
+14:10:39  INFO      [22/222] SKIP: Lento Law Firm Student Defense and Title IX Attorneys
+14:10:39  INFO      [23/222] SKIP: Forester Haynie
+14:10:39  INFO      [24/222] SKIP: Literacy Love
+14:10:39  INFO      [25/222] SKIP: I Heart Learning Academy
+14:10:39  INFO      [26/222] SKIP: Dallas Learning Center - Private School & Tutoring
+14:10:39  INFO      [27/222] SKIP: Star Tutoring Centers
+14:10:39  INFO      [28/222] SKIP: Hope Academy For Dyslexia
+14:10:39  INFO      [29/222] SKIP: Hola HP
+14:10:39  INFO      [30/222] SKIP: Smart and Special Teaching
+14:10:39  INFO      [31/222] SKIP: Altshuler Learning Enhancement Center
+14:10:39  INFO      [32/222] SKIP: Reading Ranch North Dallas - Reading Tutoring
+14:10:39  INFO      [33/222] SKIP: Marc Whitehead & Associates, Attorneys at Law
+14:10:39  INFO      [34/222] SKIP: Tyler and Maderer, PLLC
+14:10:39  INFO      [35/222] SKIP: S. Green Legal, PLLC
+14:10:39  INFO      [36/222] SKIP: Cypress Dyslexia Services
+14:10:39  INFO      [37/222] SKIP: Huntington Learning Center Cypress
+14:10:39  INFO      [38/222] SKIP: The Tutoring Center of Cypress TX
+14:10:39  INFO      [39/222] SKIP: Best Brains Learning Center - Cypress
+14:10:39  INFO      [40/222] SKIP: Sylvan Learning of Cypress & Houston
+14:10:39  INFO      [41/222] SKIP: Aspire Advancement Center
+14:10:39  INFO      [42/222] SKIP: Eye Level Learning Center of Cypress SouthWest
+14:10:39  INFO      [43/222] SKIP: Marc Whitehead & Associates, Attorneys at Law LLP
+14:10:39  INFO      [44/222] SKIP: Karen Seal Law Office
+14:10:39  INFO      [45/222] SKIP: Escamilla & Poneck, LLP
+14:10:39  INFO      [46/222] SKIP: Heard & Smith LLP
+14:10:39  INFO      [47/222] SKIP: Dillard Advocacy and Consulting, LLC
+14:10:39  INFO      [48/222] SKIP: Law Office of Jill Mitchell-Thein
+14:10:39  INFO      [49/222] SKIP: The Law Office Of Brent Lee Klender
+14:10:39  INFO      [50/222] SKIP: Law Office of Dirk Ashbaugh, P.C.
+14:10:39  INFO      [51/222] SKIP: Weisinger Law Firm, PLLC
+14:10:39  INFO      [52/222] SKIP: North East Educational Foundation
+14:10:39  INFO      [53/222] SKIP: Special Reach Inc.
+14:10:39  INFO      [54/222] SKIP: Northside Education Foundation
+14:10:39  INFO      [55/222] SKIP: The Arc of San Antonio
+14:10:39  INFO      [56/222] SKIP: Northside ISD Family Engagement
+14:10:39  INFO      [57/222] SKIP: Fearless Readers - Virtual Reading, Spelling, & Dyslexia Services
+14:10:39  INFO      [58/222] SKIP: Learning Foundations- Cognitive & Dyslexia Training Center
+14:10:39  INFO      [59/222] SKIP: LearningRx San Antonio NE
+14:10:39  INFO      [60/222] SKIP: The LD Expert
+14:10:39  INFO      [61/222] SKIP: LearningRx San Antonio NW
+14:10:39  INFO      [62/222] SKIP: Finally Fair Learning Solutions
+14:10:39  INFO      [63/222] SKIP: The Dyslexia Solution
+14:10:39  INFO      [64/222] SKIP: Brain Balance of North San Antonio
+14:10:39  INFO      [65/222] SKIP: LearningRx
+14:10:39  INFO      [66/222] SKIP: The Tutoring Center, Katy TX
+14:10:39  INFO      [67/222] SKIP: Huntington Learning Center Katy
+14:10:39  INFO      [68/222] SKIP: Counter's Tutoring Connection
+14:10:39  INFO      [69/222] SKIP: The Tutoring Center, Katy/Greentrails
+14:10:39  INFO      [70/222] SKIP: Junker Law, PLLC
+14:10:39  INFO      [71/222] SKIP: LearningRx Sugar Land
+14:10:39  INFO      [72/222] SKIP: Fort Bend Learning Commons
+14:10:39  INFO      [73/222] SKIP: Omega Learning Center - Fort Bend
+14:10:39  INFO      [74/222] SKIP: The Tutoring Center, Sugar Land
+14:10:39  INFO      [75/222] SKIP: Odediran Law Firm
+14:10:39  INFO      [76/222] SKIP: Special Education Advocates
+14:10:39  INFO      [77/222] SKIP: Social Butterfly Educational Advocacy
+14:10:39  INFO      [78/222] SKIP: Lumen Advocacy LLC
+14:10:39  INFO      [79/222] SKIP: Dyslexia Therapy Associates of South Texas
+14:10:39  INFO      [80/222] SKIP: Hill Country Dyslexia Services LLC
+14:10:39  INFO      [81/222] SKIP: Alsbrooks Law Firm
+14:10:39  INFO      [82/222] SKIP: Casey Loring Lawyer PLLC
+14:10:39  INFO      [83/222] SKIP: Dossey & Jones, PLLC
+14:10:39  INFO      [84/222] SKIP: The Law Office of Jessica Day, PLLC
+14:10:39  INFO      [85/222] SKIP: Napier Law Firm
+14:10:39  INFO      [86/222] SKIP: Hope & Causey, P.C.
+14:10:39  INFO      [87/222] SKIP: Raphael Ortega Law PLLC
+14:10:39  INFO      [88/222] SKIP: Law Office of Matlak and Morrison
+14:10:39  INFO      [89/222] SKIP: The Dyslexia Therapy Center
+14:10:39  INFO      [90/222] SKIP: Diagnostic Learning Services - Woodlands
+14:10:39  INFO      [91/222] SKIP: Read Frog Dyslexia & Educational Services
+14:10:39  INFO      [92/222] SKIP: Sylvan Learning of North Conroe
+14:10:39  INFO      [93/222] SKIP: Ivey Educational Solutions
+14:10:39  INFO      [94/222] SKIP: Sylvan Learning of The Woodlands and Magnolia
+14:10:39  INFO      [95/222] SKIP: Joy To Learn
+14:10:39  INFO      [96/222] SKIP: Bianca’s Private Tutoring
+14:10:39  INFO      [97/222] SKIP: AZ Law Firm
+14:10:39  INFO      [98/222] SKIP: The Law Office of Nicole Conger, PLLC
+14:10:39  INFO      [99/222] SKIP: Tully Rinckey PLLC
+14:10:39  INFO      [100/222] SKIP: Bemis, Roach & Reed
+14:10:39  INFO      [101/222] SKIP: The Law Office of Diana E. Buss
+14:10:39  INFO      [102/222] SKIP: PearlTX-Educational Consultants, Diagnostics and Advocacy (ECDA)
+14:10:39  INFO      [103/222] SKIP: Education Austin
+14:10:39  INFO      [104/222] SKIP: Austin Partners In Education
+14:10:39  INFO      [105/222] SKIP: Austin Learning Solutions
+14:10:39  INFO      [106/222] SKIP: Austin Learning Center
+14:10:39  INFO      [107/222] SKIP: Diagnostic Learning Services - Austin
+14:10:39  INFO      [108/222] SKIP: Lindamood-Bell Austin Learning Center
+14:10:39  INFO      [109/222] SKIP: Hearts and Minds Learning Center
+14:10:39  INFO      [110/222] SKIP: Texas Center for Learning Disabilities
+14:10:39  INFO      [111/222] SKIP: Rawson Saunders School
+14:10:39  INFO      [112/222] SKIP: Rawson Saunders Institute
+14:10:39  INFO      [113/222] SKIP: Kelly Decker Law, PLLC
+14:10:39  INFO      [114/222] SKIP: McGee Law Firm
+14:10:39  INFO      [115/222] SKIP: McDonald Law Firm
+14:10:39  INFO      [116/222] SKIP: Dale O'Neal Attorneys
+14:10:39  INFO      [117/222] SKIP: Law Offices of Robert Keating, PLLC
+14:10:39  INFO      [118/222] SKIP: Cantey Hanger LLP
+14:10:39  INFO      [119/222] SKIP: Hutchison & Foreman, PLLC
+14:10:39  INFO      [120/222] SKIP: The Center for Educational Diagnostics & Assessment
+14:10:39  INFO      [121/222] SKIP: The Reading Center of Fort Worth
+14:10:39  INFO      [122/222] SKIP: Reading Connection
+14:10:39  INFO      [123/222] SKIP: Diagnostic Learning Services - Fort Worth
+14:10:39  INFO      [124/222] SKIP: The Learning Center of North Texas
+14:10:39  INFO      [125/222] SKIP: Sylvan Learning of North Fort Worth
+14:10:39  INFO      [126/222] SKIP: Sylvan Learning of South Fort Worth
+14:10:39  INFO      [127/222] SKIP: Texas Dyslexia Services
+14:10:39  INFO      [128/222] SKIP: Kids First Dyslexia Services
+14:10:39  INFO      [129/222] SKIP: LinkED
+14:10:39  INFO      [130/222] SKIP: ProLearning
+14:10:39  INFO      [131/222] SKIP: The Ramage Law Group
+14:10:39  INFO      [132/222] SKIP: D.A.D. Law Firm, P.C.
+14:10:39  INFO      [133/222] SKIP: Law Office of Adriane S. Grace, PLLC
+14:10:39  INFO      [134/222] SKIP: Hanshaw Kennedy Hafen
+14:10:39  INFO      [135/222] SKIP: McCathern
+14:10:39  INFO      [136/222] SKIP: Hogue Barnett, PLLC
+14:10:39  INFO      [137/222] SKIP: Barbieri Law Firm
+14:10:39  INFO      [138/222] SKIP: True Education Frisco
+14:10:39  INFO      [139/222] SKIP: Dyscoveread Dyslexia Services
+14:10:39  INFO      [140/222] SKIP: The Tutoring Center Frisco Tx
+14:10:39  INFO      [141/222] SKIP: Moving Minds Learning Solutions
+14:10:39  INFO      [142/222] SKIP: Huntington Learning Center Frisco
+14:10:39  INFO      [143/222] SKIP: Eye Level Learning Center - Frisco Central
+14:10:39  INFO      [144/222] SKIP: Sylvan Learning of Frisco & McKinney
+14:10:39  INFO      [145/222] SKIP: Makris, Dulevitz & Cooper Disability Attorneys
+14:10:39  INFO      [146/222] SKIP: Makris Law Firm Houston Disability Lawyers
+14:10:39  INFO      [147/222] SKIP: Multisensory Tutorial Center
+14:10:39  INFO      [148/222] SKIP: Worlow Tutoring
+14:10:39  INFO      [149/222] SKIP: The Law Offices of George Escobedo
+14:10:39  INFO      [150/222] SKIP: Morales Padia Law, P.L.L.C.
+14:10:39  INFO      [151/222] SKIP: The Law Office of Nathaniel Gilbert, PLLC
+14:10:39  INFO      [152/222] SKIP: Herrman & Herrman, P.L.L.C.
+14:10:39  INFO      [153/222] SKIP: PIETRAZEK LAW, PLLC
+14:10:39  INFO      [154/222] SKIP: Boortz Law Texas
+14:10:39  INFO      [155/222] SKIP: The Law Offices of Shann M. Chaudhry, ESQ
+14:10:39  INFO      [156/222] SKIP: Sylvan Learning of East San Antonio
+14:10:39  INFO      [157/222] SKIP: The Law Office of Jonathan A. Heeps
+14:10:39  INFO      [158/222] SKIP: Law Firm of Victoriano Rodriguez
+14:10:39  INFO      [159/222] SKIP: Wes Dauphinot Law Firm
+14:10:39  INFO      [160/222] SKIP: Reyes & Reyes Law Firm, PLLC
+14:10:39  INFO      [161/222] SKIP: Allen Roger D
+14:10:39  INFO      [162/222] SKIP: Law Office of Leigh Ann Schenk
+14:10:39  INFO      [163/222] SKIP: AISD Special Education Department
+14:10:39  INFO      [164/222] SKIP: Kids Read Here Reading Center
+14:10:39  INFO      [165/222] SKIP: Sylvan Learning of Arlington & Mansfield
+14:10:39  INFO      [166/222] SKIP: Brighter Life Solutions
+14:10:39  INFO      [167/222] SKIP: Huntington Learning Center Mansfield
+14:10:39  INFO      [168/222] SKIP: Sylvan Learning of West Spring and Klein
+14:10:39  INFO      [169/222] SKIP: The Tutoring Center - Tomball, TX
+14:10:39  INFO      [170/222] SKIP: The Willis Law Group P.L.L.C.
+14:10:39  INFO      [171/222] SKIP: Cao & Associates, P.C.
+14:10:39  INFO      [172/222] SKIP: EDWARD SALDAÑA, Attorney
+14:10:39  INFO      [173/222] SKIP: The Beltz Law Firm
+14:10:39  INFO      [174/222] SKIP: Dyslexia Learning Solutions
+14:10:39  INFO      [175/222] SKIP: The Tutoring Center Garland
+14:10:39  INFO      [176/222] SKIP: Diagnostic Learning Services - Plano
+14:10:39  INFO      [177/222] SKIP: Gideon Math and Reading - Garland
+14:10:39  INFO      [178/222] SKIP: Sylvan Learning of Rowlett
+14:10:39  INFO      [179/222] SKIP: Blanco Ordoñez Mata & Wechsler, P.C.
+14:10:39  INFO      [180/222] SKIP: Law Rhinos
+14:10:39  INFO      [181/222] SKIP: Spencer Trial Attorneys, P.C.
+14:10:39  INFO      [182/222] SKIP: Anderson Bright & Associates PC
+14:10:39  INFO      [183/222] SKIP: Mounce, Green, Myers, Safi, Paxson & Galatzan
+14:10:39  INFO      [184/222] SKIP: Lopez Molinar & Hirsh PLLC
+14:10:39  INFO      [185/222] SKIP: Law Offices of Ruben Ortiz, PLLC
+14:10:39  INFO      [186/222] SKIP: EPISD SPECIAL EDUCATION HEALTH SERVICES CENTER
+14:10:39  INFO      [187/222] SKIP: Children’s Disabilities Information Coalition
+14:10:39  INFO      [188/222] SKIP: Advocacy Center For Children
+14:10:39  INFO      [189/222] SKIP: Sylvan Learning of El Paso Eastside
+14:10:39  INFO      [190/222] SKIP: Sylvan Learning of El Paso Westside
+14:10:39  INFO      [191/222] SKIP: Okó Learning Center LLC
+14:10:39  INFO      [192/222] SKIP: Dynamis Learning Center
+14:10:39  INFO      [193/222] SKIP: Ysleta Community Learning Center
+14:10:39  INFO      [194/222] SKIP: Bridges Academy
+14:10:39  INFO      [195/222] SKIP: San Jacinto Adult Learning Center
+14:10:39  INFO      [196/222] SKIP: The Law Offices of Eric G. Ransleben
+14:10:39  INFO      [197/222] SKIP: Chermol & Fishman, LLC - Texas Office
+14:10:39  INFO      [198/222] SKIP: The Jimenez Law Firm, P.C.
+14:10:39  INFO      [199/222] SKIP: David S. Kohm & Associates
+14:10:39  INFO      [200/222] SKIP: Gehi & Associates - Free Consultation
+14:10:39  INFO      [201/222] SKIP: Texas Center for Educational Testing-TxCet LLC
+14:10:39  INFO      [202/222] SKIP: Reading Ranch Lewisville
+14:10:39  INFO      [203/222] SKIP: Lewisville ISD Learning Center
+14:10:39  INFO      [204/222] SKIP: Reading Ranch Frisco - Reading Tutoring
+14:10:39  INFO      [205/222] SKIP: Weeks Law Firm
+14:10:39  INFO      [206/222] SKIP: Lizardo Law Firm
+14:10:39  INFO      [207/222] SKIP: Brad Thomas Disability PLLC
+14:10:39  INFO      [208/222] SKIP: DLL-Law Group
+14:10:39  INFO      [209/222] SKIP: Wilder Law Firm
+14:10:39  INFO      [210/222] SKIP: Dunham & Jones
+14:10:39  INFO      [211/222] SKIP: The Tutoring Center
+14:10:39  INFO      [212/222] SKIP: Reading Ranch Plano - Reading Tutoring
+14:10:39  INFO      [213/222] SKIP: Eye Level Learning Center Plano Central
+14:10:39  INFO      [214/222] SKIP: Ghuneim Law Firm
+14:10:39  INFO      [215/222] SKIP: Law Office Of Daniel Corno
+14:10:39  INFO      [216/222] SKIP: Glover, Shari L - (Giddens & Burns Building)
+14:10:39  INFO      [217/222] SKIP: Shane Pellerin Law Firm
+14:10:39  INFO      [218/222] SKIP: Law Office of Hollie Hale
+14:10:39  INFO      [219/222] SKIP: Schechter, Shaffer & Harris, LLP
+14:10:39  INFO      [220/222] SKIP: Bay Area Learning Center
+14:10:39  INFO      [221/222] SKIP: Irlen Clinic Krist Samaritan Center
+14:10:39  INFO      [222/222] SKIP: The Tutoring Center, Friendswood TX
+14:10:39  INFO      
+14:10:39  INFO      ==================================================
+14:10:39  INFO        Total input    : 222
+14:10:39  INFO        Unique leads   : 222
+14:10:39  INFO        Processed      : 0
+14:10:39  INFO        Skipped        : 222
+14:10:39  INFO        Scrape failed  : 0
+14:10:39  INFO        Output         : texas_leads_ready_to_send.csv
+14:10:39  INFO      ==================================================
+14:11:02  INFO      Loaded 222 rows from texas_special_ed_leads_top20.csv
+14:11:02  INFO      After deduplication: 222 unique leads
+14:11:02  INFO      Already completed: 0 rows — skipping
+14:11:02  INFO      [1/222] Processing: Shields Law - Special Needs & Special Education Law (Houston ISD)
+14:11:08  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:11:08  INFO        -> Attorney
+14:11:08  INFO      [2/222] Processing: Marc Whitehead & Associates Attorney at Law, LLP (Houston ISD)
+14:11:11  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:11:11  INFO        -> Irrelevant
+14:11:12  INFO      [3/222] Processing: Bowen Law Firm, PLLC (Houston ISD)
+14:11:14  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:11:14  INFO        -> Irrelevant
+14:11:14  INFO      [4/222] Processing: Thompson & Horton LLP (Houston ISD)
+14:11:15  WARNING     HTTP 403 for http://www.thompsonhorton.com/ — skipping
+14:11:15  INFO      [5/222] Processing: Filis Law Firm (Houston ISD)
+14:11:22  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:11:22  INFO        -> Irrelevant
+14:11:22  INFO      [6/222] Processing: Advocate Well (Houston ISD)
+14:11:23  WARNING     HTTP 403 for https://www.advocate-well.com/ — skipping
+14:11:23  INFO      [7/222] Processing: National ARD/IEP Advocates (Houston ISD)
+14:11:27  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:11:27  INFO        -> Advocate
+14:11:27  INFO      [8/222] Processing: The Center for Assisted Learning (Houston ISD)
+14:11:28  WARNING     HTTP 403 for http://www.tutor2success.com/ — skipping
+14:11:28  INFO      [9/222] Processing: Dyslexia School of Houston - Training Center and Lab School (Houston ISD)
+14:11:33  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:11:33  INFO        -> Tutor
+14:11:33  INFO      [10/222] Processing: Dyslexia School of Houston (Houston ISD)
+14:11:41  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:11:41  INFO        -> Tutor
+14:11:42  INFO      [11/222] Processing: Lindamood-Bell Houston Learning Center (Houston ISD)
+14:11:46  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:11:46  INFO        -> Tutor
+14:11:47  INFO      [12/222] Processing: Neuhaus Education Center (Houston ISD)
+14:11:50  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:11:50  INFO        -> Irrelevant
+14:11:50  INFO      [13/222] Processing: Achievement Zone, LLC (Houston ISD)
+14:11:54  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:11:54  INFO        -> Advocate
+14:11:55  INFO      [14/222] Processing: Family Literacy Network (Houston ISD)
+14:11:59  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:11:59  INFO        -> Tutor
+14:12:00  INFO      [15/222] Processing: Diagnostic Learning Services - Houston (Houston ISD)
+14:12:03  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:03  INFO        -> Irrelevant
+14:12:04  INFO      [16/222] Processing: LearningRx Houston (Houston ISD)
+14:12:11  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:11  INFO        -> Tutor
+14:12:11  INFO      [17/222] Processing: Law Office of Madeline M. McIntosh (Dallas ISD)
+14:12:15  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:15  INFO        -> Irrelevant
+14:12:15  INFO      [18/222] Processing: The Law Office of Ruthe Belachew, PLLC (Dallas ISD)
+14:12:17  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:17  INFO        -> Irrelevant
+14:12:18  INFO      [19/222] Processing: Bailey & Galyen Attorneys at Law (Dallas ISD)
+14:12:21  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:21  INFO        -> Irrelevant
+14:12:21  INFO      [20/222] Processing: Glover Luck, LLP (Dallas ISD)
+14:12:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:24  INFO        -> Irrelevant
+14:12:24  INFO      [21/222] Processing: Daspit Law Firm (Dallas ISD)
+14:12:27  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:27  INFO        -> Irrelevant
+14:12:27  INFO      [22/222] Processing: Lento Law Firm Student Defense and Title IX Attorneys (Dallas ISD)
+14:12:28  WARNING     HTTP 403 for https://www.studentdisciplinedefense.com/?utm_source=organic+search&utm_medium=Yext&utm_id=Yext — skipping
+14:12:28  INFO      [23/222] Processing: Forester Haynie (Dallas ISD)
+14:12:33  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:33  INFO        -> Irrelevant
+14:12:33  INFO      [24/222] Processing: Literacy Love (Dallas ISD)
+14:12:38  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:38  INFO        -> Tutor
+14:12:38  INFO      [25/222] Processing: I Heart Learning Academy (Dallas ISD)
+14:12:44  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:44  INFO        -> Tutor
+14:12:44  INFO      [26/222] Processing: Dallas Learning Center - Private School & Tutoring (Dallas ISD)
+14:12:49  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:49  INFO        -> Tutor
+14:12:49  INFO      [27/222] Processing: Star Tutoring Centers (Dallas ISD)
+14:12:54  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:54  INFO        -> Tutor
+14:12:55  INFO      [28/222] Processing: Hope Academy For Dyslexia (Dallas ISD)
+14:12:59  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:12:59  INFO        -> Tutor
+14:12:59  INFO      [29/222] Processing: Hola HP (Dallas ISD)
+14:13:04  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:13:04  INFO        -> Tutor
+14:13:04  INFO      [30/222] Processing: Smart and Special Teaching (Dallas ISD)
+14:13:09  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:13:09  INFO        -> Tutor
+14:13:10  INFO      [31/222] Processing: Altshuler Learning Enhancement Center (Dallas ISD)
+14:13:14  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:13:14  INFO        -> Irrelevant
+14:13:14  INFO      [32/222] Processing: Reading Ranch North Dallas - Reading Tutoring (Dallas ISD)
+14:13:21  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:13:21  INFO        -> Tutor
+14:13:22  INFO      [33/222] Processing: Marc Whitehead & Associates, Attorneys at Law (Cypress-Fairbanks ISD)
+14:13:25  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:13:25  INFO        -> Irrelevant
+14:13:26  INFO      [34/222] Processing: Tyler and Maderer, PLLC (Cypress-Fairbanks ISD)
+14:13:29  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:13:29  INFO        -> Irrelevant
+14:13:29  INFO      [35/222] Processing: S. Green Legal, PLLC (Cypress-Fairbanks ISD)
+14:13:34  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:13:34  INFO        -> Irrelevant
+14:13:34  INFO      [36/222] Processing: Cypress Dyslexia Services (Cypress-Fairbanks ISD)
+14:13:39  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:13:39  INFO        -> Tutor
+14:13:39  INFO      [37/222] Processing: Huntington Learning Center Cypress (Cypress-Fairbanks ISD)
+14:13:40  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/cypress-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+14:13:40  INFO      [38/222] Processing: The Tutoring Center of Cypress TX (Cypress-Fairbanks ISD)
+14:13:53  WARNING     Scrape attempt 1 failed (HTTPSConnectionPool(host='www.tutoringcenter.com', port=443): Read timed out. (read timeout=12)). Retrying in 2.6s...
+14:14:08  WARNING     Scrape attempt 2 failed (HTTPSConnectionPool(host='www.tutoringcenter.com', port=443): Read timed out. (read timeout=12)). Retrying in 4.9s...
+14:14:20  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:14:20  INFO        -> Tutor
+14:14:20  INFO      [39/222] Processing: Best Brains Learning Center - Cypress (Cypress-Fairbanks ISD)
+14:14:23  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:14:23  INFO        -> Irrelevant
+14:14:23  INFO      [40/222] Processing: Sylvan Learning of Cypress & Houston (Cypress-Fairbanks ISD)
+14:14:29  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:14:29  INFO        -> Tutor
+14:14:30  INFO      [41/222] Processing: Aspire Advancement Center (Cypress-Fairbanks ISD)
+14:14:35  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:14:35  INFO        -> Tutor
+14:14:35  INFO      [42/222] Processing: Eye Level Learning Center of Cypress SouthWest (Cypress-Fairbanks ISD)
+14:14:41  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:14:41  INFO        -> Tutor
+14:14:42  INFO      [43/222] Processing: Marc Whitehead & Associates, Attorneys at Law LLP (Northside ISD)
+14:14:44  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:14:44  INFO        -> Irrelevant
+14:14:44  INFO      [44/222] Processing: Karen Seal Law Office (Northside ISD)
+14:14:50  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:14:50  INFO        -> Attorney
+14:14:50  INFO      [45/222] Processing: Escamilla & Poneck, LLP (Northside ISD)
+14:14:53  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:14:53  INFO        -> Irrelevant
+14:14:53  INFO      [46/222] Processing: Heard & Smith LLP (Northside ISD)
+14:14:56  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:14:56  INFO        -> Irrelevant
+14:14:56  INFO      [47/222] Processing: Dillard Advocacy and Consulting, LLC (Northside ISD)
+14:15:01  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:15:01  INFO        -> Advocate
+14:15:01  INFO      [48/222] Processing: Law Office of Jill Mitchell-Thein (Northside ISD)
+14:15:07  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:15:07  INFO        -> Irrelevant
+14:15:07  INFO      [49/222] Processing: The Law Office Of Brent Lee Klender (Northside ISD)
+14:15:11  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:15:11  INFO        -> Irrelevant
+14:15:12  INFO      [50/222] Processing: Law Office of Dirk Ashbaugh, P.C. (Northside ISD)
+14:15:21  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:15:21  INFO        -> Irrelevant
+14:15:22  INFO      [51/222] Processing: Weisinger Law Firm, PLLC (Northside ISD)
+14:15:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:15:24  INFO        -> Irrelevant
+14:15:25  INFO      [52/222] Processing: North East Educational Foundation (Northside ISD)
+14:15:28  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:15:28  INFO        -> Irrelevant
+14:15:29  INFO      [53/222] Processing: Special Reach Inc. (Northside ISD)
+14:15:31  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:15:31  INFO        -> Irrelevant
+14:15:32  INFO      [54/222] Processing: Northside Education Foundation (Northside ISD)
+14:15:34  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:15:34  INFO        -> Irrelevant
+14:15:35  INFO      [55/222] Processing: The Arc of San Antonio (Northside ISD)
+14:15:40  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:15:40  INFO        -> Irrelevant
+14:15:41  INFO      [56/222] Processing: Northside ISD Family Engagement (Northside ISD)
+14:15:44  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:15:44  INFO        -> Irrelevant
+14:15:44  INFO      [57/222] Processing: Fearless Readers - Virtual Reading, Spelling, & Dyslexia Services (Northside ISD)
+14:15:53  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:15:53  INFO        -> Tutor
+14:15:53  INFO      [58/222] Processing: Learning Foundations- Cognitive & Dyslexia Training Center (Northside ISD)
+14:16:00  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:16:00  INFO        -> Tutor
+14:16:01  INFO      [59/222] Processing: LearningRx San Antonio NE (Northside ISD)
+14:16:06  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:16:06  INFO        -> Tutor
+14:16:07  INFO      [60/222] Processing: The LD Expert (Northside ISD)
+14:16:11  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:16:11  INFO        -> Tutor
+14:16:11  INFO      [61/222] Processing: LearningRx San Antonio NW (Northside ISD)
+14:16:18  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:16:18  INFO        -> Tutor
+14:16:19  INFO      [62/222] Processing: Finally Fair Learning Solutions (Northside ISD)
+14:16:19  INFO      [63/222] Processing: The Dyslexia Solution (Northside ISD)
+14:16:20  WARNING     HTTP 403 for https://www.thedyslexiasolution.com/ — skipping
+14:16:20  INFO      [64/222] Processing: Brain Balance of North San Antonio (Northside ISD)
+14:16:23  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:16:23  INFO        -> Irrelevant
+14:16:23  INFO      [65/222] Processing: LearningRx (Katy ISD)
+14:16:29  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:16:29  INFO        -> Tutor
+14:16:30  INFO      [66/222] Processing: The Tutoring Center, Katy TX (Katy ISD)
+14:16:43  WARNING     Scrape attempt 1 failed (HTTPSConnectionPool(host='tutoringcenter.com', port=443): Read timed out. (read timeout=12)). Retrying in 2.2s...
+14:16:51  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:16:51  INFO        -> Tutor
+14:16:51  INFO      [67/222] Processing: Huntington Learning Center Katy (Katy ISD)
+14:16:52  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/katy-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+14:16:52  INFO      [68/222] Processing: Counter's Tutoring Connection (Katy ISD)
+14:16:57  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:16:57  INFO        -> Tutor
+14:16:58  INFO      [69/222] Processing: The Tutoring Center, Katy/Greentrails (Katy ISD)
+14:17:04  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:17:04  INFO        -> Tutor
+14:17:05  INFO      [70/222] Processing: Junker Law, PLLC (Fort Bend ISD)
+14:17:13  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:17:13  INFO        -> Irrelevant
+14:17:13  INFO      [71/222] Processing: LearningRx Sugar Land (Fort Bend ISD)
+14:17:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:17:24  INFO        -> Tutor
+14:17:25  INFO      [72/222] Processing: Fort Bend Learning Commons (Fort Bend ISD)
+14:17:30  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:17:30  INFO        -> Tutor
+14:17:30  INFO      [73/222] Processing: Omega Learning Center - Fort Bend (Fort Bend ISD)
+14:17:34  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:17:34  INFO        -> Tutor
+14:17:35  INFO      [74/222] Processing: The Tutoring Center, Sugar Land (Fort Bend ISD)
+14:17:40  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:17:40  INFO        -> Tutor
+14:17:40  INFO      [75/222] Processing: Odediran Law Firm (IDEA Public Schools)
+14:17:42  WARNING   Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+14:17:47  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:17:47  INFO        -> Attorney
+14:17:48  INFO      [76/222] Processing: Special Education Advocates (IDEA Public Schools)
+14:17:51  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:17:51  INFO        -> Advocate
+14:17:52  INFO      [77/222] Processing: Social Butterfly Educational Advocacy (IDEA Public Schools)
+14:17:56  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:17:56  INFO        -> Advocate
+14:17:56  INFO      [78/222] Processing: Lumen Advocacy LLC (IDEA Public Schools)
+14:18:02  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:02  INFO        -> Advocate
+14:18:02  INFO      [79/222] Processing: Dyslexia Therapy Associates of South Texas (IDEA Public Schools)
+14:18:08  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:08  INFO        -> Tutor
+14:18:08  INFO      [80/222] Processing: Hill Country Dyslexia Services LLC (IDEA Public Schools)
+14:18:13  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:13  INFO        -> Tutor
+14:18:13  INFO      [81/222] Processing: Alsbrooks Law Firm (Conroe ISD)
+14:18:16  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:16  INFO        -> Irrelevant
+14:18:16  INFO      [82/222] Processing: Casey Loring Lawyer PLLC (Conroe ISD)
+14:18:17  WARNING     HTTP 403 for http://www.loringlawyer.com/ — skipping
+14:18:17  INFO      [83/222] Processing: Dossey & Jones, PLLC (Conroe ISD)
+14:18:20  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:20  INFO        -> Irrelevant
+14:18:20  INFO      [84/222] Processing: The Law Office of Jessica Day, PLLC (Conroe ISD)
+14:18:23  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:23  INFO        -> Irrelevant
+14:18:23  INFO      [85/222] Processing: Napier Law Firm (Conroe ISD)
+14:18:26  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:26  INFO        -> Irrelevant
+14:18:26  INFO      [86/222] Processing: Hope & Causey, P.C. (Conroe ISD)
+14:18:27  WARNING     HTTP 403 for https://www.hope-causey.com/ — skipping
+14:18:27  INFO      [87/222] Processing: Raphael Ortega Law PLLC (Conroe ISD)
+14:18:30  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:30  INFO        -> Irrelevant
+14:18:30  INFO      [88/222] Processing: Law Office of Matlak and Morrison (Conroe ISD)
+14:18:33  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:33  INFO        -> Irrelevant
+14:18:33  INFO      [89/222] Processing: The Dyslexia Therapy Center (Conroe ISD)
+14:18:37  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:37  INFO        -> Tutor
+14:18:38  INFO      [90/222] Processing: Diagnostic Learning Services - Woodlands (Conroe ISD)
+14:18:41  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:41  INFO        -> Irrelevant
+14:18:41  INFO      [91/222] Processing: Read Frog Dyslexia & Educational Services (Conroe ISD)
+14:18:51  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:51  INFO        -> Tutor
+14:18:52  INFO      [92/222] Processing: Sylvan Learning of North Conroe (Conroe ISD)
+14:18:57  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:18:57  INFO        -> Tutor
+14:18:57  INFO      [93/222] Processing: Ivey Educational Solutions (Conroe ISD)
+14:18:58  WARNING     Scrape attempt 1 failed (HTTPConnectionPool(host='www.iveyedsolutions.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='www.iveyedsolutions.com', port=80): Failed to resolve 'www.iveyedsolutions.com' ([Errno 11001] getaddrinfo failed)"))). Retrying in 2.7s...
+14:19:00  WARNING     Scrape attempt 2 failed (HTTPConnectionPool(host='www.iveyedsolutions.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='www.iveyedsolutions.com', port=80): Failed to resolve 'www.iveyedsolutions.com' ([Errno 11001] getaddrinfo failed)"))). Retrying in 4.0s...
+14:19:04  WARNING     All scrape attempts failed for http://www.iveyedsolutions.com/: HTTPConnectionPool(host='www.iveyedsolutions.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='www.iveyedsolutions.com', port=80): Failed to resolve 'www.iveyedsolutions.com' ([Errno 11001] getaddrinfo failed)"))
+14:19:04  INFO      [94/222] Processing: Sylvan Learning of The Woodlands and Magnolia (Conroe ISD)
+14:19:11  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:19:11  INFO        -> Tutor
+14:19:11  INFO      [95/222] Processing: Joy To Learn (Conroe ISD)
+14:19:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:19:24  INFO        -> Tutor
+14:19:25  INFO      [96/222] Processing: Bianca’s Private Tutoring (Conroe ISD)
+14:19:29  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:19:29  INFO        -> Tutor
+14:19:30  INFO      [97/222] Processing: AZ Law Firm (Austin ISD)
+14:19:33  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:19:33  INFO        -> Irrelevant
+14:19:33  INFO      [98/222] Processing: The Law Office of Nicole Conger, PLLC (Austin ISD)
+14:19:34  WARNING   Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+14:19:40  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:19:40  INFO        -> Attorney
+14:19:41  INFO      [99/222] Processing: Tully Rinckey PLLC (Austin ISD)
+14:19:43  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:19:43  INFO        -> Irrelevant
+14:19:44  INFO      [100/222] Processing: Bemis, Roach & Reed (Austin ISD)
+14:19:44  WARNING     HTTP 403 for https://www.brrlaw.com/ — skipping
+14:19:44  INFO      [101/222] Processing: The Law Office of Diana E. Buss (Austin ISD)
+14:19:45  WARNING     HTTP 403 for http://www.bussted.com/ — skipping
+14:19:45  INFO      [102/222] Processing: PearlTX-Educational Consultants, Diagnostics and Advocacy (ECDA) (Austin ISD)
+14:19:50  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:19:50  INFO        -> Advocate
+14:19:50  INFO      [103/222] Processing: Education Austin (Austin ISD)
+14:19:52  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:19:52  INFO        -> Irrelevant
+14:19:53  INFO      [104/222] Processing: Austin Partners In Education (Austin ISD)
+14:19:57  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:19:57  INFO        -> Irrelevant
+14:19:57  INFO      [105/222] Processing: Austin Learning Solutions (Austin ISD)
+14:20:02  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:02  INFO        -> Tutor
+14:20:02  INFO      [106/222] Processing: Austin Learning Center (Austin ISD)
+14:20:07  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:07  INFO        -> Tutor
+14:20:08  INFO      [107/222] Processing: Diagnostic Learning Services - Austin (Austin ISD)
+14:20:11  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:11  INFO        -> Irrelevant
+14:20:12  INFO      [108/222] Processing: Lindamood-Bell Austin Learning Center (Austin ISD)
+14:20:16  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:16  INFO        -> Tutor
+14:20:17  INFO      [109/222] Processing: Hearts and Minds Learning Center (Austin ISD)
+14:20:20  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:20  INFO        -> Tutor
+14:20:21  INFO      [110/222] Processing: Texas Center for Learning Disabilities (Austin ISD)
+14:20:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:24  INFO        -> Irrelevant
+14:20:24  INFO      [111/222] Processing: Rawson Saunders School (Austin ISD)
+14:20:27  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:27  INFO        -> Irrelevant
+14:20:27  INFO      [112/222] Processing: Rawson Saunders Institute (Austin ISD)
+14:20:29  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:29  INFO        -> Irrelevant
+14:20:30  INFO      [113/222] Processing: Kelly Decker Law, PLLC (Fort Worth ISD)
+14:20:32  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:32  INFO        -> Irrelevant
+14:20:33  INFO      [114/222] Processing: McGee Law Firm (Fort Worth ISD)
+14:20:34  WARNING     HTTP 403 for https://mcgeelawdfw.com/ — skipping
+14:20:34  INFO      [115/222] Processing: McDonald Law Firm (Fort Worth ISD)
+14:20:36  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:36  INFO        -> Irrelevant
+14:20:37  INFO      [116/222] Processing: Dale O'Neal Attorneys (Fort Worth ISD)
+14:20:39  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:39  INFO        -> Irrelevant
+14:20:40  INFO      [117/222] Processing: Law Offices of Robert Keating, PLLC (Fort Worth ISD)
+14:20:43  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:43  INFO        -> Irrelevant
+14:20:43  INFO      [118/222] Processing: Cantey Hanger LLP (Fort Worth ISD)
+14:20:48  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:48  INFO        -> Irrelevant
+14:20:49  INFO      [119/222] Processing: Hutchison & Foreman, PLLC (Fort Worth ISD)
+14:20:51  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:51  INFO        -> Irrelevant
+14:20:52  INFO      [120/222] Processing: The Center for Educational Diagnostics & Assessment (Fort Worth ISD)
+14:20:54  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:54  INFO        -> Irrelevant
+14:20:54  INFO      [121/222] Processing: The Reading Center of Fort Worth (Fort Worth ISD)
+14:20:58  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:20:58  INFO        -> Tutor
+14:20:59  INFO      [122/222] Processing: Reading Connection (Fort Worth ISD)
+14:21:03  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:03  INFO        -> Tutor
+14:21:03  INFO      [123/222] Processing: Diagnostic Learning Services - Fort Worth (Fort Worth ISD)
+14:21:07  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:07  INFO        -> Irrelevant
+14:21:07  INFO      [124/222] Processing: The Learning Center of North Texas (Fort Worth ISD)
+14:21:09  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:09  INFO        -> Irrelevant
+14:21:10  INFO      [125/222] Processing: Sylvan Learning of North Fort Worth (Fort Worth ISD)
+14:21:16  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:16  INFO        -> Tutor
+14:21:16  INFO      [126/222] Processing: Sylvan Learning of South Fort Worth (Fort Worth ISD)
+14:21:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:24  INFO        -> Tutor
+14:21:25  INFO      [127/222] Processing: Texas Dyslexia Services (Fort Worth ISD)
+14:21:25  INFO      [128/222] Processing: Kids First Dyslexia Services (Fort Worth ISD)
+14:21:31  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:31  INFO        -> Tutor
+14:21:32  INFO      [129/222] Processing: LinkED (Fort Worth ISD)
+14:21:36  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:36  INFO        -> Tutor
+14:21:37  INFO      [130/222] Processing: ProLearning (Fort Worth ISD)
+14:21:41  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:41  INFO        -> Tutor
+14:21:42  INFO      [131/222] Processing: The Ramage Law Group (Frisco ISD)
+14:21:43  WARNING     HTTP 403 for https://www.ramagefamilylawfirm.com/texas/locations/mckinney?utm_source=google&utm_medium=organic&utm_campaign=gbp — skipping
+14:21:43  INFO      [132/222] Processing: D.A.D. Law Firm, P.C. (Frisco ISD)
+14:21:47  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:47  INFO        -> Irrelevant
+14:21:48  INFO      [133/222] Processing: Law Office of Adriane S. Grace, PLLC (Frisco ISD)
+14:21:50  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:50  INFO        -> Irrelevant
+14:21:50  INFO      [134/222] Processing: Hanshaw Kennedy Hafen (Frisco ISD)
+14:21:54  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:54  INFO        -> Irrelevant
+14:21:54  INFO      [135/222] Processing: McCathern (Frisco ISD)
+14:21:56  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:21:56  INFO        -> Irrelevant
+14:21:57  INFO      [136/222] Processing: Hogue Barnett, PLLC (Frisco ISD)
+14:22:00  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:00  INFO        -> Irrelevant
+14:22:01  INFO      [137/222] Processing: Barbieri Law Firm (Frisco ISD)
+14:22:03  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:03  INFO        -> Irrelevant
+14:22:04  INFO      [138/222] Processing: True Education Frisco (Frisco ISD)
+14:22:06  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:06  INFO        -> Irrelevant
+14:22:07  INFO      [139/222] Processing: Dyscoveread Dyslexia Services (Frisco ISD)
+14:22:12  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:12  INFO        -> Tutor
+14:22:12  INFO      [140/222] Processing: The Tutoring Center Frisco Tx (Frisco ISD)
+14:22:17  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:17  INFO        -> Tutor
+14:22:17  INFO      [141/222] Processing: Moving Minds Learning Solutions (Frisco ISD)
+14:22:22  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:22  INFO        -> Tutor
+14:22:23  INFO      [142/222] Processing: Huntington Learning Center Frisco (Frisco ISD)
+14:22:24  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/frisco-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+14:22:24  INFO      [143/222] Processing: Eye Level Learning Center - Frisco Central (Frisco ISD)
+14:22:31  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:31  INFO        -> Tutor
+14:22:32  INFO      [144/222] Processing: Sylvan Learning of Frisco & McKinney (Frisco ISD)
+14:22:38  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:38  INFO        -> Tutor
+14:22:39  INFO      [145/222] Processing: Makris, Dulevitz & Cooper Disability Attorneys (Aldine ISD)
+14:22:40  WARNING     HTTP 403 for https://socialsecuritydisabilitylawyershouston.com/ — skipping
+14:22:40  INFO      [146/222] Processing: Makris Law Firm Houston Disability Lawyers (Aldine ISD)
+14:22:42  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:42  INFO        -> Irrelevant
+14:22:43  INFO      [147/222] Processing: Multisensory Tutorial Center (Aldine ISD)
+14:22:48  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:48  INFO        -> Tutor
+14:22:48  INFO      [148/222] Processing: Worlow Tutoring (Aldine ISD)
+14:22:49  WARNING     HTTP 400 for http://www.facebook.com/vwtutoring/ — skipping
+14:22:49  INFO      [149/222] Processing: The Law Offices of George Escobedo (North East ISD)
+14:22:52  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:52  INFO        -> Irrelevant
+14:22:52  INFO      [150/222] Processing: Morales Padia Law, P.L.L.C. (North East ISD)
+14:22:55  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:55  INFO        -> Irrelevant
+14:22:56  INFO      [151/222] Processing: The Law Office of Nathaniel Gilbert, PLLC (North East ISD)
+14:22:58  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:22:58  INFO        -> Irrelevant
+14:22:59  INFO      [152/222] Processing: Herrman & Herrman, P.L.L.C. (North East ISD)
+14:23:02  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:02  INFO        -> Irrelevant
+14:23:02  INFO      [153/222] Processing: PIETRAZEK LAW, PLLC (North East ISD)
+14:23:06  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:06  INFO        -> Irrelevant
+14:23:07  INFO      [154/222] Processing: Boortz Law Texas (North East ISD)
+14:23:11  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:11  INFO        -> Irrelevant
+14:23:11  INFO      [155/222] Processing: The Law Offices of Shann M. Chaudhry, ESQ (North East ISD)
+14:23:13  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:13  INFO        -> Irrelevant
+14:23:14  INFO      [156/222] Processing: Sylvan Learning of East San Antonio (North East ISD)
+14:23:20  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:20  INFO        -> Tutor
+14:23:20  INFO      [157/222] Processing: The Law Office of Jonathan A. Heeps (Arlington ISD)
+14:23:23  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:23  INFO        -> Irrelevant
+14:23:24  INFO      [158/222] Processing: Law Firm of Victoriano Rodriguez (Arlington ISD)
+14:23:28  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:28  INFO        -> Irrelevant
+14:23:28  INFO      [159/222] Processing: Wes Dauphinot Law Firm (Arlington ISD)
+14:23:31  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:31  INFO        -> Irrelevant
+14:23:31  INFO      [160/222] Processing: Reyes & Reyes Law Firm, PLLC (Arlington ISD)
+14:23:33  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:33  INFO        -> Irrelevant
+14:23:34  INFO      [161/222] Processing: Allen Roger D (Arlington ISD)
+14:23:37  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:37  INFO        -> Irrelevant
+14:23:38  INFO      [162/222] Processing: Law Office of Leigh Ann Schenk (Arlington ISD)
+14:23:43  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:43  INFO        -> Irrelevant
+14:23:44  INFO      [163/222] Processing: AISD Special Education Department (Arlington ISD)
+14:23:46  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:46  INFO        -> Irrelevant
+14:23:47  INFO      [164/222] Processing: Kids Read Here Reading Center (Arlington ISD)
+14:23:51  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:51  INFO        -> Tutor
+14:23:51  INFO      [165/222] Processing: Sylvan Learning of Arlington & Mansfield (Arlington ISD)
+14:23:58  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:23:58  INFO        -> Tutor
+14:23:59  INFO      [166/222] Processing: Brighter Life Solutions (Arlington ISD)
+14:24:03  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:03  INFO        -> Tutor
+14:24:03  INFO      [167/222] Processing: Huntington Learning Center Mansfield (Arlington ISD)
+14:24:04  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/mansfield-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+14:24:04  INFO      [168/222] Processing: Sylvan Learning of West Spring and Klein (Klein ISD)
+14:24:10  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:10  INFO        -> Tutor
+14:24:11  INFO      [169/222] Processing: The Tutoring Center - Tomball, TX (Klein ISD)
+14:24:16  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:16  INFO        -> Tutor
+14:24:17  INFO      [170/222] Processing: The Willis Law Group P.L.L.C. (Garland ISD)
+14:24:20  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:20  INFO        -> Irrelevant
+14:24:20  INFO      [171/222] Processing: Cao & Associates, P.C. (Garland ISD)
+14:24:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:24  INFO        -> Irrelevant
+14:24:24  INFO      [172/222] Processing: EDWARD SALDAÑA, Attorney (Garland ISD)
+14:24:25  WARNING     HTTP 404 for https://saunderswalsh.com/team-member/edward-saldana/ — skipping
+14:24:25  INFO      [173/222] Processing: The Beltz Law Firm (Garland ISD)
+14:24:28  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:28  INFO        -> Irrelevant
+14:24:29  INFO      [174/222] Processing: Dyslexia Learning Solutions (Garland ISD)
+14:24:34  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:34  INFO        -> Tutor
+14:24:35  INFO      [175/222] Processing: The Tutoring Center Garland (Garland ISD)
+14:24:41  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:41  INFO        -> Tutor
+14:24:41  INFO      [176/222] Processing: Diagnostic Learning Services - Plano (Garland ISD)
+14:24:44  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:44  INFO        -> Irrelevant
+14:24:45  INFO      [177/222] Processing: Gideon Math and Reading - Garland (Garland ISD)
+14:24:49  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:49  INFO        -> Tutor
+14:24:49  INFO      [178/222] Processing: Sylvan Learning of Rowlett (Garland ISD)
+14:24:55  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:55  INFO        -> Tutor
+14:24:55  INFO      [179/222] Processing: Blanco Ordoñez Mata & Wechsler, P.C. (El Paso ISD)
+14:24:58  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:24:58  INFO        -> Irrelevant
+14:24:58  INFO      [180/222] Processing: Law Rhinos (El Paso ISD)
+14:25:01  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:01  INFO        -> Irrelevant
+14:25:01  INFO      [181/222] Processing: Spencer Trial Attorneys, P.C. (El Paso ISD)
+14:25:04  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:04  INFO        -> Irrelevant
+14:25:04  INFO      [182/222] Processing: Anderson Bright & Associates PC (El Paso ISD)
+14:25:06  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:06  INFO        -> Irrelevant
+14:25:07  INFO      [183/222] Processing: Mounce, Green, Myers, Safi, Paxson & Galatzan (El Paso ISD)
+14:25:09  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:09  INFO        -> Irrelevant
+14:25:10  INFO      [184/222] Processing: Lopez Molinar & Hirsh PLLC (El Paso ISD)
+14:25:12  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:12  INFO        -> Irrelevant
+14:25:13  INFO      [185/222] Processing: Law Offices of Ruben Ortiz, PLLC (El Paso ISD)
+14:25:15  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:15  INFO        -> Irrelevant
+14:25:16  INFO      [186/222] Processing: EPISD SPECIAL EDUCATION HEALTH SERVICES CENTER (El Paso ISD)
+14:25:18  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:18  INFO        -> Irrelevant
+14:25:18  INFO      [187/222] Processing: Children’s Disabilities Information Coalition (El Paso ISD)
+14:25:21  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:21  INFO        -> Irrelevant
+14:25:21  INFO      [188/222] Processing: Advocacy Center For Children (El Paso ISD)
+14:25:23  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:23  INFO        -> Irrelevant
+14:25:24  INFO      [189/222] Processing: Sylvan Learning of El Paso Eastside (El Paso ISD)
+14:25:31  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:31  INFO        -> Tutor
+14:25:32  INFO      [190/222] Processing: Sylvan Learning of El Paso Westside (El Paso ISD)
+14:25:39  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:39  INFO        -> Tutor
+14:25:39  INFO      [191/222] Processing: Okó Learning Center LLC (El Paso ISD)
+14:25:42  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:42  INFO        -> Irrelevant
+14:25:42  INFO      [192/222] Processing: Dynamis Learning Center (El Paso ISD)
+14:25:44  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:44  INFO        -> Irrelevant
+14:25:45  INFO      [193/222] Processing: Ysleta Community Learning Center (El Paso ISD)
+14:25:55  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:55  INFO        -> Irrelevant
+14:25:55  INFO      [194/222] Processing: Bridges Academy (El Paso ISD)
+14:25:58  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:25:58  INFO        -> Irrelevant
+14:25:59  INFO      [195/222] Processing: San Jacinto Adult Learning Center (El Paso ISD)
+14:26:01  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:01  INFO        -> Irrelevant
+14:26:01  INFO      [196/222] Processing: The Law Offices of Eric G. Ransleben (Lewisville ISD)
+14:26:06  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:06  INFO        -> Attorney
+14:26:07  INFO      [197/222] Processing: Chermol & Fishman, LLC - Texas Office (Lewisville ISD)
+14:26:13  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:13  INFO        -> Irrelevant
+14:26:13  INFO      [198/222] Processing: The Jimenez Law Firm, P.C. (Lewisville ISD)
+14:26:16  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:16  INFO        -> Irrelevant
+14:26:16  INFO      [199/222] Processing: David S. Kohm & Associates (Lewisville ISD)
+14:26:19  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:19  INFO        -> Irrelevant
+14:26:20  INFO      [200/222] Processing: Gehi & Associates - Free Consultation (Lewisville ISD)
+14:26:22  WARNING     HTTP 403 for https://gehilaw.com/gehilawtexas/ — skipping
+14:26:22  INFO      [201/222] Processing: Texas Center for Educational Testing-TxCet LLC (Lewisville ISD)
+14:26:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:24  INFO        -> Irrelevant
+14:26:24  INFO      [202/222] Processing: Reading Ranch Lewisville (Lewisville ISD)
+14:26:29  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:29  INFO        -> Tutor
+14:26:30  INFO      [203/222] Processing: Lewisville ISD Learning Center (Lewisville ISD)
+14:26:36  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:36  INFO        -> Irrelevant
+14:26:36  INFO      [204/222] Processing: Reading Ranch Frisco - Reading Tutoring (Lewisville ISD)
+14:26:43  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:43  INFO        -> Tutor
+14:26:43  INFO      [205/222] Processing: Weeks Law Firm (Plano ISD)
+14:26:44  WARNING     HTTP 403 for https://weekslawfirm.com/?utm_source=Google&utm_medium=Local&utm_campaign=GMB — skipping
+14:26:44  INFO      [206/222] Processing: Lizardo Law Firm (Plano ISD)
+14:26:49  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:49  INFO        -> Irrelevant
+14:26:50  INFO      [207/222] Processing: Brad Thomas Disability PLLC (Plano ISD)
+14:26:52  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:52  INFO        -> Irrelevant
+14:26:53  INFO      [208/222] Processing: DLL-Law Group (Plano ISD)
+14:26:55  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:55  INFO        -> Irrelevant
+14:26:56  INFO      [209/222] Processing: Wilder Law Firm (Plano ISD)
+14:26:58  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:26:58  INFO        -> Irrelevant
+14:26:59  INFO      [210/222] Processing: Dunham & Jones (Plano ISD)
+14:27:01  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:01  INFO        -> Irrelevant
+14:27:01  INFO      [211/222] Processing: The Tutoring Center (Plano ISD)
+14:27:11  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:11  INFO        -> Tutor
+14:27:11  INFO      [212/222] Processing: Reading Ranch Plano - Reading Tutoring (Plano ISD)
+14:27:19  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:19  INFO        -> Tutor
+14:27:19  INFO      [213/222] Processing: Eye Level Learning Center Plano Central (Plano ISD)
+14:27:27  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:27  INFO        -> Tutor
+14:27:28  INFO      [214/222] Processing: Ghuneim Law Firm (Pasadena ISD)
+14:27:30  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:30  INFO        -> Irrelevant
+14:27:31  INFO      [215/222] Processing: Law Office Of Daniel Corno (Pasadena ISD)
+14:27:33  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:33  INFO        -> Irrelevant
+14:27:34  INFO      [216/222] Processing: Glover, Shari L - (Giddens & Burns Building) (Pasadena ISD)
+14:27:36  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:36  INFO        -> Irrelevant
+14:27:36  INFO      [217/222] Processing: Shane Pellerin Law Firm (Pasadena ISD)
+14:27:41  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:41  INFO        -> Irrelevant
+14:27:42  INFO      [218/222] Processing: Law Office of Hollie Hale (Pasadena ISD)
+14:27:45  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:45  INFO        -> Irrelevant
+14:27:46  INFO      [219/222] Processing: Schechter, Shaffer & Harris, LLP (Pasadena ISD)
+14:27:49  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:49  INFO        -> Irrelevant
+14:27:49  INFO      [220/222] Processing: Bay Area Learning Center (Pasadena ISD)
+14:27:52  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:52  INFO        -> Tutor
+14:27:53  INFO      [221/222] Processing: Irlen Clinic Krist Samaritan Center (Pasadena ISD)
+14:27:57  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:27:57  INFO        -> Irrelevant
+14:27:57  INFO      [222/222] Processing: The Tutoring Center, Friendswood TX (Pasadena ISD)
+14:28:02  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:28:02  INFO        -> Tutor
+14:28:02  INFO      
+14:28:02  INFO      ==================================================
+14:28:02  INFO        Total input    : 222
+14:28:02  INFO        Unique leads   : 222
+14:28:02  INFO        Processed      : 199
+14:28:02  INFO        Skipped        : 0
+14:28:02  INFO        Scrape failed  : 23
+14:28:02  INFO        Output         : texas_leads_ready_to_send.csv
+14:28:02  INFO      ==================================================
+14:44:50  INFO      Loaded 222 rows from texas_special_ed_leads_top20.csv
+14:44:50  INFO      After deduplication: 222 unique leads
+14:44:50  INFO      Already completed: 0 rows — skipping
+14:44:50  INFO      [1/222] Processing: Shields Law - Special Needs & Special Education Law (Houston ISD)
+14:44:58  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:44:58  INFO        -> Attorney
+14:44:58  INFO      [2/222] Processing: Marc Whitehead & Associates Attorney at Law, LLP (Houston ISD)
+14:45:01  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:45:01  INFO        -> Irrelevant
+14:45:01  INFO      [3/222] Processing: Bowen Law Firm, PLLC (Houston ISD)
+14:45:03  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:45:03  INFO        -> Irrelevant
+14:45:04  INFO      [4/222] Processing: Thompson & Horton LLP (Houston ISD)
+14:45:04  WARNING     HTTP 403 for http://www.thompsonhorton.com/ — skipping
+14:45:04  INFO      [5/222] Processing: Filis Law Firm (Houston ISD)
+14:45:10  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:45:10  INFO        -> Irrelevant
+14:45:10  INFO      [6/222] Processing: Advocate Well (Houston ISD)
+14:45:12  WARNING     HTTP 403 for https://www.advocate-well.com/ — skipping
+14:45:12  INFO      [7/222] Processing: National ARD/IEP Advocates (Houston ISD)
+14:45:12  INFO        -> Email found: nationalardadvocates@gmail.com
+14:45:17  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:45:17  INFO        -> Advocate
+14:45:17  INFO      [8/222] Processing: The Center for Assisted Learning (Houston ISD)
+14:45:19  WARNING     HTTP 403 for http://www.tutor2success.com/ — skipping
+14:45:19  INFO      [9/222] Processing: Dyslexia School of Houston - Training Center and Lab School (Houston ISD)
+14:45:20  INFO        -> Email found: info@dyslexiahouston.org
+14:45:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:45:24  INFO        -> Tutor
+14:45:25  INFO      [10/222] Processing: Dyslexia School of Houston (Houston ISD)
+14:45:28  INFO        -> Email found: info@dyslexiahouston.org
+14:45:32  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:45:32  INFO        -> Tutor
+14:45:32  INFO      [11/222] Processing: Lindamood-Bell Houston Learning Center (Houston ISD)
+14:45:38  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:45:38  INFO        -> Tutor
+14:45:39  INFO      [12/222] Processing: Neuhaus Education Center (Houston ISD)
+14:45:42  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:45:42  INFO        -> Irrelevant
+14:45:43  INFO      [13/222] Processing: Achievement Zone, LLC (Houston ISD)
+14:45:43  INFO        -> Email found: admin@achievement-zone.com
+14:45:48  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:45:48  INFO        -> Tutor
+14:45:48  INFO      [14/222] Processing: Family Literacy Network (Houston ISD)
+14:45:50  INFO        -> Email found: help@familyliteracy.net
+14:45:55  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:45:55  INFO        -> Tutor
+14:45:56  INFO      [15/222] Processing: Diagnostic Learning Services - Houston (Houston ISD)
+14:46:02  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:46:02  INFO        -> Irrelevant
+14:46:02  INFO      [16/222] Processing: LearningRx Houston (Houston ISD)
+14:46:08  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:46:08  INFO        -> Tutor
+14:46:09  INFO      [17/222] Processing: Law Office of Madeline M. McIntosh (Dallas ISD)
+14:46:11  INFO        -> Email found: info@myssdlaw.com
+14:46:13  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:46:13  INFO        -> Irrelevant
+14:46:13  INFO      [18/222] Processing: The Law Office of Ruthe Belachew, PLLC (Dallas ISD)
+14:46:14  INFO        -> Email found: info@belachewlaw.com
+14:46:16  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:46:16  INFO        -> Irrelevant
+14:46:17  INFO      [19/222] Processing: Bailey & Galyen Attorneys at Law (Dallas ISD)
+14:46:18  INFO        -> Email found: callcenter@thetexasattorney.com
+14:46:20  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:46:20  INFO        -> Irrelevant
+14:46:20  INFO      [20/222] Processing: Glover Luck, LLP (Dallas ISD)
+14:46:31  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:46:31  INFO        -> Irrelevant
+14:46:31  INFO      [21/222] Processing: Daspit Law Firm (Dallas ISD)
+14:46:33  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:46:33  INFO        -> Irrelevant
+14:46:34  INFO      [22/222] Processing: Lento Law Firm Student Defense and Title IX Attorneys (Dallas ISD)
+14:46:34  WARNING     HTTP 403 for https://www.studentdisciplinedefense.com/?utm_source=organic+search&utm_medium=Yext&utm_id=Yext — skipping
+14:46:34  INFO      [23/222] Processing: Forester Haynie (Dallas ISD)
+14:46:38  INFO        -> Email found: info@foresterhaynie.com
+14:46:42  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:46:42  INFO        -> Irrelevant
+14:46:42  INFO      [24/222] Processing: Literacy Love (Dallas ISD)
+14:46:47  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:46:47  INFO        -> Tutor
+14:46:47  INFO      [25/222] Processing: I Heart Learning Academy (Dallas ISD)
+14:46:56  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:46:56  INFO        -> Tutor
+14:46:57  INFO      [26/222] Processing: Dallas Learning Center - Private School & Tutoring (Dallas ISD)
+14:46:58  INFO        -> Email found: info@dallaslearningcenter.com
+14:47:00  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:47:00  INFO        -> Irrelevant
+14:47:00  INFO      [27/222] Processing: Star Tutoring Centers (Dallas ISD)
+14:47:01  INFO        -> Email found: info@startutoringcenters.com
+14:47:05  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:47:05  INFO        -> Tutor
+14:47:06  INFO      [28/222] Processing: Hope Academy For Dyslexia (Dallas ISD)
+14:47:10  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:47:10  INFO        -> Irrelevant
+14:47:10  INFO      [29/222] Processing: Hola HP (Dallas ISD)
+14:47:14  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 500 Internal Server Error"
+14:47:14  WARNING     API error attempt 1: Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'Internal server error'}, 'request_id': 'req_011CYTUGRLxT4q5EipfGWM3G'}
+14:47:14  INFO        Retrying in 3.0s...
+14:47:21  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:47:21  INFO        -> Tutor
+14:47:22  INFO      [30/222] Processing: Smart and Special Teaching (Dallas ISD)
+14:47:27  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:47:27  INFO        -> Tutor
+14:47:27  INFO      [31/222] Processing: Altshuler Learning Enhancement Center (Dallas ISD)
+14:47:29  INFO        -> Email found: a-lec@smu.edu
+14:47:30  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:47:30  INFO        -> Irrelevant
+14:47:31  INFO      [32/222] Processing: Reading Ranch North Dallas - Reading Tutoring (Dallas ISD)
+14:47:47  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:47:47  INFO        -> Tutor
+14:47:47  INFO      [33/222] Processing: Marc Whitehead & Associates, Attorneys at Law (Cypress-Fairbanks ISD)
+14:47:50  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:47:50  INFO        -> Irrelevant
+14:47:50  INFO      [34/222] Processing: Tyler and Maderer, PLLC (Cypress-Fairbanks ISD)
+14:47:52  INFO        -> Email found: info@tmlegalgroup.com
+14:47:54  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:47:54  INFO        -> Irrelevant
+14:47:54  INFO      [35/222] Processing: S. Green Legal, PLLC (Cypress-Fairbanks ISD)
+14:47:56  INFO        -> Email found: stephen@sgreenlegal.com
+14:47:58  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:47:58  INFO        -> Irrelevant
+14:47:58  INFO      [36/222] Processing: Cypress Dyslexia Services (Cypress-Fairbanks ISD)
+14:47:59  INFO        -> Email found: ldtherapisthouston@gmail.com
+14:48:04  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:48:04  INFO        -> Tutor
+14:48:04  INFO      [37/222] Processing: Huntington Learning Center Cypress (Cypress-Fairbanks ISD)
+14:48:05  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/cypress-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+14:48:05  INFO      [38/222] Processing: The Tutoring Center of Cypress TX (Cypress-Fairbanks ISD)
+14:48:10  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:48:10  INFO        -> Tutor
+14:48:10  INFO      [39/222] Processing: Best Brains Learning Center - Cypress (Cypress-Fairbanks ISD)
+14:48:11  INFO        -> Email found: cypress@bestbrains.com
+14:48:13  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:48:13  INFO        -> Irrelevant
+14:48:14  INFO      [40/222] Processing: Sylvan Learning of Cypress & Houston (Cypress-Fairbanks ISD)
+14:48:27  WARNING     Scrape attempt 1 failed. Retrying in 2.6s...
+14:48:42  WARNING     Scrape attempt 2 failed. Retrying in 4.8s...
+14:48:59  WARNING     All scrape attempts failed for https://www.sylvanlearning.com/locations/us/tx/houston-tutoring/cypress-houston?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=8316: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+14:48:59  INFO      [41/222] Processing: Aspire Advancement Center (Cypress-Fairbanks ISD)
+14:49:00  INFO        -> Email found: info@aspire-now.com
+14:49:05  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:05  INFO        -> Tutor
+14:49:05  INFO      [42/222] Processing: Eye Level Learning Center of Cypress SouthWest (Cypress-Fairbanks ISD)
+14:49:12  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:12  INFO        -> Tutor
+14:49:13  INFO      [43/222] Processing: Marc Whitehead & Associates, Attorneys at Law LLP (Northside ISD)
+14:49:15  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:15  INFO        -> Irrelevant
+14:49:16  INFO      [44/222] Processing: Karen Seal Law Office (Northside ISD)
+14:49:20  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:20  INFO        -> Attorney
+14:49:21  INFO      [45/222] Processing: Escamilla & Poneck, LLP (Northside ISD)
+14:49:23  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:23  INFO        -> Irrelevant
+14:49:24  INFO      [46/222] Processing: Heard & Smith LLP (Northside ISD)
+14:49:26  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:26  INFO        -> Irrelevant
+14:49:26  INFO      [47/222] Processing: Dillard Advocacy and Consulting, LLC (Northside ISD)
+14:49:27  INFO        -> Email found: lorene@dillardadvocacy.net
+14:49:33  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:33  INFO        -> Advocate
+14:49:34  INFO      [48/222] Processing: Law Office of Jill Mitchell-Thein (Northside ISD)
+14:49:38  INFO        -> Email found: jill@fight4veteransrights.com
+14:49:40  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:40  INFO        -> Irrelevant
+14:49:41  INFO      [49/222] Processing: The Law Office Of Brent Lee Klender (Northside ISD)
+14:49:43  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:43  INFO        -> Irrelevant
+14:49:44  INFO      [50/222] Processing: Law Office of Dirk Ashbaugh, P.C. (Northside ISD)
+14:49:52  INFO        -> Email found: service@ashbaughlegal.com
+14:49:53  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:53  INFO        -> Irrelevant
+14:49:54  INFO      [51/222] Processing: Weisinger Law Firm, PLLC (Northside ISD)
+14:49:56  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:56  INFO        -> Irrelevant
+14:49:57  INFO      [52/222] Processing: North East Educational Foundation (Northside ISD)
+14:49:57  INFO        -> Email found: foundation@neisd.net
+14:49:59  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:49:59  INFO        -> Irrelevant
+14:50:00  INFO      [53/222] Processing: Special Reach Inc. (Northside ISD)
+14:50:01  INFO        -> Email found: info@specialreach.org
+14:50:02  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:50:02  INFO        -> Irrelevant
+14:50:03  INFO      [54/222] Processing: Northside Education Foundation (Northside ISD)
+14:50:06  INFO        -> Email found: nisd.nef@nisd.net
+14:50:07  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:50:07  INFO        -> Irrelevant
+14:50:07  INFO      [55/222] Processing: The Arc of San Antonio (Northside ISD)
+14:50:10  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:50:10  INFO        -> Irrelevant
+14:50:11  INFO      [56/222] Processing: Northside ISD Family Engagement (Northside ISD)
+14:50:13  INFO        -> Email found: info@nisd.net
+14:50:14  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:50:14  INFO        -> Irrelevant
+14:50:15  INFO      [57/222] Processing: Fearless Readers - Virtual Reading, Spelling, & Dyslexia Services (Northside ISD)
+14:50:22  INFO        -> Email found: fearlessreadersinfo@gmail.com
+14:50:26  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:50:26  INFO        -> Tutor
+14:50:27  INFO      [58/222] Processing: Learning Foundations- Cognitive & Dyslexia Training Center (Northside ISD)
+14:50:33  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:50:33  INFO        -> Tutor
+14:50:34  INFO      [59/222] Processing: LearningRx San Antonio NE (Northside ISD)
+14:50:38  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:50:38  INFO        -> Tutor
+14:50:39  INFO      [60/222] Processing: The LD Expert (Northside ISD)
+14:50:44  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:50:44  INFO        -> Tutor
+14:50:44  INFO      [61/222] Processing: LearningRx San Antonio NW (Northside ISD)
+14:50:50  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:50:50  INFO        -> Tutor
+14:50:50  INFO      [62/222] Processing: Finally Fair Learning Solutions (Northside ISD)
+14:50:51  INFO      [63/222] Processing: The Dyslexia Solution (Northside ISD)
+14:50:52  WARNING     HTTP 403 for https://www.thedyslexiasolution.com/ — skipping
+14:50:52  INFO      [64/222] Processing: Brain Balance of North San Antonio (Northside ISD)
+14:50:54  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:50:54  INFO        -> Irrelevant
+14:50:55  INFO      [65/222] Processing: LearningRx (Katy ISD)
+14:51:01  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:51:01  INFO        -> Tutor
+14:51:01  INFO      [66/222] Processing: The Tutoring Center, Katy TX (Katy ISD)
+14:51:07  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:51:07  INFO        -> Tutor
+14:51:08  INFO      [67/222] Processing: Huntington Learning Center Katy (Katy ISD)
+14:51:09  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/katy-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+14:51:09  INFO      [68/222] Processing: Counter's Tutoring Connection (Katy ISD)
+14:51:14  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:51:14  INFO        -> Tutor
+14:51:14  INFO      [69/222] Processing: The Tutoring Center, Katy/Greentrails (Katy ISD)
+14:51:20  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:51:20  INFO        -> Tutor
+14:51:20  INFO      [70/222] Processing: Junker Law, PLLC (Fort Bend ISD)
+14:51:26  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:51:26  INFO        -> Irrelevant
+14:51:27  INFO      [71/222] Processing: LearningRx Sugar Land (Fort Bend ISD)
+14:51:33  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:51:33  INFO        -> Tutor
+14:51:33  INFO      [72/222] Processing: Fort Bend Learning Commons (Fort Bend ISD)
+14:51:34  INFO        -> Email found: fblc.tx@gmail.com
+14:51:36  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:51:36  INFO        -> Irrelevant
+14:51:37  INFO      [73/222] Processing: Omega Learning Center - Fort Bend (Fort Bend ISD)
+14:51:38  INFO        -> Email found: acworth@omegalearning.com
+14:51:41  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:51:41  INFO        -> Tutor
+14:51:42  INFO      [74/222] Processing: The Tutoring Center, Sugar Land (Fort Bend ISD)
+14:51:47  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:51:47  INFO        -> Tutor
+14:51:47  INFO      [75/222] Processing: Odediran Law Firm (IDEA Public Schools)
+14:51:49  WARNING   Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+14:51:55  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:51:55  INFO        -> Attorney
+14:51:55  INFO      [76/222] Processing: Special Education Advocates (IDEA Public Schools)
+14:51:56  INFO        -> Email found: specialeducationadvocates.org@gmail.com
+14:52:01  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:01  INFO        -> Advocate
+14:52:01  INFO      [77/222] Processing: Social Butterfly Educational Advocacy (IDEA Public Schools)
+14:52:02  INFO        -> Email found: socialbutterflyadvocacy@gmail.com
+14:52:08  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:08  INFO        -> Advocate
+14:52:09  INFO      [78/222] Processing: Lumen Advocacy LLC (IDEA Public Schools)
+14:52:10  INFO        -> Email found: info@lumenadvocacy.com
+14:52:16  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:16  INFO        -> Advocate
+14:52:16  INFO      [79/222] Processing: Dyslexia Therapy Associates of South Texas (IDEA Public Schools)
+14:52:17  INFO        -> Email found: deborahrestainodyslexia@gmail.com
+14:52:23  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:23  INFO        -> Tutor
+14:52:23  INFO      [80/222] Processing: Hill Country Dyslexia Services LLC (IDEA Public Schools)
+14:52:24  INFO        -> Email found: debbie@hcdyslexia.com
+14:52:29  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:29  INFO        -> Tutor
+14:52:29  INFO      [81/222] Processing: Alsbrooks Law Firm (Conroe ISD)
+14:52:31  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:31  INFO        -> Irrelevant
+14:52:31  INFO      [82/222] Processing: Casey Loring Lawyer PLLC (Conroe ISD)
+14:52:32  WARNING     HTTP 403 for http://www.loringlawyer.com/ — skipping
+14:52:32  INFO      [83/222] Processing: Dossey & Jones, PLLC (Conroe ISD)
+14:52:34  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:34  INFO        -> Irrelevant
+14:52:34  INFO      [84/222] Processing: The Law Office of Jessica Day, PLLC (Conroe ISD)
+14:52:35  INFO        -> Email found: jessica@defendinghtx.com
+14:52:37  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:37  INFO        -> Irrelevant
+14:52:37  INFO      [85/222] Processing: Napier Law Firm (Conroe ISD)
+14:52:39  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:39  INFO        -> Irrelevant
+14:52:40  INFO      [86/222] Processing: Hope & Causey, P.C. (Conroe ISD)
+14:52:41  WARNING     HTTP 403 for https://www.hope-causey.com/ — skipping
+14:52:41  INFO      [87/222] Processing: Raphael Ortega Law PLLC (Conroe ISD)
+14:52:45  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:45  INFO        -> Irrelevant
+14:52:45  INFO      [88/222] Processing: Law Office of Matlak and Morrison (Conroe ISD)
+14:52:48  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:48  INFO        -> Irrelevant
+14:52:48  INFO      [89/222] Processing: The Dyslexia Therapy Center (Conroe ISD)
+14:52:53  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:53  INFO        -> Tutor
+14:52:53  INFO      [90/222] Processing: Diagnostic Learning Services - Woodlands (Conroe ISD)
+14:52:57  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:52:57  INFO        -> Irrelevant
+14:52:57  INFO      [91/222] Processing: Read Frog Dyslexia & Educational Services (Conroe ISD)
+14:53:05  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:53:05  INFO        -> Tutor
+14:53:05  INFO      [92/222] Processing: Sylvan Learning of North Conroe (Conroe ISD)
+14:53:18  WARNING     Scrape attempt 1 failed. Retrying in 2.3s...
+14:53:33  WARNING     Scrape attempt 2 failed. Retrying in 4.4s...
+14:53:50  WARNING     All scrape attempts failed for https://www.sylvanlearning.com/locations/us/tx/conroe-tutoring/conroe?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=8360: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+14:53:50  INFO      [93/222] Processing: Ivey Educational Solutions (Conroe ISD)
+14:53:50  WARNING     Scrape attempt 1 failed. Retrying in 2.8s...
+14:53:52  WARNING     Scrape attempt 2 failed. Retrying in 4.3s...
+14:53:57  WARNING     All scrape attempts failed for http://www.iveyedsolutions.com/: HTTPConnectionPool(host='www.iveyedsolutions.com', port=80): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPConnection(host='www.iveyedsolutions.com', port=80): Failed to resolve 'www.iveyedsolutions.com' ([Errno 11001] getaddrinfo failed)"))
+14:53:57  INFO      [94/222] Processing: Sylvan Learning of The Woodlands and Magnolia (Conroe ISD)
+14:54:09  WARNING     Scrape attempt 1 failed. Retrying in 2.5s...
+14:54:24  WARNING     Scrape attempt 2 failed. Retrying in 4.7s...
+14:54:41  WARNING     All scrape attempts failed for https://www.sylvanlearning.com/locations/us/tx/magnolia-tutoring/the-woodlands-and-magnolia?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=8310: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+14:54:41  INFO      [95/222] Processing: Joy To Learn (Conroe ISD)
+14:54:49  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:54:50  INFO        -> Tutor
+14:54:50  INFO      [96/222] Processing: Bianca’s Private Tutoring (Conroe ISD)
+14:54:55  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:54:55  INFO        -> Tutor
+14:54:56  INFO      [97/222] Processing: AZ Law Firm (Austin ISD)
+14:54:59  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:54:59  INFO        -> Irrelevant
+14:54:59  INFO      [98/222] Processing: The Law Office of Nicole Conger, PLLC (Austin ISD)
+14:55:00  WARNING   Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+14:55:07  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:55:07  INFO        -> Attorney
+14:55:07  INFO      [99/222] Processing: Tully Rinckey PLLC (Austin ISD)
+14:55:09  INFO        -> Email found: info@tullylegal.com
+14:55:10  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:55:10  INFO        -> Irrelevant
+14:55:11  INFO      [100/222] Processing: Bemis, Roach & Reed (Austin ISD)
+14:55:12  WARNING     HTTP 403 for https://www.brrlaw.com/ — skipping
+14:55:12  INFO      [101/222] Processing: The Law Office of Diana E. Buss (Austin ISD)
+14:55:12  WARNING     HTTP 403 for http://www.bussted.com/ — skipping
+14:55:12  INFO      [102/222] Processing: PearlTX-Educational Consultants, Diagnostics and Advocacy (ECDA) (Austin ISD)
+14:55:14  INFO        -> Email found: pearl@pearltx-ecda.com
+14:55:18  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:55:18  INFO        -> Advocate
+14:55:19  INFO      [103/222] Processing: Education Austin (Austin ISD)
+14:55:20  INFO        -> Email found: info@educationaustin.org
+14:55:21  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:55:21  INFO        -> Irrelevant
+14:55:22  INFO      [104/222] Processing: Austin Partners In Education (Austin ISD)
+14:55:24  INFO        -> Email found: info@austinedfund.org
+14:55:26  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:55:26  INFO        -> Irrelevant
+14:55:26  INFO      [105/222] Processing: Austin Learning Solutions (Austin ISD)
+14:55:30  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:55:30  INFO        -> Tutor
+14:55:31  INFO      [106/222] Processing: Austin Learning Center (Austin ISD)
+14:55:36  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:55:36  INFO        -> Tutor
+14:55:37  INFO      [107/222] Processing: Diagnostic Learning Services - Austin (Austin ISD)
+14:55:40  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:55:40  INFO        -> Irrelevant
+14:55:40  INFO      [108/222] Processing: Lindamood-Bell Austin Learning Center (Austin ISD)
+14:55:47  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:55:47  INFO        -> Tutor
+14:55:47  INFO      [109/222] Processing: Hearts and Minds Learning Center (Austin ISD)
+14:55:48  INFO        -> Email found: info@heartsandmindslearningcenter.com
+14:55:53  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:55:53  INFO        -> Tutor
+14:55:54  INFO      [110/222] Processing: Texas Center for Learning Disabilities (Austin ISD)
+14:55:58  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:55:58  INFO        -> Irrelevant
+14:55:58  INFO      [111/222] Processing: Rawson Saunders School (Austin ISD)
+14:55:59  INFO        -> Email found: info@rawsonsaunders.org
+14:56:01  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:01  INFO        -> Irrelevant
+14:56:01  INFO      [112/222] Processing: Rawson Saunders Institute (Austin ISD)
+14:56:03  INFO        -> Email found: institute@rawsonsaunders.org
+14:56:05  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:05  INFO        -> Irrelevant
+14:56:06  INFO      [113/222] Processing: Kelly Decker Law, PLLC (Fort Worth ISD)
+14:56:07  INFO        -> Email found: office@kellydeckerlaw.com
+14:56:09  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:09  INFO        -> Irrelevant
+14:56:09  INFO      [114/222] Processing: McGee Law Firm (Fort Worth ISD)
+14:56:10  WARNING     HTTP 403 for https://mcgeelawdfw.com/ — skipping
+14:56:10  INFO      [115/222] Processing: McDonald Law Firm (Fort Worth ISD)
+14:56:12  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:12  INFO        -> Irrelevant
+14:56:13  INFO      [116/222] Processing: Dale O'Neal Attorneys (Fort Worth ISD)
+14:56:15  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:15  INFO        -> Irrelevant
+14:56:15  INFO      [117/222] Processing: Law Offices of Robert Keating, PLLC (Fort Worth ISD)
+14:56:18  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:18  INFO        -> Irrelevant
+14:56:18  INFO      [118/222] Processing: Cantey Hanger LLP (Fort Worth ISD)
+14:56:20  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:20  INFO        -> Irrelevant
+14:56:21  INFO      [119/222] Processing: Hutchison & Foreman, PLLC (Fort Worth ISD)
+14:56:23  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:23  INFO        -> Irrelevant
+14:56:24  INFO      [120/222] Processing: The Center for Educational Diagnostics & Assessment (Fort Worth ISD)
+14:56:25  INFO        -> Email found: hello@cedatesting.com
+14:56:26  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:26  INFO        -> Irrelevant
+14:56:26  INFO      [121/222] Processing: The Reading Center of Fort Worth (Fort Worth ISD)
+14:56:31  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:31  INFO        -> Tutor
+14:56:31  INFO      [122/222] Processing: Reading Connection (Fort Worth ISD)
+14:56:35  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:35  INFO        -> Tutor
+14:56:36  INFO      [123/222] Processing: Diagnostic Learning Services - Fort Worth (Fort Worth ISD)
+14:56:39  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:39  INFO        -> Irrelevant
+14:56:40  INFO      [124/222] Processing: The Learning Center of North Texas (Fort Worth ISD)
+14:56:42  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:56:42  INFO        -> Irrelevant
+14:56:43  INFO      [125/222] Processing: Sylvan Learning of North Fort Worth (Fort Worth ISD)
+14:56:56  WARNING     Scrape attempt 1 failed. Retrying in 2.6s...
+14:57:12  WARNING     Scrape attempt 2 failed. Retrying in 4.3s...
+14:57:29  WARNING     All scrape attempts failed for https://sylvanlearning.com/locations/us/tx/fort-worth-tutoring/north-fort-worth?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=352: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+14:57:29  INFO      [126/222] Processing: Sylvan Learning of South Fort Worth (Fort Worth ISD)
+14:57:42  WARNING     Scrape attempt 1 failed. Retrying in 2.7s...
+14:57:58  WARNING     Scrape attempt 2 failed. Retrying in 4.2s...
+14:58:16  WARNING     All scrape attempts failed for https://sylvanlearning.com/locations/us/tx/fort-worth-tutoring/south-fort-worth?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=341: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+14:58:16  INFO      [127/222] Processing: Texas Dyslexia Services (Fort Worth ISD)
+14:58:17  INFO      [128/222] Processing: Kids First Dyslexia Services (Fort Worth ISD)
+14:58:19  INFO        -> Email found: info@kidsfirstdyslexia.com
+14:58:23  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:58:23  INFO        -> Tutor
+14:58:24  INFO      [129/222] Processing: LinkED (Fort Worth ISD)
+14:58:26  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:58:26  INFO        -> Irrelevant
+14:58:26  INFO      [130/222] Processing: ProLearning (Fort Worth ISD)
+14:58:28  INFO        -> Email found: info@prolearningservices.com
+14:58:31  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:58:31  INFO        -> Tutor
+14:58:31  INFO      [131/222] Processing: The Ramage Law Group (Frisco ISD)
+14:58:33  WARNING     HTTP 403 for https://www.ramagefamilylawfirm.com/texas/locations/mckinney?utm_source=google&utm_medium=organic&utm_campaign=gbp — skipping
+14:58:33  INFO      [132/222] Processing: D.A.D. Law Firm, P.C. (Frisco ISD)
+14:58:34  INFO        -> Email found: info@webexperts26.work
+14:58:36  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:58:36  INFO        -> Irrelevant
+14:58:36  INFO      [133/222] Processing: Law Office of Adriane S. Grace, PLLC (Frisco ISD)
+14:58:38  INFO        -> Email found: info@gracelawoffice.com
+14:58:39  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:58:39  INFO        -> Irrelevant
+14:58:40  INFO      [134/222] Processing: Hanshaw Kennedy Hafen (Frisco ISD)
+14:58:42  INFO        -> Email found: info@hanshawkennedy.com
+14:58:44  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:58:44  INFO        -> Irrelevant
+14:58:44  INFO      [135/222] Processing: McCathern (Frisco ISD)
+14:58:45  INFO        -> Email found: contact@mccathernlaw.com
+14:58:46  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:58:46  INFO        -> Irrelevant
+14:58:47  INFO      [136/222] Processing: Hogue Barnett, PLLC (Frisco ISD)
+14:58:50  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:58:50  INFO        -> Irrelevant
+14:58:51  INFO      [137/222] Processing: Barbieri Law Firm (Frisco ISD)
+14:58:53  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:58:53  INFO        -> Irrelevant
+14:58:54  INFO      [138/222] Processing: True Education Frisco (Frisco ISD)
+14:58:56  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:58:56  INFO        -> Irrelevant
+14:58:57  INFO      [139/222] Processing: Dyscoveread Dyslexia Services (Frisco ISD)
+14:58:58  INFO        -> Email found: aimeerodenroth@dyscoveread.com
+14:59:02  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:59:02  INFO        -> Tutor
+14:59:02  INFO      [140/222] Processing: The Tutoring Center Frisco Tx (Frisco ISD)
+14:59:08  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:59:08  INFO        -> Tutor
+14:59:09  INFO      [141/222] Processing: Moving Minds Learning Solutions (Frisco ISD)
+14:59:11  INFO        -> Email found: lisa@movingmindslearning.com
+14:59:20  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:59:20  INFO        -> Tutor
+14:59:21  INFO      [142/222] Processing: Huntington Learning Center Frisco (Frisco ISD)
+14:59:22  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/frisco-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+14:59:22  INFO      [143/222] Processing: Eye Level Learning Center - Frisco Central (Frisco ISD)
+14:59:30  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+14:59:30  INFO        -> Tutor
+14:59:31  INFO      [144/222] Processing: Sylvan Learning of Frisco & McKinney (Frisco ISD)
+14:59:45  WARNING     Scrape attempt 1 failed. Retrying in 2.5s...
+15:00:01  WARNING     Scrape attempt 2 failed. Retrying in 4.7s...
+15:00:20  WARNING     All scrape attempts failed for https://sylvanlearning.com/locations/us/tx/frisco-tutoring/frisco-mckinney?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=395: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+15:00:20  INFO      [145/222] Processing: Makris, Dulevitz & Cooper Disability Attorneys (Aldine ISD)
+15:00:21  WARNING     HTTP 403 for https://socialsecuritydisabilitylawyershouston.com/ — skipping
+15:00:21  INFO      [146/222] Processing: Makris Law Firm Houston Disability Lawyers (Aldine ISD)
+15:00:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:00:24  INFO        -> Irrelevant
+15:00:25  INFO      [147/222] Processing: Multisensory Tutorial Center (Aldine ISD)
+15:00:27  INFO        -> Email found: studiouscenter@gmail.com
+15:00:31  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:00:31  INFO        -> Tutor
+15:00:32  INFO      [148/222] Processing: Worlow Tutoring (Aldine ISD)
+15:00:33  WARNING     HTTP 400 for http://www.facebook.com/vwtutoring/ — skipping
+15:00:33  INFO      [149/222] Processing: The Law Offices of George Escobedo (North East ISD)
+15:00:36  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:00:36  INFO        -> Irrelevant
+15:00:37  INFO      [150/222] Processing: Morales Padia Law, P.L.L.C. (North East ISD)
+15:00:40  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:00:40  INFO        -> Irrelevant
+15:00:40  INFO      [151/222] Processing: The Law Office of Nathaniel Gilbert, PLLC (North East ISD)
+15:00:44  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:00:44  INFO        -> Irrelevant
+15:00:44  INFO      [152/222] Processing: Herrman & Herrman, P.L.L.C. (North East ISD)
+15:00:47  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:00:47  INFO        -> Irrelevant
+15:00:48  INFO      [153/222] Processing: PIETRAZEK LAW, PLLC (North East ISD)
+15:00:50  INFO        -> Email found: pzklaw@gmail.com
+15:00:52  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:00:52  INFO        -> Irrelevant
+15:00:52  INFO      [154/222] Processing: Boortz Law Texas (North East ISD)
+15:00:56  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:00:56  INFO        -> Irrelevant
+15:00:57  INFO      [155/222] Processing: The Law Offices of Shann M. Chaudhry, ESQ (North East ISD)
+15:01:00  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:01:00  INFO        -> Irrelevant
+15:01:00  INFO      [156/222] Processing: Sylvan Learning of East San Antonio (North East ISD)
+15:01:14  WARNING     Scrape attempt 1 failed. Retrying in 2.9s...
+15:01:30  WARNING     Scrape attempt 2 failed. Retrying in 4.2s...
+15:02:03  WARNING     All scrape attempts failed for https://sylvanlearning.com/locations/us/tx/san-antonio-tutoring/east-san-antonio?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=363: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+15:02:03  INFO      [157/222] Processing: The Law Office of Jonathan A. Heeps (Arlington ISD)
+15:02:06  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:02:06  INFO        -> Irrelevant
+15:02:07  INFO      [158/222] Processing: Law Firm of Victoriano Rodriguez (Arlington ISD)
+15:02:12  INFO        -> Email found: info@victorianorodriguezlawfirm.com
+15:02:15  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:02:15  INFO        -> Irrelevant
+15:02:16  INFO      [159/222] Processing: Wes Dauphinot Law Firm (Arlington ISD)
+15:02:19  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:02:19  INFO        -> Irrelevant
+15:02:19  INFO      [160/222] Processing: Reyes & Reyes Law Firm, PLLC (Arlington ISD)
+15:02:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:02:24  INFO        -> Irrelevant
+15:02:25  INFO      [161/222] Processing: Allen Roger D (Arlington ISD)
+15:02:26  INFO        -> Email found: roger@rogerdallen.com
+15:02:28  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:02:28  INFO        -> Irrelevant
+15:02:28  INFO      [162/222] Processing: Law Office of Leigh Ann Schenk (Arlington ISD)
+15:02:34  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:02:34  INFO        -> Irrelevant
+15:02:35  INFO      [163/222] Processing: AISD Special Education Department (Arlington ISD)
+15:02:38  INFO        -> Email found: cbrown1@aisd.net
+15:02:39  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:02:39  INFO        -> Irrelevant
+15:02:40  INFO      [164/222] Processing: Kids Read Here Reading Center (Arlington ISD)
+15:02:42  INFO        -> Email found: info@kidsreadhere.com
+15:02:46  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:02:46  INFO        -> Tutor
+15:02:47  INFO      [165/222] Processing: Sylvan Learning of Arlington & Mansfield (Arlington ISD)
+15:03:03  WARNING     Scrape attempt 1 failed. Retrying in 3.0s...
+15:03:21  WARNING     Scrape attempt 2 failed. Retrying in 4.2s...
+15:03:38  WARNING     All scrape attempts failed for https://sylvanlearning.com/locations/us/tx/arlington-tutoring/arlington-mansfield?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=399: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+15:03:38  INFO      [166/222] Processing: Brighter Life Solutions (Arlington ISD)
+15:03:39  INFO        -> Email found: brighterlifesolutionsllc@gmail.com
+15:03:44  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:03:44  INFO        -> Tutor
+15:03:45  INFO      [167/222] Processing: Huntington Learning Center Mansfield (Arlington ISD)
+15:03:45  WARNING     HTTP 403 for https://huntingtonhelps.com/locations/mansfield-tx?utm_medium=organic&utm_campaign=localmaps — skipping
+15:03:45  INFO      [168/222] Processing: Sylvan Learning of West Spring and Klein (Klein ISD)
+15:03:59  WARNING     Scrape attempt 1 failed. Retrying in 2.3s...
+15:04:14  WARNING     Scrape attempt 2 failed. Retrying in 4.6s...
+15:04:32  WARNING     All scrape attempts failed for https://sylvanlearning.com/locations/us/tx/spring-tutoring/west-spring-and-klein?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=310: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+15:04:32  INFO      [169/222] Processing: The Tutoring Center - Tomball, TX (Klein ISD)
+15:04:39  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:04:39  INFO        -> Tutor
+15:04:40  INFO      [170/222] Processing: The Willis Law Group P.L.L.C. (Garland ISD)
+15:04:42  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:04:42  INFO        -> Irrelevant
+15:04:43  INFO      [171/222] Processing: Cao & Associates, P.C. (Garland ISD)
+15:04:45  INFO        -> Email found: info@caoatlaw.com
+15:04:47  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:04:47  INFO        -> Irrelevant
+15:04:47  INFO      [172/222] Processing: EDWARD SALDAÑA, Attorney (Garland ISD)
+15:04:48  WARNING     HTTP 404 for https://saunderswalsh.com/team-member/edward-saldana/ — skipping
+15:04:48  INFO      [173/222] Processing: The Beltz Law Firm (Garland ISD)
+15:04:50  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:04:50  INFO        -> Irrelevant
+15:04:51  INFO      [174/222] Processing: Dyslexia Learning Solutions (Garland ISD)
+15:04:56  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:04:56  INFO        -> Tutor
+15:04:56  INFO      [175/222] Processing: The Tutoring Center Garland (Garland ISD)
+15:05:02  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:05:02  INFO        -> Tutor
+15:05:02  INFO      [176/222] Processing: Diagnostic Learning Services - Plano (Garland ISD)
+15:05:06  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:05:06  INFO        -> Irrelevant
+15:05:07  INFO      [177/222] Processing: Gideon Math and Reading - Garland (Garland ISD)
+15:05:11  INFO        -> Email found: garland@gideonlearning.com
+15:05:16  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:05:16  INFO        -> Tutor
+15:05:16  INFO      [178/222] Processing: Sylvan Learning of Rowlett (Garland ISD)
+15:05:29  WARNING     Scrape attempt 1 failed. Retrying in 2.6s...
+15:05:44  WARNING     Scrape attempt 2 failed. Retrying in 4.3s...
+15:06:00  WARNING     All scrape attempts failed for https://www.sylvanlearning.com/locations/us/tx/rowlett-tutoring/rowlett?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=8337: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+15:06:00  INFO      [179/222] Processing: Blanco Ordoñez Mata & Wechsler, P.C. (El Paso ISD)
+15:06:03  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:06:03  INFO        -> Irrelevant
+15:06:04  INFO      [180/222] Processing: Law Rhinos (El Paso ISD)
+15:06:05  INFO        -> Email found: elpaso@lawrhinos.net
+15:06:06  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:06:06  INFO        -> Irrelevant
+15:06:07  INFO      [181/222] Processing: Spencer Trial Attorneys, P.C. (El Paso ISD)
+15:06:10  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:06:10  INFO        -> Irrelevant
+15:06:10  INFO      [182/222] Processing: Anderson Bright & Associates PC (El Paso ISD)
+15:06:12  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:06:12  INFO        -> Irrelevant
+15:06:13  INFO      [183/222] Processing: Mounce, Green, Myers, Safi, Paxson & Galatzan (El Paso ISD)
+15:06:16  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:06:16  INFO        -> Irrelevant
+15:06:16  INFO      [184/222] Processing: Lopez Molinar & Hirsh PLLC (El Paso ISD)
+15:06:20  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:06:20  INFO        -> Irrelevant
+15:06:20  INFO      [185/222] Processing: Law Offices of Ruben Ortiz, PLLC (El Paso ISD)
+15:06:23  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:06:23  INFO        -> Irrelevant
+15:06:23  INFO      [186/222] Processing: EPISD SPECIAL EDUCATION HEALTH SERVICES CENTER (El Paso ISD)
+15:06:26  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:06:26  INFO        -> Irrelevant
+15:06:26  INFO      [187/222] Processing: Children’s Disabilities Information Coalition (El Paso ISD)
+15:06:27  INFO        -> Email found: info@cdicelpaso.org
+15:06:29  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:06:29  INFO        -> Irrelevant
+15:06:29  INFO      [188/222] Processing: Advocacy Center For Children (El Paso ISD)
+15:06:31  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:06:31  INFO        -> Irrelevant
+15:06:31  INFO      [189/222] Processing: Sylvan Learning of El Paso Eastside (El Paso ISD)
+15:06:45  WARNING     Scrape attempt 1 failed. Retrying in 2.5s...
+15:07:00  WARNING     Scrape attempt 2 failed. Retrying in 4.7s...
+15:07:18  WARNING     All scrape attempts failed for https://sylvanlearning.com/locations/us/tx/el-paso-tutoring/el-paso-eastside?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=348: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+15:07:18  INFO      [190/222] Processing: Sylvan Learning of El Paso Westside (El Paso ISD)
+15:07:31  WARNING     Scrape attempt 1 failed. Retrying in 2.7s...
+15:07:48  WARNING     Scrape attempt 2 failed. Retrying in 4.8s...
+15:08:06  WARNING     All scrape attempts failed for https://sylvanlearning.com/locations/us/tx/el-paso-tutoring/el-paso-westside?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=344: HTTPSConnectionPool(host='www.sylvanlearning.com', port=443): Read timed out. (read timeout=12)
+15:08:06  INFO      [191/222] Processing: Okó Learning Center LLC (El Paso ISD)
+15:08:10  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:08:10  INFO        -> Irrelevant
+15:08:10  INFO      [192/222] Processing: Dynamis Learning Center (El Paso ISD)
+15:08:11  INFO        -> Email found: dynamislearningcenter@gmail.com
+15:08:13  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:08:13  INFO        -> Irrelevant
+15:08:13  INFO      [193/222] Processing: Ysleta Community Learning Center (El Paso ISD)
+15:08:16  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:08:16  INFO        -> Irrelevant
+15:08:16  INFO      [194/222] Processing: Bridges Academy (El Paso ISD)
+15:08:18  INFO        -> Email found: finances@epbridgesacademy.org
+15:08:19  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:08:19  INFO        -> Irrelevant
+15:08:19  INFO      [195/222] Processing: San Jacinto Adult Learning Center (El Paso ISD)
+15:08:22  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:08:22  INFO        -> Irrelevant
+15:08:22  INFO      [196/222] Processing: The Law Offices of Eric G. Ransleben (Lewisville ISD)
+15:08:29  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:08:29  INFO        -> Attorney
+15:08:29  INFO      [197/222] Processing: Chermol & Fishman, LLC - Texas Office (Lewisville ISD)
+15:08:32  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:08:32  INFO        -> Irrelevant
+15:08:33  INFO      [198/222] Processing: The Jimenez Law Firm, P.C. (Lewisville ISD)
+15:08:35  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:08:35  INFO        -> Irrelevant
+15:08:36  INFO      [199/222] Processing: David S. Kohm & Associates (Lewisville ISD)
+15:08:40  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:08:40  INFO        -> Irrelevant
+15:08:41  INFO      [200/222] Processing: Gehi & Associates - Free Consultation (Lewisville ISD)
+15:08:43  WARNING     HTTP 403 for https://gehilaw.com/gehilawtexas/ — skipping
+15:08:43  INFO      [201/222] Processing: Texas Center for Educational Testing-TxCet LLC (Lewisville ISD)
+15:08:49  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:08:49  INFO        -> Irrelevant
+15:08:49  INFO      [202/222] Processing: Reading Ranch Lewisville (Lewisville ISD)
+15:08:57  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:08:57  INFO        -> Tutor
+15:08:57  INFO      [203/222] Processing: Lewisville ISD Learning Center (Lewisville ISD)
+15:09:06  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:09:06  INFO        -> Irrelevant
+15:09:06  INFO      [204/222] Processing: Reading Ranch Frisco - Reading Tutoring (Lewisville ISD)
+15:09:13  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:09:13  INFO        -> Tutor
+15:09:13  INFO      [205/222] Processing: Weeks Law Firm (Plano ISD)
+15:09:15  WARNING     HTTP 403 for https://weekslawfirm.com/?utm_source=Google&utm_medium=Local&utm_campaign=GMB — skipping
+15:09:15  INFO      [206/222] Processing: Lizardo Law Firm (Plano ISD)
+15:09:21  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:09:21  INFO        -> Irrelevant
+15:09:22  INFO      [207/222] Processing: Brad Thomas Disability PLLC (Plano ISD)
+15:09:25  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:09:25  INFO        -> Irrelevant
+15:09:25  INFO      [208/222] Processing: DLL-Law Group (Plano ISD)
+15:09:28  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:09:28  INFO        -> Irrelevant
+15:09:28  INFO      [209/222] Processing: Wilder Law Firm (Plano ISD)
+15:09:32  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:09:32  INFO        -> Irrelevant
+15:09:32  INFO      [210/222] Processing: Dunham & Jones (Plano ISD)
+15:09:35  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:09:35  INFO        -> Irrelevant
+15:09:35  INFO      [211/222] Processing: The Tutoring Center (Plano ISD)
+15:09:41  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:09:41  INFO        -> Tutor
+15:09:41  INFO      [212/222] Processing: Reading Ranch Plano - Reading Tutoring (Plano ISD)
+15:09:51  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:09:51  INFO        -> Tutor
+15:09:51  INFO      [213/222] Processing: Eye Level Learning Center Plano Central (Plano ISD)
+15:09:58  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:09:58  INFO        -> Tutor
+15:09:59  INFO      [214/222] Processing: Ghuneim Law Firm (Pasadena ISD)
+15:10:01  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:10:01  INFO        -> Irrelevant
+15:10:02  INFO      [215/222] Processing: Law Office Of Daniel Corno (Pasadena ISD)
+15:10:10  INFO        -> Email found: cornofamilylaw@yahoo.com
+15:10:11  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:10:11  INFO        -> Irrelevant
+15:10:11  INFO      [216/222] Processing: Glover, Shari L - (Giddens & Burns Building) (Pasadena ISD)
+15:10:12  INFO        -> Email found: slglover@aol.com
+15:10:14  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:10:14  INFO        -> Irrelevant
+15:10:15  INFO      [217/222] Processing: Shane Pellerin Law Firm (Pasadena ISD)
+15:10:18  INFO        -> Email found: shane@pellerinlawfirm.com
+15:10:19  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:10:19  INFO        -> Irrelevant
+15:10:20  INFO      [218/222] Processing: Law Office of Hollie Hale (Pasadena ISD)
+15:10:24  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:10:24  INFO        -> Irrelevant
+15:10:25  INFO      [219/222] Processing: Schechter, Shaffer & Harris, LLP (Pasadena ISD)
+15:10:27  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:10:27  INFO        -> Irrelevant
+15:10:28  INFO      [220/222] Processing: Bay Area Learning Center (Pasadena ISD)
+15:10:32  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:10:33  INFO        -> Tutor
+15:10:33  INFO      [221/222] Processing: Irlen Clinic Krist Samaritan Center (Pasadena ISD)
+15:10:36  INFO        -> Email found: jyaxley@samaritanhouston.org
+15:10:37  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:10:37  INFO        -> Irrelevant
+15:10:38  INFO      [222/222] Processing: The Tutoring Center, Friendswood TX (Pasadena ISD)
+15:10:43  INFO      HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+15:10:43  INFO        -> Tutor
+15:10:43  INFO      
+15:10:43  INFO      ==================================================
+15:10:43  INFO        Total input    : 222
+15:10:43  INFO        Unique leads   : 222
+15:10:43  INFO        Processed      : 187
+15:10:43  INFO        Skipped        : 0
+15:10:43  INFO        Scrape failed  : 35
+15:10:43  INFO        Output         : texas_leads_ready_to_send.csv
+15:10:43  INFO      ==================================================
