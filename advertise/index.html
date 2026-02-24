@@ -112,20 +112,59 @@
   .page-tabs { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
   .page-tab { padding: 5px 10px; border-radius: 20px; font-size: 10px; font-weight: 500; cursor: pointer; border: 1px solid var(--border); background: white; color: var(--muted); transition: all 0.2s; }
   .page-tab.active { background: var(--navy); color: white; border-color: var(--navy); }
-  .mock-page { background: white; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; font-size: 11px; box-shadow: var(--shadow); }
-  .mock-bar { background: var(--navy); padding: 8px 12px; display: flex; align-items: center; gap: 8px; }
-  .mock-dot { width: 8px; height: 8px; border-radius: 50%; }
-  .mock-bar-label { color: rgba(255,255,255,0.5); font-size: 10px; margin-left: auto; }
-  .mock-body { padding: 14px; }
-  .mock-h1 { height: 10px; background: var(--navy); border-radius: 3px; width: 55%; margin-bottom: 8px; opacity: 0.15; }
-  .mock-para { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 5px; }
-  .mock-para.w80 { width: 80%; } .mock-para.w65 { width: 65%; } .mock-para.w90 { width: 90%; }
-  .ad-slot { border: 2px dashed var(--border); border-radius: 6px; padding: 8px 10px; margin: 10px 0; text-align: center; font-size: 10px; color: var(--muted); transition: all 0.3s; }
-  .ad-slot.lit { border-color: var(--teal); background: rgba(13,138,122,0.06); color: var(--teal); font-weight: 600; }
-  .ad-slot.hero-lit { border-color: var(--amber); background: rgba(232,148,42,0.08); color: #b36a0e; font-weight: 600; border-width: 2.5px; padding: 14px 10px; }
+
+  .mock-page { background: #f5f5f0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-lg); font-family: 'DM Sans', sans-serif; }
+  .mock-chrome { background: #e8e8e8; padding: 7px 12px; display: flex; align-items: center; gap: 6px; border-bottom: 1px solid #d0d0d0; }
+  .mock-dot { width: 9px; height: 9px; border-radius: 50%; }
+  .mock-url-bar { flex: 1; background: white; border-radius: 4px; padding: 3px 10px; font-size: 9px; color: #666; border: 1px solid #d0d0d0; margin: 0 8px; }
+  .mock-nav { background: #1a2744; padding: 0 16px; display: flex; align-items: center; justify-content: space-between; height: 38px; }
+  .mock-logo { display: flex; align-items: center; gap: 6px; }
+  .mock-logo-mark { width: 20px; height: 20px; background: #0d8a7a; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 10px; color: white; font-weight: 700; }
+  .mock-logo-text { color: white; font-size: 10px; font-weight: 600; }
+  .mock-nav-links { display: flex; gap: 12px; align-items: center; }
+  .mock-nav-link { color: rgba(255,255,255,0.6); font-size: 8.5px; }
+  .mock-nav-cta { background: #0d8a7a; color: white; font-size: 8px; font-weight: 700; padding: 4px 9px; border-radius: 3px; }
+  .mock-breadcrumb { background: #f0ede8; padding: 5px 16px; font-size: 8.5px; color: #aaa; border-bottom: 1px solid #e0ddd6; }
+  .mock-breadcrumb span { color: #1a2744; }
+  .mock-page-hero { background: #1a2744; padding: 14px 16px; }
+  .mock-page-hero-label { font-size: 7.5px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.45); margin-bottom: 3px; }
+  .mock-page-hero-h1 { color: white; font-size: 14px; font-weight: 700; margin-bottom: 3px; font-family: 'Playfair Display', serif; }
+  .mock-page-hero-sub { font-size: 8.5px; color: rgba(255,255,255,0.55); }
+  .mock-partners-hero-slot { margin: 10px; border-radius: 6px; overflow: hidden; border: 2px solid #e0ddd6; background: white; transition: all 0.3s; }
+  .mock-partners-hero-slot.hero-lit { border-color: var(--amber); box-shadow: 0 0 0 3px rgba(232,148,42,0.18); }
+  .mock-partners-hero-inner { padding: 11px 13px; }
+  .mock-hero-badge { display: inline-block; background: #e8942a; color: white; font-size: 7.5px; font-weight: 700; padding: 2px 6px; border-radius: 3px; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .mock-ad-firm-name { font-size: 12px; font-weight: 700; color: #1a2744; }
+  .mock-ad-tagline { font-size: 8.5px; color: #666; margin: 2px 0; }
+  .mock-ad-bullets { margin: 4px 0; }
+  .mock-ad-bullets li { font-size: 8.5px; color: #333; list-style: disc; margin-left: 13px; margin-bottom: 2px; }
+  .mock-ad-cta { display: inline-block; background: #0d8a7a; color: white; font-size: 8px; font-weight: 700; padding: 4px 9px; border-radius: 3px; margin-top: 4px; }
+  .mock-section-label { font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #aaa; margin: 8px 10px 5px; }
+  .mock-dir-card { margin: 0 10px 5px; padding: 8px 10px; background: white; border-radius: 4px; border: 1px solid #e0ddd6; display: flex; justify-content: space-between; align-items: center; transition: all 0.3s; }
+  .mock-dir-card.lit { border-color: var(--teal); background: rgba(13,138,122,0.03); }
+  .mock-dir-name { font-size: 9px; font-weight: 600; color: #1a2744; }
+  .mock-dir-detail { font-size: 7.5px; color: #aaa; margin-top: 1px; }
+  .mock-dir-phone { font-size: 8px; color: #0d8a7a; font-weight: 600; }
+  .mock-you-badge { font-size: 7px; background: var(--teal); color: white; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
+  .mock-unlit-ph { height: 6px; background: #e8e8e8; border-radius: 2px; margin: 3px 0; }
+  .mock-content-wrap { padding: 12px 14px 14px; }
+  .mock-content-h2 { font-size: 11px; font-weight: 700; color: #1a2744; margin-bottom: 7px; }
+  .mock-content-para { background: #e2e2e2; border-radius: 2px; height: 6px; margin-bottom: 4px; }
+  .mock-content-para.w100 { width: 100%; }
+  .mock-content-para.w85 { width: 85%; }
+  .mock-content-para.w70 { width: 70%; }
+  .mock-content-para.w90 { width: 90%; }
+  .mock-inline-ad { margin: 10px 0; border-radius: 5px; border: 2px dashed #d0d0d0; background: #fafafa; padding: 9px 11px; transition: all 0.3s; }
+  .mock-inline-ad.lit { border-style: solid; border-color: var(--teal); background: white; box-shadow: 0 2px 12px rgba(13,138,122,0.12); }
+  .mock-inline-ad-label { font-size: 7.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #ccc; margin-bottom: 3px; }
+  .mock-inline-ad-label.lit-label { color: var(--teal); }
+  .mock-inline-ad-firm { font-size: 10px; font-weight: 700; color: #1a2744; }
+  .mock-inline-ad-tagline { font-size: 8px; color: #666; margin: 2px 0 4px; }
+  .mock-inline-ad-cta { display: inline-block; background: #0d8a7a; color: white; font-size: 7.5px; font-weight: 700; padding: 3px 8px; border-radius: 3px; }
+  .mock-inline-ad-empty { font-size: 8px; color: #ccc; text-align: center; padding: 6px 0; }
+  .preview-note { font-size: 12px; color: var(--muted); margin-top: 12px; line-height: 1.5; }
   .slot-badge { display: inline-block; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 6px; border-radius: 3px; background: var(--teal); color: white; margin-bottom: 3px; }
   .slot-badge.hero { background: var(--amber); }
-  .preview-note { font-size: 12px; color: var(--muted); margin-top: 12px; line-height: 1.5; }
 
   /* INTAKE FORM */
   .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
@@ -409,13 +448,26 @@
     <div class="preview-label">Ad Placement Preview</div>
     <div class="page-tabs" id="page-tabs"></div>
     <div class="mock-page">
-      <div class="mock-bar">
+      <div class="mock-chrome">
         <div class="mock-dot" style="background:#ff5f57"></div>
         <div class="mock-dot" style="background:#ffbd2e"></div>
         <div class="mock-dot" style="background:#28c840"></div>
-        <span class="mock-bar-label" id="mock-url">txspecialed.com</span>
+        <div class="mock-url-bar" id="mock-url">txspecialed.com</div>
       </div>
-      <div class="mock-body" id="mock-body"></div>
+      <div class="mock-nav">
+        <div class="mock-logo">
+          <div class="mock-logo-mark">T</div>
+          <span class="mock-logo-text">Texas Special Ed</span>
+        </div>
+        <div class="mock-nav-links">
+          <span class="mock-nav-link">Home</span>
+          <span class="mock-nav-link">Districts</span>
+          <span class="mock-nav-link">Resources</span>
+          <span class="mock-nav-link">Blog</span>
+          <span class="mock-nav-cta">Free ARD Checklist</span>
+        </div>
+      </div>
+      <div id="mock-body"></div>
     </div>
     <div class="preview-note" id="preview-note"></div>
   </div>
@@ -528,22 +580,21 @@
 <script>
 const state = { district:'', districtLabel:'', orgType:'', tier:1, billing:'monthly' };
 
-// ── REPLACE THESE WITH YOUR ACTUAL STRIPE PAYMENT LINKS ──
 const stripeLinks = {
   attorney: {
-    1: { monthly:'#stripe-attorney-t1-mo', annual:'#stripe-attorney-t1-yr' },
-    2: { monthly:'#stripe-attorney-t2-mo', annual:'#stripe-attorney-t2-yr' },
-    3: { monthly:'#stripe-attorney-t3-mo', annual:'#stripe-attorney-t3-yr' },
+    1: { monthly:'https://buy.stripe.com/dRm3cu4O15HWaSbcGVbbG0U', annual:'mailto:hello@txspecialed.com?subject=Annual%20Plan%20-%20Attorney%20Tier%201' },
+    2: { monthly:'https://buy.stripe.com/9B63cubcpees2lFeP3bbG0T', annual:'mailto:hello@txspecialed.com?subject=Annual%20Plan%20-%20Attorney%20Tier%202' },
+    3: { monthly:'https://buy.stripe.com/28EfZgeoBgmA6BV8qFbbG0S', annual:'mailto:hello@txspecialed.com?subject=Annual%20Plan%20-%20Attorney%20Tier%203' },
   },
   advocate: {
-    1: { monthly:'#stripe-advocate-t1-mo', annual:'#stripe-advocate-t1-yr' },
-    2: { monthly:'#stripe-advocate-t2-mo', annual:'#stripe-advocate-t2-yr' },
-    3: { monthly:'#stripe-advocate-t3-mo', annual:'#stripe-advocate-t3-yr' },
+    1: { monthly:'https://buy.stripe.com/00w4gya8lb2gbWf9uJbbG0R', annual:'mailto:hello@txspecialed.com?subject=Annual%20Plan%20-%20Advocate%20Tier%201' },
+    2: { monthly:'https://buy.stripe.com/28E3cu80ddaoaSbfT7bbG0Q', annual:'mailto:hello@txspecialed.com?subject=Annual%20Plan%20-%20Advocate%20Tier%202' },
+    3: { monthly:'https://buy.stripe.com/cNi8wO1BP8U80dx6ixbbG0P', annual:'mailto:hello@txspecialed.com?subject=Annual%20Plan%20-%20Advocate%20Tier%203' },
   },
   tutor: {
-    1: { monthly:'#stripe-tutor-t1-mo', annual:'#stripe-tutor-t1-yr' },
-    2: { monthly:'#stripe-tutor-t2-mo', annual:'#stripe-tutor-t2-yr' },
-    3: { monthly:'#stripe-tutor-t3-mo', annual:'#stripe-tutor-t3-yr' },
+    1: { monthly:'https://buy.stripe.com/14AfZg4O1ees8K39uJbbG0O', annual:'mailto:hello@txspecialed.com?subject=Annual%20Plan%20-%20Tutor%20Tier%201' },
+    2: { monthly:'https://buy.stripe.com/4gM9ASdkx3zOd0j22hbbG0N', annual:'mailto:hello@txspecialed.com?subject=Annual%20Plan%20-%20Tutor%20Tier%202' },
+    3: { monthly:'https://buy.stripe.com/6oU8wO5S5ees9O7cGVbbG0M', annual:'mailto:hello@txspecialed.com?subject=Annual%20Plan%20-%20Tutor%20Tier%203' },
   },
 };
 
@@ -731,28 +782,127 @@ function renderMockPage(idx) {
   if (!pages) return;
   const page = pages[idx];
   document.getElementById('mock-url').textContent = 'txspecialed.com / ' + page.slug;
-  let html = `<div class="mock-h1"></div><div class="mock-para w90"></div><div class="mock-para w80"></div>`;
-  const hero = page.slots.find(s => s.type==='hero');
-  if (hero) {
-    const lit = hero.tiers.includes(state.tier);
-    html += `<div class="ad-slot ${lit?'hero-lit':''}">
-      ${lit?`<div class="slot-badge hero">★ Your Hero Box</div><br>${hero.label}`:'[ Hero slot — '+hero.label+' ]'}
+
+  const orgLabels = { attorney:'Special Education Attorneys', advocate:'Educational Advocates', tutor:'Tutors & Learning Centers' };
+  const pageTitles = {
+    'partners': 'Find Local Special Education Support',
+    'grievance-dispute': 'Grievance & Dispute Resolution',
+    'ard-process-guide': 'The ARD Meeting Process — A Parent\'s Guide',
+    'evaluation-child-find': 'Requesting a Special Education Evaluation',
+    'dyslexia-services': 'Dyslexia Services & Structured Literacy',
+    'district-index': 'Special Education Resources in Your District',
+  };
+  const pageSubtitles = {
+    'partners': 'Attorneys, advocates, and specialists serving families in your district',
+    'grievance-dispute': 'What to do when you and the district disagree',
+    'ard-process-guide': 'Everything you need to know before you walk into that room',
+    'evaluation-child-find': 'How to formally request that your child be evaluated for services',
+    'dyslexia-services': 'Local programs, therapists, and schools for students with dyslexia',
+    'district-index': 'ARD guides, evaluation info, dispute resolution, and local professionals',
+  };
+
+  const heroSlot = page.slots.find(s => s.type==='hero');
+  const contentSlots = page.slots.filter(s => s.type!=='hero');
+  const heroLit = heroSlot && heroSlot.tiers.includes(state.tier);
+
+  let html = `
+    <div class="mock-breadcrumb">Home › Districts › <span>${state.districtLabel||'Your District'}</span></div>
+    <div class="mock-page-hero">
+      <div class="mock-page-hero-label">${state.districtLabel||'Your District'} Special Education Resources</div>
+      <div class="mock-page-hero-h1">${pageTitles[page.slug]||page.label}</div>
+      <div class="mock-page-hero-sub">${pageSubtitles[page.slug]||''}</div>
     </div>`;
+
+  if (page.slug === 'partners') {
+    // Partners page — show hero box then directory cards
+    html += `<div class="mock-partners-hero-slot ${heroLit?'hero-lit':''}">
+      <div class="mock-partners-hero-inner">
+        ${heroLit ? `<div class="mock-hero-badge">★ District Exclusive Partner</div>` : `<div style="font-size:9px;color:#ccc;text-align:center;padding:4px 0">[ Hero partner slot — Tier 3 only ]</div>`}
+        ${heroLit ? `
+          <div class="mock-ad-firm-name">Your Firm Name</div>
+          <div class="mock-ad-tagline">Your headline appears here — seen by every parent who visits this page</div>
+          <ul class="mock-ad-bullets"><li>Practice area or credential</li><li>Languages spoken</li><li>Free consultation</li></ul>
+          <span class="mock-ad-cta">Contact Us →</span>
+        ` : ''}
+      </div>
+    </div>`;
+
+    const dirLit = contentSlots.length > 0 && contentSlots[0].tiers.includes(state.tier);
+    html += `<div class="mock-section-label">${orgLabels[state.orgType]}</div>`;
+    // Show "your card" + 2 placeholder cards
+    if (dirLit) {
+      html += `<div class="mock-dir-card lit">
+        <div><div class="mock-dir-name">Your Business Name <span class="mock-you-badge">YOUR AD</span></div><div class="mock-dir-detail">Specialty · District</div></div>
+        <div class="mock-dir-phone">(555) 000-0000</div>
+      </div>`;
+    }
+    html += `<div class="mock-dir-card"><div><div class="mock-unlit-ph" style="width:120px"></div><div class="mock-unlit-ph" style="width:80px;margin-top:4px"></div></div><div class="mock-unlit-ph" style="width:70px"></div></div>`;
+    html += `<div class="mock-dir-card"><div><div class="mock-unlit-ph" style="width:100px"></div><div class="mock-unlit-ph" style="width:90px;margin-top:4px"></div></div><div class="mock-unlit-ph" style="width:70px"></div></div>`;
+    if (!dirLit) {
+      html += `<div style="font-size:9px;color:#bbb;text-align:center;padding:6px 10px 10px">[ Your card appears here for Tier 1, 2, and 3 ]</div>`;
+    }
+    html += `<div style="height:8px"></div>`;
+
+  } else {
+    // Content pages — article with inline ad slot
+
+    const contentIntros = {
+      'grievance-dispute': { h:'What Are Your Options When You Disagree?', p:'If your child has been suspended, denied services, or had their IEP violated, Texas law gives you the right to challenge the district. Most parents start by requesting a meeting — but if that fails, formal options include TEA complaints and due process hearings. An experienced special education attorney can make a significant difference in the outcome.' },
+      'ard-process-guide': { h:'What Happens at an ARD Meeting?', p:'An ARD meeting is where your child\'s IEP is created, reviewed, and updated. You are a required member of the committee — not just an observer. Before you walk in, request all evaluation reports at least 5 days in advance. You have the right to disagree with any part of the proposed IEP, and many parents bring an advocate or attorney to ensure their child\'s needs are fully addressed.' },
+      'evaluation-child-find': { h:'How to Request a Free Evaluation', p:'If you believe your child has a learning disability, ADHD, or other condition affecting their education, you can request a free Full Individual Initial Evaluation (FIIE) from the district at any time — in writing. The district has 15 school days to respond. An independent advocate can help you ensure the evaluation covers everything it should.' },
+      'dyslexia-services': { h:'What Texas Law Requires for Dyslexia', p:'Every Texas district is required to screen students for dyslexia starting in kindergarten. If your child shows characteristics, they must be referred for a full assessment. Students identified with dyslexia are entitled to structured literacy intervention. Many families supplement school programs with private tutoring from a certified structured literacy specialist for faster progress.' },
+      'district-index': { h:'Navigating Special Education in Your District', p:'This guide covers everything families need — from requesting an evaluation to preparing for ARD meetings, understanding your rights when you disagree, and finding local professionals who can help. Use the links below to explore each topic, or visit our Partners page to find attorneys, advocates, and learning specialists who serve this district.' },
+    };
+    const content = contentIntros[page.slug] || { h:'Parent Rights & Resources', p:'This page helps Texas parents understand their rights and options in the special education system...' };
+
+    html += `<div class="mock-content-wrap">
+      <div class="mock-content-h2">${content.h}</div>
+      <div style="font-size:8.5px;color:#444;line-height:1.6;margin-bottom:10px">${content.p}</div>`;
+
+    // Render each content slot
+    contentSlots.forEach((slot, i) => {
+      const lit = slot.tiers.includes(state.tier);
+      if (i > 0) {
+        html += `<div class="mock-content-para w100" style="margin-top:8px"></div>
+        <div class="mock-content-para w90"></div>
+        <div class="mock-content-para w85"></div>`;
+      }
+      if (lit) {
+        html += `<div class="mock-inline-ad lit">
+          <div class="mock-inline-ad-label lit-label">✓ Your Ad — Seen right here, in context</div>
+          <div class="mock-inline-ad-firm">Your Business Name</div>
+          <div class="mock-inline-ad-tagline">Your headline — exactly when the parent is ready to make a call</div>
+          <span class="mock-inline-ad-cta">Contact Us →</span>
+        </div>`;
+      } else {
+        html += `<div class="mock-inline-ad">
+          <div class="mock-inline-ad-label">Ad slot not included in your current tier</div>
+          <div class="mock-inline-ad-empty">Upgrade to place your business here</div>
+        </div>`;
+      }
+      html += `<div class="mock-content-para w100"></div>
+      <div class="mock-content-para w90"></div>
+      <div class="mock-content-para w85"></div>
+      <div class="mock-content-para w70"></div>`;
+    });
+    html += `</div>`;
   }
-  html += `<div class="mock-para w65"></div><div class="mock-para w90"></div>`;
-  page.slots.filter(s=>s.type!=='hero').forEach(s => {
-    const lit = s.tiers.includes(state.tier);
-    html += `<div class="mock-para w80"></div><div class="mock-para w65"></div>`;
-    html += `<div class="ad-slot ${lit?'lit':''}">
-      ${lit?`<div class="slot-badge">✓ Your Ad</div><br>${s.label}`:'[ Ad slot — '+s.label+' ]'}
-    </div>`;
-    html += `<div class="mock-para w90"></div>`;
-  });
+
   document.getElementById('mock-body').innerHTML = html;
+
   const litCount = page.slots.filter(s=>s.tiers.includes(state.tier)).length;
-  document.getElementById('preview-note').textContent = litCount > 0
-    ? `✓ Your Tier ${state.tier} includes ${litCount} active placement${litCount>1?'s':''} on this page.`
-    : `Your current tier does not include this page. Upgrade to unlock it.`;
+  const intentMap = {
+    'grievance-dispute': 'Parents on this page are in active crisis — facing suspension or service denial. The highest-intent audience on the site.',
+    'ard-process-guide': 'Parents here are 2–3 weeks from an ARD meeting and actively looking for help navigating it.',
+    'evaluation-child-find': 'Parents here just realized something may be wrong. They\'re in early research mode and open to guidance.',
+    'dyslexia-services': 'Parents here are actively seeking reading intervention. High motivation, ready to act.',
+    'partners': 'Every parent who uses this site eventually lands on the Partners page looking for local professionals.',
+    'district-index': 'The entry point for the entire district — every parent who finds the site lands here first.',
+  };
+  const intentNote = intentMap[page.slug] || '';
+  document.getElementById('preview-note').innerHTML = litCount > 0
+    ? `<strong style="color:#1a2744">✓ Your Tier ${state.tier} includes ${litCount} active placement${litCount>1?'s':''} on this page.</strong>${intentNote ? ' <span style="color:#6b6b80">'+intentNote+'</span>' : ''}`
+    : `<span style="color:#6b6b80">Your current tier does not include a placement on this page. Upgrade your tier to unlock it.</span>`;
 }
 
 function updatePreview() {
