@@ -130,3 +130,20 @@ main {
 }
 
 .footer-column {}  /* no special styles needed, grid handles it */
+/* =========================================================
+   UX AUDIT FIX: Contrast & Readability for Guide Pages
+   ========================================================= */
+main, .guide-content, .district-content, .content-section {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+}
+
+main a, .guide-content a, .district-content a {
+    color: #0056b3 !important; /* Accessible high-contrast blue */
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+main h1, main h2, main h3, .guide-content h1, .guide-content h2 {
+    color: #111827 !important; 
+}
