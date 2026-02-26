@@ -54,12 +54,22 @@ main {
     border-radius: 8px;
 }
 
-.navbar {
+/* =========================================
+   GLOBAL HEADER ARCHITECTURE
+   ========================================= */
+.site-header {
     background-color: var(--bg-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 9999;
+}
+
+.navbar {
+    /* Removed sticky constraints from the inner element */
+    background-color: transparent;
+    box-shadow: none;
+    position: relative; 
 }
 
 /* =========================================================
@@ -779,7 +789,7 @@ main h3,
     border-bottom: 1px solid var(--border-color);
     padding: 16px 24px;
     position: sticky;
-    top: 65px; /* Sits exactly below sticky navbar */
+    top: 84px; /* Docks perfectly under the ~84px tall site-header */
     z-index: 100;
     box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }
@@ -1131,7 +1141,10 @@ main h3,
    ========================================= */
 @media (max-width: 900px) {
     /* ... (keep your existing mobile nav css here) ... */
-    
+    /* Mobile Overrides */
+    .controls-bar { 
+        top: 72px; /* Mobile headers render slightly shorter due to hamburger padding */ 
+    }
     /* Corrected Mobile Footer Targeting */
     .footer-container { 
         grid-template-columns: 1fr; 
