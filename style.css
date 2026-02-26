@@ -1461,16 +1461,52 @@ main h3,
     display: flex; align-items: center; justify-content: center; color: #cbd5e1; flex-shrink: 0;
 }
 
-/* Call to Action Trust Override */
-.trust-section { background: var(--primary-color); padding: 64px 24px; text-align: center; border-radius: 12px; margin: 64px 0; }
-.trust-section h2 span { background: transparent !important; color: #ffffff !important; font-size: 2rem !important; box-shadow: none !important; padding: 0 !important; font-family: 'Playfair Display', serif;}
-.trust-section p span { background: transparent !important; color: rgba(255,255,255,0.9) !important; font-size: 1.125rem !important; box-shadow: none !important; padding: 0 !important; line-height: 1.6;}
-.trust-section a { 
-    display: inline-block; border: 2px solid #ffffff !important; 
-    color: var(--primary-color) !important; background: #ffffff !important; 
-    padding: 14px 32px !important; border-radius: 99px !important; font-weight: 700; transition: all 0.2s ease; 
+/* =========================================
+   CALL TO ACTION TRUST OVERRIDE
+   ========================================= */
+.trust-section { 
+    background-color: #0056b3 !important; /* Explicit deep blue */
+    padding: 64px 24px; 
+    text-align: center; 
+    border-radius: 12px; 
+    margin: 64px 0; 
 }
-.trust-section a:hover { background: transparent !important; color: #ffffff !important; }
+
+.trust-section h2 span { 
+    background: transparent !important; 
+    color: #ffffff !important; 
+    font-size: 2rem !important; 
+    box-shadow: none !important; 
+    padding: 0 !important; 
+    font-family: 'Playfair Display', serif;
+}
+
+.trust-section p span { 
+    background: transparent !important; 
+    color: rgba(255,255,255,0.9) !important; 
+    font-size: 1.125rem !important; 
+    box-shadow: none !important; 
+    padding: 0 !important; 
+    line-height: 1.6;
+}
+
+/* Hardcoded high-contrast button */
+.trust-section a { 
+    display: inline-block; 
+    border: 2px solid #ffffff !important; 
+    color: #0056b3 !important; /* Explicit deep blue text */
+    background-color: #ffffff !important; /* Explicit white background */
+    padding: 14px 32px !important; 
+    border-radius: 99px !important; 
+    font-weight: 700; 
+    transition: all 0.2s ease; 
+    text-decoration: none !important; 
+}
+
+.trust-section a:hover { 
+    background-color: transparent !important; 
+    color: #ffffff !important; /* White text on hover */
+}
 
 /* Free Resource Banners */
 .free-resources-section { margin: 64px 0; }
