@@ -339,7 +339,7 @@ def fetch_local_resources(district: dict, retries: int = CONFIG["MAX_RETRIES"]) 
             )
             raw = response.text.strip()
             # strip accidental markdown code fences
-            raw = re.sub(r"```(?:json)?", "", raw).strip().rstrip("`").strip()
+            raw = re.sub(r"(?:json)?", "", raw).strip().rstrip("`").strip()
             resources = json.loads(raw)
             if isinstance(resources, list):
                 return resources

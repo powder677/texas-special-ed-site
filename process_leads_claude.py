@@ -240,8 +240,8 @@ def analyze_and_draft(client, business_name: str, district: str, website_text: s
             raw = message.content[0].text.strip()
 
             # Strip markdown fences if present
-            if raw.startswith("```"):
-                raw = raw.split("```")[1]
+            if raw.startswith(""):
+                raw = raw.split("")[1]
                 if raw.startswith("json"):
                     raw = raw[4:]
                 raw = raw.strip()
