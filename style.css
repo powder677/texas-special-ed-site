@@ -1848,31 +1848,37 @@ main h3,
    ========================================= */
 @media (max-width: 900px) {
     /* ... (keep your existing mobile nav css here) ... */
+    
     /* Mobile Overrides */
     .controls-bar { 
         top: 72px; /* Mobile headers render slightly shorter due to hamburger padding */ 
     }
+    
    /* Mobile Overrides for Resources */
     .resources-hero { padding: 48px 24px; }
     .resource-card-full { padding: 24px; }
     .aeo-faq-container { padding: 48px 24px; }
+    
    /* Mobile Ad Box */
     .featured-ad-container { padding: 32px 24px 24px; }
     .ad-badge { left: 24px; }
     .btn-ad { display: block; text-align: center; }
+    
     /* Corrected Mobile Footer Targeting */
     .footer-container { 
         grid-template-columns: 1fr; 
         gap: 32px; 
-     /* Mobile Landing Page Adjustments */
+    } /* <--- Fixed missing bracket */
+    
+    /* Mobile Landing Page Adjustments */
     .hero { padding: 48px 24px; }
     .hero h1 { font-size: 2.25rem; }
     .hero p { font-size: 1.125rem; }
     .hero-ctas { flex-direction: column; width: 100%; }
-    .btn-hero-primary, .btn-hero-secondary { width: 100%; text-align: center; }
+    .btn-hero-primary, 
+    .btn-hero-secondary { width: 100%; text-align: center; }
     
     .section { padding: 48px 24px; }
     .newsletter-form { flex-direction: column; }
     .newsletter-form button { width: 100%; }  
-    }
 }
