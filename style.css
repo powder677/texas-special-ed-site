@@ -1522,6 +1522,170 @@ main h3,
 
 .free-banner-body { background: #ffffff; padding: 24px; display: flex; flex-direction: column; gap: 16px; border: 1px solid var(--border-color); border-top: none; border-radius: 0 0 12px 12px; }
 /* =========================================
+   FREE RESOURCES HUB COMPONENTS
+   ========================================= */
+.breadcrumb {
+    padding: 16px 24px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.resources-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #002868 100%);
+    color: #ffffff;
+    padding: 64px 24px;
+    text-align: center;
+}
+
+.resources-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #ffffff;
+    margin-bottom: 16px;
+    margin-top: 0 !important;
+}
+
+.resources-hero .lead {
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+/* Resource Grid & Cards */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.resource-card-full {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.resource-card-full:hover {
+    box-shadow: 0 12px 24px rgba(10, 61, 107, 0.12);
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+}
+
+.resource-card-full h3 {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    margin-top: 0 !important;
+}
+
+.resource-card-full p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.resource-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    flex-grow: 1; /* Absorbs empty space to flush the CTA to the bottom */
+}
+
+.resource-features li {
+    padding: 6px 0;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 24px;
+}
+
+.resource-features li::before {
+    content: "✓";
+    color: #16a34a;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Global Primary Button Fallback */
+.button-primary {
+    display: block;
+    background-color: var(--accent-color);
+    color: #ffffff !important;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    text-decoration: none !important;
+    border: none;
+}
+
+.button-primary:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+/* AEO / FAQ Layout */
+.aeo-faq-container {
+    background-color: var(--bg-color);
+    padding: 64px 24px;
+    border-top: 1px solid var(--border-color);
+}
+
+.aeo-faq-container h2 {
+    text-align: center;
+    margin-bottom: 48px;
+    color: var(--text-dark);
+}
+
+.aeo-block {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border-color);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aeo-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.aeo-block h3 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.aeo-block p {
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 0 !important;
+}
+/* =========================================
    RESPONSIVE DESIGN (MOBILE)
    ========================================= */
 @media (max-width: 900px) {
@@ -1530,6 +1694,10 @@ main h3,
     .controls-bar { 
         top: 72px; /* Mobile headers render slightly shorter due to hamburger padding */ 
     }
+   /* Mobile Overrides for Resources */
+    .resources-hero { padding: 48px 24px; }
+    .resource-card-full { padding: 24px; }
+    .aeo-faq-container { padding: 48px 24px; }
    /* Mobile Ad Box */
     .featured-ad-container { padding: 32px 24px 24px; }
     .ad-badge { left: 24px; }
