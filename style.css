@@ -1685,6 +1685,72 @@ main h3,
     line-height: 1.7;
     margin: 0 !important;
 }
+/* Blog Page Architecture */
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px; /* 8px system scale */
+}
+
+.blog-grid {
+    display: grid;
+    /* Automatically creates a responsive grid: 1 column on mobile, 2 on tablet, 3 on desktop */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 32px; /* Consistent spacing */
+    align-items: stretch;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.blog-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+}
+
+.blog-card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Pushes the button to the bottom if content length varies */
+}
+
+.blog-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: var(--text-dark, #1a1a1a);
+    line-height: 1.3;
+}
+
+.blog-card-excerpt {
+    color: var(--text-color, #4a4a4a);
+    margin-bottom: 24px;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.blog-read-more {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color, #0056b3);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: center;
+    align-self: flex-start; /* Prevents button from stretching full width */
+}
+
+.blog-read-more:hover {
+    background-color: var(--primary-hover, #004494);
+}
 /* =========================================
    RESPONSIVE DESIGN (MOBILE)
    ========================================= */
