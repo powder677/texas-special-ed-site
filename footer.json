@@ -27,9 +27,7 @@
    </div>
    <div class="footer-bottom">
       <p>&copy; 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
-   </div>
-</footer>
-<<<<<<< HEAD
+   </div
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
