@@ -162,7 +162,103 @@ main h3,
     font-size: 0.875rem;
     color: #94a3b8;
 }
+/* =========================================
+   DESKTOP NAVBAR ARCHITECTURE
+   ========================================= */
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Pushes Logo left, Menu right */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+}
 
+.nav-menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 32px; /* Consistent 8px scale spacing */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--text-color);
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Hide Hamburger Menu on Desktop */
+.mobile-menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hamburger {
+    width: 24px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+/* =========================================
+   DESKTOP DROPDOWN ARCHITECTURE
+   ========================================= */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--bg-color);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    list-style: none;
+    min-width: 240px;
+    padding: 16px 0;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    z-index: 1000;
+}
+
+/* Show dropdown on hover (Desktop only) */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 24px;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.dropdown-divider {
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 8px 0;
+}
+
+.dropdown-arrow {
+    font-size: 0.75rem;
+    margin-left: 4px;
+}
 /* =========================================
    RESPONSIVE DESIGN (MOBILE)
    ========================================= */
