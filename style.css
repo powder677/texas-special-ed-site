@@ -1853,7 +1853,51 @@ main h3,
     .controls-bar { 
         top: 72px; /* Mobile headers render slightly shorter due to hamburger padding */ 
     }
-    
+    /* =========================================
+       PARTNERS PAGE - MOBILE OVERRIDES
+       ========================================= */
+    .authority-header {
+        padding: 48px 24px;
+        border-radius: 0 0 16px 16px;
+    }
+
+    .authority-header h1 {
+        font-size: 2.25rem !important; 
+    }
+
+    /* Stack the Hero Ad on Mobile */
+    .featured-partner-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px 24px;
+        gap: 24px;
+    }
+
+    /* Stack Category Featured Boxes on Mobile */
+    .category-featured {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 16px;
+        gap: 16px;
+    }
+
+    /* Make CTA buttons full width on small screens */
+    .featured-partner-hero .hero-cta {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Allow the grid to drop to 1 column neatly */
+    .contact-grid {
+        grid-template-columns: 1fr; 
+        gap: 24px;
+        padding: 24px 16px;
+    }
+
+    .process-card {
+        padding: 24px 16px;
+    }
    /* Mobile Overrides for Resources */
     .resources-hero { padding: 48px 24px; }
     .resource-card-full { padding: 24px; }
