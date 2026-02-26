@@ -909,63 +909,145 @@ main h3,
     margin-bottom: 8px;
 }
 /* =========================================
-   INTERNAL PAGE COMPONENTS (Silos, Anchors, Quick Answers)
+   SILO NAVIGATION (Child -> Hub Link)
    ========================================= */
 .silo-nav {
-    background-color: #e9ecef;
-    padding: 12px 16px;
-    border-radius: 6px;
+    background-color: var(--secondary-color);
+    padding: 16px;
+    border-radius: 8px;
     margin: 32px 0;
-    font-size: 0.9rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.95rem;
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     align-items: center;
-    border-left: 4px solid #6c757d;
+    border: 1px solid var(--border-color);
 }
 
+.silo-nav strong {
+    color: var(--text-dark);
+}
+
+/* Standard Links */
 .silo-nav a {
-    color: var(--primary-color) !important; /* Overrides content-link colors */
+    color: var(--text-light) !important;
     font-weight: 500;
     text-decoration: none !important;
+    transition: color 0.2s ease;
 }
 
 .silo-nav a:hover {
-    text-decoration: underline !important;
+    color: var(--primary-color) !important;
 }
 
-.trust-anchor {
-    background-color: #f8fbff;
-    border-left: 5px solid var(--primary-color);
-    padding: 24px;
-    margin: 32px 0;
-    border-radius: 4px;
-}
-
-.trust-anchor p {
-    margin: 0 !important;
-    font-size: 1rem;
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-.quick-answer {
-    background-color: #f0fdf4;
-    border-left: 5px solid #16a34a;
-    padding: 24px;
-    border-radius: 4px;
-    margin: 32px 0;
-}
-
-.quick-answer > p:first-child {
+/* Call Out: The Hub Anchor Link */
+.silo-nav a[href="index.html"] {
+    background-color: var(--primary-color);
+    color: #ffffff !important;
+    padding: 6px 16px;
+    border-radius: 99px;
+    font-weight: 700;
     font-size: 0.85rem;
     text-transform: uppercase;
-    color: #16a34a;
-    font-weight: 700;
-    margin: 0 0 12px !important;
     letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
+
+.silo-nav a[href="index.html"]:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.silo-nav a[href="index.html"]::before {
+    content: '← '; /* Adds a back arrow to the Hub link */
+}
+
+/* =========================================
+   HUB PAGE: SILO RESOURCE LINKS
+   ========================================= */
+.grid-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin: 48px 0;
+}
+
+.resource-box {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-decoration: none !important;
+    color: var(--text-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Visual Indicator: Animating Arrow */
+.resource-box::after {
+    content: '→';
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: transform 0.2s ease;
+}
+
+/* Visual Indicator: Hover Bar */
+.resource-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.resource-box:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+}
+
+.resource-box:hover::before {
+    transform: scaleX(1);
+}
+
+.resource-box:hover::after {
+    transform: translateX(6px);
+}
+
+.resource-box h3 {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    margin-top: 0 !important;
+    padding-right: 32px; /* Prevents text from hitting the arrow */
+}
+
+.resource-box p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0 !important;
+}
+
+/* Call Out: Warning / Grievance Box */
+.resource-box.warning-box {
+    border-left: 4px solid #dc2626; /* Accessibility contrast red */
+    background-color: #fef2f2;
+}
+
+.resource-box.warning-box::before { background: #dc2626; }
+.resource-box.warning-box::after { color: #dc2626; }
+.resource-box.warning-box h3 { color: #b91c1c !important; }
 
 /* =========================================
    PREMIUM STACKED CARDS (Checkout Zones)
