@@ -1879,7 +1879,7 @@ main h3,
 .label-muted { background: rgba(255,255,255,.1); color: rgba(255,255,255,.85); border: 1px solid rgba(255,255,255,.15); }
 
 /* ── PAGE HERO (partners/directory pages) ── */
-.page-hero-dark {
+.page-hero-dark { color: #ffffff; }
   background: var(--navy);
   padding: 64px 0 56px;
   position: relative;
