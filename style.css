@@ -1877,10 +1877,17 @@ main h3,
 .label-gold  { background: var(--gold-lt); color: #7d6012; }
 .label-green { background: #f0fdf4; color: #166534; }
 .label-muted { background: rgba(255,255,255,.1); color: rgba(255,255,255,.85); border: 1px solid rgba(255,255,255,.15); }
+/* gold label on dark (navy) backgrounds */
+.page-hero-dark .label-gold {
+  background: rgba(197,160,54,.18);
+  color: #f0c040;
+  border: 1px solid rgba(197,160,54,.4);
+}
 
 /* ── PAGE HERO (partners/directory pages) ── */
-.page-hero-dark { color: #ffffff; }
+.page-hero-dark {
   background: var(--navy);
+  color: #ffffff;
   padding: 64px 0 56px;
   position: relative;
   overflow: hidden;
@@ -2337,7 +2344,7 @@ main h3,
   .contact-panel-body { grid-template-columns: 1fr; }
   .free-resources-intro { gap: 10px; }
 }
-/* =========================================
+ /* =========================================
    RESPONSIVE DESIGN (MOBILE)
    ========================================= */
 @media (max-width: 900px) {
