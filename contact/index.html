@@ -2,6 +2,15 @@
 
 <html lang="en">
 <head>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GVLPE273XH');
+</script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Contact Us | TexasSpecialEd.com</title>
@@ -27,8 +36,7 @@
          }
       }
    </script>
-
-    <link href="/style.css" rel="stylesheet"/>
+<link href="/style.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
@@ -68,49 +76,44 @@
 <li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
 <li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
 <li class="nav-item nav-cta">
-    <a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
 </li>
 </ul>
 </div>
 </nav>
 </header>
 <main id="main-content">
-    <section class="contact-container">
-        <header class="contact-header">
-            <h1>Contact Us</h1>
-            <p>Have questions about Texas special education? Want to request your district be added? Send us a message.</p>
-        </header>
-
-        <form class="contact-form" action="/your-form-processor" method="POST">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Jane Doe" required aria-required="true">
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="jane@example.com" required aria-required="true">
-            </div>
-
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <select id="subject" name="subject" required aria-required="true">
-                    <option value="">Select a topic...</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="district_request">District Addition Request</option>
-                    <option value="correction">Content Correction</option>
-                    <option value="partnership">Partnerships & Advertising</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="How can we help you?" required aria-required="true"></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-    </section>
+<section class="contact-container">
+<header class="contact-header">
+<h1>Contact Us</h1>
+<p>Have questions about Texas special education? Want to request your district be added? Send us a message.</p>
+</header>
+<form action="/your-form-processor" class="contact-form" method="POST">
+<div class="form-group">
+<label for="name">Full Name</label>
+<input aria-required="true" id="name" name="name" placeholder="Jane Doe" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">Email Address</label>
+<input aria-required="true" id="email" name="email" placeholder="jane@example.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="subject">Subject</label>
+<select aria-required="true" id="subject" name="subject" required="">
+<option value="">Select a topic...</option>
+<option value="general">General Inquiry</option>
+<option value="district_request">District Addition Request</option>
+<option value="correction">Content Correction</option>
+<option value="partnership">Partnerships &amp; Advertising</option>
+</select>
+</div>
+<div class="form-group">
+<label for="message">Message</label>
+<textarea aria-required="true" id="message" name="message" placeholder="How can we help you?" required=""></textarea>
+</div>
+<button class="submit-btn" type="submit">Send Message</button>
+</form>
+</section>
 </main>
 <footer class="site-footer">
 <div class="footer-container">
