@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+import os
+
+# Set your exact base directory path
+BASE_DIR = r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\districts"
+
+# The master HTML template for the Partners/Providers page.
+# {district_name} and {district_slug} will be swapped dynamically.
+HTML_TEMPLATE = r"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
@@ -11,9 +18,9 @@
 
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Special Education Services & Support in College Station ISD | Texas Special Ed</title>
-<meta content="Need special education help in College Station ISD? Find IEP guides, evaluation timelines, and local advocates in Texas." name="description"/>
-<link href="https://www.texasspecialed.com/districts/college-station-isd/partners" rel="canonical"/>
+<title>Special Education Services & Support in {district_name} | Texas Special Ed</title>
+<meta content="Need special education help in {district_name}? Find IEP guides, evaluation timelines, and local advocates in Texas." name="description"/>
+<link href="https://www.texasspecialed.com/districts/{district_slug}/partners" rel="canonical"/>
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -147,8 +154,8 @@ body {
 
 <section class="page-hero-dark">
 <div class="container">
-<span class="label label-gold">College Station ISD Parents</span>
-<h1>Special Education Services<br/>in College Station ISD</h1>
+<span class="label label-gold">{district_name} Parents</span>
+<h1>Special Education Services<br/>in {district_name}</h1>
 <p class="hero-sub">A parent resource guide for IEPs, evaluations, and connecting with local providers who know Texas special education law.</p>
 </div>
 </section>
@@ -156,11 +163,11 @@ body {
 <main>
 <div class="container">
     <div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
-        <strong style="color: #334155;">College Station ISD Resources:</strong>
-        <a href="/districts/college-station-isd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
-        <a href="/districts/college-station-isd/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
-        <a href="/districts/college-station-isd/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
-        <a href="/districts/college-station-isd/leadership-directory.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Staff Directory</a>
+        <strong style="color: #334155;">{district_name} Resources:</strong>
+        <a href="/districts/{district_slug}/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
+        <a href="/districts/{district_slug}/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
+        <a href="/districts/{district_slug}/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
+        <a href="/districts/{district_slug}/leadership-directory.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Staff Directory</a>
     </div>
     
     <div class="trust-anchor" style="background-color: #f8fbff; border-left: 5px solid #004085; padding: 16px; margin: 20px 0; border-radius: 4px;">
@@ -177,7 +184,7 @@ body {
     <!-- THE BIG LAW CARD (EXCLUSIVE SPONSORSHIP) -->
     <div class="law-hero-card">
         <div class="law-hero-left">
-            <p class="lhc-eyebrow">College Station ISD Special Ed Law</p>
+            <p class="lhc-eyebrow">{district_name} Special Ed Law</p>
             <h3 class="lhc-title">Hargrove & <em>Associates</em></h3>
             <div class="lhc-divider"></div>
             <p class="lhc-copy">
@@ -229,7 +236,7 @@ body {
         <!-- ADVOCATE FORM -->
         <div class="sidebar-form">
             <div class="sf-header">
-                <p class="sf-eyebrow">College Station ISD Special Ed Advocates</p>
+                <p class="sf-eyebrow">{district_name} Special Ed Advocates</p>
                 <h3 class="sf-name">Local IEP <em>Experts</em></h3>
             </div>
             <div class="sf-body">
@@ -265,7 +272,7 @@ body {
         <!-- TUTOR FORM -->
         <div class="sidebar-form">
             <div class="sf-header">
-                <p class="sf-eyebrow">College Station ISD Reading Support</p>
+                <p class="sf-eyebrow">{district_name} Reading Support</p>
                 <h3 class="sf-name">Local Reading <em>Specialists</em></h3>
             </div>
             <div class="sf-body">
@@ -308,7 +315,7 @@ body {
         </div>
         
         <div class="resource-tier">
-            <div class="tier-header"><i class="fas fa-map-marker-alt"></i> Local Resources — College Station ISD Area</div>
+            <div class="tier-header"><i class="fas fa-map-marker-alt"></i> Local Resources — {district_name} Area</div>
             <div class="tier-body">
                 <a class="free-card" href="https://www.disabilityrightstx.org/" rel="noopener" target="_blank">
                     <div class="free-card-icon"><i class="fas fa-gavel"></i></div>
@@ -500,4 +507,42 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 </body>
-</html>
+</html>"""
+
+def get_district_name(folder_name):
+    words = folder_name.split('-')
+    capitalized_words = [w.upper() if w.lower() in ['isd', 'cisd'] else w.capitalize() for w in words]
+    return " ".join(capitalized_words)
+
+def main():
+    if not os.path.exists(BASE_DIR):
+        print(f"Error: Could not find directory at {BASE_DIR}")
+        return
+
+    count = 0
+
+    for root, dirs, files in os.walk(BASE_DIR):
+        if "partners.html" in files:
+            filepath = os.path.join(root, "partners.html")
+            folder_name = os.path.basename(root)
+            district_name = get_district_name(folder_name)
+            
+            try:
+                # We inject the data directly into the master template. 
+                # (No Stripe links to extract on this specific page).
+                new_html = HTML_TEMPLATE.replace("{district_name}", district_name)
+                new_html = new_html.replace("{district_slug}", folder_name)
+
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_html)
+                
+                print(f"Updated Partners Page: {district_name} ({folder_name})")
+                count += 1
+                
+            except Exception as e:
+                print(f"Failed to update {filepath}: {e}")
+
+    print(f"\nSuccess! Completely updated {count} Partners Directory pages.")
+
+if __name__ == "__main__":
+    main()

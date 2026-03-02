@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+import os
+import re
+
+# Set your exact base directory path
+BASE_DIR = r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\districts"
+
+# The master HTML template for the Leadership Directory page.
+# {district_name}, {district_slug}, {ard_stripe_link}, and {bundle_stripe_link} will be swapped dynamically.
+HTML_TEMPLATE = r"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
@@ -11,9 +19,9 @@
 
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>San Benito CISD Special Education Contacts | Staff Directory</title>
-<meta content="Find contact information for San Benito CISD Special Education Directors, Dyslexia Coordinators, and learn how to escalate IEP disputes." name="description"/>
-<link href="https://www.texasspecialed.com/districts/san-benito-cisd/leadership-directory" rel="canonical"/>
+<title>{district_name} Special Education Contacts | Staff Directory</title>
+<meta content="Find contact information for {district_name} Special Education Directors, Dyslexia Coordinators, and learn how to escalate IEP disputes." name="description"/>
+<link href="https://www.texasspecialed.com/districts/{district_slug}/leadership-directory" rel="canonical"/>
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -125,14 +133,14 @@ td { padding: 16px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
 
 <main class="container">
 
-<h1>San Benito CISD Special Education Staff Directory</h1>
+<h1>{district_name} Special Education Staff Directory</h1>
 
 <div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
-    <strong style="color: #334155;">San Benito CISD Resources:</strong>
-    <a href="/districts/san-benito-cisd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
-    <a href="/districts/san-benito-cisd/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
-    <a href="/districts/san-benito-cisd/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
-    <a href="/districts/san-benito-cisd/dyslexia-services.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dyslexia / 504</a>
+    <strong style="color: #334155;">{district_name} Resources:</strong>
+    <a href="/districts/{district_slug}/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
+    <a href="/districts/{district_slug}/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
+    <a href="/districts/{district_slug}/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
+    <a href="/districts/{district_slug}/dyslexia-services.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dyslexia / 504</a>
 </div>
 
 <!-- ========================================== -->
@@ -144,16 +152,16 @@ td { padding: 16px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
     <article class="content-column">
 
         <div class="info-box">
-            <strong>Notice:</strong> Staff information changes frequently. Verify directly with the <strong>San Benito CISD</strong> administration office before sending formal legal correspondence.
+            <strong>Notice:</strong> Staff information changes frequently. Verify directly with the <strong>{district_name}</strong> administration office before sending formal legal correspondence.
         </div>
         
         <div class="contact-bar">
-            <p><strong>District:</strong> San Benito CISD</p>
+            <p><strong>District:</strong> {district_name}</p>
             <p><strong>Main Phone:</strong> Contact your local central administration building and ask to be connected with the Special Education Department.</p>
         </div>
 
         <h2 style="border-top:none; margin-top:0; padding-top:0;">District Leadership Roles</h2>
-        <p>When you have hit a wall at the campus level, it is time to escalate. Here are the specific central office roles you should ask for when contacting San Benito CISD:</p>
+        <p>When you have hit a wall at the campus level, it is time to escalate. Here are the specific central office roles you should ask for when contacting {district_name}:</p>
 
         <table>
             <thead>
@@ -202,7 +210,7 @@ td { padding: 16px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
         </div>
 
         <h2>How to Effectively Contact Special Education Staff</h2>
-        <p>Contacting the right person at San Benito CISD is crucial for effective communication. To avoid being ignored, remember these rules:</p>
+        <p>Contacting the right person at {district_name} is crucial for effective communication. To avoid being ignored, remember these rules:</p>
         
         <ul>
             <li><b>Keep a Paper Trail:</b> Phone calls are fine for quick updates, but always follow up with an email summarizing what was discussed. If a promise isn't in writing, it never happened.</li>
@@ -220,11 +228,11 @@ td { padding: 16px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
         </div>
 
         <h2>What to Do If You Can't Reach Anyone</h2>
-        <p>If you are having difficulty getting a response from San Benito CISD campus staff regarding an urgent special education matter, follow these formal escalation steps:</p>
+        <p>If you are having difficulty getting a response from {district_name} campus staff regarding an urgent special education matter, follow these formal escalation steps:</p>
         
         <ul>
             <li><b>Step 1:</b> Email the campus Special Education Coordinator and the Principal again, clearly stating this is your second attempt to contact them.</li>
-            <li><b>Step 2:</b> If you don't receive a response within 48 hours, forward the entire email chain to the San Benito CISD Director of Special Education.</li>
+            <li><b>Step 2:</b> If you don't receive a response within 48 hours, forward the entire email chain to the {district_name} Director of Special Education.</li>
             <li><b>Step 3:</b> File a formal Level 1 Grievance with the district (usually an FNG Local policy).</li>
             <li><b>Step 4:</b> As a last resort, file a formal complaint with the Texas Education Agency (TEA) for ignoring parental rights under IDEA.</li>
         </ul>
@@ -234,7 +242,7 @@ td { padding: 16px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
         
         <ul>
             <li><b>FERPA Request:</b> You have the right to inspect and review your child's educational records (including internal emails mentioning your child) within 45 days of submitting a written request.</li>
-            <li><b>How to file:</b> Send a written request to the San Benito CISD Special Education Records Clerk or the Director. Clearly state you are requesting a complete copy of all educational records under FERPA.</li>
+            <li><b>How to file:</b> Send a written request to the {district_name} Special Education Records Clerk or the Director. Clearly state you are requesting a complete copy of all educational records under FERPA.</li>
         </ul>
 
         <!-- ========================================== -->
@@ -247,7 +255,7 @@ td { padding: 16px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
                 <span class="badge">Meeting Mastery</span>
                 <h3>The ARD Prep Toolkit</h3>
                 <p>Walk into your next meeting as a decision-maker. Includes exact response scripts for pushback, the "10-Day Recess Playbook," and copy-and-paste email templates to contact staff.</p>
-                <a href="YOUR_STRIPE_LINK_HERE" target="_blank">Get the ARD Toolkit — $47</a>
+                <a href="{ard_stripe_link}" target="_blank">Get the ARD Toolkit — $47</a>
             </div>
 
             <!-- Offer 2: All-Access Pass (Blue Theme) -->
@@ -255,7 +263,7 @@ td { padding: 16px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
                 <span class="badge" style="background:#fff; color:#1e3a8a;">Best Value</span>
                 <h3>The "Parent Protection" All-Access Pass</h3>
                 <p>Get every toolkit in one bundle — ARD Prep, Behavior Defense, Dyslexia, ADHD, Autism Supplement, and the Accommodations Encyclopedia.</p>
-                <a href="https://buy.stripe.com/3cIcN4a8l7Q4d0j7mBbbG0G" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
+                <a href="{bundle_stripe_link}" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
             </div>
 
         </div>
@@ -268,7 +276,7 @@ td { padding: 16px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
         <!-- COMPACT LEAD CAPTURE FORM (Escalation Version) -->
         <div class="sidebar-form">
             <div class="sf-header">
-                <p class="sf-eyebrow">San Benito CISD Special Ed Law</p>
+                <p class="sf-eyebrow">{district_name} Special Ed Law</p>
                 <h3 class="sf-name">Hargrove & <em>Associates</em></h3>
             </div>
             
@@ -444,4 +452,65 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 </body>
-</html>
+</html>"""
+
+def get_district_name(folder_name):
+    # Converts 'houston-isd' to 'Houston ISD'
+    words = folder_name.split('-')
+    capitalized_words = [w.upper() if w.lower() in ['isd', 'cisd'] else w.capitalize() for w in words]
+    return " ".join(capitalized_words)
+
+def main():
+    if not os.path.exists(BASE_DIR):
+        print(f"Error: Could not find directory at {BASE_DIR}")
+        return
+
+    # Count how many files get updated
+    count = 0
+
+    # Walk through the district directories
+    for root, dirs, files in os.walk(BASE_DIR):
+        if "leadership-directory.html" in files:
+            filepath = os.path.join(root, "leadership-directory.html")
+            folder_name = os.path.basename(root)
+            district_name = get_district_name(folder_name)
+            
+            try:
+                with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                    old_content = f.read()
+
+                # EXTRACT EXISTING STRIPE LINKS
+                # We look for the href attributes of buttons containing $47 and $97
+                ard_stripe_link = "YOUR_STRIPE_LINK_HERE"
+                bundle_stripe_link = "YOUR_STRIPE_LINK_HERE"
+
+                # Regex to safely find the URL near the $47 price tag
+                ard_match = re.search(r'href=[\'"]([^\'"]+)[\'"][^>]*>.*?\$47', old_content, re.IGNORECASE)
+                if ard_match:
+                    ard_stripe_link = ard_match.group(1)
+
+                # Regex to safely find the URL near the $97 price tag
+                bundle_match = re.search(r'href=[\'"]([^\'"]+)[\'"][^>]*>.*?\$97', old_content, re.IGNORECASE)
+                if bundle_match:
+                    bundle_stripe_link = bundle_match.group(1)
+
+                # INJECT DATA INTO THE NEW MASTER TEMPLATE
+                new_html = HTML_TEMPLATE.replace("{district_name}", district_name)
+                new_html = new_html.replace("{district_slug}", folder_name)
+                new_html = new_html.replace("{ard_stripe_link}", ard_stripe_link)
+                new_html = new_html.replace("{bundle_stripe_link}", bundle_stripe_link)
+
+                # OVERWRITE THE OLD FILE WITH THE NEW TEMPLATE
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_html)
+                
+                print(f"Updated Leadership Directory: {district_name} ({folder_name})")
+                count += 1
+                
+            except Exception as e:
+                print(f"Failed to update {filepath}: {e}")
+
+    print(f"\nSuccess! Completely updated {count} Leadership Directory pages.")
+
+if __name__ == "__main__":
+    main()
