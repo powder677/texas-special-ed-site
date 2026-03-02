@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+import os
+import re
+
+# Set your exact base directory path
+BASE_DIR = r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\districts"
+
+# The master HTML template for the Grievance/Discipline page.
+# {district_name}, {district_slug}, {behavior_stripe_link}, and {bundle_stripe_link} will be swapped dynamically.
+HTML_TEMPLATE = r"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
@@ -11,9 +19,9 @@
 
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Discipline Rights & Grievances in North East ISD | MDR & Suspension Defense</title>
-<meta content="Is your child being suspended or facing expulsion in North East ISD? Know your MDR, Change of Placement, and grievance rights under IDEA." name="description"/>
-<link href="https://www.texasspecialed.com/districts/north-east-isd/grievance-dispute-resolution" rel="canonical"/>
+<title>Discipline Rights & Grievances in {district_name} | MDR & Suspension Defense</title>
+<meta content="Is your child being suspended or facing expulsion in {district_name}? Know your MDR, Change of Placement, and grievance rights under IDEA." name="description"/>
+<link href="https://www.texasspecialed.com/districts/{district_slug}/grievance-dispute-resolution" rel="canonical"/>
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -126,17 +134,17 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 <main class="container">
 
 <div class="alert-box" style="background:#fee2e2;padding:16px 24px;border-left:4px solid #ef4444;border-radius:6px;margin:30px 0 20px;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-    <strong style="color:#b91c1c; font-size: 1.1rem;">⚠️ Urgent:</strong> If your child has been suspended for more than 10 cumulative days in North East ISD, this is legally a <strong>Change of Placement</strong>. The school must hold an ARD/MDR meeting immediately.
+    <strong style="color:#b91c1c; font-size: 1.1rem;">⚠️ Urgent:</strong> If your child has been suspended for more than 10 cumulative days in {district_name}, this is legally a <strong>Change of Placement</strong>. The school must hold an ARD/MDR meeting immediately.
 </div>
 
-<h1>Dispute & Discipline Rights in North East ISD</h1>
+<h1>Dispute & Discipline Rights in {district_name}</h1>
 
 <div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
-    <strong style="color: #334155;">North East ISD Resources:</strong>
-    <a href="/districts/north-east-isd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
-    <a href="/districts/north-east-isd/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
-    <a href="/districts/north-east-isd/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
-    <a href="/districts/north-east-isd/dyslexia-services.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dyslexia / 504</a>
+    <strong style="color: #334155;">{district_name} Resources:</strong>
+    <a href="/districts/{district_slug}/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
+    <a href="/districts/{district_slug}/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
+    <a href="/districts/{district_slug}/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
+    <a href="/districts/{district_slug}/dyslexia-services.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dyslexia / 504</a>
 </div>
 
 <div class="quick-answer" style="background:#fff7ed;border-left:5px solid #ea580c;padding:24px;border-radius:6px;margin:30px 0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
@@ -153,13 +161,13 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
     <!-- LEFT SIDE: 70% READING CONTENT -->
     <article class="content-column">
         
-        <h2 style="border-top:none; margin-top:0; padding-top:0;">The 10-Day Suspension Rule in North East ISD</h2>
-        <p>This is a crisis guide for parents whose child is facing disciplinary action or alternative placement (DAEP) in North East ISD. Time is of the essence. If your child has an IEP or a 504 plan, the standard discipline rules do not completely apply to them.</p>
+        <h2 style="border-top:none; margin-top:0; padding-top:0;">The 10-Day Suspension Rule in {district_name}</h2>
+        <p>This is a crisis guide for parents whose child is facing disciplinary action or alternative placement (DAEP) in {district_name}. Time is of the essence. If your child has an IEP or a 504 plan, the standard discipline rules do not completely apply to them.</p>
         
-        <p>North East ISD can suspend your child for up to 3 school days for certain disciplinary infractions. They can extend this suspension to a maximum of 10 days. <strong>However, if your child is suspended for MORE THAN 10 cumulative school days in a single academic year</strong> (even if they are separate 2-day or 3-day incidents), this triggers massive federal protections.</p>
+        <p>{district_name} can suspend your child for up to 3 school days for certain disciplinary infractions. They can extend this suspension to a maximum of 10 days. <strong>However, if your child is suspended for MORE THAN 10 cumulative school days in a single academic year</strong> (even if they are separate 2-day or 3-day incidents), this triggers massive federal protections.</p>
         
         <div class="pull-quote">
-            After the 10th day of suspension, North East ISD MUST provide educational services to maintain academic progress. Do not let them send your child home with nothing.
+            After the 10th day of suspension, {district_name} MUST provide educational services to maintain academic progress. Do not let them send your child home with nothing.
         </div>
 
         <div class="inline-cta urgent">
@@ -174,11 +182,11 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
         <div class="section-divider">· · ·</div>
         
         <h2>What Is an MDR (Manifestation Determination Review)?</h2>
-        <p>An MDR is a mandatory meeting that must occur before North East ISD can expel your child or send them to a Disciplinary Alternative Education Program (DAEP) for more than 10 days. The goal of this meeting is to answer two specific questions:</p>
+        <p>An MDR is a mandatory meeting that must occur before {district_name} can expel your child or send them to a Disciplinary Alternative Education Program (DAEP) for more than 10 days. The goal of this meeting is to answer two specific questions:</p>
         
         <ul style="padding-left: 1.4rem; margin-bottom: 20px;">
             <li>Was the conduct caused by, or did it have a direct and substantial relationship to, the child's disability?</li>
-            <li>Was the conduct the direct result of North East ISD's failure to actually implement the IEP?</li>
+            <li>Was the conduct the direct result of {district_name}'s failure to actually implement the IEP?</li>
         </ul>
         
         <p><strong>If the answer to EITHER question is yes</strong>, the school CANNOT discipline your child in the same way they would a non-disabled student. They must immediately conduct a Functional Behavioral Assessment (FBA) and return your child to their original placement.</p>
@@ -186,10 +194,10 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
         <div class="section-divider">· · ·</div>
 
         <div class="action-steps">
-            <h2>How to File a Level 1 Grievance in North East ISD</h2>
+            <h2>How to File a Level 1 Grievance in {district_name}</h2>
             <p style="margin-bottom:15px; font-size:17px;">If you believe a campus administrator has violated your child's rights or ignored their IEP, you must file a formal grievance. Sending an angry email is not enough.</p>
             <ol>
-                <li><strong>Find the Policy:</strong> North East ISD board policy (FNG Local) governs parent complaints. You typically have only 15 days from the incident to file.</li>
+                <li><strong>Find the Policy:</strong> {district_name} board policy (FNG Local) governs parent complaints. You typically have only 15 days from the incident to file.</li>
                 <li><strong>Get the Form:</strong> Request the official Level 1 Grievance form from the school principal or download it from the district website.</li>
                 <li><strong>Stick to the Facts:</strong> Clearly and concisely state the facts, the specific policy or IEP provision that was violated, and the exact remedy you seek. Keep emotion out of it.</li>
                 <li><strong>Submit Officially:</strong> Submit the grievance to the campus principal. Send it via email and keep a time-stamped copy for your records.</li>
@@ -208,7 +216,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
         <div class="section-divider">· · ·</div>
 
         <h2>Due Process & TEA Complaints</h2>
-        <p>If the grievance process fails and North East ISD continues to deny your child a Free Appropriate Public Education (FAPE), you have the right to escalate the matter to the state level.</p>
+        <p>If the grievance process fails and {district_name} continues to deny your child a Free Appropriate Public Education (FAPE), you have the right to escalate the matter to the state level.</p>
         
         <p>You can file a formal State Complaint with the Texas Education Agency (TEA), which will trigger a state investigator to review the district's actions. If the issue involves severe placement disagreements, you maintain the right to file for a <strong>Due Process Hearing</strong>—a formal legal trial before an administrative judge.</p>
 
@@ -220,7 +228,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
                 <span class="badge" style="background:#fca5a5; color:#450a0a;">Urgent Defense</span>
                 <h3>The Behavior & Discipline Defense Kit</h3>
                 <p>Protect your child from DAEP and informal suspensions. Includes the Shadow Discipline Tracker to prove "off-the-books" removals and exact scripts to win your MDR hearing.</p>
-                <a href="https://buy.stripe.com/bJe14mcgt6M0d0j8qFbbG0I" target="_blank" style="background:#fca5a5; color:#450a0a;">Get the Defense Kit — $47</a>
+                <a href="{behavior_stripe_link}" target="_blank" style="background:#fca5a5; color:#450a0a;">Get the Defense Kit — $47</a>
             </div>
 
             <!-- Offer 2: All-Access Pass (Blue Theme) -->
@@ -228,7 +236,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
                 <span class="badge" style="background:#fff; color:#1e3a8a;">Best Value</span>
                 <h3>The "Parent Protection" All-Access Pass</h3>
                 <p>Get every toolkit in one bundle — Behavior Defense, ARD Prep, Dyslexia, ADHD, Autism Supplement, and the Accommodations Encyclopedia.</p>
-                <a href="https://buy.stripe.com/3cIcN4a8l7Q4d0j7mBbbG0G" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
+                <a href="{bundle_stripe_link}" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
             </div>
 
         </div>
@@ -241,7 +249,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
         <!-- COMPACT LEAD CAPTURE FORM (Warm Lawyer Version) -->
         <div class="sidebar-form">
             <div class="sf-header">
-                <p class="sf-eyebrow">North East ISD Special Ed Law</p>
+                <p class="sf-eyebrow">{district_name} Special Ed Law</p>
                 <h3 class="sf-name">Hargrove & <em>Associates</em></h3>
             </div>
             
@@ -417,4 +425,65 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 </body>
-</html>
+</html>"""
+
+def get_district_name(folder_name):
+    # Converts 'houston-isd' to 'Houston ISD'
+    words = folder_name.split('-')
+    capitalized_words = [w.upper() if w.lower() in ['isd', 'cisd'] else w.capitalize() for w in words]
+    return " ".join(capitalized_words)
+
+def main():
+    if not os.path.exists(BASE_DIR):
+        print(f"Error: Could not find directory at {BASE_DIR}")
+        return
+
+    # Count how many files get updated
+    count = 0
+
+    # Walk through the district directories
+    for root, dirs, files in os.walk(BASE_DIR):
+        if "grievance-dispute-resolution.html" in files:
+            filepath = os.path.join(root, "grievance-dispute-resolution.html")
+            folder_name = os.path.basename(root)
+            district_name = get_district_name(folder_name)
+            
+            try:
+                with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                    old_content = f.read()
+
+                # EXTRACT EXISTING STRIPE LINKS
+                # We look for the href attributes of buttons containing $47 and $97
+                behavior_stripe_link = "YOUR_STRIPE_LINK_HERE"
+                bundle_stripe_link = "YOUR_STRIPE_LINK_HERE"
+
+                # Regex to safely find the URL near the $47 price tag
+                behavior_match = re.search(r'href=[\'"]([^\'"]+)[\'"][^>]*>.*?\$47', old_content, re.IGNORECASE)
+                if behavior_match:
+                    behavior_stripe_link = behavior_match.group(1)
+
+                # Regex to safely find the URL near the $97 price tag
+                bundle_match = re.search(r'href=[\'"]([^\'"]+)[\'"][^>]*>.*?\$97', old_content, re.IGNORECASE)
+                if bundle_match:
+                    bundle_stripe_link = bundle_match.group(1)
+
+                # INJECT DATA INTO THE NEW MASTER TEMPLATE
+                new_html = HTML_TEMPLATE.replace("{district_name}", district_name)
+                new_html = new_html.replace("{district_slug}", folder_name)
+                new_html = new_html.replace("{behavior_stripe_link}", behavior_stripe_link)
+                new_html = new_html.replace("{bundle_stripe_link}", bundle_stripe_link)
+
+                # OVERWRITE THE OLD FILE WITH THE NEW TEMPLATE
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_html)
+                
+                print(f"Updated Grievance Page: {district_name} ({folder_name})")
+                count += 1
+                
+            except Exception as e:
+                print(f"Failed to update {filepath}: {e}")
+
+    print(f"\nSuccess! Completely updated {count} Grievance & Dispute Resolution pages.")
+
+if __name__ == "__main__":
+    main()
