@@ -95,29 +95,26 @@ def main():
             continue
             
         folder_name = os.path.basename(root)
+        
+        # Verify this folder actually contains HTML files before processing
+        html_files = [f for f in files if f.endswith('.html')]
+        if not html_files:
+            continue
+
         district_name = get_district_name(folder_name)
 
-        for file in files:
-            if file.endswith(".html"):
-                filepath = os.path.join(root, file)
+        for file in html_files:
+            filepath = os.path.join(root, file)
+            
+            try:
+                with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                    content = f.read()
                 
-                try:
-                    with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
-                        content = f.read()
-                    
-                    new_content = content
-                    
-                    # 1. Safely replace the ENTIRE header to fix the dropdown and text logo
-                    new_content = re.sub(r'<header class=["\']site-header["\']>.*?</header>', HEADER_HTML, new_content, flags=re.IGNORECASE | re.DOTALL)
-                        
-                    # 2. Fix the gray Silo Nav to use absolute paths
-                    if "silo-nav" in new_content:
-                        new_silo = generate_silo_nav(district_name, folder_name, file)
-                        new_content = re.sub(r'<div\s+class=["\']silo-nav["\'].*?</div>', new_silo, new_content, flags=re.IGNORECASE | re.DOTALL)
-                        
-                    # 3. Fix any remaining relative links (Specifically the Hub page cards!)
+                new_content = content
+                
+                # 1. If it's the Hub Page, fix the Hub Grid Cards
+                if file == "index.html":
                     pages = [
-                        "index.html",
                         "ard-process-guide.html",
                         "evaluation-child-find.html",
                         "dyslexia-services.html",
@@ -126,20 +123,33 @@ def main():
                         "partners.html"
                     ]
                     for page in pages:
-                        # Matches exact relative links: href="ard-process-guide.html"
-                        pattern = r'href=["\']' + re.escape(page) + r'["\']'
-                        # Converts to: href="/districts/houston-isd/ard-process-guide.html"
+                        # Fix standard relative links
+                        pattern = r'href=["\'](\./)?' + re.escape(page) + r'["\']'
                         replacement = f'href="/districts/{folder_name}/{page}"'
                         new_content = re.sub(pattern, replacement, new_content)
-
-                    # Save if modified
-                    if new_content != content:
-                        with open(filepath, 'w', encoding='utf-8') as f:
-                            f.write(new_content)
-                        count += 1
                         
-                except Exception as e:
-                    print(f"Skipped {filepath}: {e}")
+                        # Fix the "skipped folder" bug if a previous run messed it up
+                        pattern_bad = r'href=["\']/districts/' + re.escape(page) + r'["\']'
+                        new_content = re.sub(pattern_bad, replacement, new_content)
+                    
+                # 2. Rebuild the gray Silo Nav to use perfect absolute paths
+                if "silo-nav" in new_content:
+                    new_silo = generate_silo_nav(district_name, folder_name, file)
+                    silo_pattern = r'<div[^>]*class=["\'][^"\']*silo-nav[^"\']*["\'][^>]*>.*?</div>'
+                    new_content = re.sub(silo_pattern, new_silo, new_content, flags=re.IGNORECASE | re.DOTALL)
+                
+                # 3. Safely replace the ENTIRE header to fix the dropdown and text logo
+                header_pattern = r'<header class=["\']site-header["\']>.*?</header>'
+                new_content = re.sub(header_pattern, HEADER_HTML, new_content, flags=re.IGNORECASE | re.DOTALL)
+
+                # Save if modified
+                if new_content != content:
+                    with open(filepath, 'w', encoding='utf-8') as f:
+                        f.write(new_content)
+                    count += 1
+                    
+            except Exception as e:
+                print(f"Skipped {filepath}: {e}")
 
     print(f"\nSuccess! Repaired navigation headers and absolute links on {count} pages.")
 
