@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+import os
+import re
+
+# Set your exact base directory path
+BASE_DIR = r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\districts"
+
+# The master HTML template. 
+# {district_name}, {district_slug}, {ard_stripe_link}, and {bundle_stripe_link} will be swapped dynamically.
+HTML_TEMPLATE = r"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
@@ -11,9 +19,9 @@
 
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ARD Meeting Guide: Santa Fe ISD | Parent Rights</title>
-<meta content="Everything Santa Fe ISD parents need to know about ARD meetings: 5-day notice, 10-day recess, disagreeing with the team, and filing a TEA complaint." name="description"/>
-<link href="https://www.texasspecialed.com/districts/santa-fe-isd/ard-process-guide" rel="canonical"/>
+<title>ARD Meeting Guide: {district_name} | Parent Rights</title>
+<meta content="Everything {district_name} parents need to know about ARD meetings: 5-day notice, 10-day recess, disagreeing with the team, and filing a TEA complaint." name="description"/>
+<link href="https://www.texasspecialed.com/districts/{district_slug}/ard-process-guide" rel="canonical"/>
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -129,14 +137,14 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 </header>
 
 <main class="container">
-<h1>ARD Meeting Guide: Santa Fe ISD</h1>
+<h1>ARD Meeting Guide: {district_name}</h1>
 
 <div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
-    <strong style="color: #334155;">Santa Fe ISD Resources:</strong>
-    <a href="/districts/santa-fe-isd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
-    <a href="/districts/santa-fe-isd/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 700;">ARD Guide</a> •
-    <a href="/districts/santa-fe-isd/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
-    <a href="/districts/santa-fe-isd/dyslexia-services.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dyslexia / 504</a>
+    <strong style="color: #334155;">{district_name} Resources:</strong>
+    <a href="/districts/{district_slug}/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
+    <a href="/districts/{district_slug}/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 700;">ARD Guide</a> •
+    <a href="/districts/{district_slug}/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
+    <a href="/districts/{district_slug}/dyslexia-services.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dyslexia / 504</a>
 </div>
 
 <div class="quick-answer" style="background:#f0fdf4;border-left:5px solid #16a34a;padding:24px;border-radius:6px;margin:30px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
@@ -150,13 +158,13 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
     <!-- LEFT SIDE: 70% READING CONTENT -->
     <article class="content-column">
         
-        <h2 style="border-top:none; margin-top:0; padding-top:0;">What Is an ARD Meeting in Santa Fe ISD?</h2>
+        <h2 style="border-top:none; margin-top:0; padding-top:0;">What Is an ARD Meeting in {district_name}?</h2>
         <p>An ARD meeting (Admission, Review, and Dismissal) is the Texas equivalent of an IEP meeting. Required by the Individuals with Disabilities Education Act (IDEA) and the Texas Education Code, its primary purpose is to determine eligibility, develop an Individualized Education Program (IEP), and formally review your child's progress.</p>
         
-        <p>If your child attends school in <strong>Santa Fe ISD</strong>, understanding this process is the key to securing the services they deserve. Think of it as a legal team meeting focused solely on your child's educational needs and exactly how the local educators and specialists will support them.</p>
+        <p>If your child attends school in <strong>{district_name}</strong>, understanding this process is the key to securing the services they deserve. Think of it as a legal team meeting focused solely on your child's educational needs and exactly how the local educators and specialists will support them.</p>
 
         <div class="pull-quote">
-            You're not a guest at this meeting. You're a legal member of the committee — with equal standing to the Santa Fe ISD principal or diagnostician.
+            You're not a guest at this meeting. You're a legal member of the committee — with equal standing to the {district_name} principal or diagnostician.
         </div>
 
         <div class="section-divider">· · ·</div>
@@ -178,7 +186,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 
         <div class="action-steps">
             <h2>What to Bring to Your ARD</h2>
-            <p style="margin-bottom:15px; font-size:17px;">Coming prepared shifts the balance of power. Do not walk into your Santa Fe ISD campus empty-handed. Gather these items before your meeting:</p>
+            <p style="margin-bottom:15px; font-size:17px;">Coming prepared shifts the balance of power. Do not walk into your {district_name} campus empty-handed. Gather these items before your meeting:</p>
             <ol>
                 <li><strong>Outside Medical Records:</strong> Letters or diagnoses from private therapists, psychologists, or pediatricians.</li>
                 <li><strong>A Written List of Concerns:</strong> You will likely forget your talking points in the heat of the moment. Bring a printed list.</li>
@@ -190,7 +198,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
         <h2>The 10-Day Recess Rule</h2>
         <p>During an ARD meeting, decisions are made that will significantly impact your child's education for an entire year. If you feel overwhelmed, pressured, or simply need more time to consult an expert, Texas law provides a powerful tool: <strong>the 10-day recess</strong>.</p>
         
-        <p>At any point, if you disagree with the IEP or need time to review data, you can state: <em>"I am requesting a 10-day recess to review this information."</em> The Santa Fe ISD ARD committee is required to grant it, pause the meeting, and reconvene within 10 school days before finalizing the document.</p>
+        <p>At any point, if you disagree with the IEP or need time to review data, you can state: <em>"I am requesting a 10-day recess to review this information."</em> The {district_name} ARD committee is required to grant it, pause the meeting, and reconvene within 10 school days before finalizing the document.</p>
         
         <div class="inline-cta gold">
             <div class="cta-icon">💡</div>
@@ -204,7 +212,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
         <div class="section-divider">· · ·</div>
 
         <h2>Understanding the IEP Document</h2>
-        <p>The IEP is a legally binding contract. When reviewing the paperwork at the table, pay close attention to these critical sections to ensure Santa Fe ISD is held accountable:</p>
+        <p>The IEP is a legally binding contract. When reviewing the paperwork at the table, pay close attention to these critical sections to ensure {district_name} is held accountable:</p>
 
         <ol class="iep-list">
             <li>
@@ -237,7 +245,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 
         <h2>When You Disagree With the Team</h2>
         <p>It is perfectly acceptable to disagree with the ARD committee's recommendations. If you disagree with a proposed initial placement, you have the right to refuse consent, meaning services cannot begin.</p>
-        <p>If you disagree with a revised Santa Fe ISD IEP, <strong>do not sign the "Agree" box.</strong> Check "Disagree," request your 10-day recess, and ensure the district writes your specific concerns into the official minutes of the meeting. You also maintain the right to request an Independent Educational Evaluation (IEE) at the district's expense if you believe their testing is flawed.</p>
+        <p>If you disagree with a revised {district_name} IEP, <strong>do not sign the "Agree" box.</strong> Check "Disagree," request your 10-day recess, and ensure the district writes your specific concerns into the official minutes of the meeting. You also maintain the right to request an Independent Educational Evaluation (IEE) at the district's expense if you believe their testing is flawed.</p>
 
         <!-- ========================================== -->
         <!-- STACKED PREMIUM OFFERS (WITH STRIPE LINKS) -->
@@ -249,7 +257,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
                 <span class="badge">Essential Preparation</span>
                 <h3>The ARD Prep Toolkit</h3>
                 <p>Walk into your next meeting as a decision-maker. Includes exact response scripts for pushback, the "10-Day Recess Playbook," and the IEP Red Flag checklist.</p>
-                <a href="YOUR_STRIPE_LINK_HERE" target="_blank">Get the ARD Toolkit — $47</a>
+                <a href="{ard_stripe_link}" target="_blank">Get the ARD Toolkit — $47</a>
             </div>
 
             <!-- Offer 2: All-Access Pass -->
@@ -257,7 +265,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
                 <span class="badge" style="background:#fff; color:#1e3a8a;">Best Value</span>
                 <h3>The "Parent Protection" All-Access Pass</h3>
                 <p>Get every toolkit in one bundle — ARD Prep, Behavior Defense, Dyslexia, ADHD, Autism Supplement, and the Accommodations Encyclopedia.</p>
-                <a href="https://buy.stripe.com/3cIcN4a8l7Q4d0j7mBbbG0G" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
+                <a href="{bundle_stripe_link}" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
             </div>
 
         </div>
@@ -269,7 +277,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
         <!-- LEAD CAPTURE FORM -->
         <div class="sidebar-form">
             <div class="sf-header">
-                <p class="sf-eyebrow">Santa Fe ISD Special Ed Law</p>
+                <p class="sf-eyebrow">{district_name} Special Ed Law</p>
                 <h3 class="sf-name">Local IEP <em>Advocates</em></h3>
             </div>
             
@@ -443,4 +451,65 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 </body>
-</html>
+</html>"""
+
+def get_district_name(folder_name):
+    # Converts 'houston-isd' to 'Houston ISD'
+    words = folder_name.split('-')
+    capitalized_words = [w.upper() if w.lower() in ['isd', 'cisd'] else w.capitalize() for w in words]
+    return " ".join(capitalized_words)
+
+def main():
+    if not os.path.exists(BASE_DIR):
+        print(f"Error: Could not find directory at {BASE_DIR}")
+        return
+
+    # Count how many files get updated
+    count = 0
+
+    # Walk through the district directories
+    for root, dirs, files in os.walk(BASE_DIR):
+        if "ard-process-guide.html" in files:
+            filepath = os.path.join(root, "ard-process-guide.html")
+            folder_name = os.path.basename(root)
+            district_name = get_district_name(folder_name)
+            
+            try:
+                with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                    old_content = f.read()
+
+                # EXTRACT EXISTING STRIPE LINKS
+                # We look for the href attributes of buttons containing $47 and $97
+                ard_stripe_link = "YOUR_STRIPE_LINK_HERE"
+                bundle_stripe_link = "YOUR_STRIPE_LINK_HERE"
+
+                # Regex to safely find the URL near the $47 price tag
+                ard_match = re.search(r'href=[\'"]([^\'"]+)[\'"][^>]*>.*?\$47', old_content, re.IGNORECASE)
+                if ard_match:
+                    ard_stripe_link = ard_match.group(1)
+
+                # Regex to safely find the URL near the $97 price tag
+                bundle_match = re.search(r'href=[\'"]([^\'"]+)[\'"][^>]*>.*?\$97', old_content, re.IGNORECASE)
+                if bundle_match:
+                    bundle_stripe_link = bundle_match.group(1)
+
+                # INJECT DATA INTO THE NEW MASTER TEMPLATE
+                new_html = HTML_TEMPLATE.replace("{district_name}", district_name)
+                new_html = new_html.replace("{district_slug}", folder_name)
+                new_html = new_html.replace("{ard_stripe_link}", ard_stripe_link)
+                new_html = new_html.replace("{bundle_stripe_link}", bundle_stripe_link)
+
+                # OVERWRITE THE OLD FILE WITH THE NEW TEMPLATE
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_html)
+                
+                print(f"Updated: {district_name} ({folder_name})")
+                count += 1
+                
+            except Exception as e:
+                print(f"Failed to update {filepath}: {e}")
+
+    print(f"\nSuccess! Completely updated {count} ARD Process Guide pages.")
+
+if __name__ == "__main__":
+    main()

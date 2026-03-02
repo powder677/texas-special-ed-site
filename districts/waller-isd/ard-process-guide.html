@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
@@ -7,7 +6,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-GVLPE273XH');
 </script>
 
@@ -16,14 +14,93 @@
 <title>ARD Meeting Guide: Waller ISD | Parent Rights</title>
 <meta content="Everything Waller ISD parents need to know about ARD meetings: 5-day notice, 10-day recess, disagreeing with the team, and filing a TEA complaint." name="description"/>
 <link href="https://www.texasspecialed.com/districts/waller-isd/ard-process-guide" rel="canonical"/>
-<meta content="ARD Meeting Guide: Waller ISD | Parent Rights" property="og:title"/>
-<meta content="Everything Waller ISD parents need to know about ARD meetings: 5-day notice, 10-day recess, disagreeing with the team, and filing a TEA complaint." property="og:description"/>
-<meta content="https://texasspecialed.com/districts/waller-isd/ard-process-guide.html" property="og:url"/>
-<meta content="article" property="og:type"/>
-<meta content="summary" name="twitter:card"/>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
 <link href="/style.css" rel="stylesheet"/>
+
+<style>
+/* ── BASE STYLES FOR PREVIEW ACCURACY ── */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.site-header { background: #fff; padding: 15px 20px; border-bottom: 1px solid #ddd; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342;}
+
+/* ── 70/30 DESKTOP GRID & STICKY SIDEBAR ── */
+.layout-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-top: 40px; align-items: start; }
+@media (min-width: 1024px) { .layout-grid { grid-template-columns: 1fr 380px; } }
+.sidebar-column { position: sticky; top: 20px; z-index: 10; }
+.content-column { min-width: 0; font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column p { margin: 0 0 1.25rem; }
+
+/* ── SCANNABLE BLOCKS ── */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2 { border-top: none; margin-top: 0; padding-top: 0; font-size: 1.4rem; color: #166534; }
+.action-steps ol { padding-left: 1.4rem; margin: 0; font-size: 17px; }
+.action-steps li { margin-bottom: 14px; line-height: 1.65; color: #166534;}
+.action-steps strong { color: #14532d; }
+
+.iep-list { list-style: none; padding: 0; margin: 1.5rem 0 2.5rem; counter-reset: iep; }
+.iep-list li { counter-increment: iep; display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid #e8f0fe; font-size: 17px; }
+.iep-list li:last-child { border-bottom: none; }
+.iep-list li::before { content: counter(iep); background: #1a56db; color: #fff; font-weight: 700; font-size: 14px; border-radius: 50%; min-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.iep-list strong { display: block; margin-bottom: 6px; color: #0f172a; font-size: 1.1rem; }
+
+.section-divider { text-align: center; color: #9ab0cc; font-size: 24px; margin: 3rem 0; letter-spacing: 0.4em; }
+
+/* ── INLINE CTAS ── */
+.inline-cta { background: #f8fbff; border: 1px solid #dbe8fb; border-left: 4px solid #1a56db; border-radius: 6px; padding: 24px; margin: 2.5rem 0; display: flex; gap: 16px; align-items: flex-start; }
+.inline-cta.gold { background: #fdfaf5; border-color: #d6cbbf; border-left-color: #b8963a; }
+.inline-cta .cta-icon { font-size: 2.2rem; line-height: 1; flex-shrink: 0; }
+.inline-cta h3 { margin: 0 0 8px 0; font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; }
+.inline-cta p { margin: 0 0 16px 0; font-size: 16px; color: #475569; }
+.btn-primary { background: #1a56db; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 15px; display: inline-block; transition: background 0.2s; }
+.btn-primary:hover { background: #1e3a8a; color: #fff; }
+.btn-primary.gold-btn { background: #1a1410; color: #b8963a; }
+.btn-primary.gold-btn:hover { background: #b8963a; color: #1a1410; }
+
+/* ── STACKED OFFERS ── */
+.offers-container { display: flex; flex-direction: column; gap: 24px; margin-top: 50px; }
+.sales-card { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); padding: 36px; border-radius: 12px; text-align: center; color: white; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); }
+.sales-card.gold-theme { background: linear-gradient(135deg, #1c1917 0%, #44403c 100%); }
+.sales-card .badge { background: #d4af37; color: #0f172a; padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
+.sales-card h3 { margin: 20px 0 12px; color: #ffffff; font-size: 1.6rem; font-family: 'Lora', serif; }
+.sales-card p { color: #e2e8f0; margin: 0 auto 24px; font-size: 1.05rem; line-height: 1.6; max-width: 90%;}
+.sales-card a { background: #d4af37; color: #0f172a; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; display: inline-block; transition: 0.2s; }
+.sales-card a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+
+/* ── SIDEBAR FORM STYLES (Warm Version) ── */
+.sidebar-form { width: 100%; background: #fdfaf5; border: 1px solid #d6cbbf; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); overflow: hidden; }
+.sidebar-form .sf-header { background: #1a1410; padding: 24px 24px 20px; border-bottom: 3px solid #b8963a; }
+.sidebar-form .sf-eyebrow { font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #b8963a; margin: 0 0 6px; font-family: 'DM Sans', sans-serif;}
+.sidebar-form .sf-name { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; color: #f5f0e8; margin: 0; line-height: 1.1;}
+.sidebar-form .sf-name em { color: #d4ad5a; font-style: italic; }
+.sidebar-form .sf-body { padding: 24px; }
+.sidebar-form .sf-empathy { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: #1a1410; margin: 0 0 8px; }
+.sidebar-form .sf-sub { font-size: 14px; color: #6b5f53; margin: 0 0 20px; font-family: 'DM Sans', sans-serif; line-height: 1.5;}
+.sidebar-form .sf-group { margin-bottom: 16px; }
+.sidebar-form label { display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6b5f53; margin-bottom: 6px; font-family: 'DM Sans', sans-serif; }
+.sidebar-form input, .sidebar-form select { width: 100%; border: 1px solid #d6cbbf; padding: 12px; font-size: 14px; font-family: 'DM Sans', sans-serif; border-radius: 4px; box-sizing: border-box; }
+.sidebar-form input:focus, .sidebar-form select:focus { outline: none; border-color: #b8963a; }
+.sidebar-form select { cursor: pointer; }
+.sidebar-form .sf-btn { width: 100%; background: #1a1410; color: #d4ad5a; border: none; padding: 16px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; border-radius: 4px; transition: 0.2s; font-family: 'DM Sans', sans-serif; margin-top: 8px;}
+.sidebar-form .sf-btn:hover { background: #b8963a; color: #1a1410; }
+.sidebar-form .sf-trust { text-align: center; margin-top: 14px; font-size: 12px; color: #9a8f86; font-family: 'DM Sans', sans-serif; display: flex; align-items: center; justify-content: center; gap: 6px;}
+.sidebar-form .sf-footer { background: #f0ebe3; padding: 12px 24px; text-align: center; font-size: 11px; color: #9a8f86; font-family: 'DM Sans', sans-serif; border-top: 1px solid #d6cbbf;}
+</style>
 </head>
 <body>
+
 <header class="site-header">
 <nav aria-label="Main navigation" class="navbar" role="navigation">
 <div class="nav-container">
@@ -39,27 +116,10 @@
 </button>
 <ul class="nav-menu">
 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-<li class="nav-item dropdown">
-<a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
-<ul class="dropdown-menu">
-<li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
-<li class="dropdown-divider"></li>
-<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
-<li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
-<li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
-<li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
-<li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
-<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
-<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
-<li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
-<li class="dropdown-divider"></li>
-<li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
-</ul>
-</li>
+<li class="nav-item"><a class="nav-link" href="/districts/index.html">Districts</a></li>
 <li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
 <li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
 <li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
 <li class="nav-item nav-cta">
 <a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
 </li>
@@ -67,254 +127,207 @@
 </div>
 </nav>
 </header>
+
 <main class="container">
 <h1>ARD Meeting Guide: Waller ISD</h1>
-<div class="silo-nav" style="background-color: #e9ecef; padding: 12px 16px; border-radius: 6px; margin: 20px 0; font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; border-left: 4px solid #6c757d;">
-<strong style="color: #495057;">Waller ISD Resources:</strong>
-<a href="index.html" style="text-decoration: none; color: #0056b3; font-weight: 500;">District Home</a> •
-    <a href="ard-process-guide.html" style="text-decoration: none; color: #0056b3; font-weight: 500;">ARD Guide</a> •
-    <a href="evaluation-child-find.html" style="text-decoration: none; color: #0056b3; font-weight: 500;">Evaluations (FIE)</a> •
-    <a href="dyslexia-services.html" style="text-decoration: none; color: #0056b3; font-weight: 500;">Dyslexia/504</a> •
-    <a href="grievance-dispute-resolution.html" style="text-decoration: none; color: #0056b3; font-weight: 500;">Dispute Resolution</a>
+
+<div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
+    <strong style="color: #334155;">Waller ISD Resources:</strong>
+    <a href="/districts/waller-isd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
+    <a href="/districts/waller-isd/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 700;">ARD Guide</a> •
+    <a href="/districts/waller-isd/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
+    <a href="/districts/waller-isd/dyslexia-services.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dyslexia / 504</a>
 </div>
-<div class="trust-anchor" style="background-color: #f8fbff; border-left: 5px solid #004085; padding: 16px; margin: 20px 0; border-radius: 4px;">
-<p style="margin: 0; font-size: 16px; color: #333; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
-<strong>Hi, I'm a Texas parent of a 2e child.</strong> When I watched the school system fail her, I realized how broken the process is. I built this resource to help parents like you get the support your child deserves. You are not alone.
-    </p>
+
+<div class="quick-answer" style="background:#f0fdf4;border-left:5px solid #16a34a;padding:24px;border-radius:6px;margin:30px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+    <p style="font-size:0.8rem;text-transform:uppercase;color:#16a34a;font-weight:800;margin:0 0 10px; letter-spacing: 0.05em;">⚡ Quick Answer</p>
+    <p style="margin:0;font-size:1.05rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6;"><strong>What is an ARD meeting in Texas?</strong><br/>
+    An ARD (Admission, Review, and Dismissal) meeting is the IEP meeting required by Texas law where the school and parents together review a child's special education eligibility and services. Parents must receive written notice at least <strong>5 calendar days</strong> before the meeting and may request a <strong>10-day recess</strong> at any time to seek advice.</p>
 </div>
-<div class="quick-answer" style="background:#f0fdf4;border-left:5px solid #16a34a;padding:20px;border-radius:4px;margin:0 0 30px;">
-<p style="font-size:0.75rem;text-transform:uppercase;color:#16a34a;font-weight:700;margin:0 0 8px;">⚡ Quick Answer</p>
-<p style="margin:0;font-size:1rem;"><strong>What is an ARD meeting in Texas?</strong><br/>
-  An ARD (Admission, Review, and Dismissal) meeting is the IEP meeting required by Texas law where the school and parents together review a child's special education eligibility and services. Parents must receive written notice at least <strong>5 calendar days</strong> before the meeting and may request a <strong>10-day recess</strong> at any time to seek advice.</p>
-</div>
-<div class="premium-offers-container">
-<div class="offers-header-badge">Meeting Mastery Tools</div>
-<div class="premium-offers-header">
-<h2>Take Control of the Table</h2>
-<p>Protect your child's rights with these strategic ARD preparation kits.</p>
-</div>
-<div class="stacked-card border-gold">
-<div class="card-inner">
-<div class="card-main-content">
-<span class="topic-tag tag-gold">ARD Meetings</span>
-<h3 class="card-title">ARD Prep Toolkit</h3>
-<p class="card-tagline">Walk Into Your Next Meeting as a Decision-Maker.</p>
-<p class="card-desc">Strategic scripts for difficult administrators, the "10-Day Recess Playbook" to legally pause a meeting, a "Red Flag" checklist for IEP paperwork, and a pocket guide for meeting day.</p>
-<ul class="card-bullets">
-<li>Exact response scripts for pushback</li>
-<li>10-Day Recess strategy guide</li>
-<li>IEP Red Flag error checklist</li>
-<li>Meeting Day Pocket Guide</li>
-</ul>
-</div>
-<div class="card-checkout-zone">
-<div class="price-block">
-<span class="price-label">Complete Kit</span>
-<span class="price-amount">$47.00</span>
-</div>
-<a class="btn-premium" href="https://buy.stripe.com/6oU8wO2FTgmA5xReP3bbG0L">Buy Now →</a>
-</div>
-</div>
-</div>
-<div class="stacked-card border-purple">
-<div class="card-inner">
-<div class="card-main-content">
-<span class="topic-tag tag-purple">Autism</span>
-<h3 class="card-title">ARD Prep Toolkit with Autism Supplement Cheat Sheet</h3>
-<p class="card-tagline">Unlock the 11 Hidden Services for Autism.</p>
-<p class="card-desc">A tactical guide to TAC §89.1055. Every Texas student with Autism must have 11 specific strategies considered in their IEP — from parent training to staff ratios. This decodes each one.</p>
-<ul class="card-bullets">
-<li>All 11 strategies explained in plain English</li>
-<li>Service request templates for each item</li>
-<li>Common district shortcuts exposed</li>
-<li>"Check the Box" accountability guide</li>
-</ul>
-</div>
-<div class="card-checkout-zone">
-<div class="price-block">
-<span class="price-label">Toolkit + Guide</span>
-<span class="price-amount">$57.00</span>
-</div>
-<a class="btn-premium" href="https://buy.stripe.com/5kQdR894hc6k9O7ayNbbG0H">Buy Now →</a>
-</div>
-</div>
-</div>
-</div>
-<h2>What Is an ARD Meeting?</h2>
-<p>An ARD meeting is a very important meeting about your child's special education services. ARD stands for Admission, Review, and Dismissal. It is a meeting required by the Individuals with Disabilities Education Act (IDEA), a federal law, and by Texas Education Code, specifically Chapter 29, that makes sure children with disabilities receive a free appropriate public education (FAPE) designed to meet their unique needs. The purpose of the ARD meeting is to bring together a team of people who know your child well to make decisions about their educational program. This includes deciding if your child is eligible for special education, creating an Individualized Education Program (IEP) if they are eligible, reviewing the IEP to make sure it is working, and, if appropriate, dismissing your child from special education services when they no longer need them.</p>
-<p>The ARD meeting is not just a formality; it's a crucial opportunity for you, as the parent, to be an active and equal participant in shaping your child's education. You have valuable insights into your child's strengths, weaknesses, needs, and learning style. Your input is essential for developing an IEP that is truly tailored to your child. The ARD team usually includes you, the parent; one or more teachers; a school administrator; an evaluation specialist (someone who can interpret evaluation results); and sometimes other professionals, such as therapists or counselors, depending on your child's needs. The district must also invite the student if they are 14 years of age or older, or younger if appropriate, to participate in their ARD meeting. The student is a valuable source of information and should be included in the process as much as possible.</p>
-<h2>Your 5-Day Notice Right</h2>
-<p>Waller ISD, like all school districts, is required to provide you with written notice of an ARD meeting at least five calendar days before the meeting is scheduled to take place. This five-day notice is designed to give you ample time to prepare for the meeting, gather any relevant information, and arrange your schedule so that you can attend without feeling rushed. It's important to understand that these are calendar days, so weekends and holidays count towards the five-day requirement. </p>
-<p>The written notice must include several important details. First, it must clearly state the purpose of the meeting. For example, is it an initial ARD to determine eligibility for special education, a review of an existing IEP, or a meeting to discuss a change in placement? Second, the notice must list the date, time, and location of the meeting. This allows you to make arrangements to be present. Third, the notice must list the names and titles of the individuals who will be attending the meeting. This allows you to anticipate who will be there and potentially request the attendance of other individuals who may have valuable input regarding your child. Finally, the notice must inform you of your right to participate in the ARD meeting and to bring anyone you choose to support you. If you are unable to attend the meeting at the scheduled time, it is crucial that you contact the school as soon as possible to reschedule. If you wish to meet sooner than the required 5-day notice, you can waive this right in writing. However, never feel pressured to waive your right if you need more time to prepare.</p>
-<h2>What to Bring to Your ARD</h2>
-<p>Preparation is key to a successful ARD meeting. Coming prepared will help you advocate effectively for your child's needs. First, bring any prior evaluations or assessments of your child, whether they were conducted by the school district or by outside professionals. This includes psychological evaluations, educational assessments, speech and language evaluations, occupational therapy evaluations, and any other relevant reports. These documents provide valuable information about your child's strengths and weaknesses. Also, bring any letters or reports from doctors, therapists, or other professionals who have worked with your child. These documents can provide medical or therapeutic perspectives that the school may not be aware of. In addition, gather any relevant school records, such as report cards, progress reports, work samples, and attendance records. These documents can provide insight into your child's academic performance and behavior in the classroom.</p>
-<p>More importantly, prepare a written list of your concerns, questions, and priorities for your child's education. This will help you stay focused during the meeting and ensure that all of your concerns are addressed. It is easy to get overwhelmed in a meeting and forget important issues, so writing them down beforehand is a smart strategy. Bring a trusted advocate or support person with you to the ARD meeting. This could be a family member, friend, educational advocate, or special education attorney. Having someone with you can provide emotional support, help you remember important points, and offer a different perspective on the discussion. Finally, Texas is a one-party consent state for recording conversations, so you are legally permitted to record the ARD meeting, provided you notify the ARD team that you are doing so. Recording the meeting can be a helpful way to review the discussion later and ensure that you accurately remember what was said and agreed upon. However, be sure to announce at the beginning of the meeting that you are recording.</p>
-<h2>The 10-Day Recess Rule</h2>
-<p>The 10-day recess rule is a powerful tool that you, as a parent, can use during an ARD meeting if you feel you need more time to consider the decisions being made. Any member of the ARD committee, including you, has the right to request a recess of up to ten school days to gather more information or consult with an advocate before finalizing any decisions about your child's IEP. This recess is designed to ensure that all members of the ARD committee have adequate time to review information, seek expert advice, and make informed decisions in the best interests of the child. This is ten school days, meaning weekends and holidays do not count. </p>
-<p>To invoke the 10-day recess rule, simply state that you would like to recess the meeting. You do not need to provide a detailed explanation, although you may choose to briefly explain why you need more time. For example, you might say, "I would like to recess the meeting for ten days to review the proposed IEP with an advocate." The ARD committee must then grant your request and schedule a date for the reconvened meeting. The recess allows you to step back from the often-pressured environment of the ARD meeting and carefully consider the proposed IEP, placement, and services. Use this time to review documents, conduct independent research, speak with other professionals, or simply reflect on your child's needs and goals. Do not hesitate to invoke the 10-day recess rule if you feel uncertain, overwhelmed, or unprepared to make decisions about your child's education. It is your right, and it can be a valuable tool for ensuring that your child receives the best possible education.</p>
-<h2>Understanding the IEP Document</h2>
-<p>The IEP (Individualized Education Program) document is the written record of the decisions made at the ARD meeting. It is a legally binding document that outlines your child's unique educational needs, goals, and services. Understanding the different sections of the IEP is essential for ensuring that your child receives the appropriate support and services.</p>
-<p>Several key components are decided during the ARD meeting and then memorialized in the IEP document. First, "present levels of academic achievement and functional performance" describe your child's current strengths and areas where they need support. This section is based on assessments, observations, and input from parents and teachers. Second, "annual goals" are measurable statements that describe what your child is expected to achieve within one year. These goals should be specific, measurable, achievable, relevant, and time-bound (SMART). Third, "special education and related services" are the specific supports and services that your child will receive to help them achieve their annual goals. This may include specialized instruction, therapy, counseling, transportation, and assistive technology. Fourth, "placement" refers to the setting where your child will receive their special education services. This could be in a general education classroom with support, a resource room, or a self-contained classroom. Fifth, "accommodations and modifications" are adjustments to the curriculum, instruction, or assessment methods that help your child access the general education curriculum and demonstrate their knowledge. Accommodations change *how* a student learns the material, while modifications change *what* a student is expected to learn.</p>
-<p>It is crucial to understand that you do not have to sign the IEP document the same day as the ARD meeting. You have the right to take the document home, review it carefully, and seek advice from others before signing. Signing the IEP indicates that you agree with the decisions made by the ARD committee. If you do not agree with the IEP, you have the right to refuse to sign it and pursue other options.</p>
-<h2>When You Disagree With the Team</h2>
-<p>It is not uncommon for parents to disagree with the ARD team at some point during their child's special education journey. Remember, you are an equal member of the ARD committee, and your voice matters. You have specific rights if you disagree with the team's decisions.</p>
-<p>First, you have the right to refuse consent for your child's initial placement in special education. This means that if you do not agree with the ARD team's recommendation that your child receive special education services, you can refuse to give your consent, and the school cannot proceed with providing those services. You also have the right to refuse to sign the IEP document if you disagree with its contents. By refusing to sign, you are indicating that you do not agree with the decisions made by the ARD committee. You have the right to request an Independent Educational Evaluation (IEE) at the school district's expense if you disagree with the school's evaluation of your child. An IEE is an evaluation conducted by a qualified professional who is not employed by the school district. The district must either pay for the IEE or demonstrate at a due process hearing that their evaluation was appropriate. Even if you sign the IEP, you have the right to write "parent disagrees" on the document next to the specific areas where you disagree. This creates a written record of your disagreement and preserves your right to pursue further action.</p>
-<h2>Escalation Options</h2>
-<p>If you are unable to resolve your disagreements with the ARD team through informal discussions, you have several formal escalation options available to you. These options are governed by the Individuals with Disabilities Education Act (IDEA) of 2004 and Texas Administrative Code (TAC) Chapter 89, also known as the Legal Framework.</p>
-<p>First, you can file a formal State Complaint with the Texas Education Agency (TEA). This is a free process, and TEA is required to investigate your complaint and issue a written decision within 60 days. The complaint must allege a violation of IDEA or state special education laws. Second, you can request Mediation through TEA. Mediation is a voluntary process where a neutral third party helps you and the school district reach a mutually agreeable resolution. Mediation is also free and can be a less adversarial way to resolve disagreements. Third, you can request a Due Process Hearing. This is a formal legal proceeding where an impartial hearing officer hears evidence and makes a decision about your child's special education needs. You have the right to be represented by an attorney at a due process hearing, and the hearing officer's decision is binding on both you and the school district. Finally, you can file a complaint with the Federal Office for Civil Rights (OCR) if you believe that the school district has discriminated against your child based on their disability. OCR investigates complaints of discrimination and can order the school district to take corrective action. Remember that these are your rights, and you have the power to advocate for your child's educational needs. Don't hesitate to explore these options if you feel that your child's rights are not being respected.</p>
-<section class="faq-section" style="margin:50px 0;">
-<h2 style="font-size:1.4rem;margin-bottom:5px;">Frequently Asked Questions</h2>
-<p style="color:#64748b;margin-bottom:20px;">Answers every parent in Texas needs to know.</p>
-<details style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
-<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-        How much notice must a Texas school give before an ARD meeting? <span style="font-size:1.3rem;color:#64748b;">+</span>
-</summary>
-<p style="margin:10px 0 0;color:#475569;line-height:1.7;">Texas law requires the district to provide written notice at least 5 calendar days before an ARD meeting. Parents can waive this notice in writing if they choose to meet sooner.</p>
-</details>
-<details style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
-<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-        Can I bring someone to my child's ARD meeting? <span style="font-size:1.3rem;color:#64748b;">+</span>
-</summary>
-<p style="margin:10px 0 0;color:#475569;line-height:1.7;">Yes. Under IDEA and Texas law, parents have the right to bring any individual with knowledge or special expertise regarding their child, including an advocate, educational consultant, or attorney.</p>
-</details>
-<details style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
-<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-        What is a 10-day recess in an ARD meeting? <span style="font-size:1.3rem;color:#64748b;">+</span>
-</summary>
-<p style="margin:10px 0 0;color:#475569;line-height:1.7;">A parent or the district may request a 10-day recess (pause) during an ARD meeting to gather more information, seek independent advice, or consult an advocate before final decisions are made.</p>
-</details>
-<details style="border-bottom:1px solid #e2e8f0;padding:14px 0;">
-<summary style="font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
-        What happens if I disagree with the ARD team's decision? <span style="font-size:1.3rem;color:#64748b;">+</span>
-</summary>
-<p style="margin:10px 0 0;color:#475569;line-height:1.7;">You may refuse to sign the IEP, request a 10-day recess, file a State Complaint with the TEA, request Mediation, or request a Special Education Due Process Hearing. You do not lose your right to services during this process.</p>
-</details>
-</section>
-<section class="cluster-links" style="margin:50px 0;padding:25px;background:#f8fafc;border-radius:8px;">
-<p style="font-size:0.75rem;text-transform:uppercase;color:#64748b;font-weight:700;margin:0 0 12px;">
-    📍 Other Districts in Region 4 (TEA ESC)
-  </p>
-<p style="font-size:0.9rem;color:#475569;margin:0 0 15px;">
-    Parents across the region share the same TEA oversight and ESC support. These districts follow the same timelines:
-  </p>
-<a href="https://texasspecialed.com/districts/houston-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Houston ISD</a><a href="https://texasspecialed.com/districts/cypress-fairbanks-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Cypress-Fairbanks ISD</a><a href="https://texasspecialed.com/districts/katy-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Katy ISD</a><a href="https://texasspecialed.com/districts/fort-bend-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Fort Bend ISD</a><a href="https://texasspecialed.com/districts/conroe-isd/" style="display:inline-block;background:#f1f5f9;border:1px solid #cbd5e1;padding:6px 14px;border-radius:20px;text-decoration:none;color:#1e293b;font-size:0.85rem;margin:4px;">Conroe ISD</a>
-</section>
-<div class="sales-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:32px;margin:40px 0;border-radius:8px;text-align:center;color:white;box-shadow:0 10px 15px -3px rgba(0,0,0,0.1);">
-<span style="background:#d4af37;color:#0f172a;padding:6px 16px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;">Most Popular</span>
-<h3 style="margin:20px 0 12px;color:#ffffff;font-size:1.6rem;">The "Parent Protection" All-Access Pass</h3>
-<p style="color:#e2e8f0;max-width:600px;margin:0 auto 24px;font-size:1.05rem;line-height:1.6;">Every toolkit in one bundle — ARD Prep, Behavior Defense, Dyslexia, ADHD, Autism Supplement, and the Accommodations Encyclopedia.</p>
-<a href="https://buy.stripe.com/3cIcN4a8l7Q4d0j7mBbbG0G" style="background:#d4af37;color:#0f172a;padding:16px 32px;text-decoration:none;border-radius:4px;font-weight:700;font-size:1.05rem;display:inline-block;">GET ALL 6 KITS FOR $97</a>
-<p style="margin-top:16px;font-size:0.85rem;color:#cbd5e1;">Instant Digital Access • Secure Stripe Checkout</p>
+
+<div class="layout-grid">
+    
+    <!-- LEFT SIDE: 70% READING CONTENT -->
+    <article class="content-column">
+        
+        <h2 style="border-top:none; margin-top:0; padding-top:0;">What Is an ARD Meeting in Waller ISD?</h2>
+        <p>An ARD meeting (Admission, Review, and Dismissal) is the Texas equivalent of an IEP meeting. Required by the Individuals with Disabilities Education Act (IDEA) and the Texas Education Code, its primary purpose is to determine eligibility, develop an Individualized Education Program (IEP), and formally review your child's progress.</p>
+        
+        <p>If your child attends school in <strong>Waller ISD</strong>, understanding this process is the key to securing the services they deserve. Think of it as a legal team meeting focused solely on your child's educational needs and exactly how the local educators and specialists will support them.</p>
+
+        <div class="pull-quote">
+            You're not a guest at this meeting. You're a legal member of the committee — with equal standing to the Waller ISD principal or diagnostician.
+        </div>
+
+        <div class="section-divider">· · ·</div>
+        
+        <h2>Your 5-Day Notice Right</h2>
+        <p>You have the absolute right to receive written notice of an ARD meeting at least <strong>five calendar days</strong> before it is scheduled to take place. This ensures parents have time to prepare, gather documentation, or arrange for an advocate to attend.</p>
+        
+        <p>This written notice must explicitly state the purpose of the meeting (e.g., Annual Review, Change of Placement, or MDR), the location, and exactly who from the school district will be attending.</p>
+        <p><em style="color:#64748b; font-size: 0.95rem;">Note: You can waive your 5-day notice in writing if there is an emergency, but the school district cannot pressure you to do so.</em></p>
+
+        <div class="inline-cta">
+            <div class="cta-icon">🛡️</div>
+            <div>
+                <h3>You are not alone in this process.</h3>
+                <p>Facing district administrators can feel intimidating, but you don't have to do it by yourself. Connect with a local special education advocate or attorney to level the playing field before your meeting.</p>
+                <a href="#leadCaptureForm" class="btn-primary" onclick="document.querySelector('#leadCaptureForm').scrollIntoView({behavior: 'smooth'}); return false;">Get a Free Case Review</a>
+            </div>
+        </div>
+
+        <div class="action-steps">
+            <h2>What to Bring to Your ARD</h2>
+            <p style="margin-bottom:15px; font-size:17px;">Coming prepared shifts the balance of power. Do not walk into your Waller ISD campus empty-handed. Gather these items before your meeting:</p>
+            <ol>
+                <li><strong>Outside Medical Records:</strong> Letters or diagnoses from private therapists, psychologists, or pediatricians.</li>
+                <li><strong>A Written List of Concerns:</strong> You will likely forget your talking points in the heat of the moment. Bring a printed list.</li>
+                <li><strong>Previous IEPs & Progress Reports:</strong> Have the data ready to prove whether your child has actually met last year's goals.</li>
+                <li><strong>A Support Person:</strong> You are legally allowed to bring an advocate, friend, or attorney. Never go alone if the meeting is contentious.</li>
+            </ol>
+        </div>
+
+        <h2>The 10-Day Recess Rule</h2>
+        <p>During an ARD meeting, decisions are made that will significantly impact your child's education for an entire year. If you feel overwhelmed, pressured, or simply need more time to consult an expert, Texas law provides a powerful tool: <strong>the 10-day recess</strong>.</p>
+        
+        <p>At any point, if you disagree with the IEP or need time to review data, you can state: <em>"I am requesting a 10-day recess to review this information."</em> The Waller ISD ARD committee is required to grant it, pause the meeting, and reconvene within 10 school days before finalizing the document.</p>
+        
+        <div class="inline-cta gold">
+            <div class="cta-icon">💡</div>
+            <div>
+                <h3>Need scripts to legally pause a meeting?</h3>
+                <p>Don't get caught off guard by district pushback. Our ARD Prep Toolkit gives you the exact word-for-word scripts to enforce your rights and confidently request a 10-day recess.</p>
+                <a href="#premium-offers" class="btn-primary gold-btn" onclick="document.querySelector('#premium-offers').scrollIntoView({behavior: 'smooth'}); return false;">View the ARD Prep Toolkit</a>
+            </div>
+        </div>
+
+        <div class="section-divider">· · ·</div>
+
+        <h2>Understanding the IEP Document</h2>
+        <p>The IEP is a legally binding contract. When reviewing the paperwork at the table, pay close attention to these critical sections to ensure Waller ISD is held accountable:</p>
+
+        <ol class="iep-list">
+            <li>
+                <div>
+                    <strong>Present Levels (PLAAFP)</strong>
+                    Your child's current strengths and weaknesses. Push back if it relies on vague summaries rather than hard data.
+                </div>
+            </li>
+            <li>
+                <div>
+                    <strong>Annual Goals</strong>
+                    Goals must be measurable. "Will improve reading" is not a legal goal. "Will read 90 words per minute by May" is.
+                </div>
+            </li>
+            <li>
+                <div>
+                    <strong>Special Education Services</strong>
+                    Lists exactly what your child receives (e.g., Speech Therapy, Resource Room). Verify the exact minutes and frequency per week.
+                </div>
+            </li>
+            <li>
+                <div>
+                    <strong>Accommodations</strong>
+                    Changes that help your child access learning, such as extended time on tests, preferential seating, or graphic organizers.
+                </div>
+            </li>
+        </ol>
+
+        <div class="section-divider">· · ·</div>
+
+        <h2>When You Disagree With the Team</h2>
+        <p>It is perfectly acceptable to disagree with the ARD committee's recommendations. If you disagree with a proposed initial placement, you have the right to refuse consent, meaning services cannot begin.</p>
+        <p>If you disagree with a revised Waller ISD IEP, <strong>do not sign the "Agree" box.</strong> Check "Disagree," request your 10-day recess, and ensure the district writes your specific concerns into the official minutes of the meeting. You also maintain the right to request an Independent Educational Evaluation (IEE) at the district's expense if you believe their testing is flawed.</p>
+
+        <!-- ========================================== -->
+        <!-- STACKED PREMIUM OFFERS (WITH STRIPE LINKS) -->
+        <!-- ========================================== -->
+        <div id="premium-offers" class="offers-container">
+            
+            <!-- Offer 1: ARD Prep -->
+            <div class="sales-card gold-theme">
+                <span class="badge">Essential Preparation</span>
+                <h3>The ARD Prep Toolkit</h3>
+                <p>Walk into your next meeting as a decision-maker. Includes exact response scripts for pushback, the "10-Day Recess Playbook," and the IEP Red Flag checklist.</p>
+                <a href="YOUR_STRIPE_LINK_HERE" target="_blank">Get the ARD Toolkit — $47</a>
+            </div>
+
+            <!-- Offer 2: All-Access Pass -->
+            <div class="sales-card">
+                <span class="badge" style="background:#fff; color:#1e3a8a;">Best Value</span>
+                <h3>The "Parent Protection" All-Access Pass</h3>
+                <p>Get every toolkit in one bundle — ARD Prep, Behavior Defense, Dyslexia, ADHD, Autism Supplement, and the Accommodations Encyclopedia.</p>
+                <a href="https://buy.stripe.com/3cIcN4a8l7Q4d0j7mBbbG0G" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
+            </div>
+
+        </div>
+    </article>
+
+    <!-- RIGHT SIDE: 30% STICKY SIDEBAR -->
+    <aside class="sidebar-column">
+        
+        <!-- LEAD CAPTURE FORM -->
+        <div class="sidebar-form">
+            <div class="sf-header">
+                <p class="sf-eyebrow">Waller ISD Special Ed Law</p>
+                <h3 class="sf-name">Local IEP <em>Advocates</em></h3>
+            </div>
+            
+            <div class="sf-body">
+                <p class="sf-empathy">You shouldn't have to figure this out alone.</p>
+                <p class="sf-sub">A free 15-minute call can help you understand what the school is required to do.</p>
+                
+                <form id="leadCaptureForm">
+                    <div class="sf-group">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="First and last name" required />
+                    </div>
+                    
+                    <div class="sf-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Where should we reach you?" required />
+                    </div>
+                    
+                    <div class="sf-group">
+                        <label>Phone <span class="sf-optional">(optional)</span></label>
+                        <input type="tel" placeholder="(555) 000-0000" />
+                    </div>
+                    
+                    <div class="sf-group">
+                        <label>What's going on?</label>
+                        <select required>
+                            <option value="" disabled selected>Choose what fits best...</option>
+                            <option>The school keeps saying no to services</option>
+                            <option>I don't understand the IEP paperwork</option>
+                            <option>The ARD meeting felt rushed or unfair</option>
+                            <option>My child was suspended or removed</option>
+                            <option>Something else</option>
+                        </select>
+                    </div>
+                    
+                    <button type="button" class="sf-btn">Get My Free 15-Minute Call</button>
+                    
+                    <p class="sf-trust">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#b8963a" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Confidential. No spam. No pressure.
+                    </p>
+                </form>
+            </div>
+            
+            <div class="sf-footer">
+                Independent Educational Consultants
+            </div>
+        </div>
+    </aside>
+
 </div>
 </main>
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "name": "Waller ISD Special Education Department",
-  "url": "https://texasspecialed.com/districts/waller-isd/ard-process-guide.html",
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "TX",
-    "addressCountry": "US"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "sped@waller.edu",
-    "contactType": "Special Education Director"
-  }
-}</script>
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://texasspecialed.com"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Waller ISD Hub",
-      "item": "https://texasspecialed.com/districts/waller-isd/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Ard Guide",
-      "item": "https://texasspecialed.com/districts/waller-isd/ard-process-guide.html"
-    }
-  ]
-}</script>
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much notice must a Texas school give before an ARD meeting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Texas law requires the district to provide written notice at least 5 calendar days before an ARD meeting. Parents can waive this notice in writing if they choose to meet sooner."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I bring someone to my child's ARD meeting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Under IDEA and Texas law, parents have the right to bring any individual with knowledge or special expertise regarding their child, including an advocate, educational consultant, or attorney."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a 10-day recess in an ARD meeting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A parent or the district may request a 10-day recess (pause) during an ARD meeting to gather more information, seek independent advice, or consult an advocate before final decisions are made."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What happens if I disagree with the ARD team's decision?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You may refuse to sign the IEP, request a 10-day recess, file a State Complaint with the TEA, request Mediation, or request a Special Education Due Process Hearing. You do not lose your right to services during this process."
-      }
-    }
-  ]
-}</script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const toggle = document.querySelector('.mobile-menu-toggle');
-    const menu = document.querySelector('.nav-menu');
-    
-    if(toggle && menu) {
-        toggle.addEventListener('click', function() {
-            menu.classList.toggle('active');
-            const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-            toggle.setAttribute('aria-expanded', !isExpanded);
-        });
-    }
 
-    const dropdowns = document.querySelectorAll('.dropdown-toggle');
-    dropdowns.forEach(drop => {
-        drop.addEventListener('click', function(e) {
-            if (window.innerWidth <= 900) {
-                e.preventDefault();
-                this.parentElement.classList.toggle('active');
-            }
-        });
-    });
-});
-</script>
 <footer class="site-footer">
 <div class="footer-container">
 <div class="footer-about">
-<img alt="Texas Special Ed Logo" height="auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" src="/images/texasspecialed-logo.png" width="160"/>
-<span style="display:none; font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:800; color:#fff;">Texas Special Ed</span>
-<p style="margin-top:0.75rem;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+<p style="margin-top:.75rem;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
 </div>
 <div class="footer-col">
 <h3>Quick Links</h3>
@@ -322,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><a href="/">Home</a></li>
 <li><a href="/districts/index.html">Browse Districts</a></li>
 <li><a href="/resources/index.html">Parent Resources</a></li>
-<li><a href="/blog/index.html">Blog &amp; Articles</a></li>
+<li><a href="/blog/index.html">Blog & Articles</a></li>
 <li><a href="/about/index.html">About Us</a></li>
 <li><a href="/contact/index.html">Contact Us</a></li>
 </ul>
@@ -330,10 +343,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="footer-col">
 <h3>Popular Districts</h3>
 <ul>
-<li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
 <li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
 <li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
-<li><a href="/districts/lewisville-isd/index.html">Lewisville ISD</a></li>
 <li><a href="/districts/conroe-isd/index.html">Conroe ISD</a></li>
 <li><a href="/districts/index.html">View All Districts →</a></li>
 </ul>
@@ -351,4 +363,84 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="footer-bottom">
 <p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
 </div>
-</footer></body></html>
+</footer>
+
+<!-- ========================================================= -->
+<!-- THE LEAD CAPTURE SCRIPT (WIRED TO YOUR GOOGLE SHEET URL)  -->
+<!-- ========================================================= -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Menu toggle logic
+    var toggle = document.querySelector('.mobile-menu-toggle');
+    var menu   = document.querySelector('.nav-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            toggle.setAttribute('aria-expanded', menu.classList.contains('active'));
+        });
+    }
+    
+    // Form capture logic
+    const leadForms = document.querySelectorAll('form');
+    
+    leadForms.forEach(form => {
+        const submitBtn = form.querySelector('button');
+        if (!submitBtn) return;
+
+        submitBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const nameInput = form.querySelector('input[type="text"]');
+            const emailInput = form.querySelector('input[type="email"]');
+            const phoneInput = form.querySelector('input[type="tel"]');
+            const selectInputs = form.querySelectorAll('select');
+            let issueSelect = selectInputs.length > 0 ? selectInputs[0] : null;
+
+            if (nameInput && !nameInput.value.trim()) {
+                alert('Please enter your name.');
+                nameInput.focus();
+                return;
+            }
+
+            submitBtn.innerHTML = 'Securely Sending...';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+
+            const formData = new URLSearchParams();
+            formData.append('name', nameInput && nameInput.value ? nameInput.value : 'Not provided');
+            formData.append('email', emailInput && emailInput.value ? emailInput.value : 'Not provided');
+            formData.append('phone', phoneInput && phoneInput.value ? phoneInput.value : 'Not provided');
+            formData.append('concern', issueSelect && issueSelect.value ? issueSelect.value : 'Not provided');
+            formData.append('pageUrl', window.location.href);
+
+            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwWpGXg3JMJnxyzUlJHPlQRnE_R2Dh6oFvapMureXQWG_0bLOBtN_e7f5s5jnKRdcG-/exec';
+
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            })
+            .then(() => {
+                form.innerHTML = `
+                    <div style="text-align: center; padding: 20px 10px;">
+                        <div style="color: #b8963a; font-size: 40px; margin-bottom: 10px;">✓</div>
+                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #1a1410; margin-bottom: 10px; font-weight: 600;">Request Received</h4>
+                        <p style="font-size: 14px; color: #6b5f53; line-height: 1.5; font-family: 'DM Sans', sans-serif;">
+                            Your information has been securely routed. A local advocate will reach out to you shortly.
+                        </p>
+                    </div>
+                `;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                submitBtn.innerHTML = 'Error. Please Try Again.';
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = '1';
+            });
+        });
+    });
+});
+</script>
+
+</body>
+</html>
