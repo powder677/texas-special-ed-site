@@ -53,7 +53,47 @@ main {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 }
+/* =========================================
+   GLOBAL TIGHT NAVBAR & STICKY FORM FIX
+   ========================================= */
 
+.site-header { 
+    background: #fff; 
+    padding: 10px 20px !important; /* Shrinks the navbar height */
+    border-bottom: 1px solid #e2e8f0; 
+    position: sticky !important; 
+    top: 0; 
+    z-index: 100 !important; /* Keeps navbar on top */
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.text-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #0f172a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+}
+
+.text-logo em {
+    color: #b8963a;
+    font-style: italic;
+    margin-left: 6px;
+}
+
+/* Pushes all sticky sidebars down globally so they clear the navbar */
+.sidebar-column { 
+    position: sticky !important; 
+    top: 80px !important; 
+    z-index: 10; 
+}
+
+@media (max-width: 768px) {
+    .text-logo { font-size: 22px; }
+}
 /* =========================================
    GLOBAL HEADER ARCHITECTURE
    ========================================= */
