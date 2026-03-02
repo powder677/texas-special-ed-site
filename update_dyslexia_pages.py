@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+import os
+import re
+
+# Set your exact base directory path
+BASE_DIR = r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\districts"
+
+# The master HTML template for the Dyslexia Services page.
+# {district_name}, {district_slug}, {dyslexia_stripe_link}, and {bundle_stripe_link} will be swapped dynamically.
+HTML_TEMPLATE = r"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
@@ -11,9 +19,9 @@
 
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>How to Request an Evaluation in Friendswood ISD | FIE Timeline</title>
-<meta content="Learn the 45 school-day FIE timeline, Child Find obligations, and how to submit a written evaluation request to Friendswood ISD." name="description"/>
-<link href="https://www.texasspecialed.com/districts/friendswood-isd/evaluation-child-find" rel="canonical"/>
+<title>Dyslexia Services in {district_name} | Texas Dyslexia Handbook Rights</title>
+<meta content="Understand your child's dyslexia rights in {district_name}: mandatory screening, structured literacy, 504 Plans, IEPs, and the 2024 Texas Dyslexia Handbook update." name="description"/>
+<link href="https://www.texasspecialed.com/districts/{district_slug}/dyslexia-services" rel="canonical"/>
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,7 +80,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 /* ── STACKED OFFERS ── */
 .offers-container { display: flex; flex-direction: column; gap: 24px; margin-top: 50px; }
 .sales-card { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); padding: 36px; border-radius: 12px; text-align: center; color: white; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); }
-.sales-card.slate-theme { background: linear-gradient(135deg, #334155 0%, #0f172a 100%); }
+.sales-card.red-theme { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); }
 .sales-card .badge { background: #d4af37; color: #0f172a; padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
 .sales-card h3 { margin: 20px 0 12px; color: #ffffff; font-size: 1.6rem; font-family: 'Lora', serif; }
 .sales-card p { color: #e2e8f0; margin: 0 auto 24px; font-size: 1.05rem; line-height: 1.6; max-width: 90%;}
@@ -97,15 +105,6 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 .sidebar-form .sf-btn:hover { background: #b8963a; color: #1a1410; }
 .sidebar-form .sf-trust { text-align: center; margin-top: 14px; font-size: 12px; color: #9a8f86; font-family: 'DM Sans', sans-serif; display: flex; align-items: center; justify-content: center; gap: 6px;}
 .sidebar-form .sf-footer { background: #f0ebe3; padding: 12px 24px; text-align: center; font-size: 11px; color: #9a8f86; font-family: 'DM Sans', sans-serif; border-top: 1px solid #d6cbbf;}
-
-/* ── FAQ SECTION ── */
-.faq-section { margin-top: 50px; }
-.faq-section h2 { font-size: 1.6rem; margin-bottom: 5px; font-family: 'Lora', serif; border: none; padding: 0; }
-.faq-section p { color: #64748b; margin-bottom: 20px; font-family: 'DM Sans', sans-serif; }
-.faq-section details { border-bottom: 1px solid #e2e8f0; padding: 16px 0; }
-.faq-section summary { font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Source Sans 3', sans-serif; font-size: 1.1rem; color: #0f172a;}
-.faq-section summary::-webkit-details-marker { display: none; }
-.faq-section details p { margin: 12px 0 0; color: #475569; line-height: 1.7; font-family: 'Source Sans 3', sans-serif; }
 </style>
 </head>
 <body>
@@ -139,20 +138,20 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 
 <main class="container">
 
-<h1>Requesting an Evaluation in Friendswood ISD</h1>
+<h1>Dyslexia Services in {district_name}</h1>
 
 <div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
-    <strong style="color: #334155;">Friendswood ISD Resources:</strong>
-    <a href="/districts/friendswood-isd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
-    <a href="/districts/friendswood-isd/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
-    <a href="/districts/friendswood-isd/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 700;">Evaluations (FIE)</a> •
-    <a href="/districts/friendswood-isd/dyslexia-services.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dyslexia / 504</a>
+    <strong style="color: #334155;">{district_name} Resources:</strong>
+    <a href="/districts/{district_slug}/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
+    <a href="/districts/{district_slug}/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
+    <a href="/districts/{district_slug}/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
+    <a href="/districts/{district_slug}/dyslexia-services.html" style="text-decoration: none; color: #2563eb; font-weight: 700;">Dyslexia / 504</a>
 </div>
 
 <div class="quick-answer" style="background:#f0fdf4;border-left:5px solid #16a34a;padding:24px;border-radius:6px;margin:30px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
     <p style="font-size:0.8rem;text-transform:uppercase;color:#16a34a;font-weight:800;margin:0 0 10px; letter-spacing: 0.05em;">⚡ Quick Answer</p>
-    <p style="margin:0;font-size:1.05rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6;"><strong>How long does Texas have to complete an evaluation?</strong><br/>
-    Once a written evaluation request is received, the district must complete the Full Individual Evaluation (FIE) and hold an ARD meeting within <strong>45 school days</strong>. This timeline is strictly enforced by the Texas Education Agency (TEA). Verbal requests do not start the clock — always submit in writing and keep a copy.</p>
+    <p style="margin:0;font-size:1.05rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6;"><strong>What are my child's dyslexia rights in Texas?</strong><br/>
+    Under the <strong>Texas Dyslexia Handbook (2024 update)</strong>, all districts must screen students for dyslexia in grades K–2 and provide evidence-based intervention programs. If your child is identified, they are entitled to a structured literacy program and — if eligible — a <strong>504 Plan or IEP</strong> with accommodations like extended time and audio support.</p>
 </div>
 
 <!-- ========================================== -->
@@ -163,130 +162,116 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
     <!-- LEFT SIDE: 70% READING CONTENT -->
     <article class="content-column">
         
-        <h2 style="border-top:none; margin-top:0; padding-top:0;">Requesting a Special Education Evaluation</h2>
-        <p>If you have concerns about your child's academic progress or believe they may have a disability affecting their ability to learn, you have the absolute legal right to request a special education evaluation from Friendswood ISD.</p>
+        <h2 style="border-top:none; margin-top:0; padding-top:0;">The Texas Dyslexia Handbook (2024) in {district_name}</h2>
+        <p>{district_name} is legally required to adhere to the guidelines and procedures outlined in the most current version of the Texas Dyslexia Handbook. Recently updated in 2024 following the passage of HB 3928, this handbook provides the definitive legal roadmap for identifying, assessing, and providing services to students with dyslexia.</p>
         
-        <p>Friendswood ISD has a legal obligation under the "Child Find" provisions of IDEA to identify, locate, and evaluate all children with disabilities residing within their jurisdiction. Your formal request is the direct trigger to force the district to act on this responsibility.</p>
+        <p>The handbook details strict legal requirements for local campuses, mandating best practices in intervention and spelling out exact parental rights. Crucially, the newest updates clarify that a dyslexia evaluation is now officially considered a Full Individual and Initial Evaluation (FIIE) under special education law.</p>
 
         <div class="pull-quote">
-            Verbal requests to a teacher do not start the legal clock. To trigger Friendswood ISD's legal obligations under IDEA, you must put your evaluation request in writing.
+            If your child is struggling to read, you do not have to "wait and see." You have the legal right to request a formal dyslexia evaluation in writing at any time.
         </div>
 
         <div class="section-divider">· · ·</div>
         
-        <div class="action-steps">
-            <h2>How to Submit Your Written Request</h2>
-            <p style="margin-bottom:15px; font-size:17px;">Do not rely on informal emails. A proper evaluation request forces the district into a strict legal timeline. Here is how to do it correctly:</p>
-            <ol>
-                <li><strong>Address It Correctly:</strong> Send the letter to both the campus principal and the Special Education Director.</li>
-                <li><strong>Use the "Magic Words":</strong> State clearly that you are requesting a <em>"Full Individual and Initial Evaluation (FIIE) under IDEA to determine eligibility for special education."</em></li>
-                <li><strong>List Suspected Disabilities:</strong> Detail your specific concerns (e.g., suspected dyslexia, ADHD, autism, or speech delays) and list the interventions that have already failed.</li>
-                <li><strong>Create a Paper Trail:</strong> Email the request so it is time-stamped, or send it via certified mail with a return receipt requested.</li>
-            </ol>
-        </div>
+        <h2>Mandatory Screening Requirements</h2>
+        <p>By Texas law, {district_name} must implement mandatory dyslexia screening for all students in kindergarten and first grade. This screening is not a full evaluation, but a tool designed to identify students who are at risk.</p>
+        
+        <p>The screening process evaluates phonological awareness, rapid naming, and letter-sound knowledge. If your child shows signs of risk during this initial screening, the campus is required to notify you and begin monitoring. However, you do not need to wait for a screener to flag your child to request help.</p>
 
         <div class="inline-cta">
-            <div class="cta-icon">⏳</div>
+            <div class="cta-icon">📖</div>
             <div>
-                <h3>Is the school ignoring your request?</h3>
-                <p>If Friendswood ISD has refused to evaluate your child, or they are forcing you to try "RTI interventions" before testing, they may be violating Child Find laws. Speak with a local advocate to force compliance.</p>
-                <a href="#leadCaptureForm" class="btn-primary" onclick="document.querySelector('#leadCaptureForm').scrollIntoView({behavior: 'smooth'}); return false;">Get a Free Case Review</a>
+                <h3>Is the school's reading intervention failing?</h3>
+                <p>If your child is stuck in RTI or getting "pull-out" support that isn't actually closing the reading gap, private structured literacy tutoring is often the fastest solution. Connect with a certified local specialist.</p>
+                <a href="#leadCaptureForm" class="btn-primary" onclick="document.querySelector('#leadCaptureForm').scrollIntoView({behavior: 'smooth'}); return false;">Find a Local Tutor</a>
             </div>
         </div>
 
         <div class="section-divider">· · ·</div>
         
-        <h2>The 45 School Day Timeline</h2>
-        <p>Once Friendswood ISD receives your written request, they are bound by the strict timelines of the Texas Education Code. Within <strong>15 school days</strong> of receiving your request, the campus must provide you with a written response and a formal consent form to sign.</p>
+        <h2>Structured Literacy Programs</h2>
+        <p>If your child is identified with dyslexia, {district_name} is required to provide a "Structured Literacy" program. This is an explicit, systematic, and cumulative approach to reading instruction.</p>
         
-        <p>Once you sign that consent form, the district has exactly <strong>45 school days</strong> to complete the Full and Individual Evaluation (FIE) and provide you with a written copy of the report. Following the report, they have 30 calendar days to hold the initial ARD meeting to determine eligibility.</p>
-        
-        <p><em style="color:#64748b; font-size: 0.95rem;">Note: School days do not include weekends, holidays, or summer breaks. It is crucial to track these dates meticulously.</em></p>
+        <p>Structured Literacy programs emphasize phonemic awareness, phonics, fluency, vocabulary, and reading comprehension. Instruction must be sequential and build upon previously learned skills. The specific program used on your child's campus will be determined in collaboration with your ARD or 504 committee.</p>
 
         <div class="section-divider">· · ·</div>
 
-        <h2>What the Evaluation Must Cover</h2>
-        <p>The FIE is a comprehensive assessment conducted by qualified professionals (like diagnosticians and school psychologists). It cannot be a single test. The evaluation must address all areas of suspected disability, including:</p>
+        <h2>504 Plan vs. IEP for Dyslexia</h2>
+        <p>A major point of confusion for parents is whether their dyslexic child should receive a 504 Plan or a full IEP (Special Education). The 2024 handbook clarifies that dyslexia is a Specific Learning Disability (SLD).</p>
 
         <ul class="iep-list">
             <li>
                 <div>
-                    <strong>Academic Achievement</strong>
-                    Testing for specific deficits in reading, writing, and math.
+                    <strong>The Section 504 Plan</strong>
+                    Appropriate for students whose dyslexia impacts their learning, but who do not require specialized, intensive instruction to access the general curriculum. It provides accommodations (like extra time) but not specialized teaching.
                 </div>
             </li>
             <li>
                 <div>
-                    <strong>Cognitive Abilities</strong>
-                    Evaluating intelligence, working memory, and problem-solving skills.
-                </div>
-            </li>
-            <li>
-                <div>
-                    <strong>Related Services Needs</strong>
-                    Assessments for speech/language, occupational therapy (fine motor), and social-emotional development.
+                    <strong>The IEP (Special Education)</strong>
+                    Required for students whose dyslexia significantly impacts their ability to learn and who need intensive, individualized, specialized instruction to make progress. This gives you far more legal protections and goals.
                 </div>
             </li>
         </ul>
 
-        <h2>What If Friendswood ISD Refuses?</h2>
-        <p>If the district refuses to conduct an evaluation, they must provide you with a formal "Prior Written Notice" explaining exactly why they refused and what data they relied on to make that decision.</p>
-        <p>You have the right to disagree. If the district refuses, or if you disagree with the results of their evaluation once it is completed, you have the right to request an <strong>Independent Educational Evaluation (IEE)</strong> at the district's expense, or you can file for a due process hearing to force the evaluation.</p>
+        <div class="inline-cta gold">
+            <div class="cta-icon">🎯</div>
+            <div>
+                <h3>Tired of the "Wait and See" approach?</h3>
+                <p>Learn exactly how to force an evaluation, navigate the HB 3928 timelines, and transition your child from a basic 504 Plan to a fully protected IEP.</p>
+                <a href="#premium-offers" class="btn-primary gold-btn" onclick="document.querySelector('#premium-offers').scrollIntoView({behavior: 'smooth'}); return false;">View the Dyslexia Toolkit</a>
+            </div>
+        </div>
+
+        <div class="section-divider">· · ·</div>
+
+        <div class="action-steps">
+            <h2>How to Request an Evaluation in {district_name}</h2>
+            <p style="margin-bottom:15px; font-size:17px;">Do not rely on verbal conversations with the teacher. To start the legal clock, you must put it in writing.</p>
+            <ol>
+                <li><strong>Write the Request:</strong> Draft a letter formally requesting a Full Individual and Initial Evaluation (FIIE) for suspected dyslexia and Specific Learning Disabilities.</li>
+                <li><strong>Submit to the Principal:</strong> Email the request directly to your campus principal and copy the Special Education Director.</li>
+                <li><strong>Watch the Clock:</strong> Once the district receives your written request, they have exactly 15 school days to provide you with a written response and a consent form.</li>
+                <li><strong>Prepare for Testing:</strong> Once you sign the consent form, the district has 45 school days to complete the full evaluation.</li>
+            </ol>
+        </div>
 
         <!-- STACKED PREMIUM OFFERS (WITH STRIPE LINKS) -->
         <div id="premium-offers" class="offers-container">
             
-            <!-- Offer 1: Accommodations Encyclopedia (Slate Theme) -->
-            <div class="sales-card slate-theme">
-                <span class="badge" style="background:#cbd5e1; color:#0f172a;">IEP & 504 Planning</span>
-                <h3>The Accommodations Encyclopedia</h3>
-                <p>Once the evaluation is done, stop guessing what supports to ask for. Use our evidence-based "If/Then" decision matrix to match your child's specific diagnosis to research-backed interventions.</p>
-                <a href="YOUR_STRIPE_LINK_HERE" target="_blank" style="background:#cbd5e1; color:#0f172a;">Get the Encyclopedia — $27</a>
+            <!-- Offer 1: Dyslexia Support (Red Theme) -->
+            <div class="sales-card red-theme">
+                <span class="badge" style="background:#fca5a5; color:#450a0a;">Targeted Reading Support</span>
+                <h3>The Dyslexia Parent Support Toolkit</h3>
+                <p>The definitive Texas roadmap for HB 3928 and the dyslexia evaluation process. Includes legally cited request templates and the 15-45-30 timeline breakdown.</p>
+                <a href="{dyslexia_stripe_link}" target="_blank" style="background:#fca5a5; color:#450a0a;">Get the Dyslexia Toolkit — $37</a>
             </div>
 
             <!-- Offer 2: All-Access Pass (Blue Theme) -->
             <div class="sales-card">
                 <span class="badge" style="background:#fff; color:#1e3a8a;">Best Value</span>
                 <h3>The "Parent Protection" All-Access Pass</h3>
-                <p>Get every toolkit in one bundle — Accommodations, ARD Prep, Behavior Defense, Dyslexia, ADHD, and Autism Supplement.</p>
-                <a href="https://buy.stripe.com/3cIcN4a8l7Q4d0j7mBbbG0G" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
+                <p>Get every toolkit in one bundle — Dyslexia, ARD Prep, Behavior Defense, ADHD, Autism Supplement, and the Accommodations Encyclopedia.</p>
+                <a href="{bundle_stripe_link}" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
             </div>
 
         </div>
-        
-        <!-- FAQ SECTION -->
-        <section class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-            <p>Answers every parent in Texas needs to know.</p>
-            <details>
-                <summary>How do I request a special education evaluation in Texas? <span style="font-size:1.3rem;color:#64748b;">+</span></summary>
-                <p>Submit a written request directly to the school's principal or special education director. The written request starts the mandatory 45 school-day clock. Keep a dated copy for your records.</p>
-            </details>
-            <details>
-                <summary>What is a Full Individual Evaluation (FIE) in Texas? <span style="font-size:1.3rem;color:#64748b;">+</span></summary>
-                <p>A Full Individual Evaluation (FIE) is a comprehensive assessment the school must complete to determine if your child has a disability and needs special education services. It must cover all areas of suspected disability and be completed within 45 school days of your written consent.</p>
-            </details>
-            <details>
-                <summary>Can a Texas school refuse to evaluate my child? <span style="font-size:1.3rem;color:#64748b;">+</span></summary>
-                <p>Yes, but only if the district provides written notice (Prior Written Notice) explaining why they are refusing and what data they relied on. You have the right to challenge that refusal through mediation or a due process hearing.</p>
-            </details>
-        </section>
 
     </article>
 
     <!-- RIGHT SIDE: 30% STICKY SIDEBAR -->
     <aside class="sidebar-column">
         
-        <!-- COMPACT LEAD CAPTURE FORM (Lawyer/Advocate Version) -->
+        <!-- COMPACT LEAD CAPTURE FORM (Tutor PPL Version) -->
         <div class="sidebar-form">
             <div class="sf-header">
-                <p class="sf-eyebrow">Friendswood ISD Special Ed Law</p>
-                <h3 class="sf-name">Hargrove & <em>Associates</em></h3>
+                <p class="sf-eyebrow">{district_name} Dyslexia & Reading Support</p>
+                <h3 class="sf-name">Local Reading <em>Specialists</em></h3>
             </div>
             
             <div class="sf-body">
-                <p class="sf-empathy">You shouldn't have to figure this out alone.</p>
-                <p class="sf-sub">A free 15-minute call can help you understand what the school is required to do — and how to force the district to evaluate.</p>
+                <p class="sf-empathy">Don't wait for the school to catch them up.</p>
+                <p class="sf-sub">Get matched with a certified, private structured literacy tutor or advocate in your area for an initial reading consultation.</p>
                 
                 <form id="leadCaptureForm">
                     <div class="sf-group">
@@ -305,28 +290,28 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
                     </div>
                     
                     <div class="sf-group">
-                        <label>What's going on?</label>
+                        <label>What are you looking for?</label>
                         <select required>
                             <option value="" disabled selected>Choose what fits best...</option>
-                            <option>The school refused my request for an evaluation</option>
-                            <option>They missed the 45-day testing timeline</option>
-                            <option>I need help drafting my initial FIE request</option>
-                            <option>I disagree with their evaluation (I want an IEE)</option>
-                            <option>Something else</option>
+                            <option>My child is struggling with reading/spelling</option>
+                            <option>We need a Certified Academic Language Therapist (CALT)</option>
+                            <option>The school is delaying testing or denying services</option>
+                            <option>The school's intervention isn't working</option>
+                            <option>Other</option>
                         </select>
                     </div>
                     
-                    <button type="button" class="sf-btn">Get My Free 15-Minute Call</button>
+                    <button type="button" class="sf-btn">Find a Dyslexia Tutor</button>
                     
                     <p class="sf-trust">
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#b8963a" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        Confidential. No spam. No pressure.
+                        Confidential matching with vetted professionals.
                     </p>
                 </form>
             </div>
             
             <div class="sf-footer">
-                Attorney Advertising · Results may vary.
+                Professional Educational Services · Independent Tutors
             </div>
         </div>
 
@@ -393,18 +378,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // FAQ Toggle logic
-    const details = document.querySelectorAll('details');
-    details.forEach(targetDetail => {
-        targetDetail.addEventListener('click', () => {
-            details.forEach(detail => {
-                if (detail !== targetDetail) {
-                    detail.removeAttribute('open');
-                }
-            });
-        });
-    });
-    
     // Form capture logic
     const leadForms = document.querySelectorAll('form');
     
@@ -451,7 +424,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div style="color: #b8963a; font-size: 40px; margin-bottom: 10px;">✓</div>
                         <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #1a1410; margin-bottom: 10px; font-weight: 600;">Request Received</h4>
                         <p style="font-size: 14px; color: #6b5f53; line-height: 1.5; font-family: 'DM Sans', sans-serif;">
-                            Your information has been securely routed. A local legal professional will reach out to you shortly.
+                            Your information has been securely routed. A local specialist will reach out to you shortly.
                         </p>
                     </div>
                 `;
@@ -468,4 +441,64 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 </body>
-</html>
+</html>"""
+
+def get_district_name(folder_name):
+    # Converts 'houston-isd' to 'Houston ISD'
+    words = folder_name.split('-')
+    capitalized_words = [w.upper() if w.lower() in ['isd', 'cisd'] else w.capitalize() for w in words]
+    return " ".join(capitalized_words)
+
+def main():
+    if not os.path.exists(BASE_DIR):
+        print(f"Error: Could not find directory at {BASE_DIR}")
+        return
+
+    # Count how many files get updated
+    count = 0
+
+    # Walk through the district directories
+    for root, dirs, files in os.walk(BASE_DIR):
+        if "dyslexia-services.html" in files:
+            filepath = os.path.join(root, "dyslexia-services.html")
+            folder_name = os.path.basename(root)
+            district_name = get_district_name(folder_name)
+            
+            try:
+                with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                    old_content = f.read()
+
+                # EXTRACT EXISTING STRIPE LINKS
+                dyslexia_stripe_link = "YOUR_STRIPE_LINK_HERE"
+                bundle_stripe_link = "YOUR_STRIPE_LINK_HERE"
+
+                # Regex to safely find the URL near the $37 price tag
+                dys_match = re.search(r'href=[\'"]([^\'"]+)[\'"][^>]*>.*?\$37', old_content, re.IGNORECASE)
+                if dys_match:
+                    dyslexia_stripe_link = dys_match.group(1)
+
+                # Regex to safely find the URL near the $97 price tag
+                bundle_match = re.search(r'href=[\'"]([^\'"]+)[\'"][^>]*>.*?\$97', old_content, re.IGNORECASE)
+                if bundle_match:
+                    bundle_stripe_link = bundle_match.group(1)
+
+                # INJECT DATA INTO THE NEW MASTER TEMPLATE
+                new_html = HTML_TEMPLATE.replace("{district_name}", district_name)
+                new_html = new_html.replace("{district_slug}", folder_name)
+                new_html = new_html.replace("{dyslexia_stripe_link}", dyslexia_stripe_link)
+                new_html = new_html.replace("{bundle_stripe_link}", bundle_stripe_link)
+
+                # OVERWRITE THE OLD FILE WITH THE NEW TEMPLATE
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_html)
+                
+                print(f"Updated Dyslexia Page: {district_name} ({folder_name})")
+                count += 1
+                
+            except Exception as e:
+                print(f"Failed to update {filepath}: {e}")
+
+    print(f"\nSuccess! Completely updated {count} Dyslexia Services pages.")
+
+if __name__ == "__main__":
+    main()

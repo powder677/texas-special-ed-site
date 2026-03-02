@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+import os
+import re
+
+# Set your exact base directory path
+BASE_DIR = r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\districts"
+
+# The master HTML template for the Evaluation/Child Find page.
+# {district_name}, {district_slug}, {accom_stripe_link}, and {bundle_stripe_link} will be swapped dynamically.
+HTML_TEMPLATE = r"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
@@ -11,9 +19,9 @@
 
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>How to Request an Evaluation in Friendswood ISD | FIE Timeline</title>
-<meta content="Learn the 45 school-day FIE timeline, Child Find obligations, and how to submit a written evaluation request to Friendswood ISD." name="description"/>
-<link href="https://www.texasspecialed.com/districts/friendswood-isd/evaluation-child-find" rel="canonical"/>
+<title>How to Request an Evaluation in {district_name} | FIE Timeline</title>
+<meta content="Learn the 45 school-day FIE timeline, Child Find obligations, and how to submit a written evaluation request to {district_name}." name="description"/>
+<link href="https://www.texasspecialed.com/districts/{district_slug}/evaluation-child-find" rel="canonical"/>
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -139,14 +147,14 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 
 <main class="container">
 
-<h1>Requesting an Evaluation in Friendswood ISD</h1>
+<h1>Requesting an Evaluation in {district_name}</h1>
 
 <div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
-    <strong style="color: #334155;">Friendswood ISD Resources:</strong>
-    <a href="/districts/friendswood-isd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
-    <a href="/districts/friendswood-isd/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
-    <a href="/districts/friendswood-isd/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 700;">Evaluations (FIE)</a> •
-    <a href="/districts/friendswood-isd/dyslexia-services.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dyslexia / 504</a>
+    <strong style="color: #334155;">{district_name} Resources:</strong>
+    <a href="/districts/{district_slug}/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Home</a> •
+    <a href="/districts/{district_slug}/ard-process-guide.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
+    <a href="/districts/{district_slug}/evaluation-child-find.html" style="text-decoration: none; color: #2563eb; font-weight: 700;">Evaluations (FIE)</a> •
+    <a href="/districts/{district_slug}/dyslexia-services.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dyslexia / 504</a>
 </div>
 
 <div class="quick-answer" style="background:#f0fdf4;border-left:5px solid #16a34a;padding:24px;border-radius:6px;margin:30px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
@@ -164,12 +172,12 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
     <article class="content-column">
         
         <h2 style="border-top:none; margin-top:0; padding-top:0;">Requesting a Special Education Evaluation</h2>
-        <p>If you have concerns about your child's academic progress or believe they may have a disability affecting their ability to learn, you have the absolute legal right to request a special education evaluation from Friendswood ISD.</p>
+        <p>If you have concerns about your child's academic progress or believe they may have a disability affecting their ability to learn, you have the absolute legal right to request a special education evaluation from {district_name}.</p>
         
-        <p>Friendswood ISD has a legal obligation under the "Child Find" provisions of IDEA to identify, locate, and evaluate all children with disabilities residing within their jurisdiction. Your formal request is the direct trigger to force the district to act on this responsibility.</p>
+        <p>{district_name} has a legal obligation under the "Child Find" provisions of IDEA to identify, locate, and evaluate all children with disabilities residing within their jurisdiction. Your formal request is the direct trigger to force the district to act on this responsibility.</p>
 
         <div class="pull-quote">
-            Verbal requests to a teacher do not start the legal clock. To trigger Friendswood ISD's legal obligations under IDEA, you must put your evaluation request in writing.
+            Verbal requests to a teacher do not start the legal clock. To trigger {district_name}'s legal obligations under IDEA, you must put your evaluation request in writing.
         </div>
 
         <div class="section-divider">· · ·</div>
@@ -189,7 +197,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
             <div class="cta-icon">⏳</div>
             <div>
                 <h3>Is the school ignoring your request?</h3>
-                <p>If Friendswood ISD has refused to evaluate your child, or they are forcing you to try "RTI interventions" before testing, they may be violating Child Find laws. Speak with a local advocate to force compliance.</p>
+                <p>If {district_name} has refused to evaluate your child, or they are forcing you to try "RTI interventions" before testing, they may be violating Child Find laws. Speak with a local advocate to force compliance.</p>
                 <a href="#leadCaptureForm" class="btn-primary" onclick="document.querySelector('#leadCaptureForm').scrollIntoView({behavior: 'smooth'}); return false;">Get a Free Case Review</a>
             </div>
         </div>
@@ -197,7 +205,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
         <div class="section-divider">· · ·</div>
         
         <h2>The 45 School Day Timeline</h2>
-        <p>Once Friendswood ISD receives your written request, they are bound by the strict timelines of the Texas Education Code. Within <strong>15 school days</strong> of receiving your request, the campus must provide you with a written response and a formal consent form to sign.</p>
+        <p>Once {district_name} receives your written request, they are bound by the strict timelines of the Texas Education Code. Within <strong>15 school days</strong> of receiving your request, the campus must provide you with a written response and a formal consent form to sign.</p>
         
         <p>Once you sign that consent form, the district has exactly <strong>45 school days</strong> to complete the Full and Individual Evaluation (FIE) and provide you with a written copy of the report. Following the report, they have 30 calendar days to hold the initial ARD meeting to determine eligibility.</p>
         
@@ -229,7 +237,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
             </li>
         </ul>
 
-        <h2>What If Friendswood ISD Refuses?</h2>
+        <h2>What If {district_name} Refuses?</h2>
         <p>If the district refuses to conduct an evaluation, they must provide you with a formal "Prior Written Notice" explaining exactly why they refused and what data they relied on to make that decision.</p>
         <p>You have the right to disagree. If the district refuses, or if you disagree with the results of their evaluation once it is completed, you have the right to request an <strong>Independent Educational Evaluation (IEE)</strong> at the district's expense, or you can file for a due process hearing to force the evaluation.</p>
 
@@ -241,7 +249,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
                 <span class="badge" style="background:#cbd5e1; color:#0f172a;">IEP & 504 Planning</span>
                 <h3>The Accommodations Encyclopedia</h3>
                 <p>Once the evaluation is done, stop guessing what supports to ask for. Use our evidence-based "If/Then" decision matrix to match your child's specific diagnosis to research-backed interventions.</p>
-                <a href="YOUR_STRIPE_LINK_HERE" target="_blank" style="background:#cbd5e1; color:#0f172a;">Get the Encyclopedia — $27</a>
+                <a href="{accom_stripe_link}" target="_blank" style="background:#cbd5e1; color:#0f172a;">Get the Encyclopedia — $27</a>
             </div>
 
             <!-- Offer 2: All-Access Pass (Blue Theme) -->
@@ -249,7 +257,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
                 <span class="badge" style="background:#fff; color:#1e3a8a;">Best Value</span>
                 <h3>The "Parent Protection" All-Access Pass</h3>
                 <p>Get every toolkit in one bundle — Accommodations, ARD Prep, Behavior Defense, Dyslexia, ADHD, and Autism Supplement.</p>
-                <a href="https://buy.stripe.com/3cIcN4a8l7Q4d0j7mBbbG0G" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
+                <a href="{bundle_stripe_link}" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
             </div>
 
         </div>
@@ -280,7 +288,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
         <!-- COMPACT LEAD CAPTURE FORM (Lawyer/Advocate Version) -->
         <div class="sidebar-form">
             <div class="sf-header">
-                <p class="sf-eyebrow">Friendswood ISD Special Ed Law</p>
+                <p class="sf-eyebrow">{district_name} Special Ed Law</p>
                 <h3 class="sf-name">Hargrove & <em>Associates</em></h3>
             </div>
             
@@ -468,4 +476,64 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 </body>
-</html>
+</html>"""
+
+def get_district_name(folder_name):
+    # Converts 'houston-isd' to 'Houston ISD'
+    words = folder_name.split('-')
+    capitalized_words = [w.upper() if w.lower() in ['isd', 'cisd'] else w.capitalize() for w in words]
+    return " ".join(capitalized_words)
+
+def main():
+    if not os.path.exists(BASE_DIR):
+        print(f"Error: Could not find directory at {BASE_DIR}")
+        return
+
+    # Count how many files get updated
+    count = 0
+
+    # Walk through the district directories
+    for root, dirs, files in os.walk(BASE_DIR):
+        if "evaluation-child-find.html" in files:
+            filepath = os.path.join(root, "evaluation-child-find.html")
+            folder_name = os.path.basename(root)
+            district_name = get_district_name(folder_name)
+            
+            try:
+                with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                    old_content = f.read()
+
+                # EXTRACT EXISTING STRIPE LINKS
+                accom_stripe_link = "YOUR_STRIPE_LINK_HERE"
+                bundle_stripe_link = "YOUR_STRIPE_LINK_HERE"
+
+                # Regex to safely find the URL near the $27 price tag
+                accom_match = re.search(r'href=[\'"]([^\'"]+)[\'"][^>]*>.*?\$27', old_content, re.IGNORECASE)
+                if accom_match:
+                    accom_stripe_link = accom_match.group(1)
+
+                # Regex to safely find the URL near the $97 price tag
+                bundle_match = re.search(r'href=[\'"]([^\'"]+)[\'"][^>]*>.*?\$97', old_content, re.IGNORECASE)
+                if bundle_match:
+                    bundle_stripe_link = bundle_match.group(1)
+
+                # INJECT DATA INTO THE NEW MASTER TEMPLATE
+                new_html = HTML_TEMPLATE.replace("{district_name}", district_name)
+                new_html = new_html.replace("{district_slug}", folder_name)
+                new_html = new_html.replace("{accom_stripe_link}", accom_stripe_link)
+                new_html = new_html.replace("{bundle_stripe_link}", bundle_stripe_link)
+
+                # OVERWRITE THE OLD FILE WITH THE NEW TEMPLATE
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_html)
+                
+                print(f"Updated Evaluation Page: {district_name} ({folder_name})")
+                count += 1
+                
+            except Exception as e:
+                print(f"Failed to update {filepath}: {e}")
+
+    print(f"\nSuccess! Completely updated {count} Evaluation (Child Find) pages.")
+
+if __name__ == "__main__":
+    main()
