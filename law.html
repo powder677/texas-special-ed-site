@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Education Law — Allen, Texas</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+   <style>
+      *,
+      *::before,
+      *::after {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+
+      :root {
+         --ink: #1a1410;
+         --parchment: #f5f0e8;
+         --gold: #b8963a;
+         --gold-lt: #d4ad5a;
+         --rule: #d6cbbf;
+         --muted: #6b5f53;
+         --white: #fdfaf5;
+      }
+
+      body {
+         font-family: 'DM Sans', sans-serif;
+         background: var(--ink);
+         color: var(--parchment);
+         min-height: 100vh;
+         overflow-x: hidden;
+      }
+
+      /* ── CARD WRAPPER ────────────────────── */
+      .card {
+         max-width: 780px;
+         margin: 0 auto;
+         background: var(--white);
+         color: var(--ink);
+         position: relative;
+         overflow: hidden;
+      }
+
+      /* ── HEADER BAND ─────────────────────── */
+      .header {
+         background: var(--ink);
+         padding: 36px 48px 28px;
+         position: relative;
+      }
+
+      .header::after {
+         content: '';
+         display: block;
+         height: 3px;
+         background: linear-gradient(90deg, transparent, var(--gold), transparent);
+         margin-top: 28px;
+      }
+
+      .firm-eyebrow {
+         font-family: 'DM Sans', sans-serif;
+         font-size: 9px;
+         font-weight: 500;
+         letter-spacing: 0.3em;
+         text-transform: uppercase;
+         color: var(--gold);
+         margin-bottom: 14px;
+      }
+
+      .firm-name {
+         font-family: 'Cormorant Garamond', serif;
+         font-size: clamp(26px, 4vw, 38px);
+         font-weight: 400;
+         color: var(--parchment);
+         line-height: 1.1;
+      }
+
+      .firm-name em {
+         font-style: italic;
+         color: var(--gold-lt);
+      }
+
+      .header-meta {
+         display: flex;
+         gap: 32px;
+         margin-top: 16px;
+         flex-wrap: wrap;
+      }
+
+      .header-meta span {
+         font-size: 11px;
+         letter-spacing: 0.08em;
+         color: var(--rule);
+         text-transform: uppercase;
+      }
+
+      .header-meta span strong {
+         color: var(--gold);
+      }
+
+      /* ── BODY ────────────────────────────── */
+      .body {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 0;
+      }
+
+      /* ── LEFT COLUMN ─────────────────────── */
+      .left {
+         padding: 40px 36px 40px 48px;
+         border-right: 1px solid var(--rule);
+         display: flex;
+         flex-direction: column;
+         gap: 28px;
+      }
+
+      .alert-headline {
+         font-family: 'Cormorant Garamond', serif;
+         font-size: 22px;
+         font-weight: 600;
+         line-height: 1.3;
+         color: var(--ink);
+      }
+
+      .alert-headline .accent {
+         display: block;
+         font-style: italic;
+         font-weight: 400;
+         color: var(--gold);
+         font-size: 18px;
+         margin-top: 2px;
+      }
+
+      .divider {
+         width: 48px;
+         height: 1.5px;
+         background: var(--gold);
+      }
+
+      .body-copy {
+         font-size: 13.5px;
+         line-height: 1.75;
+         color: #3d3028;
+         font-weight: 300;
+      }
+
+      .body-copy strong {
+         font-weight: 500;
+         color: var(--ink);
+      }
+
+      .practice-list {
+         list-style: none;
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+      }
+
+      .practice-list li {
+         display: flex;
+         align-items: flex-start;
+         gap: 10px;
+         font-size: 12.5px;
+         color: var(--muted);
+         line-height: 1.5;
+      }
+
+      .practice-list li::before {
+         content: '§';
+         font-family: 'Cormorant Garamond', serif;
+         font-size: 16px;
+         color: var(--gold);
+         line-height: 1.3;
+         flex-shrink: 0;
+      }
+
+      .badge-row {
+         display: flex;
+         gap: 10px;
+         flex-wrap: wrap;
+         margin-top: 4px;
+      }
+
+      .badge {
+         font-size: 9px;
+         font-weight: 500;
+         letter-spacing: 0.12em;
+         text-transform: uppercase;
+         border: 1px solid var(--rule);
+         padding: 4px 10px;
+         color: var(--muted);
+      }
+
+      /* ── RIGHT COLUMN ────────────────────── */
+      .right {
+         padding: 40px 48px 40px 36px;
+         background: #faf7f2;
+      }
+
+      .form-eyebrow {
+         font-size: 9px;
+         font-weight: 500;
+         letter-spacing: 0.28em;
+         text-transform: uppercase;
+         color: var(--muted);
+         margin-bottom: 6px;
+      }
+
+      .form-title {
+         font-family: 'Cormorant Garamond', serif;
+         font-size: 20px;
+         font-weight: 600;
+         color: var(--ink);
+         margin-bottom: 6px;
+      }
+
+      .form-note {
+         font-size: 11.5px;
+         color: var(--muted);
+         margin-bottom: 24px;
+         line-height: 1.5;
+      }
+
+      .form-group {
+         margin-bottom: 16px;
+      }
+
+      label {
+         display: block;
+         font-size: 10px;
+         font-weight: 500;
+         letter-spacing: 0.15em;
+         text-transform: uppercase;
+         color: var(--muted);
+         margin-bottom: 5px;
+      }
+
+      input,
+      select,
+      textarea {
+         width: 100%;
+         background: var(--white);
+         border: 1px solid var(--rule);
+         border-radius: 0;
+         padding: 10px 12px;
+         font-family: 'DM Sans', sans-serif;
+         font-size: 13px;
+         color: var(--ink);
+         outline: none;
+         transition: border-color 0.2s;
+         -webkit-appearance: none;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+         border-color: var(--gold);
+      }
+
+      textarea {
+         resize: vertical;
+         min-height: 72px;
+         font-weight: 300;
+      }
+
+      select {
+         cursor: pointer;
+         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23b8963a'/%3E%3C/svg%3E");
+         background-repeat: no-repeat;
+         background-position: right 12px center;
+         padding-right: 32px;
+      }
+
+      .btn {
+         width: 100%;
+         background: var(--ink);
+         color: var(--gold);
+         border: none;
+         padding: 14px 20px;
+         font-family: 'DM Sans', sans-serif;
+         font-size: 11px;
+         font-weight: 500;
+         letter-spacing: 0.22em;
+         text-transform: uppercase;
+         cursor: pointer;
+         margin-top: 8px;
+         transition: background 0.25s, color 0.25s;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .btn::after {
+         content: '';
+         position: absolute;
+         inset: 0;
+         background: var(--gold);
+         transform: translateX(-101%);
+         transition: transform 0.3s ease;
+      }
+
+      .btn:hover::after {
+         transform: translateX(0);
+      }
+
+      .btn span {
+         position: relative;
+         z-index: 1;
+      }
+
+      .btn:hover span {
+         color: var(--ink);
+      }
+
+      .confidential-note {
+         font-size: 10px;
+         color: #a09488;
+         line-height: 1.6;
+         margin-top: 12px;
+         padding-top: 12px;
+         border-top: 1px solid var(--rule);
+      }
+
+      .confidential-note strong {
+         color: var(--muted);
+      }
+
+      /* ── FOOTER STRIP ────────────────────── */
+      .footer-strip {
+         background: var(--ink);
+         padding: 14px 48px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap;
+         gap: 8px;
+      }
+
+      .footer-strip p {
+         font-size: 10px;
+         color: var(--muted);
+         letter-spacing: 0.06em;
+      }
+
+      .footer-strip a {
+         color: var(--gold);
+         text-decoration: none;
+         font-size: 10px;
+         letter-spacing: 0.1em;
+      }
+
+      /* ── SUCCESS STATE ───────────────────── */
+      .success-overlay {
+         display: none;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         padding: 48px 32px;
+         gap: 16px;
+         background: #faf7f2;
+         height: 100%;
+      }
+
+      .success-overlay.show {
+         display: flex;
+      }
+
+      .success-icon {
+         width: 52px;
+         height: 52px;
+         border: 2px solid var(--gold);
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 22px;
+         color: var(--gold);
+         font-family: 'Cormorant Garamond', serif;
+      }
+
+      .success-title {
+         font-family: 'Cormorant Garamond', serif;
+         font-size: 22px;
+         color: var(--ink);
+      }
+
+      .success-body {
+         font-size: 13px;
+         color: var(--muted);
+         line-height: 1.6;
+         max-width: 240px;
+      }
+
+      /* ── RESPONSIVE ──────────────────────── */
+      @media (max-width: 600px) {
+         .body {
+            grid-template-columns: 1fr;
+         }
+
+         .left {
+            padding: 32px 28px;
+            border-right: none;
+            border-bottom: 1px solid var(--rule);
+         }
+
+         .right {
+            padding: 32px 28px;
+         }
+
+         .header {
+            padding: 28px 28px 20px;
+         }
+
+         .footer-strip {
+            padding: 14px 28px;
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="card">
+
+      <!-- HEADER -->
+      <header class="header">
+         <p class="firm-eyebrow">Special Education & Student Rights Law</p>
+         <h1 class="firm-name">Hargrove & <em>Associates</em></h1>
+         <div class="header-meta">
+            <span><strong>Allen, Texas</strong>  ·  Serving Collin County</span>
+            <span><strong>25 Years</strong>  ·  Education Law</span>
+            <span><strong>IEP & ARD</strong>  ·  504 Plans  ·  Due Process</span>
+         </div>
+      </header>
+
+      <!-- BODY -->
+      <div class="body">
+
+         <!-- LEFT: Attorney Info -->
+         <div class="left">
+            <div>
+               <p class="alert-headline">
+                  Don't walk into your ARD meeting without the right advocate.
+                  <span class="accent">Your child's rights deserve experienced counsel.</span>
+               </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="body-copy">
+               ARD meetings determine your child's educational placement and services for the entire school year. Parents rarely realize that <strong>the school's representatives are legally trained</strong> — and you don't have to face them alone.
+            </p>
+
+            <ul class="practice-list">
+               <li>IEP disputes & ARD meeting representation</li>
+               <li>Denial of special education evaluations</li>
+               <li>504 Plan accommodations & enforcement</li>
+               <li>Disciplinary hearings & manifestation reviews</li>
+               <li>Due process filings & mediation</li>
+               <li>Dyslexia program compliance (Texas Ed. Code)</li>
+            </ul>
+
+            <div>
+               <div class="badge-row">
+                  <span class="badge">Board Certified</span>
+                  <span class="badge">TEA Trained</span>
+                  <span class="badge">Free Consultation</span>
+                  <span class="badge">Se Habla Español</span>
+               </div>
+            </div>
+         </div>
+
+         <!-- RIGHT: Form -->
+         <div class="right" id="formSide">
+
+            <div id="formContent">
+               <p class="form-eyebrow">Confidential Inquiry</p>
+               <h2 class="form-title">Request a Free Consultation</h2>
+               <p class="form-note">Responses within one business day. No obligation, no fees unless we take your case.</p>
+
+               <div class="form-group">
+                  <label for="name">Parent / Guardian Name</label>
+                  <input id="name" type="text" placeholder="Full name" />
+               </div>
+
+               <div class="form-group">
+                  <label for="phone">Best Phone Number</label>
+                  <input id="phone" type="tel" placeholder="(555) 000-0000" />
+               </div>
+
+               <div class="form-group">
+                  <label for="district">Child's School District</label>
+                  <select id="district">
+                     <option value="" disabled selected>Select a district…</option>
+                     <option>Allen ISD</option>
+                     <option>Plano ISD</option>
+                     <option>McKinney ISD</option>
+                     <option>Frisco ISD</option>
+                     <option>Wylie ISD</option>
+                     <option>Garland ISD</option>
+                     <option>Richardson ISD</option>
+                     <option>Mesquite ISD</option>
+                     <option>Socorro ISD</option>
+                     <option>Aldine ISD</option>
+                     <option>Other</option>
+                  </select>
+               </div>
+
+               <div class="form-group">
+                  <label for="issue">Primary Concern</label>
+                  <select id="issue">
+                     <option value="" disabled selected>Select…</option>
+                     <option>ARD / IEP Meeting</option>
+                     <option>Evaluation Denied</option>
+                     <option>504 Plan</option>
+                     <option>School Discipline / Suspension</option>
+                     <option>Manifestation Determination</option>
+                     <option>Due Process</option>
+                     <option>Placement Dispute</option>
+                     <option>Other</option>
+                  </select>
+               </div>
+
+               <div class="form-group">
+                  <label for="notes">Brief Description <span style="text-transform:none;letter-spacing:0;font-weight:300">(optional)</span></label>
+                  <textarea id="notes" placeholder="What is happening with your child's case?">
