@@ -4,21 +4,8 @@ import re
 # Set your exact base directory path for the districts
 BASE_DIR = r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\districts"
 
-# The completely repaired, safe header block (Includes Text Logo & Dropdown Menu)
-HEADER_HTML = r"""<header class="site-header">
-<nav aria-label="Main navigation" class="navbar" role="navigation">
-<div class="nav-container">
-<div class="nav-logo">
-<a aria-label="Texas Special Ed Home" href="/" class="text-logo">
-Texas <em>Special Ed</em>
-</a>
-</div>
-<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
-<span class="hamburger"></span>
-<span class="hamburger"></span>
-<span class="hamburger"></span>
-</button>
-<ul class="nav-menu">
+# The restored main header navigation (with the dropdown included)
+NEW_NAV_MENU = r"""<ul class="nav-menu">
 <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
 <li class="nav-item dropdown">
 <a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
@@ -43,17 +30,14 @@ Texas <em>Special Ed</em>
 <li class="nav-item nav-cta">
 <a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
 </li>
-</ul>
-</div>
-</nav>
-</header>"""
+</ul>"""
 
 def get_district_name(folder_name):
     words = folder_name.split('-')
     capitalized_words = [w.upper() if w.lower() in ['isd', 'cisd'] else w.capitalize() for w in words]
     return " ".join(capitalized_words)
 
-# Generates the gray sub-page menu using bulletproof absolute links
+# This generates the gray sub-page menu using ROOT-RELATIVE absolute links
 def generate_silo_nav(district_name, folder_name, current_file):
     links = [
         ("index.html", "District Home"),
@@ -70,7 +54,7 @@ def generate_silo_nav(district_name, folder_name, current_file):
     
     link_strings = []
     for href, text in links:
-        # Build the exact absolute path so it never breaks on the live server
+        # Build the exact path so it never breaks on the live server
         full_path = f"/districts/{folder_name}/{href}"
         
         if href == current_file:
@@ -88,6 +72,10 @@ def main():
         return
 
     count = 0
+    
+    # Regex to safely target the top header menu and the gray sub-menu
+    nav_pattern = re.compile(r'<ul\s+class=["\']nav-menu["\']>.*?(</div>\s*</nav>)', re.IGNORECASE | re.DOTALL)
+    silo_pattern = re.compile(r'<div\s+class=["\']silo-nav["\'].*?</div>', re.IGNORECASE | re.DOTALL)
 
     for root, dirs, files in os.walk(BASE_DIR):
         # Skip the parent "districts" directory so we only edit individual ISD folders
@@ -107,32 +95,15 @@ def main():
                     
                     new_content = content
                     
-                    # 1. Safely replace the ENTIRE header to fix the dropdown and text logo
-                    new_content = re.sub(r'<header class=["\']site-header["\']>.*?</header>', HEADER_HTML, new_content, flags=re.IGNORECASE | re.DOTALL)
+                    # 1. Restore the Dropdown Nav Menu at the top
+                    if nav_pattern.search(new_content):
+                        new_content = nav_pattern.sub(NEW_NAV_MENU + r'\n\1', new_content)
                         
-                    # 2. Fix the gray Silo Nav to use absolute paths
-                    if "silo-nav" in new_content:
+                    # 2. Fix the Sub-Page Links (ARD, Eval, etc.) using root-relative paths
+                    if silo_pattern.search(new_content):
                         new_silo = generate_silo_nav(district_name, folder_name, file)
-                        new_content = re.sub(r'<div\s+class=["\']silo-nav["\'].*?</div>', new_silo, new_content, flags=re.IGNORECASE | re.DOTALL)
+                        new_content = silo_pattern.sub(new_silo, new_content)
                         
-                    # 3. Fix any remaining relative links (Specifically the Hub page cards!)
-                    pages = [
-                        "index.html",
-                        "ard-process-guide.html",
-                        "evaluation-child-find.html",
-                        "dyslexia-services.html",
-                        "grievance-dispute-resolution.html",
-                        "leadership-directory.html",
-                        "partners.html"
-                    ]
-                    for page in pages:
-                        # Matches exact relative links: href="ard-process-guide.html"
-                        pattern = r'href=["\']' + re.escape(page) + r'["\']'
-                        # Converts to: href="/districts/houston-isd/ard-process-guide.html"
-                        replacement = f'href="/districts/{folder_name}/{page}"'
-                        new_content = re.sub(pattern, replacement, new_content)
-
-                    # Save if modified
                     if new_content != content:
                         with open(filepath, 'w', encoding='utf-8') as f:
                             f.write(new_content)
@@ -141,7 +112,7 @@ def main():
                 except Exception as e:
                     print(f"Skipped {filepath}: {e}")
 
-    print(f"\nSuccess! Repaired navigation headers and absolute links on {count} pages.")
+    print(f"\nSuccess! Repaired navigation links on {count} pages.")
 
 if __name__ == "__main__":
     main()
