@@ -37,8 +37,8 @@ def get_district_name(folder_name):
     capitalized_words = [w.upper() if w.lower() in ['isd', 'cisd'] else w.capitalize() for w in words]
     return " ".join(capitalized_words)
 
-# This generates the gray sub-page menu using proper RELATIVE links
-def generate_silo_nav(district_name, current_file):
+# This generates the gray sub-page menu using ROOT-RELATIVE absolute links
+def generate_silo_nav(district_name, folder_name, current_file):
     links = [
         ("index.html", "District Home"),
         ("ard-process-guide.html", "ARD Guide"),
@@ -54,11 +54,14 @@ def generate_silo_nav(district_name, current_file):
     
     link_strings = []
     for href, text in links:
+        # Build the exact path so it never breaks on the live server
+        full_path = f"/districts/{folder_name}/{href}"
+        
         if href == current_file:
             # Bolds the current page you are on
-            link_strings.append(f'    <a href="{href}" style="text-decoration: none; color: #2563eb; font-weight: 800;">{text}</a>')
+            link_strings.append(f'    <a href="{full_path}" style="text-decoration: none; color: #2563eb; font-weight: 800;">{text}</a>')
         else:
-            link_strings.append(f'    <a href="{href}" style="text-decoration: none; color: #2563eb; font-weight: 500;">{text}</a>')
+            link_strings.append(f'    <a href="{full_path}" style="text-decoration: none; color: #2563eb; font-weight: 500;">{text}</a>')
             
     nav_html += " •\n".join(link_strings) + "\n</div>"
     return nav_html
@@ -96,9 +99,9 @@ def main():
                     if nav_pattern.search(new_content):
                         new_content = nav_pattern.sub(NEW_NAV_MENU + r'\n\1', new_content)
                         
-                    # 2. Fix the Sub-Page Links (ARD, Eval, etc.) to be relative so they work locally
+                    # 2. Fix the Sub-Page Links (ARD, Eval, etc.) using root-relative paths
                     if silo_pattern.search(new_content):
-                        new_silo = generate_silo_nav(district_name, file)
+                        new_silo = generate_silo_nav(district_name, folder_name, file)
                         new_content = silo_pattern.sub(new_silo, new_content)
                         
                     if new_content != content:
