@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+import os
+import re
+
+# Set your exact base directory path
+BASE_DIR = r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\districts"
+
+# The master HTML template for the District Hub index page.
+# {district_name}, {district_slug}, and {bundle_stripe_link} will be swapped dynamically.
+HTML_TEMPLATE = r"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
@@ -11,9 +19,9 @@
 
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Royse City ISD Special Education Resources | Parent Rights Guide</title>
-<meta content="Complete special education resource hub for Royse City ISD families. ARD rights, FIE timelines, dyslexia services, and discipline defense - all in one place." name="description"/>
-<link href="https://www.texasspecialed.com/districts/royse-city-isd" rel="canonical"/>
+<title>{district_name} Special Education Resources | Parent Rights Guide</title>
+<meta content="Complete special education resource hub for {district_name} families. ARD rights, FIE timelines, dyslexia services, and discipline defense - all in one place." name="description"/>
+<link href="https://www.texasspecialed.com/districts/{district_slug}" rel="canonical"/>
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -145,7 +153,7 @@ h1 { font-family: 'Lora', serif; font-size: 2.4rem; color: #0a2342; margin-top: 
 </header>
 
 <main class="container">
-<h1>Royse City ISD Special Education Resources</h1>
+<h1>{district_name} Special Education Resources</h1>
 
 <div class="trust-anchor" style="background-color: #f8fbff; border-left: 5px solid #004085; padding: 16px; margin: 20px 0; border-radius: 4px;">
     <p style="margin: 0; font-size: 16px; color: #333; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
@@ -161,7 +169,7 @@ h1 { font-family: 'Lora', serif; font-size: 2.4rem; color: #0a2342; margin-top: 
     <!-- LEFT SIDE: 70% CONTENT -->
     <article class="content-column">
         
-        <p style="font-size: 1.15rem; color: #3a3a5c;">Welcome to the independent parent hub for Royse City ISD. Whether you are preparing for your first ARD meeting, fighting a denied evaluation, or navigating a disciplinary crisis, select a guide below to learn your rights under Texas law.</p>
+        <p style="font-size: 1.15rem; color: #3a3a5c;">Welcome to the independent parent hub for {district_name}. Whether you are preparing for your first ARD meeting, fighting a denied evaluation, or navigating a disciplinary crisis, select a guide below to learn your rights under Texas law.</p>
 
         <!-- PREMIUM NAVIGATION GRID -->
         <div class="hub-grid">
@@ -186,7 +194,7 @@ h1 { font-family: 'Lora', serif; font-size: 2.4rem; color: #0a2342; margin-top: 
             <a href="dyslexia-services.html" class="hub-card">
                 <div class="hub-card-icon">📖</div>
                 <h3>Dyslexia & Reading</h3>
-                <p>Royse City ISD screening rights, structured literacy programs, and 504 vs. IEP paths.</p>
+                <p>{district_name} screening rights, structured literacy programs, and 504 vs. IEP paths.</p>
             </a>
 
             <a href="leadership-directory.html" class="hub-card">
@@ -204,13 +212,13 @@ h1 { font-family: 'Lora', serif; font-size: 2.4rem; color: #0a2342; margin-top: 
 
         <div class="section-divider">· · ·</div>
 
-        <h2 style="border:none; margin-top:0; padding:0;">Navigating Special Education in Royse City ISD</h2>
-        <p>While Royse City ISD is committed to providing services, parents must remember that the IEP process is a legal negotiation. The district operates under the oversight of the Texas Education Agency (TEA).</p>
+        <h2 style="border:none; margin-top:0; padding:0;">Navigating Special Education in {district_name}</h2>
+        <p>While {district_name} is committed to providing services, parents must remember that the IEP process is a legal negotiation. The district operates under the oversight of the Texas Education Agency (TEA).</p>
         
         <p>As a parent, you are a mandatory, equal member of the ARD committee. The district has up to 45 school days from the date of parental consent to complete evaluations, and you are legally entitled to receive written notice at least five school days prior to any ARD committee meeting.</p>
 
         <div class="pull-quote">
-            Do not rely on verbal conversations with teachers or principals. To trigger Royse City ISD's legal obligations under IDEA, you must put all requests for evaluations or ARD meetings in writing.
+            Do not rely on verbal conversations with teachers or principals. To trigger {district_name}'s legal obligations under IDEA, you must put all requests for evaluations or ARD meetings in writing.
         </div>
 
         <h3>Common Early Roadblocks</h3>
@@ -222,7 +230,7 @@ h1 { font-family: 'Lora', serif; font-size: 2.4rem; color: #0a2342; margin-top: 
                 <span class="badge" style="background:#fff; color:#1e3a8a;">Best Value</span>
                 <h3>The "Parent Protection" All-Access Pass</h3>
                 <p>Get every toolkit in one bundle — ARD Prep, Behavior Defense, Dyslexia, ADHD, Autism Supplement, and the Accommodations Encyclopedia.</p>
-                <a href="https://buy.stripe.com/YOUR_BUNDLE_LINK" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
+                <a href="{bundle_stripe_link}" target="_blank" style="background:#fff; color:#1e3a8a;">Get All 6 Kits — $97</a>
             </div>
         </div>
 
@@ -234,7 +242,7 @@ h1 { font-family: 'Lora', serif; font-size: 2.4rem; color: #0a2342; margin-top: 
         <!-- GENERAL LEAD CAPTURE FORM (Hub Version) -->
         <div class="sidebar-form">
             <div class="sf-header">
-                <p class="sf-eyebrow">Royse City ISD Special Education Support</p>
+                <p class="sf-eyebrow">{district_name} Special Education Support</p>
                 <h3 class="sf-name">Need Help <em>Now?</em></h3>
             </div>
             
@@ -407,4 +415,58 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 </body>
-</html>
+</html>"""
+
+def get_district_name(folder_name):
+    words = folder_name.split('-')
+    capitalized_words = [w.upper() if w.lower() in ['isd', 'cisd'] else w.capitalize() for w in words]
+    return " ".join(capitalized_words)
+
+def main():
+    if not os.path.exists(BASE_DIR):
+        print(f"Error: Could not find directory at {BASE_DIR}")
+        return
+
+    count = 0
+
+    for root, dirs, files in os.walk(BASE_DIR):
+        # Skip the parent "districts" directory so we don't overwrite the main directory index page
+        if root == BASE_DIR:
+            continue
+            
+        if "index.html" in files:
+            filepath = os.path.join(root, "index.html")
+            folder_name = os.path.basename(root)
+            district_name = get_district_name(folder_name)
+            
+            try:
+                with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+                    old_content = f.read()
+
+                # EXTRACT EXISTING STRIPE LINKS
+                bundle_stripe_link = "YOUR_STRIPE_LINK_HERE"
+
+                # Regex to safely find the URL near the $97 price tag
+                bundle_match = re.search(r'href=[\'"]([^\'"]+)[\'"][^>]*>.*?\$97', old_content, re.IGNORECASE)
+                if bundle_match:
+                    bundle_stripe_link = bundle_match.group(1)
+
+                # INJECT DATA INTO THE NEW MASTER TEMPLATE
+                new_html = HTML_TEMPLATE.replace("{district_name}", district_name)
+                new_html = new_html.replace("{district_slug}", folder_name)
+                new_html = new_html.replace("{bundle_stripe_link}", bundle_stripe_link)
+
+                # OVERWRITE THE OLD FILE WITH THE NEW TEMPLATE
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    f.write(new_html)
+                
+                print(f"Updated Hub Page: {district_name} ({folder_name})")
+                count += 1
+                
+            except Exception as e:
+                print(f"Failed to update {filepath}: {e}")
+
+    print(f"\nSuccess! Completely updated {count} District Index Hub pages.")
+
+if __name__ == "__main__":
+    main()
