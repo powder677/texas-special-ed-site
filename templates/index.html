@@ -327,6 +327,40 @@
             font-size: 11px; color: var(--text-light);
             text-align: center; margin-top: 8px;
         }
+
+        /* ── Option Buttons ─────────────────────────────── */
+        .options-container {
+            padding: 10px 20px 4px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .option-btn {
+            padding: 10px 16px;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            background: var(--white);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+        }
+
+        .option-btn:hover {
+            border-color: var(--soft-blue);
+            background: #F0F4F8;
+            transform: translateY(-1px);
+        }
+
+        .option-btn:active {
+            transform: translateY(0);
+            background: var(--soft-blue);
+            color: white;
+            border-color: var(--soft-blue);
+        }
     </style>
 </head>
 <body>
@@ -346,6 +380,7 @@
     </div>
 
     <div class="chat-input-area">
+        <div class="options-container" id="optionsContainer"></div>
         <div class="input-row">
             <input type="text" class="chat-input" id="chatInput" placeholder="Type your answer..." autocomplete="off" />
             <button class="send-btn" id="sendBtn" disabled>
@@ -367,6 +402,7 @@
     const inputEl = document.getElementById('chatInput');
     const sendBtn = document.getElementById('sendBtn');
     const typingEl = document.getElementById('typingIndicator');
+    const optionsEl = document.getElementById('optionsContainer');
     const API_BASE = window.location.origin;
 
     function addMessage(text, type) {
@@ -375,6 +411,69 @@
         div.textContent = text;
         messagesEl.insertBefore(div, typingEl);
         messagesEl.scrollTop = messagesEl.scrollHeight;
+    }
+
+    function showOptions(options) {
+        optionsEl.innerHTML = '';
+        if (!options || options.length === 0) {
+            optionsEl.style.display = 'none';
+            inputEl.parentElement.style.display = 'flex';
+            inputEl.focus();
+            return;
+        }
+        // Show buttons, hide text input
+        optionsEl.style.display = 'flex';
+        inputEl.parentElement.style.display = 'none';
+
+        options.forEach(opt => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.textContent = opt;
+            btn.addEventListener('click', () => {
+                optionsEl.style.display = 'none';
+                inputEl.parentElement.style.display = 'flex';
+                // Send the selected option as if the user typed it
+                addMessage(opt, 'user');
+                sendOptionMessage(opt);
+            });
+            optionsEl.appendChild(btn);
+        });
+    }
+
+    async function sendOptionMessage(text) {
+        setInputEnabled(false);
+        showTyping(true);
+
+        try {
+            const res = await fetch(`${API_BASE}/api/chat`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: text, session_id: sessionId })
+            });
+
+            const data = await res.json();
+            sessionId = data.session_id;
+            showTyping(false);
+            addMessage(data.response, 'agent');
+
+            if (data.complete && data.intake) {
+                isComplete = true;
+                buildTriageCard(data.intake);
+                inputEl.placeholder = "Intake complete — thank you!";
+                setInputEnabled(false);
+                showOptions(null);
+            } else if (data.options) {
+                showOptions(data.options);
+            } else {
+                showOptions(null);
+                setInputEnabled(true);
+            }
+        } catch (err) {
+            showTyping(false);
+            addMessage("Sorry, something went wrong. Please try again.", 'agent');
+            showOptions(null);
+            setInputEnabled(true);
+        }
     }
 
     function buildTriageCard(intake) {
@@ -489,10 +588,16 @@
             sessionId = data.session_id;
             showTyping(false);
             addMessage(data.response, 'agent');
-            setInputEnabled(true);
+            if (data.options) {
+                showOptions(data.options);
+            } else {
+                showOptions(null);
+                setInputEnabled(true);
+            }
         } catch (err) {
             showTyping(false);
             addMessage("Hi there! I'm here to help with your child's special education situation. What school district does your child attend?", 'agent');
+            showOptions(null);
             setInputEnabled(true);
         }
     }
@@ -523,12 +628,17 @@
                 buildTriageCard(data.intake);
                 inputEl.placeholder = "Intake complete — thank you!";
                 setInputEnabled(false);
+                showOptions(null);
+            } else if (data.options) {
+                showOptions(data.options);
             } else {
+                showOptions(null);
                 setInputEnabled(true);
             }
         } catch (err) {
             showTyping(false);
             addMessage("Sorry, something went wrong. Please try again.", 'agent');
+            showOptions(null);
             setInputEnabled(true);
         }
     }
