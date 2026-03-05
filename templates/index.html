@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARD Support — Texas Special Ed</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <style>
         :root {
             --warm-cream: #FDF8F0;
@@ -19,13 +19,10 @@
             --border: #E8DDD0;
             --success-green: #5A9E6F;
             --urgency-red: #C0544F;
+            --urgency-orange: #D4853A;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'DM Sans', sans-serif;
@@ -34,22 +31,18 @@
             min-height: 100vh;
         }
 
-        /* ── Chat Widget (Embedded Version) ─────────────── */
         .chat-container {
             max-width: 480px;
             margin: 40px auto;
             background: var(--white);
             border-radius: 20px;
-            box-shadow:
-                0 4px 24px rgba(27, 42, 74, 0.08),
-                0 1px 3px rgba(27, 42, 74, 0.04);
+            box-shadow: 0 4px 24px rgba(27,42,74,0.08), 0 1px 3px rgba(27,42,74,0.04);
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            height: 640px;
+            height: 700px;
         }
 
-        /* ── Header ─────────────────────────────────────── */
         .chat-header {
             background: var(--deep-navy);
             padding: 20px 24px;
@@ -66,7 +59,6 @@
         .chat-header p {
             font-size: 13px;
             color: rgba(255,255,255,0.6);
-            font-weight: 400;
         }
 
         .status-dot {
@@ -84,7 +76,6 @@
             50% { opacity: 0.5; }
         }
 
-        /* ── Messages Area ──────────────────────────────── */
         .chat-messages {
             flex: 1;
             overflow-y: auto;
@@ -95,14 +86,8 @@
             scroll-behavior: smooth;
         }
 
-        .chat-messages::-webkit-scrollbar {
-            width: 4px;
-        }
-
-        .chat-messages::-webkit-scrollbar-thumb {
-            background: var(--border);
-            border-radius: 4px;
-        }
+        .chat-messages::-webkit-scrollbar { width: 4px; }
+        .chat-messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
         .message {
             max-width: 85%;
@@ -114,14 +99,8 @@
         }
 
         @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(8px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .message.agent {
@@ -138,16 +117,6 @@
             border-bottom-right-radius: 4px;
         }
 
-        .message.system {
-            background: var(--light-gold);
-            color: var(--text-dark);
-            align-self: center;
-            text-align: center;
-            font-size: 13px;
-            border-radius: 12px;
-            max-width: 90%;
-        }
-
         .typing-indicator {
             align-self: flex-start;
             padding: 14px 18px;
@@ -157,15 +126,10 @@
             display: none;
         }
 
-        .typing-indicator.active {
-            display: flex;
-            gap: 4px;
-            align-items: center;
-        }
+        .typing-indicator.active { display: flex; gap: 4px; align-items: center; }
 
         .typing-dot {
-            width: 7px;
-            height: 7px;
+            width: 7px; height: 7px;
             background: var(--text-light);
             border-radius: 50%;
             animation: typingBounce 1.2s infinite;
@@ -179,49 +143,147 @@
             30% { transform: translateY(-6px); }
         }
 
-        /* ── Intake Complete Card ───────────────────────── */
-        .intake-card {
-            background: linear-gradient(135deg, var(--deep-navy), #2A3F6A);
-            color: var(--white);
+        /* ── Triage Result Card ─────────────────────────── */
+        .triage-card {
+            background: var(--white);
             border-radius: 16px;
-            padding: 20px;
             margin-top: 8px;
             animation: fadeUp 0.4s ease;
+            border: 2px solid var(--border);
+            overflow: hidden;
+            align-self: stretch;
+            max-width: 100%;
         }
 
-        .intake-card h3 {
+        .triage-header {
+            padding: 18px 20px 14px;
+            color: var(--white);
+        }
+
+        .triage-header.tier-attorney { background: var(--urgency-red); }
+        .triage-header.tier-advocate { background: var(--urgency-orange); }
+        .triage-header.tier-toolkit { background: var(--soft-blue); }
+
+        .triage-header h3 {
             font-family: 'DM Serif Display', serif;
             font-size: 17px;
-            margin-bottom: 12px;
-            color: var(--gentle-gold);
+            margin-bottom: 4px;
         }
 
-        .intake-row {
+        .triage-header p {
+            font-size: 13px;
+            opacity: 0.85;
+        }
+
+        .triage-flags {
+            padding: 16px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .flag-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+
+        .flag-icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        .flag-icon.detected { background: #FDECEA; color: var(--urgency-red); }
+        .flag-icon.clear { background: #EAF5EC; color: var(--success-green); }
+
+        .triage-score {
+            padding: 12px 20px;
+            background: #F8F6F2;
+            font-size: 13px;
+            color: var(--text-light);
             display: flex;
             justify-content: space-between;
-            padding: 6px 0;
-            font-size: 13px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            align-items: center;
         }
 
-        .intake-row:last-child { border: none; }
+        .score-bar {
+            width: 100px;
+            height: 6px;
+            background: #E8E4DE;
+            border-radius: 3px;
+            overflow: hidden;
+        }
 
-        .intake-label { color: rgba(255,255,255,0.6); }
-        .intake-value { font-weight: 600; }
+        .score-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.8s ease;
+        }
 
-        .urgency-badge {
-            display: inline-block;
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-size: 12px;
+        .score-fill.high { background: var(--urgency-red); }
+        .score-fill.medium { background: var(--urgency-orange); }
+        .score-fill.low { background: var(--soft-blue); }
+
+        .triage-cta {
+            padding: 16px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .cta-primary {
+            display: block;
+            width: 100%;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 12px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s;
         }
 
-        .urgency-high { background: var(--urgency-red); }
-        .urgency-medium { background: var(--gentle-gold); color: var(--text-dark); }
-        .urgency-low { background: var(--success-green); }
+        .cta-primary.attorney { background: var(--urgency-red); color: white; }
+        .cta-primary.advocate { background: var(--urgency-orange); color: white; }
+        .cta-primary.toolkit { background: var(--soft-blue); color: white; }
+
+        .cta-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .cta-secondary {
+            display: block;
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            background: white;
+            color: var(--text-dark);
+            transition: all 0.2s;
+        }
+
+        .cta-secondary:hover {
+            border-color: var(--soft-blue);
+            background: #F8F6F2;
+        }
 
         /* ── Input Area ─────────────────────────────────── */
         .chat-input-area {
@@ -230,11 +292,7 @@
             background: var(--white);
         }
 
-        .input-row {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
+        .input-row { display: flex; gap: 10px; align-items: center; }
 
         .chat-input {
             flex: 1;
@@ -248,105 +306,38 @@
             color: var(--text-dark);
         }
 
-        .chat-input:focus {
-            border-color: var(--soft-blue);
-        }
-
-        .chat-input::placeholder {
-            color: var(--text-light);
-        }
-
-        .chat-input:disabled {
-            background: #F5F3EF;
-            cursor: not-allowed;
-        }
+        .chat-input:focus { border-color: var(--soft-blue); }
+        .chat-input::placeholder { color: var(--text-light); }
+        .chat-input:disabled { background: #F5F3EF; cursor: not-allowed; }
 
         .send-btn {
-            width: 46px;
-            height: 46px;
-            border: none;
-            background: var(--deep-navy);
-            color: var(--white);
-            border-radius: 12px;
+            width: 46px; height: 46px;
+            border: none; background: var(--deep-navy);
+            color: var(--white); border-radius: 12px;
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s;
-            flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.2s; flex-shrink: 0;
         }
 
-        .send-btn:hover:not(:disabled) {
-            background: var(--soft-blue);
-            transform: scale(1.05);
-        }
-
-        .send-btn:disabled {
-            opacity: 0.4;
-            cursor: not-allowed;
-        }
-
-        .send-btn svg {
-            width: 20px;
-            height: 20px;
-        }
+        .send-btn:hover:not(:disabled) { background: var(--soft-blue); transform: scale(1.05); }
+        .send-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .send-btn svg { width: 20px; height: 20px; }
 
         .privacy-note {
-            font-size: 11px;
-            color: var(--text-light);
-            text-align: center;
-            margin-top: 8px;
+            font-size: 11px; color: var(--text-light);
+            text-align: center; margin-top: 8px;
         }
-
-        /* ── Floating Widget Version ────────────────────── */
-        /* Uncomment this section to use as a popup widget instead */
-        /*
-        .widget-trigger {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            width: 60px;
-            height: 60px;
-            background: var(--deep-navy);
-            border: none;
-            border-radius: 50%;
-            color: white;
-            cursor: pointer;
-            box-shadow: 0 4px 16px rgba(27,42,74,0.3);
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: transform 0.2s;
-        }
-
-        .widget-trigger:hover { transform: scale(1.1); }
-
-        .chat-container.floating {
-            position: fixed;
-            bottom: 100px;
-            right: 24px;
-            margin: 0;
-            z-index: 9998;
-            display: none;
-        }
-
-        .chat-container.floating.open { display: flex; }
-        */
     </style>
 </head>
 <body>
 
 <div class="chat-container" id="chatContainer">
-    <!-- Header -->
     <div class="chat-header">
         <h1>ARD Support Agent</h1>
         <p><span class="status-dot"></span>Here to help with your child's special education</p>
     </div>
 
-    <!-- Messages -->
     <div class="chat-messages" id="chatMessages">
-        <!-- Messages will be injected here -->
         <div class="typing-indicator" id="typingIndicator">
             <div class="typing-dot"></div>
             <div class="typing-dot"></div>
@@ -354,16 +345,9 @@
         </div>
     </div>
 
-    <!-- Input -->
     <div class="chat-input-area">
         <div class="input-row">
-            <input
-                type="text"
-                class="chat-input"
-                id="chatInput"
-                placeholder="Type your answer..."
-                autocomplete="off"
-            />
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type your answer..." autocomplete="off" />
             <button class="send-btn" id="sendBtn" disabled>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="22" y1="2" x2="11" y2="13"></line>
@@ -376,7 +360,6 @@
 </div>
 
 <script>
-    // ── State ──────────────────────────────────────────
     let sessionId = null;
     let isComplete = false;
 
@@ -384,12 +367,8 @@
     const inputEl = document.getElementById('chatInput');
     const sendBtn = document.getElementById('sendBtn');
     const typingEl = document.getElementById('typingIndicator');
-
-    // ── API Base URL ───────────────────────────────────
-    // Change this when deploying
     const API_BASE = window.location.origin;
 
-    // ── Functions ──────────────────────────────────────
     function addMessage(text, type) {
         const div = document.createElement('div');
         div.className = `message ${type}`;
@@ -398,35 +377,94 @@
         messagesEl.scrollTop = messagesEl.scrollHeight;
     }
 
-    function showIntakeCard(intake) {
-        const urgencyClass = `urgency-${intake.urgency}`;
+    function buildTriageCard(intake) {
+        const tier = intake.tier || 'toolkit';
+        const score = intake.score || 0;
+        const maxScore = 15;
+        const scorePercent = Math.min((score / maxScore) * 100, 100);
+
+        const flags = [
+            { label: 'Services denied or reduced', detected: intake.services_denied === 'yes' },
+            { label: 'Pressured to sign documents', detected: intake.pressured_to_sign === 'yes' },
+            { label: 'Evaluation refused or delayed', detected: intake.eval_refused === 'refused' || intake.eval_refused === 'delayed' },
+            { label: 'No written notice provided', detected: intake.written_notice === 'no' },
+            { label: 'IEE request refused', detected: intake.iee_refused === 'yes' },
+            { label: 'Educational harm reported', detected: intake.educational_harm === 'significant' || intake.educational_harm === 'some' }
+        ];
+
+        const detectedFlags = flags.filter(f => f.detected);
+
+        const tierConfig = {
+            attorney: {
+                title: 'Priority Case Identified',
+                subtitle: 'Based on your answers, your situation may involve a dispute over special education services.',
+                headerClass: 'tier-attorney',
+                scoreClass: 'high',
+                primaryLabel: 'Schedule a Free Attorney Consultation',
+                primaryClass: 'attorney',
+                primaryHref: '#schedule-attorney',
+                secondaryLabel: 'Speak with an Advocate First',
+                secondaryHref: '#advocate'
+            },
+            advocate: {
+                title: 'Your Case Needs Attention',
+                subtitle: 'Many parents in your situation benefit from working with a trained advocate.',
+                headerClass: 'tier-advocate',
+                scoreClass: 'medium',
+                primaryLabel: 'Connect with an Advocate',
+                primaryClass: 'advocate',
+                primaryHref: '#advocate',
+                secondaryLabel: 'Get the ARD Preparation Toolkit — $47',
+                secondaryHref: '#toolkit'
+            },
+            toolkit: {
+                title: 'We Can Help You Prepare',
+                subtitle: 'It looks like you\'re gathering information — that\'s a great first step.',
+                headerClass: 'tier-toolkit',
+                scoreClass: 'low',
+                primaryLabel: 'Get the ARD Toolkit — $47',
+                primaryClass: 'toolkit',
+                primaryHref: '#toolkit',
+                secondaryLabel: 'Browse Free Resources',
+                secondaryHref: '#resources'
+            }
+        };
+
+        const config = tierConfig[tier] || tierConfig.toolkit;
+
         const card = document.createElement('div');
-        card.className = 'intake-card';
+        card.className = 'triage-card';
+
+        // Sort: detected flags first
+        const sortedFlags = [...flags].sort((a, b) => b.detected - a.detected);
+        let flagsHTML = '';
+        for (const flag of sortedFlags) {
+            const iconClass = flag.detected ? 'detected' : 'clear';
+            const icon = flag.detected ? '⚠' : '✓';
+            flagsHTML += `
+                <div class="flag-item">
+                    <span class="flag-icon ${iconClass}">${icon}</span>
+                    <span>${flag.label}</span>
+                </div>`;
+        }
+
         card.innerHTML = `
-            <h3>Intake Summary</h3>
-            <div class="intake-row">
-                <span class="intake-label">District</span>
-                <span class="intake-value">${intake.district}</span>
+            <div class="triage-header ${config.headerClass}">
+                <h3>${config.title}</h3>
+                <p>${config.subtitle}</p>
             </div>
-            <div class="intake-row">
-                <span class="intake-label">Meeting</span>
-                <span class="intake-value">${intake.meeting_status}</span>
+            <div class="triage-flags">${flagsHTML}</div>
+            <div class="triage-score">
+                <span>Severity: ${score}/15</span>
+                <div class="score-bar">
+                    <div class="score-fill ${config.scoreClass}" style="width: ${scorePercent}%"></div>
+                </div>
             </div>
-            <div class="intake-row">
-                <span class="intake-label">Services Denied</span>
-                <span class="intake-value">${intake.services_denied}</span>
-            </div>
-            <div class="intake-row">
-                <span class="intake-label">Pressured</span>
-                <span class="intake-value">${intake.pressured_to_sign}</span>
-            </div>
-            <div class="intake-row">
-                <span class="intake-label">Urgency</span>
-                <span class="intake-value">
-                    <span class="urgency-badge ${urgencyClass}">${intake.urgency}</span>
-                </span>
-            </div>
-        `;
+            <div class="triage-cta">
+                <a class="cta-primary ${config.primaryClass}" href="${config.primaryHref}">${config.primaryLabel}</a>
+                <a class="cta-secondary" href="${config.secondaryHref}">${config.secondaryLabel}</a>
+            </div>`;
+
         messagesEl.insertBefore(card, typingEl);
         messagesEl.scrollTop = messagesEl.scrollHeight;
     }
@@ -445,18 +483,16 @@
     async function startChat() {
         showTyping(true);
         setInputEnabled(false);
-
         try {
             const res = await fetch(`${API_BASE}/api/start`, { method: 'POST' });
             const data = await res.json();
-
             sessionId = data.session_id;
             showTyping(false);
             addMessage(data.response, 'agent');
             setInputEnabled(true);
         } catch (err) {
             showTyping(false);
-            addMessage("Hi there! I'm here to help with your child's special education situation. What school district are you in?", 'agent');
+            addMessage("Hi there! I'm here to help with your child's special education situation. What school district does your child attend?", 'agent');
             setInputEnabled(true);
         }
     }
@@ -474,28 +510,22 @@
             const res = await fetch(`${API_BASE}/api/chat`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    message: text,
-                    session_id: sessionId
-                })
+                body: JSON.stringify({ message: text, session_id: sessionId })
             });
 
             const data = await res.json();
             sessionId = data.session_id;
-
             showTyping(false);
             addMessage(data.response, 'agent');
 
             if (data.complete && data.intake) {
                 isComplete = true;
-                showIntakeCard(data.intake);
-                addMessage("We've saved your information. An advocate will review your case soon.", 'system');
+                buildTriageCard(data.intake);
                 inputEl.placeholder = "Intake complete — thank you!";
                 setInputEnabled(false);
             } else {
                 setInputEnabled(true);
             }
-
         } catch (err) {
             showTyping(false);
             addMessage("Sorry, something went wrong. Please try again.", 'agent');
@@ -503,21 +533,14 @@
         }
     }
 
-    // ── Event Listeners ────────────────────────────────
     sendBtn.addEventListener('click', sendMessage);
-
     inputEl.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && !e.shiftKey) {
-            e.preventDefault();
-            sendMessage();
-        }
+        if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
     });
-
     inputEl.addEventListener('input', () => {
         sendBtn.disabled = !inputEl.value.trim() || isComplete;
     });
 
-    // ── Start ──────────────────────────────────────────
     startChat();
 </script>
 
