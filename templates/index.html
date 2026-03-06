@@ -412,6 +412,7 @@
     const sendBtn = document.getElementById('sendBtn');
     const typingEl = document.getElementById('typingIndicator');
     const optionsEl = document.getElementById('optionsContainer');
+    const inputAreaEl = document.querySelector('.chat-input-area');
     const API_BASE = window.location.origin;
 
     function addMessage(text, type) {
@@ -448,58 +449,11 @@
         });
     }
 
-    async function sendOptionMessage(text) {
-        setInputEnabled(false);
-        showTyping(true);
-
-        try {
-            const res = await fetch(`${API_BASE}/api/chat`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: text, session_id: sessionId })
-            });
-
-            const data = await res.json();
-            sessionId = data.session_id;
-            showTyping(false);
-            addMessage(data.response, 'agent');
-
-            if (data.complete && data.intake) {
-                isComplete = true;
-                buildTriageCard(data.intake);
-                inputEl.placeholder = "Intake complete — thank you!";
-                setInputEnabled(false);
-                showOptions(null);
-            } else if (data.options) {
-                showOptions(data.options);
-            } else {
-                showOptions(null);
-                setInputEnabled(true);
-            }
-        } catch (err) {
-            showTyping(false);
-            addMessage("Sorry, something went wrong. Please try again.", 'agent');
-            showOptions(null);
-            setInputEnabled(true);
-        }
-    }
-
     function buildTriageCard(intake) {
         const tier = intake.tier || 'toolkit';
         const score = intake.score || 0;
         const maxScore = 15;
         const scorePercent = Math.min((score / maxScore) * 100, 100);
-
-        const flags = [
-            { label: 'Services denied or reduced', detected: intake.services_denied === 'yes' },
-            { label: 'Pressured to sign documents', detected: intake.pressured_to_sign === 'yes' },
-            { label: 'Evaluation refused or delayed', detected: intake.eval_refused === 'refused' || intake.eval_refused === 'delayed' },
-            { label: 'No written notice provided', detected: intake.written_notice === 'no' },
-            { label: 'IEE request refused', detected: intake.iee_refused === 'yes' },
-            { label: 'Educational harm reported', detected: intake.educational_harm === 'significant' || intake.educational_harm === 'some' }
-        ];
-
-        const detectedFlags = flags.filter(f => f.detected);
 
         const tierConfig = {
             attorney: {
@@ -542,15 +496,21 @@
         const card = document.createElement('div');
         card.className = 'triage-card';
 
-        const sortedFlags = [...flags].sort((a, b) => b.detected - a.detected);
+        // FIX #2: Dynamically load the AI's actual violation flags
         let flagsHTML = '';
-        for (const flag of sortedFlags) {
-            const iconClass = flag.detected ? 'detected' : 'clear';
-            const icon = flag.detected ? '⚠' : '✓';
+        if (intake.violation_flags && intake.violation_flags.length > 0) {
+            intake.violation_flags.forEach(flagText => {
+                flagsHTML += `
+                    <div class="flag-item">
+                        <span class="flag-icon detected">⚠</span>
+                        <span>${flagText}</span>
+                    </div>`;
+            });
+        } else {
             flagsHTML += `
                 <div class="flag-item">
-                    <span class="flag-icon ${iconClass}">${icon}</span>
-                    <span>${flag.label}</span>
+                    <span class="flag-icon clear">✓</span>
+                    <span>No immediate procedural violations flagged.</span>
                 </div>`;
         }
 
@@ -572,10 +532,13 @@
             </div>`;
 
         messagesEl.insertBefore(card, typingEl);
-        messagesEl.scrollTop = messagesEl.scrollHeight;
+        
+        // FIX #1: Wait 100ms for DOM reflow, then anchor the card to the bottom
+        setTimeout(() => {
+            card.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        }, 100);
     }
 
-    // THE SCROLL FIX IS PERMANENTLY APPLIED HERE
     function showTyping(show) {
         typingEl.className = show ? 'typing-indicator active' : 'typing-indicator';
         if (sessionId !== null) {
@@ -589,6 +552,43 @@
         if (enabled) inputEl.focus();
     }
 
+    async function handleResponse(resPromise) {
+        try {
+            const res = await resPromise;
+            const data = await res.json();
+            sessionId = data.session_id;
+            showTyping(false);
+            addMessage(data.response, 'agent');
+
+            if (data.complete && data.intake) {
+                isComplete = true;
+                // FIX #1b: Completely remove the input area to maximize iframe height for the card
+                inputAreaEl.style.display = 'none'; 
+                buildTriageCard(data.intake);
+            } else if (data.options) {
+                showOptions(data.options);
+            } else {
+                showOptions(null);
+                setInputEnabled(true);
+            }
+        } catch (err) {
+            showTyping(false);
+            addMessage("Sorry, something went wrong. Please try again.", 'agent');
+            showOptions(null);
+            setInputEnabled(true);
+        }
+    }
+
+    async function sendOptionMessage(text) {
+        setInputEnabled(false);
+        showTyping(true);
+        handleResponse(fetch(`${API_BASE}/api/chat`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: text, session_id: sessionId })
+        }));
+    }
+
     async function startChat() {
         showTyping(true);
         setInputEnabled(false);
@@ -598,12 +598,8 @@
             sessionId = data.session_id;
             showTyping(false);
             addMessage(data.response, 'agent');
-            if (data.options) {
-                showOptions(data.options);
-            } else {
-                showOptions(null);
-                setInputEnabled(true);
-            }
+            if (data.options) showOptions(data.options);
+            else { showOptions(null); setInputEnabled(true); }
         } catch (err) {
             showTyping(false);
             addMessage("Hi there! I'm here to help with your child's special education situation. What school district does your child attend?", 'agent');
@@ -620,37 +616,12 @@
         inputEl.value = '';
         setInputEnabled(false);
         showTyping(true);
-
-        try {
-            const res = await fetch(`${API_BASE}/api/chat`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: text, session_id: sessionId })
-            });
-
-            const data = await res.json();
-            sessionId = data.session_id;
-            showTyping(false);
-            addMessage(data.response, 'agent');
-
-            if (data.complete && data.intake) {
-                isComplete = true;
-                buildTriageCard(data.intake);
-                inputEl.placeholder = "Intake complete — thank you!";
-                setInputEnabled(false);
-                showOptions(null);
-            } else if (data.options) {
-                showOptions(data.options);
-            } else {
-                showOptions(null);
-                setInputEnabled(true);
-            }
-        } catch (err) {
-            showTyping(false);
-            addMessage("Sorry, something went wrong. Please try again.", 'agent');
-            showOptions(null);
-            setInputEnabled(true);
-        }
+        
+        handleResponse(fetch(`${API_BASE}/api/chat`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: text, session_id: sessionId })
+        }));
     }
 
     sendBtn.addEventListener('click', sendMessage);
