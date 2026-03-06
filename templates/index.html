@@ -1,355 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARD Support — Texas Special Ed</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-navy: #0f172a; 
-            --primary-blue: #1e3a8a; 
-            --accent-gold: #d4af37;  
-            --bg-light: #f8fafc;
-            --text-dark: #1e293b;
-            --text-light: #64748b;
-            --white: #ffffff;
-            --border: #e2e8f0;
-            --success: #10b981;
-            --urgency-red: #ef4444;
-            --urgency-orange: #f97316;
-        }
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ARD Support — Texas Special Ed</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+   <style>
+      :root {
+         --primary-navy: #0f172a;
+         --primary-blue: #1e3a8a;
+         --accent-gold: #d4af37;
+         --bg-light: #f8fafc;
+         --text-dark: #1e293b;
+         --text-light: #64748b;
+         --white: #ffffff;
+         --border: #e2e8f0;
+         --success: #10b981;
+         --urgency-red: #ef4444;
+         --urgency-orange: #f97316;
+      }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
 
-        body {
-            font-family: 'DM Sans', sans-serif;
-            background: var(--white);
-            color: var(--text-dark);
-            height: 100vh;
-            overflow: hidden;
-        }
+      body {
+         font-family: 'DM Sans', sans-serif;
+         background: var(--white);
+         color: var(--text-dark);
+         height: 100vh;
+         overflow: hidden;
+      }
 
-        .chat-container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            background: var(--white);
-        }
+      .chat-container {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         background: var(--white);
+      }
 
-        .chat-header {
-            background: var(--bg-light);
-            padding: 10px 20px;
-            color: var(--text-light);
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            flex-shrink: 0;
-        }
+      .chat-header {
+         background: var(--bg-light);
+         padding: 10px 20px;
+         color: var(--text-light);
+         font-size: 12px;
+         font-weight: 700;
+         text-transform: uppercase;
+         letter-spacing: 0.05em;
+         border-bottom: 1px solid var(--border);
+         display: flex;
+         align-items: center;
+         flex-shrink: 0;
+      }
 
-        .status-dot {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background: var(--success);
-            border-radius: 50%;
-            margin-right: 8px;
-            animation: pulse 2s infinite;
-        }
+      .status-dot {
+         display: inline-block;
+         width: 8px;
+         height: 8px;
+         background: var(--success);
+         border-radius: 50%;
+         margin-right: 8px;
+         animation: pulse 2s infinite;
+      }
 
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
-        }
+      @keyframes pulse {
+         0%, 100% { opacity: 1; }
+         50% { opacity: 0.4; }
+      }
 
-        /* ── NEW: Centered Question Display ──────────────── */
-        .question-display-area {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 30px;
-            text-align: center;
-            overflow-y: auto;
-        }
+      /* ── FIXED: Display Area & Centering ──────────────── */
+      .question-display-area {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 20px 30px;
+         text-align: center;
+         overflow-y: auto;
+         /* Removed justify-content: center to prevent the top of tall elements from being cut off */
+      }
 
-        #currentQuestionText {
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--primary-navy);
-            line-height: 1.4;
-            transition: opacity 0.3s ease;
-        }
+      /* New wrapper to safely center the question and options vertically */
+      .question-content-wrapper {
+         margin: auto 0; /* Pushes to center vertically */
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
 
-        .typing-indicator {
-            display: none;
-            gap: 6px;
-            align-items: center;
-            justify-content: center;
-            margin-top: 15px;
-        }
+      #currentQuestionText {
+         font-size: 20px;
+         font-weight: 600;
+         color: var(--primary-navy);
+         line-height: 1.4;
+         transition: opacity 0.3s ease;
+      }
 
-        .typing-indicator.active { display: flex; }
+      .typing-indicator {
+         display: none;
+         gap: 6px;
+         align-items: center;
+         justify-content: center;
+         margin-top: 15px;
+      }
 
-        .typing-dot {
-            width: 8px; height: 8px;
-            background: var(--primary-blue);
-            border-radius: 50%;
-            animation: typingBounce 1.2s infinite;
-            opacity: 0.7;
-        }
+      .typing-indicator.active {
+         display: flex;
+      }
 
-        .typing-dot:nth-child(2) { animation-delay: 0.15s; }
-        .typing-dot:nth-child(3) { animation-delay: 0.3s; }
+      .typing-dot {
+         width: 8px;
+         height: 8px;
+         background: var(--primary-blue);
+         border-radius: 50%;
+         animation: typingBounce 1.2s infinite;
+         opacity: 0.7;
+      }
 
-        @keyframes typingBounce {
-            0%, 60%, 100% { transform: translateY(0); }
-            30% { transform: translateY(-6px); }
-        }
+      .typing-dot:nth-child(2) { animation-delay: 0.15s; }
+      .typing-dot:nth-child(3) { animation-delay: 0.3s; }
 
-        /* ── Triage Result Card ─────────────────────────── */
-        .triage-card {
-            background: var(--white);
-            border-radius: 12px;
-            animation: fadeUp 0.4s ease;
-            border: 1px solid var(--border);
-            overflow: hidden;
-            width: 100%;
-            max-width: 100%;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            display: none; /* Hidden until complete */
-        }
+      @keyframes typingBounce {
+         0%, 60%, 100% { transform: translateY(0); }
+         30% { transform: translateY(-6px); }
+      }
 
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(8px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+      /* ── Triage Result Card ─────────────────────────── */
+      .triage-card {
+         background: var(--white);
+         border-radius: 12px;
+         animation: fadeUp 0.4s ease;
+         border: 1px solid var(--border);
+         overflow: hidden;
+         width: 100%;
+         max-width: 100%;
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+         display: none; /* Hidden until complete */
+         margin: auto; /* Safely centers the card when it is the only visible item */
+      }
 
-        .triage-header { padding: 16px 20px 12px; color: var(--white); }
-        .triage-header.tier-attorney { background: var(--urgency-red); }
-        .triage-header.tier-advocate { background: var(--urgency-orange); }
-        .triage-header.tier-toolkit { background: var(--primary-blue); }
+      @keyframes fadeUp {
+         from { opacity: 0; transform: translateY(8px); }
+         to { opacity: 1; transform: translateY(0); }
+      }
 
-        .triage-header h3 { font-family: 'DM Serif Display', serif; font-size: 18px; margin-bottom: 4px; }
-        .triage-header p { font-size: 13px; opacity: 0.9; }
+      .triage-header {
+         padding: 16px 20px 12px;
+         color: var(--white);
+      }
+      .triage-header.tier-attorney { background: var(--urgency-red); }
+      .triage-header.tier-advocate { background: var(--urgency-orange); }
+      .triage-header.tier-toolkit { background: var(--primary-blue); }
 
-        .triage-flags { padding: 16px 20px; display: flex; flex-direction: column; gap: 8px; }
-        .flag-item { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--text-dark); text-align: left; }
-        .flag-icon { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0; font-weight: bold; }
-        .flag-icon.detected { background: #fee2e2; color: var(--urgency-red); }
-        .flag-icon.clear { background: #d1fae5; color: var(--success); }
+      .triage-header h3 {
+         font-family: 'DM Serif Display', serif;
+         font-size: 18px;
+         margin-bottom: 4px;
+      }
+      .triage-header p {
+         font-size: 13px;
+         opacity: 0.9;
+      }
 
-        .triage-score { padding: 12px 20px; background: var(--bg-light); font-size: 13px; color: var(--text-light); display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-        .score-bar { width: 100px; height: 6px; background: #e2e8f0; border-radius: 3px; overflow: hidden; }
-        .score-fill { height: 100%; border-radius: 3px; transition: width 0.8s ease; }
-        .score-fill.high { background: var(--urgency-red); }
-        .score-fill.medium { background: var(--urgency-orange); }
-        .score-fill.low { background: var(--primary-blue); }
+      .triage-flags {
+         padding: 16px 20px;
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+      }
+      .flag-item {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         font-size: 14px;
+         color: var(--text-dark);
+         text-align: left;
+      }
+      .flag-icon {
+         width: 20px;
+         height: 20px;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 11px;
+         flex-shrink: 0;
+         font-weight: bold;
+      }
+      .flag-icon.detected { background: #fee2e2; color: var(--urgency-red); }
+      .flag-icon.clear { background: #d1fae5; color: var(--success); }
 
-        .triage-cta { padding: 16px 20px; display: flex; flex-direction: column; gap: 10px; }
-        .cta-primary { display: block; width: 100%; padding: 14px 20px; border: none; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; text-align: center; text-decoration: none; transition: all 0.2s; }
-        .cta-primary.attorney { background: var(--urgency-red); color: white; }
-        .cta-primary.advocate { background: var(--urgency-orange); color: white; }
-        .cta-primary.toolkit { background: var(--primary-blue); color: white; }
-        .cta-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
-        .cta-secondary { display: block; width: 100%; padding: 12px 20px; border: 1px solid var(--border); border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; text-align: center; text-decoration: none; background: white; color: var(--text-dark); transition: all 0.2s; }
-        .cta-secondary:hover { border-color: var(--primary-blue); background: var(--bg-light); color: var(--primary-blue); }
+      .triage-score {
+         padding: 12px 20px;
+         background: var(--bg-light);
+         font-size: 13px;
+         color: var(--text-light);
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         border-top: 1px solid var(--border);
+         border-bottom: 1px solid var(--border);
+      }
+      .score-bar {
+         width: 100px;
+         height: 6px;
+         background: #e2e8f0;
+         border-radius: 3px;
+         overflow: hidden;
+      }
+      .score-fill {
+         height: 100%;
+         border-radius: 3px;
+         transition: width 0.8s ease;
+      }
+      .score-fill.high { background: var(--urgency-red); }
+      .score-fill.medium { background: var(--urgency-orange); }
+      .score-fill.low { background: var(--primary-blue); }
 
-        /* ── Input Area ─────────────────────────────────── */
-        .chat-input-area {
-            padding: 16px 20px;
-            border-top: 1px solid var(--border);
-            background: var(--bg-light);
-            flex-shrink: 0;
-        }
+      .triage-cta {
+         padding: 16px 20px;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+      }
+      .cta-primary {
+         display: block;
+         width: 100%;
+         padding: 14px 20px;
+         border: none;
+         border-radius: 8px;
+         font-family: 'DM Sans', sans-serif;
+         font-size: 14px;
+         font-weight: 700;
+         cursor: pointer;
+         text-align: center;
+         text-decoration: none;
+         transition: all 0.2s;
+      }
+      .cta-primary.attorney { background: var(--urgency-red); color: white; }
+      .cta-primary.advocate { background: var(--urgency-orange); color: white; }
+      .cta-primary.toolkit { background: var(--primary-blue); color: white; }
+      .cta-primary:hover {
+         transform: translateY(-2px);
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+      .cta-secondary {
+         display: block;
+         width: 100%;
+         padding: 12px 20px;
+         border: 1px solid var(--border);
+         border-radius: 8px;
+         font-family: 'DM Sans', sans-serif;
+         font-size: 14px;
+         font-weight: 600;
+         cursor: pointer;
+         text-align: center;
+         text-decoration: none;
+         background: white;
+         color: var(--text-dark);
+         transition: all 0.2s;
+      }
+      .cta-secondary:hover {
+         border-color: var(--primary-blue);
+         background: var(--bg-light);
+         color: var(--primary-blue);
+      }
 
-        .input-row { display: flex; gap: 10px; align-items: center; }
+      /* ── FIXED: Option Buttons Moved to Display Area ── */
+      .options-container {
+         padding: 20px 0 0 0;
+         display: flex;
+         flex-wrap: wrap;
+         gap: 8px;
+         justify-content: center;
+         width: 100%;
+      }
 
-        .chat-input {
-            flex: 1; border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; font-family: 'DM Sans', sans-serif; font-size: 15px; outline: none; transition: all 0.2s; color: var(--text-dark); background: var(--white);
-        }
-        .chat-input:focus { border-color: var(--primary-blue); box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1); }
-        .chat-input::placeholder { color: #94a3b8; }
-        .chat-input:disabled { background: #e2e8f0; cursor: not-allowed; }
+      .option-btn {
+         padding: 10px 16px;
+         border: 1px solid var(--primary-blue);
+         border-radius: 8px;
+         background: var(--white);
+         font-family: 'DM Sans', sans-serif;
+         font-size: 14px;
+         font-weight: 500;
+         color: var(--primary-blue);
+         cursor: pointer;
+         transition: all 0.2s;
+         flex: 1 1 calc(50% - 8px);
+         text-align: center;
+      }
 
-        .send-btn {
-            width: 46px; height: 46px; border: none; background: var(--primary-navy); color: var(--accent-gold); border-radius: 10px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; flex-shrink: 0;
-        }
-        .send-btn:hover:not(:disabled) { background: var(--accent-gold); color: var(--primary-navy); transform: scale(1.05); }
-        .send-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-        .send-btn svg { width: 20px; height: 20px; }
+      .option-btn:hover {
+         background: #eff6ff;
+         transform: translateY(-1px);
+      }
 
-        .privacy-note { font-size: 11px; color: var(--text-light); text-align: center; margin-top: 8px; }
+      .option-btn:active {
+         transform: translateY(0);
+         background: var(--primary-blue);
+         color: var(--white);
+      }
 
-        /* ── Option Buttons ─────────────────────────────── */
-        .options-container {
-            padding: 0 0 12px 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            justify-content: center;
-        }
+      /* ── Input Area ─────────────────────────────────── */
+      .chat-input-area {
+         padding: 16px 20px;
+         border-top: 1px solid var(--border);
+         background: var(--bg-light);
+         flex-shrink: 0;
+      }
 
-        .option-btn {
-            padding: 10px 16px;
-            border: 1px solid var(--primary-blue);
-            border-radius: 8px;
-            background: var(--white);
-            font-family: 'DM Sans', sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--primary-blue);
-            cursor: pointer;
-            transition: all 0.2s;
-            flex: 1 1 calc(50% - 8px); /* Make buttons fill out nicely */
-            text-align: center;
-        }
+      .input-row {
+         display: flex;
+         gap: 10px;
+         align-items: center;
+      }
 
-        .option-btn:hover { background: #eff6ff; transform: translateY(-1px); }
-        .option-btn:active { transform: translateY(0); background: var(--primary-blue); color: var(--white); }
-    </style>
+      .chat-input {
+         flex: 1;
+         border: 1px solid var(--border);
+         border-radius: 10px;
+         padding: 12px 16px;
+         font-family: 'DM Sans', sans-serif;
+         font-size: 15px;
+         outline: none;
+         transition: all 0.2s;
+         color: var(--text-dark);
+         background: var(--white);
+      }
+
+      .chat-input:focus {
+         border-color: var(--primary-blue);
+         box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+      }
+
+      .chat-input:disabled {
+         background: #e2e8f0;
+         cursor: not-allowed;
+      }
+
+      .send-btn {
+         width: 46px;
+         height: 46px;
+         border: none;
+         background: var(--primary-navy);
+         color: var(--accent-gold);
+         border-radius: 10px;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         transition: all 0.2s;
+         flex-shrink: 0;
+      }
+
+      .send-btn:hover:not(:disabled) {
+         background: var(--accent-gold);
+         color: var(--primary-navy);
+         transform: scale(1.05);
+      }
+
+      .send-btn:disabled {
+         opacity: 0.4;
+         cursor: not-allowed;
+      }
+
+      .send-btn svg { width: 20px; height: 20px; }
+
+      .privacy-note {
+         font-size: 11px;
+         color: var(--text-light);
+         text-align: center;
+         margin-top: 8px;
+      }
+   </style>
 </head>
+
 <body>
 
-<div class="chat-container">
-    <div class="chat-header">
-        <span class="status-dot"></span> Secure Intake Active
-    </div>
+   <div class="chat-container">
+      <div class="chat-header">
+         <span class="status-dot"></span> Secure Intake Active
+      </div>
 
-    <div class="question-display-area" id="displayArea">
-        <div class="triage-card" id="triageCard"></div>
+      <div class="question-display-area" id="displayArea">
+         <div class="triage-card" id="triageCard"></div>
 
-        <div id="currentQuestionText">Connecting to advocate system...</div>
-        
-        <div class="typing-indicator" id="typingIndicator">
-            <div class="typing-dot"></div>
-            <div class="typing-dot"></div>
-            <div class="typing-dot"></div>
-        </div>
-    </div>
+         <div class="question-content-wrapper" id="questionWrapper">
+            <div id="currentQuestionText">Connecting to advocate system...</div>
 
-    <div class="chat-input-area" id="inputArea">
-        <div class="options-container" id="optionsContainer"></div>
-        <div class="input-row" id="textInputRow">
+            <div class="typing-indicator" id="typingIndicator">
+               <div class="typing-dot"></div>
+               <div class="typing-dot"></div>
+               <div class="typing-dot"></div>
+            </div>
+
+            <div class="options-container" id="optionsContainer" style="display: none;"></div>
+         </div>
+      </div>
+
+      <div class="chat-input-area" id="inputArea">
+         <div class="input-row" id="textInputRow">
             <input type="text" class="chat-input" id="chatInput" placeholder="Type your answer..." autocomplete="off" />
             <button class="send-btn" id="sendBtn" disabled>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
+               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+               </svg>
             </button>
-        </div>
-        <div class="privacy-note">Your information is confidential and only used to connect you with help.</div>
-    </div>
-</div>
+         </div>
+         <div class="privacy-note">Your information is confidential and only used to connect you with help.</div>
+      </div>
+   </div>
 
-<script>
-    let sessionId = null;
-    let isComplete = false;
+   <script>
+      let sessionId = null;
+      let isComplete = false;
 
-    const questionTextEl = document.getElementById('currentQuestionText');
-    const typingEl = document.getElementById('typingIndicator');
-    const inputAreaEl = document.getElementById('inputArea');
-    const optionsEl = document.getElementById('optionsContainer');
-    const textInputRow = document.getElementById('textInputRow');
-    const inputEl = document.getElementById('chatInput');
-    const sendBtn = document.getElementById('sendBtn');
-    const triageCardEl = document.getElementById('triageCard');
-    const API_BASE = window.location.origin;
+      const questionWrapperEl = document.getElementById('questionWrapper');
+      const questionTextEl = document.getElementById('currentQuestionText');
+      const typingEl = document.getElementById('typingIndicator');
+      const inputAreaEl = document.getElementById('inputArea');
+      const optionsEl = document.getElementById('optionsContainer');
+      const textInputRow = document.getElementById('textInputRow');
+      const inputEl = document.getElementById('chatInput');
+      const sendBtn = document.getElementById('sendBtn');
+      const triageCardEl = document.getElementById('triageCard');
+      const API_BASE = window.location.origin;
 
-    // We no longer append messages. We just update the central text.
-    function updateQuestion(text) {
-        questionTextEl.style.opacity = 0;
-        setTimeout(() => {
+      function updateQuestion(text) {
+         questionTextEl.style.opacity = 0;
+         setTimeout(() => {
             questionTextEl.textContent = text;
             questionTextEl.style.opacity = 1;
-        }, 150);
-    }
+         }, 150);
+      }
 
-    function showOptions(options) {
-        optionsEl.innerHTML = '';
-        if (!options || options.length === 0) {
+      function showOptions(options) {
+         optionsEl.innerHTML = '';
+         if (!options || options.length === 0) {
             optionsEl.style.display = 'none';
             textInputRow.style.display = 'flex';
             inputEl.focus();
             return;
-        }
-        
-        optionsEl.style.display = 'flex';
-        textInputRow.style.display = 'none';
+         }
 
-        options.forEach(opt => {
+         optionsEl.style.display = 'flex';
+         textInputRow.style.display = 'none';
+
+         options.forEach(opt => {
             const btn = document.createElement('button');
             btn.className = 'option-btn';
             btn.textContent = opt;
             btn.addEventListener('click', () => {
-                sendOptionMessage(opt);
+               sendOptionMessage(opt);
             });
             optionsEl.appendChild(btn);
-        });
-    }
+         });
+      }
 
-    function buildTriageCard(intake) {
-        const tier = intake.tier || 'toolkit';
-        const score = intake.score || 0;
-        const maxScore = 15;
-        const scorePercent = Math.min((score / maxScore) * 100, 100);
+      function buildTriageCard(intake) {
+         const tier = intake.tier || 'toolkit';
+         const score = intake.score || 0;
+         const maxScore = 15;
+         const scorePercent = Math.min((score / maxScore) * 100, 100);
 
-        const tierConfig = {
+         const tierConfig = {
             attorney: {
-                title: 'Priority Case Identified',
-                subtitle: 'Based on your answers, your situation may involve a dispute over special education services.',
-                headerClass: 'tier-attorney',
-                scoreClass: 'high',
-                primaryLabel: 'Schedule a Free Attorney Consultation',
-                primaryClass: 'attorney',
-                primaryHref: '#schedule-attorney',
-                secondaryLabel: 'Speak with an Advocate First',
-                secondaryHref: '#advocate'
+               title: 'Priority Case Identified',
+               subtitle: 'Based on your answers, your situation may involve a dispute over special education services.',
+               headerClass: 'tier-attorney',
+               scoreClass: 'high',
+               primaryLabel: 'Schedule a Free Attorney Consultation',
+               primaryClass: 'attorney',
+               primaryHref: '#schedule-attorney',
+               secondaryLabel: 'Speak with an Advocate First',
+               secondaryHref: '#advocate'
             },
             advocate: {
-                title: 'Your Case Needs Attention',
-                subtitle: 'Many parents in your situation benefit from working with a trained advocate.',
-                headerClass: 'tier-advocate',
-                scoreClass: 'medium',
-                primaryLabel: 'Connect with an Advocate',
-                primaryClass: 'advocate',
-                primaryHref: '#advocate',
-                secondaryLabel: 'Get the ARD Preparation Toolkit — $47',
-                secondaryHref: '#toolkit'
+               title: 'Your Case Needs Attention',
+               subtitle: 'Many parents in your situation benefit from working with a trained advocate.',
+               headerClass: 'tier-advocate',
+               scoreClass: 'medium',
+               primaryLabel: 'Connect with an Advocate',
+               primaryClass: 'advocate',
+               primaryHref: '#advocate',
+               secondaryLabel: 'Get the ARD Preparation Toolkit — $47',
+               secondaryHref: '#toolkit'
             },
             toolkit: {
-                title: 'We Can Help You Prepare',
-                subtitle: 'It looks like you\'re gathering information — that\'s a great first step.',
-                headerClass: 'tier-toolkit',
-                scoreClass: 'low',
-                primaryLabel: 'Get the ARD Toolkit — $47',
-                primaryClass: 'toolkit',
-                primaryHref: '#toolkit',
-                secondaryLabel: 'Browse Free Resources',
-                secondaryHref: '#resources'
+               title: 'We Can Help You Prepare',
+               subtitle: 'It looks like you\'re gathering information — that\'s a great first step.',
+               headerClass: 'tier-toolkit',
+               scoreClass: 'low',
+               primaryLabel: 'Get the ARD Toolkit — $47',
+               primaryClass: 'toolkit',
+               primaryHref: '#toolkit',
+               secondaryLabel: 'Browse Free Resources',
+               secondaryHref: '#resources'
             }
-        };
+         };
 
-        const config = tierConfig[tier] || tierConfig.toolkit;
+         const config = tierConfig[tier] || tierConfig.toolkit;
 
-        let flagsHTML = '';
-        if (intake.violation_flags && intake.violation_flags.length > 0) {
+         let flagsHTML = '';
+         if (intake.violation_flags && intake.violation_flags.length > 0) {
             intake.violation_flags.forEach(flagText => {
-                flagsHTML += `<div class="flag-item"><span class="flag-icon detected">⚠</span><span>${flagText}</span></div>`;
+               flagsHTML += `<div class="flag-item"><span class="flag-icon detected">⚠</span><span>${flagText}</span></div>`;
             });
-        } else {
+         } else {
             flagsHTML += `<div class="flag-item"><span class="flag-icon clear">✓</span><span>No immediate procedural violations flagged.</span></div>`;
-        }
+         }
 
-        triageCardEl.innerHTML = `
+         triageCardEl.innerHTML = `
             <div class="triage-header ${config.headerClass}">
                 <h3>${config.title}</h3>
                 <p>${config.subtitle}</p>
@@ -366,113 +535,119 @@
                 <a class="cta-secondary" href="${config.secondaryHref}">${config.secondaryLabel}</a>
             </div>`;
 
-        // Hide question text, show triage card
-        questionTextEl.style.display = 'none';
-        triageCardEl.style.display = 'block';
-    }
+         // Hide the question wrapper completely, show the triage card
+         questionWrapperEl.style.display = 'none';
+         triageCardEl.style.display = 'block';
+      }
 
-    function showTyping(show) {
-        if (show) {
+      function showTyping(show) {
+         if (show) {
             questionTextEl.style.opacity = 0;
             setTimeout(() => {
-                questionTextEl.style.display = 'none';
-                typingEl.classList.add('active');
+               questionTextEl.style.display = 'none';
+               typingEl.classList.add('active');
             }, 150);
-        } else {
+         } else {
             typingEl.classList.remove('active');
             questionTextEl.style.display = 'block';
-        }
-    }
+         }
+      }
 
-    function setInputEnabled(enabled) {
-        inputEl.disabled = !enabled;
-        sendBtn.disabled = !enabled;
-        if (enabled) inputEl.focus();
-    }
+      function setInputEnabled(enabled) {
+         inputEl.disabled = !enabled;
+         sendBtn.disabled = !enabled;
+         if (enabled) inputEl.focus();
+      }
 
-    async function handleResponse(resPromise) {
-        try {
+      async function handleResponse(resPromise) {
+         try {
             const res = await resPromise;
             const data = await res.json();
             sessionId = data.session_id;
-            
+
             showTyping(false);
-            
+
             if (data.complete && data.intake) {
-                isComplete = true;
-                inputAreaEl.style.display = 'none'; // Completely removes input area
-                buildTriageCard(data.intake);
+               isComplete = true;
+               inputAreaEl.style.display = 'none';
+               buildTriageCard(data.intake);
             } else {
-                updateQuestion(data.response);
-                if (data.options) {
-                    showOptions(data.options);
-                } else {
-                    showOptions(null);
-                    setInputEnabled(true);
-                }
+               updateQuestion(data.response);
+               if (data.options) {
+                  showOptions(data.options);
+               } else {
+                  showOptions(null);
+                  setInputEnabled(true);
+               }
             }
-        } catch (err) {
+         } catch (err) {
             showTyping(false);
             updateQuestion("Sorry, something went wrong. Please try refreshing the page.");
             showOptions(null);
             setInputEnabled(true);
-        }
-    }
+         }
+      }
 
-    function sendOptionMessage(text) {
-        setInputEnabled(false);
-        showTyping(true);
-        handleResponse(fetch(`${API_BASE}/api/chat`, {
+      function sendOptionMessage(text) {
+         setInputEnabled(false);
+         showTyping(true);
+         handleResponse(fetch(`${API_BASE}/api/chat`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: text, session_id: sessionId })
-        }));
-    }
+         }));
+      }
 
-    function sendMessage() {
-        const text = inputEl.value.trim();
-        if (!text || isComplete) return;
+      function sendMessage() {
+         const text = inputEl.value.trim();
+         if (!text || isComplete) return;
 
-        inputEl.value = '';
-        setInputEnabled(false);
-        showTyping(true);
-        
-        handleResponse(fetch(`${API_BASE}/api/chat`, {
+         inputEl.value = '';
+         setInputEnabled(false);
+         showTyping(true);
+
+         handleResponse(fetch(`${API_BASE}/api/chat`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: text, session_id: sessionId })
-        }));
-    }
+         }));
+      }
 
-    sendBtn.addEventListener('click', sendMessage);
-    inputEl.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
-    });
-    inputEl.addEventListener('input', () => {
-        sendBtn.disabled = !inputEl.value.trim() || isComplete;
-    });
+      sendBtn.addEventListener('click', sendMessage);
+      inputEl.addEventListener('keydown', (e) => {
+         if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            sendMessage();
+         }
+      });
+      inputEl.addEventListener('input', () => {
+         sendBtn.disabled = !inputEl.value.trim() || isComplete;
+      });
 
-    // Start Chat
-    async function startChat() {
-        showTyping(true);
-        setInputEnabled(false);
-        try {
+      async function startChat() {
+         showTyping(true);
+         setInputEnabled(false);
+         try {
             const res = await fetch(`${API_BASE}/api/start`, { method: 'POST' });
             const data = await res.json();
             sessionId = data.session_id;
             showTyping(false);
             updateQuestion(data.response);
             if (data.options) showOptions(data.options);
-            else { showOptions(null); setInputEnabled(true); }
-        } catch (err) {
+            else {
+               showOptions(null);
+               setInputEnabled(true);
+            }
+         } catch (err) {
             showTyping(false);
             updateQuestion("Hi there! What school district does your child attend?");
             showOptions(null);
             setInputEnabled(true);
-        }
-    }
+         }
+      }
 
-    startChat();
-</script>
+      startChat();
+   </script>
 </body>
+
 </html>
