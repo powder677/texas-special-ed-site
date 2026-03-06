@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
@@ -35,7 +34,7 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 /* ── 70/30 DESKTOP GRID & STICKY SIDEBAR ── */
 .layout-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-top: 40px; align-items: start; }
 @media (min-width: 1024px) { .layout-grid { grid-template-columns: 1fr 380px; } }
-.sidebar-column { position: sticky; top: 20px; z-index: 10; }
+.sidebar-column { position: sticky; top: 100px; z-index: 10; } /* Clears tight navbar */
 .content-column { min-width: 0; font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
 .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
 .content-column p { margin: 0 0 1.25rem; }
@@ -76,25 +75,6 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 .sales-card p { color: #e2e8f0; margin: 0 auto 24px; font-size: 1.05rem; line-height: 1.6; max-width: 90%;}
 .sales-card a { background: #d4af37; color: #0f172a; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; display: inline-block; transition: 0.2s; }
 .sales-card a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-
-/* ── SIDEBAR FORM STYLES (Warm Version) ── */
-.sidebar-form { width: 100%; background: #fdfaf5; border: 1px solid #d6cbbf; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); overflow: hidden; }
-.sidebar-form .sf-header { background: #1a1410; padding: 24px 24px 20px; border-bottom: 3px solid #b8963a; }
-.sidebar-form .sf-eyebrow { font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #b8963a; margin: 0 0 6px; font-family: 'DM Sans', sans-serif;}
-.sidebar-form .sf-name { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; color: #f5f0e8; margin: 0; line-height: 1.1;}
-.sidebar-form .sf-name em { color: #d4ad5a; font-style: italic; }
-.sidebar-form .sf-body { padding: 24px; }
-.sidebar-form .sf-empathy { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: #1a1410; margin: 0 0 8px; }
-.sidebar-form .sf-sub { font-size: 14px; color: #6b5f53; margin: 0 0 20px; font-family: 'DM Sans', sans-serif; line-height: 1.5;}
-.sidebar-form .sf-group { margin-bottom: 16px; }
-.sidebar-form label { display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6b5f53; margin-bottom: 6px; font-family: 'DM Sans', sans-serif; }
-.sidebar-form input, .sidebar-form select { width: 100%; border: 1px solid #d6cbbf; padding: 12px; font-size: 14px; font-family: 'DM Sans', sans-serif; border-radius: 4px; box-sizing: border-box; }
-.sidebar-form input:focus, .sidebar-form select:focus { outline: none; border-color: #b8963a; }
-.sidebar-form select { cursor: pointer; }
-.sidebar-form .sf-btn { width: 100%; background: #1a1410; color: #d4ad5a; border: none; padding: 16px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; border-radius: 4px; transition: 0.2s; font-family: 'DM Sans', sans-serif; margin-top: 8px;}
-.sidebar-form .sf-btn:hover { background: #b8963a; color: #1a1410; }
-.sidebar-form .sf-trust { text-align: center; margin-top: 14px; font-size: 12px; color: #9a8f86; font-family: 'DM Sans', sans-serif; display: flex; align-items: center; justify-content: center; gap: 6px;}
-.sidebar-form .sf-footer { background: #f0ebe3; padding: 12px 24px; text-align: center; font-size: 11px; color: #9a8f86; font-family: 'DM Sans', sans-serif; border-top: 1px solid #d6cbbf;}
 </style>
 </head>
 <body>
@@ -176,7 +156,7 @@ Texas <em>Special Ed</em>
 <div>
 <h3>You are not alone in this process.</h3>
 <p>Facing district administrators can feel intimidating, but you don't have to do it by yourself. Connect with a local special education advocate or attorney to level the playing field before your meeting.</p>
-<a class="btn-primary" href="#leadCaptureForm" onclick="document.querySelector('#leadCaptureForm').scrollIntoView({behavior: 'smooth'}); return false;">Get a Free Case Review</a>
+<a class="btn-primary" href="#premium-offers" onclick="document.querySelector('#premium-offers').scrollIntoView({behavior: 'smooth'}); return false;">Get a Free Case Review</a>
 </div>
 </div>
 <div class="action-steps">
@@ -233,29 +213,12 @@ Texas <em>Special Ed</em>
 <h2>When You Disagree With the Team</h2>
 <p>It is perfectly acceptable to disagree with the ARD committee's recommendations. If you disagree with a proposed initial placement, you have the right to refuse consent, meaning services cannot begin.</p>
 <p>If you disagree with a revised Abilene ISD IEP, <strong>do not sign the "Agree" box.</strong> Check "Disagree," request your 10-day recess, and ensure the district writes your specific concerns into the official minutes of the meeting. You also maintain the right to request an Independent Educational Evaluation (IEE) at the district's expense if you believe their testing is flawed.</p>
-<!-- ========================================== -->
+
 <!-- STACKED PREMIUM OFFERS (WITH STRIPE LINKS) -->
-<!-- ========================================== -->
 <div class="offers-container" id="premium-offers">
 <!-- Offer 1: ARD Prep -->
 <div class="card mb-4 border-danger shadow-sm">
 <div class="card-body">
-<h4 class="card-title text-danger fw-bold">🚨 ARD Meeting in 7 Days? You Need This</h4>
-<p class="card-text pb-2 border-bottom">Stop going into ARD meetings unprepared. Get the exact scripts Texas advocates charge $200/hr to provide.</p>
-<div class="mb-3 text-warning fw-bold">
-            ⭐⭐⭐⭐⭐ <span class="text-dark small fw-normal">4.9/5 stars (327 Texas parents)</span>
-</div>
-<ul class="list-unstyled lh-lg mb-4">
-<li>✅ Email templates (copy &amp; paste)</li>
-<li>✅ Response scripts for district pushback</li>
-<li>✅ 10-Day Recess Playbook</li>
-<li>✅ IEP Red Flag Analyzer</li>
-<li>✅ Meeting prep checklist</li>
-</ul>
-<p class="fst-italic small border-start border-3 border-secondary ps-3 text-muted">
-            "Used the eval request template—FIE scheduled in 48 hours!" <br/>
-<strong class="text-dark">- Maria, Round Rock ISD</strong>
-</p>
 <div class="text-center mt-4">
 <div style="background-color: #f8f9fa; border: 2px solid #dc3545; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 <h3 style="color: #dc3545; font-weight: bold; margin-top: 0;">🚨 ARD Meeting in 7 Days? You Need This</h3>
@@ -263,14 +226,14 @@ Texas <em>Special Ed</em>
 <div style="font-weight: bold; margin-bottom: 15px;">
 <span style="color: #ffc107;">⭐⭐⭐⭐⭐</span> <span style="font-weight: normal; font-size: 0.9em; color: #6c757d;">4.9/5 stars (327 Texas parents)</span>
 </div>
-<ul style="list-style-type: none; padding-left: 0; line-height: 1.8; margin-bottom: 20px;">
+<ul style="list-style-type: none; padding-left: 0; line-height: 1.8; margin-bottom: 20px; text-align: left;">
 <li>✅ Email templates (copy &amp; paste)</li>
 <li>✅ Response scripts for district pushback</li>
 <li>✅ 10-Day Recess Playbook</li>
 <li>✅ IEP Red Flag Analyzer</li>
 <li>✅ Meeting prep checklist</li>
 </ul>
-<p style="font-style: italic; font-size: 0.9em; border-left: 3px solid #6c757d; padding-left: 10px; color: #6c757d;">
+<p style="font-style: italic; font-size: 0.9em; border-left: 3px solid #6c757d; padding-left: 10px; color: #6c757d; text-align: left;">
         "Used the eval request template—FIE scheduled in 48 hours!" <br/>
 <strong style="color: #212529;">- Maria, Round Rock ISD</strong>
 </p>
@@ -279,12 +242,10 @@ Texas <em>Special Ed</em>
 <small style="color: #6c757d; display: block; margin-top: 10px;">🔒 30-Day Money-Back Guarantee</small>
 </div>
 </div>
-<small class="text-muted mt-2 d-block">🔒 30-Day Money-Back Guarantee</small>
 </div>
 </div>
 </div>
 <!-- Offer 2: All-Access Pass -->
-
 <div style="background-color: #f8f9fa; border: 2px solid #0d6efd; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
 <div style="text-align: center; margin-bottom: 15px;">
 <span style="background-color: #ffc107; color: #000; padding: 6px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">🏆 MOST POPULAR • BEST VALUE</span>
@@ -313,55 +274,25 @@ Texas <em>Special Ed</em>
 
 </div>
 </article>
-<!-- RIGHT SIDE: 30% STICKY SIDEBAR -->
+
+<!-- RIGHT SIDE: 30% STICKY SIDEBAR WITH NEW AI CHATBOT -->
 <aside class="sidebar-column">
-<!-- LEAD CAPTURE FORM -->
-<div class="sidebar-form">
-<div class="sf-header">
-<p class="sf-eyebrow">Abilene ISD Special Ed Law</p>
-<h3 class="sf-name">Local IEP <em>Advocates</em></h3>
-</div>
-<div class="sf-body">
-<p class="sf-empathy">You shouldn't have to figure this out alone.</p>
-<p class="sf-sub">A free 15-minute call can help you understand what the school is required to do.</p>
-<form id="leadCaptureForm">
-<div class="sf-group">
-<label>Your Name</label>
-<input placeholder="First and last name" required="" type="text"/>
-</div>
-<div class="sf-group">
-<label>Email Address</label>
-<input placeholder="Where should we reach you?" required="" type="email"/>
-</div>
-<div class="sf-group">
-<label>Phone <span class="sf-optional">(optional)</span></label>
-<input placeholder="(555) 000-0000" type="tel"/>
-</div>
-<div class="sf-group">
-<label>What's going on?</label>
-<select required="">
-<option disabled="" selected="" value="">Choose what fits best...</option>
-<option>The school keeps saying no to services</option>
-<option>I don't understand the IEP paperwork</option>
-<option>The ARD meeting felt rushed or unfair</option>
-<option>My child was suspended or removed</option>
-<option>Something else</option>
-</select>
-</div>
-<button class="sf-btn" type="button">Get My Free 15-Minute Call</button>
-<p class="sf-trust">
-<svg fill="none" height="13" stroke="#b8963a" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                        Confidential. No spam. No pressure.
-                    </p>
-</form>
-</div>
-<div class="sf-footer">
-                Independent Educational Consultants
-            </div>
-</div>
+   <div style="background: #fff; border: 2px solid #1a56db; border-radius: 16px; box-shadow: 0 10px 30px rgba(26, 86, 219, 0.08); padding: 20px;">
+      <h3 style="margin-top: 0; text-align: center; color: #0a2342; font-family: 'Lora', serif; font-size: 1.3rem;">Free ARD Rights Scan</h3>
+      <p style="text-align: center; font-size: 14px; margin-bottom: 16px; color: #3a3a5c;">Wondering if the school violated your rights? Answer a few questions and our AI will analyze your case.</p>
+      
+      <iframe 
+         src="https://ard-rights-scan-831148457361.us-central1.run.app" 
+         width="100%" 
+         height="500px" 
+         style="border: none; border-radius: 12px; border: 1px solid #E8DDD0; max-height: 65vh;"
+         title="ARD Rights Scan Tool">
+      </iframe>
+   </div>
 </aside>
 </div>
 </main>
+
 <footer class="site-footer">
 <div class="footer-container">
 <div class="footer-about">
@@ -403,9 +334,7 @@ Texas <em>Special Ed</em>
 <p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
 </div>
 </footer>
-<!-- ========================================================= -->
-<!-- THE LEAD CAPTURE SCRIPT (WIRED TO YOUR GOOGLE SHEET URL)  -->
-<!-- ========================================================= -->
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Menu toggle logic
@@ -417,66 +346,6 @@ document.addEventListener('DOMContentLoaded', function() {
             toggle.setAttribute('aria-expanded', menu.classList.contains('active'));
         });
     }
-    
-    // Form capture logic
-    const leadForms = document.querySelectorAll('form');
-    
-    leadForms.forEach(form => {
-        const submitBtn = form.querySelector('button');
-        if (!submitBtn) return;
-
-        submitBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const nameInput = form.querySelector('input[type="text"]');
-            const emailInput = form.querySelector('input[type="email"]');
-            const phoneInput = form.querySelector('input[type="tel"]');
-            const selectInputs = form.querySelectorAll('select');
-            let issueSelect = selectInputs.length > 0 ? selectInputs[0] : null;
-
-            if (nameInput && !nameInput.value.trim()) {
-                alert('Please enter your name.');
-                nameInput.focus();
-                return;
-            }
-
-            submitBtn.innerHTML = 'Securely Sending...';
-            submitBtn.disabled = true;
-            submitBtn.style.opacity = '0.7';
-
-            const formData = new URLSearchParams();
-            formData.append('name', nameInput && nameInput.value ? nameInput.value : 'Not provided');
-            formData.append('email', emailInput && emailInput.value ? emailInput.value : 'Not provided');
-            formData.append('phone', phoneInput && phoneInput.value ? phoneInput.value : 'Not provided');
-            formData.append('concern', issueSelect && issueSelect.value ? issueSelect.value : 'Not provided');
-            formData.append('pageUrl', window.location.href);
-
-            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwWpGXg3JMJnxyzUlJHPlQRnE_R2Dh6oFvapMureXQWG_0bLOBtN_e7f5s5jnKRdcG-/exec';
-
-            fetch(GOOGLE_SCRIPT_URL, {
-                method: 'POST',
-                body: formData,
-                mode: 'no-cors'
-            })
-            .then(() => {
-                form.innerHTML = `
-                    <div style="text-align: center; padding: 20px 10px;">
-                        <div style="color: #b8963a; font-size: 40px; margin-bottom: 10px;">✓</div>
-                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #1a1410; margin-bottom: 10px; font-weight: 600;">Request Received</h4>
-                        <p style="font-size: 14px; color: #6b5f53; line-height: 1.5; font-family: 'DM Sans', sans-serif;">
-                            Your information has been securely routed. A local advocate will reach out to you shortly.
-                        </p>
-                    </div>
-                `;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                submitBtn.innerHTML = 'Error. Please Try Again.';
-                submitBtn.disabled = false;
-                submitBtn.style.opacity = '1';
-            });
-        });
-    });
 });
 </script>
 </body>
