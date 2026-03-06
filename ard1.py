@@ -10,7 +10,7 @@ NEW_SIDEBAR_CONTENT = """   <div style="background: #fff; border: 2px solid #1a5
       <p style="text-align: center; font-size: 14px; margin-bottom: 16px; color: #3a3a5c;">Wondering if the school violated your rights? Answer a few questions and our AI will analyze your case.</p>
       
       <iframe 
-         src="https://ard-rights-scan-831148457361.us-central1.run.app" 
+         src="https://ard-chatbot-196104920649.us-central1.run.app" 
          width="100%" 
          height="500px" 
          style="border: none; border-radius: 12px; border: 1px solid #E8DDD0; max-height: 65vh;"
