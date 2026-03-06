@@ -8,72 +8,66 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <style>
         :root {
-            --warm-cream: #FDF8F0;
-            --deep-navy: #1B2A4A;
-            --soft-blue: #4A7AA5;
-            --gentle-gold: #D4A853;
-            --light-gold: #F5E6C4;
-            --text-dark: #2C3E50;
-            --text-light: #6B7B8D;
-            --white: #FFFFFF;
-            --border: #E8DDD0;
-            --success-green: #5A9E6F;
-            --urgency-red: #C0544F;
-            --urgency-orange: #D4853A;
+            /* Synced perfectly with your new website wrapper */
+            --primary-navy: #0f172a; 
+            --primary-blue: #1e3a8a; 
+            --accent-gold: #d4af37;  
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --white: #ffffff;
+            --border: #e2e8f0;
+            --success: #10b981;
+            --urgency-red: #ef4444;
+            --urgency-orange: #f97316;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'DM Sans', sans-serif;
-            background: var(--warm-cream);
+            background: var(--white);
             color: var(--text-dark);
-            min-height: 100vh;
+            height: 100vh;
+            overflow: hidden; /* Lets the internal chat area scroll instead of the page */
         }
 
+        /* Fills the iframe exactly 100% with no margins */
         .chat-container {
-            max-width: 480px;
-            margin: 40px auto;
-            background: var(--white);
-            border-radius: 20px;
-            box-shadow: 0 4px 24px rgba(27,42,74,0.08), 0 1px 3px rgba(27,42,74,0.04);
-            overflow: hidden;
+            width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
-            height: 700px;
+            background: var(--white);
         }
 
+        /* Sleek, space-saving status bar */
         .chat-header {
-            background: var(--deep-navy);
-            padding: 20px 24px;
-            color: var(--white);
-        }
-
-        .chat-header h1 {
-            font-family: 'DM Serif Display', serif;
-            font-size: 20px;
-            font-weight: 400;
-            margin-bottom: 4px;
-        }
-
-        .chat-header p {
-            font-size: 13px;
-            color: rgba(255,255,255,0.6);
+            background: var(--bg-light);
+            padding: 10px 20px;
+            color: var(--text-light);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
         }
 
         .status-dot {
             display: inline-block;
             width: 8px;
             height: 8px;
-            background: var(--success-green);
+            background: var(--success);
             border-radius: 50%;
-            margin-right: 6px;
+            margin-right: 8px;
             animation: pulse 2s infinite;
         }
 
         @keyframes pulse {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+            50% { opacity: 0.4; }
         }
 
         .chat-messages {
@@ -86,8 +80,8 @@
             scroll-behavior: smooth;
         }
 
-        .chat-messages::-webkit-scrollbar { width: 4px; }
-        .chat-messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+        .chat-messages::-webkit-scrollbar { width: 5px; }
+        .chat-messages::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
 
         .message {
             max-width: 85%;
@@ -104,14 +98,15 @@
         }
 
         .message.agent {
-            background: var(--warm-cream);
+            background: var(--bg-light);
+            border: 1px solid var(--border);
             color: var(--text-dark);
             align-self: flex-start;
             border-bottom-left-radius: 4px;
         }
 
         .message.user {
-            background: var(--deep-navy);
+            background: var(--primary-blue);
             color: var(--white);
             align-self: flex-end;
             border-bottom-right-radius: 4px;
@@ -120,7 +115,8 @@
         .typing-indicator {
             align-self: flex-start;
             padding: 14px 18px;
-            background: var(--warm-cream);
+            background: var(--bg-light);
+            border: 1px solid var(--border);
             border-radius: 18px;
             border-bottom-left-radius: 4px;
             display: none;
@@ -129,7 +125,7 @@
         .typing-indicator.active { display: flex; gap: 4px; align-items: center; }
 
         .typing-dot {
-            width: 7px; height: 7px;
+            width: 6px; height: 6px;
             background: var(--text-light);
             border-radius: 50%;
             animation: typingBounce 1.2s infinite;
@@ -140,39 +136,40 @@
 
         @keyframes typingBounce {
             0%, 60%, 100% { transform: translateY(0); }
-            30% { transform: translateY(-6px); }
+            30% { transform: translateY(-5px); }
         }
 
         /* ── Triage Result Card ─────────────────────────── */
         .triage-card {
             background: var(--white);
-            border-radius: 16px;
+            border-radius: 12px;
             margin-top: 8px;
             animation: fadeUp 0.4s ease;
-            border: 2px solid var(--border);
+            border: 1px solid var(--border);
             overflow: hidden;
             align-self: stretch;
             max-width: 100%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
 
         .triage-header {
-            padding: 18px 20px 14px;
+            padding: 16px 20px 12px;
             color: var(--white);
         }
 
         .triage-header.tier-attorney { background: var(--urgency-red); }
         .triage-header.tier-advocate { background: var(--urgency-orange); }
-        .triage-header.tier-toolkit { background: var(--soft-blue); }
+        .triage-header.tier-toolkit { background: var(--primary-blue); }
 
         .triage-header h3 {
             font-family: 'DM Serif Display', serif;
-            font-size: 17px;
+            font-size: 18px;
             margin-bottom: 4px;
         }
 
         .triage-header p {
             font-size: 13px;
-            opacity: 0.85;
+            opacity: 0.9;
         }
 
         .triage-flags {
@@ -191,33 +188,36 @@
         }
 
         .flag-icon {
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 12px;
+            font-size: 11px;
             flex-shrink: 0;
+            font-weight: bold;
         }
 
-        .flag-icon.detected { background: #FDECEA; color: var(--urgency-red); }
-        .flag-icon.clear { background: #EAF5EC; color: var(--success-green); }
+        .flag-icon.detected { background: #fee2e2; color: var(--urgency-red); }
+        .flag-icon.clear { background: #d1fae5; color: var(--success); }
 
         .triage-score {
             padding: 12px 20px;
-            background: #F8F6F2;
+            background: var(--bg-light);
             font-size: 13px;
             color: var(--text-light);
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
         }
 
         .score-bar {
             width: 100px;
             height: 6px;
-            background: #E8E4DE;
+            background: #e2e8f0;
             border-radius: 3px;
             overflow: hidden;
         }
@@ -230,10 +230,10 @@
 
         .score-fill.high { background: var(--urgency-red); }
         .score-fill.medium { background: var(--urgency-orange); }
-        .score-fill.low { background: var(--soft-blue); }
+        .score-fill.low { background: var(--primary-blue); }
 
         .triage-cta {
-            padding: 16px 20px 20px;
+            padding: 16px 20px;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -244,10 +244,10 @@
             width: 100%;
             padding: 14px 20px;
             border: none;
-            border-radius: 12px;
+            border-radius: 8px;
             font-family: 'DM Sans', sans-serif;
-            font-size: 15px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 700;
             cursor: pointer;
             text-align: center;
             text-decoration: none;
@@ -256,10 +256,10 @@
 
         .cta-primary.attorney { background: var(--urgency-red); color: white; }
         .cta-primary.advocate { background: var(--urgency-orange); color: white; }
-        .cta-primary.toolkit { background: var(--soft-blue); color: white; }
+        .cta-primary.toolkit { background: var(--primary-blue); color: white; }
 
         .cta-primary:hover {
-            transform: translateY(-1px);
+            transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
@@ -267,11 +267,11 @@
             display: block;
             width: 100%;
             padding: 12px 20px;
-            border: 2px solid var(--border);
-            border-radius: 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
             font-family: 'DM Sans', sans-serif;
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
             cursor: pointer;
             text-align: center;
             text-decoration: none;
@@ -281,45 +281,56 @@
         }
 
         .cta-secondary:hover {
-            border-color: var(--soft-blue);
-            background: #F8F6F2;
+            border-color: var(--primary-blue);
+            background: var(--bg-light);
+            color: var(--primary-blue);
         }
 
         /* ── Input Area ─────────────────────────────────── */
         .chat-input-area {
             padding: 16px 20px;
             border-top: 1px solid var(--border);
-            background: var(--white);
+            background: var(--bg-light);
         }
 
         .input-row { display: flex; gap: 10px; align-items: center; }
 
         .chat-input {
             flex: 1;
-            border: 2px solid var(--border);
-            border-radius: 12px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
             padding: 12px 16px;
             font-family: 'DM Sans', sans-serif;
             font-size: 15px;
             outline: none;
-            transition: border-color 0.2s;
+            transition: all 0.2s;
             color: var(--text-dark);
+            background: var(--white);
         }
 
-        .chat-input:focus { border-color: var(--soft-blue); }
-        .chat-input::placeholder { color: var(--text-light); }
-        .chat-input:disabled { background: #F5F3EF; cursor: not-allowed; }
+        .chat-input:focus { 
+            border-color: var(--primary-blue); 
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+        }
+        .chat-input::placeholder { color: #94a3b8; }
+        .chat-input:disabled { background: #e2e8f0; cursor: not-allowed; }
 
         .send-btn {
             width: 46px; height: 46px;
-            border: none; background: var(--deep-navy);
-            color: var(--white); border-radius: 12px;
+            border: none; 
+            background: var(--primary-navy);
+            color: var(--accent-gold); 
+            border-radius: 10px;
             cursor: pointer;
             display: flex; align-items: center; justify-content: center;
             transition: all 0.2s; flex-shrink: 0;
         }
 
-        .send-btn:hover:not(:disabled) { background: var(--soft-blue); transform: scale(1.05); }
+        .send-btn:hover:not(:disabled) { 
+            background: var(--accent-gold); 
+            color: var(--primary-navy);
+            transform: scale(1.05); 
+        }
         .send-btn:disabled { opacity: 0.4; cursor: not-allowed; }
         .send-btn svg { width: 20px; height: 20px; }
 
@@ -330,7 +341,7 @@
 
         /* ── Option Buttons ─────────────────────────────── */
         .options-container {
-            padding: 10px 20px 4px;
+            padding: 0 0 12px 0;
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
@@ -338,28 +349,27 @@
 
         .option-btn {
             padding: 10px 16px;
-            border: 2px solid var(--border);
-            border-radius: 10px;
+            border: 1px solid var(--primary-blue);
+            border-radius: 8px;
             background: var(--white);
             font-family: 'DM Sans', sans-serif;
             font-size: 14px;
-            color: var(--text-dark);
+            font-weight: 500;
+            color: var(--primary-blue);
             cursor: pointer;
             transition: all 0.2s;
             text-align: left;
         }
 
         .option-btn:hover {
-            border-color: var(--soft-blue);
-            background: #F0F4F8;
+            background: #eff6ff;
             transform: translateY(-1px);
         }
 
         .option-btn:active {
             transform: translateY(0);
-            background: var(--soft-blue);
-            color: white;
-            border-color: var(--soft-blue);
+            background: var(--primary-blue);
+            color: var(--white);
         }
     </style>
 </head>
@@ -367,8 +377,7 @@
 
 <div class="chat-container" id="chatContainer">
     <div class="chat-header">
-        <h1>ARD Support Agent</h1>
-        <p><span class="status-dot"></span>Here to help with your child's special education</p>
+        <span class="status-dot"></span> Secure AI Connection Active
     </div>
 
     <div class="chat-messages" id="chatMessages">
@@ -384,7 +393,7 @@
         <div class="input-row">
             <input type="text" class="chat-input" id="chatInput" placeholder="Type your answer..." autocomplete="off" />
             <button class="send-btn" id="sendBtn" disabled>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="22" y1="2" x2="11" y2="13"></line>
                     <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                 </svg>
@@ -421,7 +430,7 @@
             inputEl.focus();
             return;
         }
-        // Show buttons, hide text input
+        
         optionsEl.style.display = 'flex';
         inputEl.parentElement.style.display = 'none';
 
@@ -432,7 +441,6 @@
             btn.addEventListener('click', () => {
                 optionsEl.style.display = 'none';
                 inputEl.parentElement.style.display = 'flex';
-                // Send the selected option as if the user typed it
                 addMessage(opt, 'user');
                 sendOptionMessage(opt);
             });
@@ -534,7 +542,6 @@
         const card = document.createElement('div');
         card.className = 'triage-card';
 
-        // Sort: detected flags first
         const sortedFlags = [...flags].sort((a, b) => b.detected - a.detected);
         let flagsHTML = '';
         for (const flag of sortedFlags) {
@@ -568,9 +575,12 @@
         messagesEl.scrollTop = messagesEl.scrollHeight;
     }
 
+    // THE SCROLL FIX IS PERMANENTLY APPLIED HERE
     function showTyping(show) {
         typingEl.className = show ? 'typing-indicator active' : 'typing-indicator';
-        messagesEl.scrollTop = messagesEl.scrollHeight;
+        if (sessionId !== null) {
+            messagesEl.scrollTop = messagesEl.scrollHeight;
+        }
     }
 
     function setInputEnabled(enabled) {
@@ -653,6 +663,5 @@
 
     startChat();
 </script>
-
 </body>
 </html>
