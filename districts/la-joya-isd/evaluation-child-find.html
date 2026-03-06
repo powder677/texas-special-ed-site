@@ -77,33 +77,6 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 .sales-card a { background: #d4af37; color: #0f172a; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; display: inline-block; transition: 0.2s; }
 .sales-card a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
 
-/* ── SIDEBAR FORM STYLES (Warm Version) ── */
-.sidebar-form { width: 100%; background: #fdfaf5; border: 1px solid #d6cbbf; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); overflow: hidden; }
-.sidebar-form .sf-header { background: #1a1410; padding: 24px 24px 20px; border-bottom: 3px solid #b8963a; }
-.sidebar-form .sf-eyebrow { font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #b8963a; margin: 0 0 6px; font-family: 'DM Sans', sans-serif;}
-.sidebar-form .sf-name { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; color: #f5f0e8; margin: 0; line-height: 1.1;}
-.sidebar-form .sf-name em { color: #d4ad5a; font-style: italic; }
-.sidebar-form .sf-body { padding: 24px; }
-.sidebar-form .sf-empathy { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: #1a1410; margin: 0 0 8px; }
-.sidebar-form .sf-sub { font-size: 14px; color: #6b5f53; margin: 0 0 20px; font-family: 'DM Sans', sans-serif; line-height: 1.5;}
-.sidebar-form .sf-group { margin-bottom: 16px; }
-.sidebar-form label { display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #6b5f53; margin-bottom: 6px; font-family: 'DM Sans', sans-serif; }
-.sidebar-form input, .sidebar-form select { width: 100%; border: 1px solid #d6cbbf; padding: 12px; font-size: 14px; font-family: 'DM Sans', sans-serif; border-radius: 4px; box-sizing: border-box; }
-.sidebar-form input:focus, .sidebar-form select:focus { outline: none; border-color: #b8963a; }
-.sidebar-form select { cursor: pointer; }
-.sidebar-form .sf-btn { width: 100%; background: #1a1410; color: #d4ad5a; border: none; padding: 16px; font-size: 12px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; border-radius: 4px; transition: 0.2s; font-family: 'DM Sans', sans-serif; margin-top: 8px;}
-.sidebar-form .sf-btn:hover { background: #b8963a; color: #1a1410; }
-.sidebar-form .sf-trust { text-align: center; margin-top: 14px; font-size: 12px; color: #9a8f86; font-family: 'DM Sans', sans-serif; display: flex; align-items: center; justify-content: center; gap: 6px;}
-.sidebar-form .sf-footer { background: #f0ebe3; padding: 12px 24px; text-align: center; font-size: 11px; color: #9a8f86; font-family: 'DM Sans', sans-serif; border-top: 1px solid #d6cbbf;}
-
-/* ── FAQ SECTION ── */
-.faq-section { margin-top: 50px; }
-.faq-section h2 { font-size: 1.6rem; margin-bottom: 5px; font-family: 'Lora', serif; border: none; padding: 0; }
-.faq-section p { color: #64748b; margin-bottom: 20px; font-family: 'DM Sans', sans-serif; }
-.faq-section details { border-bottom: 1px solid #e2e8f0; padding: 16px 0; }
-.faq-section summary { font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-family: 'Source Sans 3', sans-serif; font-size: 1.1rem; color: #0f172a;}
-.faq-section summary::-webkit-details-marker { display: none; }
-.faq-section details p { margin: 12px 0 0; color: #475569; line-height: 1.7; font-family: 'Source Sans 3', sans-serif; }
 </style>
 </head>
 <body>
@@ -287,50 +260,22 @@ Texas <em>Special Ed</em>
 </article>
 <!-- RIGHT SIDE: 30% STICKY SIDEBAR -->
 <aside class="sidebar-column">
-<!-- COMPACT LEAD CAPTURE FORM (Lawyer/Advocate Version) -->
-<div class="sidebar-form">
-<div class="sf-header">
-<p class="sf-eyebrow">La Joya ISD Special Ed Law</p>
-<h3 class="sf-name">Hargrove &amp; <em>Associates</em></h3>
-</div>
-<div class="sf-body">
-<p class="sf-empathy">You shouldn't have to figure this out alone.</p>
-<p class="sf-sub">A free 15-minute call can help you understand what the school is required to do — and how to force the district to evaluate.</p>
-<form id="leadCaptureForm">
-<div class="sf-group">
-<label>Your Name</label>
-<input placeholder="First and last name" required="" type="text"/>
-</div>
-<div class="sf-group">
-<label>Email Address</label>
-<input placeholder="Where should we reach you?" required="" type="email"/>
-</div>
-<div class="sf-group">
-<label>Phone <span class="sf-optional">(optional)</span></label>
-<input placeholder="(555) 000-0000" type="tel"/>
-</div>
-<div class="sf-group">
-<label>What's going on?</label>
-<select required="">
-<option disabled="" selected="" value="">Choose what fits best...</option>
-<option>The school refused my request for an evaluation</option>
-<option>They missed the 45-day testing timeline</option>
-<option>I need help drafting my initial FIE request</option>
-<option>I disagree with their evaluation (I want an IEE)</option>
-<option>Something else</option>
-</select>
-</div>
-<button class="sf-btn" type="button">Get My Free 15-Minute Call</button>
-<p class="sf-trust">
-<svg fill="none" height="13" stroke="#b8963a" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                        Confidential. No spam. No pressure.
-                    </p>
-</form>
-</div>
-<div class="sf-footer">
-                Attorney Advertising · Results may vary.
-            </div>
-</div>
+   <div style="background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%); border-radius: 16px; box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25); padding: 24px; position: relative; overflow: hidden; border: 1px solid #2a4382;">
+      
+      <div style="text-align: center; margin-bottom: 20px;">
+         <span style="display: inline-block; background: #d4af37; color: #0f172a; padding: 4px 12px; border-radius: 50px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">Live AI Tool</span>
+         <h3 style="margin: 0; color: #ffffff; font-family: 'Lora', serif; font-size: 1.4rem;">Free ARD Rights Scan</h3>
+         <p style="font-size: 14px; color: #cbd5e1; margin: 8px 0 0; line-height: 1.5;">Wondering if the school violated your rights? Answer a few questions for an instant analysis.</p>
+      </div>
+      
+      <iframe 
+         src="https://ard-rights-scan-831148457361.us-central1.run.app" 
+         width="100%" 
+         height="500px" 
+         style="border: none; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); max-height: 65vh;"
+         title="ARD Rights Scan Tool">
+      </iframe>
+   </div>
 </aside>
 </div>
 </main>
@@ -376,9 +321,6 @@ Texas <em>Special Ed</em>
 <p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
 </div>
 </footer>
-<!-- ========================================================= -->
-<!-- THE LEAD CAPTURE SCRIPT (WIRED TO YOUR GOOGLE SHEET URL)  -->
-<!-- ========================================================= -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Menu toggle logic
@@ -399,66 +341,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (detail !== targetDetail) {
                     detail.removeAttribute('open');
                 }
-            });
-        });
-    });
-    
-    // Form capture logic
-    const leadForms = document.querySelectorAll('form');
-    
-    leadForms.forEach(form => {
-        const submitBtn = form.querySelector('button');
-        if (!submitBtn) return;
-
-        submitBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const nameInput = form.querySelector('input[type="text"]');
-            const emailInput = form.querySelector('input[type="email"]');
-            const phoneInput = form.querySelector('input[type="tel"]');
-            const selectInputs = form.querySelectorAll('select');
-            let issueSelect = selectInputs.length > 0 ? selectInputs[0] : null;
-
-            if (nameInput && !nameInput.value.trim()) {
-                alert('Please enter your name.');
-                nameInput.focus();
-                return;
-            }
-
-            submitBtn.innerHTML = 'Securely Sending...';
-            submitBtn.disabled = true;
-            submitBtn.style.opacity = '0.7';
-
-            const formData = new URLSearchParams();
-            formData.append('name', nameInput && nameInput.value ? nameInput.value : 'Not provided');
-            formData.append('email', emailInput && emailInput.value ? emailInput.value : 'Not provided');
-            formData.append('phone', phoneInput && phoneInput.value ? phoneInput.value : 'Not provided');
-            formData.append('concern', issueSelect && issueSelect.value ? issueSelect.value : 'Not provided');
-            formData.append('pageUrl', window.location.href);
-
-            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwWpGXg3JMJnxyzUlJHPlQRnE_R2Dh6oFvapMureXQWG_0bLOBtN_e7f5s5jnKRdcG-/exec';
-
-            fetch(GOOGLE_SCRIPT_URL, {
-                method: 'POST',
-                body: formData,
-                mode: 'no-cors'
-            })
-            .then(() => {
-                form.innerHTML = `
-                    <div style="text-align: center; padding: 20px 10px;">
-                        <div style="color: #b8963a; font-size: 40px; margin-bottom: 10px;">✓</div>
-                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #1a1410; margin-bottom: 10px; font-weight: 600;">Request Received</h4>
-                        <p style="font-size: 14px; color: #6b5f53; line-height: 1.5; font-family: 'DM Sans', sans-serif;">
-                            Your information has been securely routed. A local legal professional will reach out to you shortly.
-                        </p>
-                    </div>
-                `;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                submitBtn.innerHTML = 'Error. Please Try Again.';
-                submitBtn.disabled = false;
-                submitBtn.style.opacity = '1';
             });
         });
     });
