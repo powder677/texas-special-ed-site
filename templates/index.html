@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Synced perfectly with your new website wrapper */
             --primary-navy: #0f172a; 
             --primary-blue: #1e3a8a; 
             --accent-gold: #d4af37;  
@@ -29,10 +28,9 @@
             background: var(--white);
             color: var(--text-dark);
             height: 100vh;
-            overflow: hidden; /* Lets the internal chat area scroll instead of the page */
+            overflow: hidden;
         }
 
-        /* Fills the iframe exactly 100% with no margins */
         .chat-container {
             width: 100%;
             height: 100%;
@@ -41,7 +39,6 @@
             background: var(--white);
         }
 
-        /* Sleek, space-saving status bar */
         .chat-header {
             background: var(--bg-light);
             padding: 10px 20px;
@@ -53,6 +50,7 @@
             border-bottom: 1px solid var(--border);
             display: flex;
             align-items: center;
+            flex-shrink: 0;
         }
 
         .status-dot {
@@ -70,65 +68,42 @@
             50% { opacity: 0.4; }
         }
 
-        .chat-messages {
+        /* ── NEW: Centered Question Display ──────────────── */
+        .question-display-area {
             flex: 1;
-            overflow-y: auto;
-            padding: 20px;
             display: flex;
             flex-direction: column;
-            gap: 16px;
-            scroll-behavior: smooth;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 30px;
+            text-align: center;
+            overflow-y: auto;
         }
 
-        .chat-messages::-webkit-scrollbar { width: 5px; }
-        .chat-messages::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-
-        .message {
-            max-width: 85%;
-            padding: 14px 18px;
-            border-radius: 18px;
-            font-size: 15px;
-            line-height: 1.5;
-            animation: fadeUp 0.3s ease;
-        }
-
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(8px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .message.agent {
-            background: var(--bg-light);
-            border: 1px solid var(--border);
-            color: var(--text-dark);
-            align-self: flex-start;
-            border-bottom-left-radius: 4px;
-        }
-
-        .message.user {
-            background: var(--primary-blue);
-            color: var(--white);
-            align-self: flex-end;
-            border-bottom-right-radius: 4px;
+        #currentQuestionText {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--primary-navy);
+            line-height: 1.4;
+            transition: opacity 0.3s ease;
         }
 
         .typing-indicator {
-            align-self: flex-start;
-            padding: 14px 18px;
-            background: var(--bg-light);
-            border: 1px solid var(--border);
-            border-radius: 18px;
-            border-bottom-left-radius: 4px;
             display: none;
+            gap: 6px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
         }
 
-        .typing-indicator.active { display: flex; gap: 4px; align-items: center; }
+        .typing-indicator.active { display: flex; }
 
         .typing-dot {
-            width: 6px; height: 6px;
-            background: var(--text-light);
+            width: 8px; height: 8px;
+            background: var(--primary-blue);
             border-radius: 50%;
             animation: typingBounce 1.2s infinite;
+            opacity: 0.7;
         }
 
         .typing-dot:nth-child(2) { animation-delay: 0.15s; }
@@ -136,208 +111,82 @@
 
         @keyframes typingBounce {
             0%, 60%, 100% { transform: translateY(0); }
-            30% { transform: translateY(-5px); }
+            30% { transform: translateY(-6px); }
         }
 
         /* ── Triage Result Card ─────────────────────────── */
         .triage-card {
             background: var(--white);
             border-radius: 12px;
-            margin-top: 8px;
             animation: fadeUp 0.4s ease;
             border: 1px solid var(--border);
             overflow: hidden;
-            align-self: stretch;
+            width: 100%;
             max-width: 100%;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: none; /* Hidden until complete */
         }
 
-        .triage-header {
-            padding: 16px 20px 12px;
-            color: var(--white);
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
+        .triage-header { padding: 16px 20px 12px; color: var(--white); }
         .triage-header.tier-attorney { background: var(--urgency-red); }
         .triage-header.tier-advocate { background: var(--urgency-orange); }
         .triage-header.tier-toolkit { background: var(--primary-blue); }
 
-        .triage-header h3 {
-            font-family: 'DM Serif Display', serif;
-            font-size: 18px;
-            margin-bottom: 4px;
-        }
+        .triage-header h3 { font-family: 'DM Serif Display', serif; font-size: 18px; margin-bottom: 4px; }
+        .triage-header p { font-size: 13px; opacity: 0.9; }
 
-        .triage-header p {
-            font-size: 13px;
-            opacity: 0.9;
-        }
-
-        .triage-flags {
-            padding: 16px 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .flag-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 14px;
-            color: var(--text-dark);
-        }
-
-        .flag-icon {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 11px;
-            flex-shrink: 0;
-            font-weight: bold;
-        }
-
+        .triage-flags { padding: 16px 20px; display: flex; flex-direction: column; gap: 8px; }
+        .flag-item { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--text-dark); text-align: left; }
+        .flag-icon { width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0; font-weight: bold; }
         .flag-icon.detected { background: #fee2e2; color: var(--urgency-red); }
         .flag-icon.clear { background: #d1fae5; color: var(--success); }
 
-        .triage-score {
-            padding: 12px 20px;
-            background: var(--bg-light);
-            font-size: 13px;
-            color: var(--text-light);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .score-bar {
-            width: 100px;
-            height: 6px;
-            background: #e2e8f0;
-            border-radius: 3px;
-            overflow: hidden;
-        }
-
-        .score-fill {
-            height: 100%;
-            border-radius: 3px;
-            transition: width 0.8s ease;
-        }
-
+        .triage-score { padding: 12px 20px; background: var(--bg-light); font-size: 13px; color: var(--text-light); display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .score-bar { width: 100px; height: 6px; background: #e2e8f0; border-radius: 3px; overflow: hidden; }
+        .score-fill { height: 100%; border-radius: 3px; transition: width 0.8s ease; }
         .score-fill.high { background: var(--urgency-red); }
         .score-fill.medium { background: var(--urgency-orange); }
         .score-fill.low { background: var(--primary-blue); }
 
-        .triage-cta {
-            padding: 16px 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .cta-primary {
-            display: block;
-            width: 100%;
-            padding: 14px 20px;
-            border: none;
-            border-radius: 8px;
-            font-family: 'DM Sans', sans-serif;
-            font-size: 14px;
-            font-weight: 700;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-
+        .triage-cta { padding: 16px 20px; display: flex; flex-direction: column; gap: 10px; }
+        .cta-primary { display: block; width: 100%; padding: 14px 20px; border: none; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; text-align: center; text-decoration: none; transition: all 0.2s; }
         .cta-primary.attorney { background: var(--urgency-red); color: white; }
         .cta-primary.advocate { background: var(--urgency-orange); color: white; }
         .cta-primary.toolkit { background: var(--primary-blue); color: white; }
-
-        .cta-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        .cta-secondary {
-            display: block;
-            width: 100%;
-            padding: 12px 20px;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            font-family: 'DM Sans', sans-serif;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            background: white;
-            color: var(--text-dark);
-            transition: all 0.2s;
-        }
-
-        .cta-secondary:hover {
-            border-color: var(--primary-blue);
-            background: var(--bg-light);
-            color: var(--primary-blue);
-        }
+        .cta-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .cta-secondary { display: block; width: 100%; padding: 12px 20px; border: 1px solid var(--border); border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; text-align: center; text-decoration: none; background: white; color: var(--text-dark); transition: all 0.2s; }
+        .cta-secondary:hover { border-color: var(--primary-blue); background: var(--bg-light); color: var(--primary-blue); }
 
         /* ── Input Area ─────────────────────────────────── */
         .chat-input-area {
             padding: 16px 20px;
             border-top: 1px solid var(--border);
             background: var(--bg-light);
+            flex-shrink: 0;
         }
 
         .input-row { display: flex; gap: 10px; align-items: center; }
 
         .chat-input {
-            flex: 1;
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            padding: 12px 16px;
-            font-family: 'DM Sans', sans-serif;
-            font-size: 15px;
-            outline: none;
-            transition: all 0.2s;
-            color: var(--text-dark);
-            background: var(--white);
+            flex: 1; border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; font-family: 'DM Sans', sans-serif; font-size: 15px; outline: none; transition: all 0.2s; color: var(--text-dark); background: var(--white);
         }
-
-        .chat-input:focus { 
-            border-color: var(--primary-blue); 
-            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
-        }
+        .chat-input:focus { border-color: var(--primary-blue); box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1); }
         .chat-input::placeholder { color: #94a3b8; }
         .chat-input:disabled { background: #e2e8f0; cursor: not-allowed; }
 
         .send-btn {
-            width: 46px; height: 46px;
-            border: none; 
-            background: var(--primary-navy);
-            color: var(--accent-gold); 
-            border-radius: 10px;
-            cursor: pointer;
-            display: flex; align-items: center; justify-content: center;
-            transition: all 0.2s; flex-shrink: 0;
+            width: 46px; height: 46px; border: none; background: var(--primary-navy); color: var(--accent-gold); border-radius: 10px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; flex-shrink: 0;
         }
-
-        .send-btn:hover:not(:disabled) { 
-            background: var(--accent-gold); 
-            color: var(--primary-navy);
-            transform: scale(1.05); 
-        }
+        .send-btn:hover:not(:disabled) { background: var(--accent-gold); color: var(--primary-navy); transform: scale(1.05); }
         .send-btn:disabled { opacity: 0.4; cursor: not-allowed; }
         .send-btn svg { width: 20px; height: 20px; }
 
-        .privacy-note {
-            font-size: 11px; color: var(--text-light);
-            text-align: center; margin-top: 8px;
-        }
+        .privacy-note { font-size: 11px; color: var(--text-light); text-align: center; margin-top: 8px; }
 
         /* ── Option Buttons ─────────────────────────────── */
         .options-container {
@@ -345,6 +194,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
+            justify-content: center;
         }
 
         .option-btn {
@@ -358,29 +208,26 @@
             color: var(--primary-blue);
             cursor: pointer;
             transition: all 0.2s;
-            text-align: left;
+            flex: 1 1 calc(50% - 8px); /* Make buttons fill out nicely */
+            text-align: center;
         }
 
-        .option-btn:hover {
-            background: #eff6ff;
-            transform: translateY(-1px);
-        }
-
-        .option-btn:active {
-            transform: translateY(0);
-            background: var(--primary-blue);
-            color: var(--white);
-        }
+        .option-btn:hover { background: #eff6ff; transform: translateY(-1px); }
+        .option-btn:active { transform: translateY(0); background: var(--primary-blue); color: var(--white); }
     </style>
 </head>
 <body>
 
-<div class="chat-container" id="chatContainer">
+<div class="chat-container">
     <div class="chat-header">
-        <span class="status-dot"></span> Secure AI Connection Active
+        <span class="status-dot"></span> Secure Intake Active
     </div>
 
-    <div class="chat-messages" id="chatMessages">
+    <div class="question-display-area" id="displayArea">
+        <div class="triage-card" id="triageCard"></div>
+
+        <div id="currentQuestionText">Connecting to advocate system...</div>
+        
         <div class="typing-indicator" id="typingIndicator">
             <div class="typing-dot"></div>
             <div class="typing-dot"></div>
@@ -388,9 +235,9 @@
         </div>
     </div>
 
-    <div class="chat-input-area">
+    <div class="chat-input-area" id="inputArea">
         <div class="options-container" id="optionsContainer"></div>
-        <div class="input-row">
+        <div class="input-row" id="textInputRow">
             <input type="text" class="chat-input" id="chatInput" placeholder="Type your answer..." autocomplete="off" />
             <button class="send-btn" id="sendBtn" disabled>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -407,42 +254,42 @@
     let sessionId = null;
     let isComplete = false;
 
-    const messagesEl = document.getElementById('chatMessages');
+    const questionTextEl = document.getElementById('currentQuestionText');
+    const typingEl = document.getElementById('typingIndicator');
+    const inputAreaEl = document.getElementById('inputArea');
+    const optionsEl = document.getElementById('optionsContainer');
+    const textInputRow = document.getElementById('textInputRow');
     const inputEl = document.getElementById('chatInput');
     const sendBtn = document.getElementById('sendBtn');
-    const typingEl = document.getElementById('typingIndicator');
-    const optionsEl = document.getElementById('optionsContainer');
-    const inputAreaEl = document.querySelector('.chat-input-area');
+    const triageCardEl = document.getElementById('triageCard');
     const API_BASE = window.location.origin;
 
-    function addMessage(text, type) {
-        const div = document.createElement('div');
-        div.className = `message ${type}`;
-        div.textContent = text;
-        messagesEl.insertBefore(div, typingEl);
-        messagesEl.scrollTop = messagesEl.scrollHeight;
+    // We no longer append messages. We just update the central text.
+    function updateQuestion(text) {
+        questionTextEl.style.opacity = 0;
+        setTimeout(() => {
+            questionTextEl.textContent = text;
+            questionTextEl.style.opacity = 1;
+        }, 150);
     }
 
     function showOptions(options) {
         optionsEl.innerHTML = '';
         if (!options || options.length === 0) {
             optionsEl.style.display = 'none';
-            inputEl.parentElement.style.display = 'flex';
+            textInputRow.style.display = 'flex';
             inputEl.focus();
             return;
         }
         
         optionsEl.style.display = 'flex';
-        inputEl.parentElement.style.display = 'none';
+        textInputRow.style.display = 'none';
 
         options.forEach(opt => {
             const btn = document.createElement('button');
             btn.className = 'option-btn';
             btn.textContent = opt;
             btn.addEventListener('click', () => {
-                optionsEl.style.display = 'none';
-                inputEl.parentElement.style.display = 'flex';
-                addMessage(opt, 'user');
                 sendOptionMessage(opt);
             });
             optionsEl.appendChild(btn);
@@ -493,28 +340,16 @@
 
         const config = tierConfig[tier] || tierConfig.toolkit;
 
-        const card = document.createElement('div');
-        card.className = 'triage-card';
-
-        // FIX #2: Dynamically load the AI's actual violation flags
         let flagsHTML = '';
         if (intake.violation_flags && intake.violation_flags.length > 0) {
             intake.violation_flags.forEach(flagText => {
-                flagsHTML += `
-                    <div class="flag-item">
-                        <span class="flag-icon detected">⚠</span>
-                        <span>${flagText}</span>
-                    </div>`;
+                flagsHTML += `<div class="flag-item"><span class="flag-icon detected">⚠</span><span>${flagText}</span></div>`;
             });
         } else {
-            flagsHTML += `
-                <div class="flag-item">
-                    <span class="flag-icon clear">✓</span>
-                    <span>No immediate procedural violations flagged.</span>
-                </div>`;
+            flagsHTML += `<div class="flag-item"><span class="flag-icon clear">✓</span><span>No immediate procedural violations flagged.</span></div>`;
         }
 
-        card.innerHTML = `
+        triageCardEl.innerHTML = `
             <div class="triage-header ${config.headerClass}">
                 <h3>${config.title}</h3>
                 <p>${config.subtitle}</p>
@@ -531,18 +366,21 @@
                 <a class="cta-secondary" href="${config.secondaryHref}">${config.secondaryLabel}</a>
             </div>`;
 
-        messagesEl.insertBefore(card, typingEl);
-        
-        // FIX #1: Wait 100ms for DOM reflow, then anchor the card to the bottom
-        setTimeout(() => {
-            card.scrollIntoView({ behavior: 'smooth', block: 'end' });
-        }, 100);
+        // Hide question text, show triage card
+        questionTextEl.style.display = 'none';
+        triageCardEl.style.display = 'block';
     }
 
     function showTyping(show) {
-        typingEl.className = show ? 'typing-indicator active' : 'typing-indicator';
-        if (sessionId !== null) {
-            messagesEl.scrollTop = messagesEl.scrollHeight;
+        if (show) {
+            questionTextEl.style.opacity = 0;
+            setTimeout(() => {
+                questionTextEl.style.display = 'none';
+                typingEl.classList.add('active');
+            }, 150);
+        } else {
+            typingEl.classList.remove('active');
+            questionTextEl.style.display = 'block';
         }
     }
 
@@ -557,29 +395,31 @@
             const res = await resPromise;
             const data = await res.json();
             sessionId = data.session_id;
+            
             showTyping(false);
-            addMessage(data.response, 'agent');
-
+            
             if (data.complete && data.intake) {
                 isComplete = true;
-                // FIX #1b: Completely remove the input area to maximize iframe height for the card
-                inputAreaEl.style.display = 'none'; 
+                inputAreaEl.style.display = 'none'; // Completely removes input area
                 buildTriageCard(data.intake);
-            } else if (data.options) {
-                showOptions(data.options);
             } else {
-                showOptions(null);
-                setInputEnabled(true);
+                updateQuestion(data.response);
+                if (data.options) {
+                    showOptions(data.options);
+                } else {
+                    showOptions(null);
+                    setInputEnabled(true);
+                }
             }
         } catch (err) {
             showTyping(false);
-            addMessage("Sorry, something went wrong. Please try again.", 'agent');
+            updateQuestion("Sorry, something went wrong. Please try refreshing the page.");
             showOptions(null);
             setInputEnabled(true);
         }
     }
 
-    async function sendOptionMessage(text) {
+    function sendOptionMessage(text) {
         setInputEnabled(false);
         showTyping(true);
         handleResponse(fetch(`${API_BASE}/api/chat`, {
@@ -589,30 +429,10 @@
         }));
     }
 
-    async function startChat() {
-        showTyping(true);
-        setInputEnabled(false);
-        try {
-            const res = await fetch(`${API_BASE}/api/start`, { method: 'POST' });
-            const data = await res.json();
-            sessionId = data.session_id;
-            showTyping(false);
-            addMessage(data.response, 'agent');
-            if (data.options) showOptions(data.options);
-            else { showOptions(null); setInputEnabled(true); }
-        } catch (err) {
-            showTyping(false);
-            addMessage("Hi there! I'm here to help with your child's special education situation. What school district does your child attend?", 'agent');
-            showOptions(null);
-            setInputEnabled(true);
-        }
-    }
-
-    async function sendMessage() {
+    function sendMessage() {
         const text = inputEl.value.trim();
         if (!text || isComplete) return;
 
-        addMessage(text, 'user');
         inputEl.value = '';
         setInputEnabled(false);
         showTyping(true);
@@ -631,6 +451,26 @@
     inputEl.addEventListener('input', () => {
         sendBtn.disabled = !inputEl.value.trim() || isComplete;
     });
+
+    // Start Chat
+    async function startChat() {
+        showTyping(true);
+        setInputEnabled(false);
+        try {
+            const res = await fetch(`${API_BASE}/api/start`, { method: 'POST' });
+            const data = await res.json();
+            sessionId = data.session_id;
+            showTyping(false);
+            updateQuestion(data.response);
+            if (data.options) showOptions(data.options);
+            else { showOptions(null); setInputEnabled(true); }
+        } catch (err) {
+            showTyping(false);
+            updateQuestion("Hi there! What school district does your child attend?");
+            showOptions(null);
+            setInputEnabled(true);
+        }
+    }
 
     startChat();
 </script>
