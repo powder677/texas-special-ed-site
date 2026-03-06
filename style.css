@@ -2465,5 +2465,36 @@ main h3,
     
     .section { padding: 48px 24px; }
     .newsletter-form { flex-direction: column; }
-    .newsletter-form button { width: 100%; }  
+    .newsletter-form button { width: 100%; } 
+   /* ── Global 70/30 Blog Layout ── */
+.page-layout {
+   max-width: 1100px;
+   margin: 0 auto;
+   display: flex;
+   gap: 40px;
+   align-items: flex-start;
 }
+
+.main-column {
+   flex: 1;
+   min-width: 0; 
+}
+
+.sidebar-column {
+   width: 380px; 
+   flex-shrink: 0;
+   position: sticky;
+   top: 24px; 
+}
+
+@media (max-width: 950px) {
+   .page-layout {
+      flex-direction: column;
+   }
+   .sidebar-column {
+      width: 100%;
+      position: relative;
+      top: 0;
+   }
+}  
+
