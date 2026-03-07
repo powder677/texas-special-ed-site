@@ -2486,7 +2486,7 @@ main h3,
 }
 
 /* Main Content Column */
-.main-col { display: flex; flex-direction: column; gap: 40px; min-width: 0; }
+.main-content-col { display: flex; flex-direction: column; gap: 40px; min-width: 0; }
 
 /* Sidebar Elements */
 .sidebar-col {
