@@ -33,14 +33,14 @@ NAV_CTA_HTML = '''<li class="nav-item nav-cta">
        <a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
       </li>
       <li class="nav-item nav-cta" style="margin-left:8px;">
-       <a href="/get-your-letter.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+       <a href="/resources/Iep-letter.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
       </li>'''
 
 # Sidebar CTA card — injected at the TOP of <aside class="sidebar-col">
 SIDEBAR_CTA = '''<div class="sidebar-card cta-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;border:none;margin-bottom:0;">
       <h4 style="font-family:'Lora',serif;font-size:1.25rem;margin:0 0 10px;color:#fff;">Show the ISD<br/>You Mean Business</h4>
       <p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#94a3b8;margin:0 0 18px;line-height:1.5;">A verbal request has no legal weight. A written letter starts the 45-day clock and forces a response within 15 school days.</p>
-      <a href="/get-your-letter.html" style="display:block;background:#d4af37;color:#0f172a;padding:14px;border-radius:6px;text-decoration:none;font-weight:800;font-family:'DM Sans',sans-serif;font-size:14px;transition:background 0.2s;">Get Your Letter — $25 →</a>
+      <a href="/resources/Iep-letter.html" style="display:block;background:#d4af37;color:#0f172a;padding:14px;border-radius:6px;text-decoration:none;font-weight:800;font-family:'DM Sans',sans-serif;font-size:14px;transition:background 0.2s;">Get Your Letter — $25 →</a>
      </div>'''
 
 # Standardized bot iframe block
@@ -75,12 +75,12 @@ def backup(path):
 
 
 def already_updated(html):
-    return "Get Your Letter — $25" in html and "get-your-letter.html" in html
+    return "Get Your Letter — $25" in html and "resources/Iep-letter.html" in html
 
 
 def add_nav_cta(html):
     """Add gold CTA button next to existing Free ARD Checklist button."""
-    if "get-your-letter.html" in html:
+    if "resources/Iep-letter.html" in html:
         return html  # already done
 
     # Find the Free ARD Checklist nav item and add our button after it
@@ -95,7 +95,7 @@ def add_nav_cta(html):
        </a>
       </li>
       <li class="nav-item nav-cta" style="margin-left:8px;">
-       <a href="/get-your-letter.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+       <a href="/resources/Iep-letter.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
       </li>'''
 
     if old in html:
@@ -105,7 +105,7 @@ def add_nav_cta(html):
     pattern = r'(<li[^>]*nav-cta[^>]*>.*?Free ARD Checklist.*?</li>)'
     match = re.search(pattern, html, re.DOTALL)
     if match:
-        replacement = match.group(0) + '\n      <li class="nav-item nav-cta" style="margin-left:8px;"><a href="/get-your-letter.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:\'DM Sans\',sans-serif;white-space:nowrap;">Get Your Letter — $25</a></li>'
+        replacement = match.group(0) + '\n      <li class="nav-item nav-cta" style="margin-left:8px;"><a href="/resources/Iep-letter.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:\'DM Sans\',sans-serif;white-space:nowrap;">Get Your Letter — $25</a></li>'
         return html[:match.start()] + replacement + html[match.end():]
 
     return html  # couldn't find, skip
