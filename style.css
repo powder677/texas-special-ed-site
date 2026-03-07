@@ -2490,7 +2490,118 @@ main h3,
    position: sticky;
    top: 100px; /* Adjusted to 100px so it clears your sticky navbar! */
 }
+/* ==========================================================================
+   70/30 BLOG GRID & SIDEBAR LAYOUT
+   ========================================================================== */
 
+/* Base Container */
+.page-container { max-width: 1150px; margin: 0 auto; padding: 0 20px; }
+
+/* 70/30 Grid Structure */
+.page-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    align-items: start;
+}
+
+@media (max-width: 960px) {
+    .page-grid { grid-template-columns: 1fr; gap: 30px; }
+    .sidebar-col { order: -1; } /* Brings sidebar features to top on mobile */
+}
+
+/* Main Content Column & Bot */
+.main-col { display: flex; flex-direction: column; gap: 40px; min-width: 0; }
+
+.bot-wrap {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+.bot-header {
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.bot-badge {
+    background: #1e3a8a;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 4px 10px;
+    border-radius: 50px;
+}
+.bot-title { font-family: 'Lora', serif; font-weight: 600; color: #0f172a; margin: 0; font-size: 1.1rem;}
+.bot-wrap iframe { width: 100%; height: 750px; border: none; display: block; }
+
+/* Post Content Styling Constraints */
+.post-content-wrapper { background: #fff; padding: 40px; border-radius: 12px; border: 1px solid #e2e8f0; }
+.post-content-wrapper h2 { font-family: 'Lora', serif; color: #0a2342; margin-top: 30px; }
+.post-content-wrapper p, .post-content-wrapper li { font-family: 'Source Sans 3', sans-serif; font-size: 1.05rem; line-height: 1.7; color: #334155; }
+
+/* Sidebar Elements */
+.sidebar-col {
+    position: sticky;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.sidebar-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+.sidebar-card h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    color: #0f172a;
+    margin: 0 0 20px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+.law-box { background: #f0f6ff; border: 1px solid #bfdbfe; border-left: 4px solid #1a56db; }
+.law-box strong { display: block; margin-bottom: 8px; color: #0a2342; font-size: 15px; font-family: 'DM Sans', sans-serif; }
+.law-box p { font-family: 'Source Sans 3', sans-serif; font-size: 14px; line-height: 1.6; color: #1e3a8a; margin: 0; }
+
+/* Timeline styling */
+.tl { list-style: none; padding: 0; margin: 0; border-left: 3px solid #1a56db; padding-left: 24px; display: flex; flex-direction: column; gap: 20px; }
+.tl li { position: relative; font-family: 'Source Sans 3', sans-serif; font-size: 14px; line-height: 1.55; color: #475569; }
+.tl li::before {
+    content: ''; position: absolute; left: -31.5px; top: 3px; width: 12px; height: 12px;
+    border-radius: 50%; background: #1a56db; border: 3px solid #fff; box-shadow: 0 0 0 1px #e2e8f0;
+}
+.tl li strong { display: block; color: #0f172a; font-size: 14px; font-weight: 600; margin-bottom: 4px; font-family: 'DM Sans', sans-serif;}
+
+/* Sidebar CTA */
+.cta-card { background: #0f172a; color: white; text-align: center; border: none;}
+.cta-card h4 { font-family: 'Lora', serif; font-size: 1.3rem; margin: 0 0 10px 0; }
+.cta-card p { font-family: 'Source Sans 3', sans-serif; font-size: 14px; color: #94a3b8; margin: 0 0 20px 0; line-height: 1.5; }
+.btn-gold {
+    display: block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    transition: background 0.2s;
+}
+.btn-gold:hover { background: #b8963a;
+}
 @media (max-width: 950px) {
    .page-layout {
       flex-direction: column;
