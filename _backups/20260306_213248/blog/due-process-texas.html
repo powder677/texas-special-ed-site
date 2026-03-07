@@ -19,14 +19,14 @@
   <link href="https://www.texasspecialed.com/blog/due-process-texas" rel="canonical"/>
   <link href="/style.css" rel="stylesheet"/>
   <style>
-   
-
-
-
-
-
+   .page-grid { display: grid; grid-template-columns: 1fr 320px; gap: 40px; margin-top: 40px; align-items: start; }
+.sidebar-col { position: sticky; top: 20px; display: flex; flex-direction: column; gap: 20px; }
+.law-box { background: #f0f6ff; border: 1px solid #bfdbfe; border-left: 4px solid #1a56db; border-radius: 8px; padding: 20px; font-size: 14px; line-height: 1.6; color: #1e3a8a; }
+.timeline-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 24px; }
+.tl { list-style: none; padding: 0; margin: 0; border-left: 3px solid #1a56db; padding-left: 20px; display: flex; flex-direction: column; gap: 16px; }
+.tl li { position: relative; font-size: 14px; color: #475569; }
 .tl li::before { content: ''; position: absolute; left: -27px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: #1a56db; border: 2px solid #fff; box-shadow: 0 0 0 2px #1a56db; }
-@media (max-width: 900px) {   }
+@media (max-width: 900px) { .page-grid { grid-template-columns: 1fr; } .sidebar-col { order: 1; position: static; } }
   </style>
  </head>
  <body>
@@ -145,9 +145,6 @@
        <a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">
         Free ARD Checklist
        </a>
-      </li>
-      <li class="nav-item nav-cta" style="margin-left:8px;">
-       <a href="/get-your-letter.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
       </li>
      </ul>
     </div>
@@ -277,12 +274,6 @@ Remember, you are your child's best advocate. Don't be afraid to stand up for th
      </div>
     </div>
     <aside class="sidebar-col">
-     <div class="sidebar-card cta-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;border:none;margin-bottom:0;">
-      <h4 style="font-family:'Lora',serif;font-size:1.25rem;margin:0 0 10px;color:#fff;">Show the ISD<br/>You Mean Business</h4>
-      <p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#94a3b8;margin:0 0 18px;line-height:1.5;">A verbal request has no legal weight. A written letter starts the 45-day clock and forces a response within 15 school days.</p>
-      <a href="/get-your-letter.html" style="display:block;background:#d4af37;color:#0f172a;padding:14px;border-radius:6px;text-decoration:none;font-weight:800;font-family:'DM Sans',sans-serif;font-size:14px;transition:background 0.2s;">Get Your Letter — $25 →</a>
-     </div>
-
      <div class="law-box">
       <strong>
        Legal Basis
