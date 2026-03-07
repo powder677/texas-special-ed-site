@@ -139,41 +139,31 @@ def ensure_bot_iframe(html):
 
 def remove_duplicate_inline_css(html):
     """Remove the repeated inline page-grid/sidebar CSS block from <style> tags."""
-    # Find <style> blocks that contain .page-grid definition
     def clean_style_block(match):
         content = match.group(1)
-        # Remove the page-grid / sidebar duplicate rules
-        content = re.sub(
-            r'\.page-grid\s*\{.*?\}',
-            '', content, flags=re.DOTALL
-        )
-        content = re.sub(
-            r'\.sidebar-col\s*\{.*?\}',
-            '', content, flags=re.DOTALL
-        )
-        content = re.sub(
-            r'\.law-box\s*\{.*?\}',
-            '', content, flags=re.DOTALL
-        )
-        content = re.sub(
-            r'\.timeline-card\s*\{.*?\}',
-            '', content, flags=re.DOTALL
-        )
-        content = re.sub(
-            r'\.tl\s*[\w\s]*\{.*?\}',
-            '', content, flags=re.DOTALL
-        )
-        content = re.sub(
-            r'@media\s*\(max-width:\s*900px\)\s*\{[^}]*\.page-grid[^}]*\}',
-            '', content, flags=re.DOTALL
-        )
-        # If style block is now empty or just whitespace, remove entirely
+
+        # Remove all the duplicate rules that live in style.css
+        patterns = [
+            r'\.page-grid\s*\{[^}]*\}',
+            r'\.sidebar-col\s*\{[^}]*\}',
+            r'\.law-box\s*\{[^}]*\}',
+            r'\.timeline-card\s*\{[^}]*\}',
+            r'\.tl\s*\{[^}]*\}',
+            r'\.tl\s+li\s*\{[^}]*\}',
+            r'\.tl\s+li::before\s*\{[^}]*\}',
+            r'@media\s*\([^)]+\)\s*\{[^{}]*\{[^}]*\}[^}]*\}',  # any @media block
+        ]
+        for p in patterns:
+            content = re.sub(p, '', content, flags=re.DOTALL)
+
+        # Remove leftover blank lines
+        content = re.sub(r'\n{3,}', '\n', content)
+
         if not content.strip():
             return ''
         return f'<style>{content}</style>'
 
     html = re.sub(r'<style>(.*?)</style>', clean_style_block, html, flags=re.DOTALL)
-    # Clean up empty style tags
     html = re.sub(r'<style>\s*</style>', '', html)
     return html
 
