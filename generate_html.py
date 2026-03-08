@@ -124,7 +124,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                   <a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Lista ARD Gratis</a>
                </li>
                <li class="nav-item nav-cta" style="margin-left:8px;">
-                  <a href="/get-your-letter.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Su Carta — $25</a>
+                  <a href="/resources/Iep-letter.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Su Carta — $25</a>
                </li>
             </ul>
          </div>
@@ -163,7 +163,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <div class="sidebar-card cta-card">
                <h3>Muéstrele al Distrito que Va en Serio</h3>
                <p>Una solicitud verbal no tiene validez. Una carta escrita inicia el reloj de 45 días y obliga a una respuesta en 15 días escolares.</p>
-               <a class="btn-gold" href="/get-your-letter.html">Obtener Su Carta — $25 →</a>
+               <a class="btn-gold" href="/resources/Iep-letter.html">Obtener Su Carta — $25 →</a>
             </div>
 
             <div class="law-box">
@@ -230,7 +230,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <ul>
                <li><a href="/blog/what-is-fie">What Is a FIE in Texas?</a></li>
                <li><a href="/blog/what-is-an-ard-meeting">What Is an ARD Meeting?</a></li>
-               <li><a href="/get-your-letter.html">Get Your Letter</a></li>
+               <li><a href="/resources/Iep-letter.html">Get Your Letter</a></li>
             </ul>
          </div>
       </div>
