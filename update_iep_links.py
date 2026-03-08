@@ -18,7 +18,7 @@ from datetime import datetime
 # ── CONFIG ────────────────────────────────────────────────────────────────────
 
 BLOG_ES_FOLDER   = r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\blog\es"
-SPANISH_BOT_PATH = "/resources/iep-letter-spanish/index.html"
+SPANISH_BOT_PATH = "/resources/iep-letter-spanish.html/index.html"
 
 # Any href containing these strings will be replaced with SPANISH_BOT_PATH.
 # Add more patterns here if needed.
