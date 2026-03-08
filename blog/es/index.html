@@ -1,64 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Educación Especial en Texas – Guías en Español</title>
-   <meta name="description" content="Guías, recursos e información para padres que buscan evaluaciones FIE, IEP y apoyo de educación especial en las escuelas de Texas.">
-   <link href="https://www.texasspecialed.com/blog/es/index.html" rel="canonical" />
-   <link rel="stylesheet" href="../../style.css">
-   <style>
-      .article-list {
-         list-style: none;
-         padding: 0;
-      }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Educación Especial en Texas | Guías para Padres</title>
+    <meta name="description" content="Recursos, guías e información crítica para padres en Texas sobre evaluaciones FIE, reuniones ARD, adaptaciones IEP y derechos educativos.">
+    
+    <link href="https://www.texasspecialed.com/blog/es/index.html" rel="canonical" />
+    <link rel="alternate" hreflang="es" href="https://www.texasspecialed.com/blog/es/index.html" />
+    <link rel="alternate" hreflang="en" href="https://www.texasspecialed.com/blog/index.html" />
 
-      .article-list li {
-         margin-bottom: 15px;
-         padding: 15px;
-         background: #f9f9f9;
-         border-left: 4px solid #2196F3;
-      }
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../../style.css">
 
-      .article-list a {
-         text-decoration: none;
-         color: #333;
-         font-weight: bold;
-         font-size: 1.1em;
-      }
+    <style>
+        /* Blog Hub Specific Styling */
+        body { background-color: #fdfbf7; color: #1a1410; font-family: 'DM Sans', sans-serif; }
+        .hub-header { text-align: center; padding: 60px 20px; background-color: #1a1410; color: #fff; margin-bottom: 40px; }
+        .hub-header h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; margin-bottom: 15px; color: #b8963a; }
+        .hub-header p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; color: #e0e0e0; }
+        
+        .layout-container { display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 0 20px; gap: 40px; }
+        .main-content { flex: 1 1 65%; }
+        .sidebar { flex: 1 1 30%; min-width: 300px; }
 
-      .article-list a:hover {
-         color: #2196F3;
-      }
-   </style>
+        /* Article Grid */
+        .article-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+        .article-card { background: #fff; border-radius: 8px; border: 1px solid #e0e0e0; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.03); transition: transform 0.2s ease, box-shadow 0.2s ease; display: flex; flex-direction: column; }
+        .article-card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.08); border-color: #b8963a; }
+        .card-content { padding: 25px; display: flex; flex-direction: column; flex-grow: 1; }
+        .card-content h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; margin: 0 0 15px 0; color: #1a1410; line-height: 1.2; }
+        .card-content p { font-size: 1rem; color: #555; line-height: 1.6; margin-bottom: 20px; flex-grow: 1; }
+        .read-more { font-weight: 600; color: #b8963a; text-decoration: none; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 0.5px; }
+        .read-more:hover { color: #1a1410; }
+
+        /* CTA Boxes */
+        .cta-box { background: #fff; border-radius: 12px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-top: 5px solid #b8963a; text-align: center; }
+        .cta-box.dark { background: #1a1410; color: #fff; border-top: 5px solid #b8963a; }
+        .cta-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-top: 0; margin-bottom: 15px; }
+        .cta-box.dark h3 { color: #b8963a; }
+        .cta-box p { font-size: 1rem; line-height: 1.5; margin-bottom: 20px; }
+        .cta-box.dark p { color: #e0e0e0; }
+        
+        .cta-btn { display: inline-block; width: 100%; padding: 15px 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; text-decoration: none; border-radius: 6px; transition: all 0.3s ease; box-sizing: border-box; }
+        .cta-btn.primary { background-color: #b8963a; color: #1a1410; }
+        .cta-btn.primary:hover { background-color: #d1b154; }
+        .cta-btn.secondary { background-color: transparent; color: #1a1410; border: 2px solid #1a1410; }
+        .cta-btn.secondary:hover { background-color: #1a1410; color: #fff; }
+        
+        .language-toggle-top { margin-bottom: 20px; font-weight: bold; text-align: right; }
+        .language-toggle-top a { text-decoration: none; background: #e0e0e0; padding: 8px 15px; border-radius: 6px; color: #1a1410; font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            .layout-container { flex-direction: column; }
+        }
+    </style>
 </head>
-
 <body>
-   <header class="site-header">
-      <div class="nav-container">
-         <nav>
-            <a href="/index.html">Inicio</a>
-            <a href="/districts/index.html">Distritos</a>
-            <a href="/resources/index.html">Recursos</a>
-            <a href="/blog/index.html">Blog (English)</a>
-         </nav>
-      </div>
-   </header>
 
-   <main class="container">
-      <h1>Educación Especial en Texas – Guías en Español</h1>
-      <p>Información crítica para padres que buscan evaluaciones FIE, adaptaciones IEP y apoyo escolar en Texas.</p>
+    <header class="site-header">
+        <div class="nav-container">
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="/districts/index.html">Distritos</a>
+                <a href="/resources/index.html">Recursos</a>
+                <a href="/blog/index.html">Blog (English)</a>
+            </nav>
+        </div>
+    </header>
 
-      <ul class="article-list">
-         <li><a href="/blog/es/que-es-fie-texas.html">¿Qué es una evaluación FIE (Full Individual Evaluation)?</a></li>
-         <li><a href="/blog/es/como-solicitar-evaluacion-educacion-especial.html">Cómo solicitar una evaluación de educación especial</a></li>
-         <li><a href="/blog/es/escuela-nego-evaluacion.html">Qué hacer si la escuela niega una evaluación</a></li>
-         <li><a href="/blog/es/mi-hijo-no-aprende-a-leer.html">Mi hijo no aprende a leer: Opciones en Texas</a></li>
-         <li><a href="/blog/es/mi-hijo-esta-atrasado-en-la-escuela.html">Mi hijo está atrasado en la escuela: Guía para padres</a></li>
-      </ul>
-   </main>
+    <div class="hub-header">
+        <h1>Centro de Recursos para Padres</h1>
+        <p>Guías detalladas para ayudar a las familias hispanohablantes a navegar el sistema de educación especial en las escuelas públicas de Texas.</p>
+    </div>
+
+    <main class="layout-container">
+        
+        <section class="main-content">
+            <div class="language-toggle-top">
+                <a href="/blog/index.html">🇺🇸 Read in English</a>
+            </div>
+
+            <div class="article-grid">
+                
+                <article class="article-card">
+                    <div class="card-content">
+                        <h3>¿Qué es una evaluación FIE?</h3>
+                        <p>Todo lo que necesita saber sobre la Evaluación Individual Completa (FIE) en Texas, su propósito y cómo ayuda a identificar las necesidades de su hijo.</p>
+                        <a href="/blog/es/que-es-fie-texas.html" class="read-more">Leer Artículo →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-content">
+                        <h3>Cómo solicitar una evaluación especial</h3>
+                        <p>Aprenda los pasos exactos para solicitar formalmente a su distrito escolar que evalúe a su hijo, protegiendo sus derechos bajo IDEA.</p>
+                        <a href="/blog/es/como-solicitar-evaluacion-educacion-especial.html" class="read-more">Leer Artículo →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-content">
+                        <h3>Qué hacer cuando la escuela niega una evaluación</h3>
+                        <p>Conozca sus derechos legales y las opciones procesales (como IEE y Prior Written Notice) si la escuela rechaza su solicitud.</p>
+                        <a href="/blog/es/escuela-nego-evaluacion.html" class="read-more">Leer Artículo →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-content">
+                        <h3>Mi hijo no aprende a leer: Qué hacer</h3>
+                        <p>Una guía para padres sobre intervenciones de lectura, cómo solicitar pruebas de dislexia y asegurar apoyo formal bajo la Sección 504 o IEP.</p>
+                        <a href="/blog/es/mi-hijo-no-aprende-a-leer.html" class="read-more">Leer Artículo →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-content">
+                        <h3>Mi hijo está atrasado en la escuela</h3>
+                        <p>Cómo identificar retrasos académicos reales y cómo iniciar conversaciones efectivas con los maestros de su hijo en Texas.</p>
+                        <a href="/blog/es/mi-hijo-esta-atrasado-en-la-escuela.html" class="read-more">Leer Artículo →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-content">
+                        <h3>La escuela dice que debemos "esperar a RTI"</h3>
+                        <p>La Respuesta a la Intervención (RTI) no puede usarse legalmente para retrasar o negar una evaluación. Conozca las políticas estatales.</p>
+                        <a href="/blog/es/la-escuela-dice-esperar-rti.html" class="read-more">Leer Artículo →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-content">
+                        <h3>El maestro dice que mi hijo "no se esfuerza"</h3>
+                        <p>A menudo, lo que parece falta de esfuerzo es una discapacidad de aprendizaje oculta. Cómo cambiar el enfoque hacia la evaluación.</p>
+                        <a href="/blog/es/maestro-dice-mi-hijo-no-se-esfuerza.html" class="read-more">Leer Artículo →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-content">
+                        <h3>Mi hijo no se concentra en clase (TDAH)</h3>
+                        <p>Estrategias para abordar problemas de atención y cómo solicitar adaptaciones formales de comportamiento y académicas en la escuela.</p>
+                        <a href="/blog/es/mi-hijo-no-se-concentra-en-clase.html" class="read-more">Leer Artículo →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-content">
+                        <h3>Línea de tiempo de la evaluación FIE en Texas</h3>
+                        <p>Conozca los estrictos plazos legales (los 45 y 30 días escolares) que el distrito debe cumplir una vez que usted firma el consentimiento.</p>
+                        <a href="/blog/es/tiempo-evaluacion-fie-texas.html" class="read-more">Leer Artículo →</a>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-content">
+                        <h3>Generador de Carta FIE</h3>
+                        <p>Herramienta guiada para ayudarle a redactar y enviar una carta formal y persuasiva solicitando pruebas de educación especial a su escuela.</p>
+                        <a href="/blog/es/carta-evaluacion-educacion-especial-texas.html" class="read-more">Leer Artículo →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            
+            <div class="cta-box dark">
+                <h3>Genere Su Carta FIE</h3>
+                <p>No espere más. Use nuestro asistente de IA para redactar una solicitud formal de evaluación que obligue a la escuela a responder bajo las leyes de Texas.</p>
+                <div style="font-size: 2rem; color: #b8963a; margin-bottom: 15px;">📄</div>
+                <a href="/blog/es/carta-evaluacion-educacion-especial-texas.html" class="cta-btn primary">Crear Carta Ahora</a>
+            </div>
+
+            <div class="cta-box">
+                <h3>Directorio de Distritos</h3>
+                <p>Encuentre los datos de contacto del departamento de educación especial y los procesos de "Child Find" específicos para su distrito escolar en Texas.</p>
+                <a href="/districts/index.html" class="cta-btn secondary">Buscar Mi Distrito</a>
+            </div>
+
+            <div class="cta-box">
+                <h3>Recursos Descargables</h3>
+                <p>Obtenga listas de verificación, guías para prepararse para la reunión del comité ARD y plantillas de correo electrónico de seguimiento.</p>
+                <a href="/resources/index.html" class="cta-btn secondary">Ver Recursos</a>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <footer style="margin-top: 60px; padding: 40px 20px; background-color: #1a1410; color: #fff; text-align: center;">
+        <p>&copy; 2026 Texas Special Ed. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
-
 </html>
