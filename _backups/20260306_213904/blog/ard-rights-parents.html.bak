@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH">
+</script>
+<script>
+   window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+         dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-GVLPE273XH');
+  </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+   Your Rights at an ARD Meeting: What Every Texas Parent Must Know | Texas Special Ed
+  </title>
+<meta content="Texas parents guide to your rights at an ard meeting: what every texas parent must know. Understand your rights under IDEA and Texas Education Code." name="description"/>
+<link href="https://www.texasspecialed.com/blog/ard-rights-parents" rel="canonical"/>
+<link href="/style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+   /* ── Page-level overrides (won't break site.css) ── */
+      .blog-content {
+         font-family: 'Source Sans 3', sans-serif;
+         font-size: 17px;
+         line-height: 1.75;
+         color: #1a1a2e;
+         max-width: 740px;
+         margin: 0 auto;
+      }
+
+      .blog-content h1 {
+         font-family: 'Lora', serif;
+         font-size: clamp(1.75rem, 4vw, 2.4rem);
+         font-weight: 700;
+         line-height: 1.25;
+         color: #0a2342;
+         margin-bottom: 0.5rem;
+      }
+
+      .blog-content h2 {
+         font-family: 'Lora', serif;
+         font-size: 1.4rem;
+         font-weight: 700;
+         color: #0a2342;
+         margin: 2.5rem 0 0.75rem;
+         padding-top: 0.5rem;
+         border-top: 2px solid #e8f0fe;
+      }
+
+      .blog-content p {
+         margin: 0 0 1.1rem;
+      }
+
+      /* ── Trust anchor ── */
+      .trust-anchor {
+         display: flex;
+         gap: 14px;
+         align-items: flex-start;
+         background: #f0f6ff;
+         border-left: 4px solid #1a56db;
+         border-radius: 6px;
+         padding: 16px 18px;
+         margin: 1.5rem 0 2rem;
+         font-size: 15px;
+         color: #1a1a2e;
+      }
+
+      .trust-anchor .avatar {
+         font-size: 2rem;
+         line-height: 1;
+         flex-shrink: 0;
+      }
+
+      /* ── Quick-answer box ── */
+      .quick-answer {
+         background: #0a2342;
+         color: #fff;
+         border-radius: 10px;
+         padding: 20px 24px;
+         margin: 1.75rem 0;
+      }
+
+      .quick-answer h3 {
+         font-family: 'Lora', serif;
+         font-size: 1.05rem;
+         font-weight: 700;
+         margin: 0 0 10px;
+         letter-spacing: 0.02em;
+         color: #90c8ff;
+         text-transform: uppercase;
+         font-size: 0.78rem;
+      }
+
+      .quick-answer ul {
+         margin: 0;
+         padding-left: 1.25rem;
+         font-size: 15px;
+         line-height: 1.7;
+      }
+
+      .quick-answer ul li {
+         margin-bottom: 4px;
+      }
+
+      /* ── Rights cards ── */
+      .rights-grid {
+         display: grid;
+         gap: 14px;
+         margin: 1.5rem 0 2rem;
+      }
+
+      .right-card {
+         border: 1px solid #dbe8fb;
+         border-radius: 10px;
+         padding: 18px 20px;
+         background: #fff;
+         display: flex;
+         gap: 16px;
+         align-items: flex-start;
+         transition: box-shadow 0.2s;
+      }
+
+      .right-card:hover {
+         box-shadow: 0 4px 18px rgba(26, 86, 219, .10);
+      }
+
+      .right-card .icon {
+         font-size: 1.5rem;
+         line-height: 1;
+         flex-shrink: 0;
+         margin-top: 2px;
+      }
+
+      .right-card h3 {
+         font-family: 'Source Sans 3', sans-serif;
+         font-weight: 600;
+         font-size: 1rem;
+         color: #0a2342;
+         margin: 0 0 6px;
+      }
+
+      .right-card p {
+         margin: 0;
+         font-size: 15px;
+         color: #3a3a5c;
+         line-height: 1.6;
+      }
+
+      /* ── Pull quote ── */
+      .pull-quote {
+         border-left: 4px solid #1a56db;
+         margin: 2rem 0;
+         padding: 14px 20px;
+         background: #f8fbff;
+         border-radius: 0 8px 8px 0;
+         font-size: 1.05rem;
+         font-style: italic;
+         color: #0a2342;
+         line-height: 1.6;
+      }
+
+      /* ── IEP sections list ── */
+      .iep-list {
+         list-style: none;
+         padding: 0;
+         margin: 1.25rem 0 2rem;
+         counter-reset: iep;
+      }
+
+      .iep-list li {
+         counter-increment: iep;
+         display: flex;
+         gap: 14px;
+         padding: 14px 0;
+         border-bottom: 1px solid #e8f0fe;
+         font-size: 15.5px;
+      }
+
+      .iep-list li:last-child {
+         border-bottom: none;
+      }
+
+      .iep-list li::before {
+         content: counter(iep);
+         background: #1a56db;
+         color: #fff;
+         font-weight: 700;
+         font-size: 13px;
+         border-radius: 50%;
+         min-width: 26px;
+         height: 26px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-shrink: 0;
+         margin-top: 1px;
+      }
+
+      .iep-list strong {
+         display: block;
+         margin-bottom: 2px;
+         color: #0a2342;
+      }
+
+      /* ── Action steps ── */
+      .action-steps {
+         background: #f4f9f4;
+         border: 1px solid #c3e6cb;
+         border-radius: 10px;
+         padding: 20px 24px;
+         margin: 2rem 0;
+      }
+
+      .action-steps h2 {
+         border-top: none;
+         margin-top: 0;
+         padding-top: 0;
+         font-size: 1.2rem;
+      }
+
+      .action-steps ol {
+         padding-left: 1.4rem;
+         margin: 0;
+         font-size: 15.5px;
+      }
+
+      .action-steps li {
+         margin-bottom: 10px;
+         line-height: 1.65;
+      }
+
+      .action-steps strong {
+         color: #1a5c2a;
+      }
+
+      /* ── Mid-article CTA ── */
+      .mid-cta {
+         background: linear-gradient(135deg, #0a2342 0%, #1a56db 100%);
+         color: #fff;
+         border-radius: 10px;
+         padding: 22px 26px;
+         margin: 2.5rem 0;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         gap: 16px;
+         flex-wrap: wrap;
+      }
+
+      .mid-cta p {
+         margin: 0;
+         font-size: 15.5px;
+         line-height: 1.5;
+      }
+
+      .mid-cta strong {
+         display: block;
+         font-size: 1.05rem;
+         margin-bottom: 4px;
+      }
+
+      .mid-cta a {
+         background: #fff;
+         color: #0a2342;
+         font-weight: 700;
+         text-decoration: none;
+         padding: 10px 20px;
+         border-radius: 6px;
+         font-size: 14px;
+         white-space: nowrap;
+         flex-shrink: 0;
+      }
+
+      .mid-cta a:hover {
+         background: #e8f0fe;
+      }
+
+      /* ── Bottom CTA ── */
+      .post-cta {
+         background: #f0f6ff;
+         border-radius: 10px;
+         padding: 20px 24px;
+         margin: 2rem 0;
+         text-align: center;
+         font-size: 15.5px;
+      }
+
+      .post-cta a {
+         color: #1a56db;
+         font-weight: 600;
+      }
+
+      /* ── Progress hint ── */
+      .section-divider {
+         text-align: center;
+         color: #9ab0cc;
+         font-size: 22px;
+         margin: 2rem 0 1.5rem;
+         letter-spacing: 0.3em;
+      }
+
+      @media (max-width: 560px) {
+         .mid-cta {
+            flex-direction: column;
+            text-align: center;
+         }
+
+         .mid-cta a {
+            width: 100%;
+            text-align: center;
+         }
+      }
+  </style>
+<style>
+   
+
+
+
+
+
+.tl li::before { content: ''; position: absolute; left: -27px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: #1a56db; border: 2px solid #fff; box-shadow: 0 0 0 2px #1a56db; }
+@media (max-width: 900px) {   }
+  </style>
+</head>
+<body>
+<header class="site-header">
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<div class="nav-logo">
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+       Texas
+       <em>
+        Special Ed
+       </em>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger">
+</span>
+<span class="hamburger">
+</span>
+<span class="hamburger">
+</span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item">
+<a class="nav-link" href="/">
+        Home
+       </a>
+</li>
+<li class="nav-item dropdown">
+<a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">
+        Districts
+        <span class="dropdown-arrow">
+         ▼
+        </span>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/districts/index.html">
+<strong>
+           Directory: All Districts
+          </strong>
+</a>
+</li>
+<li class="dropdown-divider">
+</li>
+<li>
+<a href="/districts/houston-isd/index.html">
+          Houston ISD
+         </a>
+</li>
+<li>
+<a href="/districts/dallas-isd/index.html">
+          Dallas ISD
+         </a>
+</li>
+<li>
+<a href="/districts/austin-isd/index.html">
+          Austin ISD
+         </a>
+</li>
+<li>
+<a href="/districts/cypress-fairbanks-isd/index.html">
+          Cypress-Fairbanks ISD
+         </a>
+</li>
+<li>
+<a href="/districts/katy-isd/index.html">
+          Katy ISD
+         </a>
+</li>
+<li>
+<a href="/districts/frisco-isd/index.html">
+          Frisco ISD
+         </a>
+</li>
+<li>
+<a href="/districts/plano-isd/index.html">
+          Plano ISD
+         </a>
+</li>
+<li>
+<a href="/districts/round-rock-isd/index.html">
+          Round Rock ISD
+         </a>
+</li>
+<li class="dropdown-divider">
+</li>
+<li>
+<a class="view-all-link" href="/districts/index.html">
+          View All 120+ Districts →
+         </a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/resources/index.html">
+        Parent Resources
+       </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/blog/index.html">
+        Blog
+       </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/about/index.html">
+        About
+       </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/contact/index.html">
+        Contact
+       </a>
+</li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">
+        Free ARD Checklist
+       </a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<main class="container" style="flex:1; padding: 1.5rem 1rem 3rem;">
+<div class="page-grid">
+<div class="main-content-col">
+<article class="blog-content">
+<h1>
+       Your Rights at an ARD Meeting: What Every Texas Parent Must Know
+      </h1>
+<div class="trust-anchor">
+<div class="avatar">
+        👩‍👧
+       </div>
+<div>
+<strong>
+         Written by a Texas parent of a 2e child.
+        </strong>
+        When I watched the school system fail her, I realized how broken the process is — and how few parents know their rights going in. This guide is what I wish I'd had.
+       </div>
+</div>
+<!-- Quick answer to reward early readers -->
+<div class="quick-answer">
+<h3>
+        Your 6 core rights at a glance
+       </h3>
+<ul>
+<li>
+         Receive written notice before any changes to your child's plan
+        </li>
+<li>
+         Participate and provide input as a full committee member
+        </li>
+<li>
+         Request an independent educational evaluation (IEE) at public expense
+        </li>
+<li>
+         Bring an advocate, attorney, or support person
+        </li>
+<li>
+         Disagree and put your concerns in writing
+        </li>
+<li>
+         Receive a free copy of your child's IEP
+        </li>
+</ul>
+</div>
+<p>
+       An ARD (Admission, Review, and Dismissal) meeting determines your child's educational path. Most parents walk in without knowing they have real legal power in that room. Here's everything you need to know — plainly.
+      </p>
+<div class="section-divider">
+       · · ·
+      </div>
+<h2>
+       What Is the ARD Committee?
+      </h2>
+<p>
+       The ARD committee develops, reviews, and revises your child's IEP (Individualized Education Program). Under Texas Education Code §29.005, it must include:
+      </p>
+<ul style="font-size:15.5px; line-height:1.8; padding-left:1.25rem;">
+<li>
+        You, the parent
+       </li>
+<li>
+        At least one of your child's teachers
+       </li>
+<li>
+        A school district representative qualified in special education
+       </li>
+<li>
+        Someone who can interpret evaluation results
+       </li>
+<li>
+        Your child, when appropriate
+       </li>
+</ul>
+<div class="pull-quote">
+       You're not a guest at this meeting. You're a legal member of the committee — with equal standing.
+      </div>
+<div class="section-divider">
+       · · ·
+      </div>
+<h2>
+       Your 6 Rights, Explained Simply
+      </h2>
+<div class="rights-grid">
+<div class="right-card">
+<div class="icon">
+         📄
+        </div>
+<div>
+<h3>
+          Prior Written Notice
+         </h3>
+<p>
+          The school must notify you in writing before making any changes to your child's identification, evaluation, or placement. It must be in your language and explain exactly what they're doing and why.
+         </p>
+</div>
+</div>
+<div class="right-card">
+<div class="icon">
+         🗣️
+        </div>
+<div>
+<h3>
+          Participate and Provide Input
+         </h3>
+<p>
+          You can share what you see at home, raise concerns about progress, and propose goals or accommodations. Your observations are data too — don't hold back.
+         </p>
+</div>
+</div>
+<div class="right-card">
+<div class="icon">
+         🔬
+        </div>
+<div>
+<h3>
+          Request an Independent Evaluation (IEE)
+         </h3>
+<p>
+          If you disagree with the school's evaluation, you can request an IEE at the district's expense. They must either pay for it or take you to due process to prove their evaluation was valid.
+         </p>
+</div>
+</div>
+<div class="right-card">
+<div class="icon">
+         🤝
+        </div>
+<div>
+<h3>
+          Bring a Support Person
+         </h3>
+<p>
+          You can bring anyone — an advocate, attorney, friend, or family member. This is often overlooked. If you feel outnumbered, bring someone who knows the system or knows your child.
+         </p>
+</div>
+</div>
+<div class="right-card">
+<div class="icon">
+         ✍️
+        </div>
+<div>
+<h3>
+          Disagree in Writing
+         </h3>
+<p>
+          If you don't agree with a decision, say so and put it in writing. Your statement gets attached to the IEP. You can also request a recess to gather more information before decisions are made.
+         </p>
+</div>
+</div>
+<div class="right-card">
+<div class="icon">
+         📋
+        </div>
+<div>
+<h3>
+          Receive a Free Copy of the IEP
+         </h3>
+<p>
+          You're entitled to a written copy of the IEP at no cost. Review it carefully — this is your child's legal roadmap, and errors matter.
+         </p>
+</div>
+</div>
+</div>
+<!-- Mid-article CTA to reduce bounce -->
+<div class="mid-cta">
+<p>
+<strong>
+         Don't go in empty-handed.
+        </strong>
+<br/>
+        Our free ARD checklist covers every right, every question, and every document to bring.
+       </p>
+<a href="/resources/ard-checklist.pdf" target="_blank">
+        Download Free Checklist →
+       </a>
+</div>
+<div class="section-divider">
+       · · ·
+      </div>
+<h2>
+       How to Read the IEP Document
+      </h2>
+<p>
+       The IEP is a legal document. These are the five sections that matter most and what to look for in each:
+      </p>
+<ol class="iep-list">
+<li>
+<div>
+<strong>
+          PLAAFP (Present Levels)
+         </strong>
+         Your child's current strengths and needs. Should be based on real assessments — not vague summaries. Push back if it doesn't match what you see at home.
+        </div>
+</li>
+<li>
+<div>
+<strong>
+          Annual Goals
+         </strong>
+         Should be SMART: specific, measurable, achievable, relevant, and time-bound. "Will improve reading" isn't a goal. "Will read 90 words per minute by May" is.
+        </div>
+</li>
+<li>
+<div>
+<strong>
+          Special Education &amp; Related Services
+         </strong>
+         Lists what your child actually receives — speech, OT, counseling, specialized instruction. Check frequency and duration, not just the service name.
+        </div>
+</li>
+<li>
+<div>
+<strong>
+          Accommodations &amp; Modifications
+         </strong>
+         Changes that help your child access learning and show what they know. Extended time, preferential seating, reduced assignments — make sure they're specific.
+        </div>
+</li>
+<li>
+<div>
+<strong>
+          Placement (LRE)
+         </strong>
+         Describes where services happen. The law requires the Least Restrictive Environment — meaning your child should be with non-disabled peers as much as appropriately possible.
+        </div>
+</li>
+</ol>
+<div class="section-divider">
+       · · ·
+      </div>
+<div class="action-steps">
+<h2>
+        Before the Meeting: 5 Things to Do
+       </h2>
+<ol>
+<li>
+<strong>
+          Request your child's records
+         </strong>
+         — evaluations, progress reports, past IEPs. You're entitled to them.
+        </li>
+<li>
+<strong>
+          Write your questions down
+         </strong>
+         — you'll forget them in the room. Bring a list.
+        </li>
+<li>
+<strong>
+          Gather outside documentation
+         </strong>
+         — medical reports, therapy notes, private evaluations. All of it can be entered into the record.
+        </li>
+<li>
+<strong>
+          Invite your support person
+         </strong>
+         — an advocate or trusted friend changes the room dynamic entirely.
+        </li>
+<li>
+<strong>
+          Know you can slow things down
+         </strong>
+         — if a decision feels rushed, ask for a recess. You don't have to sign anything that day.
+        </li>
+</ol>
+</div>
+<div class="post-cta">
+<p>
+        Not sure where to start in your district?
+        <a href="/districts/index.html">
+         Browse our Texas School District Directory
+        </a>
+        for local contacts and resources.
+       </p>
+</div>
+</article>
+<div style="margin: 3rem 0; padding: 2rem; background: #fff; border: 2px solid #1a56db; border-radius: 16px; box-shadow: 0 10px 30px rgba(26, 86, 219, 0.08);">
+<h2 style="margin-top: 0; text-align: center; color: #0a2342; font-family: 'Lora', serif; border: none;">
+       Wondering if your child's rights were violated?
+      </h2>
+<p style="text-align: center; font-size: 16px; margin-bottom: 20px; color: #3a3a5c;">
+       Use our free diagnostic tool below. We'll analyze your situation and generate a custom Rights Scan report in about 2 minutes.
+      </p>
+<div style="width: 100%; display: flex; justify-content: center;">
+<iframe height="750px" src="https://ard-chatbot-831148457361.us-central1.run.app" style="border: none; max-width: 480px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);" title="ARD Rights Scan Tool" width="100%">
+</iframe>
+</div>
+</div>
+<div class="bot-wrap" style="margin-bottom: 40px;">
+<h2 style="font-family: 'Lora', serif; color: #0a2342; margin-bottom: 20px;">
+       Need an Official FIE Request Letter?
+      </h2>
+<iframe allow="clipboard-write" loading="lazy" src="https://texas-fie-bot-831148457361.us-central1.run.app" style="width: 100%; height: 820px; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.05);" title="Texas FIE Letter Builder">
+</iframe>
+</div>
+</div>
+<aside class="sidebar-col">
+<div class="sidebar-card cta-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;border:none;margin-bottom:0;">
+<h4 style="font-family:'Lora',serif;font-size:1.25rem;margin:0 0 10px;color:#fff;">Show the ISD<br/>You Mean Business</h4>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#94a3b8;margin:0 0 18px;line-height:1.5;">A verbal request has no legal weight. A written letter starts the 45-day clock and forces a response within 15 school days.</p>
+<a href="/resources/Iep-letter.html" style="display:block;background:#d4af37;color:#0f172a;padding:14px;border-radius:6px;text-decoration:none;font-weight:800;font-family:'DM Sans',sans-serif;font-size:14px;transition:background 0.2s;">Get Your Letter — $25 →</a>
+</div>
+<div class="law-box">
+<strong>
+       Legal Basis
+      </strong>
+      Your request is grounded in IDEA (20 U.S.C. § 1414), 19 TAC Chapter 89 Subchapter AA, and Texas Education Code Chapter 29. Under Child Find, your district must identify and evaluate all children with suspected disabilities.
+     </div>
+<div class="timeline-card">
+<h3 style="font-family: 'Lora', serif; color: #0a2342; margin-top:0;">
+       Action Timeline
+      </h3>
+<ul class="tl">
+<li>
+<strong>
+         Day 1-15:
+        </strong>
+        District must respond in writing with Consent or Refusal.
+       </li>
+<li>
+<strong>
+         Day 15-60:
+        </strong>
+        Once you sign, the 45-school-day evaluation clock begins.
+       </li>
+<li>
+<strong>
+         Day 90:
+        </strong>
+        ARD meeting held to determine eligibility and IEP.
+       </li>
+</ul>
+</div>
+</aside>
+</div>
+</main>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+         const toggle = document.querySelector('.mobile-menu-toggle');
+         const menu = document.querySelector('.nav-menu');
+         if (toggle && menu) toggle.addEventListener('click', () => menu.classList.toggle('active'));
+      });
+  </script>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-about">
+<img alt="Texas Special Ed Logo" height="auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" src="/images/texasspecialed-logo.png" width="160"/>
+<span style="display:none; font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:800; color:#fff;">
+      Texas Special Ed
+     </span>
+<p style="margin-top:0.75rem;">
+      Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.
+     </p>
+</div>
+<div class="footer-col">
+<h3>
+      Quick Links
+     </h3>
+<ul>
+<li>
+<a href="/">
+        Home
+       </a>
+</li>
+<li>
+<a href="/districts/index.html">
+        Browse Districts
+       </a>
+</li>
+<li>
+<a href="/resources/index.html">
+        Parent Resources
+       </a>
+</li>
+<li>
+<a href="/blog/index.html">
+        Blog &amp; Articles
+       </a>
+</li>
+<li>
+<a href="/about/index.html">
+        About Us
+       </a>
+</li>
+<li>
+<a href="/contact/index.html">
+        Contact Us
+       </a>
+</li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>
+      Popular Districts
+     </h3>
+<ul>
+<li>
+<a href="/districts/round-rock-isd/index.html">
+        Round Rock ISD
+       </a>
+</li>
+<li>
+<a href="/districts/frisco-isd/index.html">
+        Frisco ISD
+       </a>
+</li>
+<li>
+<a href="/districts/plano-isd/index.html">
+        Plano ISD
+       </a>
+</li>
+<li>
+<a href="/districts/lewisville-isd/index.html">
+        Lewisville ISD
+       </a>
+</li>
+<li>
+<a href="/districts/conroe-isd/index.html">
+        Conroe ISD
+       </a>
+</li>
+<li>
+<a href="/districts/index.html">
+        View All Districts →
+       </a>
+</li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>
+      Free Resources
+     </h3>
+<ul>
+<li>
+<a href="/resources/ard-checklist.pdf" target="_blank">
+        ARD Meeting Checklist
+       </a>
+</li>
+<li>
+<a href="/resources/evaluation-request-letter.pdf" target="_blank">
+        Evaluation Request Letter
+       </a>
+</li>
+<li>
+<a href="/resources/iep-goal-tracker.pdf" target="_blank">
+        IEP Goal Tracker
+       </a>
+</li>
+<li>
+<a href="/resources/parent-rights-guide.pdf" target="_blank">
+        Parent Rights Guide
+       </a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>
+     © 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.
+    </p>
+</div>
+</footer>
+</body>
+</html>
