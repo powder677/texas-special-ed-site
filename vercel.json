@@ -1,3 +1,45 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/districts/highland-park-isd",
+      "destination": "/districts/",
+      "permanent": true
+    },
+    {
+      "source": "/districts/highland-park-isd/:path*",
+      "destination": "/districts/",
+      "permanent": true
+    },
+    {
+      "source": "/districts/lovejoy-isd",
+      "destination": "/districts/",
+      "permanent": true
+    },
+    {
+      "source": "/districts/lovejoy-isd/:path*",
+      "destination": "/districts/",
+      "permanent": true
+    },
+    {
+      "source": "/districts/carroll-isd",
+      "destination": "/districts/",
+      "permanent": true
+    },
+    {
+      "source": "/districts/carroll-isd/:path*",
+      "destination": "/districts/",
+      "permanent": true
+    },
+    {
+      "source": "/districts/lamar-isd",
+      "destination": "/districts/lamar-cisd",
+      "permanent": true
+    },
+    {
+      "source": "/districts/lamar-isd/:path*",
+      "destination": "/districts/lamar-cisd/:path*",
+      "permanent": true
+    }
+  ]
 }
