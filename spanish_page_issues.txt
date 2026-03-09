@@ -1,0 +1,512 @@
+Spanish FIE Page Audit — 113 pages checked
+
+============================================================
+
+
+abilene-isd/como-solicitar-una-evaluacion-fie-en-abilene-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+aldine-isd/como-solicitar-una-evaluacion-fie-en-aldine-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+alief-isd/como-solicitar-una-evaluacion-fie-en-alief-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+amarillo-isd/como-solicitar-una-evaluacion-fie-en-amarillo-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+arlington-isd/como-solicitar-una-evaluacion-fie-en-arlington-isd-texas.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+austin-isd/como-solicitar-una-evaluacion-fie-en-austin-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+bastrop-isd/como-solicitar-una-evaluacion-fie-en-bastrop-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+beaumont-isd/como-solicitar-una-evaluacion-fie-en-beaumont-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+belton-isd/como-solicitar-una-evaluacion-fie-en-belton-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+birdville-isd/como-solicitar-una-evaluacion-fie-en-birdville-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+bryan-isd/como-solicitar-una-evaluacion-fie-en-bryan-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+burleson-isd/como-solicitar-una-evaluacion-fie-en-burleson-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+carrollton-farmers-branch-isd/como-solicitar-una-evaluacion-fie-en-carrollton-farmers-branch-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+channelview-isd/como-solicitar-una-evaluacion-fie-en-channelview-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+clear-creek-isd/como-solicitar-una-evaluacion-fie-en-clear-creek-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+clint-isd/como-solicitar-una-evaluacion-fie-en-clint-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+college-station-isd/como-solicitar-una-evaluacion-fie-en-college-station-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+comal-isd/como-solicitar-una-evaluacion-fie-en-comal-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+conroe-isd/como-solicitar-una-evaluacion-fie-en-conroe-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+coppell-isd/como-solicitar-una-evaluacion-fie-en-coppell-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+copperas-cove-isd/como-solicitar-una-evaluacion-fie-en-copperas-cove-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+corpus-christi-isd/como-solicitar-una-evaluacion-fie-en-corpus-christi-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+crosby-isd/como-solicitar-una-evaluacion-fie-en-crosby-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+crowley-isd/como-solicitar-una-evaluacion-fie-en-crowley-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+dallas-isd/como-solicitar-una-evaluacion-fie-en-dallas-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+del-valle-isd/como-solicitar-una-evaluacion-fie-en-del-valle-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+denton-isd/como-solicitar-una-evaluacion-fie-en-denton-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+dickinson-isd/como-solicitar-una-evaluacion-fie-en-dickinson-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+donna-isd/como-solicitar-una-evaluacion-fie-en-donna-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+eagle-mountain-saginaw-isd/como-solicitar-una-evaluacion-fie-en-eagle-mountain-saginaw-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+eanes-isd/como-solicitar-una-evaluacion-fie-en-eanes-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+east-central-isd/como-solicitar-una-evaluacion-fie-en-east-central-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+ector-county-isd/como-solicitar-una-evaluacion-fie-en-ector-county-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+edinburg-cisd/como-solicitar-una-evaluacion-fie-en-edinburg-cisd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+el-paso-isd/como-solicitar-una-evaluacion-fie-en-el-paso-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+forney-isd/como-solicitar-una-evaluacion-fie-en-forney-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+fort-bend-isd/como-solicitar-una-evaluacion-fie-en-fort-bend-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+fort-worth-isd/como-solicitar-una-evaluacion-fie-en-fort-worth-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+friendswood-isd/como-solicitar-una-evaluacion-fie-en-friendswood-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+frisco-isd/como-solicitar-una-evaluacion-fie-en-frisco-isd-texas.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+garland-isd/como-solicitar-una-evaluacion-fie-en-garland-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+georgetown-isd/como-solicitar-una-evaluacion-fie-en-georgetown-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+goose-creek-cisd/como-solicitar-una-evaluacion-fie-en-goose-creek-cisd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+grapevine-colleyville-isd/como-solicitar-una-evaluacion-fie-en-grapevine-colleyville-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+harlingen-cisd/como-solicitar-una-evaluacion-fie-en-harlingen-cisd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+harmony-public-schools/como-solicitar-una-evaluacion-fie-en-harmony-public-schools.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+hays-cisd/como-solicitar-una-evaluacion-fie-en-hays-cisd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+houston-isd/como-solicitar-una-evaluacion-fie-en-houston-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+humble-isd/como-solicitar-una-evaluacion-fie-en-humble-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+hurst-euless-bedford-isd/como-solicitar-una-evaluacion-fie-en-hurst-euless-bedford-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+idea-public-schools/como-solicitar-una-evaluacion-fie-en-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+irving-isd/como-solicitar-una-evaluacion-fie-en-irving-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+judson-isd/como-solicitar-una-evaluacion-fie-en-judson-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+katy-isd/como-solicitar-una-evaluacion-fie-en-katy-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+keller-isd/como-solicitar-una-evaluacion-fie-en-keller-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+killeen-isd/como-solicitar-una-evaluacion-fie-en-killeen-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+klein-isd/como-solicitar-una-evaluacion-fie-en-klein-isd-texas.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+la-joya-isd/como-solicitar-una-evaluacion-fie-en-la-joya-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+lake-travis-isd/como-solicitar-una-evaluacion-fie-en-lake-travis-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+laredo-isd/como-solicitar-una-evaluacion-fie-en-laredo-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+leander-isd/como-solicitar-una-evaluacion-fie-en-leander-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+lewisville-isd/como-solicitar-una-evaluacion-fie-en-lewisville-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+little-elm-isd/como-solicitar-una-evaluacion-fie-en-little-elm-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+longview-isd/como-solicitar-una-evaluacion-fie-en-longview-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+lubbock-isd/como-solicitar-una-evaluacion-fie-en-lubbock-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+magnolia-isd/como-solicitar-una-evaluacion-fie-en-magnolia-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+mansfield-isd/como-solicitar-una-evaluacion-fie-en-mansfield-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+mcallen-isd/como-solicitar-una-evaluacion-fie-en-mcallen-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+mckinney-isd/como-solicitar-una-evaluacion-fie-en-mckinney-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+melissa-isd/como-solicitar-una-evaluacion-fie-en-melissa-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+mesquite-isd/como-solicitar-una-evaluacion-fie-en-mesquite-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+midland-isd/como-solicitar-una-evaluacion-fie-en-midland-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+midway-isd/como-solicitar-una-evaluacion-fie-en-midway-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+mission-cisd/como-solicitar-una-evaluacion-fie-en-mission-cisd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+montgomery-isd/como-solicitar-una-evaluacion-fie-en-montgomery-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+new-caney-isd/como-solicitar-una-evaluacion-fie-en-new-caney-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+north-east-isd/como-solicitar-una-evaluacion-fie-en-north-east-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+northside-isd/como-solicitar-una-evaluacion-fie-en-northside-isd-texas.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+northwest-isd/como-solicitar-una-evaluacion-fie-en-northwest-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+pasadena-isd/como-solicitar-una-evaluacion-fie-en-pasadena-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+pflugerville-isd/como-solicitar-una-evaluacion-fie-en-pflugerville-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+plano-isd/como-solicitar-una-evaluacion-fie-en-plano-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+princeton-isd/como-solicitar-una-evaluacion-fie-en-princeton-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+prosper-isd/como-solicitar-una-evaluacion-fie-en-prosper-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+richardson-isd/como-solicitar-una-evaluacion-fie-en-richardson-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+rio-grande-city-grulla-isd/como-solicitar-una-evaluacion-fie-en-rio-grande-city-grulla-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+rockwall-isd/como-solicitar-una-evaluacion-fie-en-rockwall-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+round-rock-isd/como-solicitar-una-evaluacion-fie-en-round-rock-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+royse-city-isd/como-solicitar-una-evaluacion-fie-en-royse-city-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+san-angelo-isd/como-solicitar-una-evaluacion-fie-en-san-angelo-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+san-antonio-isd/como-solicitar-una-evaluacion-fie-en-san-antonio-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+san-benito-cisd/como-solicitar-una-evaluacion-fie-en-san-benito-cisd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+san-marcos-cisd/como-solicitar-una-evaluacion-fie-en-san-marcos-cisd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+santa-fe-isd/como-solicitar-una-evaluacion-fie-en-santa-fe-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+schertz-cibolo-universal-city-isd/como-solicitar-una-evaluacion-fie-en-schertz-cibolo-universal-city-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+seguin-isd/como-solicitar-una-evaluacion-fie-en-seguin-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+sherman-isd/como-solicitar-una-evaluacion-fie-en-sherman-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+socorro-isd/como-solicitar-una-evaluacion-fie-en-socorro-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+spring-branch-isd/como-solicitar-una-evaluacion-fie-en-spring-branch-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+spring-isd/como-solicitar-una-evaluacion-fie-en-spring-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+temple-isd/como-solicitar-una-evaluacion-fie-en-temple-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+texarkana-isd/como-solicitar-una-evaluacion-fie-en-texarkana-isd.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+texas-city-isd/como-solicitar-una-evaluacion-fie-en-texas-city-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+tomball-isd/como-solicitar-una-evaluacion-fie-en-tomball-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+tyler-isd/como-solicitar-una-evaluacion-fie-en-tyler-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+united-isd/como-solicitar-una-evaluacion-fie-en-united-isd-texas.html
+  ❌ Truncated inline-cta block
+     → The CTA block was cut off when the Spanish content was injected. Needs the full CTA re-added.
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+victoria-isd/como-solicitar-una-evaluacion-fie-en-victoria-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+waco-isd/como-solicitar-una-evaluacion-fie-en-waco-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+waller-isd/como-solicitar-una-evaluacion-fie-en-waller-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+weslaco-isd/como-solicitar-una-evaluacion-fie-en-weslaco-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+wichita-falls-isd/como-solicitar-una-evaluacion-fie-en-wichita-falls-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+wylie-isd/como-solicitar-una-evaluacion-fie-en-wylie-isd.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+ysleta-isd/como-solicitar-una-evaluacion-fie-en-ysleta-isd-texas.html
+  ❌ Silo nav in English
+     → Silo nav link text still says 'What Is an FIE?' instead of Spanish.
+
+============================================================
+SUMMARY: 0 clean, 113 with issues
+
+  ❌ Truncated inline-cta block: 25 pages
+  ❌ Silo nav in English: 113 pages
