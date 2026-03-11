@@ -1,318 +1,324 @@
 <!DOCTYPE html>
+
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
    Alamo Heights ISD Special Education
   </title>
-  <link href="/style.css" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <style id="grievance-formatting">
-   /* ── DISCIPLINE & GRIEVANCE PATCH: Optimized for Mobile & CRO ── */
+<link href="/style.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<style id="cro-core-formatting">
+        /* ── AUTOMATED CRO PATCH: Layout & Mobile Fixes ── */
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+        h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
         
-        h1 { font-size: clamp(1.8rem, 5vw, 2.2rem); margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; text-align: center; padding: 0 15px; }
-        
-        .layout-grid { max-width: 850px; margin: 20px auto; display: block; width: 100%; }
-        
-        .content-column { 
-            font-family: 'Source Sans 3', sans-serif; 
-            font-size: 17px; 
-            line-height: 1.75; 
-            color: #1a1a2e; 
-            background: #fff; 
-            padding: 40px 60px; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
-            border: 1px solid #e2e8f0; 
-            margin: 0 15px;
-        }
+        /* Core Layout - Single Column Optimized for Readability */
+        .layout-grid { max-width: 850px; margin: 30px auto; display: block; }
+        .content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
+        .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        .content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+        .content-column p { margin: 0 0 1.25rem; }
+        .content-column ul { padding-left: 20px; margin-bottom: 1.5rem; }
+        .content-column li { margin-bottom: 8px; }
 
-        .content-column h2 { font-family: 'Lora', serif; font-size: clamp(1.4rem, 4vw, 1.6rem); font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        /* Mobile Display & Padding Fixes */
+        @media (max-width: 950px) {
+            .content-column { padding: 20px !important; border: none !important; box-shadow: none !important; background: transparent !important; }
+            .nav-menu { display: none !important; }
+        }
         
-        /* Mobile Overrides */
-        @media (max-width: 768px) {
-            .content-column { 
-                padding: 30px 20px !important; 
-                margin: 0 !important; 
-                border-radius: 0 !important; 
-                border-left: none !important; 
-                border-right: none !important; 
-                box-shadow: none !important;
-            }
-            .ai-tool-banner { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
-            .integrated-cta { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
-        }
-
-        /* AI Tool Styling */
-        .ai-tool-banner { 
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); 
-            color: white; 
-            border-radius: 16px; 
-            padding: 40px; 
-            margin: 3rem 0; 
-            text-align: center; 
-            border: 1px solid #2a4382; 
-        }
-        .ai-tool-banner h3 { font-family: 'Lora', serif; font-size: clamp(1.5rem, 5vw, 1.8rem); color: #fff; margin: 0 0 10px; border:none; }
+        /* Protect Bot Banners from global style.css hijacking */
+        .banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+        .banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .banner-btn-gold { background: #d4af37; color: #0f172a !important; }
+        .banner-btn-blue { background: #1a56db; color: #fff !important; }
+        .banner-btn-blue:hover { background: #1e3a8a; color: #fff !important; }
         
-        .btn-gold { 
-            background: #d4af37; 
-            color: #0f172a !important; 
-            padding: 16px 32px; 
-            border-radius: 8px; 
-            font-weight: 800; 
-            text-decoration: none; 
-            display: inline-block; 
-            transition: 0.2s; 
-            border: none; 
-            cursor: pointer; 
-            width: auto;
-            max-width: 100%;
-        }
-        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-
+        /* Integrated Inline CTA Styles */
         .integrated-cta { margin: 3rem 0; border-radius: 12px; padding: 36px 28px; text-align: center; }
-        .integrated-cta.dark { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); color: #fff; border: 1px solid #991b1b; }
-        
-        /* Modal & Mobile Accessibility */
-        #ai-modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 10000; backdrop-filter: blur(4px); overflow-y: auto; }
-        .modal-content { 
-            background: white; 
-            max-width: 600px; 
-            width: 95%; 
-            margin: 20px auto; 
-            border-radius: 16px; 
-            overflow: hidden; 
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); 
-            font-family: sans-serif; 
-            position: relative;
-        }
-        @media (max-height: 600px) {
-            .modal-content { margin: 10px auto; }
-        }
-  </style>
- </head>
- <body>
-  <header class="site-header">
-   <nav aria-label="Main navigation" class="navbar" role="navigation">
-    <div class="nav-container">
-     <div class="nav-logo">
-      <a aria-label="Texas Special Ed Home" class="text-logo" href="/">
-       Texas
-       <em>
-        Special Ed
-       </em>
-      </a>
-     </div>
-     <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
-      <span class="hamburger">
-      </span>
-      <span class="hamburger">
-      </span>
-      <span class="hamburger">
-      </span>
-     </button>
-     <ul class="nav-menu">
-      <li class="nav-item">
-       <a class="nav-link" href="/">
-        Home
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="/districts/index.html">
-        Districts
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="/resources/index.html">
-        Resources
-       </a>
-      </li>
-      <li class="nav-item nav-cta">
-       <a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;">
-        Get Your Letter — $25
-       </a>
-      </li>
-     </ul>
-    </div>
-   </nav>
-  </header>
-  <div class="layout-grid">
-   <article class="content-column">
-    <div class="container">
-     <h1>
+        .integrated-cta.light { background: #fff; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); }
+        .integrated-cta.dark { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #fff; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); border: 1px solid #1e40af; }
+        </style><style>
+/* ── BASE STYLES FOR PREVIEW ACCURACY ── */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.site-header { background: #fff; padding: 15px 20px; border-bottom: 1px solid #ddd; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342;}
+
+/* ── 70/30 DESKTOP GRID & STICKY SIDEBAR ── */
+.layout-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-top: 40px; align-items: start; }
+@media (min-width: 1024px) { .layout-grid { grid-template-columns: 1fr 380px; } }
+.sidebar-column { position: sticky; top: 100px; z-index: 10; } /* Clears tight navbar */
+.content-column { min-width: 0; font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column p { margin: 0 0 1.25rem; }
+
+/* ── SCANNABLE BLOCKS ── */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2 { border-top: none; margin-top: 0; padding-top: 0; font-size: 1.4rem; color: #166534; }
+.action-steps ol { padding-left: 1.4rem; margin: 0; font-size: 17px; }
+.action-steps li { margin-bottom: 14px; line-height: 1.65; color: #166534;}
+.action-steps strong { color: #14532d; }
+
+.iep-list { list-style: none; padding: 0; margin: 1.5rem 0 2.5rem; counter-reset: iep; }
+.iep-list li { counter-increment: iep; display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid #e8f0fe; font-size: 17px; }
+.iep-list li:last-child { border-bottom: none; }
+.iep-list li::before { content: counter(iep); background: #1a56db; color: #fff; font-weight: 700; font-size: 14px; border-radius: 50%; min-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.iep-list strong { display: block; margin-bottom: 6px; color: #0f172a; font-size: 1.1rem; }
+
+.section-divider { text-align: center; color: #9ab0cc; font-size: 24px; margin: 3rem 0; letter-spacing: 0.4em; }
+
+/* ── INLINE CTAS ── */
+.inline-cta { background: #f8fbff; border: 1px solid #dbe8fb; border-left: 4px solid #1a56db; border-radius: 6px; padding: 24px; margin: 2.5rem 0; display: flex; gap: 16px; align-items: flex-start; }
+.inline-cta.gold { background: #fdfaf5; border-color: #d6cbbf; border-left-color: #b8963a; }
+.inline-cta .cta-icon { font-size: 2.2rem; line-height: 1; flex-shrink: 0; }
+.inline-cta h3 { margin: 0 0 8px 0; font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; }
+.inline-cta p { margin: 0 0 16px 0; font-size: 16px; color: #475569; }
+.btn-primary { background: #1a56db; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 15px; display: inline-block; transition: background 0.2s; }
+.btn-primary:hover { background: #1e3a8a; color: #fff; }
+.btn-primary.gold-btn { background: #1a1410; color: #b8963a; }
+.btn-primary.gold-btn:hover { background: #b8963a; color: #1a1410; }
+
+/* ── STACKED OFFERS ── */
+.offers-container { display: flex; flex-direction: column; gap: 24px; margin-top: 50px; }
+.sales-card { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); padding: 36px; border-radius: 12px; text-align: center; color: white; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); }
+.sales-card.gold-theme { background: linear-gradient(135deg, #1c1917 0%, #44403c 100%); }
+.sales-card .badge { background: #d4af37; color: #0f172a; padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
+.sales-card h3 { margin: 20px 0 12px; color: #ffffff; font-size: 1.6rem; font-family: 'Lora', serif; }
+.sales-card p { color: #e2e8f0; margin: 0 auto 24px; font-size: 1.05rem; line-height: 1.6; max-width: 90%;}
+.sales-card a { background: #d4af37; color: #0f172a; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; display: inline-block; transition: 0.2s; }
+.sales-card a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+</style></head>
+<body>
+<header class="site-header">
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<div class="nav-logo">
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+Texas <em>Special Ed</em>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item dropdown">
+<a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
+<ul class="dropdown-menu">
+<li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
+<li class="dropdown-divider"></li>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+<li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
+<li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
+<li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
+<li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
+<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+<li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
+<li class="dropdown-divider"></li>
+<li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="layout-grid">
+<article class="content-column">
+<div class="container">
+<h1>
       Complete Guide to Filing Complaints and Resolving Disputes with ALAMO HEIGHTS ISD
      </h1>
-     <p>
+<p>
       Parents of children receiving special education services in ALAMO HEIGHTS ISD deserve clear, reliable information about their rights and options when disputes arise. Whether you're concerned about your child's Individualized Education Program (IEP), placement decisions, or service delivery, understanding the complaint and resolution process empowers you to advocate effectively. This comprehensive guide walks you through every available pathway for resolving conflicts with ALAMO HEIGHTS ISD.
      </p>
-     <!-- AI Tool Section -->
-     <h2>
+<!-- AI Tool Section -->
+<h2>
       Understanding Your Rights in ALAMO HEIGHTS ISD Special Education
      </h2>
-     <p>
+<p>
       Federal and Texas law guarantee parents of special needs children specific rights within ALAMO HEIGHTS ISD. The Individuals with Disabilities Education Act (IDEA) and Section 504 of the Rehabilitation Act protect your ability to participate in educational decisions, request evaluations, and challenge placement or service decisions. These protections extend to all families in the ALAMO HEIGHTS area, regardless of their child's specific disability.
      </p>
-     <div class="ai-tool-banner">
-      <span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+<div class="ai-tool-banner">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
        Live AI Tool
       </span>
-      <h3>
+<h3>
        Free ARD Rights Scan
       </h3>
-      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+<p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
        Wondering if the school violated your child's rights? Answer a few questions for an instant analysis based on Texas law.
       </p>
-      <button class="btn-gold" onclick="openRightsScan()">
+<button class="btn-gold" onclick="openRightsScan()">
        Run My Free ARD Scan →
       </button>
-     </div>
-     <p>
+</div>
+<p>
       Before pursuing formal complaints, understand that ALAMO HEIGHTS ISD has a responsibility to inform you of these rights. You should receive written notification in your home language explaining available dispute resolution options. If you haven't received this information, request it from the district's special education department immediately.
      </p>
-     <p>
+<p>
       Key rights for parents in ALAMO HEIGHTS ISD include requesting independent evaluations, participating in IEP meetings, receiving copies of all evaluations and records, and challenging any educational decision affecting your child. Knowing these foundational rights helps you determine which complaint mechanism best addresses your specific concern.
      </p>
-     <h2>
+<h2>
       The Informal Resolution Process: Your First Step
      </h2>
-     <h3>
+<h3>
       When to Use Informal Resolution
      </h3>
-     <p>
+<p>
       Before pursuing formal complaints with ALAMO HEIGHTS ISD, most conflicts can be resolved through direct communication. This approach works best for concerns that are recent, don't involve safety risks, and stem from miscommunication or misunderstanding rather than systemic problems.
      </p>
-     <p>
+<p>
       Common situations resolved informally include unclear IEP goals, scheduling conflicts for services, questions about testing results, or concerns about classroom accommodations. If your child's needs are being met once you clarify expectations with ALAMO HEIGHTS ISD staff, informal resolution saves time and preserves relationships with school personnel.
      </p>
-     <h3>
+<h3>
       Effective Communication Strategies
      </h3>
-     <p>
+<p>
       Start by requesting a meeting with your child's special education teacher or service provider. Come prepared with specific examples, dates, and documentation of your concerns. For ALAMO HEIGHTS ISD special education staff, clear, respectful communication often leads to quick resolution.
      </p>
-     <p>
+<p>
       Document every conversation in writing. After speaking with ALAMO HEIGHTS ISD personnel, send an email summarizing what was discussed, what you asked for, and what the staff member agreed to do. Request confirmation of the plan. This creates a paper trail valuable if the situation doesn't improve.
      </p>
-     <p>
+<p>
       If initial conversations don't resolve your concern, escalate to the special education coordinator or director at ALAMO HEIGHTS ISD. These administrators have broader authority to implement changes and can often address concerns that building-level staff cannot resolve independently.
      </p>
-     <h2>
+<h2>
       Mediation: A Collaborative Problem-Solving Approach
      </h2>
-     <h3>
+<h3>
       How ALAMO HEIGHTS ISD Mediation Works
      </h3>
-     <p>
+<p>
       Mediation is a voluntary process where a neutral third party helps parents and ALAMO HEIGHTS ISD reach agreement on disputed issues. Unlike complaints, mediation focuses on collaboration rather than determining who was right or wrong. Many families find this approach less adversarial and more likely to preserve working relationships with the district.
      </p>
-     <p>
+<p>
       ALAMO HEIGHTS ISD special education mediation is available at no cost to parents. The Texas Education Agency (TEA) provides mediators trained in special education law and conflict resolution. Sessions typically occur within 30 days of requesting mediation.
      </p>
-     <h3>
+<h3>
       The Mediation Process for ALAMO HEIGHTS ISD Families
      </h3>
-     <p>
+<p>
       To request
       <strong>
        ALAMO HEIGHTS ISD mediation
       </strong>
       , contact the district's special education department and request the mediation process. You can also request mediation through the TEA website. Both parties must agree to participate; ALAMO HEIGHTS ISD cannot refuse mediation, but you can withdraw from the process at any time.
      </p>
-     <p>
+<p>
       During mediation sessions, you and ALAMO HEIGHTS ISD representatives meet separately with the mediator, who helps identify shared interests and potential solutions. If agreement is reached, both parties sign a binding agreement that ALAMO HEIGHTS ISD must implement. If mediation fails, you retain all rights to pursue formal complaints.
      </p>
-     <p>
+<p>
       Mediation works best for disagreements about service implementation, placement options, or IEP goals—situations where both parties want to solve the problem but have different perspectives. It's less effective when ALAMO HEIGHTS ISD has systematically denied services or violated your child's rights.
      </p>
-     <h2>
+<h2>
       Formal Special Education Due Process Complaints
      </h2>
-     <div class="ai-tool-banner">
-      <span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+<div class="ai-tool-banner">
+<span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
        Official Request
       </span>
-      <h3>
+<h3>
        Show the ISD You Mean Business
       </h3>
-      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+<p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
        A verbal request has no legal weight. A formal Level 1 Grievance letter starts the official district clock.
       </p>
-      <a class="btn-gold" href="/resources/Iep-letter.html">
+<a class="btn-gold" href="/resources/Iep-letter.html">
        Get Your Letter — $25 →
       </a>
-     </div>
-     <h3>
+</div>
+<h3>
       When to File an ALAMO HEIGHTS ISD Due Process Complaint
      </h3>
-     <p>
+<p>
       A
       <strong>
        due process complaint against ALAMO HEIGHTS ISD
       </strong>
       is a formal legal proceeding when you believe the district has violated your child's special education rights under IDEA. This pathway is appropriate when ALAMO HEIGHTS ISD has denied services, failed to implement agreed-upon IEP goals, or made placement decisions without proper evaluation or parental consent.
      </p>
-     <p>
+<p>
       Due process complaints are also your remedy when ALAMO HEIGHTS ISD refuses to evaluate your child for special education eligibility or when you dispute evaluation results. Families in ALAMO HEIGHTS ISD pursuing due process typically work with special education attorneys or advocates who understand Texas special education law.
      </p>
-     <h3>
+<h3>
       Filing Requirements for ALAMO HEIGHTS ISD Due Process
      </h3>
-     <p>
+<p>
       Your
       <strong>
        ALAMO HEIGHTS ISD due process complaint
       </strong>
       must be filed in writing with the district and the TEA. The complaint must identify the child, describe the problem, and explain what resolution you're seeking. Include specific dates and facts supporting your claim.
      </p>
-     <p>
+<p>
       ALAMO HEIGHTS ISD has 10 days to provide a response explaining their position. You then have 30 days from receiving ALAMO HEIGHTS ISD's response to proceed to a hearing. During this period, the district may propose mediation, offering another opportunity to resolve the dispute without litigation.
      </p>
-     <p>
+<p>
       Key deadlines in ALAMO HEIGHTS ISD due process:
      </p>
-     <ul>
-      <li>
-       <strong>
+<ul>
+<li>
+<strong>
         File complaint
        </strong>
        : At any time (no statute of limitations under IDEA)
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         ALAMO HEIGHTS ISD responds
        </strong>
        : Within 10 days
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Request hearing
        </strong>
        : Within 30 days of receiving ALAMO HEIGHTS ISD response
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Hearing held
        </strong>
        : Typically within 30-45 days (can be extended)
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Decision issued
        </strong>
        : Within 45 days of hearing request
       </li>
-     </ul>
-     <h3>
+</ul>
+<h3>
       Due Process Hearing Process
      </h3>
-     <p>
+<p>
       A hearing officer—an independent administrator trained in special education law—hears evidence from both you and ALAMO HEIGHTS ISD. You can present documents, call witnesses, and question ALAMO HEIGHTS ISD representatives. The hearing officer determines whether ALAMO HEIGHTS ISD violated your child's rights and orders appropriate remedies.
      </p>
-     <p>
+<p>
       Most parents in ALAMO HEIGHTS ISD pursuing due process work with
       <strong>
        special education attorneys near ALAMO HEIGHTS
@@ -323,182 +329,182 @@
       </strong>
       who prepare evidence, file paperwork, and present arguments during hearings. Many attorneys work on contingency, meaning ALAMO HEIGHTS ISD must pay your attorney fees if you prevail.
      </p>
-     <h2>
+<h2>
       State-Level Complaints to the Texas Education Agency
      </h2>
-     <h3>
+<h3>
       When to File a TEA Complaint About ALAMO HEIGHTS ISD
      </h3>
-     <p>
+<p>
       You can file a complaint directly with the Texas Education Agency regarding ALAMO HEIGHTS ISD's failure to comply with special education law. Unlike due process, TEA complaints don't require proving harm to your child—only that ALAMO HEIGHTS ISD violated the law.
      </p>
-     <p>
+<p>
       File an
       <strong>
        ALAMO HEIGHTS ISD TEA complaint
       </strong>
       when the district has violated procedural requirements, failed to provide required notices, or systematically failed to comply with IDEA. You can pursue TEA complaints simultaneously with due process, giving you multiple pathways to resolution.
      </p>
-     <h3>
+<h3>
       Filing an ALAMO HEIGHTS ISD Complaint with TEA
      </h3>
-     <p>
+<p>
       Complete the TEA Special Education Complaint Form, available on the TEA website. Describe specifically how ALAMO HEIGHTS ISD violated special education law, provide dates and details, and include copies of relevant documents. TEA investigates complaints and issues findings within 60 days.
      </p>
-     <p>
+<p>
       If TEA substantiates your complaint, they order ALAMO HEIGHTS ISD to take corrective action. ALAMO HEIGHTS ISD must document compliance and submit evidence to TEA. While TEA complaints don't provide monetary compensation, they create official records of ALAMO HEIGHTS ISD non-compliance and sometimes leverage settlement discussions.
      </p>
-     <h2>
+<h2>
       Section 504 Complaint Process for ALAMO HEIGHTS ISD
      </h2>
-     <h3>
+<h3>
       Understanding Section 504 Rights at ALAMO HEIGHTS ISD
      </h3>
-     <p>
+<p>
       If your child doesn't qualify for special education through IDEA but has a disability affecting major life activities, Section 504 of the Rehabilitation Act protects your rights. ALAMO HEIGHTS ISD must provide accommodations ensuring equal access to education for students with disabilities covered under 504.
      </p>
-     <p>
+<p>
       Common 504 accommodations at ALAMO HEIGHTS ISD include extended time on tests, modified assignments, behavioral intervention plans, or medical accommodations for students with asthma, diabetes, or other health conditions. These protections apply even if your child doesn't receive special education services.
      </p>
-     <h3>
+<h3>
       Filing Section 504 Complaints
      </h3>
-     <p>
+<p>
       If ALAMO HEIGHTS ISD denies appropriate Section 504 accommodations, file a complaint with the district's 504 coordinator. Request a 504 meeting and written documentation of the district's decisions. If informal resolution fails, file a complaint with the Office for Civil Rights (OCR) at the U.S. Department of Education.
      </p>
-     <p>
+<p>
       OCR complaints don't have strict timelines but should be filed promptly. Provide details of ALAMO HEIGHTS ISD's alleged discrimination, and OCR investigates ALAMO HEIGHTS ISD's compliance with Section 504. This process is parallel to due process and sometimes provides faster resolution for accommodation issues.
      </p>
-     <h2>
+<h2>
       Working with Special Education Advocates and Attorneys
      </h2>
-     <h3>
+<h3>
       When You Need Professional Representation
      </h3>
-     <p>
+<p>
       Complex disputes with ALAMO HEIGHTS ISD often benefit from professional advocacy.
       <strong>
        Special ed advocates near ALAMO HEIGHTS
       </strong>
       help parents prepare for IEP meetings, understand evaluations, and navigate complaint procedures. Many advocates specialize in ALAMO HEIGHTS ISD cases and understand the district's specific practices.
      </p>
-     <p>
-      <strong>
+<p>
+<strong>
        Special education attorneys near ALAMO HEIGHTS
       </strong>
       are necessary when pursuing due process hearings or when ALAMO HEIGHTS ISD's violations are substantial. Texas attorneys specializing in special education understand ALAMO HEIGHTS ISD policies, hearing officer expectations, and case law supporting your arguments.
      </p>
-     <h3>
+<h3>
       Choosing Your Representative
      </h3>
-     <p>
+<p>
       Advocates and attorneys from the ALAMO HEIGHTS area understand local dynamics while maintaining objectivity. Interview multiple representatives to find someone familiar with ALAMO HEIGHTS ISD's special education department, past disputes, and decision-makers. Ask about their success rate and approach to resolving disagreements.
      </p>
-     <p>
+<p>
       Many
       <strong>
        special education attorneys near ALAMO HEIGHTS
       </strong>
       offer free consultations. Discuss whether your situation warrants due process (potentially costly but binding) or whether TEA complaints or mediation might achieve your goals more efficiently.
      </p>
-     <h2>
+<h2>
       Timeline and Documentation Strategy
      </h2>
-     <h3>
+<h3>
       Building Your Case Against ALAMO HEIGHTS ISD
      </h3>
-     <p>
+<p>
       Effective
       <strong>
        dispute resolution with ALAMO HEIGHTS ISD
       </strong>
       requires thorough documentation. Keep all emails, letters, and IEP documents from ALAMO HEIGHTS ISD. Photograph or save evidence of promised services not delivered. Record dates, times, and content of conversations with ALAMO HEIGHTS ISD staff.
      </p>
-     <p>
+<p>
       Create a timeline showing when you first raised concerns with ALAMO HEIGHTS ISD, how the district responded, and what attempts at resolution occurred. Include specific IEP goals promised, services scheduled, and outcomes. This timeline becomes crucial evidence if your dispute reaches a hearing.
      </p>
-     <h3>
+<h3>
       Key Documentation to Maintain
      </h3>
-     <p>
+<p>
       Throughout your work with ALAMO HEIGHTS ISD, collect and organize:
      </p>
-     <ul>
-      <li>
+<ul>
+<li>
        All IEPs and prior written notices from ALAMO HEIGHTS ISD
       </li>
-      <li>
+<li>
        Evaluation reports and assessment data
       </li>
-      <li>
+<li>
        Correspondence with ALAMO HEIGHTS ISD staff (emails preferred)
       </li>
-      <li>
+<li>
        Progress monitoring data and grades
       </li>
-      <li>
+<li>
        Attendance records and discipline records
       </li>
-      <li>
+<li>
        Independent evaluations conducted outside ALAMO HEIGHTS ISD
       </li>
-      <li>
+<li>
        Medical or therapy records relevant to your child's disability
       </li>
-      <li>
+<li>
        Notes from meetings with ALAMO HEIGHTS ISD personnel
       </li>
-     </ul>
-     <h2>
+</ul>
+<h2>
       Moving Forward: Next Steps for ALAMO HEIGHTS ISD Parents
      </h2>
-     <p>
+<p>
       If you're currently in conflict with ALAMO HEIGHTS ISD special education, start by clarifying your specific concern. Is it IEP implementation, placement, evaluation, or service delivery? Understanding the core issue helps you choose the appropriate
       <strong>
        dispute resolution pathway with ALAMO HEIGHTS ISD
       </strong>
       .
      </p>
-     <p>
+<p>
       Request written documentation of ALAMO HEIGHTS ISD's position and your concerns. Share this with a trusted advocate or attorney for guidance. Most ALAMO HEIGHTS ISD disputes have solutions—you deserve to find yours.
      </p>
-     <p>
+<p>
       Remember: ALAMO HEIGHTS ISD families have strong legal protections, multiple complaint mechanisms, and the right to professional advocacy. Whether your resolution comes through informal discussion, mediation, or formal complaints, your persistence ensures your child receives the special education services required under law.
      </p>
-    </div>
-   </article>
-  </div>
-  <div id="ai-modal-overlay">
-   <div class="modal-content">
-    <div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
-     <h3 style="margin:0; font-family:'Lora',serif;">
+</div>
+</article>
+</div>
+<div id="ai-modal-overlay">
+<div class="modal-content">
+<div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
+<h3 style="margin:0; font-family:'Lora',serif;">
       ARD Rights Analysis
      </h3>
-     <button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
+<button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
       ×
      </button>
-    </div>
-    <div id="modal-body" style="padding:30px;">
-     <div id="scan-form">
-      <p style="color:#475569; margin-bottom:20px;">
+</div>
+<div id="modal-body" style="padding:30px;">
+<div id="scan-form">
+<p style="color:#475569; margin-bottom:20px;">
        Describe the situation (e.g., suspension days, manifestation hearing outcome).
       </p>
-      <textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
-      <button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
+<textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
+<button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
        Start Rights Scan
       </button>
-     </div>
-     <div id="scan-results" style="display:none;">
-      <div id="analysis-content" style="color:#1e293b; line-height:1.6;">
-      </div>
-      <button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
+</div>
+<div id="scan-results" style="display:none;">
+<div id="analysis-content" style="color:#1e293b; line-height:1.6;">
+</div>
+<button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
        Close
       </button>
-     </div>
-    </div>
-   </div>
-  </div>
-  <script>
+</div>
+</div>
+</div>
+</div>
+<script>
    const apiKey = ""; 
     function openRightsScan() { document.getElementById('ai-modal-overlay').style.display='block'; }
     function closeRightsScan() { document.getElementById('ai-modal-overlay').style.display='none'; }
@@ -521,17 +527,48 @@
         finally { btn.innerText = "Start Rights Scan"; }
     }
   </script>
-  <footer class="site-footer">
-   <div class="footer-container">
-    <div class="footer-about">
-     <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
-     <p>
-      © 2026 Texas Special Education Resources. Not affiliated with the TEA.
-     </p>
-    </div>
-   </div>
-  </footer>
-  <script>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-about">
+<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+<p style="margin-top:.75rem;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+</div>
+<div class="footer-col">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/districts/index.html">Browse Districts</a></li>
+<li><a href="/resources/index.html">Parent Resources</a></li>
+<li><a href="/blog/index.html">Blog &amp; Articles</a></li>
+<li><a href="/about/index.html">About Us</a></li>
+<li><a href="/contact/index.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Popular Districts</h3>
+<ul>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+<li><a href="/districts/conroe-isd/index.html">Conroe ISD</a></li>
+<li><a href="/districts/index.html">View All Districts →</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Free Resources</h3>
+<ul>
+<li><a href="/resources/ard-checklist.pdf" target="_blank">ARD Meeting Checklist</a></li>
+<li><a href="/resources/evaluation-request-letter.pdf" target="_blank">Evaluation Request Letter</a></li>
+<li><a href="/resources/iep-goal-tracker.pdf" target="_blank">IEP Goal Tracker</a></li>
+<li><a href="/resources/parent-rights-guide.pdf" target="_blank">Parent Rights Guide</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+</div>
+</footer>
+<script>
    document.addEventListener('DOMContentLoaded', function() {
     var toggle = document.querySelector('.mobile-menu-toggle');
     var menu   = document.querySelector('.nav-menu');
@@ -540,57 +577,57 @@
     }
 });
   </script>
- </body>
+</body>
 </html>
 <!-- MODAL FOR AI SCAN -->
 <div id="ai-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 1000; backdrop-filter: blur(4px);">
- <div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
-  <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
-   <h3 class="text-xl font-serif">
+<div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+<div class="p-6 bg-slate-900 text-white flex justify-between items-center">
+<h3 class="text-xl font-serif">
     ARD Rights Analysis
    </h3>
-   <button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
+<button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
     ×
    </button>
-  </div>
-  <div class="p-8" id="modal-body">
-   <div id="scan-form">
-    <p class="text-slate-600 mb-6">
+</div>
+<div class="p-8" id="modal-body">
+<div id="scan-form">
+<p class="text-slate-600 mb-6">
      Describe the situation your child is facing. Be as specific as possible regarding IEP violations or school actions.
     </p>
-    <div class="space-y-4">
-     <div>
-      <label class="block text-sm font-bold text-slate-700 mb-1">
+<div class="space-y-4">
+<div>
+<label class="block text-sm font-bold text-slate-700 mb-1">
        Total days suspended this year?
       </label>
-      <input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
-     </div>
-     <div>
-      <label class="block text-sm font-bold text-slate-700 mb-1">
+<input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-700 mb-1">
        What happened?
       </label>
-      <textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
-     </div>
-     <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
-      <span id="btn-text">
+<textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
+</div>
+<button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
+<span id="btn-text">
        Start Rights Scan
       </span>
-     </button>
-    </div>
-   </div>
-   <div class="hidden" id="scan-results">
-    <div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
-    </div>
-    <hr class="my-6"/>
-    <div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
+</button>
+</div>
+</div>
+<div class="hidden" id="scan-results">
+<div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
+</div>
+<hr class="my-6"/>
+<div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
      Disclaimer: This analysis is generated by AI based on Texas IDEA regulations and is for educational purposes only.
     </div>
-    <button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
+<button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
      Close Analysis
     </button>
-   </div>
-  </div>
- </div>
+</div>
+</div>
+</div>
 </div>
 <script>
  const apiKey = ""; 

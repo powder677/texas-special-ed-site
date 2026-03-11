@@ -1,421 +1,428 @@
 <!DOCTYPE html>
+
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
    Andrews ISD Special Education
   </title>
-  <link href="/style.css" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <style id="grievance-formatting">
-   /* ── DISCIPLINE & GRIEVANCE PATCH: Optimized for Mobile & CRO ── */
+<link href="/style.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com">
+</script>
+
+<style id="cro-core-formatting">
+        /* ── AUTOMATED CRO PATCH: Layout & Mobile Fixes ── */
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+        h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
         
-        h1 { font-size: clamp(1.8rem, 5vw, 2.2rem); margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; text-align: center; padding: 0 15px; }
-        
-        .layout-grid { max-width: 850px; margin: 20px auto; display: block; width: 100%; }
-        
-        .content-column { 
-            font-family: 'Source Sans 3', sans-serif; 
-            font-size: 17px; 
-            line-height: 1.75; 
-            color: #1a1a2e; 
-            background: #fff; 
-            padding: 40px 60px; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
-            border: 1px solid #e2e8f0; 
-            margin: 0 15px;
-        }
+        /* Core Layout - Single Column Optimized for Readability */
+        .layout-grid { max-width: 850px; margin: 30px auto; display: block; }
+        .content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
+        .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        .content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+        .content-column p { margin: 0 0 1.25rem; }
+        .content-column ul { padding-left: 20px; margin-bottom: 1.5rem; }
+        .content-column li { margin-bottom: 8px; }
 
-        .content-column h2 { font-family: 'Lora', serif; font-size: clamp(1.4rem, 4vw, 1.6rem); font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        /* Mobile Display & Padding Fixes */
+        @media (max-width: 950px) {
+            .content-column { padding: 20px !important; border: none !important; box-shadow: none !important; background: transparent !important; }
+            .nav-menu { display: none !important; }
+        }
         
-        /* Mobile Overrides */
-        @media (max-width: 768px) {
-            .content-column { 
-                padding: 30px 20px !important; 
-                margin: 0 !important; 
-                border-radius: 0 !important; 
-                border-left: none !important; 
-                border-right: none !important; 
-                box-shadow: none !important;
-            }
-            .ai-tool-banner { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
-            .integrated-cta { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
-        }
-
-        /* AI Tool Styling */
-        .ai-tool-banner { 
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); 
-            color: white; 
-            border-radius: 16px; 
-            padding: 40px; 
-            margin: 3rem 0; 
-            text-align: center; 
-            border: 1px solid #2a4382; 
-        }
-        .ai-tool-banner h3 { font-family: 'Lora', serif; font-size: clamp(1.5rem, 5vw, 1.8rem); color: #fff; margin: 0 0 10px; border:none; }
+        /* Protect Bot Banners from global style.css hijacking */
+        .banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+        .banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .banner-btn-gold { background: #d4af37; color: #0f172a !important; }
+        .banner-btn-blue { background: #1a56db; color: #fff !important; }
+        .banner-btn-blue:hover { background: #1e3a8a; color: #fff !important; }
         
-        .btn-gold { 
-            background: #d4af37; 
-            color: #0f172a !important; 
-            padding: 16px 32px; 
-            border-radius: 8px; 
-            font-weight: 800; 
-            text-decoration: none; 
-            display: inline-block; 
-            transition: 0.2s; 
-            border: none; 
-            cursor: pointer; 
-            width: auto;
-            max-width: 100%;
-        }
-        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-
+        /* Integrated Inline CTA Styles */
         .integrated-cta { margin: 3rem 0; border-radius: 12px; padding: 36px 28px; text-align: center; }
-        .integrated-cta.dark { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); color: #fff; border: 1px solid #991b1b; }
-        
-        /* Modal & Mobile Accessibility */
-        #ai-modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 10000; backdrop-filter: blur(4px); overflow-y: auto; }
-        .modal-content { 
-            background: white; 
-            max-width: 600px; 
-            width: 95%; 
-            margin: 20px auto; 
-            border-radius: 16px; 
-            overflow: hidden; 
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); 
-            font-family: sans-serif; 
-            position: relative;
-        }
-        @media (max-height: 600px) {
-            .modal-content { margin: 10px auto; }
-        }
-  </style>
- </head>
- <body>
-  <header class="site-header">
-   <nav aria-label="Main navigation" class="navbar" role="navigation">
-    <div class="nav-container">
-     <div class="nav-logo">
-      <a aria-label="Texas Special Ed Home" class="text-logo" href="/">
-       Texas
-       <em>
-        Special Ed
-       </em>
-      </a>
-     </div>
-     <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
-      <span class="hamburger">
-      </span>
-      <span class="hamburger">
-      </span>
-      <span class="hamburger">
-      </span>
-     </button>
-     <ul class="nav-menu">
-      <li class="nav-item">
-       <a class="nav-link" href="/">
-        Home
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="/districts/index.html">
-        Districts
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="/resources/index.html">
-        Resources
-       </a>
-      </li>
-      <li class="nav-item nav-cta">
-       <a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;">
-        Get Your Letter — $25
-       </a>
-      </li>
-     </ul>
-    </div>
-   </nav>
-  </header>
-  <div class="layout-grid">
-   <article class="content-column">
-    <div class="container">
-     <h1>
+        .integrated-cta.light { background: #fff; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); }
+        .integrated-cta.dark { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #fff; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); border: 1px solid #1e40af; }
+        </style><style>
+/* ── BASE STYLES FOR PREVIEW ACCURACY ── */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.site-header { background: #fff; padding: 15px 20px; border-bottom: 1px solid #ddd; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342;}
+
+/* ── 70/30 DESKTOP GRID & STICKY SIDEBAR ── */
+.layout-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-top: 40px; align-items: start; }
+@media (min-width: 1024px) { .layout-grid { grid-template-columns: 1fr 380px; } }
+.sidebar-column { position: sticky; top: 100px; z-index: 10; } /* Clears tight navbar */
+.content-column { min-width: 0; font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column p { margin: 0 0 1.25rem; }
+
+/* ── SCANNABLE BLOCKS ── */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2 { border-top: none; margin-top: 0; padding-top: 0; font-size: 1.4rem; color: #166534; }
+.action-steps ol { padding-left: 1.4rem; margin: 0; font-size: 17px; }
+.action-steps li { margin-bottom: 14px; line-height: 1.65; color: #166534;}
+.action-steps strong { color: #14532d; }
+
+.iep-list { list-style: none; padding: 0; margin: 1.5rem 0 2.5rem; counter-reset: iep; }
+.iep-list li { counter-increment: iep; display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid #e8f0fe; font-size: 17px; }
+.iep-list li:last-child { border-bottom: none; }
+.iep-list li::before { content: counter(iep); background: #1a56db; color: #fff; font-weight: 700; font-size: 14px; border-radius: 50%; min-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.iep-list strong { display: block; margin-bottom: 6px; color: #0f172a; font-size: 1.1rem; }
+
+.section-divider { text-align: center; color: #9ab0cc; font-size: 24px; margin: 3rem 0; letter-spacing: 0.4em; }
+
+/* ── INLINE CTAS ── */
+.inline-cta { background: #f8fbff; border: 1px solid #dbe8fb; border-left: 4px solid #1a56db; border-radius: 6px; padding: 24px; margin: 2.5rem 0; display: flex; gap: 16px; align-items: flex-start; }
+.inline-cta.gold { background: #fdfaf5; border-color: #d6cbbf; border-left-color: #b8963a; }
+.inline-cta .cta-icon { font-size: 2.2rem; line-height: 1; flex-shrink: 0; }
+.inline-cta h3 { margin: 0 0 8px 0; font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; }
+.inline-cta p { margin: 0 0 16px 0; font-size: 16px; color: #475569; }
+.btn-primary { background: #1a56db; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 15px; display: inline-block; transition: background 0.2s; }
+.btn-primary:hover { background: #1e3a8a; color: #fff; }
+.btn-primary.gold-btn { background: #1a1410; color: #b8963a; }
+.btn-primary.gold-btn:hover { background: #b8963a; color: #1a1410; }
+
+/* ── STACKED OFFERS ── */
+.offers-container { display: flex; flex-direction: column; gap: 24px; margin-top: 50px; }
+.sales-card { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); padding: 36px; border-radius: 12px; text-align: center; color: white; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); }
+.sales-card.gold-theme { background: linear-gradient(135deg, #1c1917 0%, #44403c 100%); }
+.sales-card .badge { background: #d4af37; color: #0f172a; padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
+.sales-card h3 { margin: 20px 0 12px; color: #ffffff; font-size: 1.6rem; font-family: 'Lora', serif; }
+.sales-card p { color: #e2e8f0; margin: 0 auto 24px; font-size: 1.05rem; line-height: 1.6; max-width: 90%;}
+.sales-card a { background: #d4af37; color: #0f172a; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; display: inline-block; transition: 0.2s; }
+.sales-card a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+</style></head>
+<body>
+<header class="site-header">
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<div class="nav-logo">
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+Texas <em>Special Ed</em>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item dropdown">
+<a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
+<ul class="dropdown-menu">
+<li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
+<li class="dropdown-divider"></li>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+<li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
+<li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
+<li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
+<li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
+<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+<li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
+<li class="dropdown-divider"></li>
+<li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="layout-grid">
+<article class="content-column">
+<div class="container">
+<h1>
       Complete Guide to Filing Complaints and Resolving Disputes with ANDREWS ISD Special Education
      </h1>
-     <p>
+<p>
       Navigating special education can be challenging, especially when concerns arise about your child's services or placement. If you're a parent in ANDREWS ISD and believe your child's special education needs aren't being met, you have clear pathways to resolve disputes. This comprehensive guide explains your rights, available options, and step-by-step processes for addressing concerns with ANDREWS ISD.
      </p>
-     <!-- AI Tool Section -->
-     <h2>
+<!-- AI Tool Section -->
+<h2>
       Understanding Your Rights in ANDREWS ISD Special Education
      </h2>
-     <p>
+<p>
       As a parent of a child receiving special education services in ANDREWS ISD, federal and state laws guarantee you specific rights. The Individuals with Disabilities Education Act (IDEA) and Texas Education Code protect your ability to participate in decisions about your child's education and to challenge decisions you believe are inappropriate.
      </p>
-     <div class="ai-tool-banner">
-      <span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+<div class="ai-tool-banner">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
        Live AI Tool
       </span>
-      <h3>
+<h3>
        Free ARD Rights Scan
       </h3>
-      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+<p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
        Wondering if the school violated your child's rights? Answer a few questions for an instant analysis based on Texas law.
       </p>
-      <button class="btn-gold" onclick="openRightsScan()">
+<button class="btn-gold" onclick="openRightsScan()">
        Run My Free ARD Scan →
       </button>
-     </div>
-     <p>
-      <strong>
+</div>
+<p>
+<strong>
        ANDREWS ISD must provide you with procedural safeguards
       </strong>
       that explain these rights in writing. You should receive a notice of procedural safeguards at the beginning of the school year and whenever ANDREWS ISD takes disciplinary action against your child. This document outlines your right to file complaints, request mediation, and pursue due process hearings.
      </p>
-     <p>
+<p>
       Your fundamental rights include participating in all IEP (Individualized Education Program) meetings, obtaining independent educational evaluations, requesting records, and seeking dispute resolution when you disagree with ANDREWS ISD's decisions about identification, evaluation, or placement.
      </p>
-     <h2>
+<h2>
       ANDREWS ISD Informal Complaint Resolution Process
      </h2>
-     <p>
+<p>
       Before pursuing formal procedures, many disputes with ANDREWS ISD can be resolved through informal communication. Starting with this approach often saves time and preserves your working relationship with school staff.
      </p>
-     <h3>
+<h3>
       Step 1: Document the Concern
      </h3>
-     <p>
+<p>
       When you notice an issue with your child's special education services in ANDREWS ISD, begin by documenting everything. Record dates, times, what happened, who was involved, and how it affects your child's education. Keep copies of emails, progress reports, and any written communication with ANDREWS ISD staff.
      </p>
-     <p>
+<p>
       Examples of concerns that warrant documentation include: your child not receiving promised accommodations, teachers unfamiliar with your child's IEP, lack of progress on IEP goals, or inappropriate behavior management techniques.
      </p>
-     <h3>
+<h3>
       Step 2: Request a Meeting with Your Child's Teacher or Service Provider
      </h3>
-     <p>
+<p>
       Start by contacting your child's special education teacher, case manager, or relevant service provider at ANDREWS ISD. Explain your concern calmly and specifically. Many issues stem from miscommunication or misunderstandings that can be quickly resolved at this level.
      </p>
-     <p>
+<p>
       Request a face-to-face meeting if the issue is complex. Come prepared with specific examples and documentation. Listen to the ANDREWS ISD staff member's perspective—they may provide information that clarifies the situation.
      </p>
-     <h3>
+<h3>
       Step 3: Escalate if Necessary
      </h3>
-     <p>
+<p>
       If the initial conversation doesn't resolve the issue, request a meeting with the campus principal or special education coordinator at ANDREWS ISD. Present your concerns in writing, including dates and previous attempts to resolve the matter. Allow ANDREWS ISD a reasonable timeframe to respond and implement solutions.
      </p>
-     <p>
+<p>
       Most routine concerns about ANDREWS ISD special education services can be resolved through these informal steps within 2-3 weeks.
      </p>
-     <h2>
+<h2>
       Filing a Formal Complaint with ANDREWS ISD
      </h2>
-     <p>
+<p>
       If informal resolution doesn't work, you can file a formal complaint with ANDREWS ISD's special education department. This initiates a more structured review process.
      </p>
-     <h3>
+<h3>
       What You Can Complain About
      </h3>
-     <p>
-      <strong>
+<p>
+<strong>
        ANDREWS ISD formal complaints
       </strong>
       address violations of federal or state special education law, failures to implement IEP provisions, or inappropriate services. You can file if ANDREWS ISD:
      </p>
-     <ul>
-      <li>
+<ul>
+<li>
        Failed to evaluate your child appropriately
       </li>
-      <li>
+<li>
        Didn't develop an adequate IEP
       </li>
-      <li>
+<li>
        Isn't implementing the IEP as written
       </li>
-      <li>
+<li>
        Denied you access to records
       </li>
-      <li>
+<li>
        Failed to provide required notices
       </li>
-      <li>
+<li>
        Didn't allow meaningful parent participation in IEP meetings
       </li>
-      <li>
+<li>
        Discriminated based on disability
       </li>
-     </ul>
-     <h3>
+</ul>
+<h3>
       Filing the Complaint
      </h3>
-     <p>
+<p>
       Contact ANDREWS ISD's Special Education Department to request the complaint form and filing procedures. You'll need to submit your complaint in writing, including:
      </p>
-     <ul>
-      <li>
+<ul>
+<li>
        Your name and child's name
       </li>
-      <li>
+<li>
        ANDREWS ISD name and address
       </li>
-      <li>
+<li>
        A description of the violation
       </li>
-      <li>
+<li>
        Specific dates and incidents
       </li>
-      <li>
+<li>
        Previous resolution attempts
       </li>
-      <li>
+<li>
        Your contact information
       </li>
-     </ul>
-     <p>
-      <strong>
+</ul>
+<p>
+<strong>
        ANDREWS ISD has 15 school days to respond
       </strong>
       to your complaint. The district will investigate, interview relevant staff, review records, and provide a written response explaining their findings and any corrective actions. Keep copies of everything you submit to ANDREWS ISD.
      </p>
-     <h2>
+<h2>
       Filing a Complaint with the Texas Education Agency (TEA)
      </h2>
-     <p>
+<p>
       If you believe ANDREWS ISD is violating special education law and the district's response is inadequate, you can file an
       <strong>
        ANDREWS ISD TEA complaint
       </strong>
       with the Texas Education Agency. TEA oversees compliance with special education requirements statewide.
      </p>
-     <h3>
+<h3>
       When to File with TEA
      </h3>
-     <p>
+<p>
       You can file a TEA complaint if ANDREWS ISD violated your child's rights under IDEA or Texas Education Code. You don't have to complete ANDREWS ISD's internal complaint process first, though it's often wise to allow the district opportunity to correct the problem.
      </p>
-     <h3>
+<h3>
       How to File
      </h3>
-     <p>
+<p>
       Submit your complaint to the Special Education Division at TEA. Include the same information as an internal ANDREWS ISD complaint, plus documentation of ANDREWS ISD's response if you've already complained internally. You can file online, by mail, or email.
      </p>
-     <p>
-      <strong>
+<p>
+<strong>
        TEA has 30 days to investigate
       </strong>
       complaints about ANDREWS ISD special education. The agency will determine whether violations occurred and order corrective action if necessary. TEA complaints create a formal record and carry more authority than internal ANDREWS ISD complaints.
      </p>
-     <h2>
+<h2>
       ANDREWS ISD Due Process and Hearing Procedures
      </h2>
-     <div class="ai-tool-banner">
-      <span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+<div class="ai-tool-banner">
+<span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
        Official Request
       </span>
-      <h3>
+<h3>
        Show the ISD You Mean Business
       </h3>
-      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+<p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
        A verbal request has no legal weight. A formal Level 1 Grievance letter starts the official district clock.
       </p>
-      <a class="btn-gold" href="/resources/Iep-letter.html">
+<a class="btn-gold" href="/resources/Iep-letter.html">
        Get Your Letter — $25 →
       </a>
-     </div>
-     <p>
+</div>
+<p>
       Due process is the most formal dispute resolution option for special education disagreements with ANDREWS ISD. This process involves a neutral hearing officer reviewing your case and making a binding decision.
      </p>
-     <h3>
+<h3>
       What Requires Due Process
      </h3>
-     <p>
+<p>
       You can file for
       <strong>
        ANDREWS ISD due process
       </strong>
       if you disagree with the district's identification, evaluation, placement, or provision of FAPE (Free Appropriate Public Education) for your child. Due process is necessary when you and ANDREWS ISD have fundamentally different positions on major educational decisions.
      </p>
-     <h3>
+<h3>
       Filing a Due Process Complaint
      </h3>
-     <p>
+<p>
       Submit a written due process complaint to ANDREWS ISD's Special Education Department. Include your child's name, school of attendance, nature of your concern, and proposed resolution. ANDREWS ISD must acknowledge receipt within 5 days.
      </p>
-     <p>
-      <strong>
+<p>
+<strong>
        ANDREWS ISD has 10 days
       </strong>
       to provide you a written response explaining their position. If the district's response is adequate and you're satisfied, the process can end. If not, you proceed to mediation or a hearing.
      </p>
-     <h3>
+<h3>
       Pre-Hearing Requirements
      </h3>
-     <p>
+<p>
       Before a hearing occurs, ANDREWS ISD will offer a resolution meeting. Both parties meet to discuss the dispute and attempt settlement. This informal conference often resolves due process complaints without a formal hearing, saving time and stress.
      </p>
-     <p>
+<p>
       If no resolution occurs within 30 days, either party can request a due process hearing. ANDREWS ISD must then follow specific timelines and procedural requirements established by Texas and federal law.
      </p>
-     <h2>
+<h2>
       Mediation: A Collaborative Approach to ANDREWS ISD Disputes
      </h2>
-     <p>
+<p>
       Mediation is an
       <strong>
        ANDREWS ISD mediation
       </strong>
       option available at any point in the dispute process. A neutral third party helps you and ANDREWS ISD communicate and reach mutually agreeable solutions without adversarial hearings.
      </p>
-     <h3>
+<h3>
       Benefits of Mediation
      </h3>
-     <p>
+<p>
       Mediation preserves your working relationship with ANDREWS ISD staff, reduces stress and expense compared to due process hearings, and typically produces faster resolutions. Both parties must agree to mediate, and ANDREWS ISD must offer mediation to parents.
      </p>
-     <p>
+<p>
       Many disputes about ANDREWS ISD special education resolve successfully through mediation. The process is confidential—what's said during mediation cannot be used in a later hearing if agreement isn't reached.
      </p>
-     <h3>
+<h3>
       Starting Mediation
      </h3>
-     <p>
+<p>
       Request
       <strong>
        ANDREWS ISD mediation
       </strong>
       through your special education coordinator or by filing a due process complaint. The district arranges a mediator acceptable to both parties. Mediation typically takes 2-4 hours and can occur within 2-3 weeks.
      </p>
-     <p>
+<p>
       Prepare for mediation by reviewing your documentation, identifying your primary concerns, and considering reasonable compromises. Bring decision-makers from both sides—for you, it's important to attend; for ANDREWS ISD, bring someone authorized to make binding agreements.
      </p>
-     <h2>
+<h2>
       Due Process Hearings with ANDREWS ISD
      </h2>
-     <p>
+<p>
       If
       <strong>
        ANDREWS ISD due process
       </strong>
       mediation fails or you choose not to mediate, a formal hearing before an impartial hearing officer follows. This resembles court proceedings, though it's typically less formal.
      </p>
-     <h3>
+<h3>
       What Happens at the Hearing
      </h3>
-     <p>
+<p>
       Both you and ANDREWS ISD present evidence, call witnesses, and make arguments before a hearing officer. The officer hears testimony from teachers, administrators, evaluators, and medical professionals. You present your perspective on why ANDREWS ISD's decisions were inappropriate.
      </p>
-     <p>
+<p>
       The hearing officer issues a written decision explaining findings and conclusions. This decision is binding on both parties unless appealed to civil court. ANDREWS ISD must implement the hearing officer's decision regarding your child's services.
      </p>
-     <h3>
+<h3>
       Hiring Representation
      </h3>
-     <p>
+<p>
       You can represent yourself or hire an attorney or education advocate. Many parents in ANDREWS ISD find that having professional representation strengthens their case, particularly in complex disputes. A
       <strong>
        special education attorney near ANDREWS
@@ -426,254 +433,254 @@
       </strong>
       can help prepare your case, gather evidence, and present arguments effectively.
      </p>
-     <p>
+<p>
       Ask prospective advocates or attorneys about experience with ANDREWS ISD, IDEA cases, and special education law in Texas. Some provide free initial consultations to evaluate your situation.
      </p>
-     <h2>
+<h2>
       Working with Special Education Advocates and Attorneys
      </h2>
-     <p>
+<p>
       Professional advocates and attorneys can significantly improve outcomes in
       <strong>
        ANDREWS ISD special education
       </strong>
       disputes. Understanding when and how to work with them helps you make informed decisions.
      </p>
-     <h3>
+<h3>
       When to Hire Professional Help
      </h3>
-     <p>
+<p>
       Consider hiring a
       <strong>
        special ed advocate ANDREWS
       </strong>
       or attorney if:
      </p>
-     <ul>
-      <li>
+<ul>
+<li>
        You disagree with ANDREWS ISD's evaluation of your child
       </li>
-      <li>
+<li>
        Your child is not progressing with the current IEP
       </li>
-      <li>
+<li>
        You believe ANDREWS ISD is denying FAPE
       </li>
-      <li>
+<li>
        The dispute involves complex legal issues
       </li>
-      <li>
+<li>
        You're pursuing due process with ANDREWS ISD
       </li>
-      <li>
+<li>
        You feel overwhelmed or unheard in meetings
       </li>
-     </ul>
-     <h3>
+</ul>
+<h3>
       Types of Professional Support
      </h3>
-     <p>
-      <strong>
+<p>
+<strong>
        Education advocates
       </strong>
       help navigate ANDREWS ISD processes, attend IEP meetings, review evaluations, and prepare complaints. They understand special education law but cannot practice law. Education advocates are often more affordable than attorneys.
      </p>
-     <p>
-      <strong>
+<p>
+<strong>
        Special education attorneys
       </strong>
       provide legal representation, file formal complaints, and represent you in due process hearings or court. An attorney's expertise is valuable in complex cases but comes at higher cost. Some offer representation on contingency or limited-scope assistance.
      </p>
-     <h2>
+<h2>
       Timeline and Important Deadlines for ANDREWS ISD Disputes
      </h2>
-     <p>
+<p>
       Special education dispute processes involve specific deadlines. Missing these can affect your rights, so careful attention to timelines is essential.
      </p>
-     <p>
-      <strong>
+<p>
+<strong>
        ANDREWS ISD complaint response:
       </strong>
       15 school days from filing
      </p>
-     <p>
-      <strong>
+<p>
+<strong>
        TEA complaint investigation:
       </strong>
       30 days from filing
      </p>
-     <p>
-      <strong>
+<p>
+<strong>
        Due process response meeting:
       </strong>
       10 days for ANDREWS ISD to provide written response; 30 days to hold resolution meeting
      </p>
-     <p>
-      <strong>
+<p>
+<strong>
        Due process hearing:
       </strong>
       Must occur within 45 days of complaint filing unless you and ANDREWS ISD agree to extend
      </p>
-     <p>
-      <strong>
+<p>
+<strong>
        Statute of limitations:
       </strong>
       You must file due process complaints within 2 years of when you knew or reasonably should have known of ANDREWS ISD's violation, unless state law permits longer periods.
      </p>
-     <h2>
+<h2>
       Key Contacts for ANDREWS ISD Special Education Disputes
      </h2>
-     <p>
+<p>
       Keep these ANDREWS ISD and Texas contacts for dispute resolution:
      </p>
-     <ul>
-      <li>
-       <strong>
+<ul>
+<li>
+<strong>
         ANDREWS ISD Special Education Department:
        </strong>
        Contact your campus or central office for complaint procedures and mediation requests
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         ANDREWS ISD Special Education Director:
        </strong>
        Handles formal complaints and appeals
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Texas Education Agency Special Education Division:
        </strong>
        File TEA complaints and request hearing officer listings
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Texas Special Education Ombudsman:
        </strong>
        Provides free assistance to parents navigating disputes with school districts
       </li>
-     </ul>
-     <h2>
+</ul>
+<h2>
       Practical Tips for Resolving ANDREWS ISD Disputes Successfully
      </h2>
-     <p>
+<p>
       Approach disputes with ANDREWS ISD strategically to improve outcomes:
      </p>
-     <ul>
-      <li>
-       <strong>
+<ul>
+<li>
+<strong>
         Document everything:
        </strong>
        Keep detailed records of meetings, communication, and your child's progress
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Maintain professionalism:
        </strong>
        Communicate respectfully even when frustrated—this preserves relationships and strengthens your credibility
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Request written responses:
        </strong>
        Ask ANDREWS ISD to provide decisions and explanations in writing
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Get independent evaluations:
        </strong>
        When questioning ANDREWS ISD's assessment, obtain independent evaluations to support your position
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Attend all meetings:
        </strong>
        Your presence and participation in IEP meetings is essential
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Bring support:
        </strong>
        Take an advocate, family member, or trusted friend to meetings for support and assistance taking notes
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Know your child's IEP:
        </strong>
        Review the IEP regularly and monitor whether ANDREWS ISD is implementing it
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Understand special education law:
        </strong>
        Familiarize yourself with basic IDEA and Texas Education Code principles
       </li>
-     </ul>
-     <h2>
+</ul>
+<h2>
       Conclusion: Advocating Effectively for Your Child in ANDREWS ISD
      </h2>
-     <p>
+<p>
       Disputes with ANDREWS ISD about your child's special education services can be stressful, but you have powerful tools and clear legal processes to resolve them. Whether through informal conversations, formal complaints, mediation, or due process hearings, parents in ANDREWS ISD have meaningful ways to advocate for appropriate services.
      </p>
-     <p>
+<p>
       Start with informal resolution when possible, but don't hesitate to pursue formal procedures if ANDREWS ISD isn't meeting your child's needs. The processes outlined in this guide exist to ensure that all students in ANDREWS ISD receive FAPE. Understanding your rights and knowing how to use these procedures empowers you to effectively advocate for your child's special education success.
      </p>
-     <p>
+<p>
       Remember that ANDREWS ISD staff generally want to serve students well. Most disagreements reflect different perspectives rather than intentional wrongdoing. Approach disputes with this mindset, remain solution-focused, and work toward outcomes that truly benefit your child's education.
      </p>
-    </div>
-    <!-- MODAL FOR AI SCAN -->
-    <div id="ai-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 1000; backdrop-filter: blur(4px);">
-     <div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
-      <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
-       <h3 class="text-xl font-serif">
+</div>
+<!-- MODAL FOR AI SCAN -->
+<div id="ai-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 1000; backdrop-filter: blur(4px);">
+<div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+<div class="p-6 bg-slate-900 text-white flex justify-between items-center">
+<h3 class="text-xl font-serif">
         ARD Rights Analysis
        </h3>
-       <button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
+<button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
         ×
        </button>
-      </div>
-      <div class="p-8" id="modal-body">
-       <div id="scan-form">
-        <p class="text-slate-600 mb-6">
+</div>
+<div class="p-8" id="modal-body">
+<div id="scan-form">
+<p class="text-slate-600 mb-6">
          Describe the situation your child is facing. Be as specific as possible regarding IEP violations or school actions.
         </p>
-        <div class="space-y-4">
-         <div>
-          <label class="block text-sm font-bold text-slate-700 mb-1">
+<div class="space-y-4">
+<div>
+<label class="block text-sm font-bold text-slate-700 mb-1">
            Total days suspended this year?
           </label>
-          <input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
-         </div>
-         <div>
-          <label class="block text-sm font-bold text-slate-700 mb-1">
+<input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-700 mb-1">
            What happened?
           </label>
-          <textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
-         </div>
-         <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
-          <span id="btn-text">
+<textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
+</div>
+<button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
+<span id="btn-text">
            Start Rights Scan
           </span>
-         </button>
-        </div>
-       </div>
-       <div class="hidden" id="scan-results">
-        <div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
-        </div>
-        <hr class="my-6"/>
-        <div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
+</button>
+</div>
+</div>
+<div class="hidden" id="scan-results">
+<div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
+</div>
+<hr class="my-6"/>
+<div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
          Disclaimer: This analysis is generated by AI based on Texas IDEA regulations and is for educational purposes only.
         </div>
-        <button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
+<button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
          Close Analysis
         </button>
-       </div>
-      </div>
-     </div>
-    </div>
-   </article>
-  </div>
-  <script>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<script>
    const apiKey = ""; 
 
     function openRightsScan() {
@@ -716,37 +723,37 @@
         }
     }
   </script>
-  <div id="ai-modal-overlay">
-   <div class="modal-content">
-    <div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
-     <h3 style="margin:0; font-family:'Lora',serif;">
+<div id="ai-modal-overlay">
+<div class="modal-content">
+<div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
+<h3 style="margin:0; font-family:'Lora',serif;">
       ARD Rights Analysis
      </h3>
-     <button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
+<button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
       ×
      </button>
-    </div>
-    <div id="modal-body" style="padding:30px;">
-     <div id="scan-form">
-      <p style="color:#475569; margin-bottom:20px;">
+</div>
+<div id="modal-body" style="padding:30px;">
+<div id="scan-form">
+<p style="color:#475569; margin-bottom:20px;">
        Describe the situation (e.g., suspension days, manifestation hearing outcome).
       </p>
-      <textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
-      <button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
+<textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
+<button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
        Start Rights Scan
       </button>
-     </div>
-     <div id="scan-results" style="display:none;">
-      <div id="analysis-content" style="color:#1e293b; line-height:1.6;">
-      </div>
-      <button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
+</div>
+<div id="scan-results" style="display:none;">
+<div id="analysis-content" style="color:#1e293b; line-height:1.6;">
+</div>
+<button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
        Close
       </button>
-     </div>
-    </div>
-   </div>
-  </div>
-  <script>
+</div>
+</div>
+</div>
+</div>
+<script>
    const apiKey = ""; 
     function openRightsScan() { document.getElementById('ai-modal-overlay').style.display='block'; }
     function closeRightsScan() { document.getElementById('ai-modal-overlay').style.display='none'; }
@@ -769,17 +776,48 @@
         finally { btn.innerText = "Start Rights Scan"; }
     }
   </script>
-  <footer class="site-footer">
-   <div class="footer-container">
-    <div class="footer-about">
-     <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
-     <p>
-      © 2026 Texas Special Education Resources. Not affiliated with the TEA.
-     </p>
-    </div>
-   </div>
-  </footer>
-  <script>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-about">
+<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+<p style="margin-top:.75rem;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+</div>
+<div class="footer-col">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/districts/index.html">Browse Districts</a></li>
+<li><a href="/resources/index.html">Parent Resources</a></li>
+<li><a href="/blog/index.html">Blog &amp; Articles</a></li>
+<li><a href="/about/index.html">About Us</a></li>
+<li><a href="/contact/index.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Popular Districts</h3>
+<ul>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+<li><a href="/districts/conroe-isd/index.html">Conroe ISD</a></li>
+<li><a href="/districts/index.html">View All Districts →</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Free Resources</h3>
+<ul>
+<li><a href="/resources/ard-checklist.pdf" target="_blank">ARD Meeting Checklist</a></li>
+<li><a href="/resources/evaluation-request-letter.pdf" target="_blank">Evaluation Request Letter</a></li>
+<li><a href="/resources/iep-goal-tracker.pdf" target="_blank">IEP Goal Tracker</a></li>
+<li><a href="/resources/parent-rights-guide.pdf" target="_blank">Parent Rights Guide</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+</div>
+</footer>
+<script>
    document.addEventListener('DOMContentLoaded', function() {
     var toggle = document.querySelector('.mobile-menu-toggle');
     var menu   = document.querySelector('.nav-menu');
@@ -788,5 +826,5 @@
     }
 });
   </script>
- </body>
+</body>
 </html>

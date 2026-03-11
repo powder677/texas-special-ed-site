@@ -1,573 +1,580 @@
 <!DOCTYPE html>
+
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
    Angleton ISD Special Education
   </title>
-  <link href="/style.css" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <style id="grievance-formatting">
-   /* ── DISCIPLINE & GRIEVANCE PATCH: Optimized for Mobile & CRO ── */
+<link href="/style.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com">
+</script>
+
+<style id="cro-core-formatting">
+        /* ── AUTOMATED CRO PATCH: Layout & Mobile Fixes ── */
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+        h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
         
-        h1 { font-size: clamp(1.8rem, 5vw, 2.2rem); margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; text-align: center; padding: 0 15px; }
-        
-        .layout-grid { max-width: 850px; margin: 20px auto; display: block; width: 100%; }
-        
-        .content-column { 
-            font-family: 'Source Sans 3', sans-serif; 
-            font-size: 17px; 
-            line-height: 1.75; 
-            color: #1a1a2e; 
-            background: #fff; 
-            padding: 40px 60px; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
-            border: 1px solid #e2e8f0; 
-            margin: 0 15px;
-        }
+        /* Core Layout - Single Column Optimized for Readability */
+        .layout-grid { max-width: 850px; margin: 30px auto; display: block; }
+        .content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
+        .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        .content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+        .content-column p { margin: 0 0 1.25rem; }
+        .content-column ul { padding-left: 20px; margin-bottom: 1.5rem; }
+        .content-column li { margin-bottom: 8px; }
 
-        .content-column h2 { font-family: 'Lora', serif; font-size: clamp(1.4rem, 4vw, 1.6rem); font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        /* Mobile Display & Padding Fixes */
+        @media (max-width: 950px) {
+            .content-column { padding: 20px !important; border: none !important; box-shadow: none !important; background: transparent !important; }
+            .nav-menu { display: none !important; }
+        }
         
-        /* Mobile Overrides */
-        @media (max-width: 768px) {
-            .content-column { 
-                padding: 30px 20px !important; 
-                margin: 0 !important; 
-                border-radius: 0 !important; 
-                border-left: none !important; 
-                border-right: none !important; 
-                box-shadow: none !important;
-            }
-            .ai-tool-banner { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
-            .integrated-cta { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
-        }
-
-        /* AI Tool Styling */
-        .ai-tool-banner { 
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); 
-            color: white; 
-            border-radius: 16px; 
-            padding: 40px; 
-            margin: 3rem 0; 
-            text-align: center; 
-            border: 1px solid #2a4382; 
-        }
-        .ai-tool-banner h3 { font-family: 'Lora', serif; font-size: clamp(1.5rem, 5vw, 1.8rem); color: #fff; margin: 0 0 10px; border:none; }
+        /* Protect Bot Banners from global style.css hijacking */
+        .banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+        .banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .banner-btn-gold { background: #d4af37; color: #0f172a !important; }
+        .banner-btn-blue { background: #1a56db; color: #fff !important; }
+        .banner-btn-blue:hover { background: #1e3a8a; color: #fff !important; }
         
-        .btn-gold { 
-            background: #d4af37; 
-            color: #0f172a !important; 
-            padding: 16px 32px; 
-            border-radius: 8px; 
-            font-weight: 800; 
-            text-decoration: none; 
-            display: inline-block; 
-            transition: 0.2s; 
-            border: none; 
-            cursor: pointer; 
-            width: auto;
-            max-width: 100%;
-        }
-        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-
+        /* Integrated Inline CTA Styles */
         .integrated-cta { margin: 3rem 0; border-radius: 12px; padding: 36px 28px; text-align: center; }
-        .integrated-cta.dark { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); color: #fff; border: 1px solid #991b1b; }
-        
-        /* Modal & Mobile Accessibility */
-        #ai-modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 10000; backdrop-filter: blur(4px); overflow-y: auto; }
-        .modal-content { 
-            background: white; 
-            max-width: 600px; 
-            width: 95%; 
-            margin: 20px auto; 
-            border-radius: 16px; 
-            overflow: hidden; 
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); 
-            font-family: sans-serif; 
-            position: relative;
-        }
-        @media (max-height: 600px) {
-            .modal-content { margin: 10px auto; }
-        }
-  </style>
- </head>
- <body>
-  <header class="site-header">
-   <nav aria-label="Main navigation" class="navbar" role="navigation">
-    <div class="nav-container">
-     <div class="nav-logo">
-      <a aria-label="Texas Special Ed Home" class="text-logo" href="/">
-       Texas
-       <em>
-        Special Ed
-       </em>
-      </a>
-     </div>
-     <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
-      <span class="hamburger">
-      </span>
-      <span class="hamburger">
-      </span>
-      <span class="hamburger">
-      </span>
-     </button>
-     <ul class="nav-menu">
-      <li class="nav-item">
-       <a class="nav-link" href="/">
-        Home
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="/districts/index.html">
-        Districts
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="/resources/index.html">
-        Resources
-       </a>
-      </li>
-      <li class="nav-item nav-cta">
-       <a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;">
-        Get Your Letter — $25
-       </a>
-      </li>
-     </ul>
-    </div>
-   </nav>
-  </header>
-  <div class="layout-grid">
-   <article class="content-column">
-    <div class="container">
-     <h1>
+        .integrated-cta.light { background: #fff; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); }
+        .integrated-cta.dark { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #fff; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); border: 1px solid #1e40af; }
+        </style><style>
+/* ── BASE STYLES FOR PREVIEW ACCURACY ── */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.site-header { background: #fff; padding: 15px 20px; border-bottom: 1px solid #ddd; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342;}
+
+/* ── 70/30 DESKTOP GRID & STICKY SIDEBAR ── */
+.layout-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-top: 40px; align-items: start; }
+@media (min-width: 1024px) { .layout-grid { grid-template-columns: 1fr 380px; } }
+.sidebar-column { position: sticky; top: 100px; z-index: 10; } /* Clears tight navbar */
+.content-column { min-width: 0; font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column p { margin: 0 0 1.25rem; }
+
+/* ── SCANNABLE BLOCKS ── */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2 { border-top: none; margin-top: 0; padding-top: 0; font-size: 1.4rem; color: #166534; }
+.action-steps ol { padding-left: 1.4rem; margin: 0; font-size: 17px; }
+.action-steps li { margin-bottom: 14px; line-height: 1.65; color: #166534;}
+.action-steps strong { color: #14532d; }
+
+.iep-list { list-style: none; padding: 0; margin: 1.5rem 0 2.5rem; counter-reset: iep; }
+.iep-list li { counter-increment: iep; display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid #e8f0fe; font-size: 17px; }
+.iep-list li:last-child { border-bottom: none; }
+.iep-list li::before { content: counter(iep); background: #1a56db; color: #fff; font-weight: 700; font-size: 14px; border-radius: 50%; min-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.iep-list strong { display: block; margin-bottom: 6px; color: #0f172a; font-size: 1.1rem; }
+
+.section-divider { text-align: center; color: #9ab0cc; font-size: 24px; margin: 3rem 0; letter-spacing: 0.4em; }
+
+/* ── INLINE CTAS ── */
+.inline-cta { background: #f8fbff; border: 1px solid #dbe8fb; border-left: 4px solid #1a56db; border-radius: 6px; padding: 24px; margin: 2.5rem 0; display: flex; gap: 16px; align-items: flex-start; }
+.inline-cta.gold { background: #fdfaf5; border-color: #d6cbbf; border-left-color: #b8963a; }
+.inline-cta .cta-icon { font-size: 2.2rem; line-height: 1; flex-shrink: 0; }
+.inline-cta h3 { margin: 0 0 8px 0; font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; }
+.inline-cta p { margin: 0 0 16px 0; font-size: 16px; color: #475569; }
+.btn-primary { background: #1a56db; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 15px; display: inline-block; transition: background 0.2s; }
+.btn-primary:hover { background: #1e3a8a; color: #fff; }
+.btn-primary.gold-btn { background: #1a1410; color: #b8963a; }
+.btn-primary.gold-btn:hover { background: #b8963a; color: #1a1410; }
+
+/* ── STACKED OFFERS ── */
+.offers-container { display: flex; flex-direction: column; gap: 24px; margin-top: 50px; }
+.sales-card { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); padding: 36px; border-radius: 12px; text-align: center; color: white; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); }
+.sales-card.gold-theme { background: linear-gradient(135deg, #1c1917 0%, #44403c 100%); }
+.sales-card .badge { background: #d4af37; color: #0f172a; padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
+.sales-card h3 { margin: 20px 0 12px; color: #ffffff; font-size: 1.6rem; font-family: 'Lora', serif; }
+.sales-card p { color: #e2e8f0; margin: 0 auto 24px; font-size: 1.05rem; line-height: 1.6; max-width: 90%;}
+.sales-card a { background: #d4af37; color: #0f172a; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; display: inline-block; transition: 0.2s; }
+.sales-card a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+</style></head>
+<body>
+<header class="site-header">
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<div class="nav-logo">
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+Texas <em>Special Ed</em>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item dropdown">
+<a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
+<ul class="dropdown-menu">
+<li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
+<li class="dropdown-divider"></li>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+<li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
+<li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
+<li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
+<li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
+<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+<li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
+<li class="dropdown-divider"></li>
+<li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="layout-grid">
+<article class="content-column">
+<div class="container">
+<h1>
       Complete Guide to Filing Complaints and Resolving Disputes with ANGLETON ISD Special Education
      </h1>
-     <p>
+<p>
       Parents of children with special needs in ANGLETON ISD deserve clear answers about their rights and the steps available to resolve disagreements with the school district. When concerns arise about your child's special education services, knowing how to navigate the complaint and dispute resolution process can make a significant difference in ensuring your child receives appropriate services under the Individuals with Disabilities Education Act (IDEA) and Texas state law.
      </p>
-     <p>
+<p>
       This guide walks ANGLETON ISD families through each available option for addressing special education concerns, from informal resolution to due process hearings, helping you understand when to use each approach and what to expect.
      </p>
-     <div class="ai-tool-banner">
-      <span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+<div class="ai-tool-banner">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
        Live AI Tool
       </span>
-      <h3>
+<h3>
        Free ARD Rights Scan
       </h3>
-      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+<p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
        Wondering if the school violated your child's rights? Answer a few questions for an instant analysis based on Texas law.
       </p>
-      <button class="btn-gold" onclick="openRightsScan()">
+<button class="btn-gold" onclick="openRightsScan()">
        Run My Free ARD Scan →
       </button>
-     </div>
-     <!-- AI Tool Section -->
-     <h2>
+</div>
+<!-- AI Tool Section -->
+<h2>
       Understanding Your Rights as an ANGLETON ISD Parent
      </h2>
-     <p>
+<p>
       Before filing a complaint or pursuing dispute resolution with ANGLETON ISD, it's essential to understand that federal and state law grant you significant protections. Under IDEA and the Texas Education Code, parents in ANGLETON ISD have the right to be involved in all decisions regarding their child's special education, to receive appropriate services, and to challenge decisions they believe are incorrect.
      </p>
-     <p>
+<p>
       ANGLETON ISD must provide parents with written notice of their procedural safeguards, including the right to file complaints, request mediation, and request a due process hearing. If you haven't received this notice, you can request it from your school or the ANGLETON ISD Special Education Department.
      </p>
-     <h3>
+<h3>
       Key Rights You Should Know
      </h3>
-     <ul>
-      <li>
-       <strong>
+<ul>
+<li>
+<strong>
         Right to participate:
        </strong>
        You must be included in all meetings regarding your child's evaluation, placement, and IEP development
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Right to independent evaluation:
        </strong>
        If you disagree with ANGLETON ISD's evaluation, you may request an independent educational evaluation (IEE) at district expense under certain circumstances
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Right to prior written notice:
        </strong>
        ANGLETON ISD must notify you before proposing or refusing to implement changes to your child's special education program
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Right to due process:
        </strong>
        You can request a hearing to challenge ANGLETON ISD decisions about your child's identification, evaluation, placement, or IEP
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Right to representation:
        </strong>
        You may bring an advocate, attorney, or other representative to meetings with ANGLETON ISD
       </li>
-     </ul>
-     <h2>
+</ul>
+<h2>
       Step One: Informal Resolution with ANGLETON ISD
      </h2>
-     <p>
+<p>
       The most direct and often most effective first step when you have concerns about your child's special education in ANGLETON ISD is to communicate directly with your child's teacher, special education coordinator, or campus administrator. Many misunderstandings can be resolved quickly through open dialogue before pursuing formal complaints.
      </p>
-     <p>
+<p>
       Document your concerns in writing, including specific dates, incidents, and what services or changes you're requesting. Send this communication via email to create a paper trail, and request a meeting with the relevant ANGLETON ISD staff members within one to two weeks.
      </p>
-     <h3>
+<h3>
       Tips for Effective Informal Communication
      </h3>
-     <ul>
-      <li>
+<ul>
+<li>
        Be specific about the problem and what you're requesting ANGLETON ISD to do
       </li>
-      <li>
+<li>
        Remain calm and professional in all written and verbal communication
       </li>
-      <li>
+<li>
        Keep copies of all emails, letters, and notes about conversations
       </li>
-      <li>
+<li>
        Request a response timeline from ANGLETON ISD (typically 5-10 business days)
       </li>
-      <li>
+<li>
        Follow up in writing if you discuss concerns verbally with ANGLETON ISD staff
       </li>
-     </ul>
-     <h2>
+</ul>
+<h2>
       Filing a State Complaint with TEA Against ANGLETON ISD
      </h2>
-     <p>
+<p>
       If informal resolution doesn't work, parents in ANGLETON ISD can file a complaint with the Texas Education Agency (TEA), which oversees special education compliance. An ANGLETON ISD special education complaint to TEA is appropriate when you believe the district has violated IDEA, Section 504, or state special education law.
      </p>
-     <p>
+<p>
       This process is free and does not require an attorney. The complaint is investigated by TEA, which has authority to issue findings and require ANGLETON ISD to correct violations. However, TEA cannot award compensatory services or monetary damages—those remedies require due process.
      </p>
-     <h3>
+<h3>
       How to File an ANGLETON ISD Special Education Complaint with TEA
      </h3>
-     <ol>
-      <li>
-       <strong>
+<ol>
+<li>
+<strong>
         Obtain the complaint form:
        </strong>
        Download the formal complaint form from the TEA website or request it from the ANGLETON ISD Special Education Department
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Document the violation:
        </strong>
        Clearly describe what you believe ANGLETON ISD did wrong, including dates, names of staff involved, and how it affected your child
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Include supporting evidence:
        </strong>
        Attach emails, IEP documents, progress reports, or other evidence supporting your complaint
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Submit to TEA:
        </strong>
        Mail or email your complaint to the Texas Education Agency within
        <strong>
         one year of the alleged violation
        </strong>
-      </li>
-      <li>
-       <strong>
+</li>
+<li>
+<strong>
         Expect investigation:
        </strong>
        TEA typically investigates within 30-60 days and may request additional information from both you and ANGLETON ISD
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Receive decision:
        </strong>
        TEA issues written findings and required corrective actions, which ANGLETON ISD must implement
       </li>
-     </ol>
-     <p>
-      <strong>
+</ol>
+<p>
+<strong>
        Timeline:
       </strong>
       The entire TEA complaint investigation typically takes 30-60 days, making it faster than due process but potentially slower than informal resolution.
      </p>
-     <h2>
+<h2>
       ANGLETON ISD Due Process: What Parents Need to Know
      </h2>
-     <div class="ai-tool-banner">
-      <span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+<div class="ai-tool-banner">
+<span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
        Official Request
       </span>
-      <h3>
+<h3>
        Show the ISD You Mean Business
       </h3>
-      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+<p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
        A verbal request has no legal weight. A formal Level 1 Grievance letter starts the official district clock.
       </p>
-      <a class="btn-gold" href="/resources/Iep-letter.html">
+<a class="btn-gold" href="/resources/Iep-letter.html">
        Get Your Letter — $25 →
       </a>
-     </div>
-     <p>
+</div>
+<p>
       Due process is a formal hearing before an impartial hearing officer when you have a significant dispute with ANGLETON ISD regarding your child's special education. Unlike a TEA complaint, due process can result in compensatory services or monetary awards, making it appropriate for more serious disagreements.
      </p>
-     <p>
+<p>
       Common reasons ANGLETON ISD parents pursue due process include disputes over whether their child qualifies for special education, disagreement about appropriate placement or services, or claims that the district has failed to provide services outlined in the IEP.
      </p>
-     <h3>
+<h3>
       Important Due Process Rules for ANGLETON ISD Families
      </h3>
-     <ul>
-      <li>
+<ul>
+<li>
        You must file a due process complaint within
        <strong>
         two years
        </strong>
        of when ANGLETON ISD knew or should have known about the problem
       </li>
-      <li>
+<li>
        ANGLETON ISD has the right to deny your complaint if it's unclear or fails to identify specific problems
       </li>
-      <li>
+<li>
        Before hearing, you must participate in a resolution session where ANGLETON ISD has 15 days to try resolving your concerns
       </li>
-      <li>
+<li>
        The hearing itself may take several days and requires formal evidence presentation
       </li>
-      <li>
+<li>
        Decisions from ANGLETON ISD due process hearings can be appealed to state review
       </li>
-     </ul>
-     <h2>
+</ul>
+<h2>
       ANGLETON ISD Mediation as a Dispute Resolution Option
      </h2>
-     <p>
+<p>
       Mediation is a voluntary, confidential process where a neutral third party helps you and ANGLETON ISD reach agreement without a formal hearing. Many disputes with ANGLETON ISD can be resolved through mediation, which is often faster and less adversarial than due process.
      </p>
-     <p>
+<p>
       Importantly, requesting mediation does not prevent you from later filing a due process complaint with ANGLETON ISD. Parents in ANGLETON ISD who want to explore settlement options should seriously consider mediation before investing time and resources in a formal hearing.
      </p>
-     <h3>
+<h3>
       The ANGLETON ISD Mediation Process
      </h3>
-     <ol>
-      <li>
-       <strong>
+<ol>
+<li>
+<strong>
         Request mediation:
        </strong>
        Contact ANGLETON ISD's Special Education Department and ask to request mediation services
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Select mediator:
        </strong>
        TEA provides neutral mediators trained in special education disputes at no cost to ANGLETON ISD parents
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Schedule session:
        </strong>
        Mediation typically occurs within 10-15 days of request
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Attend meeting:
        </strong>
        Both you and ANGLETON ISD representatives attend, along with the mediator
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Reach agreement:
        </strong>
        If successful, you and ANGLETON ISD sign a binding written agreement
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         If unsuccessful:
        </strong>
        You retain all rights to file due process complaints against ANGLETON ISD
       </li>
-     </ol>
-     <p>
-      <strong>
+</ol>
+<p>
+<strong>
        Cost:
       </strong>
       Mediation is free for ANGLETON ISD parents and families.
      </p>
-     <h2>
+<h2>
       Working with Special Education Advocates and Attorneys
      </h2>
-     <p>
+<p>
       Parents of children with special needs in the ANGLETON area may benefit from professional representation. Special education advocates understand IDEA and Texas law and can help you navigate disputes with ANGLETON ISD. Attorneys specializing in special education law can represent you in mediation, due process hearings, and appeals.
      </p>
-     <p>
+<p>
       While hiring a special education attorney near ANGLETON or an advocate is not required, many ANGLETON ISD parents find that professional representation strengthens their position and helps ensure they understand all available options.
      </p>
-     <h3>
+<h3>
       Finding a Special Ed Advocate or Attorney Near ANGLETON
      </h3>
-     <ul>
-      <li>
+<ul>
+<li>
        Contact the Texas Project FIRST, which provides free advocacy assistance to Texas families
       </li>
-      <li>
+<li>
        Ask ANGLETON ISD for a list of special education attorneys and advocates in your area
       </li>
-      <li>
+<li>
        Contact the State Bar of Texas for referrals to special education attorneys near ANGLETON
       </li>
-      <li>
+<li>
        Interview potential advocates or attorneys about their experience with disputes similar to yours
       </li>
-      <li>
+<li>
        Understand fee arrangements before hiring—some work hourly, others work on contingency, and some offer limited consultation for set fees
       </li>
-     </ul>
-     <h2>
+</ul>
+<h2>
       Specific Dispute Scenarios: How to Respond
      </h2>
-     <h3>
+<h3>
       Disagreement About Special Education Eligibility
      </h3>
-     <p>
+<p>
       If you believe your child should qualify for special education services but ANGLETON ISD has denied eligibility, request an independent educational evaluation at district expense. Document how your child's suspected disability affects learning. If ANGLETON ISD refuses the IEE or you disagree with their evaluation even with an IEE, consider mediation or due process with ANGLETON ISD.
      </p>
-     <h3>
+<h3>
       Concerns About IEP Implementation
      </h3>
-     <p>
+<p>
       When ANGLETON ISD is not implementing services documented in your child's IEP, first document specific instances with dates and missing services. Request an immediate meeting with the special education coordinator and campus administrator. If the problem continues, file a TEA complaint or request due process, focusing on the gap between the IEP and actual services provided.
      </p>
-     <h3>
+<h3>
       Disagreement About Placement or Program
      </h3>
-     <p>
+<p>
       If you believe ANGLETON ISD is placing your child in an inappropriate setting or denying access to the general education curriculum, request a meeting to discuss your concerns. Request that ANGLETON ISD convene an IEP meeting to discuss alternatives. If ANGLETON ISD refuses to consider your input, pursue mediation or due process against ANGLETON ISD.
      </p>
-     <h2>
+<h2>
       Timeline and Important Deadlines for ANGLETON ISD Disputes
      </h2>
-     <p>
+<p>
       Understanding critical deadlines is essential when pursuing any complaint or dispute resolution option with ANGLETON ISD.
      </p>
-     <ul>
-      <li>
-       <strong>
+<ul>
+<li>
+<strong>
         TEA Complaint:
        </strong>
        Must be filed within one year of when you knew or should have known of the violation
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Due Process Complaint:
        </strong>
        Must be filed within two years of when ANGLETON ISD knew or should have known of the problem
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         ANGLETON ISD Response to Complaint:
        </strong>
        District has 10 days to respond to due process complaint
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Resolution Session:
        </strong>
        Must occur within 15 days of ANGLETON ISD receiving due process complaint
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Due Process Hearing:
        </strong>
        Hearing must occur within 45 days unless parties agree to extend timeline
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Hearing Decision:
        </strong>
        Hearing officer must issue decision within 30 days of hearing conclusion
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         State Review Appeal:
        </strong>
        Must be filed within 30 days of hearing decision
       </li>
-     </ul>
-     <h2>
+</ul>
+<h2>
       Moving Forward: Your Next Steps
      </h2>
-     <p>
+<p>
       If you're facing a dispute with ANGLETON ISD special education services, start by gathering documentation of your concerns and communicating directly with school staff. In many cases, informal resolution at the campus level resolves issues quickly.
      </p>
-     <p>
+<p>
       If informal approaches don't work, decide whether you're pursuing a TEA complaint (investigating violations of law), mediation (resolving disagreement), or due process (seeking compensatory services). Consider consulting with a special ed advocate or attorney near ANGLETON to understand which option best fits your situation.
      </p>
-     <p>
+<p>
       Remember that ANGLETON ISD parents have strong legal rights and multiple pathways to resolve disputes. With clear documentation, professional support when needed, and persistence, you can advocate effectively for your child's special education services.
      </p>
-    </div>
-    <!-- MODAL FOR AI SCAN -->
-    <div id="ai-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 1000; backdrop-filter: blur(4px);">
-     <div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
-      <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
-       <h3 class="text-xl font-serif">
+</div>
+<!-- MODAL FOR AI SCAN -->
+<div id="ai-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 1000; backdrop-filter: blur(4px);">
+<div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+<div class="p-6 bg-slate-900 text-white flex justify-between items-center">
+<h3 class="text-xl font-serif">
         ARD Rights Analysis
        </h3>
-       <button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
+<button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
         ×
        </button>
-      </div>
-      <div class="p-8" id="modal-body">
-       <div id="scan-form">
-        <p class="text-slate-600 mb-6">
+</div>
+<div class="p-8" id="modal-body">
+<div id="scan-form">
+<p class="text-slate-600 mb-6">
          Describe the situation your child is facing. Be as specific as possible regarding IEP violations or school actions.
         </p>
-        <div class="space-y-4">
-         <div>
-          <label class="block text-sm font-bold text-slate-700 mb-1">
+<div class="space-y-4">
+<div>
+<label class="block text-sm font-bold text-slate-700 mb-1">
            Total days suspended this year?
           </label>
-          <input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
-         </div>
-         <div>
-          <label class="block text-sm font-bold text-slate-700 mb-1">
+<input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-700 mb-1">
            What happened?
           </label>
-          <textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
-         </div>
-         <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
-          <span id="btn-text">
+<textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
+</div>
+<button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
+<span id="btn-text">
            Start Rights Scan
           </span>
-         </button>
-        </div>
-       </div>
-       <div class="hidden" id="scan-results">
-        <div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
-        </div>
-        <hr class="my-6"/>
-        <div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
+</button>
+</div>
+</div>
+<div class="hidden" id="scan-results">
+<div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
+</div>
+<hr class="my-6"/>
+<div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
          Disclaimer: This analysis is generated by AI based on Texas IDEA regulations and is for educational purposes only.
         </div>
-        <button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
+<button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
          Close Analysis
         </button>
-       </div>
-      </div>
-     </div>
-    </div>
-   </article>
-  </div>
-  <script>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<script>
    const apiKey = ""; 
 
     function openRightsScan() {
@@ -610,37 +617,37 @@
         }
     }
   </script>
-  <div id="ai-modal-overlay">
-   <div class="modal-content">
-    <div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
-     <h3 style="margin:0; font-family:'Lora',serif;">
+<div id="ai-modal-overlay">
+<div class="modal-content">
+<div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
+<h3 style="margin:0; font-family:'Lora',serif;">
       ARD Rights Analysis
      </h3>
-     <button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
+<button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
       ×
      </button>
-    </div>
-    <div id="modal-body" style="padding:30px;">
-     <div id="scan-form">
-      <p style="color:#475569; margin-bottom:20px;">
+</div>
+<div id="modal-body" style="padding:30px;">
+<div id="scan-form">
+<p style="color:#475569; margin-bottom:20px;">
        Describe the situation (e.g., suspension days, manifestation hearing outcome).
       </p>
-      <textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
-      <button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
+<textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
+<button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
        Start Rights Scan
       </button>
-     </div>
-     <div id="scan-results" style="display:none;">
-      <div id="analysis-content" style="color:#1e293b; line-height:1.6;">
-      </div>
-      <button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
+</div>
+<div id="scan-results" style="display:none;">
+<div id="analysis-content" style="color:#1e293b; line-height:1.6;">
+</div>
+<button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
        Close
       </button>
-     </div>
-    </div>
-   </div>
-  </div>
-  <script>
+</div>
+</div>
+</div>
+</div>
+<script>
    const apiKey = ""; 
     function openRightsScan() { document.getElementById('ai-modal-overlay').style.display='block'; }
     function closeRightsScan() { document.getElementById('ai-modal-overlay').style.display='none'; }
@@ -663,17 +670,48 @@
         finally { btn.innerText = "Start Rights Scan"; }
     }
   </script>
-  <footer class="site-footer">
-   <div class="footer-container">
-    <div class="footer-about">
-     <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
-     <p>
-      © 2026 Texas Special Education Resources. Not affiliated with the TEA.
-     </p>
-    </div>
-   </div>
-  </footer>
-  <script>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-about">
+<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+<p style="margin-top:.75rem;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+</div>
+<div class="footer-col">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/districts/index.html">Browse Districts</a></li>
+<li><a href="/resources/index.html">Parent Resources</a></li>
+<li><a href="/blog/index.html">Blog &amp; Articles</a></li>
+<li><a href="/about/index.html">About Us</a></li>
+<li><a href="/contact/index.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Popular Districts</h3>
+<ul>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+<li><a href="/districts/conroe-isd/index.html">Conroe ISD</a></li>
+<li><a href="/districts/index.html">View All Districts →</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Free Resources</h3>
+<ul>
+<li><a href="/resources/ard-checklist.pdf" target="_blank">ARD Meeting Checklist</a></li>
+<li><a href="/resources/evaluation-request-letter.pdf" target="_blank">Evaluation Request Letter</a></li>
+<li><a href="/resources/iep-goal-tracker.pdf" target="_blank">IEP Goal Tracker</a></li>
+<li><a href="/resources/parent-rights-guide.pdf" target="_blank">Parent Rights Guide</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+</div>
+</footer>
+<script>
    document.addEventListener('DOMContentLoaded', function() {
     var toggle = document.querySelector('.mobile-menu-toggle');
     var menu   = document.querySelector('.nav-menu');
@@ -682,5 +720,5 @@
     }
 });
   </script>
- </body>
+</body>
 </html>

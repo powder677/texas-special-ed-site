@@ -1,503 +1,510 @@
 <!DOCTYPE html>
+
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
    Anna ISD Special Education
   </title>
-  <link href="/style.css" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <style id="grievance-formatting">
-   /* ── DISCIPLINE & GRIEVANCE PATCH: Optimized for Mobile & CRO ── */
+<link href="/style.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com">
+</script>
+
+<style id="cro-core-formatting">
+        /* ── AUTOMATED CRO PATCH: Layout & Mobile Fixes ── */
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+        h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
         
-        h1 { font-size: clamp(1.8rem, 5vw, 2.2rem); margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; text-align: center; padding: 0 15px; }
-        
-        .layout-grid { max-width: 850px; margin: 20px auto; display: block; width: 100%; }
-        
-        .content-column { 
-            font-family: 'Source Sans 3', sans-serif; 
-            font-size: 17px; 
-            line-height: 1.75; 
-            color: #1a1a2e; 
-            background: #fff; 
-            padding: 40px 60px; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
-            border: 1px solid #e2e8f0; 
-            margin: 0 15px;
-        }
+        /* Core Layout - Single Column Optimized for Readability */
+        .layout-grid { max-width: 850px; margin: 30px auto; display: block; }
+        .content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
+        .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        .content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+        .content-column p { margin: 0 0 1.25rem; }
+        .content-column ul { padding-left: 20px; margin-bottom: 1.5rem; }
+        .content-column li { margin-bottom: 8px; }
 
-        .content-column h2 { font-family: 'Lora', serif; font-size: clamp(1.4rem, 4vw, 1.6rem); font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        /* Mobile Display & Padding Fixes */
+        @media (max-width: 950px) {
+            .content-column { padding: 20px !important; border: none !important; box-shadow: none !important; background: transparent !important; }
+            .nav-menu { display: none !important; }
+        }
         
-        /* Mobile Overrides */
-        @media (max-width: 768px) {
-            .content-column { 
-                padding: 30px 20px !important; 
-                margin: 0 !important; 
-                border-radius: 0 !important; 
-                border-left: none !important; 
-                border-right: none !important; 
-                box-shadow: none !important;
-            }
-            .ai-tool-banner { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
-            .integrated-cta { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
-        }
-
-        /* AI Tool Styling */
-        .ai-tool-banner { 
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); 
-            color: white; 
-            border-radius: 16px; 
-            padding: 40px; 
-            margin: 3rem 0; 
-            text-align: center; 
-            border: 1px solid #2a4382; 
-        }
-        .ai-tool-banner h3 { font-family: 'Lora', serif; font-size: clamp(1.5rem, 5vw, 1.8rem); color: #fff; margin: 0 0 10px; border:none; }
+        /* Protect Bot Banners from global style.css hijacking */
+        .banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+        .banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .banner-btn-gold { background: #d4af37; color: #0f172a !important; }
+        .banner-btn-blue { background: #1a56db; color: #fff !important; }
+        .banner-btn-blue:hover { background: #1e3a8a; color: #fff !important; }
         
-        .btn-gold { 
-            background: #d4af37; 
-            color: #0f172a !important; 
-            padding: 16px 32px; 
-            border-radius: 8px; 
-            font-weight: 800; 
-            text-decoration: none; 
-            display: inline-block; 
-            transition: 0.2s; 
-            border: none; 
-            cursor: pointer; 
-            width: auto;
-            max-width: 100%;
-        }
-        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-
+        /* Integrated Inline CTA Styles */
         .integrated-cta { margin: 3rem 0; border-radius: 12px; padding: 36px 28px; text-align: center; }
-        .integrated-cta.dark { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); color: #fff; border: 1px solid #991b1b; }
-        
-        /* Modal & Mobile Accessibility */
-        #ai-modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 10000; backdrop-filter: blur(4px); overflow-y: auto; }
-        .modal-content { 
-            background: white; 
-            max-width: 600px; 
-            width: 95%; 
-            margin: 20px auto; 
-            border-radius: 16px; 
-            overflow: hidden; 
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); 
-            font-family: sans-serif; 
-            position: relative;
-        }
-        @media (max-height: 600px) {
-            .modal-content { margin: 10px auto; }
-        }
-  </style>
- </head>
- <body>
-  <header class="site-header">
-   <nav aria-label="Main navigation" class="navbar" role="navigation">
-    <div class="nav-container">
-     <div class="nav-logo">
-      <a aria-label="Texas Special Ed Home" class="text-logo" href="/">
-       Texas
-       <em>
-        Special Ed
-       </em>
-      </a>
-     </div>
-     <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
-      <span class="hamburger">
-      </span>
-      <span class="hamburger">
-      </span>
-      <span class="hamburger">
-      </span>
-     </button>
-     <ul class="nav-menu">
-      <li class="nav-item">
-       <a class="nav-link" href="/">
-        Home
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="/districts/index.html">
-        Districts
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="/resources/index.html">
-        Resources
-       </a>
-      </li>
-      <li class="nav-item nav-cta">
-       <a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;">
-        Get Your Letter — $25
-       </a>
-      </li>
-     </ul>
-    </div>
-   </nav>
-  </header>
-  <div class="layout-grid">
-   <article class="content-column">
-    <div class="container">
-     <h1>
+        .integrated-cta.light { background: #fff; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); }
+        .integrated-cta.dark { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #fff; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); border: 1px solid #1e40af; }
+        </style><style>
+/* ── BASE STYLES FOR PREVIEW ACCURACY ── */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.site-header { background: #fff; padding: 15px 20px; border-bottom: 1px solid #ddd; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342;}
+
+/* ── 70/30 DESKTOP GRID & STICKY SIDEBAR ── */
+.layout-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-top: 40px; align-items: start; }
+@media (min-width: 1024px) { .layout-grid { grid-template-columns: 1fr 380px; } }
+.sidebar-column { position: sticky; top: 100px; z-index: 10; } /* Clears tight navbar */
+.content-column { min-width: 0; font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column p { margin: 0 0 1.25rem; }
+
+/* ── SCANNABLE BLOCKS ── */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2 { border-top: none; margin-top: 0; padding-top: 0; font-size: 1.4rem; color: #166534; }
+.action-steps ol { padding-left: 1.4rem; margin: 0; font-size: 17px; }
+.action-steps li { margin-bottom: 14px; line-height: 1.65; color: #166534;}
+.action-steps strong { color: #14532d; }
+
+.iep-list { list-style: none; padding: 0; margin: 1.5rem 0 2.5rem; counter-reset: iep; }
+.iep-list li { counter-increment: iep; display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid #e8f0fe; font-size: 17px; }
+.iep-list li:last-child { border-bottom: none; }
+.iep-list li::before { content: counter(iep); background: #1a56db; color: #fff; font-weight: 700; font-size: 14px; border-radius: 50%; min-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.iep-list strong { display: block; margin-bottom: 6px; color: #0f172a; font-size: 1.1rem; }
+
+.section-divider { text-align: center; color: #9ab0cc; font-size: 24px; margin: 3rem 0; letter-spacing: 0.4em; }
+
+/* ── INLINE CTAS ── */
+.inline-cta { background: #f8fbff; border: 1px solid #dbe8fb; border-left: 4px solid #1a56db; border-radius: 6px; padding: 24px; margin: 2.5rem 0; display: flex; gap: 16px; align-items: flex-start; }
+.inline-cta.gold { background: #fdfaf5; border-color: #d6cbbf; border-left-color: #b8963a; }
+.inline-cta .cta-icon { font-size: 2.2rem; line-height: 1; flex-shrink: 0; }
+.inline-cta h3 { margin: 0 0 8px 0; font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; }
+.inline-cta p { margin: 0 0 16px 0; font-size: 16px; color: #475569; }
+.btn-primary { background: #1a56db; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 15px; display: inline-block; transition: background 0.2s; }
+.btn-primary:hover { background: #1e3a8a; color: #fff; }
+.btn-primary.gold-btn { background: #1a1410; color: #b8963a; }
+.btn-primary.gold-btn:hover { background: #b8963a; color: #1a1410; }
+
+/* ── STACKED OFFERS ── */
+.offers-container { display: flex; flex-direction: column; gap: 24px; margin-top: 50px; }
+.sales-card { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); padding: 36px; border-radius: 12px; text-align: center; color: white; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); }
+.sales-card.gold-theme { background: linear-gradient(135deg, #1c1917 0%, #44403c 100%); }
+.sales-card .badge { background: #d4af37; color: #0f172a; padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
+.sales-card h3 { margin: 20px 0 12px; color: #ffffff; font-size: 1.6rem; font-family: 'Lora', serif; }
+.sales-card p { color: #e2e8f0; margin: 0 auto 24px; font-size: 1.05rem; line-height: 1.6; max-width: 90%;}
+.sales-card a { background: #d4af37; color: #0f172a; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; display: inline-block; transition: 0.2s; }
+.sales-card a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+</style></head>
+<body>
+<header class="site-header">
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<div class="nav-logo">
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+Texas <em>Special Ed</em>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item dropdown">
+<a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
+<ul class="dropdown-menu">
+<li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
+<li class="dropdown-divider"></li>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+<li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
+<li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
+<li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
+<li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
+<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+<li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
+<li class="dropdown-divider"></li>
+<li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="layout-grid">
+<article class="content-column">
+<div class="container">
+<h1>
       Complete Guide to Filing Complaints and Resolving Disputes with ANNA ISD Special Education
      </h1>
-     <p>
+<p>
       Parents of students with special needs in ANNA ISD deserve clear answers about their rights and options when disagreements arise. Whether you're concerned about your child's Individualized Education Program (IEP), placement decisions, or services, understanding how to file complaints and resolve disputes can help you advocate effectively for your child's education.
      </p>
-     <p>
+<p>
       This guide walks you through every step of the ANNA ISD complaint process, from informal resolution to formal hearings, so you can navigate the system with confidence.
      </p>
-     <div class="ai-tool-banner">
-      <span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+<div class="ai-tool-banner">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
        Live AI Tool
       </span>
-      <h3>
+<h3>
        Free ARD Rights Scan
       </h3>
-      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+<p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
        Wondering if the school violated your child's rights? Answer a few questions for an instant analysis based on Texas law.
       </p>
-      <button class="btn-gold" onclick="openRightsScan()">
+<button class="btn-gold" onclick="openRightsScan()">
        Run My Free ARD Scan →
       </button>
-     </div>
-     <!-- AI Tool Section -->
-     <h2>
+</div>
+<!-- AI Tool Section -->
+<h2>
       Understanding Your Rights in ANNA ISD Special Education
      </h2>
-     <p>
+<p>
       As a parent in ANNA ISD, you have fundamental rights under federal law to participate in decisions about your child's special education services. These protections come from the Individuals with Disabilities Education Act (IDEA) and Section 504 of the Rehabilitation Act.
      </p>
-     <p>
+<p>
       ANNA ISD is required to provide your child with a free, appropriate public education (FAPE) in the least restrictive environment. When you believe the district isn't meeting these obligations, you have multiple pathways to address your concerns—from simple conversations to formal hearings.
      </p>
-     <p>
+<p>
       Understanding these rights helps ANNA ISD parents know when to escalate concerns and what documentation to gather. The earlier you take action, the sooner your child can receive appropriate services.
      </p>
-     <h2>
+<h2>
       Step 1: Informal Resolution and District-Level Complaints
      </h2>
-     <h3>
+<h3>
       Start with Your Child's IEP Team
      </h3>
-     <p>
+<p>
       The first and often most effective step for ANNA ISD families is requesting a meeting with your child's IEP team. Schedule time with your child's special education teacher, campus administrator, and relevant service providers to discuss your concerns.
      </p>
-     <p>
+<p>
       Come prepared with specific examples of what isn't working, documentation of your child's current performance, and clear statements of what you need. Many ANNA ISD special education issues resolve at this level when all parties communicate openly and focus on the student's needs.
      </p>
-     <h3>
+<h3>
       Documenting Your Concerns
      </h3>
-     <p>
+<p>
       Keep detailed records of all interactions regarding your child's special education. This includes:
      </p>
-     <ul>
-      <li>
+<ul>
+<li>
        Dates and attendees of IEP meetings and communications
       </li>
-      <li>
+<li>
        Emails and written correspondence with ANNA ISD staff
       </li>
-      <li>
+<li>
        Your child's academic and behavioral progress
       </li>
-      <li>
+<li>
        Specific incidents or concerns that prompted your action
       </li>
-      <li>
+<li>
        Services promised versus services actually provided
       </li>
-     </ul>
-     <p>
+</ul>
+<p>
       This documentation becomes essential if you need to file an ANNA ISD special education complaint or pursue due process. Strong records demonstrate the timeline of your concerns and strengthen your position.
      </p>
-     <h3>
+<h3>
       Requesting a Formal Campus Review
      </h3>
-     <p>
+<p>
       If informal conversations don't resolve your concern, request a formal review meeting with your ANNA ISD campus. Put your request in writing, specifying the issue and what resolution you're seeking. The district must respond within a reasonable timeframe and provide an opportunity for a meeting.
      </p>
-     <h2>
+<h2>
       Step 2: ANNA ISD Special Education Complaint Process
      </h2>
-     <h3>
+<h3>
       Filing a Complaint with the District
      </h3>
-     <p>
+<p>
       ANNA ISD maintains a formal complaint procedure for special education disputes. You can file a complaint alleging the district failed to provide services outlined in your child's IEP or violated special education law.
      </p>
-     <p>
+<p>
       Submit your written complaint to the ANNA ISD Special Education Department. Include:
      </p>
-     <ul>
-      <li>
+<ul>
+<li>
        Your child's name and current grade/school
       </li>
-      <li>
+<li>
        A clear description of the problem
       </li>
-      <li>
+<li>
        The date(s) the issue occurred
       </li>
-      <li>
+<li>
        What resolution you're requesting
       </li>
-      <li>
+<li>
        Supporting documentation and evidence
       </li>
-     </ul>
-     <p>
+</ul>
+<p>
       ANNA ISD has specific timelines to investigate and respond to complaints. Keep copies of everything you submit and note the date you filed your complaint.
      </p>
-     <h3>
+<h3>
       The District Investigation Process
      </h3>
-     <p>
+<p>
       Once ANNA ISD receives your complaint, the district begins investigating. This typically includes reviewing records, interviewing relevant staff, and examining whether district practices comply with special education law.
      </p>
-     <p>
+<p>
       The district should contact you to gather additional information if needed. Be prepared to provide clarification and any additional documentation. ANNA ISD must complete this investigation and provide findings within a set timeframe.
      </p>
-     <h3>
+<h3>
       Understanding the District's Response
      </h3>
-     <p>
+<p>
       ANNA ISD will provide a written response explaining their findings and any actions they're taking to address your complaint. This response should clearly state whether they found a violation and, if so, what corrective actions they're implementing.
      </p>
-     <p>
+<p>
       If you disagree with the district's findings or the proposed resolution, you have the right to pursue additional remedies. Don't feel pressured to accept a response that doesn't adequately address your concerns.
      </p>
-     <h2>
+<h2>
       Step 3: ANNA ISD Due Process and Mediation Options
      </h2>
-     <div class="ai-tool-banner">
-      <span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+<div class="ai-tool-banner">
+<span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
        Official Request
       </span>
-      <h3>
+<h3>
        Show the ISD You Mean Business
       </h3>
-      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+<p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
        A verbal request has no legal weight. A formal Level 1 Grievance letter starts the official district clock.
       </p>
-      <a class="btn-gold" href="/resources/Iep-letter.html">
+<a class="btn-gold" href="/resources/Iep-letter.html">
        Get Your Letter — $25 →
       </a>
-     </div>
-     <h3>
+</div>
+<h3>
       Understanding Due Process Hearings
      </h3>
-     <p>
+<p>
       An ANNA ISD due process hearing is a formal legal proceeding where an impartial hearing officer reviews disputes between parents and the district regarding special education services. This option is available when informal resolution and complaints haven't produced satisfactory results.
      </p>
-     <p>
+<p>
       Due process allows you to present evidence, question witnesses, and have an independent decision-maker determine whether ANNA ISD provided appropriate special education services. While formal, due process protects your rights and creates an official record.
      </p>
-     <h3>
+<h3>
       Filing for ANNA ISD Due Process
      </h3>
-     <p>
+<p>
       To initiate ANNA ISD due process, submit a written request to the district's special education department. Your request must include:
      </p>
-     <ul>
-      <li>
+<ul>
+<li>
        Your child's name and school
       </li>
-      <li>
+<li>
        The specific issues you're contesting
       </li>
-      <li>
+<li>
        Facts supporting your position
       </li>
-      <li>
+<li>
        The resolution you're seeking
       </li>
-     </ul>
-     <p>
+</ul>
+<p>
       ANNA ISD must acknowledge receipt and provide notice of your procedural rights. The hearing typically occurs within 45 days, though this timeline can be extended by agreement.
      </p>
-     <h3>
+<h3>
       Exploring ANNA ISD Mediation
      </h3>
-     <p>
+<p>
       Before pursuing a full due process hearing, ANNA ISD families should consider mediation. This neutral process brings parents and district representatives together with a trained mediator to discuss concerns and work toward agreement.
      </p>
-     <p>
+<p>
       Mediation is voluntary, confidential, and often faster than due process. Many ANNA ISD special education disputes resolve successfully through mediation because both sides can explore creative solutions without the adversarial nature of a hearing.
      </p>
-     <h3>
+<h3>
       The Mediation Process
      </h3>
-     <p>
+<p>
       A neutral third-party mediator facilitates discussion between you and ANNA ISD representatives. The mediator doesn't make decisions but helps both sides communicate more effectively and find common ground.
      </p>
-     <p>
+<p>
       If mediation succeeds, you and ANNA ISD sign an agreement documenting the resolution. This agreement is binding and enforceable. If mediation doesn't resolve the dispute, you can still pursue due process.
      </p>
-     <h2>
+<h2>
       Step 4: Texas Education Agency (TEA) Complaints
      </h2>
-     <h3>
+<h3>
       When to File an ANNA ISD TEA Complaint
      </h3>
-     <p>
+<p>
       You can file a complaint with the Texas Education Agency regarding ANNA ISD special education issues. TEA complaints are appropriate when you believe ANNA ISD violated special education law or regulations.
      </p>
-     <p>
+<p>
       TEA complaints differ from due process hearings. TEA investigates whether the district complied with state and federal law, while due process focuses on whether your child received FAPE. Both avenues are available to ANNA ISD parents.
      </p>
-     <h3>
+<h3>
       Filing Your ANNA ISD TEA Complaint
      </h3>
-     <p>
+<p>
       Submit complaints to TEA's Special Education Division. Include detailed information about your concern, dates, the district's response (if any), and what you're requesting. TEA will investigate and determine whether ANNA ISD violated regulations.
      </p>
-     <p>
+<p>
       TEA investigations are typically thorough and can result in the district being required to implement corrective actions. However, TEA complaints may not provide individual compensation for your child in the same way due process can.
      </p>
-     <h2>
+<h2>
       Step 5: Working with Special Education Advocates and Attorneys
      </h2>
-     <h3>
+<h3>
       Benefits of Special Education Advocacy
      </h3>
-     <p>
+<p>
       Many ANNA ISD parents benefit from working with special education advocates or attorneys familiar with local school district practices. A special ed advocate near ANNA can attend meetings, review documents, and help you communicate effectively with the district.
      </p>
-     <p>
+<p>
       Advocates understand special education law and ANNA ISD's specific policies. They can help you prepare for IEP meetings, identify potential violations, and develop strategic approaches to resolving disputes.
      </p>
-     <h3>
+<h3>
       Finding a Special Education Attorney Near ANNA
      </h3>
-     <p>
+<p>
       If your dispute is complex or involves potential compensatory education services, consulting a special education attorney near ANNA may be necessary. Attorneys can represent you in due process hearings and provide legal advice specific to your situation.
      </p>
-     <p>
+<p>
       Many special education attorneys work on a contingency basis for due process cases, meaning you only pay if you prevail. Ask ANNA ISD parent advocacy groups for referrals to special education attorneys with local experience.
      </p>
-     <h3>
+<h3>
       Preparing for Legal Representation
      </h3>
-     <p>
+<p>
       Whether working with an advocate or special education attorney near ANNA, gather all relevant documents before your first meeting. Include IEP documents, progress reports, assessment results, correspondence with the district, and notes about your concerns.
      </p>
-     <p>
+<p>
       Be honest about your goals and realistic about potential outcomes. Your advocate or attorney can explain what remedies are possible under special education law and what ANNA ISD is likely to accept.
      </p>
-     <h2>
+<h2>
       Important Timelines and Deadlines
      </h2>
-     <p>
+<p>
       Understanding critical deadlines helps ANNA ISD parents protect their rights. Keep a calendar with these important dates:
      </p>
-     <ul>
-      <li>
-       <strong>
+<ul>
+<li>
+<strong>
         IEP meetings:
        </strong>
        ANNA ISD must provide at least 10 days' notice
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Due process request:
        </strong>
        File within specific timeframes after becoming aware of the issue
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Hearing timeline:
        </strong>
        Hearings typically occur within 45 days of filing
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         District complaint response:
        </strong>
        ANNA ISD must respond within established timeframes
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         TEA complaint investigation:
        </strong>
        TEA typically completes investigations within 60 days
       </li>
-     </ul>
-     <p>
+</ul>
+<p>
       Missing deadlines can limit your options, so stay organized and document all dates carefully.
      </p>
-     <h2>
+<h2>
       Key Takeaways for ANNA ISD Parents
      </h2>
-     <p>
+<p>
       Successfully resolving ANNA ISD special education disputes requires persistence, documentation, and understanding your rights. Start with informal resolution whenever possible, but don't hesitate to pursue formal complaints or due process when necessary.
      </p>
-     <p>
+<p>
       Remember that you're advocating for your child's education and future. ANNA ISD families have strong legal protections under federal law, and multiple avenues exist for addressing concerns.
      </p>
-     <p>
+<p>
       Stay organized, keep detailed records, communicate clearly with ANNA ISD staff, and don't hesitate to seek support from advocates or special ed advocates familiar with ANNA area schools. Your voice matters in your child's special education journey.
      </p>
-    </div>
-    <!-- MODAL FOR AI SCAN -->
-    <div id="ai-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 1000; backdrop-filter: blur(4px);">
-     <div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
-      <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
-       <h3 class="text-xl font-serif">
+</div>
+<!-- MODAL FOR AI SCAN -->
+<div id="ai-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 1000; backdrop-filter: blur(4px);">
+<div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+<div class="p-6 bg-slate-900 text-white flex justify-between items-center">
+<h3 class="text-xl font-serif">
         ARD Rights Analysis
        </h3>
-       <button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
+<button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
         ×
        </button>
-      </div>
-      <div class="p-8" id="modal-body">
-       <div id="scan-form">
-        <p class="text-slate-600 mb-6">
+</div>
+<div class="p-8" id="modal-body">
+<div id="scan-form">
+<p class="text-slate-600 mb-6">
          Describe the situation your child is facing. Be as specific as possible regarding IEP violations or school actions.
         </p>
-        <div class="space-y-4">
-         <div>
-          <label class="block text-sm font-bold text-slate-700 mb-1">
+<div class="space-y-4">
+<div>
+<label class="block text-sm font-bold text-slate-700 mb-1">
            Total days suspended this year?
           </label>
-          <input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
-         </div>
-         <div>
-          <label class="block text-sm font-bold text-slate-700 mb-1">
+<input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-700 mb-1">
            What happened?
           </label>
-          <textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
-         </div>
-         <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
-          <span id="btn-text">
+<textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
+</div>
+<button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
+<span id="btn-text">
            Start Rights Scan
           </span>
-         </button>
-        </div>
-       </div>
-       <div class="hidden" id="scan-results">
-        <div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
-        </div>
-        <hr class="my-6"/>
-        <div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
+</button>
+</div>
+</div>
+<div class="hidden" id="scan-results">
+<div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
+</div>
+<hr class="my-6"/>
+<div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
          Disclaimer: This analysis is generated by AI based on Texas IDEA regulations and is for educational purposes only.
         </div>
-        <button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
+<button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
          Close Analysis
         </button>
-       </div>
-      </div>
-     </div>
-    </div>
-   </article>
-  </div>
-  <script>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<script>
    const apiKey = ""; 
 
     function openRightsScan() {
@@ -540,37 +547,37 @@
         }
     }
   </script>
-  <div id="ai-modal-overlay">
-   <div class="modal-content">
-    <div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
-     <h3 style="margin:0; font-family:'Lora',serif;">
+<div id="ai-modal-overlay">
+<div class="modal-content">
+<div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
+<h3 style="margin:0; font-family:'Lora',serif;">
       ARD Rights Analysis
      </h3>
-     <button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
+<button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
       ×
      </button>
-    </div>
-    <div id="modal-body" style="padding:30px;">
-     <div id="scan-form">
-      <p style="color:#475569; margin-bottom:20px;">
+</div>
+<div id="modal-body" style="padding:30px;">
+<div id="scan-form">
+<p style="color:#475569; margin-bottom:20px;">
        Describe the situation (e.g., suspension days, manifestation hearing outcome).
       </p>
-      <textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
-      <button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
+<textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
+<button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
        Start Rights Scan
       </button>
-     </div>
-     <div id="scan-results" style="display:none;">
-      <div id="analysis-content" style="color:#1e293b; line-height:1.6;">
-      </div>
-      <button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
+</div>
+<div id="scan-results" style="display:none;">
+<div id="analysis-content" style="color:#1e293b; line-height:1.6;">
+</div>
+<button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
        Close
       </button>
-     </div>
-    </div>
-   </div>
-  </div>
-  <script>
+</div>
+</div>
+</div>
+</div>
+<script>
    const apiKey = ""; 
     function openRightsScan() { document.getElementById('ai-modal-overlay').style.display='block'; }
     function closeRightsScan() { document.getElementById('ai-modal-overlay').style.display='none'; }
@@ -593,17 +600,48 @@
         finally { btn.innerText = "Start Rights Scan"; }
     }
   </script>
-  <footer class="site-footer">
-   <div class="footer-container">
-    <div class="footer-about">
-     <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
-     <p>
-      © 2026 Texas Special Education Resources. Not affiliated with the TEA.
-     </p>
-    </div>
-   </div>
-  </footer>
-  <script>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-about">
+<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+<p style="margin-top:.75rem;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+</div>
+<div class="footer-col">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/districts/index.html">Browse Districts</a></li>
+<li><a href="/resources/index.html">Parent Resources</a></li>
+<li><a href="/blog/index.html">Blog &amp; Articles</a></li>
+<li><a href="/about/index.html">About Us</a></li>
+<li><a href="/contact/index.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Popular Districts</h3>
+<ul>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+<li><a href="/districts/conroe-isd/index.html">Conroe ISD</a></li>
+<li><a href="/districts/index.html">View All Districts →</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Free Resources</h3>
+<ul>
+<li><a href="/resources/ard-checklist.pdf" target="_blank">ARD Meeting Checklist</a></li>
+<li><a href="/resources/evaluation-request-letter.pdf" target="_blank">Evaluation Request Letter</a></li>
+<li><a href="/resources/iep-goal-tracker.pdf" target="_blank">IEP Goal Tracker</a></li>
+<li><a href="/resources/parent-rights-guide.pdf" target="_blank">Parent Rights Guide</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+</div>
+</footer>
+<script>
    document.addEventListener('DOMContentLoaded', function() {
     var toggle = document.querySelector('.mobile-menu-toggle');
     var menu   = document.querySelector('.nav-menu');
@@ -612,5 +650,5 @@
     }
 });
   </script>
- </body>
+</body>
 </html>

@@ -1,329 +1,336 @@
 <!DOCTYPE html>
+
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
    Argyle ISD Special Education
   </title>
-  <link href="/style.css" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <style id="grievance-formatting">
-   /* ── DISCIPLINE & GRIEVANCE PATCH: Optimized for Mobile & CRO ── */
+<link href="/style.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com">
+</script>
+
+<style id="cro-core-formatting">
+        /* ── AUTOMATED CRO PATCH: Layout & Mobile Fixes ── */
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+        h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
         
-        h1 { font-size: clamp(1.8rem, 5vw, 2.2rem); margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; text-align: center; padding: 0 15px; }
-        
-        .layout-grid { max-width: 850px; margin: 20px auto; display: block; width: 100%; }
-        
-        .content-column { 
-            font-family: 'Source Sans 3', sans-serif; 
-            font-size: 17px; 
-            line-height: 1.75; 
-            color: #1a1a2e; 
-            background: #fff; 
-            padding: 40px 60px; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
-            border: 1px solid #e2e8f0; 
-            margin: 0 15px;
-        }
+        /* Core Layout - Single Column Optimized for Readability */
+        .layout-grid { max-width: 850px; margin: 30px auto; display: block; }
+        .content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
+        .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        .content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+        .content-column p { margin: 0 0 1.25rem; }
+        .content-column ul { padding-left: 20px; margin-bottom: 1.5rem; }
+        .content-column li { margin-bottom: 8px; }
 
-        .content-column h2 { font-family: 'Lora', serif; font-size: clamp(1.4rem, 4vw, 1.6rem); font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        /* Mobile Display & Padding Fixes */
+        @media (max-width: 950px) {
+            .content-column { padding: 20px !important; border: none !important; box-shadow: none !important; background: transparent !important; }
+            .nav-menu { display: none !important; }
+        }
         
-        /* Mobile Overrides */
-        @media (max-width: 768px) {
-            .content-column { 
-                padding: 30px 20px !important; 
-                margin: 0 !important; 
-                border-radius: 0 !important; 
-                border-left: none !important; 
-                border-right: none !important; 
-                box-shadow: none !important;
-            }
-            .ai-tool-banner { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
-            .integrated-cta { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
-        }
-
-        /* AI Tool Styling */
-        .ai-tool-banner { 
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); 
-            color: white; 
-            border-radius: 16px; 
-            padding: 40px; 
-            margin: 3rem 0; 
-            text-align: center; 
-            border: 1px solid #2a4382; 
-        }
-        .ai-tool-banner h3 { font-family: 'Lora', serif; font-size: clamp(1.5rem, 5vw, 1.8rem); color: #fff; margin: 0 0 10px; border:none; }
+        /* Protect Bot Banners from global style.css hijacking */
+        .banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+        .banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .banner-btn-gold { background: #d4af37; color: #0f172a !important; }
+        .banner-btn-blue { background: #1a56db; color: #fff !important; }
+        .banner-btn-blue:hover { background: #1e3a8a; color: #fff !important; }
         
-        .btn-gold { 
-            background: #d4af37; 
-            color: #0f172a !important; 
-            padding: 16px 32px; 
-            border-radius: 8px; 
-            font-weight: 800; 
-            text-decoration: none; 
-            display: inline-block; 
-            transition: 0.2s; 
-            border: none; 
-            cursor: pointer; 
-            width: auto;
-            max-width: 100%;
-        }
-        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
-
+        /* Integrated Inline CTA Styles */
         .integrated-cta { margin: 3rem 0; border-radius: 12px; padding: 36px 28px; text-align: center; }
-        .integrated-cta.dark { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); color: #fff; border: 1px solid #991b1b; }
-        
-        /* Modal & Mobile Accessibility */
-        #ai-modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 10000; backdrop-filter: blur(4px); overflow-y: auto; }
-        .modal-content { 
-            background: white; 
-            max-width: 600px; 
-            width: 95%; 
-            margin: 20px auto; 
-            border-radius: 16px; 
-            overflow: hidden; 
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); 
-            font-family: sans-serif; 
-            position: relative;
-        }
-        @media (max-height: 600px) {
-            .modal-content { margin: 10px auto; }
-        }
-  </style>
- </head>
- <body>
-  <header class="site-header">
-   <nav aria-label="Main navigation" class="navbar" role="navigation">
-    <div class="nav-container">
-     <div class="nav-logo">
-      <a aria-label="Texas Special Ed Home" class="text-logo" href="/">
-       Texas
-       <em>
-        Special Ed
-       </em>
-      </a>
-     </div>
-     <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
-      <span class="hamburger">
-      </span>
-      <span class="hamburger">
-      </span>
-      <span class="hamburger">
-      </span>
-     </button>
-     <ul class="nav-menu">
-      <li class="nav-item">
-       <a class="nav-link" href="/">
-        Home
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="/districts/index.html">
-        Districts
-       </a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="/resources/index.html">
-        Resources
-       </a>
-      </li>
-      <li class="nav-item nav-cta">
-       <a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;">
-        Get Your Letter — $25
-       </a>
-      </li>
-     </ul>
-    </div>
-   </nav>
-  </header>
-  <div class="layout-grid">
-   <article class="content-column">
-    <div class="container">
-     <h1>
+        .integrated-cta.light { background: #fff; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); }
+        .integrated-cta.dark { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #fff; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); border: 1px solid #1e40af; }
+        </style><style>
+/* ── BASE STYLES FOR PREVIEW ACCURACY ── */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.site-header { background: #fff; padding: 15px 20px; border-bottom: 1px solid #ddd; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342;}
+
+/* ── 70/30 DESKTOP GRID & STICKY SIDEBAR ── */
+.layout-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-top: 40px; align-items: start; }
+@media (min-width: 1024px) { .layout-grid { grid-template-columns: 1fr 380px; } }
+.sidebar-column { position: sticky; top: 100px; z-index: 10; } /* Clears tight navbar */
+.content-column { min-width: 0; font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column p { margin: 0 0 1.25rem; }
+
+/* ── SCANNABLE BLOCKS ── */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2 { border-top: none; margin-top: 0; padding-top: 0; font-size: 1.4rem; color: #166534; }
+.action-steps ol { padding-left: 1.4rem; margin: 0; font-size: 17px; }
+.action-steps li { margin-bottom: 14px; line-height: 1.65; color: #166534;}
+.action-steps strong { color: #14532d; }
+
+.iep-list { list-style: none; padding: 0; margin: 1.5rem 0 2.5rem; counter-reset: iep; }
+.iep-list li { counter-increment: iep; display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid #e8f0fe; font-size: 17px; }
+.iep-list li:last-child { border-bottom: none; }
+.iep-list li::before { content: counter(iep); background: #1a56db; color: #fff; font-weight: 700; font-size: 14px; border-radius: 50%; min-width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.iep-list strong { display: block; margin-bottom: 6px; color: #0f172a; font-size: 1.1rem; }
+
+.section-divider { text-align: center; color: #9ab0cc; font-size: 24px; margin: 3rem 0; letter-spacing: 0.4em; }
+
+/* ── INLINE CTAS ── */
+.inline-cta { background: #f8fbff; border: 1px solid #dbe8fb; border-left: 4px solid #1a56db; border-radius: 6px; padding: 24px; margin: 2.5rem 0; display: flex; gap: 16px; align-items: flex-start; }
+.inline-cta.gold { background: #fdfaf5; border-color: #d6cbbf; border-left-color: #b8963a; }
+.inline-cta .cta-icon { font-size: 2.2rem; line-height: 1; flex-shrink: 0; }
+.inline-cta h3 { margin: 0 0 8px 0; font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; }
+.inline-cta p { margin: 0 0 16px 0; font-size: 16px; color: #475569; }
+.btn-primary { background: #1a56db; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 15px; display: inline-block; transition: background 0.2s; }
+.btn-primary:hover { background: #1e3a8a; color: #fff; }
+.btn-primary.gold-btn { background: #1a1410; color: #b8963a; }
+.btn-primary.gold-btn:hover { background: #b8963a; color: #1a1410; }
+
+/* ── STACKED OFFERS ── */
+.offers-container { display: flex; flex-direction: column; gap: 24px; margin-top: 50px; }
+.sales-card { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); padding: 36px; border-radius: 12px; text-align: center; color: white; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); }
+.sales-card.gold-theme { background: linear-gradient(135deg, #1c1917 0%, #44403c 100%); }
+.sales-card .badge { background: #d4af37; color: #0f172a; padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; }
+.sales-card h3 { margin: 20px 0 12px; color: #ffffff; font-size: 1.6rem; font-family: 'Lora', serif; }
+.sales-card p { color: #e2e8f0; margin: 0 auto 24px; font-size: 1.05rem; line-height: 1.6; max-width: 90%;}
+.sales-card a { background: #d4af37; color: #0f172a; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; display: inline-block; transition: 0.2s; }
+.sales-card a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+</style></head>
+<body>
+<header class="site-header">
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<div class="nav-logo">
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+Texas <em>Special Ed</em>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+<li class="nav-item dropdown">
+<a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
+<ul class="dropdown-menu">
+<li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
+<li class="dropdown-divider"></li>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+<li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
+<li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
+<li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
+<li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
+<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+<li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
+<li class="dropdown-divider"></li>
+<li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
+</ul>
+</li>
+<li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
+<li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="layout-grid">
+<article class="content-column">
+<div class="container">
+<h1>
       Complete Guide to Filing Complaints and Resolving Disputes with ARGYLE ISD Special Education
      </h1>
-     <p>
+<p>
       Navigating special education services can be challenging, especially when disagreements arise between parents and school districts. If you're a parent in ARGYLE ISD with concerns about your child's special education services, understanding your rights and the available dispute resolution options is essential. This comprehensive guide explains the complaint and due process procedures specific to ARGYLE ISD, helping you effectively advocate for your child.
      </p>
-     <!-- AI Tool Section -->
-     <h2>
+<!-- AI Tool Section -->
+<h2>
       Understanding Your Rights in ARGYLE ISD Special Education
      </h2>
-     <p>
+<p>
       Parents of students with disabilities in ARGYLE ISD have legal protections under federal and Texas law. The Individuals with Disabilities Education Act (IDEA) and the Texas Education Code guarantee your right to be involved in all decisions affecting your child's special education programming and placement.
      </p>
-     <div class="ai-tool-banner">
-      <span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+<div class="ai-tool-banner">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
        Live AI Tool
       </span>
-      <h3>
+<h3>
        Free ARD Rights Scan
       </h3>
-      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+<p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
        Wondering if the school violated your child's rights? Answer a few questions for an instant analysis based on Texas law.
       </p>
-      <button class="btn-gold" onclick="openRightsScan()">
+<button class="btn-gold" onclick="openRightsScan()">
        Run My Free ARD Scan →
       </button>
-     </div>
-     <p>
+</div>
+<p>
       ARGYLE ISD families have the right to request evaluations, participate in Individualized Education Program (IEP) meetings, and challenge decisions they believe are inappropriate. Understanding these foundational rights empowers you to navigate the complaint and dispute resolution process effectively.
      </p>
-     <p>
+<p>
       When disagreements occur between parents and ARGYLE ISD administrators or special education staff, multiple pathways exist to address your concerns. From informal problem-solving to formal due process hearings, each option serves different situations and urgency levels.
      </p>
-     <h2>
+<h2>
       Informal Complaint Resolution in ARGYLE ISD
      </h2>
-     <p>
-      <strong>
+<p>
+<strong>
        Start with your campus special education coordinator or teacher.
       </strong>
       Many concerns can be resolved quickly through direct communication. Before pursuing formal complaints, request a meeting with the special education staff directly involved in your child's care. Explain your concerns clearly and document what was discussed.
      </p>
-     <h3>
+<h3>
       Steps for Informal Resolution
      </h3>
-     <ul>
-      <li>
-       <strong>
+<ul>
+<li>
+<strong>
         Schedule a meeting
        </strong>
        with your child's special education teacher or campus coordinator within 5-7 school days
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Come prepared
        </strong>
        with specific examples of concerns and documentation from home or school
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Bring an advocate or trusted person
        </strong>
        if you feel more comfortable having support
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Request written summaries
        </strong>
        of any agreements or action plans discussed
       </li>
-      <li>
-       <strong>
+<li>
+<strong>
         Follow up in writing
        </strong>
        with an email confirming what was discussed and agreed upon
       </li>
-     </ul>
-     <p>
+</ul>
+<p>
       Most disagreements with ARGYLE ISD can be resolved at this level when both parties approach the conversation with good faith and a focus on the child's needs. ARGYLE ISD staff members are often willing to make adjustments or provide clarification when parents express concerns respectfully.
      </p>
-     <h2>
+<h2>
       ARGYLE ISD Special Education Complaint Process
      </h2>
-     <p>
+<p>
       If informal resolution doesn't address your concerns, filing a formal complaint with ARGYLE ISD is your next step. This process is separate from due process and can address violations of special education law occurring within a specific timeframe.
      </p>
-     <h3>
+<h3>
       What You Can File a Complaint About
      </h3>
-     <p>
+<p>
       ARGYLE ISD special education complaints can address alleged violations of IDEA or state special education requirements, including:
      </p>
-     <ul>
-      <li>
+<ul>
+<li>
        Failure to provide FAPE (Free Appropriate Public Education)
       </li>
-      <li>
+<li>
        Improper evaluation or re-evaluation procedures
       </li>
-      <li>
+<li>
        IEP development or implementation failures
       </li>
-      <li>
+<li>
        Inappropriate discipline or placement decisions
       </li>
-      <li>
+<li>
        Failure to follow due process procedures
       </li>
-      <li>
+<li>
        Inadequate classroom or related services
       </li>
-     </ul>
-     <h3>
+</ul>
+<h3>
       Filing a Complaint with ARGYLE ISD
      </h3>
-     <p>
+<p>
       Submit your complaint directly to the ARGYLE ISD Special Education Director or Director of Student Services. Your complaint should include:
      </p>
-     <ol>
-      <li>
+<ol>
+<li>
        Your child's name and date of birth
       </li>
-      <li>
+<li>
        Your contact information and preferred communication method
       </li>
-      <li>
+<li>
        A clear description of the alleged violation
       </li>
-      <li>
+<li>
        The date(s) when the problem occurred
       </li>
-      <li>
+<li>
        The date when you first became aware of the problem
       </li>
-      <li>
+<li>
        Copies of relevant documents (IEP, evaluations, emails, discipline records)
       </li>
-      <li>
+<li>
        The specific resolution you're requesting
       </li>
-     </ol>
-     <p>
+</ol>
+<p>
       Keep copies of everything you submit. ARGYLE ISD has
       <strong>
        10 calendar days
       </strong>
       from receipt of your complaint to investigate and respond. This timeline applies to all special education complaints filed with the district.
      </p>
-     <h3>
+<h3>
       What Happens During Investigation
      </h3>
-     <p>
+<p>
       ARGYLE ISD must investigate your complaint thoroughly and provide you with written findings. The district will review all relevant records, interview staff and other parties involved, and determine whether violations occurred.
      </p>
-     <p>
+<p>
       During this process, you have the right to be heard and to submit additional documentation. Be prepared to provide specific examples and dates. Maintain organized records of all communications with ARGYLE ISD regarding your complaint.
      </p>
-     <h2>
+<h2>
       Texas Education Agency (TEA) Complaint Process
      </h2>
-     <p>
+<p>
       If you're unsatisfied with ARGYLE ISD's response to your complaint, or if you prefer to bypass the district-level process, you can file an
       <strong>
        ARGYLE ISD TEA complaint
       </strong>
       directly with the Texas Education Agency. TEA provides an independent review of alleged special education violations.
      </p>
-     <h3>
+<h3>
       When to File an ARGYLE ISD TEA Complaint
      </h3>
-     <p>
+<p>
       You may file a TEA complaint when you believe ARGYLE ISD has violated IDEA or state special education law. The violation must have occurred within one year of filing your complaint. TEA complaints are particularly useful when you've exhausted district-level resolution or believe the district's response was inadequate.
      </p>
-     <h3>
+<h3>
       Filing Your TEA Complaint
      </h3>
-     <p>
+<p>
       Submit your complaint to the Texas Education Agency's Special Education Division:
      </p>
-     <p>
-      <strong>
+<p>
+<strong>
        Texas Education Agency
        <br/>
        Special Education Division
@@ -334,81 +341,81 @@
        <br/>
        Phone: (512) 463-9734
       </strong>
-     </p>
-     <p>
+</p>
+<p>
       You can also file electronically through the TEA website. Include all required information: your contact details, your child's identifying information, a detailed description of the alleged violation, dates, and copies of supporting documents.
      </p>
-     <p>
+<p>
       TEA will conduct a thorough investigation independent of ARGYLE ISD. The agency typically completes investigations within
       <strong>
        60 calendar days
       </strong>
       and provides written findings detailing whether violations occurred and what corrective action ARGYLE ISD must take.
      </p>
-     <h2>
+<h2>
       ARGYLE ISD Due Process Hearing Option
      </h2>
-     <div class="ai-tool-banner">
-      <span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+<div class="ai-tool-banner">
+<span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
        Official Request
       </span>
-      <h3>
+<h3>
        Show the ISD You Mean Business
       </h3>
-      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+<p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
        A verbal request has no legal weight. A formal Level 1 Grievance letter starts the official district clock.
       </p>
-      <a class="btn-gold" href="/resources/Iep-letter.html">
+<a class="btn-gold" href="/resources/Iep-letter.html">
        Get Your Letter — $25 →
       </a>
-     </div>
-     <p>
+</div>
+<p>
       For disputes specifically about your child's identification, evaluation, educational placement, or the provision of FAPE,
       <strong>
        ARGYLE ISD due process
       </strong>
       offers a more formal resolution mechanism. Due process hearings are conducted by an impartial hearing officer and can result in compensatory services or other remedies.
      </p>
-     <h3>
+<h3>
       When Due Process Is Appropriate
      </h3>
-     <p>
+<p>
       Consider requesting due process when:
      </p>
-     <ul>
-      <li>
+<ul>
+<li>
        ARGYLE ISD refuses to evaluate your child for special education eligibility
       </li>
-      <li>
+<li>
        You disagree with evaluation results or eligibility determination
       </li>
-      <li>
+<li>
        The proposed IEP or placement is inappropriate for your child's needs
       </li>
-      <li>
+<li>
        ARGYLE ISD is not implementing the IEP as written
       </li>
-      <li>
+<li>
        Your child has been suspended or expelled for disability-related behavior
       </li>
-      <li>
+<li>
        You need compensatory education services or tuition reimbursement
       </li>
-     </ul>
-     <h3>
+</ul>
+<h3>
       Due Process Notice and Timeline
      </h3>
-     <p>
+<p>
       Request due process by sending a written notice to ARGYLE ISD's Special Education Director. Your notice must include the child's name, address, description of the problem, proposed solution, and your contact information. You must also provide this notice to the school district within specific timeframes.
      </p>
-     <p>
+<p>
       Once ARGYLE ISD receives your due process request, the district has
       <strong>
        15 calendar days
       </strong>
       to convene a resolution meeting where you, district representatives, and a district administrator attempt to resolve the dispute informally before moving to a formal hearing.
      </p>
-     <p>
+<p>
       If resolution is not reached, ARGYLE ISD has
       <strong>
        30 calendar days
@@ -419,181 +426,181 @@
       </strong>
       of the resolution meeting, unless you agree to extend this timeline.
      </p>
-     <h2>
+<h2>
       ARGYLE ISD Mediation Services
      </h2>
-     <p>
-      <strong>
+<p>
+<strong>
        ARGYLE ISD mediation
       </strong>
       is a voluntary process where an impartial mediator helps you and district officials discuss your concerns and work toward mutually agreeable solutions. Mediation often resolves disputes faster and at lower cost than formal due process hearings.
      </p>
-     <h3>
+<h3>
       Key Benefits of ARGYLE ISD Mediation
      </h3>
-     <p>
+<p>
       Mediation allows you to maintain a collaborative relationship with ARGYLE ISD while addressing serious concerns. Unlike due process hearings where a hearing officer makes decisions, mediation empowers both parties to craft solutions. The process is confidential, reducing stress for families and school staff.
      </p>
-     <p>
+<p>
       Any parent in ARGYLE ISD can request mediation at any time, even before filing formal complaints. You do not need an attorney, though you may bring one if you wish. ARGYLE ISD must make mediation available at no cost to families.
      </p>
-     <h3>
+<h3>
       How to Request ARGYLE ISD Mediation
      </h3>
-     <p>
+<p>
       Contact your campus principal or the ARGYLE ISD Special Education Department to request mediation. You can also request mediation as part of your due process notice. A mediator will be assigned and contact you within a few days to schedule a session.
      </p>
-     <p>
+<p>
       Come to mediation prepared with documentation and a clear understanding of your concerns. Be willing to listen to ARGYLE ISD's perspective and genuinely seek compromise. Many families find mediation more satisfying than formal hearings because solutions feel collaborative rather than imposed.
      </p>
-     <h2>
+<h2>
       Getting Professional Support for ARGYLE ISD Disputes
      </h2>
-     <p>
+<p>
       Navigating special education disputes can be complex, and having professional support strengthens your position. Several types of professionals can help parents in ARGYLE ISD advocate effectively.
      </p>
-     <h3>
+<h3>
       Special Education Advocates
      </h3>
-     <p>
+<p>
       A
       <strong>
        special ed advocate ARGYLE
       </strong>
       families can hire is trained in special education law and experienced with school district procedures. Advocates help you understand your rights, prepare for meetings, interpret evaluations, and present your case clearly. They are less expensive than attorneys and serve as valuable partners throughout the complaint or due process process.
      </p>
-     <p>
+<p>
       Texas Parent to Parent and advocacy organizations throughout the ARGYLE area can connect you with qualified advocates. Many advocates have experience specifically with ARGYLE ISD procedures and personnel.
      </p>
-     <h3>
+<h3>
       Special Education Attorneys
      </h3>
-     <p>
+<p>
       For significant disputes or when substantial compensatory services may be at stake, hiring a
       <strong>
        special education attorney near ARGYLE
       </strong>
       provides expert legal representation. Attorneys can represent you in due process hearings, negotiate settlements, and ensure all legal requirements are met throughout the process.
      </p>
-     <p>
+<p>
       Many special education attorneys work on contingency for due process cases, meaning they recover fees from ARGYLE ISD only if you prevail and are awarded compensatory services or tuition reimbursement. This arrangement makes legal representation more accessible for families.
      </p>
-     <h3>
+<h3>
       Building Your Support Team
      </h3>
-     <p>
+<p>
       Consider assembling a team including your child's teacher, therapists, doctors, and education professionals who understand your child's needs. Bring trusted supporters to meetings and hearings who can speak to your child's abilities and challenges. This collaborative approach strengthens your advocacy.
      </p>
-     <h2>
+<h2>
       Documentation and Record-Keeping Throughout ARGYLE ISD Disputes
      </h2>
-     <p>
+<p>
       Strong documentation is critical when pursuing complaints or due process against ARGYLE ISD. Maintaining organized records provides evidence and demonstrates the timeline of your concerns.
      </p>
-     <h3>
+<h3>
       Essential Documents to Keep
      </h3>
-     <ul>
-      <li>
+<ul>
+<li>
        All IEPs and amendments since your child's initial identification
       </li>
-      <li>
+<li>
        Evaluation reports and assessment data
       </li>
-      <li>
+<li>
        Progress monitoring data and report cards
       </li>
-      <li>
+<li>
        Correspondence with ARGYLE ISD staff (emails, letters, notes from meetings)
       </li>
-      <li>
+<li>
        Discipline records and incident reports
       </li>
-      <li>
+<li>
        Attendance records
       </li>
-      <li>
+<li>
        Documentation of your child's needs and concerns from home
       </li>
-      <li>
+<li>
        Medical records or outside evaluations relevant to special education
       </li>
-      <li>
+<li>
        Records of meetings attended and topics discussed
       </li>
-     </ul>
-     <p>
+</ul>
+<p>
       Create a timeline documenting key events in your child's special education experience with ARGYLE ISD. Note dates of concerns, meetings, and communications. When you meet with ARGYLE ISD staff, send follow-up emails summarizing what was discussed, any agreements reached, and next steps. This creates a contemporaneous record valuable in any dispute resolution process.
      </p>
-     <h2>
+<h2>
       Moving Forward: Next Steps for ARGYLE ISD Parents
      </h2>
-     <p>
+<p>
       If you're currently experiencing concerns about your child's special education services in ARGYLE ISD, take action promptly. Special education law includes deadlines for complaints and due process requests, so don't delay in documenting and reporting problems.
      </p>
-     <p>
+<p>
       Start with informal communication if you feel safe doing so. Many ARGYLE ISD staff members are responsive to parent concerns when approached collaboratively. If informal resolution doesn't work, filing a formal complaint or requesting mediation clarifies expectations and often motivates the district to address problems seriously.
      </p>
-     <p>
+<p>
       Remember that your role as your child's advocate is essential. You understand your child's unique needs, personality, and strengths better than anyone. Trust your instincts when you believe something isn't right, and don't hesitate to pursue formal resolution if necessary.
      </p>
-     <p>
+<p>
       ARGYLE ISD families have significant legal protections and multiple pathways for addressing disputes. By understanding these options and taking action when concerns arise, you ensure your child receives the services and accommodations required by law.
      </p>
-    </div>
-    <!-- MODAL FOR AI SCAN -->
-    <div id="ai-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 1000; backdrop-filter: blur(4px);">
-     <div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
-      <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
-       <h3 class="text-xl font-serif">
+</div>
+<!-- MODAL FOR AI SCAN -->
+<div id="ai-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 1000; backdrop-filter: blur(4px);">
+<div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+<div class="p-6 bg-slate-900 text-white flex justify-between items-center">
+<h3 class="text-xl font-serif">
         ARD Rights Analysis
        </h3>
-       <button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
+<button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
         ×
        </button>
-      </div>
-      <div class="p-8" id="modal-body">
-       <div id="scan-form">
-        <p class="text-slate-600 mb-6">
+</div>
+<div class="p-8" id="modal-body">
+<div id="scan-form">
+<p class="text-slate-600 mb-6">
          Describe the situation your child is facing. Be as specific as possible regarding IEP violations or school actions.
         </p>
-        <div class="space-y-4">
-         <div>
-          <label class="block text-sm font-bold text-slate-700 mb-1">
+<div class="space-y-4">
+<div>
+<label class="block text-sm font-bold text-slate-700 mb-1">
            Total days suspended this year?
           </label>
-          <input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
-         </div>
-         <div>
-          <label class="block text-sm font-bold text-slate-700 mb-1">
+<input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-700 mb-1">
            What happened?
           </label>
-          <textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
-         </div>
-         <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
-          <span id="btn-text">
+<textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
+</div>
+<button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
+<span id="btn-text">
            Start Rights Scan
           </span>
-         </button>
-        </div>
-       </div>
-       <div class="hidden" id="scan-results">
-        <div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
-        </div>
-        <hr class="my-6"/>
-        <div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
+</button>
+</div>
+</div>
+<div class="hidden" id="scan-results">
+<div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
+</div>
+<hr class="my-6"/>
+<div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
          Disclaimer: This analysis is generated by AI based on Texas IDEA regulations and is for educational purposes only.
         </div>
-        <button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
+<button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
          Close Analysis
         </button>
-       </div>
-      </div>
-     </div>
-    </div>
-   </article>
-  </div>
-  <script>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<script>
    const apiKey = ""; 
 
     function openRightsScan() {
@@ -636,37 +643,37 @@
         }
     }
   </script>
-  <div id="ai-modal-overlay">
-   <div class="modal-content">
-    <div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
-     <h3 style="margin:0; font-family:'Lora',serif;">
+<div id="ai-modal-overlay">
+<div class="modal-content">
+<div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
+<h3 style="margin:0; font-family:'Lora',serif;">
       ARD Rights Analysis
      </h3>
-     <button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
+<button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
       ×
      </button>
-    </div>
-    <div id="modal-body" style="padding:30px;">
-     <div id="scan-form">
-      <p style="color:#475569; margin-bottom:20px;">
+</div>
+<div id="modal-body" style="padding:30px;">
+<div id="scan-form">
+<p style="color:#475569; margin-bottom:20px;">
        Describe the situation (e.g., suspension days, manifestation hearing outcome).
       </p>
-      <textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
-      <button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
+<textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
+<button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
        Start Rights Scan
       </button>
-     </div>
-     <div id="scan-results" style="display:none;">
-      <div id="analysis-content" style="color:#1e293b; line-height:1.6;">
-      </div>
-      <button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
+</div>
+<div id="scan-results" style="display:none;">
+<div id="analysis-content" style="color:#1e293b; line-height:1.6;">
+</div>
+<button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
        Close
       </button>
-     </div>
-    </div>
-   </div>
-  </div>
-  <script>
+</div>
+</div>
+</div>
+</div>
+<script>
    const apiKey = ""; 
     function openRightsScan() { document.getElementById('ai-modal-overlay').style.display='block'; }
     function closeRightsScan() { document.getElementById('ai-modal-overlay').style.display='none'; }
@@ -689,17 +696,48 @@
         finally { btn.innerText = "Start Rights Scan"; }
     }
   </script>
-  <footer class="site-footer">
-   <div class="footer-container">
-    <div class="footer-about">
-     <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
-     <p>
-      © 2026 Texas Special Education Resources. Not affiliated with the TEA.
-     </p>
-    </div>
-   </div>
-  </footer>
-  <script>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-about">
+<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+<p style="margin-top:.75rem;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+</div>
+<div class="footer-col">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/districts/index.html">Browse Districts</a></li>
+<li><a href="/resources/index.html">Parent Resources</a></li>
+<li><a href="/blog/index.html">Blog &amp; Articles</a></li>
+<li><a href="/about/index.html">About Us</a></li>
+<li><a href="/contact/index.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Popular Districts</h3>
+<ul>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+<li><a href="/districts/conroe-isd/index.html">Conroe ISD</a></li>
+<li><a href="/districts/index.html">View All Districts →</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Free Resources</h3>
+<ul>
+<li><a href="/resources/ard-checklist.pdf" target="_blank">ARD Meeting Checklist</a></li>
+<li><a href="/resources/evaluation-request-letter.pdf" target="_blank">Evaluation Request Letter</a></li>
+<li><a href="/resources/iep-goal-tracker.pdf" target="_blank">IEP Goal Tracker</a></li>
+<li><a href="/resources/parent-rights-guide.pdf" target="_blank">Parent Rights Guide</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+</div>
+</footer>
+<script>
    document.addEventListener('DOMContentLoaded', function() {
     var toggle = document.querySelector('.mobile-menu-toggle');
     var menu   = document.querySelector('.nav-menu');
@@ -708,5 +746,5 @@
     }
 });
   </script>
- </body>
+</body>
 </html>
