@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GVLPE273XH');
+</script>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Guía de Reunión ARD: Plano ISD | Derechos de los Padres</title>
+<meta name="description" content="Guía de reunión ARD de Plano ISD: notificación de 5 días, regla de receso de 10 días y cómo estar en desacuerdo con el equipo. Derechos esenciales de los padres explicados."/>
+<link rel="canonical" href="https://www.texasspecialed.com/es-districts/plano-isd/guia-proceso-ard"/>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="/style.css" rel="stylesheet"/>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site-header {
+    background: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-top: 10px;
+    font-family: 'Lora', serif;
+    color: #0a2342;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 30px;
+    align-items: start;
+}
+
+@media (min-width: 1024px) {
+    .layout-grid {
+        grid-template-columns: 1fr 380px;
+    }
+}
+
+.sidebar-column {
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+}
+
+.content-column {
+    min-width: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.content-column h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0a2342;
+    margin: 2.5rem 0 1rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #e8f0fe;
+}
+
+.content-column h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 1.75rem 0 0.75rem;
+}
+
+.content-column p {
+    margin: 0 0 1.25rem;
+}
+
+.quick-answer {
+    background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+    border-left: 4px solid #1a56db;
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(26, 86, 219, 0.08);
+}
+
+.quick-answer strong {
+    color: #1e3a8a;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-left: 4px solid #f59e0b;
+    padding: 24px;
+    margin: 32px 0;
+    border-radius: 8px;
+}
+
+.cta-box h3 {
+    margin-top: 0;
+    color: #92400e;
+    font-family: 'Lora', serif;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #1a56db;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.2s;
+    margin-top: 12px;
+}
+
+.btn-primary:hover {
+    background: #1e40af;
+}
+
+.next-steps {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 24px;
+    margin: 32px 0;
+    border-radius: 8px;
+}
+
+.next-steps h3 {
+    margin-top: 0;
+    color: #0a2342;
+    font-family: 'Lora', serif;
+}
+
+.next-steps ul {
+    list-style: none;
+    padding: 0;
+}
+
+.next-steps li {
+    margin: 12px 0;
+}
+
+.next-steps a {
+    color: #1a56db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.next-steps a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    margin: 1.25rem 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+strong {
+    color: #1e3a8a;
+    font-weight: 600;
+}
+
+em {
+    color: #475569;
+}
+
+a {
+    color: #1a56db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Guía de Reunión ARD: Plano ISD</h1>
+
+<div class="quick-answer">
+<strong>¿Qué es una reunión ARD?</strong><br/>
+Una reunión ARD (Admisión, Revisión y Retiro) es la reunión del Plan Educativo Individualizado (IEP) de Texas donde la escuela y los padres deciden los servicios de educación especial de su hijo. Debe recibir notificación escrita al menos <strong>5 días calendario</strong> antes de la reunión y puede solicitar un <strong>receso de 10 días</strong> en cualquier momento.
+</div>
+
+<h2>¿Qué es una Reunión ARD?</h2>
+
+<p>Una reunión ARD es requerida por la ley federal (IDEA) y el Código de Educación de Texas. Determina si su hijo califica para educación especial, crea su Plan Educativo Individualizado (IEP) y revisa el progreso.</p>
+
+<p>Si su hijo asiste a Plano ISD, usted es miembro legal del comité ARD con igualdad de estatus que directores y diagnosticadores. El distrito no puede tomar decisiones sobre la educación de su hijo sin usted.</p>
+
+<h2>Su Derecho a Notificación de 5 Días</h2>
+
+<p>Tiene derecho a recibir notificación escrita al menos <strong>5 días calendario</strong> antes de cualquier reunión ARD. Esto le da tiempo para prepararse, reunir documentos o hacer arreglos con un defensor.</p>
+
+<p>La notificación debe indicar el propósito de la reunión (Revisión Anual, Cambio de Colocación, etc.), ubicación y quiénes asistirán del distrito.</p>
+
+<p><em>Nota: Puede renunciar a la notificación de 5 días por escrito en emergencias, pero la escuela no puede presionarlo para hacerlo.</em></p>
+
+<h2>La Regla del Receso de 10 Días</h2>
+
+<p>Si se siente abrumado o necesita tiempo para revisar datos, la ley de Texas le ofrece una herramienta poderosa: <strong>el receso de 10 días</strong>.</p>
+
+<p>En cualquier momento durante la reunión, diga: <em>"Solicito un receso de 10 días para revisar esta información."</em> Plano ISD debe otorgarlo, pausar la reunión y reconvocarse dentro de 10 días escolares.</p>
+
+<p>Úselo cuando:</p>
+<ul>
+<li>El borrador del Plan Educativo Individualizado (IEP) se ve mal</li>
+<li>Necesita consultar a un experto</li>
+<li>Lo están apresurando para firmar</li>
+<li>Información nueva lo sorprende</li>
+</ul>
+
+<h2>Qué Llevar a Su Reunión ARD</h2>
+
+<p>Venga preparado para cambiar el equilibrio de poder:</p>
+
+<ol>
+<li><strong>Registros Médicos Externos:</strong> Cartas de terapeutas privados, psicólogos o pediatras</li>
+<li><strong>Lista Escrita de Preocupaciones:</strong> Olvidará sus puntos de discusión en el momento</li>
+<li><strong>Planes Educativos Individualizados (IEPs) Anteriores y Reportes de Progreso:</strong> Demuestre si los objetivos realmente se cumplieron</li>
+<li><strong>Una Persona de Apoyo:</strong> Puede traer un defensor, amigo o abogado</li>
+</ol>
+
+<h2>Entendiendo el Documento del Plan Educativo Individualizado (IEP)</h2>
+
+<p>El Plan Educativo Individualizado (IEP) es un contrato vinculante legalmente. Preste atención a estas secciones:</p>
+
+<ul>
+<li><strong>Niveles Presentes (PLAAFP):</strong> El desempeño actual de su hijo. Cuestione si es vago.</li>
+<li><strong>Objetivos Anuales:</strong> Deben ser medibles. "Mejorará la lectura" no es legal. "Leerá 90 palabras por minuto para mayo" es.</li>
+<li><strong>Servicios:</strong> Minutos exactos por semana para cada servicio (Logopedia, Salón de Recursos, etc.)</li>
+<li><strong>Adaptaciones:</strong> Tiempo extendido, asiento preferente, organizadores gráficos, etc.</li>
+</ul>
+
+<h2>Cuando Está en Desacuerdo Con el Equipo</h2>
+
+<p>Puede estar en desacuerdo con las recomendaciones del comité ARD. Si no está de acuerdo con la colocación inicial, puede rechazar su consentimiento—los servicios no pueden comenzar sin su firma.</p>
+
+<p>Si no está de acuerdo con un Plan Educativo Individualizado (IEP) revisado:</p>
+<ul>
+<li>NO firme "De Acuerdo"</li>
+<li>Marque "En Desacuerdo"</li>
+<li>Solicite su receso de 10 días</li>
+<li>Asegúrese de que sus preocupaciones estén escritas en las actas oficiales</li>
+</ul>
+
+<p>También tiene derecho a solicitar una Evaluación Educativa Independiente (IEE) a expensas del distrito si cree que sus pruebas son defectuosas.</p>
+
+<h2>Después de la Reunión ARD</h2>
+
+<p>Plano ISD debe proporcionarle una copia del Plan Educativo Individualizado (IEP) finalizado en un tiempo razonable. Los servicios deben comenzar lo antes posible después de que firme el consentimiento para servicios iniciales.</p>
+
+<p>Si el distrito no implementa el Plan Educativo Individualizado (IEP) como está escrito, documente cada violación y presente una queja formal o una denuncia ante la Agencia de Educación de Texas (TEA).</p>
+
+<div class="cta-box">
+<h3>¿Necesita Ayuda para Prepararse?</h3>
+<p>No vaya a su reunión ARD sin preparación. Obtenga los guiones exactos y listas de verificación que los defensores de Texas cobran $200/hora para proporcionar.</p>
+<a href="#" class="btn-primary">Obtener el Kit de Preparación ARD — $47</a>
+</div>
+
+<h2>Contexto del Comité ARD de Plano ISD</h2>
+
+<p>Plano ISD sirve a más de 180,000 estudiantes en el área metropolitana de Houston. El comité ARD se reúne para revisar evaluaciones, determinar elegibilidad y crear Planes Educativos Individualizados (IEPs) personalizados para las necesidades del estudiante.</p>
+
+<p>Tiene el derecho de participar en cada decisión sobre la educación de su hijo, hacer preguntas y solicitar cambios al Plan Educativo Individualizado (IEP). Como el distrito urbano más grande de Texas, Plano ISD coordina reuniones ARD en múltiples idiomas y trabaja para acomodar los horarios de las familias.</p>
+
+<div class="next-steps">
+<h3>Qué Leer a Continuación</h3>
+<ul>
+<li><a href="evaluation-child-find.html">Cómo Solicitar una Evaluación (FIE)</a></li>
+<li><a href="dyslexia-services.html">Servicios de Dislexia en Plano ISD</a></li>
+<li><a href="grievance-dispute-resolution.html">Presentación de Quejas y Resolución de Disputas</a></li>
+</ul>
+</div>
+
+</body>
+</html>

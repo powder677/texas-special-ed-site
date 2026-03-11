@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Kaufman ISD Special Education
+  </title>
+  <link href="/style.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <style id="grievance-formatting">
+   /* ── DISCIPLINE & GRIEVANCE PATCH: Optimized for Mobile & CRO ── */
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+        
+        h1 { font-size: clamp(1.8rem, 5vw, 2.2rem); margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; text-align: center; padding: 0 15px; }
+        
+        .layout-grid { max-width: 850px; margin: 20px auto; display: block; width: 100%; }
+        
+        .content-column { 
+            font-family: 'Source Sans 3', sans-serif; 
+            font-size: 17px; 
+            line-height: 1.75; 
+            color: #1a1a2e; 
+            background: #fff; 
+            padding: 40px 60px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+            border: 1px solid #e2e8f0; 
+            margin: 0 15px;
+        }
+
+        .content-column h2 { font-family: 'Lora', serif; font-size: clamp(1.4rem, 4vw, 1.6rem); font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        
+        /* Mobile Overrides */
+        @media (max-width: 768px) {
+            .content-column { 
+                padding: 30px 20px !important; 
+                margin: 0 !important; 
+                border-radius: 0 !important; 
+                border-left: none !important; 
+                border-right: none !important; 
+                box-shadow: none !important;
+            }
+            .ai-tool-banner { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
+            .integrated-cta { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
+        }
+
+        /* AI Tool Styling */
+        .ai-tool-banner { 
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); 
+            color: white; 
+            border-radius: 16px; 
+            padding: 40px; 
+            margin: 3rem 0; 
+            text-align: center; 
+            border: 1px solid #2a4382; 
+        }
+        .ai-tool-banner h3 { font-family: 'Lora', serif; font-size: clamp(1.5rem, 5vw, 1.8rem); color: #fff; margin: 0 0 10px; border:none; }
+        
+        .btn-gold { 
+            background: #d4af37; 
+            color: #0f172a !important; 
+            padding: 16px 32px; 
+            border-radius: 8px; 
+            font-weight: 800; 
+            text-decoration: none; 
+            display: inline-block; 
+            transition: 0.2s; 
+            border: none; 
+            cursor: pointer; 
+            width: auto;
+            max-width: 100%;
+        }
+        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+
+        .integrated-cta { margin: 3rem 0; border-radius: 12px; padding: 36px 28px; text-align: center; }
+        .integrated-cta.dark { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); color: #fff; border: 1px solid #991b1b; }
+        
+        /* Modal & Mobile Accessibility */
+        #ai-modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 10000; backdrop-filter: blur(4px); overflow-y: auto; }
+        .modal-content { 
+            background: white; 
+            max-width: 600px; 
+            width: 95%; 
+            margin: 20px auto; 
+            border-radius: 16px; 
+            overflow: hidden; 
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); 
+            font-family: sans-serif; 
+            position: relative;
+        }
+        @media (max-height: 600px) {
+            .modal-content { margin: 10px auto; }
+        }
+  </style>
+ </head>
+ <body>
+  <header class="site-header">
+   <nav aria-label="Main navigation" class="navbar" role="navigation">
+    <div class="nav-container">
+     <div class="nav-logo">
+      <a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+       Texas
+       <em>
+        Special Ed
+       </em>
+      </a>
+     </div>
+     <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+      <span class="hamburger">
+      </span>
+      <span class="hamburger">
+      </span>
+      <span class="hamburger">
+      </span>
+     </button>
+     <ul class="nav-menu">
+      <li class="nav-item">
+       <a class="nav-link" href="/">
+        Home
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/districts/index.html">
+        Districts
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/resources/index.html">
+        Resources
+       </a>
+      </li>
+      <li class="nav-item nav-cta">
+       <a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;">
+        Get Your Letter — $25
+       </a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+  </header>
+  <div class="layout-grid">
+   <article class="content-column">
+    <div class="container">
+     <h1>
+      Complete Guide to Filing Complaints and Resolving Disputes with KAUFMAN ISD Special Education
+     </h1>
+     <p>
+      If you're a parent in
+      <strong>
+       KAUFMAN ISD
+      </strong>
+      navigating special education, you may encounter disagreements with the district regarding your child's Individualized Education Program (IEP), services, or placement decisions. Understanding your rights and knowing how to file a
+      <strong>
+       KAUFMAN ISD special education complaint
+      </strong>
+      empowers you to advocate effectively for your child's needs.
+     </p>
+     <p>
+      This comprehensive guide walks you through every resolution option available to KAUFMAN ISD families, from informal discussions to formal due process hearings. Whether you're seeking clarification on services or challenging a district decision, this roadmap will help you navigate the process with confidence.
+     </p>
+     <div class="ai-tool-banner">
+      <span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+       Live AI Tool
+      </span>
+      <h3>
+       Free ARD Rights Scan
+      </h3>
+      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+       Wondering if the school violated your child's rights? Answer a few questions for an instant analysis based on Texas law.
+      </p>
+      <button class="btn-gold" onclick="openRightsScan()">
+       Run My Free ARD Scan →
+      </button>
+     </div>
+     <!-- AI Tool Section -->
+     <h2>
+      Understanding Your Rights in KAUFMAN ISD Special Education
+     </h2>
+     <p>
+      As a parent of a special needs child in KAUFMAN ISD, you have fundamental legal protections under the Individuals with Disabilities Education Act (IDEA) and Texas Education Code. The district must provide a free appropriate public education (FAPE) tailored to your child's unique needs.
+     </p>
+     <p>
+      Your rights include:
+     </p>
+     <ul>
+      <li>
+       <strong>
+        Participation in all IEP decisions
+       </strong>
+       affecting your child's education and services
+      </li>
+      <li>
+       <strong>
+        Access to your child's educational records
+       </strong>
+       and assessment results
+      </li>
+      <li>
+       <strong>
+        Informed consent
+       </strong>
+       before the district implements significant changes to special education services
+      </li>
+      <li>
+       <strong>
+        Communication in your native language
+       </strong>
+       during IEP meetings and proceedings
+      </li>
+      <li>
+       <strong>
+        Independent evaluation
+       </strong>
+       at public expense if you disagree with KAUFMAN ISD assessments
+      </li>
+      <li>
+       <strong>
+        Due process protections
+       </strong>
+       when disputes arise regarding identification, evaluation, or placement
+      </li>
+     </ul>
+     <p>
+      Understanding these protections is your foundation for resolving conflicts effectively within KAUFMAN ISD.
+     </p>
+     <h2>
+      Step 1: Informal Resolution and Direct Communication
+     </h2>
+     <p>
+      Before pursuing formal complaints,
+      <strong>
+       most KAUFMAN ISD special education disputes
+      </strong>
+      can be resolved through direct, collaborative communication. This approach often produces faster results and preserves your working relationship with school staff.
+     </p>
+     <h3>
+      Request a Meeting with Your Child's Special Education Teacher
+     </h3>
+     <p>
+      Start by scheduling a meeting with your child's special education teacher or case manager. Come prepared with specific concerns, documented instances of problems, and clear questions about services. Bring notes about what you've observed at home and areas where your child may need additional support.
+     </p>
+     <p>
+      Keep written records of this meeting, including the date, attendees, topics discussed, and any commitments made by school staff. Email a brief summary to the teacher afterward: "Thank you for meeting with me today. As I understand it, we agreed to…"
+     </p>
+     <h3>
+      Escalate to the Special Education Director
+     </h3>
+     <p>
+      If your concern remains unresolved after meeting with the teacher, request a meeting with
+      <strong>
+       KAUFMAN ISD's special education director
+      </strong>
+      or coordinator. This administrator oversees the entire special education program and has authority to address systemic concerns or policy questions.
+     </p>
+     <p>
+      Present your concern clearly and professionally, referencing previous communications and specific dates when issues occurred. Ask what steps the director will take to resolve the matter and request a timeline for follow-up communication.
+     </p>
+     <h3>
+      Documentation is Critical
+     </h3>
+     <p>
+      Whether communicating informally or formally, maintain detailed records of everything. Save emails, keep meeting notes, document phone conversations with dates and names, and photograph or copy any relevant documents. This documentation becomes invaluable if you later need to file a formal complaint or pursue
+      <strong>
+       KAUFMAN ISD due process
+      </strong>
+      proceedings.
+     </p>
+     <h2>
+      Step 2: KAUFMAN ISD Mediation Services
+     </h2>
+     <p>
+      <strong>
+       KAUFMAN ISD mediation
+      </strong>
+      offers a voluntary, neutral resolution process that often resolves disputes faster than formal complaints. Mediation is confidential, does not require lawyers, and emphasizes finding mutually agreeable solutions.
+     </p>
+     <h3>
+      How KAUFMAN ISD Mediation Works
+     </h3>
+     <p>
+      A trained mediator helps both you and KAUFMAN ISD special education staff communicate more effectively and explore potential compromises. The mediator doesn't make decisions; instead, they guide both parties toward voluntary agreement.
+     </p>
+     <p>
+      Mediation sessions typically last 1-2 hours. Both parties meet together initially, then may have separate sessions with the mediator to discuss concerns confidentially. Anything you say during mediation cannot be used against you later if you proceed to a formal hearing.
+     </p>
+     <h3>
+      When to Request Mediation
+     </h3>
+     <p>
+      Request mediation when:
+     </p>
+     <ul>
+      <li>
+       You've attempted direct communication but haven't resolved the issue
+      </li>
+      <li>
+       Communication with KAUFMAN ISD staff has become strained or unproductive
+      </li>
+      <li>
+       You want to resolve the matter quickly without extensive legal involvement
+      </li>
+      <li>
+       You prefer exploring compromise solutions rather than winner-take-all outcomes
+      </li>
+     </ul>
+     <h3>
+      How to Request Mediation
+     </h3>
+     <p>
+      Contact the special education office at KAUFMAN ISD and request mediation services. Texas requires that the district provide mediation at no cost to you. Provide brief details about your dispute and schedule a convenient time. Even if you later file a formal complaint, pursuing mediation first demonstrates good faith effort to resolve matters cooperatively.
+     </p>
+     <h2>
+      Step 3: Filing a KAUFMAN ISD Special Education Complaint
+     </h2>
+     <p>
+      If informal resolution and mediation don't address your concerns, you may file a formal complaint with KAUFMAN ISD itself. This initiates an investigation of your allegations and often prompts faster action from the district.
+     </p>
+     <h3>
+      KAUFMAN ISD Internal Complaint Process
+     </h3>
+     <p>
+      KAUFMAN ISD has specific procedures for handling special education complaints, typically documented in the district's special education handbook or board policy. The complaint must be submitted in writing to the KAUFMAN ISD special education department or superintendent's office.
+     </p>
+     <p>
+      Your complaint should include:
+     </p>
+     <ul>
+      <li>
+       Your child's name and date of birth
+      </li>
+      <li>
+       The specific problem or concern you're reporting
+      </li>
+      <li>
+       The date(s) when the issue occurred
+      </li>
+      <li>
+       Names of individuals involved or aware of the problem
+      </li>
+      <li>
+       Actions you've already taken to resolve the matter
+      </li>
+      <li>
+       Specific resolution you're requesting
+      </li>
+      <li>
+       Your contact information and preferred method of communication
+      </li>
+     </ul>
+     <p>
+      The district typically has 10-15 days to acknowledge receipt and 30 days to investigate and respond to your complaint. During this time, KAUFMAN ISD staff may interview witnesses, review records, and assess whether district policy or special education law was violated.
+     </p>
+     <h2>
+      Step 4: Filing a Texas Education Agency (TEA) Complaint
+     </h2>
+     <p>
+      When
+      <strong>
+       KAUFMAN ISD
+      </strong>
+      doesn't satisfactorily address your complaint, or for certain serious violations, you can file a formal complaint with the
+      <strong>
+       Texas Education Agency (TEA)
+      </strong>
+      . The TEA oversees all school districts in Texas, including KAUFMAN ISD.
+     </p>
+     <h3>
+      TEA Complaint Authority
+     </h3>
+     <p>
+      The TEA investigates alleged violations of special education laws, including the Individuals with Disabilities Education Act (IDEA) and Section 504 of the Rehabilitation Act. A
+      <strong>
+       KAUFMAN ISD TEA complaint
+      </strong>
+      triggers an independent investigation conducted by state officials, separate from the district itself.
+     </p>
+     <p>
+      You have
+      <strong>
+       two years
+      </strong>
+      from when the alleged violation occurred to file with the TEA, though filing sooner is better to ensure prompt resolution.
+     </p>
+     <h3>
+      How to File a TEA Complaint
+     </h3>
+     <p>
+      Visit the Texas Education Agency website and complete their special education complaint form. Include detailed information about your complaint, the timeline of events, what you've requested from KAUFMAN ISD, and responses you've received. Attach supporting documentation, such as emails, IEP documents, or correspondence with the district.
+     </p>
+     <p>
+      Mail or email your completed complaint to the TEA's Special Education Compliance section. The TEA typically conducts an investigation within 30 days and issues findings about whether KAUFMAN ISD violated special education regulations.
+     </p>
+     <h3>
+      Possible TEA Complaint Outcomes
+     </h3>
+     <p>
+      If the TEA finds that KAUFMAN ISD violated special education law, the district receives a formal finding and corrective action order. The TEA may require KAUFMAN ISD to provide compensatory services to your child, revise policies or procedures, conduct staff training, or implement other remedies.
+     </p>
+     <h2>
+      Step 5: KAUFMAN ISD Due Process Hearing
+     </h2>
+     <div class="ai-tool-banner">
+      <span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+       Official Request
+      </span>
+      <h3>
+       Show the ISD You Mean Business
+      </h3>
+      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+       A verbal request has no legal weight. A formal Level 1 Grievance letter starts the official district clock.
+      </p>
+      <a class="btn-gold" href="/resources/Iep-letter.html">
+       Get Your Letter — $25 →
+      </a>
+     </div>
+     <p>
+      <strong>
+       Due process hearing
+      </strong>
+      is a formal legal proceeding where an impartial hearing officer examines evidence and makes binding decisions about special education disputes. This is a more serious step involving potential legal representation and formal procedures.
+     </p>
+     <h3>
+      When to Pursue KAUFMAN ISD Due Process
+     </h3>
+     <p>
+      Consider due process when:
+     </p>
+     <ul>
+      <li>
+       The dispute involves disagreement about your child's evaluation, IEP, or placement
+      </li>
+      <li>
+       You're seeking compensatory education services or tuition reimbursement
+      </li>
+      <li>
+       Previous resolution attempts have failed and you need a definitive decision
+      </li>
+      <li>
+       The matter is urgent or significantly impacting your child's education
+      </li>
+      <li>
+       You want to establish a legal precedent or official record of the issue
+      </li>
+     </ul>
+     <h3>
+      Due Process Timeline and Procedures
+     </h3>
+     <p>
+      Filing a
+      <strong>
+       KAUFMAN ISD due process
+      </strong>
+      complaint initiates a structured process with specific deadlines. You must provide written notice to the district, clearly describing the problem and proposed solution. The district has 10 days to respond, and both parties then have the opportunity to participate in a resolution meeting.
+     </p>
+     <p>
+      If the matter isn't resolved within 30 days, a hearing before an impartial hearing officer proceeds. The hearing resembles a courtroom proceeding where both sides present evidence, witness testimony, and arguments.
+     </p>
+     <h3>
+      Preparing for Due Process
+     </h3>
+     <p>
+      Most families hire a
+      <strong>
+       special education attorney near KAUFMAN
+      </strong>
+      to represent them in due process hearings. An experienced attorney understands IDEA requirements, special education case law, and effective hearing strategies. Many special education lawyers work on contingency, meaning you pay only if you win.
+     </p>
+     <p>
+      Alternatively, a
+      <strong>
+       special ed advocate KAUFMAN
+      </strong>
+      families often hire can guide you through the process without full legal representation. Advocates are knowledgeable professionals trained in special education law and procedures but are not attorneys.
+     </p>
+     <h2>
+      Step 6: Working with Special Education Advocates and Attorneys
+     </h2>
+     <p>
+      Professional representation strengthens your case and levels the playing field against district legal teams. When choosing representation, consider experience with KAUFMAN ISD or similar-sized districts and expertise in your child's specific disability or educational issue.
+     </p>
+     <h3>
+      Special Education Attorneys Near KAUFMAN
+     </h3>
+     <p>
+      A
+      <strong>
+       special education attorney near KAUFMAN
+      </strong>
+      brings legal expertise and courtroom experience. When interviewing attorneys, ask about their success rate with special education cases, familiarity with KAUFMAN ISD, and fee structures. Some attorneys offer free consultations to discuss your situation.
+     </p>
+     <h3>
+      Special Ed Advocates in KAUFMAN
+     </h3>
+     <p>
+      A
+      <strong>
+       special ed advocate KAUFMAN
+      </strong>
+      parents trust can often address disputes without formal legal proceedings. Advocates are typically less expensive than attorneys, excel at IEP meeting participation and negotiation, and provide valuable guidance throughout complaint processes.
+     </p>
+     <h2>
+      Key Timelines and Deadlines for KAUFMAN ISD Disputes
+     </h2>
+     <p>
+      Understanding critical deadlines ensures you don't lose important rights. Here are essential timelines affecting KAUFMAN ISD special education disputes:
+     </p>
+     <ul>
+      <li>
+       <strong>
+        TEA complaint filing:
+       </strong>
+       Within 2 years of the alleged violation
+      </li>
+      <li>
+       <strong>
+        Due process complaint filing:
+       </strong>
+       Within 2 years of the alleged violation
+      </li>
+      <li>
+       <strong>
+        District response to internal complaint:
+       </strong>
+       Within 30 days of receipt
+      </li>
+      <li>
+       <strong>
+        Due process resolution meeting:
+       </strong>
+       Within 15 days of hearing officer appointment
+      </li>
+      <li>
+       <strong>
+        Mediation session scheduling:
+       </strong>
+       Typically within 10-15 days of request
+      </li>
+      <li>
+       <strong>
+        Due process hearing completion:
+       </strong>
+       Within 45 days of resolution meeting, unless extended
+      </li>
+     </ul>
+     <p>
+      Mark these deadlines on your calendar and maintain documentation of all correspondence to ensure you meet filing requirements with KAUFMAN ISD.
+     </p>
+     <h2>
+      Preparing Documentation for KAUFMAN ISD Disputes
+     </h2>
+     <p>
+      Strong documentation forms the foundation of any successful complaint or hearing. Throughout your involvement with KAUFMAN ISD special education, maintain organized records of:
+     </p>
+     <ul>
+      <li>
+       All IEP meetings and progress reports
+      </li>
+      <li>
+       Communication with teachers and administrators (emails, letters, meeting notes)
+      </li>
+      <li>
+       Your child's report cards, grade reports, and assessments
+      </li>
+      <li>
+       Evaluations from independent evaluators or outside professionals
+      </li>
+      <li>
+       Medical records or documentation from healthcare providers
+      </li>
+      <li>
+       Specific examples of when your child did or did not receive promised services
+      </li>
+      <li>
+       Evidence of your child's progress or lack thereof
+      </li>
+     </ul>
+     <p>
+      Organize documents chronologically in folders or binders. Having well-documented evidence significantly strengthens your position with KAUFMAN ISD and demonstrates credibility if proceedings advance to formal hearings.
+     </p>
+     <h2>
+      Frequently Asked Questions About KAUFMAN ISD Special Education Disputes
+     </h2>
+     <h3>
+      Can I pursue both KAUFMAN ISD due process and a TEA complaint simultaneously?
+     </h3>
+     <p>
+      Yes, you can file both. However, the issues addressed in due process (disagreements about IEP, evaluation, or placement) differ slightly from TEA complaints (violations of special education law). Consult with an advocate or attorney about the best strategy for your specific situation.
+     </p>
+     <h3>
+      Will filing a complaint negatively impact my relationship with KAUFMAN ISD?
+     </h3>
+     <p>
+      While concerns about retaliation are understandable, federal law protects you against retaliation for filing complaints. KAUFMAN ISD cannot punish your child or withhold services because you filed a complaint. Many districts view formal complaints as motivation to improve their practices.
+     </p>
+     <h3>
+      What if I disagree with KAUFMAN ISD's due process hearing decision?
+     </h3>
+     <p>
+      Either party can appeal an unfavorable due process decision to the Texas Education Agency within 30 days. The TEA reviews the case and may affirm, reverse, or modify the hearing officer's decision. Beyond that, you may pursue legal action in state or federal court, though this requires attorney representation.
+     </p>
+     <h2>
+      Resources for KAUFMAN ISD Parents
+     </h2>
+     <p>
+      Several organizations provide free resources and support to KAUFMAN ISD families navigating special education disputes:
+     </p>
+     <ul>
+      <li>
+       <strong>
+        Texas Project FIRST (Family Information, Resources, Support and Training):
+       </strong>
+       Offers free advocacy training and support
+      </li>
+      <li>
+       <strong>
+        Disability Rights Texas:
+       </strong>
+       Provides legal advocacy and complaint assistance
+      </li>
+      <li>
+       <strong>
+        Parent Training and Information Centers:
+       </strong>
+       Offer workshops and resources specific to Texas special education
+      </li>
+      <li>
+       <strong>
+        KAUFMAN ISD Special Education Department:
+       </strong>
+       Can provide copies of district policies and procedures
+      </li>
+     </ul>
+     <h2>
+      Final Thoughts on Resolving KAUFMAN ISD Special Education Disputes
+     </h2>
+     <p>
+      Navigating disagreements with KAUFMAN ISD requires patience, persistence, and clear communication. Whether you pursue informal resolution, mediation, or formal complaints, remember that your goal is ensuring your child receives an appropriate education.
+     </p>
+     <p>
+      Start with collaborative approaches whenever possible, but don't hesitate to pursue formal remedies when KAUFMAN ISD fails to address your legitimate concerns. Your advocacy directly impacts your child's educational success and future opportunities.
+     </p>
+     <p>
+      Armed with knowledge of your rights, understanding of KAUFMAN ISD's processes, and access to professional support when needed, you can effectively resolve disputes and secure the special education services your child deserves.
+     </p>
+    </div>
+    <!-- MODAL FOR AI SCAN -->
+    <div id="ai-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 1000; backdrop-filter: blur(4px);">
+     <div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+      <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
+       <h3 class="text-xl font-serif">
+        ARD Rights Analysis
+       </h3>
+       <button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
+        ×
+       </button>
+      </div>
+      <div class="p-8" id="modal-body">
+       <div id="scan-form">
+        <p class="text-slate-600 mb-6">
+         Describe the situation your child is facing. Be as specific as possible regarding IEP violations or school actions.
+        </p>
+        <div class="space-y-4">
+         <div>
+          <label class="block text-sm font-bold text-slate-700 mb-1">
+           Total days suspended this year?
+          </label>
+          <input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
+         </div>
+         <div>
+          <label class="block text-sm font-bold text-slate-700 mb-1">
+           What happened?
+          </label>
+          <textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
+         </div>
+         <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
+          <span id="btn-text">
+           Start Rights Scan
+          </span>
+         </button>
+        </div>
+       </div>
+       <div class="hidden" id="scan-results">
+        <div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
+        </div>
+        <hr class="my-6"/>
+        <div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
+         Disclaimer: This analysis is generated by AI based on Texas IDEA regulations and is for educational purposes only.
+        </div>
+        <button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
+         Close Analysis
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </article>
+  </div>
+  <script>
+   const apiKey = ""; 
+
+    function openRightsScan() {
+        document.getElementById('ai-modal-overlay').style.display = 'block';
+    }
+
+    function closeRightsScan() {
+        document.getElementById('ai-modal-overlay').style.display = 'none';
+    }
+
+    async function runAnalysis() {
+        const days = document.getElementById('days-suspended').value;
+        const situation = document.getElementById('situation-text').value;
+        const btnText = document.getElementById('btn-text');
+        if (!situation) return alert("Please describe the situation.");
+
+        btnText.innerHTML = `Analyzing...`;
+        
+        const systemPrompt = "You are a Texas Special Education Law Expert. Analyze situations regarding IEP violations and disciplinary actions. Focus on IDEA and Texas-specific protections.";
+        const userQuery = `District: ${document.title}. Suspended: ${days} days. Situation: ${situation}`;
+
+        try {
+            const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contents: [{ parts: [{ text: userQuery }] }],
+                    systemInstruction: { parts: [{ text: systemPrompt }] }
+                })
+            });
+            const data = await response.json();
+            const analysis = data.candidates?.[0]?.content?.parts?.[0]?.text || "Error.";
+            document.getElementById('analysis-content').innerHTML = analysis.replace(/\n/g, '<br>').replace(/### (.*$)/gim, '<strong>$1</strong>');
+            document.getElementById('scan-form').classList.add('hidden');
+            document.getElementById('scan-results').classList.remove('hidden');
+        } catch (e) {
+            document.getElementById('analysis-content').innerHTML = "Error connecting to AI.";
+        } finally {
+            btnText.innerText = "Start Rights Scan";
+        }
+    }
+  </script>
+  <div id="ai-modal-overlay">
+   <div class="modal-content">
+    <div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
+     <h3 style="margin:0; font-family:'Lora',serif;">
+      ARD Rights Analysis
+     </h3>
+     <button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
+      ×
+     </button>
+    </div>
+    <div id="modal-body" style="padding:30px;">
+     <div id="scan-form">
+      <p style="color:#475569; margin-bottom:20px;">
+       Describe the situation (e.g., suspension days, manifestation hearing outcome).
+      </p>
+      <textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
+      <button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
+       Start Rights Scan
+      </button>
+     </div>
+     <div id="scan-results" style="display:none;">
+      <div id="analysis-content" style="color:#1e293b; line-height:1.6;">
+      </div>
+      <button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
+       Close
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   const apiKey = ""; 
+    function openRightsScan() { document.getElementById('ai-modal-overlay').style.display='block'; }
+    function closeRightsScan() { document.getElementById('ai-modal-overlay').style.display='none'; }
+    async function runAnalysis() {
+        const sit = document.getElementById('situation-text').value;
+        const btn = document.getElementById('run-scan-btn');
+        if(!sit) return alert("Please describe the situation.");
+        btn.innerText = "Analyzing...";
+        try {
+            const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, {
+                method:'POST', headers:{'Content-Type':'application/json'},
+                body: JSON.stringify({ contents: [{ parts: [{ text: "Texas Special Ed Expert analysis: " + sit }] }] })
+            });
+            const d = await r.json();
+            const txt = d.candidates[0].content.parts[0].text;
+            document.getElementById('analysis-content').innerHTML = txt.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            document.getElementById('scan-form').style.display='none';
+            document.getElementById('scan-results').style.display='block';
+        } catch(e) { alert("Error connecting to AI."); }
+        finally { btn.innerText = "Start Rights Scan"; }
+    }
+  </script>
+  <footer class="site-footer">
+   <div class="footer-container">
+    <div class="footer-about">
+     <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+     <p>
+      © 2026 Texas Special Education Resources. Not affiliated with the TEA.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var toggle = document.querySelector('.mobile-menu-toggle');
+    var menu   = document.querySelector('.nav-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function() { menu.classList.toggle('active'); });
+    }
+});
+  </script>
+ </body>
+</html>

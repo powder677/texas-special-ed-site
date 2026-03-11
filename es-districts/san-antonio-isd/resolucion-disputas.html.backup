@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GVLPE273XH');
+</script>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Derechos de Disciplina y Quejas en San Antonio ISD | MDR y Defensa contra Suspensión</title>
+<meta name="description" content="Derechos de suspensión y disciplina en San Antonio ISD: regla de 10 días, Revisión de Determinación de Manifestación (MDR), y presentación de quejas ante la TEA cuando se niegan servicios."/>
+<link rel="canonical" href="https://www.texasspecialed.com/es-districts/san-antonio-isd/resolucion-disputas"/>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="/style.css" rel="stylesheet"/>
+<style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: #f8fafc;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site-header {
+    background: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-top: 10px;
+    font-family: 'Lora', serif;
+    color: #0a2342;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-top: 30px;
+    align-items: start;
+}
+
+@media (min-width: 1024px) {
+    .layout-grid {
+        grid-template-columns: 1fr 380px;
+    }
+}
+
+.sidebar-column {
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+}
+
+.content-column {
+    min-width: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #1a1a2e;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.content-column h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0a2342;
+    margin: 2.5rem 0 1rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #e8f0fe;
+}
+
+.content-column h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin: 1.75rem 0 0.75rem;
+}
+
+.content-column p {
+    margin: 0 0 1.25rem;
+}
+
+.quick-answer {
+    background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+    border-left: 4px solid #1a56db;
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(26, 86, 219, 0.08);
+}
+
+.quick-answer strong {
+    color: #1e3a8a;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-left: 4px solid #f59e0b;
+    padding: 24px;
+    margin: 32px 0;
+    border-radius: 8px;
+}
+
+.cta-box h3 {
+    margin-top: 0;
+    color: #92400e;
+    font-family: 'Lora', serif;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #1a56db;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.2s;
+    margin-top: 12px;
+}
+
+.btn-primary:hover {
+    background: #1e40af;
+}
+
+.next-steps {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 24px;
+    margin: 32px 0;
+    border-radius: 8px;
+}
+
+.next-steps h3 {
+    margin-top: 0;
+    color: #0a2342;
+    font-family: 'Lora', serif;
+}
+
+.next-steps ul {
+    list-style: none;
+    padding: 0;
+}
+
+.next-steps li {
+    margin: 12px 0;
+}
+
+.next-steps a {
+    color: #1a56db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.next-steps a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    margin: 1.25rem 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+strong {
+    color: #1e3a8a;
+    font-weight: 600;
+}
+
+em {
+    color: #475569;
+}
+
+a {
+    color: #1a56db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Derechos de Disciplina y Quejas en San Antonio Independent School District</h1>
+
+<div class="alert-box">
+<strong>⚠️ Urgente:</strong> Si su hijo ha sido suspendido por más de 10 días acumulativos en San Antonio ISD, esto es legalmente un <strong>Cambio de Colocación</strong>. La escuela debe celebrar una reunión ARD/MDR inmediatamente.
+</div>
+
+<div class="quick-answer">
+<strong>¿Es una suspensión de 10 días un Cambio de Colocación?</strong><br/>
+Sí. Bajo la IDEA, suspender a un estudiante de educación especial por más de <strong>10 días escolares acumulativos</strong> en un año desencadena un Cambio de Colocación y requiere una Revisión de Determinación de Manifestación (MDR) dentro de 10 días hábiles.
+</div>
+
+<h2>La Regla de Suspensión de 10 Días</h2>
+
+<p>Si su hijo tiene un Plan Educativo Individualizado (IEP) o un plan de Sección 504, las reglas de disciplina estándar no se aplican completamente. San Antonio ISD puede suspender a su hijo hasta 10 días totales por año académico.</p>
+
+<p><strong>Después del décimo día de suspensión</strong> (aunque sean incidentes separados de 2 o 3 días), la ley federal desencadena protecciones masivas:</p>
+
+<ul>
+<li>El distrito DEBE proporcionar servicios educativos para mantener el progreso académico</li>
+<li>Se requiere una Revisión de Determinación de Manifestación (MDR) antes de cualquier acción disciplinaria adicional</li>
+<li>La escuela no puede enviar a su hijo a casa sin nada</li>
+</ul>
+
+<p><strong>Importante:</strong> Los retiros informales también cuentan. Si el director lo llama continuamente para "recoger a su hijo temprano" por conducta, esos días cuentan como días de suspensión.</p>
+
+<h2>¿Qué es una MDR (Revisión de Determinación de Manifestación)?</h2>
+
+<p>Una MDR es una reunión obligatoria que ocurre antes de que San Antonio ISD pueda expulsar a su hijo o enviarlo a un Programa Educativo Alternativo Disciplinario (DAEP) por más de 10 días.</p>
+
+<p>El comité ARD debe responder dos preguntas:</p>
+
+<ol>
+<li>¿Fue la conducta causada por, o directamente relacionada con, la discapacidad del niño?</li>
+<li>¿Fue la conducta el resultado directo del incumplimiento de San Antonio ISD en la implementación del Plan Educativo Individualizado (IEP)?</li>
+</ol>
+
+<p><strong>Si la respuesta a CUALQUIERA de estas preguntas es sí</strong>, la escuela no puede disciplinar a su hijo de la misma manera que disciplinaría a un estudiante sin discapacidad. Deben:</p>
+<ul>
+<li>Realizar una Evaluación Funcional del Comportamiento (FBA)</li>
+<li>Devolver a su hijo a su colocación original</li>
+<li>Agregar apoyos de conducta al Plan Educativo Individualizado (IEP)</li>
+</ul>
+
+<h2>Presentar una Queja de Nivel 1 en San Antonio ISD</h2>
+
+<p>Si cree que un administrador del plantel violó los derechos de su hijo o ignoró su Plan Educativo Individualizado (IEP), presente una queja formal. Los correos electrónicos enfadados no cuentan.</p>
+
+<p><strong>Pasos para presentar una queja:</strong></p>
+
+<ol>
+<li><strong>Encuentre la Política:</strong> La política de la junta de San Antonio ISD (FNG Local) rige las quejas. Típicamente tiene solo 15 días desde el incidente para presentar.</li>
+<li><strong>Obtenga el Formulario:</strong> Solicite el formulario oficial de Queja de Nivel 1 al director o descárguelo del sitio web del distrito.</li>
+<li><strong>Adhiérase a los Hechos:</strong> Indique los hechos, la disposición específica de la política o del Plan Educativo Individualizado (IEP) que se violó, y el remedio exacto que busca.</li>
+<li><strong>Envíe Oficialmente:</strong> Envíe al director del plantel por correo electrónico (mantenga una copia con marca de tiempo).</li>
+</ol>
+
+<h2>Quejas Estatales ante la TEA</h2>
+
+<p>Si el proceso de quejas falla y San Antonio ISD continúa negando a su hijo una Educación Pública Apropiada y Gratuita (FAPE), escale el problema al estado.</p>
+
+<p>Puede presentar una Queja Estatal Formal ante la Agencia de Educación de Texas (TEA), que desencadena que un investigador estatal revise las acciones del distrito.</p>
+
+<p><strong>Cuándo presentar una queja ante la TEA:</strong></p>
+<ul>
+<li>El distrito se niega a evaluar a su hijo</li>
+<li>Los servicios del Plan Educativo Individualizado (IEP) no están siendo implementados</li>
+<li>El distrito violó salvaguardas procedimentales (sin aviso de 5 días, se negó a un receso de 10 días, etc.)</li>
+<li>El niño está siendo suspendido ilegalmente</li>
+</ul>
+
+<p>La TEA debe investigar y emitir hallazgos. Si se encuentran violaciones, San Antonio ISD debe tomar medidas correctivas.</p>
+
+<h2>Audiencias de Debido Proceso</h2>
+
+<p>Para desacuerdos graves sobre colocación o si las quejas de la TEA no resuelven el problema, puede solicitar una <strong>Audiencia de Debido Proceso</strong>—un juicio legal formal ante un juez administrativo.</p>
+
+<p>Esta es la herramienta legal más poderosa que tienen los padres, pero requiere una preparación significativa. La mayoría de los padres contratan a un abogado de educación especial para el debido proceso.</p>
+
+<h2>Violaciones Comunes a Vigilar</h2>
+
+<ul>
+<li><strong>Plan Educativo Individualizado (IEP) no implementado:</strong> Los servicios enumerados en el Plan Educativo Individualizado (IEP) realmente no están siendo proporcionados</li>
+<li><strong>Sin progreso en los objetivos:</strong> El niño no hace progreso medible año tras año</li>
+<li><strong>Suspensiones informales:</strong> Enviado a casa temprano repetidamente sin documentación formal de suspensión</li>
+<li><strong>Se rechazó la evaluación:</strong> El distrito se niega a evaluar a pesar de la solicitud escrita de los padres</li>
+<li><strong>Sin aviso previo por escrito:</strong> El distrito realiza cambios sin darle notificación formal</li>
+</ul>
+
+<h2>Proteger la Colocación de su Hijo</h2>
+
+<p>Mientras se resuelven las disputas, su hijo tiene derecho a "mantenerse en su lugar"—permanecen en su colocación educativa actual a menos que usted esté de acuerdo de lo contrario o un oficial de audiencia ordene un cambio.</p>
+
+<p>La escuela no puede mover unilateralmente a su hijo a un entorno más restrictivo mientras usted lucha por los servicios.</p>
+
+<div class="cta-box">
+<h3>¿Enfrentando una MDR o Audiencia de Expulsión?</h3>
+<p>Obtenga el Kit de Defensa de Conducta y Disciplina con scripts exactos para ganar su audiencia MDR y el Rastreador de Disciplina Encubierta para probar retiros "fuera de los registros".</p>
+<a href="#" class="btn-primary">Obtenga el Kit de Defensa — $47</a>
+</div>
+
+<h2>Contexto de Resolución de Disputas en San Antonio ISD</h2>
+
+<p>San Antonio ISD es uno de los distritos escolares más grandes de Texas, sirviendo a más de 180,000 estudiantes. Cuando surgen disputas, los padres tienen múltiples caminos hacia la resolución: quejas a nivel de plantel, apelaciones del distrito, quejas de la TEA, y audiencias de debido proceso.</p>
+
+<p>Documente cada interacción con la escuela. Mantenga copias de todos los correos electrónicos, Planes Educativos Individualizados (IEPs), reportes de progreso, y avisos de disciplina. Este registro escrito es esencial si necesita presentar quejas o buscar debido proceso.</p>
+
+<div class="next-steps">
+<h3>Recursos Relacionados</h3>
+<ul>
+<li><a href="evaluation-child-find.html">Derechos de Evaluación</a></li>
+<li><a href="ard-process-guide.html">Guía de Reunión ARD</a></li>
+<li><a href="index.html">Todos los Recursos de San Antonio ISD</a></li>
+</ul>
+</div>
+
+</body>
+</html>
