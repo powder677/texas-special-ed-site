@@ -152,7 +152,6 @@ Texas <em>Special Ed</em>
 <li class="nav-item nav-cta">
 <a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
 </li>
-
 <li class="nav-item nav-cta" style="margin-left:8px;">
 <a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
 </li>
@@ -177,11 +176,7 @@ Texas <em>Special Ed</em>
 <!-- PREMIUM NAVIGATION GRID -->
 <div class="hub-grid">
 <a class="hub-card" href="/districts/austin-isd/ard-process-guide.html">
-<div class="hub-card-icon">📋<a class="hub-card" href="/districts/austin-isd/como-solicitar-una-evaluacion-fie-en-austin-isd.html" style="border-left-color: #b8963a; background:#fdfaf5;">
-<div class="hub-card-icon">🇲🇽</div>
-<h3>¿Cómo solicitar una FIE?</h3>
-<p>Guía en español para padres hispanos — plazos legales, tus derechos y cómo obtener una evaluación para tu hijo.</p>
-</a>
+<div class="hub-card-icon">📋
 </div>
 <h3>The ARD Meeting Guide</h3>
 <p>Step-by-step preparation for your next ARD meeting, including the 10-day recess rule.</p>
@@ -254,60 +249,15 @@ Texas <em>Special Ed</em>
 </div>
 </div>
 </div>
+
+<div class="cta-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:36px;border-radius:12px;text-align:center;color:#fff;border:none;margin-top:40px;box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15);">
+<h3 style="font-family:'Lora',serif;font-size:1.6rem;margin:0 0 12px;color:#fff;">Show the ISD You Mean Business</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:16px;color:#cbd5e1;margin:0 auto 24px;line-height:1.6;max-width:90%;">A verbal request has no legal weight. A written letter starts the 45-day clock and forces a response within 15 school days.</p>
+<a href="/resources/Iep-letter.html" style="display:inline-block;background:#d4af37;color:#0f172a;padding:16px 32px;border-radius:6px;text-decoration:none;font-weight:800;font-family:'DM Sans',sans-serif;font-size:16px;transition:background 0.2s;">Get Your Letter — $25 →</a>
+</div>
 </article>
 <!-- RIGHT SIDE: 30% STICKY SIDEBAR -->
-<aside class="sidebar-column">
-<div class="sidebar-card cta-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;border:none;margin-bottom:24px;">
-<h4 style="font-family:'Lora',serif;font-size:1.25rem;margin:0 0 10px;color:#fff;">Show the ISD<br/>You Mean Business</h4>
-<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#94a3b8;margin:0 0 18px;line-height:1.5;">A verbal request has no legal weight. A written letter starts the 45-day clock and forces a response within 15 school days.</p>
-<a href="/resources/Iep-letter.html" style="display:block;background:#d4af37;color:#0f172a;padding:14px;border-radius:6px;text-decoration:none;font-weight:800;font-family:'DM Sans',sans-serif;font-size:14px;transition:background 0.2s;">Get Your Letter — $25 →</a>
-</div>
-<!-- GENERAL LEAD CAPTURE FORM (Hub Version) -->
-<div class="sidebar-form">
-<div class="sf-header">
-<p class="sf-eyebrow">Austin ISD Special Education Support</p>
-<h3 class="sf-name">Need Help <em>Now?</em></h3>
-</div>
-<div class="sf-body">
-<p class="sf-empathy">Not sure where to start?</p>
-<p class="sf-sub">Tell us what you're dealing with, and we will match you with a local advocate, attorney, or specialist for a free case review.</p>
-<form id="leadCaptureForm">
-<div class="sf-group">
-<label>Your Name</label>
-<input placeholder="First and last name" required="" type="text"/>
-</div>
-<div class="sf-group">
-<label>Email Address</label>
-<input placeholder="Where should we reach you?" required="" type="email"/>
-</div>
-<div class="sf-group">
-<label>Phone <span class="sf-optional">(optional)</span></label>
-<input placeholder="(555) 000-0000" type="tel"/>
-</div>
-<div class="sf-group">
-<label>What's the primary issue?</label>
-<select required="">
-<option disabled="" selected="" value="">Choose what fits best...</option>
-<option>I need to request an evaluation</option>
-<option>We have a difficult ARD meeting coming up</option>
-<option>My child was suspended / DAEP</option>
-<option>The school is denying services</option>
-<option>I need a dyslexia/reading tutor</option>
-<option>Just need general advice</option>
-</select>
-</div>
-<button class="sf-btn" type="button">Get Connected</button>
-<p class="sf-trust">
-<svg fill="none" height="13" stroke="#b8963a" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                        Confidential matching. No spam.
-                    </p>
-</form>
-</div>
-<div class="sf-footer">
-                Professional Educational &amp; Legal Services
-            </div>
-</div>
-</aside>
+
 </div>
 </main>
 <footer class="site-footer">
@@ -362,66 +312,6 @@ document.addEventListener('DOMContentLoaded', function() {
             toggle.setAttribute('aria-expanded', menu.classList.contains('active'));
         });
     }
-
-    // Form capture logic
-    const leadForms = document.querySelectorAll('form');
-    
-    leadForms.forEach(form => {
-        const submitBtn = form.querySelector('button');
-        if (!submitBtn) return;
-
-        submitBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            const nameInput = form.querySelector('input[type="text"]');
-            const emailInput = form.querySelector('input[type="email"]');
-            const phoneInput = form.querySelector('input[type="tel"]');
-            const selectInputs = form.querySelectorAll('select');
-            let issueSelect = selectInputs.length > 0 ? selectInputs[0] : null;
-
-            if (nameInput && !nameInput.value.trim()) {
-                alert('Please enter your name.');
-                nameInput.focus();
-                return;
-            }
-
-            submitBtn.innerHTML = 'Securely Sending...';
-            submitBtn.disabled = true;
-            submitBtn.style.opacity = '0.7';
-
-            const formData = new URLSearchParams();
-            formData.append('name', nameInput && nameInput.value ? nameInput.value : 'Not provided');
-            formData.append('email', emailInput && emailInput.value ? emailInput.value : 'Not provided');
-            formData.append('phone', phoneInput && phoneInput.value ? phoneInput.value : 'Not provided');
-            formData.append('concern', issueSelect && issueSelect.value ? issueSelect.value : 'Not provided');
-            formData.append('pageUrl', window.location.href);
-
-            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwWpGXg3JMJnxyzUlJHPlQRnE_R2Dh6oFvapMureXQWG_0bLOBtN_e7f5s5jnKRdcG-/exec';
-
-            fetch(GOOGLE_SCRIPT_URL, {
-                method: 'POST',
-                body: formData,
-                mode: 'no-cors'
-            })
-            .then(() => {
-                form.innerHTML = `
-                    <div style="text-align: center; padding: 20px 10px;">
-                        <div style="color: #b8963a; font-size: 40px; margin-bottom: 10px;">✓</div>
-                        <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #1a1410; margin-bottom: 10px; font-weight: 600;">Request Received</h4>
-                        <p style="font-size: 14px; color: #6b5f53; line-height: 1.5; font-family: 'DM Sans', sans-serif;">
-                            Your information has been securely routed. A local professional will reach out to you shortly.
-                        </p>
-                    </div>
-                `;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                submitBtn.innerHTML = 'Error. Please Try Again.';
-                submitBtn.disabled = false;
-                submitBtn.style.opacity = '1';
-            });
-        });
-    });
 });
 </script>
 </body>
