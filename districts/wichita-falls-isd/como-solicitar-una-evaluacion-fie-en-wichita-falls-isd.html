@@ -752,7 +752,40 @@
          background: #b8963a;
       }
    </style>
-</head>
+<style id="fie-core-formatting">
+        /* ── AUTOMATED CRO PATCH: FIE Layout & Mobile Fixes ── */
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+        h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
+        
+        /* 1. Core Layout */
+        .layout-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-top: 30px; align-items: start; }
+        @media (min-width: 951px) { .layout-grid { grid-template-columns: 1fr 380px; } }
+        .sidebar-column { position: sticky; top: 100px; z-index: 10; }
+        .content-column { min-width: 0; font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
+        .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        .content-column p { margin: 0 0 1.25rem; }
+        .content-column ul { padding-left: 20px; margin-bottom: 1.5rem; }
+        .content-column li { margin-bottom: 8px; }
+
+        /* 3. Mobile Display & Padding Fixes */
+        @media (max-width: 950px) {
+            .hide-on-mobile { display: none !important; }
+            .mobile-only { display: block !important; }
+            .content-column { padding: 10px !important; border: none !important; box-shadow: none !important; background: transparent !important; }
+            .nav-menu { display: none !important; }
+        }
+        @media (min-width: 951px) {
+            .mobile-only { display: none !important; }
+            .hide-on-mobile { display: block !important; }
+        }
+        
+        /* 4. Protect Bot Banners from global style.css hijacking */
+        .banner-btn { text-decoration: none !important; display: block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: background 0.2s; padding: 15px; }
+        .banner-btn:hover { color: #0f172a !important; }
+        .banner-btn-gold { background: #d4af37; color: #0f172a !important; }
+        .banner-btn-blue { background: #1a56db; color: #fff !important; }
+        .banner-btn-blue:hover { background: #1e3a8a; color: #fff !important; }
+        </style></head>
 <body>
 <!-- NAVBAR -->
 <header class="site-header">
@@ -789,7 +822,6 @@
 <li class="nav-item nav-cta">
 <a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
 </li>
-
 <li class="nav-item nav-cta" style="margin-left:8px;">
 <a href="/resources/iep-letter-spanish/" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Obtener Tu Carta — $25</a>
 </li>
@@ -831,46 +863,39 @@
 <div class="section-divider">· · ·</div>
 <section id="seccion-espanol" lang="es">
 <h2>Cómo solicitar una evaluación FIE en Wichita Falls ISD</h2>
-
-<p>Si tienes dudas sobre el desarrollo académico o de aprendizaje de tu hijo, o si sospechas que puede necesitar servicios de educación especial, tienes el derecho legal de pedir una evaluación formal al distrito escolar. En Wichita Falls ISD, como en todos los distritos de Texas, este proceso está protegido por la ley federal y estatal. Esta guía te explica, en términos sencillos, qué es una FIE, cómo solicitarla y qué puedes hacer si el distrito se niega a realizarla.</p>
-
-<h3>¿Qué es una FIE y en qué se diferencia de una FIIE?</h3>
-
-<p>La FIE, o Evaluación Individual Completa, es una evaluación integral que realiza el distrito escolar para determinar si un niño tiene alguna discapacidad que afecte su aprendizaje y si, como resultado, necesita servicios de educación especial. Esta evaluación puede incluir pruebas académicas, cognitivas, de lenguaje, de comportamiento y otras áreas según las necesidades del estudiante. No se trata de un solo examen, sino de un conjunto de herramientas que ayudan a obtener un panorama completo del niño.</p>
-
-<p>Ahora bien, es común escuchar también el término FIIE, que significa Evaluación Individual e Inicial Completa. La diferencia es sencilla: la FIIE es la primera evaluación que se realiza cuando un niño nunca ha sido evaluado por el distrito para efectos de educación especial. Una FIE, en cambio, puede referirse también a las reevaluaciones que se hacen cada cierto tiempo para revisar si el estudiante sigue siendo elegible para los servicios o si sus necesidades han cambiado. En la práctica, muchos padres y maestros usan ambos términos de manera intercambiable, y eso está bien.</p>
-
-<div class="pull-quote">Solicitar una evaluación no significa que tu hijo tendrá una "etiqueta" para siempre. Significa que tendrá acceso a la información y al apoyo que merece.</div>
-
-<p>Tanto la Ley IDEA (Individuals with Disabilities Education Act, por sus siglas en inglés) como el Capítulo 29 del Código de Educación de Texas garantizan a los padres el derecho a solicitar esta evaluación de forma gratuita. El distrito no puede cobrarte nada por realizarla, y debe completarla dentro de los plazos establecidos por la ley.</p>
-
-<h3>Plazos legales que debes conocer</h3>
-
-<p>Una vez que entregues tu solicitud por escrito, Wichita Falls ISD tiene <strong>15 días escolares</strong> para responderte. En esa respuesta, el distrito debe indicar si acepta o rechaza realizar la evaluación. Si acepta, deberás firmar un documento de consentimiento para que el proceso comience formalmente.</p>
-
-<p>A partir del momento en que firmas el consentimiento, el distrito tiene <strong>45 días escolares</strong> para completar toda la evaluación y programar una reunión del equipo ARD (Admisión, Revisión y Salida) en la que se analizarán los resultados. Es importante que guardes copias de todo lo que entregues y recibas, incluyendo correos electrónicos y notas de conversaciones telefónicas.</p>
-
-<div class="warning-box"><p>Si el distrito no responde dentro de los 15 días escolares o no completa la evaluación en los 45 días escolares establecidos, está violando tus derechos bajo la ley IDEA y el Capítulo 29 del Código de Educación de Texas. En ese caso, puedes presentar una queja formal ante la Agencia de Educación de Texas (TEA).</p></div>
-
-<div class="action-steps">
-  <h3>Pasos para solicitar la evaluación</h3>
-  <ol>
-    <li><strong>Documenta tus preocupaciones:</strong> Anota con detalle las dificultades que has observado en tu hijo, ya sea en casa, en la escuela o en ambos lugares. Incluye fechas, materias y situaciones específicas.</li>
-    <li><strong>Redacta una carta formal por escrito:</strong> La solicitud debe hacerse por escrito para que quede registrada legalmente. Una solicitud verbal no activa los plazos legales. Incluye el nombre completo de tu hijo, el grado escolar y las áreas de preocupación.</li>
-    <li><strong>Entrega la carta al director o al coordinador de educación especial:</strong> Puedes llevarla personalmente a la escuela o enviarla por correo certificado. Si la entregas en persona, pide que te den una copia sellada con la fecha de recepción.</li>
-    <li><strong>Espera la respuesta del distrito:</strong> Wichita Falls ISD tiene 15 días escolares para responderte. Si te envían el formulario de consentimiento, léelo con cuidado antes de firmarlo.</li>
-    <li><strong>Firma el consentimiento e inicia el proceso:</strong> Una vez que firmes, el reloj empieza a correr. El equipo de evaluación tiene 45 días escolares para completar todas las pruebas y presentarte los resultados en una reunión ARD.</li>
-  </ol>
+<div class="mobile-only" id="mobile-bot-1" style="margin: 2.5rem 0;">
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;box-shadow:0 10px 25px -5px rgba(0,0,0,0.15);border:1px solid #1e40af;">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
+<h3 style="font-family:'Lora',serif;font-size:1.6rem;margin:0 0 10px;color:#fff;">Draft Your FIE Request</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:15px;color:#cbd5e1;margin:0 0 18px;line-height:1.5;">Sending a casual email is a mistake. Use our AI to write a legally binding letter that forces a response.</p>
+<a class="banner-btn banner-btn-gold" href="/tools/fie-letter-bot/index.html">Draft My Letter — $25 →</a>
+</div>
 </div>
 
+<p>Si tienes dudas sobre el desarrollo académico o de aprendizaje de tu hijo, o si sospechas que puede necesitar servicios de educación especial, tienes el derecho legal de pedir una evaluación formal al distrito escolar. En Wichita Falls ISD, como en todos los distritos de Texas, este proceso está protegido por la ley federal y estatal. Esta guía te explica, en términos sencillos, qué es una FIE, cómo solicitarla y qué puedes hacer si el distrito se niega a realizarla.</p>
+<h3>¿Qué es una FIE y en qué se diferencia de una FIIE?</h3>
+<p>La FIE, o Evaluación Individual Completa, es una evaluación integral que realiza el distrito escolar para determinar si un niño tiene alguna discapacidad que afecte su aprendizaje y si, como resultado, necesita servicios de educación especial. Esta evaluación puede incluir pruebas académicas, cognitivas, de lenguaje, de comportamiento y otras áreas según las necesidades del estudiante. No se trata de un solo examen, sino de un conjunto de herramientas que ayudan a obtener un panorama completo del niño.</p>
+<p>Ahora bien, es común escuchar también el término FIIE, que significa Evaluación Individual e Inicial Completa. La diferencia es sencilla: la FIIE es la primera evaluación que se realiza cuando un niño nunca ha sido evaluado por el distrito para efectos de educación especial. Una FIE, en cambio, puede referirse también a las reevaluaciones que se hacen cada cierto tiempo para revisar si el estudiante sigue siendo elegible para los servicios o si sus necesidades han cambiado. En la práctica, muchos padres y maestros usan ambos términos de manera intercambiable, y eso está bien.</p>
+<div class="pull-quote">Solicitar una evaluación no significa que tu hijo tendrá una "etiqueta" para siempre. Significa que tendrá acceso a la información y al apoyo que merece.</div>
+<p>Tanto la Ley IDEA (Individuals with Disabilities Education Act, por sus siglas en inglés) como el Capítulo 29 del Código de Educación de Texas garantizan a los padres el derecho a solicitar esta evaluación de forma gratuita. El distrito no puede cobrarte nada por realizarla, y debe completarla dentro de los plazos establecidos por la ley.</p>
+<h3>Plazos legales que debes conocer</h3>
+<p>Una vez que entregues tu solicitud por escrito, Wichita Falls ISD tiene <strong>15 días escolares</strong> para responderte. En esa respuesta, el distrito debe indicar si acepta o rechaza realizar la evaluación. Si acepta, deberás firmar un documento de consentimiento para que el proceso comience formalmente.</p>
+<p>A partir del momento en que firmas el consentimiento, el distrito tiene <strong>45 días escolares</strong> para completar toda la evaluación y programar una reunión del equipo ARD (Admisión, Revisión y Salida) en la que se analizarán los resultados. Es importante que guardes copias de todo lo que entregues y recibas, incluyendo correos electrónicos y notas de conversaciones telefónicas.</p>
+<div class="warning-box"><p>Si el distrito no responde dentro de los 15 días escolares o no completa la evaluación en los 45 días escolares establecidos, está violando tus derechos bajo la ley IDEA y el Capítulo 29 del Código de Educación de Texas. En ese caso, puedes presentar una queja formal ante la Agencia de Educación de Texas (TEA).</p></div>
+<div class="action-steps">
+<h3>Pasos para solicitar la evaluación</h3>
+<ol>
+<li><strong>Documenta tus preocupaciones:</strong> Anota con detalle las dificultades que has observado en tu hijo, ya sea en casa, en la escuela o en ambos lugares. Incluye fechas, materias y situaciones específicas.</li>
+<li><strong>Redacta una carta formal por escrito:</strong> La solicitud debe hacerse por escrito para que quede registrada legalmente. Una solicitud verbal no activa los plazos legales. Incluye el nombre completo de tu hijo, el grado escolar y las áreas de preocupación.</li>
+<li><strong>Entrega la carta al director o al coordinador de educación especial:</strong> Puedes llevarla personalmente a la escuela o enviarla por correo certificado. Si la entregas en persona, pide que te den una copia sellada con la fecha de recepción.</li>
+<li><strong>Espera la respuesta del distrito:</strong> Wichita Falls ISD tiene 15 días escolares para responderte. Si te envían el formulario de consentimiento, léelo con cuidado antes de firmarlo.</li>
+<li><strong>Firma el consentimiento e inicia el proceso:</strong> Una vez que firmes, el reloj empieza a correr. El equipo de evaluación tiene 45 días escolares para completar todas las pruebas y presentarte los resultados en una reunión ARD.</li>
+</ol>
+</div>
 <h3>¿Qué puedes hacer si el distrito se niega a evaluar?</h3>
-
 <p>Si Wichita Falls ISD decide no realizar la evaluación, está obligado a notificarte por escrito y explicarte las razones de esa decisión. Este documento se llama Aviso de Acción Propuesta (o Prior Written Notice). No debes ignorar este aviso, ya que es el punto de partida para ejercer tus derechos.</p>
-
 <p>Tienes varias opciones disponibles. Primero, puedes solicitar una reunión con el equipo del distrito para entender mejor los motivos del rechazo y presentar información adicional que respalde tu solicitud, como reportes médicos, evaluaciones previas o notas de maestros. Segundo, puedes pedir mediación, un proceso gratuito en el que una persona neutral ayuda a resolver el desacuerdo entre tú y el distrito. Tercero, puedes presentar una queja formal ante la Agencia de Educación de Texas o solicitar una audiencia de debido proceso, que es un procedimiento legal más formal pero igualmente gratuito.</p>
-
 <p>Recuerda que la ley está de tu lado. Tanto IDEA como el Capítulo 29 del Código de Educación de Texas existen para proteger a los estudiantes con discapacidades y a sus familias. No estás pidiendo un favor; estás ejerciendo un derecho.</p>
-
 <div class="inline-cta" style="background:#fdfaf5;border:1px solid #d6cbbf;border-left:4px solid #b8963a;border-radius:6px;padding:24px;margin:2.5rem 0;display:flex;gap:16px;align-items:flex-start;">
 <div class="cta-icon">📝</div>
 <div>
@@ -883,102 +908,20 @@
 </article>
 <!-- END LEFT COLUMN -->
 <!-- RIGHT: SIDEBAR -->
-<aside class="sidebar-column">
-<div class="sidebar-card cta-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;border:none;margin-bottom:24px;">
-<h4 style="font-family:'Lora',serif;font-size:1.25rem;margin:0 0 10px;color:#fff;">Demuéstrale al Distrito<br/>que Vas en Serio</h4>
-<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#94a3b8;margin:0 0 18px;line-height:1.5;">Una solicitud verbal no tiene peso legal. Una carta escrita inicia el plazo de 45 días y obliga al distrito a responder en 15 días escolares.</p>
-<a href="/resources/iep-letter-spanish/" style="display:block;background:#d4af37;color:#0f172a;padding:14px;border-radius:6px;text-decoration:none;font-weight:800;font-family:'DM Sans',sans-serif;font-size:14px;transition:background 0.2s;">Obtener Tu Carta — $25 →</a>
+<aside class="sidebar-column hide-on-mobile">
+<!-- FUNNEL 1: FIE Letter Writer Bot (High Intent/Top of Funnel) -->
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;margin-bottom:24px;box-shadow:0 10px 25px -5px rgba(0,0,0,0.15);border:1px solid #1e40af;">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
+<h3 style="font-family:'Lora',serif;font-size:1.5rem;margin:0 0 10px;color:#fff;">Draft Your FIE Request</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#cbd5e1;margin:0 0 18px;line-height:1.5;">A casual email won't work. Your request is a legal trigger. Use our AI to write a compliant letter that forces a 15-day timeline.</p>
+<a class="banner-btn banner-btn-gold" href="/tools/fie-letter-bot/index.html">Draft My Letter — $25 →</a>
 </div>
-<!-- PRIMARY LEAD CAPTURE FORM -->
-<div class="sidebar-form" id="leadCaptureForm">
-<div class="sf-header">
-<p class="sf-eyebrow">Wichita Falls ISD Ley de Educación Especial</p>
-<h3 class="sf-name">Local IEP <em>Advocates</em></h3>
-</div>
-<div class="sf-body">
-<p class="sf-empathy">¿No sabes cómo solicitar una FIE?</p>
-<p class="sf-sub">A free 15-minute call with a local advocate can help you understand your rights and get your written request sent today.</p>
-<form id="sidebarLeadForm">
-<div class="sf-group">
-<label>Your Name</label>
-<input placeholder="First and last name" required="" type="text"/>
-</div>
-<div class="sf-group">
-<label>Email Address</label>
-<input placeholder="Where should we reach you?" required="" type="email"/>
-</div>
-<div class="sf-group">
-<label>Phone <span style="font-size:9px;color:#b0a89e;font-weight:400;">(optional)</span></label>
-<input placeholder="(555) 000-0000" type="tel"/>
-</div>
-<div class="sf-group">
-<label>What's going on?</label>
-<select required="">
-<option disabled="" selected="" value="">Choose what fits best...</option>
-<option>I need to request an FIE / initial evaluation</option>
-<option>The school refused my FIE request</option>
-<option>They missed the 45-day testing timeline</option>
-<option>I disagree with the FIE results (I want an IEE)</option>
-<option>I need help at the ARD meeting after the FIE</option>
-<option>Something else</option>
-</select>
-</div>
-<button class="sf-btn" type="button">Obtener Mi Llamada Gratuita de 15 Minutos</button>
-<p class="sf-trust">
-<svg fill="none" height="13" stroke="#b8963a" stroke-width="2.5" viewbox="0 0 24 24" width="13">
-<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-</svg>
-                        Confidential. No spam. No pressure.
-                     </p>
-</form>
-</div>
-<div class="sf-footer">Independent Educational Consultants</div>
-</div>
-<!-- SECONDARY SIDEBAR AD -->
-<div class="card mb-4 border-danger shadow-sm">
-<div class="card-body">
-<h4 class="card-title text-danger fw-bold">🚨 ARD Meeting in 7 Days? You Need This</h4>
-<p class="card-text pb-2 border-bottom">Stop going into ARD meetings unprepared. Get the exact scripts Texas advocates charge $200/hr to provide.</p>
-<div class="mb-3 text-warning fw-bold">
-            ⭐⭐⭐⭐⭐ <span class="text-dark small fw-normal">4.9/5 stars (327 Texas parents)</span>
-</div>
-<ul class="list-unstyled lh-lg mb-4">
-<li>✅ Email templates (copy &amp; paste)</li>
-<li>✅ Response scripts for district pushback</li>
-<li>✅ 10-Day Recess Playbook</li>
-<li>✅ IEP Red Flag Analyzer</li>
-<li>✅ Meeting prep checklist</li>
-</ul>
-<p class="fst-italic small border-start border-3 border-secondary ps-3 text-muted">
-            "Used the eval request template—FIE scheduled in 48 hours!" <br/>
-<strong class="text-dark">- Maria, Round Rock ISD</strong>
-</p>
-<div class="text-center mt-4">
-<div style="background-color: #f8f9fa; border: 2px solid #dc3545; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-<h3 style="color: #dc3545; font-weight: bold; margin-top: 0;">🚨 ARD Meeting in 7 Days? You Need This</h3>
-<p style="border-bottom: 1px solid #dee2e6; padding-bottom: 10px;">Stop going into ARD meetings unprepared. Get the exact scripts Texas advocates charge $200/hr to provide.</p>
-<div style="font-weight: bold; margin-bottom: 15px;">
-<span style="color: #ffc107;">⭐⭐⭐⭐⭐</span> <span style="font-weight: normal; font-size: 0.9em; color: #6c757d;">4.9/5 stars (327 Texas parents)</span>
-</div>
-<ul style="list-style-type: none; padding-left: 0; line-height: 1.8; margin-bottom: 20px;">
-<li>✅ Email templates (copy &amp; paste)</li>
-<li>✅ Response scripts for district pushback</li>
-<li>✅ 10-Day Recess Playbook</li>
-<li>✅ IEP Red Flag Analyzer</li>
-<li>✅ Meeting prep checklist</li>
-</ul>
-<p style="font-style: italic; font-size: 0.9em; border-left: 3px solid #6c757d; padding-left: 10px; color: #6c757d;">
-        "Used the eval request template—FIE scheduled in 48 hours!" <br/>
-<strong style="color: #212529;">- Maria, Round Rock ISD</strong>
-</p>
-<div style="text-align: center; margin-top: 20px;">
-<a href="https://buy.stripe.com/6oU8wO2FTgmA5xReP3bbG0L" style="display: block; background-color: #dc3545; color: white; padding: 15px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.1em;" target="_blank">Get Instant Access — $47</a>
-<small style="color: #6c757d; display: block; margin-top: 10px;">🔒 30-Day Money-Back Guarantee</small>
-</div>
-</div>
-<small class="text-muted mt-2 d-block">🔒 30-Day Money-Back Guarantee</small>
-</div>
-</div>
+<!-- FUNNEL 2: ARD Diagnostic Audit Bot (Escalation/Problem Solving) -->
+<div style="background:#fff;border:1px solid #e2e8f0;padding:28px;border-radius:12px;text-align:center;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05);">
+<span style="background:#ef4444;color:#fff;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Diagnostic Bot</span>
+<h3 style="font-family:'Lora',serif;font-size:1.3rem;margin:0 0 10px;color:#0a2342;">Are Your Rights Being Violated?</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#475569;margin:0 0 18px;line-height:1.5;">Take our 9-question ARD assessment to instantly find out your next legal step—whether it's our DIY templates, an advocate, or a lawyer.</p>
+<a class="banner-btn banner-btn-blue" href="/tools/ard-rights-scan/index.html">Run Free ARD Audit →</a>
 </div>
 </aside>
 <!-- END SIDEBAR -->

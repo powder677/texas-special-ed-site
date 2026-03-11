@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Krum ISD Special Education
+  </title>
+  <link href="/style.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <style id="grievance-formatting">
+   /* ── DISCIPLINE & GRIEVANCE PATCH: Optimized for Mobile & CRO ── */
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+        
+        h1 { font-size: clamp(1.8rem, 5vw, 2.2rem); margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; text-align: center; padding: 0 15px; }
+        
+        .layout-grid { max-width: 850px; margin: 20px auto; display: block; width: 100%; }
+        
+        .content-column { 
+            font-family: 'Source Sans 3', sans-serif; 
+            font-size: 17px; 
+            line-height: 1.75; 
+            color: #1a1a2e; 
+            background: #fff; 
+            padding: 40px 60px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+            border: 1px solid #e2e8f0; 
+            margin: 0 15px;
+        }
+
+        .content-column h2 { font-family: 'Lora', serif; font-size: clamp(1.4rem, 4vw, 1.6rem); font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        
+        /* Mobile Overrides */
+        @media (max-width: 768px) {
+            .content-column { 
+                padding: 30px 20px !important; 
+                margin: 0 !important; 
+                border-radius: 0 !important; 
+                border-left: none !important; 
+                border-right: none !important; 
+                box-shadow: none !important;
+            }
+            .ai-tool-banner { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
+            .integrated-cta { padding: 30px 20px !important; border-radius: 0 !important; margin: 2rem -20px !important; }
+        }
+
+        /* AI Tool Styling */
+        .ai-tool-banner { 
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); 
+            color: white; 
+            border-radius: 16px; 
+            padding: 40px; 
+            margin: 3rem 0; 
+            text-align: center; 
+            border: 1px solid #2a4382; 
+        }
+        .ai-tool-banner h3 { font-family: 'Lora', serif; font-size: clamp(1.5rem, 5vw, 1.8rem); color: #fff; margin: 0 0 10px; border:none; }
+        
+        .btn-gold { 
+            background: #d4af37; 
+            color: #0f172a !important; 
+            padding: 16px 32px; 
+            border-radius: 8px; 
+            font-weight: 800; 
+            text-decoration: none; 
+            display: inline-block; 
+            transition: 0.2s; 
+            border: none; 
+            cursor: pointer; 
+            width: auto;
+            max-width: 100%;
+        }
+        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+
+        .integrated-cta { margin: 3rem 0; border-radius: 12px; padding: 36px 28px; text-align: center; }
+        .integrated-cta.dark { background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%); color: #fff; border: 1px solid #991b1b; }
+        
+        /* Modal & Mobile Accessibility */
+        #ai-modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 10000; backdrop-filter: blur(4px); overflow-y: auto; }
+        .modal-content { 
+            background: white; 
+            max-width: 600px; 
+            width: 95%; 
+            margin: 20px auto; 
+            border-radius: 16px; 
+            overflow: hidden; 
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); 
+            font-family: sans-serif; 
+            position: relative;
+        }
+        @media (max-height: 600px) {
+            .modal-content { margin: 10px auto; }
+        }
+  </style>
+ </head>
+ <body>
+  <header class="site-header">
+   <nav aria-label="Main navigation" class="navbar" role="navigation">
+    <div class="nav-container">
+     <div class="nav-logo">
+      <a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+       Texas
+       <em>
+        Special Ed
+       </em>
+      </a>
+     </div>
+     <button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+      <span class="hamburger">
+      </span>
+      <span class="hamburger">
+      </span>
+      <span class="hamburger">
+      </span>
+     </button>
+     <ul class="nav-menu">
+      <li class="nav-item">
+       <a class="nav-link" href="/">
+        Home
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/districts/index.html">
+        Districts
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="/resources/index.html">
+        Resources
+       </a>
+      </li>
+      <li class="nav-item nav-cta">
+       <a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;">
+        Get Your Letter — $25
+       </a>
+      </li>
+     </ul>
+    </div>
+   </nav>
+  </header>
+  <div class="layout-grid">
+   <article class="content-column">
+    <div class="container">
+     <h1>
+      Complete Guide to Filing Complaints and Resolving Disputes with KRUM ISD Special Education
+     </h1>
+     <p>
+      Parents of children with disabilities in KRUM ISD deserve clear answers about their rights and options when disputes arise. Whether you're concerned about your child's individualized education program (IEP), placement decisions, or services provided, understanding the complaint and resolution process empowers you to advocate effectively. This guide walks parents in KRUM ISD through every available avenue for addressing special education concerns.
+     </p>
+     <!-- AI Tool Section -->
+     <h2>
+      Understanding Your Rights as a KRUM ISD Parent
+     </h2>
+     <p>
+      Texas law and federal IDEA regulations guarantee parents specific protections and procedural safeguards. As a parent in KRUM ISD, you have the right to be involved in all decisions affecting your child's special education. You can request meetings, review records, obtain independent evaluations, and challenge decisions you believe are inappropriate.
+     </p>
+     <div class="ai-tool-banner">
+      <span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+       Live AI Tool
+      </span>
+      <h3>
+       Free ARD Rights Scan
+      </h3>
+      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+       Wondering if the school violated your child's rights? Answer a few questions for an instant analysis based on Texas law.
+      </p>
+      <button class="btn-gold" onclick="openRightsScan()">
+       Run My Free ARD Scan →
+      </button>
+     </div>
+     <p>
+      The Individuals with Disabilities Education Act (IDEA) and the Texas Education Code establish that
+      <strong>
+       KRUM ISD must inform you of your procedural rights
+      </strong>
+      when your child is suspected of having a disability. These protections exist to ensure your child receives a free, appropriate public education (FAPE) in the least restrictive environment.
+     </p>
+     <p>
+      Understanding these foundational rights helps you recognize when KRUM ISD may not be meeting your child's needs and what steps to take next.
+     </p>
+     <h2>
+      Informal Resolution: Your First Step with KRUM ISD
+     </h2>
+     <p>
+      Before pursuing formal complaints, many KRUM ISD families successfully resolve concerns through informal communication. This approach often saves time and preserves working relationships with your child's school team.
+     </p>
+     <h3>
+      Direct Communication with Teachers and Specialists
+     </h3>
+     <p>
+      Start by speaking directly with your child's special education teacher, general education teachers, or service providers. Many misunderstandings can be cleared up through a simple conversation. Request a meeting if a quick discussion seems insufficient to address your concerns about your child's progress or services.
+     </p>
+     <h3>
+      Meeting with the Campus Administrator
+     </h3>
+     <p>
+      If classroom-level conversations don't resolve the issue, request a meeting with your campus principal or special education coordinator. KRUM ISD administrators often have authority to address implementation problems or clarify district policies. Come prepared with specific dates, examples, and documentation of your concerns.
+     </p>
+     <h3>
+      Documentation and Follow-Up
+     </h3>
+     <p>
+      Always follow informal discussions with an email summarizing what was discussed and any agreements reached. This creates a written record and ensures everyone recalls the conversation the same way. Keep copies of all communications with KRUM ISD staff for your records.
+     </p>
+     <h2>
+      KRUM ISD Special Education Complaint Process
+     </h2>
+     <p>
+      When informal resolution doesn't work, filing a formal complaint with KRUM ISD is your next step. This process allows you to formally notify the district of violations or failures to provide appropriate services.
+     </p>
+     <h3>
+      Filing a Local Complaint with KRUM ISD
+     </h3>
+     <p>
+      You can file a complaint directly with KRUM ISD's special education department. Your complaint should be
+      <strong>
+       in writing and as specific as possible
+      </strong>
+      , describing:
+     </p>
+     <ul>
+      <li>
+       What happened and when it occurred
+      </li>
+      <li>
+       Which KRUM ISD staff members were involved
+      </li>
+      <li>
+       How the situation violates IDEA or Texas law
+      </li>
+      <li>
+       What resolution you're seeking
+      </li>
+      <li>
+       Supporting documentation (emails, progress reports, IEP documents)
+      </li>
+     </ul>
+     <p>
+      Send your complaint to the KRUM ISD Special Education Director. Request written confirmation that your complaint was received and ask for the district's timeline for responding.
+     </p>
+     <h3>
+      KRUM ISD's Response Timeline
+     </h3>
+     <p>
+      KRUM ISD must respond to your complaint within
+      <strong>
+       a reasonable timeframe
+      </strong>
+      , typically 10-15 business days. The district should acknowledge receipt, investigate your claims, and provide a detailed written response explaining how they will address your concerns or why they believe they've complied with special education law.
+     </p>
+     <p>
+      If you disagree with KRUM ISD's response, you can pursue additional remedies through the state complaint process or due process hearings.
+     </p>
+     <h2>
+      KRUM ISD Due Process Hearing: A Formal Legal Option
+     </h2>
+     <div class="ai-tool-banner">
+      <span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">
+       Official Request
+      </span>
+      <h3>
+       Show the ISD You Mean Business
+      </h3>
+      <p style="font-size:1.1rem;color:#cbd5e1;margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto;">
+       A verbal request has no legal weight. A formal Level 1 Grievance letter starts the official district clock.
+      </p>
+      <a class="btn-gold" href="/resources/Iep-letter.html">
+       Get Your Letter — $25 →
+      </a>
+     </div>
+     <p>
+      A due process hearing is a formal legal proceeding before an impartial hearing officer when KRUM ISD and parents cannot reach agreement on special education matters. This process allows both sides to present evidence and arguments.
+     </p>
+     <h3>
+      When to Consider a KRUM ISD Due Process Hearing
+     </h3>
+     <p>
+      Due process is appropriate when disputes involve significant issues such as:
+     </p>
+     <ul>
+      <li>
+       Disagreement about whether your child has a disability
+      </li>
+      <li>
+       Disputes over IEP goals, services, or placement
+      </li>
+      <li>
+       Concerns that KRUM ISD denied a free, appropriate public education
+      </li>
+      <li>
+       Disagreements about evaluation or assessment practices
+      </li>
+      <li>
+       Concerns about manifestation determination or disciplinary placement
+      </li>
+     </ul>
+     <h3>
+      Filing for KRUM ISD Due Process
+     </h3>
+     <p>
+      To request a due process hearing with KRUM ISD, you must submit a written
+      <strong>
+       due process complaint notice
+      </strong>
+      to the district and the Texas Education Agency (TEA). Your notice should describe the problem, what happened, and what you want to happen. Meet with a special education attorney before filing—they'll ensure your notice contains everything required and strengthens your case.
+     </p>
+     <h3>
+      The Due Process Timeline
+     </h3>
+     <p>
+      Once KRUM ISD receives your due process complaint, the district has 10 days to respond in writing. You and KRUM ISD then have 15 days to participate in a resolution meeting to try to settle before a hearing occurs. If resolved, you'll sign an agreement. If not, you proceed to a hearing before an impartial hearing officer.
+     </p>
+     <h2>
+      KRUM ISD Mediation: A Collaborative Alternative
+     </h2>
+     <p>
+      Mediation offers a middle ground between informal resolution and due process. A trained mediator helps KRUM ISD and parents communicate and reach voluntary agreement without the formality and cost of a hearing.
+     </p>
+     <h3>
+      Benefits of KRUM ISD Mediation
+     </h3>
+     <p>
+      <strong>
+       Mediation preserves relationships
+      </strong>
+      because both parties work toward a mutually acceptable solution rather than litigating. It's also faster and less expensive than due process. Many families in KRUM ISD successfully resolve disputes through mediation that might otherwise require hearing officers to decide.
+     </p>
+     <h3>
+      Requesting Mediation with KRUM ISD
+     </h3>
+     <p>
+      You can request mediation even if you've already filed a due process complaint. Contact KRUM ISD's special education department and ask about mediation availability. The district must provide information about free mediation services. You may also have a special education advocate or attorney participate in mediation to support you.
+     </p>
+     <p>
+      Mediation sessions are confidential, meaning anything discussed cannot be used in a later due process hearing. This confidentiality encourages honest communication and creative problem-solving.
+     </p>
+     <h2>
+      Filing a Complaint with Texas Education Agency (TEA)
+     </h2>
+     <p>
+      Beyond local KRUM ISD complaint processes, you can file a complaint directly with the Texas Education Agency, which oversees special education compliance statewide.
+     </p>
+     <h3>
+      When to File a KRUM ISD TEA Complaint
+     </h3>
+     <p>
+      A
+      <strong>
+       KRUM ISD TEA complaint
+      </strong>
+      is appropriate when you believe the district has violated state or federal special education law. Unlike due process (which focuses on whether your child received FAPE), TEA complaints examine whether KRUM ISD followed proper procedures and complied with legal requirements.
+     </p>
+     <h3>
+      The TEA Complaint Process
+     </h3>
+     <p>
+      To file a complaint with TEA regarding KRUM ISD, submit the State Complaint Form available on TEA's website. Your complaint must be filed within one year of when you knew or should have known about the alleged violation. TEA investigators will contact KRUM ISD, review documentation, interview staff and family, and issue a written determination within 60 days.
+     </p>
+     <p>
+      TEA can require KRUM ISD to take corrective actions, provide compensatory education services, and implement monitoring to ensure future compliance.
+     </p>
+     <h2>
+      Working with Special Education Advocates and Attorneys Near KRUM
+     </h2>
+     <p>
+      Many parents in KRUM ISD benefit from professional support during disputes. A
+      <strong>
+       special education attorney near KRUM
+      </strong>
+      or
+      <strong>
+       special ed advocate KRUM
+      </strong>
+      can guide you through complex procedures and strengthen your position.
+     </p>
+     <h3>
+      What a Special Education Advocate Can Do
+     </h3>
+     <p>
+      Advocates help you understand special education law, prepare for IEP meetings, review evaluations and IEPs, and communicate concerns to KRUM ISD staff. They're invaluable for gathering documentation and developing strategic approaches to resolving disputes. Many advocates have personal experience with special education and understand both legal requirements and practical school realities.
+     </p>
+     <h3>
+      When You Need a Special Education Attorney
+     </h3>
+     <p>
+      A
+      <strong>
+       special education attorney near KRUM
+      </strong>
+      is recommended when disputes involve complex legal issues, substantial compensatory education claims, or when KRUM ISD has repeatedly failed to provide appropriate services. Attorneys can represent you in due process hearings, negotiate settlements, and ensure KRUM ISD understands your commitment to enforcing your child's rights.
+     </p>
+     <p>
+      Many special education attorneys near KRUM offer free initial consultations. Don't hesitate to reach out if you're unsure whether you need legal representation—attorneys can help you assess your situation.
+     </p>
+     <h2>
+      Documentation: Building a Strong Case Against KRUM ISD
+     </h2>
+     <p>
+      Thorough documentation strengthens any complaint, mediation, or due process case involving KRUM ISD. Start keeping detailed records from the moment you suspect special education issues.
+     </p>
+     <h3>
+      Essential Documents to Maintain
+     </h3>
+     <ul>
+      <li>
+       <strong>
+        IEP documents and progress reports
+       </strong>
+       showing whether goals are being met
+      </li>
+      <li>
+       <strong>
+        Emails and notes
+       </strong>
+       documenting communications with KRUM ISD staff
+      </li>
+      <li>
+       <strong>
+        Attendance and discipline records
+       </strong>
+       showing absences or behavioral incidents
+      </li>
+      <li>
+       <strong>
+        Independent evaluations
+       </strong>
+       supporting your concerns
+      </li>
+      <li>
+       <strong>
+        Medical records or therapy notes
+       </strong>
+       showing your child's needs
+      </li>
+      <li>
+       <strong>
+        Student work samples
+       </strong>
+       demonstrating academic progress or struggles
+      </li>
+      <li>
+       <strong>
+        Meeting notes
+       </strong>
+       from IEP and other school meetings
+      </li>
+     </ul>
+     <h3>
+      Creating a Timeline
+     </h3>
+     <p>
+      Organize your documentation chronologically. Create a timeline showing when events occurred, what you reported to KRUM ISD, and how the district responded. This timeline helps you present a clear narrative of your concerns and KRUM ISD's actions (or inactions).
+     </p>
+     <h2>
+      Key Texas Education Code References for KRUM ISD Parents
+     </h2>
+     <p>
+      Understanding the laws that govern KRUM ISD special education empowers you to advocate confidently. Several Texas Education Code sections directly protect your rights:
+     </p>
+     <ul>
+      <li>
+       <strong>
+        TEC §29.001 et seq.
+       </strong>
+       covers special education rights and responsibilities
+      </li>
+      <li>
+       <strong>
+        TEC §29.004
+       </strong>
+       addresses procedural safeguards and parent rights
+      </li>
+      <li>
+       <strong>
+        TEC §29.005
+       </strong>
+       covers due process hearings
+      </li>
+      <li>
+       <strong>
+        TEC §29.007
+       </strong>
+       addresses mediation
+      </li>
+      <li>
+       <strong>
+        19 TAC §89.1001-89.1014
+       </strong>
+       contain detailed special education rules
+      </li>
+     </ul>
+     <p>
+      Federal IDEA regulations (20 U.S.C. §1400 et seq. and 34 CFR Part 300) also apply to KRUM ISD and supplement Texas law with additional protections.
+     </p>
+     <h2>
+      Creating Your Action Plan for KRUM ISD Dispute Resolution
+     </h2>
+     <p>
+      When facing a dispute with KRUM ISD, develop a clear action plan outlining your steps:
+     </p>
+     <ol>
+      <li>
+       <strong>
+        Document everything
+       </strong>
+       about your concerns and KRUM ISD's response
+      </li>
+      <li>
+       <strong>
+        Attempt informal resolution
+       </strong>
+       through direct communication and campus meetings
+      </li>
+      <li>
+       <strong>
+        File a local complaint with KRUM ISD
+       </strong>
+       if informal efforts fail
+      </li>
+      <li>
+       <strong>
+        Consider mediation
+       </strong>
+       as a collaborative alternative to formal hearings
+      </li>
+      <li>
+       <strong>
+        Consult a special education attorney near KRUM
+       </strong>
+       to evaluate your options
+      </li>
+      <li>
+       <strong>
+        File due process or TEA complaint
+       </strong>
+       if other approaches haven't resolved the issue
+      </li>
+     </ol>
+     <p>
+      Remember that you don't have to wait for KRUM ISD to agree before taking action. You have the right to pursue multiple remedies simultaneously, such as filing both a TEA complaint and requesting due process.
+     </p>
+     <h2>
+      Support Resources for KRUM ISD Families
+     </h2>
+     <p>
+      Parents in KRUM ISD don't navigate special education alone. Multiple resources provide support and guidance:
+     </p>
+     <ul>
+      <li>
+       <strong>
+        Texas Project FIRST
+       </strong>
+       offers free dispute resolution services
+      </li>
+      <li>
+       <strong>
+        Texas Special Education Ombudsman
+       </strong>
+       provides information about special education rights
+      </li>
+      <li>
+       <strong>
+        Parent Training and Information Centers
+       </strong>
+       across Texas offer free training and resources
+      </li>
+      <li>
+       <strong>
+        Local parent advocacy organizations
+       </strong>
+       connect KRUM ISD families with support
+      </li>
+      <li>
+       <strong>
+        KRUM ISD special education department
+       </strong>
+       can provide contact information for district procedures
+      </li>
+     </ul>
+     <p>
+      Reaching out to these resources costs you nothing and provides valuable perspective as you work through disputes with KRUM ISD.
+     </p>
+     <h2>
+      Moving Forward: Your Child's Rights Matter
+     </h2>
+     <p>
+      Resolving disputes with KRUM ISD requires persistence, documentation, and often professional support. The process can feel overwhelming, but remember that special education laws exist specifically to protect your child's right to appropriate education. KRUM ISD must provide a free, appropriate public education to all eligible students, and you have every right to hold the district accountable.
+     </p>
+     <p>
+      Whether you choose informal resolution,
+      <strong>
+       KRUM ISD mediation
+      </strong>
+      ,
+      <strong>
+       KRUM ISD due process
+      </strong>
+      , or filing a
+      <strong>
+       KRUM ISD TEA complaint
+      </strong>
+      , your advocacy matters. Many parents in KRUM ISD successfully resolve disputes and secure better services for their children by understanding their options and taking action.
+     </p>
+     <p>
+      Don't hesitate to seek help from a special education advocate or attorney if you need it. Your child's education is too important to navigate alone, and professional guidance often makes the difference in achieving the outcomes your child deserves.
+     </p>
+    </div>
+    <!-- MODAL FOR AI SCAN -->
+    <div id="ai-modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.8); z-index: 1000; backdrop-filter: blur(4px);">
+     <div class="modal-content" style="background: white; max-width: 600px; width: 90%; margin: 50px auto; border-radius: 16px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+      <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
+       <h3 class="text-xl font-serif">
+        ARD Rights Analysis
+       </h3>
+       <button class="text-2xl opacity-50 hover:opacity-100" onclick="closeRightsScan()">
+        ×
+       </button>
+      </div>
+      <div class="p-8" id="modal-body">
+       <div id="scan-form">
+        <p class="text-slate-600 mb-6">
+         Describe the situation your child is facing. Be as specific as possible regarding IEP violations or school actions.
+        </p>
+        <div class="space-y-4">
+         <div>
+          <label class="block text-sm font-bold text-slate-700 mb-1">
+           Total days suspended this year?
+          </label>
+          <input class="w-full border border-slate-300 rounded-lg p-3" id="days-suspended" placeholder="e.g. 12" type="number"/>
+         </div>
+         <div>
+          <label class="block text-sm font-bold text-slate-700 mb-1">
+           What happened?
+          </label>
+          <textarea class="w-full border border-slate-300 rounded-lg p-3" id="situation-text" placeholder="Explain the incident..." rows="4"></textarea>
+         </div>
+         <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition flex items-center justify-center" onclick="runAnalysis()">
+          <span id="btn-text">
+           Start Rights Scan
+          </span>
+         </button>
+        </div>
+       </div>
+       <div class="hidden" id="scan-results">
+        <div class="text-slate-700 space-y-4 prose max-w-none" id="analysis-content">
+        </div>
+        <hr class="my-6"/>
+        <div class="bg-blue-50 p-4 rounded-lg text-xs text-blue-800">
+         Disclaimer: This analysis is generated by AI based on Texas IDEA regulations and is for educational purposes only.
+        </div>
+        <button class="mt-6 w-full py-3 text-slate-500 font-bold" onclick="closeRightsScan()">
+         Close Analysis
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </article>
+  </div>
+  <script>
+   const apiKey = ""; 
+
+    function openRightsScan() {
+        document.getElementById('ai-modal-overlay').style.display = 'block';
+    }
+
+    function closeRightsScan() {
+        document.getElementById('ai-modal-overlay').style.display = 'none';
+    }
+
+    async function runAnalysis() {
+        const days = document.getElementById('days-suspended').value;
+        const situation = document.getElementById('situation-text').value;
+        const btnText = document.getElementById('btn-text');
+        if (!situation) return alert("Please describe the situation.");
+
+        btnText.innerHTML = `Analyzing...`;
+        
+        const systemPrompt = "You are a Texas Special Education Law Expert. Analyze situations regarding IEP violations and disciplinary actions. Focus on IDEA and Texas-specific protections.";
+        const userQuery = `District: ${document.title}. Suspended: ${days} days. Situation: ${situation}`;
+
+        try {
+            const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    contents: [{ parts: [{ text: userQuery }] }],
+                    systemInstruction: { parts: [{ text: systemPrompt }] }
+                })
+            });
+            const data = await response.json();
+            const analysis = data.candidates?.[0]?.content?.parts?.[0]?.text || "Error.";
+            document.getElementById('analysis-content').innerHTML = analysis.replace(/\n/g, '<br>').replace(/### (.*$)/gim, '<strong>$1</strong>');
+            document.getElementById('scan-form').classList.add('hidden');
+            document.getElementById('scan-results').classList.remove('hidden');
+        } catch (e) {
+            document.getElementById('analysis-content').innerHTML = "Error connecting to AI.";
+        } finally {
+            btnText.innerText = "Start Rights Scan";
+        }
+    }
+  </script>
+  <div id="ai-modal-overlay">
+   <div class="modal-content">
+    <div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
+     <h3 style="margin:0; font-family:'Lora',serif;">
+      ARD Rights Analysis
+     </h3>
+     <button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
+      ×
+     </button>
+    </div>
+    <div id="modal-body" style="padding:30px;">
+     <div id="scan-form">
+      <p style="color:#475569; margin-bottom:20px;">
+       Describe the situation (e.g., suspension days, manifestation hearing outcome).
+      </p>
+      <textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
+      <button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
+       Start Rights Scan
+      </button>
+     </div>
+     <div id="scan-results" style="display:none;">
+      <div id="analysis-content" style="color:#1e293b; line-height:1.6;">
+      </div>
+      <button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
+       Close
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+   const apiKey = ""; 
+    function openRightsScan() { document.getElementById('ai-modal-overlay').style.display='block'; }
+    function closeRightsScan() { document.getElementById('ai-modal-overlay').style.display='none'; }
+    async function runAnalysis() {
+        const sit = document.getElementById('situation-text').value;
+        const btn = document.getElementById('run-scan-btn');
+        if(!sit) return alert("Please describe the situation.");
+        btn.innerText = "Analyzing...";
+        try {
+            const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, {
+                method:'POST', headers:{'Content-Type':'application/json'},
+                body: JSON.stringify({ contents: [{ parts: [{ text: "Texas Special Ed Expert analysis: " + sit }] }] })
+            });
+            const d = await r.json();
+            const txt = d.candidates[0].content.parts[0].text;
+            document.getElementById('analysis-content').innerHTML = txt.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            document.getElementById('scan-form').style.display='none';
+            document.getElementById('scan-results').style.display='block';
+        } catch(e) { alert("Error connecting to AI."); }
+        finally { btn.innerText = "Start Rights Scan"; }
+    }
+  </script>
+  <footer class="site-footer">
+   <div class="footer-container">
+    <div class="footer-about">
+     <img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+     <p>
+      © 2026 Texas Special Education Resources. Not affiliated with the TEA.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var toggle = document.querySelector('.mobile-menu-toggle');
+    var menu   = document.querySelector('.nav-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function() { menu.classList.toggle('active'); });
+    }
+});
+  </script>
+ </body>
+</html>

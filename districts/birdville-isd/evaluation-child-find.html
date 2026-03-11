@@ -78,7 +78,40 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 .sales-card a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
 
 </style>
-</head>
+<style id="fie-core-formatting">
+        /* ── AUTOMATED CRO PATCH: FIE Layout & Mobile Fixes ── */
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+        h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
+        
+        /* 1. Core Layout */
+        .layout-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-top: 30px; align-items: start; }
+        @media (min-width: 951px) { .layout-grid { grid-template-columns: 1fr 380px; } }
+        .sidebar-column { position: sticky; top: 100px; z-index: 10; }
+        .content-column { min-width: 0; font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
+        .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        .content-column p { margin: 0 0 1.25rem; }
+        .content-column ul { padding-left: 20px; margin-bottom: 1.5rem; }
+        .content-column li { margin-bottom: 8px; }
+
+        /* 3. Mobile Display & Padding Fixes */
+        @media (max-width: 950px) {
+            .hide-on-mobile { display: none !important; }
+            .mobile-only { display: block !important; }
+            .content-column { padding: 10px !important; border: none !important; box-shadow: none !important; background: transparent !important; }
+            .nav-menu { display: none !important; }
+        }
+        @media (min-width: 951px) {
+            .mobile-only { display: none !important; }
+            .hide-on-mobile { display: block !important; }
+        }
+        
+        /* 4. Protect Bot Banners from global style.css hijacking */
+        .banner-btn { text-decoration: none !important; display: block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: background 0.2s; padding: 15px; }
+        .banner-btn:hover { color: #0f172a !important; }
+        .banner-btn-gold { background: #d4af37; color: #0f172a !important; }
+        .banner-btn-blue { background: #1a56db; color: #fff !important; }
+        .banner-btn-blue:hover { background: #1e3a8a; color: #fff !important; }
+        </style></head>
 <body>
 <header class="site-header">
 <nav aria-label="Main navigation" class="navbar" role="navigation">
@@ -149,6 +182,15 @@ Texas <em>Special Ed</em>
 <!-- LEFT SIDE: 70% READING CONTENT -->
 <article class="content-column">
 <h2 style="border-top:none; margin-top:0; padding-top:0;">Requesting a Special Education Evaluation</h2>
+<div class="mobile-only" id="mobile-bot-1" style="margin: 2.5rem 0;">
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;box-shadow:0 10px 25px -5px rgba(0,0,0,0.15);border:1px solid #1e40af;">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
+<h3 style="font-family:'Lora',serif;font-size:1.6rem;margin:0 0 10px;color:#fff;">Draft Your FIE Request</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:15px;color:#cbd5e1;margin:0 0 18px;line-height:1.5;">Sending a casual email is a mistake. Use our AI to write a legally binding letter that forces a response.</p>
+<a class="banner-btn banner-btn-gold" href="/tools/fie-letter-bot/index.html">Draft My Letter — $25 →</a>
+</div>
+</div>
+
 <p>If you have concerns about your child's academic progress or believe they may have a disability affecting their ability to learn, you have the absolute legal right to request a special education evaluation from Birdville ISD.</p>
 <p>Birdville ISD has a legal obligation under the "Child Find" provisions of IDEA to identify, locate, and evaluate all children with disabilities residing within their jurisdiction. Your formal request is the direct trigger to force the district to act on this responsibility.</p>
 <div class="pull-quote">
@@ -157,6 +199,15 @@ Texas <em>Special Ed</em>
 <div class="section-divider">· · ·</div>
 <div class="action-steps">
 <h2>How to Submit Your Written Request</h2>
+<div class="mobile-only" id="mobile-bot-2" style="margin: 2.5rem 0;">
+<div style="background:#fff;border:1px solid #e2e8f0;padding:28px;border-radius:12px;text-align:center;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05);">
+<span style="background:#ef4444;color:#fff;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Diagnostic Bot</span>
+<h3 style="font-family:'Lora',serif;font-size:1.3rem;margin:0 0 10px;color:#0a2342;">Are Your Rights Being Violated?</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#475569;margin:0 0 18px;line-height:1.5;">Take our 9-question ARD assessment to find out your next legal step.</p>
+<a class="banner-btn banner-btn-blue" href="/tools/ard-rights-scan/index.html">Run Free ARD Audit →</a>
+</div>
+</div>
+
 <p style="margin-bottom:15px; font-size:17px;">Do not rely on informal emails. A proper evaluation request forces the district into a strict legal timeline. Here is how to do it correctly:</p>
 <ol>
 <li><strong>Address It Correctly:</strong> Send the letter to both the campus principal and the Special Education Director.</li>
@@ -260,74 +311,20 @@ Texas <em>Special Ed</em>
 </section>
 </article>
 <!-- RIGHT SIDE: 30% STICKY SIDEBAR -->
-<aside class="sidebar-column">
-<div class="sidebar-card cta-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;border:none;margin-bottom:24px;">
-<h4 style="font-family:'Lora',serif;font-size:1.25rem;margin:0 0 10px;color:#fff;">Show the ISD<br/>You Mean Business</h4>
-<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#94a3b8;margin:0 0 18px;line-height:1.5;">A verbal request has no legal weight. A written letter starts the 45-day clock and forces a response within 15 school days.</p>
-<a href="/resources/Iep-letter.html" style="display:block;background:#d4af37;color:#0f172a;padding:14px;border-radius:6px;text-decoration:none;font-weight:800;font-family:'DM Sans',sans-serif;font-size:14px;transition:background 0.2s;">Get Your Letter — $25 →</a>
+<aside class="sidebar-column hide-on-mobile">
+<!-- FUNNEL 1: FIE Letter Writer Bot (High Intent/Top of Funnel) -->
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;margin-bottom:24px;box-shadow:0 10px 25px -5px rgba(0,0,0,0.15);border:1px solid #1e40af;">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
+<h3 style="font-family:'Lora',serif;font-size:1.5rem;margin:0 0 10px;color:#fff;">Draft Your FIE Request</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#cbd5e1;margin:0 0 18px;line-height:1.5;">A casual email won't work. Your request is a legal trigger. Use our AI to write a compliant letter that forces a 15-day timeline.</p>
+<a class="banner-btn banner-btn-gold" href="/tools/fie-letter-bot/index.html">Draft My Letter — $25 →</a>
 </div>
-<div style="background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%); border-radius: 16px; box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25); padding: 24px; position: relative; overflow: hidden; border: 1px solid #2a4382;">
-<div style="text-align: center; margin-bottom: 20px;">
-<span style="display: inline-block; background: #d4af37; color: #0f172a; padding: 4px 12px; border-radius: 50px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">Live AI Tool</span>
-<h3 style="margin: 0; color: #ffffff; font-family: 'Lora', serif; font-size: 1.4rem;">Free ARD Rights Scan</h3>
-<p style="font-size: 14px; color: #cbd5e1; margin: 8px 0 0; line-height: 1.5;">Wondering if the school violated your rights? Answer a few questions for an instant analysis.</p>
-</div>
-<div style="
-  background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%);
-  border-radius: 16px;
-  box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25);
-  padding: 28px 24px 24px;
-  border: 1px solid #2a4382;
-  text-align: center;
-">
-<span style="
-    display: inline-block;
-    background: #d4af37;
-    color: #0f172a;
-    padding: 4px 12px;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 14px;
-    font-family: 'DM Sans', sans-serif;
-  ">Free AI Tool</span>
-<h3 style="
-    margin: 0 0 10px;
-    color: #ffffff;
-    font-family: 'Lora', serif;
-    font-size: 1.35rem;
-    line-height: 1.3;
-  ">Free ARD Rights Scan</h3>
-<p style="
-    font-size: 14px;
-    color: #cbd5e1;
-    margin: 0 0 22px;
-    line-height: 1.55;
-    font-family: 'Source Sans 3', sans-serif;
-  ">
-    Wondering if the school violated your rights? Answer a few questions for an instant analysis based on Texas law.
-  </p>
-<a href="/tools/ard-rights-scan/index.html" style="
-    display: block;
-    background: #d4af37;
-    color: #0f172a;
-    padding: 14px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 800;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 15px;
-    transition: background 0.2s;
-  ">Run My Free ARD Scan →</a>
-<p style="
-    font-size: 11px;
-    color: #64748b;
-    margin: 12px 0 0;
-    font-family: 'Source Sans 3', sans-serif;
-  ">🔒 Free  ·  No account needed</p>
-</div>
+<!-- FUNNEL 2: ARD Diagnostic Audit Bot (Escalation/Problem Solving) -->
+<div style="background:#fff;border:1px solid #e2e8f0;padding:28px;border-radius:12px;text-align:center;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05);">
+<span style="background:#ef4444;color:#fff;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Diagnostic Bot</span>
+<h3 style="font-family:'Lora',serif;font-size:1.3rem;margin:0 0 10px;color:#0a2342;">Are Your Rights Being Violated?</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#475569;margin:0 0 18px;line-height:1.5;">Take our 9-question ARD assessment to instantly find out your next legal step—whether it's our DIY templates, an advocate, or a lawyer.</p>
+<a class="banner-btn banner-btn-blue" href="/tools/ard-rights-scan/index.html">Run Free ARD Audit →</a>
 </div>
 </aside>
 </div>

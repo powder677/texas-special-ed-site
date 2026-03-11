@@ -78,7 +78,38 @@ h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a
 .sales-card a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
 
 </style>
-</head>
+<style id="cro-core-formatting">
+        /* ── AUTOMATED CRO PATCH: Layout & Mobile Fixes ── */
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+        h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
+        
+        /* Core Layout - Single Column Optimized for Readability */
+        .layout-grid { max-width: 850px; margin: 30px auto; display: block; }
+        .content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
+        .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+        .content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+        .content-column p { margin: 0 0 1.25rem; }
+        .content-column ul { padding-left: 20px; margin-bottom: 1.5rem; }
+        .content-column li { margin-bottom: 8px; }
+
+        /* Mobile Display & Padding Fixes */
+        @media (max-width: 950px) {
+            .content-column { padding: 20px !important; border: none !important; box-shadow: none !important; background: transparent !important; }
+            .nav-menu { display: none !important; }
+        }
+        
+        /* Protect Bot Banners from global style.css hijacking */
+        .banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+        .banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .banner-btn-gold { background: #d4af37; color: #0f172a !important; }
+        .banner-btn-blue { background: #1a56db; color: #fff !important; }
+        .banner-btn-blue:hover { background: #1e3a8a; color: #fff !important; }
+        
+        /* Integrated Inline CTA Styles */
+        .integrated-cta { margin: 3rem 0; border-radius: 12px; padding: 36px 28px; text-align: center; }
+        .integrated-cta.light { background: #fff; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); }
+        .integrated-cta.dark { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #fff; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); border: 1px solid #1e40af; }
+        </style></head>
 <body>
 <header class="site-header">
 <nav aria-label="Main navigation" class="navbar" role="navigation">
@@ -145,14 +176,24 @@ Texas <em>Special Ed</em>
 <div class="layout-grid">
 <!-- LEFT SIDE: 70% READING CONTENT -->
 <article class="content-column">
-<h2 style="border-top:none; margin-top:0; padding-top:0;">What Is an ARD Meeting in Weslaco ISD?</h2>
+<h2 style="border-top:none; margin-top:0; padding-top:0;">What Is an ARD Meeting in Weslaco ISD?</h2><div class="integrated-cta light" id="inline-bot-1">
+<span style="background:#ef4444;color:#fff;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Diagnostic Bot</span>
+<h3 style="font-family:'Lora',serif;font-size:1.5rem;margin:0 0 10px;color:#0a2342;border:none;padding:0;">Are Your ARD Rights Being Violated?</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:16px;color:#475569;margin:0 auto 18px;line-height:1.6;max-width:600px;">Take our 9-question ARD assessment to find out your next legal step before your meeting.</p>
+<a class="banner-btn banner-btn-blue" href="/tools/ard-rights-scan/index.html">Run Free ARD Audit →</a>
+</div>
 <p>An ARD meeting (Admission, Review, and Dismissal) is the Texas equivalent of an IEP meeting. Required by the Individuals with Disabilities Education Act (IDEA) and the Texas Education Code, its primary purpose is to determine eligibility, develop an Individualized Education Program (IEP), and formally review your child's progress.</p>
 <p>If your child attends school in <strong>Weslaco ISD</strong>, understanding this process is the key to securing the services they deserve. Think of it as a legal team meeting focused solely on your child's educational needs and exactly how the local educators and specialists will support them.</p>
 <div class="pull-quote">
             You're not a guest at this meeting. You're a legal member of the committee — with equal standing to the Weslaco ISD principal or diagnostician.
         </div>
 <div class="section-divider">· · ·</div>
-<h2>Your 5-Day Notice Right</h2>
+<h2>Your 5-Day Notice Right</h2><div class="integrated-cta dark" id="inline-bot-2">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
+<h3 style="font-family:'Lora',serif;font-size:1.6rem;margin:0 0 10px;color:#fff;border:none;padding:0;">Draft Your FIE Request</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:16px;color:#cbd5e1;margin:0 auto 18px;line-height:1.6;max-width:600px;">Sending a casual email is a mistake. Use our AI to write a legally binding letter that forces a response.</p>
+<a class="banner-btn banner-btn-gold" href="/tools/fie-letter-bot/index.html">Draft My Letter — $25 →</a>
+</div>
 <p>You have the absolute right to receive written notice of an ARD meeting at least <strong>five calendar days</strong> before it is scheduled to take place. This ensures parents have time to prepare, gather documentation, or arrange for an advocate to attend.</p>
 <p>This written notice must explicitly state the purpose of the meeting (e.g., Annual Review, Change of Placement, or MDR), the location, and exactly who from the school district will be attending.</p>
 <p><em style="color:#64748b; font-size: 0.95rem;">Note: You can waive your 5-day notice in writing if there is an emergency, but the school district cannot pressure you to do so.</em></p>
@@ -221,80 +262,7 @@ Texas <em>Special Ed</em>
 <!-- ========================================== -->
 <!-- STACKED PREMIUM OFFERS (WITH STRIPE LINKS) -->
 <!-- ========================================== -->
-<div class="offers-container" id="premium-offers">
-<!-- Offer 1: ARD Prep -->
-<div class="card mb-4 border-danger shadow-sm">
-<div class="card-body">
-<h4 class="card-title text-danger fw-bold">🚨 ARD Meeting in 7 Days? You Need This</h4>
-<p class="card-text pb-2 border-bottom">Stop going into ARD meetings unprepared. Get the exact scripts Texas advocates charge $200/hr to provide.</p>
-<div class="mb-3 text-warning fw-bold">
-            ⭐⭐⭐⭐⭐ <span class="text-dark small fw-normal">4.9/5 stars (327 Texas parents)</span>
-</div>
-<ul class="list-unstyled lh-lg mb-4">
-<li>✅ Email templates (copy &amp; paste)</li>
-<li>✅ Response scripts for district pushback</li>
-<li>✅ 10-Day Recess Playbook</li>
-<li>✅ IEP Red Flag Analyzer</li>
-<li>✅ Meeting prep checklist</li>
-</ul>
-<p class="fst-italic small border-start border-3 border-secondary ps-3 text-muted">
-            "Used the eval request template—FIE scheduled in 48 hours!" <br/>
-<strong class="text-dark">- Maria, Round Rock ISD</strong>
-</p>
-<div class="text-center mt-4">
-<div style="background-color: #f8f9fa; border: 2px solid #dc3545; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-<h3 style="color: #dc3545; font-weight: bold; margin-top: 0;">🚨 ARD Meeting in 7 Days? You Need This</h3>
-<p style="border-bottom: 1px solid #dee2e6; padding-bottom: 10px;">Stop going into ARD meetings unprepared. Get the exact scripts Texas advocates charge $200/hr to provide.</p>
-<div style="font-weight: bold; margin-bottom: 15px;">
-<span style="color: #ffc107;">⭐⭐⭐⭐⭐</span> <span style="font-weight: normal; font-size: 0.9em; color: #6c757d;">4.9/5 stars (327 Texas parents)</span>
-</div>
-<ul style="list-style-type: none; padding-left: 0; line-height: 1.8; margin-bottom: 20px;">
-<li>✅ Email templates (copy &amp; paste)</li>
-<li>✅ Response scripts for district pushback</li>
-<li>✅ 10-Day Recess Playbook</li>
-<li>✅ IEP Red Flag Analyzer</li>
-<li>✅ Meeting prep checklist</li>
-</ul>
-<p style="font-style: italic; font-size: 0.9em; border-left: 3px solid #6c757d; padding-left: 10px; color: #6c757d;">
-        "Used the eval request template—FIE scheduled in 48 hours!" <br/>
-<strong style="color: #212529;">- Maria, Round Rock ISD</strong>
-</p>
-<div style="text-align: center; margin-top: 20px;">
-<a href="https://buy.stripe.com/6oU8wO2FTgmA5xReP3bbG0L" style="display: block; background-color: #dc3545; color: white; padding: 15px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.1em;" target="_blank">Get Instant Access — $47</a>
-<small style="color: #6c757d; display: block; margin-top: 10px;">🔒 30-Day Money-Back Guarantee</small>
-</div>
-</div>
-<small class="text-muted mt-2 d-block">🔒 30-Day Money-Back Guarantee</small>
-</div>
-</div>
-</div>
-<!-- Offer 2: All-Access Pass -->
-<div style="background-color: #f8f9fa; border: 2px solid #0d6efd; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<div style="text-align: center; margin-bottom: 15px;">
-<span style="background-color: #ffc107; color: #000; padding: 6px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">🏆 MOST POPULAR • BEST VALUE</span>
-</div>
-<h3 style="color: #0d6efd; font-weight: bold; margin-top: 10px; text-align: center; margin-bottom: 5px;">Complete Texas Special Ed Bundle</h3>
-<h4 style="color: #495057; font-weight: 600; text-align: center; margin-top: 0; margin-bottom: 15px;">All 6 Toolkits • Save $185</h4>
-<p style="text-align: center; border-bottom: 1px solid #dee2e6; padding-bottom: 15px; font-size: 1.05em;">Instead of buying toolkits one-by-one for $282, get everything for <strong>$97</strong>.</p>
-<div style="text-align: center; margin-bottom: 20px; background-color: #fff; padding: 10px; border-radius: 5px; border: 1px dashed #dee2e6;">
-<span style="text-decoration: line-through; color: #6c757d; font-size: 0.95em;">Regular Price: $282</span><br/>
-<strong style="font-size: 1.3em; color: #212529;">Bundle Price: $97</strong><br/>
-<span style="color: #28a745; font-weight: bold; font-size: 1.1em;">✅ YOU SAVE: $185</span>
-</div>
-<ul style="list-style-type: none; padding-left: 0; line-height: 1.8; margin-bottom: 20px; font-size: 1.05em;">
-<li>✅ <strong>Lifetime access + updates</strong></li>
-<li>✅ <strong>Works for multiple children</strong></li>
-<li>✅ <strong>All Texas districts</strong></li>
-</ul>
-<p style="font-style: italic; font-size: 0.95em; border-left: 4px solid #ffc107; padding-left: 15px; color: #495057; background-color: #fff; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; border-radius: 0 5px 5px 0;">
-        "Worth it for the Behavior toolkit alone. Saved my son from suspension." <br/>
-<strong style="color: #212529;">- Marcus, Houston ISD</strong>
-</p>
-<div style="text-align: center; margin-top: 20px;">
-<a href="https://buy.stripe.com/3cIcN4a8l7Q4d0j7mBbbG0G" style="display: block; background-color: #0d6efd; color: white; padding: 16px 20px; text-decoration: none; font-weight: bold; border-radius: 6px; font-size: 1.2em; box-shadow: 0 4px 6px rgba(13, 110, 253, 0.3); transition: background-color 0.2s;" target="_blank">Get All 6 Toolkits — $97</a>
-</div>
-</div>
-</div>
+
 <!-- LOCAL_CONTENT_BLOCK:START -->
 <div class="local-district-context" style="background:#f8fafc;border:1px solid #e2e8f0;border-left:4px solid #1a56db;border-radius:6px;padding:28px 32px;margin:2.5rem 0;font-family:'Source Sans 3',sans-serif;font-size:17px;line-height:1.75;color:#1a1a2e;">
 <p>Weslaco ISD serves families across Weslaco and surrounding areas in Hidalgo County, working with approximately 17,000 students in this vibrant Rio Grande Valley community. When your child needs special education services, the district's ARD committee will meet to determine eligibility and develop an Individualized Education Program (IEP) tailored to your child's unique needs. As a parent, you are a full and equal member of this committee—your voice and input are essential to creating the best possible educational plan for your child.</p>
@@ -304,76 +272,7 @@ Texas <em>Special Ed</em>
 <!-- LOCAL_CONTENT_BLOCK:END -->
 </article>
 <!-- RIGHT SIDE: 30% STICKY SIDEBAR -->
-<aside class="sidebar-column">
-<div class="sidebar-card cta-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;border:none;margin-bottom:24px;">
-<h4 style="font-family:'Lora',serif;font-size:1.25rem;margin:0 0 10px;color:#fff;">Show the ISD<br/>You Mean Business</h4>
-<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#94a3b8;margin:0 0 18px;line-height:1.5;">A verbal request has no legal weight. A written letter starts the 45-day clock and forces a response within 15 school days.</p>
-<a href="/resources/Iep-letter.html" style="display:block;background:#d4af37;color:#0f172a;padding:14px;border-radius:6px;text-decoration:none;font-weight:800;font-family:'DM Sans',sans-serif;font-size:14px;transition:background 0.2s;">Get Your Letter — $25 →</a>
-</div>
-<div style="background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%); border-radius: 16px; box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25); padding: 24px; position: relative; overflow: hidden; border: 1px solid #2a4382;">
-<div style="text-align: center; margin-bottom: 20px;">
-<span style="display: inline-block; background: #d4af37; color: #0f172a; padding: 4px 12px; border-radius: 50px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">Live AI Tool</span>
-<h3 style="margin: 0; color: #ffffff; font-family: 'Lora', serif; font-size: 1.4rem;">Free ARD Rights Scan</h3>
-<p style="font-size: 14px; color: #cbd5e1; margin: 8px 0 0; line-height: 1.5;">Wondering if the school violated your rights? Answer a few questions for an instant analysis.</p>
-</div>
-<div style="
-  background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%);
-  border-radius: 16px;
-  box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25);
-  padding: 28px 24px 24px;
-  border: 1px solid #2a4382;
-  text-align: center;
-">
-<span style="
-    display: inline-block;
-    background: #d4af37;
-    color: #0f172a;
-    padding: 4px 12px;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 14px;
-    font-family: 'DM Sans', sans-serif;
-  ">Free AI Tool</span>
-<h3 style="
-    margin: 0 0 10px;
-    color: #ffffff;
-    font-family: 'Lora', serif;
-    font-size: 1.35rem;
-    line-height: 1.3;
-  ">Free ARD Rights Scan</h3>
-<p style="
-    font-size: 14px;
-    color: #cbd5e1;
-    margin: 0 0 22px;
-    line-height: 1.55;
-    font-family: 'Source Sans 3', sans-serif;
-  ">
-    Wondering if the school violated your rights? Answer a few questions for an instant analysis based on Texas law.
-  </p>
-<a href="/tools/ard-rights-scan/index.html" style="
-    display: block;
-    background: #d4af37;
-    color: #0f172a;
-    padding: 14px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 800;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 15px;
-    transition: background 0.2s;
-  ">Run My Free ARD Scan →</a>
-<p style="
-    font-size: 11px;
-    color: #64748b;
-    margin: 12px 0 0;
-    font-family: 'Source Sans 3', sans-serif;
-  ">🔒 Free  ·  No account needed</p>
-</div>
-</div>
-</aside>
+
 </div>
 </main>
 <footer class="site-footer">
