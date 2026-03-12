@@ -172,17 +172,17 @@
       }
 
       /* 70/30 Grid */
-      .layout-grid {
-         display: grid;
-         grid-template-columns: 1fr;
+      .layout-grid { max-width: 850px !important; margin: 40px auto !important; display: block !important; width: 100% !important;
+         display: block !important;
+         
          gap: 50px;
          margin-top: 30px;
          align-items: start;
       }
 
       @media (min-width: 1024px) {
-         .layout-grid {
-            grid-template-columns: 1fr 380px;
+         .layout-grid { max-width: 850px !important; margin: 40px auto !important; display: block !important; width: 100% !important;
+            
          }
       }
 
@@ -824,40 +824,7 @@
          background: #b8963a;
       }
    </style>
-<style id="fie-core-formatting">
-        /* ── AUTOMATED CRO PATCH: FIE Layout & Mobile Fixes ── */
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
-        h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
-        
-        /* 1. Core Layout */
-        .layout-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-top: 30px; align-items: start; }
-        @media (min-width: 951px) { .layout-grid { grid-template-columns: 1fr 380px; } }
-        .sidebar-column { position: sticky; top: 100px; z-index: 10; }
-        .content-column { min-width: 0; font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
-        .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
-        .content-column p { margin: 0 0 1.25rem; }
-        .content-column ul { padding-left: 20px; margin-bottom: 1.5rem; }
-        .content-column li { margin-bottom: 8px; }
-
-        /* 3. Mobile Display & Padding Fixes */
-        @media (max-width: 950px) {
-            .hide-on-mobile { display: none !important; }
-            .mobile-only { display: block !important; }
-            .content-column { padding: 10px !important; border: none !important; box-shadow: none !important; background: transparent !important; }
-            .nav-menu { display: none !important; }
-        }
-        @media (min-width: 951px) {
-            .mobile-only { display: none !important; }
-            .hide-on-mobile { display: block !important; }
-        }
-        
-        /* 4. Protect Bot Banners from global style.css hijacking */
-        .banner-btn { text-decoration: none !important; display: block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: background 0.2s; padding: 15px; }
-        .banner-btn:hover { color: #0f172a !important; }
-        .banner-btn-gold { background: #d4af37; color: #0f172a !important; }
-        .banner-btn-blue { background: #1a56db; color: #fff !important; }
-        .banner-btn-blue:hover { background: #1e3a8a; color: #fff !important; }
-        </style></head>
+</head>
 <body>
 <!-- NAVBAR -->
 <header class="site-header">
@@ -936,14 +903,12 @@
 <!-- LEFT: CONTENT -->
 <article class="content-column">
 <h2 style="border-top:none;margin-top:0;padding-top:0;">FIE Meaning: The Full Individual Evaluation Explained</h2>
-<div class="mobile-only" id="mobile-bot-1" style="margin: 2.5rem 0;">
-<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;box-shadow:0 10px 25px -5px rgba(0,0,0,0.15);border:1px solid #1e40af;">
-<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
-<h3 style="font-family:'Lora',serif;font-size:1.6rem;margin:0 0 10px;color:#fff;">Draft Your FIE Request</h3>
-<p style="font-family:'Source Sans 3',sans-serif;font-size:15px;color:#cbd5e1;margin:0 0 18px;line-height:1.5;">Sending a casual email is a mistake. Use our AI to write a legally binding letter that forces a response.</p>
-<a class="banner-btn banner-btn-gold" href="/tools/fie-letter-bot/index.html">Draft My Letter — $25 →</a>
+<div class="sales-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%); margin: 32px 0;">
+<h3 style="margin-top:0; color:#fff;">Show the ISD You Mean Business</h3>
+<p style="font-size:15px; color:#cbd5e1; margin-bottom: 24px;">A verbal request has no legal weight. A written letter starts the 45-day clock and forces a response within 15 school days.</p>
+<a href="/resources/Iep-letter.html" style="background:#d4af37; color:#0f172a; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 700; display: inline-block; font-family: 'DM Sans', sans-serif;">Get Your Letter — $25 →</a>
 </div>
-</div>
+
 
 <p>If you're navigating special education in Bryan ISD for the first time, you've probably heard the term "FIE" and weren't sure what it meant. FIE stands for <strong>Full Individual Evaluation</strong>. It is the comprehensive, multi-area assessment that Bryan ISD is legally required to complete before your child can receive special education services, be placed in any special education program, or have an IEP (Individualized Education Program) written.</p>
 <p>This isn't just a routine test — it's a federally mandated process under the Individuals with Disabilities Education Act (IDEA) and Texas Education Code Chapter 29. The FIE is the legal foundation of your child's entire special education journey in Central Texas.</p>
@@ -951,14 +916,6 @@
                The FIE is not just a test. It is the legal gateway to services — and you have the power to start the clock the moment you put your request in writing.
             </div>
 <h2>FIE vs. FIIE: What's the Difference?</h2>
-<div class="mobile-only" id="mobile-bot-2" style="margin: 2.5rem 0;">
-<div style="background:#fff;border:1px solid #e2e8f0;padding:28px;border-radius:12px;text-align:center;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05);">
-<span style="background:#ef4444;color:#fff;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Diagnostic Bot</span>
-<h3 style="font-family:'Lora',serif;font-size:1.3rem;margin:0 0 10px;color:#0a2342;">Are Your Rights Being Violated?</h3>
-<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#475569;margin:0 0 18px;line-height:1.5;">Take our 9-question ARD assessment to find out your next legal step.</p>
-<a class="banner-btn banner-btn-blue" href="/tools/ard-rights-scan/index.html">Run Free ARD Audit →</a>
-</div>
-</div>
 
 <p>You'll see both terms used in Bryan ISD documents. Here's the simple breakdown:</p>
 <ul class="iep-list">
@@ -983,14 +940,7 @@
 </ul>
 <div class="section-divider">· · ·</div>
 <!-- AD BOX 1: Lead capture CTA -->
-<div class="inline-cta">
-<div class="cta-icon">🛡️</div>
-<div>
-<h3>Not sure how to start the process?</h3>
-<p>Many Bryan ISD parents don't realize that a verbal conversation with a teacher does NOT start the legal clock. A local advocate can help you draft the right written request — at no cost to you for an initial call.</p>
-<a class="btn-primary" href="#leadCaptureForm" onclick="document.querySelector('#leadCaptureForm').scrollIntoView({behavior:'smooth'});return false;">Get a Free 15-Minute Call</a>
-</div>
-</div>
+
 <div class="section-divider">· · ·</div>
 <!-- TIMELINE -->
 <h2>The FIE Timeline in Bryan ISD — Step by Step</h2>
@@ -1033,15 +983,18 @@
 <li><strong>Save Everything:</strong> Create a dedicated email folder for all Bryan ISD special education correspondence. You will refer back to these dates to track every legal deadline.</li>
 </ol>
 </div>
+<div style="background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%); border-radius: 12px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); padding: 36px 24px; text-align: center; margin: 32px 0;">
+<span style="display: inline-block; background: #d4af37; color: #0f172a; padding: 4px 12px; border-radius: 50px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 14px; font-family: 'DM Sans', sans-serif;">Free AI Tool</span>
+<h3 style="margin: 0 0 10px; color: #ffffff; font-family: 'Lora', serif; font-size: 1.6rem;">Free ARD Rights Scan</h3>
+<p style="font-size: 15px; color: #cbd5e1; margin: 0 0 22px; line-height: 1.55; font-family: 'Source Sans 3', sans-serif;">
+    Wondering if the school violated your rights? Answer a few questions for an instant analysis based on Texas law.
+  </p>
+<a href="/tools/ard-rights-scan/index.html" style="display: block; background: #d4af37; color: #0f172a; padding: 14px 20px; border-radius: 8px; text-decoration: none; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 15px; max-width: 280px; margin: 0 auto;">Run My Free ARD Scan →</a>
+<p style="font-size: 11px; color: #64748b; margin: 12px 0 0; font-family: 'Source Sans 3', sans-serif;">🔒 Free  ·  No account needed</p>
+</div>
+
 <!-- AD BOX 2: Toolkit CTA (gold) -->
-<div class="inline-cta gold">
-<div class="cta-icon">📝</div>
-<div>
-<h3>Want a copy-and-paste FIE request letter?</h3>
-<p>Our Accommodations Encyclopedia includes legally cited request templates, the complete 15-45-30 timeline tracker, and the FIE Red Flag checklist — so you know exactly what to look for when the report arrives.</p>
-<a class="btn-primary gold-btn" href="#premium-offers" onclick="document.querySelector('#premium-offers').scrollIntoView({behavior:'smooth'});return false;">Get the Toolkit — $27</a>
-</div>
-</div>
+
 <div class="section-divider">· · ·</div>
 <!-- WHAT IT COVERS -->
 <h2>What an FIE Must Cover in Bryan ISD</h2>
@@ -1086,14 +1039,7 @@
 </ul>
 <p><em style="color:#64748b;font-size:0.95rem;">Note: If the district's FIE omits an area you specifically requested in writing, that is a violation you have the right to challenge — either by requesting an IEE or filing a TEA State Complaint.</em></p>
 <!-- AD BOX 3: Urgent (refusal) -->
-<div class="inline-cta urgent">
-<div class="cta-icon">🛑</div>
-<div>
-<h3>Is Bryan ISD delaying or refusing your FIE?</h3>
-<p>If the district told you to try RTI first, said your child "doesn't qualify for testing," or simply hasn't responded to your request — they may be violating federal Child Find law. This is a legally enforceable right.</p>
-<a class="btn-primary red-btn" href="#leadCaptureForm" onclick="document.querySelector('#leadCaptureForm').scrollIntoView({behavior:'smooth'});return false;">Get Help Forcing Compliance</a>
-</div>
-</div>
+
 <div class="section-divider">· · ·</div>
 <!-- AFTER THE FIE -->
 <h2>What Happens After the FIE in Bryan ISD?</h2>
@@ -1174,31 +1120,7 @@
 </div>
 </div>
 </div>
-<div style="background-color: #f8f9fa; border: 2px solid #0d6efd; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<div style="text-align: center; margin-bottom: 15px;">
-<span style="background-color: #ffc107; color: #000; padding: 6px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">🏆 MOST POPULAR • BEST VALUE</span>
-</div>
-<h3 style="color: #0d6efd; font-weight: bold; margin-top: 10px; text-align: center; margin-bottom: 5px;">Complete Texas Special Ed Bundle</h3>
-<h4 style="color: #495057; font-weight: 600; text-align: center; margin-top: 0; margin-bottom: 15px;">All 6 Toolkits • Save $185</h4>
-<p style="text-align: center; border-bottom: 1px solid #dee2e6; padding-bottom: 15px; font-size: 1.05em;">Instead of buying toolkits one-by-one for $282, get everything for <strong>$97</strong>.</p>
-<div style="text-align: center; margin-bottom: 20px; background-color: #fff; padding: 10px; border-radius: 5px; border: 1px dashed #dee2e6;">
-<span style="text-decoration: line-through; color: #6c757d; font-size: 0.95em;">Regular Price: $282</span><br/>
-<strong style="font-size: 1.3em; color: #212529;">Bundle Price: $97</strong><br/>
-<span style="color: #28a745; font-weight: bold; font-size: 1.1em;">✅ YOU SAVE: $185</span>
-</div>
-<ul style="list-style-type: none; padding-left: 0; line-height: 1.8; margin-bottom: 20px; font-size: 1.05em;">
-<li>✅ <strong>Lifetime access + updates</strong></li>
-<li>✅ <strong>Works for multiple children</strong></li>
-<li>✅ <strong>All Texas districts</strong></li>
-</ul>
-<p style="font-style: italic; font-size: 0.95em; border-left: 4px solid #ffc107; padding-left: 15px; color: #495057; background-color: #fff; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; border-radius: 0 5px 5px 0;">
-        "Worth it for the Behavior toolkit alone. Saved my son from suspension." <br/>
-<strong style="color: #212529;">- Marcus, Bryan ISD</strong>
-</p>
-<div style="text-align: center; margin-top: 20px;">
-<a href="https://buy.stripe.com/3cIcN4a8l7Q4d0j7mBbbG0G" style="display: block; background-color: #0d6efd; color: white; padding: 16px 20px; text-decoration: none; font-weight: bold; border-radius: 6px; font-size: 1.2em; box-shadow: 0 4px 6px rgba(13, 110, 253, 0.3); transition: background-color 0.2s;" target="_blank">Get All 6 Toolkits — $97</a>
-</div>
-</div>
+
 </div>
 <!-- FAQ SECTION -->
 <section class="faq-section">
@@ -1244,22 +1166,7 @@
 </article>
 <!-- END LEFT COLUMN -->
 <!-- RIGHT: SIDEBAR -->
-<aside class="sidebar-column hide-on-mobile">
-<!-- FUNNEL 1: FIE Letter Writer Bot (High Intent/Top of Funnel) -->
-<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;margin-bottom:24px;box-shadow:0 10px 25px -5px rgba(0,0,0,0.15);border:1px solid #1e40af;">
-<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
-<h3 style="font-family:'Lora',serif;font-size:1.5rem;margin:0 0 10px;color:#fff;">Draft Your FIE Request</h3>
-<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#cbd5e1;margin:0 0 18px;line-height:1.5;">A casual email won't work. Your request is a legal trigger. Use our AI to write a compliant letter that forces a 15-day timeline.</p>
-<a class="banner-btn banner-btn-gold" href="/tools/fie-letter-bot/index.html">Draft My Letter — $25 →</a>
-</div>
-<!-- FUNNEL 2: ARD Diagnostic Audit Bot (Escalation/Problem Solving) -->
-<div style="background:#fff;border:1px solid #e2e8f0;padding:28px;border-radius:12px;text-align:center;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05);">
-<span style="background:#ef4444;color:#fff;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Diagnostic Bot</span>
-<h3 style="font-family:'Lora',serif;font-size:1.3rem;margin:0 0 10px;color:#0a2342;">Are Your Rights Being Violated?</h3>
-<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#475569;margin:0 0 18px;line-height:1.5;">Take our 9-question ARD assessment to instantly find out your next legal step—whether it's our DIY templates, an advocate, or a lawyer.</p>
-<a class="banner-btn banner-btn-blue" href="/tools/ard-rights-scan/index.html">Run Free ARD Audit →</a>
-</div>
-</aside>
+
 <!-- END SIDEBAR -->
 </div><!-- end layout-grid -->
 </main>

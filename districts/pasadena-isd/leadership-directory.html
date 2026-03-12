@@ -33,8 +33,8 @@ body {
 h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342;}
 
 /* ── 70/30 DESKTOP GRID & STICKY SIDEBAR ── */
-.layout-grid { display: grid; grid-template-columns: 1fr; gap: 50px; margin-top: 30px; align-items: start; }
-@media (min-width: 1024px) { .layout-grid { grid-template-columns: 1fr 380px; } }
+.layout-grid { max-width: 850px !important; margin: 40px auto !important; display: block !important; width: 100% !important; display: block !important;  gap: 50px; margin-top: 30px; align-items: start; }
+@media (min-width: 1024px) { .layout-grid { max-width: 850px !important; margin: 40px auto !important; display: block !important; width: 100% !important;  } }
 .sidebar-column { position: sticky; top: 20px; z-index: 10; }
 .content-column { min-width: 0; font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
 .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
@@ -131,7 +131,6 @@ Texas <em>Special Ed</em>
 <li class="nav-item nav-cta">
 <a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
 </li>
-
 <li class="nav-item nav-cta" style="margin-left:8px;">
 <a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
 </li>
@@ -204,14 +203,7 @@ Texas <em>Special Ed</em>
 </tr>
 </tbody>
 </table>
-<div class="inline-cta">
-<div class="cta-icon">📞</div>
-<div>
-<h3>Is the campus ignoring you?</h3>
-<p>If the principal or diagnostician stops returning your emails regarding an IEP issue, do not keep waiting. Connect with an advocate to escalate the issue properly.</p>
-<a class="btn-primary" href="#leadCaptureForm" onclick="document.querySelector('#leadCaptureForm').scrollIntoView({behavior: 'smooth'}); return false;">Get Escalation Help</a>
-</div>
-</div>
+
 <h2>How to Effectively Contact Special Education Staff</h2>
 <p>Contacting the right person at Pasadena ISD is crucial for effective communication. To avoid being ignored, remember these rules:</p>
 <ul>
@@ -219,14 +211,7 @@ Texas <em>Special Ed</em>
 <li><b>The Chain of Command:</b> Always start with the Special Ed teacher or Diagnostician. If they fail to act, email the Principal and CC the district's Executive Director of Special Education.</li>
 <li><b>Be Specific:</b> Do not send a multi-page email venting frustrations. State the facts: "I am writing regarding [Child's Name]'s reading goals. I am requesting a formal ARD meeting within the next 10 days."</li>
 </ul>
-<div class="inline-cta gold">
-<div class="cta-icon">📝</div>
-<div>
-<h3>Need scripts to get their attention?</h3>
-<p>Stop trying to guess the right legal language. Use the copy-and-paste email templates in our ARD Prep Toolkit to force the district to reply to your requests.</p>
-<a class="btn-primary gold-btn" href="#premium-offers" onclick="document.querySelector('#premium-offers').scrollIntoView({behavior: 'smooth'}); return false;">Get the Email Scripts</a>
-</div>
-</div>
+
 <h2>What to Do If You Can't Reach Anyone</h2>
 <p>If you are having difficulty getting a response from Pasadena ISD campus staff regarding an urgent special education matter, follow these formal escalation steps:</p>
 <ul>
@@ -292,31 +277,7 @@ Texas <em>Special Ed</em>
 </div>
 </div>
 <!-- Offer 2: All-Access Pass (Blue Theme) -->
-<div style="background-color: #f8f9fa; border: 2px solid #0d6efd; border-radius: 8px; padding: 20px; margin: 20px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-<div style="text-align: center; margin-bottom: 15px;">
-<span style="background-color: #ffc107; color: #000; padding: 6px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85em; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">🏆 MOST POPULAR • BEST VALUE</span>
-</div>
-<h3 style="color: #0d6efd; font-weight: bold; margin-top: 10px; text-align: center; margin-bottom: 5px;">Complete Texas Special Ed Bundle</h3>
-<h4 style="color: #495057; font-weight: 600; text-align: center; margin-top: 0; margin-bottom: 15px;">All 6 Toolkits • Save $185</h4>
-<p style="text-align: center; border-bottom: 1px solid #dee2e6; padding-bottom: 15px; font-size: 1.05em;">Instead of buying toolkits one-by-one for $282, get everything for <strong>$97</strong>.</p>
-<div style="text-align: center; margin-bottom: 20px; background-color: #fff; padding: 10px; border-radius: 5px; border: 1px dashed #dee2e6;">
-<span style="text-decoration: line-through; color: #6c757d; font-size: 0.95em;">Regular Price: $282</span><br/>
-<strong style="font-size: 1.3em; color: #212529;">Bundle Price: $97</strong><br/>
-<span style="color: #28a745; font-weight: bold; font-size: 1.1em;">✅ YOU SAVE: $185</span>
-</div>
-<ul style="list-style-type: none; padding-left: 0; line-height: 1.8; margin-bottom: 20px; font-size: 1.05em;">
-<li>✅ <strong>Lifetime access + updates</strong></li>
-<li>✅ <strong>Works for multiple children</strong></li>
-<li>✅ <strong>All Texas districts</strong></li>
-</ul>
-<p style="font-style: italic; font-size: 0.95em; border-left: 4px solid #ffc107; padding-left: 15px; color: #495057; background-color: #fff; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; border-radius: 0 5px 5px 0;">
-        "Worth it for the Behavior toolkit alone. Saved my son from suspension." <br/>
-<strong style="color: #212529;">- Marcus, Houston ISD</strong>
-</p>
-<div style="text-align: center; margin-top: 20px;">
-<a href="https://buy.stripe.com/3cIcN4a8l7Q4d0j7mBbbG0G" style="display: block; background-color: #0d6efd; color: white; padding: 16px 20px; text-decoration: none; font-weight: bold; border-radius: 6px; font-size: 1.2em; box-shadow: 0 4px 6px rgba(13, 110, 253, 0.3); transition: background-color 0.2s;" target="_blank">Get All 6 Toolkits — $97</a>
-</div>
-</div>
+
 </div>
 <!-- LOCAL_CONTENT_BLOCK:START -->
 <div class="local-district-context" style="background:#f8fafc;border:1px solid #e2e8f0;border-left:4px solid #1a56db;border-radius:6px;padding:28px 32px;margin:2.5rem 0;font-family:'Source Sans 3',sans-serif;font-size:17px;line-height:1.75;color:#1a1a2e;">
@@ -325,59 +286,15 @@ Texas <em>Special Ed</em>
 <p>As one of the petrochemical corridor's major school systems, Pasadena ISD's Special Education Department serves a diverse student population in this industrial region near the Houston Ship Channel, working to prepare students with disabilities for both college and career opportunities in southeast Texas's growing economy.</p>
 </div>
 <!-- LOCAL_CONTENT_BLOCK:END -->
+
+<div class="sales-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%); margin: 32px 0;">
+<h3 style="margin-top:0; color:#fff;">Show the ISD You Mean Business</h3>
+<p style="font-size:15px; color:#cbd5e1; margin-bottom: 24px;">A verbal request has no legal weight. A written letter starts the 45-day clock and forces a response within 15 school days.</p>
+<a href="/resources/Iep-letter.html" style="background:#d4af37; color:#0f172a; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 700; display: inline-block; font-family: 'DM Sans', sans-serif;">Get Your Letter — $25 →</a>
+</div>
 </article>
 <!-- RIGHT SIDE: 30% STICKY SIDEBAR -->
-<aside class="sidebar-column">
-<div class="sidebar-card cta-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;border:none;margin-bottom:24px;">
-<h4 style="font-family:'Lora',serif;font-size:1.25rem;margin:0 0 10px;color:#fff;">Show the ISD<br/>You Mean Business</h4>
-<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#94a3b8;margin:0 0 18px;line-height:1.5;">A verbal request has no legal weight. A written letter starts the 45-day clock and forces a response within 15 school days.</p>
-<a href="/resources/Iep-letter.html" style="display:block;background:#d4af37;color:#0f172a;padding:14px;border-radius:6px;text-decoration:none;font-weight:800;font-family:'DM Sans',sans-serif;font-size:14px;transition:background 0.2s;">Get Your Letter — $25 →</a>
-</div>
-<!-- COMPACT LEAD CAPTURE FORM (Escalation Version) -->
-<div class="sidebar-form">
-<div class="sf-header">
-<p class="sf-eyebrow">Pasadena ISD Special Ed Law</p>
-<h3 class="sf-name">Hargrove &amp; <em>Associates</em></h3>
-</div>
-<div class="sf-body">
-<p class="sf-empathy">You shouldn't have to figure this out alone.</p>
-<p class="sf-sub">A free 15-minute call can help you understand what the school is required to do — and how to force them to respond.</p>
-<form id="leadCaptureForm">
-<div class="sf-group">
-<label>Your Name</label>
-<input placeholder="First and last name" required="" type="text"/>
-</div>
-<div class="sf-group">
-<label>Email Address</label>
-<input placeholder="Where should we reach you?" required="" type="email"/>
-</div>
-<div class="sf-group">
-<label>Phone <span class="sf-optional">(optional)</span></label>
-<input placeholder="(555) 000-0000" type="tel"/>
-</div>
-<div class="sf-group">
-<label>What's going on?</label>
-<select required="">
-<option disabled="" selected="" value="">Choose what fits best...</option>
-<option>The school isn't responding to my emails</option>
-<option>I want to file a formal TEA complaint</option>
-<option>They are refusing to provide educational records</option>
-<option>I need help escalating an IEP issue</option>
-<option>Something else</option>
-</select>
-</div>
-<button class="sf-btn" type="button">Get My Free 15-Minute Call</button>
-<p class="sf-trust">
-<svg fill="none" height="13" stroke="#b8963a" stroke-width="2.5" viewbox="0 0 24 24" width="13"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                        Confidential. No spam. No pressure.
-                    </p>
-</form>
-</div>
-<div class="sf-footer">
-                Attorney Advertising · Results may vary.
-            </div>
-</div>
-</aside>
+
 </div>
 </main>
 <footer class="site-footer">
