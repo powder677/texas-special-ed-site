@@ -8,38 +8,40 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=DM+Sans:wght@300;400;500;600&amp;family=Lora:wght@400;600;700&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="/style.css" rel="stylesheet"/>
-<style id="cro-core-formatting">
-        /* ── AUTOMATED CRO PATCH: Layout & Mobile Fixes ── */
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
-        h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
-        
-        /* Core Layout - Single Column Optimized for Readability */
-        .layout-grid { max-width: 850px; margin: 30px auto; display: block; }
-        .content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; }
-        .content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
-        .content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
-        .content-column p { margin: 0 0 1.25rem; }
-        .content-column ul { padding-left: 20px; margin-bottom: 1.5rem; }
-        .content-column li { margin-bottom: 8px; }
+<script src="https://cdn.tailwindcss.com"></script>
 
-        /* Mobile Display & Padding Fixes */
-        @media (max-width: 950px) {
-            .content-column { padding: 20px !important; border: none !important; box-shadow: none !important; background: transparent !important; }
-            .nav-menu { display: none !important; }
-        }
-        
-        /* Protect Bot Banners from global style.css hijacking */
-        .banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
-        .banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
-        .banner-btn-gold { background: #d4af37; color: #0f172a !important; }
-        .banner-btn-blue { background: #1a56db; color: #fff !important; }
-        .banner-btn-blue:hover { background: #1e3a8a; color: #fff !important; }
-        
-        /* Integrated Inline CTA Styles */
-        .integrated-cta { margin: 3rem 0; border-radius: 12px; padding: 36px 28px; text-align: center; }
-        .integrated-cta.light { background: #fff; border: 1px solid #e2e8f0; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); }
-        .integrated-cta.dark { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #fff; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15); border: 1px solid #1e40af; }
-        </style><script src="https://cdn.tailwindcss.com"></script>
+<style id="universal-core-formatting">
+/* ── AUTOMATED CRO PATCH: Standardized Wide Layout ── */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
+
+/* Core Layout - Single Wide Column */
+.layout-grid { max-width: 850px; margin: 30px auto; display: block; width: 100%; box-sizing: border-box; }
+.content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; width: 100%; box-sizing: border-box; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+.content-column p { margin: 0 0 1.25rem; }
+.content-column ul, .content-column ol { padding-left: 20px; margin-bottom: 1.5rem; }
+.content-column li { margin-bottom: 8px; }
+
+/* Mobile Fixes */
+@media (max-width: 950px) {
+    .content-column { padding: 25px 20px !important; margin: 0 !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; }
+    .nav-menu { display: none !important; }
+}
+
+/* Scannable Blocks */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2, .action-steps h3 { border-top: none; margin-top: 0; padding-top: 0; color: #166534; }
+.action-steps li { color: #166534; }
+
+/* Standardized Buttons */
+.banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+.banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.banner-btn-gold { background: #d4af37; color: #0f172a !important; border: none; cursor: pointer; }
+.banner-btn-blue { background: #1a56db; color: #fff !important; border: none; cursor: pointer; }
+</style>
 </head>
 <body>
 <header class="site-header">
@@ -62,7 +64,6 @@
 <div class="layout-grid">
 <article class="content-column">
 <h1>Complete Guide to ARD Meetings and IEP Process for HUNTSVILLE ISD Parents</h1>
-
 <div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
 <strong style="color: #334155;">District Resources:</strong>
 <a href="ard-process-guide-huntsville-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
@@ -70,7 +71,6 @@
         <a href="grievance-dispute-resolution-huntsville-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dispute Resolution</a> •
         <a href="what-is-an-fie-huntsville-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">What Is an FIE?</a>
 </div>
-
 <p>Understanding the <strong>HUNTSVILLE ISD ARD meeting</strong> process is one of the most important steps you can take as a parent of a child with special needs. The ARD (Admission, Review, and Dismissal) committee is your partnership with HUNTSVILLE ISD to ensure your child receives the specialized education and support they deserve. This comprehensive guide walks you through every stage of the <strong>HUNTSVILLE ISD IEP process</strong>, empowering you to advocate effectively for your child.</p>
 <!-- AI Tool Section -->
 <div class="bg-gradient-to-br from-slate-900 to-blue-900 rounded-2xl p-8 shadow-xl text-white border border-blue-400/20 my-12">
