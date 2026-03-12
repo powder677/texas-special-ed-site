@@ -1,10 +1,8 @@
 import os
 from bs4 import BeautifulSoup
 
-# The path to your districts folder
 base_dir = r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\districts"
 
-# Only these specific folders will be processed.
 target_folders = [
     "brownsville-isd", "hallsville-isd", "pearland-isd", "galena-park-isd", "southwest-isd", 
     "eagle-pass-isd", "fort-stockton-isd", "cleveland-isd", "roscoe-collegiate-isd", "deer-park-isd", 
@@ -45,17 +43,20 @@ target_folders = [
     "farmersville-isd", "north-lamar-isd", "robinson-isd"
 ]
 
-def get_actual_filename(files_in_dir, keyword_list):
-    """Scans the folder and returns the exact filename matching a keyword."""
-    for filename in files_in_dir:
-        if filename.endswith(".html"):
-            for keyword in keyword_list:
-                if keyword in filename:
-                    return filename
-    return "#" # Fallback if no matching file is found
+def get_actual_filename(files_in_dir, keyword_list, district_folder):
+    """Finds the actual file, strongly preferring the one with the district name."""
+    matches = [f for f in files_in_dir if f.endswith(".html") and any(k in f for k in keyword_list)]
+    if not matches:
+        return "#"
+    
+    # Prioritize the file that includes the district name to avoid generic duplicates
+    for f in matches:
+        if district_folder in f:
+            return f
+            
+    return matches[0]
 
 def build_blog_links():
-    """Creates the HTML for the 4 required blog links."""
     html = """
     <div class="blog-links-section" style="max-width: 850px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
         <h3 style="font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; margin-top: 0; margin-bottom: 15px;">Helpful Special Education Articles</h3>
@@ -70,7 +71,6 @@ def build_blog_links():
     return BeautifulSoup(html, 'html.parser')
 
 def build_resource_bar(ard_file, eval_file, dispute_file, fie_file):
-    """Creates the Resource Bar specific to the actual files in the current district."""
     html = f"""
     <div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
         <strong style="color: #334155;">District Resources:</strong>
@@ -87,17 +87,16 @@ def process_districts():
         district_path = os.path.join(base_dir, district_folder)
         
         if not os.path.exists(district_path) or not os.path.isdir(district_path):
-            print(f"⚠️ Skipping {district_folder} - Folder not found")
             continue
             
-        # 1. First, map out the actual files in this specific directory
         files_in_dir = os.listdir(district_path)
         
-        ard_file = get_actual_filename(files_in_dir, ["ard-process-guide"])
-        eval_file = get_actual_filename(files_in_dir, ["evaluation-child-find"])
-        dispute_file = get_actual_filename(files_in_dir, ["grievance-dispute-resolution"])
-        fie_file = get_actual_filename(files_in_dir, ["what-is-an-fie", "what-is-fie"])
-        dyslexia_file = get_actual_filename(files_in_dir, ["dyslexia"])
+        # Smart finding of the actual files
+        ard_file = get_actual_filename(files_in_dir, ["ard-process-guide"], district_folder)
+        eval_file = get_actual_filename(files_in_dir, ["evaluation-child-find"], district_folder)
+        dispute_file = get_actual_filename(files_in_dir, ["grievance-dispute-resolution"], district_folder)
+        fie_file = get_actual_filename(files_in_dir, ["what-is-an-fie", "what-is-fie"], district_folder)
+        dyslexia_file = get_actual_filename(files_in_dir, ["dyslexia"], district_folder)
 
         for filename in files_in_dir:
             if not filename.endswith(".html"):
@@ -113,34 +112,28 @@ def process_districts():
             # --- TASK 1 & 2: Process the Hub Page (index.html) ---
             if filename == "index.html":
                 
-                # 1. Fix the Hub Cards dynamically using the real file names
+                # 1. HARD ASSIGN Hub Cards by position (1=ARD, 2=Eval, 3=Dispute, 4=Dyslexia)
                 silo_grid = soup.find('div', class_='silo-grid')
                 if silo_grid:
-                    for a_tag in silo_grid.find_all('a'):
-                        href = a_tag.get('href', '')
-                        
-                        # Determine which hub card this is and assign the correct actual filename
-                        if 'ard-process-guide' in href:
-                            new_href = f"/districts/{district_folder}/{ard_file}"
-                        elif 'evaluation-child-find' in href:
-                            new_href = f"/districts/{district_folder}/{eval_file}"
-                        elif 'grievance-dispute-resolution' in href:
-                            new_href = f"/districts/{district_folder}/{dispute_file}"
-                        elif 'dyslexia' in href:
-                            new_href = f"/districts/{district_folder}/{dyslexia_file}"
-                        else:
-                            new_href = href # Leave it alone if it's something unexpected
-                            
-                        if a_tag['href'] != new_href:
-                            a_tag['href'] = new_href
-                            modified = True
+                    cards = silo_grid.find_all('a')
+                    if len(cards) >= 4:
+                        cards[0]['href'] = f"/districts/{district_folder}/{ard_file}"
+                        cards[1]['href'] = f"/districts/{district_folder}/{eval_file}"
+                        cards[2]['href'] = f"/districts/{district_folder}/{dispute_file}"
+                        cards[3]['href'] = f"/districts/{district_folder}/{dyslexia_file}"
+                        modified = True
                 
-                # 2. Inject Resource Bar under the first H1 if it doesn't exist
-                if not soup.find('div', class_='silo-nav'):
+                # 2. Overwrite or Inject Resource Bar
+                existing_nav = soup.find('div', class_='silo-nav')
+                new_nav = build_resource_bar(ard_file, eval_file, dispute_file, fie_file)
+                
+                if existing_nav:
+                    existing_nav.replace_with(new_nav)
+                    modified = True
+                else:
                     h1_tag = soup.find('h1')
                     if h1_tag:
-                        resource_bar = build_resource_bar(ard_file, eval_file, dispute_file, fie_file)
-                        h1_tag.insert_after(resource_bar)
+                        h1_tag.insert_after(new_nav)
                         modified = True
 
             # --- TASK 3: Inject the 4 Blog Links into ALL HTML files ---
@@ -151,13 +144,13 @@ def process_districts():
                     footer.insert_before(blog_links)
                     modified = True
 
-            # Save changes back to the file
+            # Save
             if modified:
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(str(soup))
-                print(f"✅ Processed: {filename} in {district_folder}")
+                print(f"✅ Processed & Repaired: {filename} in {district_folder}")
 
 if __name__ == "__main__":
-    print("Starting smart site update...")
+    print("Starting Bulletproof site update...")
     process_districts()
     print("Update complete!")
