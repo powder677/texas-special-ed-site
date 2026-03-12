@@ -73,7 +73,7 @@ def clean_slug(name):
 TARGET_SLUGS = set([clean_slug(d['name']) for d in TARGET_DISTRICTS])
 
 # The new link HTML to add
-NEW_SILO_LINK = '''<a href="what-is-fie.html" style="color: #495057; text-decoration: none; font-weight: 500; padding: 6px 12px; border-radius: 4px; background: white; transition: all 0.2s; border: 1px solid #dee2e6;">📋 What Is an FIE?</a>'''
+NEW_SILO_LINK = ''''''
 
 # The new card HTML for index pages
 NEW_INDEX_CARD = '''
