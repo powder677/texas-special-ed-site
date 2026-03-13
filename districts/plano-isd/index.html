@@ -128,37 +128,34 @@ Texas <em>Special Ed</em>
 <span class="hamburger"></span>
 </button>
 <ul class="nav-menu">
-<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-<li class="nav-item dropdown">
-<a aria-haspopup="true" class="nav-link dropdown-toggle" href="/districts/index.html">Districts <span class="dropdown-arrow">▼</span></a>
-<ul class="dropdown-menu">
-<li><a href="/districts/index.html"><strong>Directory: All Districts</strong></a></li>
-<li class="dropdown-divider"></li>
-<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
-<li><a href="/districts/dallas-isd/index.html">Dallas ISD</a></li>
-<li><a href="/districts/austin-isd/index.html">Austin ISD</a></li>
-<li><a href="/districts/cypress-fairbanks-isd/index.html">Cypress-Fairbanks ISD</a></li>
-<li><a href="/districts/katy-isd/index.html">Katy ISD</a></li>
-<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
-<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
-<li><a href="/districts/round-rock-isd/index.html">Round Rock ISD</a></li>
-<li class="dropdown-divider"></li>
-<li><a class="view-all-link" href="/districts/index.html">View All 120+ Districts →</a></li>
-</ul>
-</li>
+<li class="nav-item"><a class="nav-link" href="/districts/index.html">Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/districts/es/">Spanish Districts</a></li>
 <li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
-<li class="nav-item"><a class="nav-link" href="/blog/index.html">Blog</a></li>
-<li class="nav-item"><a class="nav-link" href="/about/index.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Articles</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
 <li class="nav-item nav-cta">
 <a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
 </li>
 <li class="nav-item nav-cta" style="margin-left:8px;">
-<a href="/resources/Iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+<a href="/resources/iep-letter/index.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
 </li>
 </ul>
 </div>
 </nav>
 </header>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+   const toggle = document.querySelector('.mobile-menu-toggle');
+   const menu = document.querySelector('.nav-menu');
+   if (toggle && menu) {
+      toggle.addEventListener('click', function() {
+         menu.classList.toggle('active');
+         const expanded = toggle.getAttribute('aria-expanded') === 'true';
+         toggle.setAttribute('aria-expanded', !expanded);
+      });
+   }
+});
+</script>
 <main class="container">
 <h1>Plano ISD Special Education Resources</h1>
 <div class="trust-anchor" style="background-color: #f8fbff; border-left: 5px solid #004085; padding: 16px; margin: 20px 0; border-radius: 4px;">

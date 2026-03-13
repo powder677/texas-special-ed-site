@@ -25,7 +25,7 @@ Texas <em>Special Ed</em>
 </button>
 <ul class="nav-menu">
 <li class="nav-item"><a class="nav-link" href="/districts/index.html">Districts</a></li>
-<li class="nav-item"><a class="nav-link" href="/es/">Spanish Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/districts/es/">Spanish Districts</a></li>
 <li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
 <li class="nav-item"><a class="nav-link" href="/blog/index.html">Articles</a></li>
 <li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
@@ -33,7 +33,7 @@ Texas <em>Special Ed</em>
 <a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
 </li>
 <li class="nav-item nav-cta" style="margin-left:8px;">
-<a href="/resources/iep-letter" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+<a href="/resources/iep-letter/index.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
 </li>
 </ul>
 </div>
@@ -140,7 +140,7 @@ def replace_navbar(file_path, is_spanish=False):
         return False, f"Error: {str(e)}"
 
 
-def process_directory(base_path):
+def process_directory(base_path, exclude_es=False):
     """Process all HTML files in directory."""
     
     base_path = Path(base_path)
@@ -156,7 +156,15 @@ def process_directory(base_path):
         print(f"❌ No HTML files found in {base_path}")
         return
     
-    print(f"Found {len(html_files)} HTML files")
+    # Filter out /es/ paths if exclude_es is True
+    if exclude_es:
+        original_count = len(html_files)
+        html_files = [f for f in html_files if '/es/' not in str(f)]
+        excluded_count = original_count - len(html_files)
+        if excluded_count > 0:
+            print(f"ℹ️  Excluded {excluded_count} files from /es/ directory")
+    
+    print(f"Found {len(html_files)} HTML files to process")
     print("=" * 70)
     
     english_updated = 0
@@ -203,10 +211,13 @@ def main():
         print("REPLACE NAVBAR SITE-WIDE")
         print("=" * 70)
         print("\nUsage:")
-        print("  python replace_navbar.py <directory>")
+        print("  python replace_navbar.py <directory> [--exclude-es]")
         print("\nExamples:")
         print("  python replace_navbar.py .")
         print("  python replace_navbar.py districts")
+        print("  python replace_navbar.py districts --exclude-es")
+        print("\nOptions:")
+        print("  --exclude-es    Skip all files in /es/ directories")
         print("\nNew navbar structure:")
         print("  • Districts")
         print("  • Spanish Districts (NEW)")
@@ -220,7 +231,12 @@ def main():
         sys.exit(1)
     
     base_path = sys.argv[1]
-    process_directory(base_path)
+    exclude_es = '--exclude-es' in sys.argv
+    
+    if exclude_es:
+        print("🚫 Excluding /es/ directories from processing\n")
+    
+    process_directory(base_path, exclude_es)
 
 
 if __name__ == '__main__':

@@ -12,20 +12,46 @@
 <body>
 <header class="site-header">
 <nav aria-label="Main navigation" class="navbar" role="navigation">
-<div class="nav-container" style="display:flex; justify-content:space-between; align-items:center;">
+<div class="nav-container">
 <div class="nav-logo">
-<a aria-label="Texas Special Ed Home" class="text-logo" href="/" style="text-decoration:none; font-size:1.5rem; color:#1a1a2e; font-weight:bold; font-family:'Lora', serif;">
-                                Texas <em style="color:#1a56db; font-style:italic;">Special Ed</em>
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+Texas <em>Special Ed</em>
 </a>
 </div>
-<ul class="nav-menu" style="display:flex; list-style:none; gap:20px; align-items:center;">
-<li><a href="/" style="text-decoration:none; color:#333; font-weight:600;">Home</a></li>
-<li><a href="/districts/index.html" style="text-decoration:none; color:#333; font-weight:600;">Districts</a></li>
-<li><a href="/resources/iep-letter/index.html" style="background:#d4af37; color:#0f172a; padding:10px 18px; border-radius:4px; font-weight:700; text-decoration:none;">Get Your Letter — $25</a></li>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item"><a class="nav-link" href="/districts/index.html">Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/districts/es/">Spanish Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Articles</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/iep-letter/index.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
 </ul>
 </div>
 </nav>
 </header>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+   const toggle = document.querySelector('.mobile-menu-toggle');
+   const menu = document.querySelector('.nav-menu');
+   if (toggle && menu) {
+      toggle.addEventListener('click', function() {
+         menu.classList.toggle('active');
+         const expanded = toggle.getAttribute('aria-expanded') === 'true';
+         toggle.setAttribute('aria-expanded', !expanded);
+      });
+   }
+});
+</script>
 <main class="container" style="max-width: 1100px; margin: 0 auto; padding: 20px;">
 <div class="layout-grid">
 <article class="content-column">
