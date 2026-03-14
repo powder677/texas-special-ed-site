@@ -58,7 +58,7 @@ NEW_NAVBAR_HTML_ES = '''<header class="site-header">
 <nav aria-label="Navegación principal" class="navbar" role="navigation">
 <div class="nav-container">
 <div class="nav-logo">
-<a aria-label="Texas Special Ed Inicio" class="text-logo" href="/es/">
+<a aria-label="Texas Special Ed Inicio" class="text-logo" href="/districts/es/index.html">
 Texas <em>Special Ed</em>
 </a>
 </div>
@@ -69,7 +69,7 @@ Texas <em>Special Ed</em>
 </button>
 <ul class="nav-menu">
 <li class="nav-item"><a class="nav-link" href="/districts/index.html">Distritos</a></li>
-<li class="nav-item"><a class="nav-link" href="/es/">Distritos en Español</a></li>
+<li class="nav-item"><a class="nav-link" href="/districts/es/index.html">Distritos en Español</a></li>
 <li class="nav-item"><a class="nav-link" href="/resources/index.html">Recursos para Padres</a></li>
 <li class="nav-item"><a class="nav-link" href="/blog/index.html">Artículos</a></li>
 <li class="nav-item"><a class="nav-link" href="/contact/index.html">Contacto</a></li>

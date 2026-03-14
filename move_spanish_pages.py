@@ -83,7 +83,7 @@ def move_spanish_pages(es_districts_path, districts_path, delete_old=False):
         if files_moved > 0:
             total_files_moved += files_moved
             total_districts_processed += 1
-            print(f"✓ {district_name}: Moved {files_moved} files → /districts/{district_name}/es/")
+            print(f"✓ {district_name}: Moved {files_moved} files → /districts/{district_name}/districts/es/index.html")
         
         # Delete empty folder if requested
         if delete_old:
