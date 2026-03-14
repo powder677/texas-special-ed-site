@@ -12,7 +12,7 @@ NEW_NAVBAR_HTML_ES = '''<header class="site-header">
 <nav aria-label="Navegación principal" class="navbar" role="navigation">
 <div class="nav-container">
 <div class="nav-logo">
-<a aria-label="Texas Special Ed Inicio" class="text-logo" href="/districts/es/index.html">
+<a aria-label="Texas Special Ed Inicio" class="text-logo" href="/districts/es-index.html">
 Texas <em>Special Ed</em>
 </a>
 </div>
