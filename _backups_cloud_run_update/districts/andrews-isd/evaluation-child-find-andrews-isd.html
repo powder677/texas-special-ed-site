@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Andrews ISD Special Education</title>
+<link href="/style.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style id="universal-core-formatting">
+/* ── AUTOMATED CRO PATCH: Standardized Wide Layout ── */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
+
+/* Core Layout - Single Wide Column */
+.layout-grid { max-width: 850px; margin: 30px auto; display: block; width: 100%; box-sizing: border-box; }
+.content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; width: 100%; box-sizing: border-box; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+.content-column p { margin: 0 0 1.25rem; }
+.content-column ul, .content-column ol { padding-left: 20px; margin-bottom: 1.5rem; }
+.content-column li { margin-bottom: 8px; }
+
+/* Mobile Fixes */
+@media (max-width: 950px) {
+    .content-column { padding: 25px 20px !important; margin: 0 !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; }
+    .nav-menu { display: none !important; }
+}
+
+/* Scannable Blocks */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2, .action-steps h3 { border-top: none; margin-top: 0; padding-top: 0; color: #166534; }
+.action-steps li { color: #166534; }
+
+/* Standardized Buttons */
+.banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+.banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.banner-btn-gold { background: #d4af37; color: #0f172a !important; border: none; cursor: pointer; }
+.banner-btn-blue { background: #1a56db; color: #fff !important; border: none; cursor: pointer; }
+</style>
+
+    <!-- Newsletter Popup Styles -->
+    <style>
+        .newsletter-popup-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10, 35, 66, 0.92);
+            z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; 
+            transition: opacity 0.4s ease, visibility 0.4s;
+            backdrop-filter: blur(6px);
+        }
+        .newsletter-popup-overlay.show { opacity: 1; visibility: visible; }
+        
+        .newsletter-popup-content {
+            background: #fff; width: 92%; max-width: 520px;
+            border-radius: 16px; position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+            transform: translateY(30px) scale(0.9); 
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+        .newsletter-popup-overlay.show .newsletter-popup-content { 
+            transform: translateY(0) scale(1); 
+        }
+        
+        .newsletter-popup-close {
+            position: absolute; top: 16px; right: 16px;
+            background: rgba(255,255,255,0.15); 
+            border: none; width: 36px; height: 36px;
+            border-radius: 50%; color: #fff; font-size: 24px; 
+            cursor: pointer; z-index: 10;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.2s;
+            font-weight: 300;
+            line-height: 1;
+        }
+        .newsletter-popup-close:hover { 
+            background: rgba(255,255,255,0.25); 
+            transform: rotate(90deg);
+        }
+        
+        .newsletter-popup-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            padding: 48px 36px 36px; 
+            text-align: center; 
+            position: relative;
+            overflow: hidden;
+        }
+        .newsletter-popup-header::before {
+            content: ''; position: absolute; top: -50%; right: -20%;
+            width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .newsletter-popup-icon {
+            width: 64px; height: 64px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 3px solid rgba(212, 175, 55, 0.4);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 32px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+        
+        .newsletter-popup-tag {
+            color: #d4af37; font-size: 12px; font-weight: 700; 
+            text-transform: uppercase; letter-spacing: 0.12em; 
+            display: inline-block; margin-bottom: 12px;
+            background: rgba(212, 175, 55, 0.15); 
+            padding: 6px 16px; border-radius: 20px;
+        }
+        
+        .newsletter-popup-header h3 { 
+            font-family: 'Lora', serif; 
+            font-size: 28px; 
+            color: #fff; 
+            margin: 0; 
+            line-height: 1.25;
+            position: relative;
+        }
+        
+        .newsletter-popup-body { 
+            padding: 36px; 
+            background: #fff;
+        }
+        
+        .newsletter-popup-benefits {
+            list-style: none;
+            margin: 0 0 28px 0;
+            padding: 0;
+        }
+        .newsletter-popup-benefits li {
+            padding: 12px 0 12px 36px;
+            position: relative;
+            font-size: 15px;
+            color: #475569;
+            line-height: 1.5;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .newsletter-popup-benefits li:last-child {
+            border-bottom: none;
+        }
+        .newsletter-popup-benefits li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .newsletter-popup-input {
+            width: 100%; 
+            padding: 16px 20px; 
+            border: 2px solid #e2e8f0;
+            border-radius: 10px; 
+            font-size: 16px; 
+            font-family: 'DM Sans', -apple-system, sans-serif;
+            margin-bottom: 12px; 
+            transition: all 0.3s ease;
+            color: #0a2342;
+        }
+        .newsletter-popup-input:focus { 
+            outline: none; 
+            border-color: #1a56db;
+            box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
+        }
+        
+        .newsletter-popup-btn {
+            width: 100%; 
+            padding: 16px 24px; 
+            background: #d4af37; 
+            color: #0a2342;
+            border: none; 
+            border-radius: 10px; 
+            font-size: 16px; 
+            font-weight: 700;
+            font-family: 'DM Sans', -apple-system, sans-serif; 
+            cursor: pointer; 
+            transition: all 0.3s ease;
+        }
+        .newsletter-popup-btn:hover { 
+            background: #c29d2e; 
+            transform: translateY(-2px); 
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        .newsletter-popup-privacy { 
+            font-size: 13px !important; 
+            color: #94a3b8 !important; 
+            margin: 0 !important; 
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        .newsletter-popup-success {
+            padding: 36px;
+            text-align: center;
+            display: none;
+        }
+        .newsletter-popup-success.show {
+            display: block;
+        }
+        .newsletter-popup-success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 40px;
+            color: #fff;
+        }
+        .newsletter-popup-success h3 {
+            font-family: 'Lora', serif;
+            font-size: 24px;
+            color: #0a2342;
+            margin-bottom: 12px;
+        }
+        .newsletter-popup-success p {
+            color: #64748b;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        
+        @media (max-width: 640px) {
+            .newsletter-popup-header { padding: 40px 24px 28px; }
+            .newsletter-popup-header h3 { font-size: 24px; }
+            .newsletter-popup-body { padding: 28px 24px; }
+            .newsletter-popup-benefits li { font-size: 14px; }
+        }
+    </style>
+
+</head>
+<body><header class="site-header">
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<div class="nav-logo">
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+Texas <em>Special Ed</em>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item"><a class="nav-link" href="/districts/index.html">Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/districts/es-index.html">Spanish Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Articles</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/iep-letter/index.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+   const toggle = document.querySelector('.mobile-menu-toggle');
+   const menu = document.querySelector('.nav-menu');
+   if (toggle && menu) {
+      toggle.addEventListener('click', function() {
+         menu.classList.toggle('active');
+         const expanded = toggle.getAttribute('aria-expanded') === 'true';
+         toggle.setAttribute('aria-expanded', !expanded);
+      });
+   }
+});
+</script>
+<div class="container">
+<h1>Complete Guide to Requesting a Full Individual Evaluation (FIE) in ANDREWS ISD</h1>
+<div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
+<strong style="color: #334155;">Andrews ISD Resources:</strong>
+<a href="/districts/andrews-isd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Hub</a> •
+        <a href="/districts/andrews-isd/ard-process-guide-andrews-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
+        <a href="/districts/andrews-isd/evaluation-child-find-andrews-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
+        <a href="/districts/andrews-isd/what-is-an-fie-andrews-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">What Is an FIE?</a> •
+        <a href="/districts/andrews-isd/how-to-request-evaluation.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Request an Eval</a> •
+        <a href="/districts/andrews-isd/grievance-dispute-resolution-andrews-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dispute Resolution</a>
+</div>
+<div class="layout-grid"><article class="content-column"><p>If you're a parent in ANDREWS ISD and you believe your child may have a disability affecting their learning, requesting a <strong>Full Individual Evaluation (FIE)</strong> is an important first step toward getting the support your child needs. This comprehensive guide walks you through everything you need to know about the ANDREWS ISD evaluation process, including timelines, procedures, and your rights as a parent.</p>
+<!-- AI Tool Section -->
+<div style="
+  background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%);
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25);
+  padding: 28px 24px 24px;
+  border: 1px solid #2a4382;
+  text-align: center;
+  margin: 2.5rem 0;
+">
+<span style="
+    display: inline-block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    font-family: 'DM Sans', sans-serif;
+  ">Free AI Tool</span>
+<h3 style="
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-size: 1.35rem;
+    line-height: 1.3;
+  ">Free ARD Rights Scan</h3>
+<p style="
+    font-size: 14px;
+    color: #cbd5e1;
+    margin: 0 0 22px;
+    line-height: 1.55;
+    font-family: 'Source Sans 3', sans-serif;
+  ">
+    Wondering if the school violated your rights? Answer a few questions for an instant analysis based on Texas law.
+  </p>
+<a href="/" style="
+    display: block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    transition: background 0.2s;
+  ">Run My Free ARD Scan →</a>
+<p style="
+    font-size: 11px;
+    color: #64748b;
+    margin: 12px 0 0;
+    font-family: 'Source Sans 3', sans-serif;
+  ">🔒 Free  ·  No account needed</p>
+</div>
+</div>
+<h2>Understanding What an FIE Means for ANDREWS ISD Families</h2>
+<div class="mobile-only" id="mobile-bot-1" style="margin: 2.5rem 0;">
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;box-shadow:0 10px 25px -5px rgba(0,0,0,0.15);border:1px solid #1e40af;">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
+<h3 style="font-family:'Lora',serif;font-size:1.6rem;margin:0 0 10px;color:#fff;">Draft Your FIE Request</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:15px;color:#cbd5e1;margin:0 0 18px;line-height:1.5;">Sending a casual email is a mistake. Use our AI to write a legally binding letter that forces a response.</p>
+<a class="banner-btn banner-btn-gold" href="/resources/iep-letter/index.html">Draft My Letter — $25 →</a>
+</div>
+</div>
+<p>A Full Individual Evaluation is a complete assessment designed to determine whether your child has a disability and whether they qualify for special education services under the Individuals with Disabilities Education Act (IDEA). For parents in ANDREWS ISD, understanding what an FIE involves is crucial to advocating effectively for your child.</p><p>The evaluation examines multiple areas of your child's development and functioning, including cognitive abilities, academic performance, social-emotional development, speech and language skills, and physical capabilities. An ANDREWS ISD FIE evaluation is thorough and multidisciplinary, meaning multiple specialists will assess your child from different perspectives.</p><p>This evaluation differs from routine school screening or general academic testing. An ANDREWS special education evaluation is specifically designed to determine eligibility for special education services and to develop an appropriate Individualized Education Program (IEP) if your child qualifies.</p><h2>The ANDREWS ISD Child Find Obligation</h2>
+<div class="mobile-only" id="mobile-bot-2" style="margin: 2.5rem 0;">
+<div style="background:#fff;border:1px solid #e2e8f0;padding:28px;border-radius:12px;text-align:center;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05);">
+<span style="background:#ef4444;color:#fff;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Diagnostic Bot</span>
+<h3 style="font-family:'Lora',serif;font-size:1.3rem;margin:0 0 10px;color:#0a2342;">Are Your Rights Being Violated?</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#475569;margin:0 0 18px;line-height:1.5;">Take our 9-question ARD assessment to find out your next legal step.</p>
+<a class="banner-btn banner-btn-blue" href="/tools/ard-rights-scan/index.html">Run Free ARD Audit →</a>
+</div>
+</div>
+<p>Texas schools, including ANDREWS ISD, have a legal responsibility under IDEA known as "child find." This means <strong>ANDREWS ISD must actively search for and identify all children with disabilities</strong>, from birth through age 21, who may need special education services.</p><p>Child find means that ANDREWS ISD staff—including teachers, counselors, and administrators—are required to refer children for evaluation if they suspect a disability. However, you as a parent don't need to wait for the school to notice. You have the right to request an ANDREWS ISD special education evaluation at any time if you believe your child may have a disability.</p><p>This proactive approach ensures that no child in the ANDREWS area falls through the cracks. If you've noticed developmental delays, learning difficulties, behavioral concerns, or other issues that worry you, don't hesitate to request an evaluation.</p><h2>How to Request an ANDREWS ISD Evaluation</h2><div class="integrated-cta light" id="inline-bot-2">
+<span style="background:#ef4444;color:#fff;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Diagnostic Bot</span>
+<h3 style="font-family:'Lora',serif;font-size:1.5rem;margin:0 0 10px;color:#0a2342;border:none;padding:0;">Is the school ignoring your request?</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:16px;color:#475569;margin:0 auto 18px;line-height:1.6;max-width:600px;">If the district has refused to evaluate your child, or they are forcing you to try "RTI interventions" before testing, they may be violating Child Find laws.</p>
+<a class="banner-btn banner-btn-blue" href="/tools/ard-rights-scan/index.html">Run Free Rights Audit →</a>
+</div><h3>Step 1: Submit Your Written Request</h3><p>The formal process begins with a <strong>written request for evaluation</strong>. While you can make an informal request verbally to your child's teacher or school counselor, sending a written request creates an official record and officially starts the ANDREWS ISD 45 day timeline.</p><p>Your written request should be addressed to the Director of Special Education or the campus principal. You can deliver it in person, email it, or mail it to the school. When submitting your ANDREWS ISD evaluation request, include:</p><ul>
+<li>Your child's full name and date of birth</li>
+<li>The date of your request</li>
+<li>A clear statement that you're requesting a Full Individual Evaluation</li>
+<li>Specific concerns about your child's learning, development, or behavior</li>
+<li>Any relevant medical, developmental, or educational history</li>
+</ul><h3>Step 2: Notice of Parent Rights</h3><p>Within a specific timeframe after receiving your request, ANDREWS ISD must provide you with a <strong>Notice of Parent Rights</strong>. This critical document explains your legal rights throughout the evaluation process, including your right to participate, request additional evaluations, and appeal decisions.</p><p>Keep this document in a safe place. You'll refer to it throughout your child's special education journey. The notice explains your rights under both IDEA and Texas Education Code requirements that govern ANDREWS ISD special education.</p><h3>Step 3: Consent for Evaluation</h3><p>Before ANDREWS ISD can conduct any formal evaluation, you must provide written consent. The school will send you a consent form explaining what evaluations will be conducted, who will conduct them, and what areas will be assessed.</p><p>Review this form carefully and ask questions if anything is unclear. You have the right to request additional evaluations or modifications to the proposed evaluation plan. Once you sign and return the consent form, the ANDREWS ISD 45 day timeline officially begins.</p><h2>The ANDREWS ISD 45 Day Timeline Explained</h2><p>Once you provide written consent for evaluation, <strong>ANDREWS ISD has 45 calendar days to complete the Full Individual Evaluation</strong> and hold an eligibility meeting to discuss the results. This is a legal deadline established under IDEA and enforced in Texas schools.</p><p>The 45 days includes time for:</p><ul>
+<li>Administering all assessment instruments and procedures</li>
+<li>Collecting information from parents, teachers, and other professionals</li>
+<li>Analyzing and interpreting the evaluation data</li>
+<li>Writing the evaluation report</li>
+<li>Scheduling and conducting the eligibility meeting</li>
+</ul><p>If ANDREWS ISD cannot meet this deadline due to circumstances beyond the school's control (such as your unavailability for meetings or incomplete information you need to provide), they must document the reasons and establish a new timeline with your agreement.</p><p>Understanding the ANDREWS ISD evaluation request timeline helps you stay informed and hold the school accountable. Mark your calendar 45 days from the date you provided consent so you can follow up if you don't hear from the school.</p><h2>What the ANDREWS ISD FIE Evaluation Will Include</h2><h3>Cognitive and Academic Assessment</h3><p>A comprehensive ANDREWS ISD special education evaluation includes formal testing of your child's cognitive abilities and academic skills. Specialists will administer standardized tests to measure intellectual functioning, reasoning, memory, and processing skills.</p><p>Academic assessment examines your child's performance in reading, math, writing, and other core subjects compared to grade-level expectations.</p><h3>Classroom Observation and Teacher Input</h3><p>Special education staff will observe your child in the classroom and other school settings to see how they function in real-world environments. Your child's current teachers will also provide detailed information about academic performance, behavior, social skills, and how your child compares to peers.</p><h3>Speech-Language Evaluation</h3><p>If language is a concern, a speech-language pathologist will evaluate your child's receptive language (understanding), expressive language (speaking), and pragmatic skills (using language in social situations).</p><h3>Social-Emotional and Behavioral Assessment</h3><p>School psychologists evaluate your child's emotional functioning, social skills, and behavioral patterns. This may include behavior rating scales completed by parents and teachers, interviews, and direct observation.</p><h3>Physical and Developmental Assessment</h3><p>Depending on your concerns, ANDREWS ISD may include assessment of motor skills, physical development, and adaptive functioning (self-care skills, independence).</p><h3>Parent Input and History</h3><p>You'll participate in interviews or complete questionnaires about your child's developmental history, medical background, family history of learning or developmental issues, and concerns you've observed at home.</p><h2>Preparing for Your Child's ANDREWS ISD Evaluation</h2><h3>Gather Documentation</h3><p>Before the evaluation begins, compile any relevant records you have, including:</p><ul>
+<li>Medical records and reports from physicians or specialists</li>
+<li>Previous evaluations (from preschool, private evaluations, or outside providers)</li>
+<li>Report cards and progress reports</li>
+<li>Notes about developmental milestones and concerns</li>
+<li>Records of any therapy or interventions your child has received</li>
+</ul><p>Providing this information to ANDREWS ISD helps evaluators get a complete picture of your child's history and functioning.</p><h3>Prepare Questions and Concerns</h3><p>Write down specific examples of behaviors, academic struggles, or developmental concerns that prompted your ANDREWS ISD evaluation request. Include when these concerns started, how often they occur, and how they affect your child's daily life.</p><h3>Know Your Rights</h3><p>Familiarize yourself with parent rights in the special education evaluation process. You have the right to participate in all meetings, request independent evaluations, ask questions, and receive copies of all evaluation reports.</p><h2>After the ANDREWS ISD FIE Evaluation is Complete</h2><h3>The Eligibility Meeting</h3><p>Within the ANDREWS ISD 45 day timeline, the school will schedule a meeting to discuss evaluation results and determine eligibility. This meeting is often called the <strong>Admission, Review, and Dismissal (ARD) Committee meeting</strong>.</p><p>You, school administrators, special education teachers, general education teachers, and the evaluators will review the findings together. The team will decide whether your child has a disability and whether they qualify for special education services under IDEA.</p><h3>If Your Child Qualifies</h3><p>If ANDREWS ISD determines your child is eligible, the same meeting will include development of an <strong>Individualized Education Program (IEP)</strong>. This document outlines your child's goals, the services they'll receive, and how progress will be measured.</p><h3>If Your Child Does Not Qualify</h3><p>If the evaluation team determines your child doesn't meet IDEA eligibility criteria, you have important options. You can request an independent evaluation at school expense, file a due process complaint, or seek evaluation through outside providers. Some children who don't qualify under IDEA may still qualify for accommodations under Section 504 of the Rehabilitation Act.</p><h2>Your Rights as a Parent in ANDREWS ISD</h2><p>Throughout the ANDREWS ISD special education evaluation process, you have significant legal protections and rights:</p><ul>
+<li><strong>Right to participate:</strong> You must be invited to all meetings and your input must be considered</li>
+<li><strong>Right to prior written notice:</strong> The school must notify you in writing of all actions regarding evaluation and special education</li>
+<li><strong>Right to independent evaluation:</strong> If you disagree with ANDREWS ISD's evaluation, you can request an independent evaluation at school expense</li>
+<li><strong>Right to confidentiality:</strong> All evaluation information is confidential and requires your written permission to share</li>
+<li><strong>Right to due process:</strong> If you disagree with ANDREWS ISD decisions, you can file a due process complaint</li>
+<li><strong>Right to interpretation and translation:</strong> If English isn't your primary language, ANDREWS ISD must provide interpretation services</li>
+</ul><h2>When to Seek Additional Support</h2><p>If you're navigating the ANDREWS ISD special education evaluation process and feeling overwhelmed, remember that support is available. Consider working with a <strong>special ed advocate ANDREWS</strong> families recommend, who can attend meetings with you and help ensure your child's needs are properly addressed.</p><p>For more complex situations or if you disagree with ANDREWS ISD's decisions, a <strong>special education attorney near ANDREWS</strong> can provide legal guidance about your options and rights under federal and Texas law.</p><p>Many families in the ANDREWS area benefit from connecting with local special education support groups where you can learn from other parents' experiences with ANDREWS ISD special education evaluation and services.</p><h2>Key Takeaways for ANDREWS ISD Parents</h2><p>Requesting a Full Individual Evaluation is a proactive step toward understanding your child's needs and accessing appropriate support. Remember these critical points:</p><ul>
+<li>Submit your <strong>ANDREWS ISD evaluation request</strong> in writing to create an official record</li>
+<li>The school must complete the evaluation and hold an eligibility meeting within <strong>45 calendar days</strong> of receiving your written consent</li>
+<li><strong>ANDREWS ISD child find</strong> obligations mean the school should identify children who need evaluation, but you can request evaluation anytime</li>
+<li>You have the right to participate fully in all aspects of the evaluation and decision-making process</li>
+<li>Keep detailed records of all communications and documents related to your <strong>ANDREWS ISD special education evaluation</strong></li>
+<li>Don't hesitate to ask questions or request clarification of results</li>
+<li>If you disagree with results, you have the right to an independent evaluation</li>
+</ul><p>For parents in ANDREWS ISD, understanding the evaluation process empowers you to advocate effectively for your child. Trust your instincts about your child's needs, stay informed about your rights, and work collaboratively with school staff to ensure your child receives the support necessary to succeed academically and developmentally.</p></article></div>
+</div>
+<div class="blog-links-section" style="max-width: 850px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+<h3 style="font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; margin-top: 0; margin-bottom: 15px;">Helpful Special Education Articles</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 15px;">
+<a href="/blog/what-is-fie" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ What is an FIE?</a>
+<a href="/blog/manifestation-determination" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ Manifestation Determination</a>
+<a href="/blog/fie-evaluation-timeline" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ FIE Evaluation Timeline</a>
+<a href="/blog/what-is-an-ard-meeting" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ What is an ARD Meeting?</a>
+</div>
+</div>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-about">
+<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+<p style="margin-top:.75rem;">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and ARD process with confidence.</p>
+</div>
+<div class="footer-col">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/districts/index.html">Browse Districts</a></li>
+<li><a href="/resources/index.html">Parent Resources</a></li>
+<li><a href="/blog/index.html">Blog &amp; Articles</a></li>
+<li><a href="/about/index.html">About Us</a></li>
+<li><a href="/contact/index.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Popular Districts</h3>
+<ul>
+<li><a href="/districts/houston-isd/index.html">Houston ISD</a></li>
+<li><a href="/districts/frisco-isd/index.html">Frisco ISD</a></li>
+<li><a href="/districts/plano-isd/index.html">Plano ISD</a></li>
+<li><a href="/districts/conroe-isd/index.html">Conroe ISD</a></li>
+<li><a href="/districts/index.html">View All Districts →</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Free Resources</h3>
+<ul>
+<li><a href="/resources/ard-checklist.pdf" target="_blank">ARD Meeting Checklist</a></li>
+<li><a href="/resources/evaluation-request-letter.pdf" target="_blank">Evaluation Request Letter</a></li>
+<li><a href="/resources/iep-goal-tracker.pdf" target="_blank">IEP Goal Tracker</a></li>
+<li><a href="/resources/parent-rights-guide.pdf" target="_blank">Parent Rights Guide</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+</div>
+</footer><script>
+document.addEventListener('DOMContentLoaded', function() {
+    var toggle = document.querySelector('.mobile-menu-toggle');
+    var menu   = document.querySelector('.nav-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function() { menu.classList.toggle('active'); });
+    }
+});
+</script>
+
+</div>
+
+
+    <!-- Newsletter Popup -->
+    <div id="newsletterPopup" class="newsletter-popup-overlay">
+        <div class="newsletter-popup-content">
+            <button class="newsletter-popup-close" onclick="closeNewsletterPopup()" aria-label="Close">×</button>
+            
+            <div id="popupForm">
+                <div class="newsletter-popup-header">
+                    <div class="newsletter-popup-icon">📧</div>
+                    <span class="newsletter-popup-tag">Free Weekly Newsletter</span>
+                    <h3>Get Texas Special Ed Guidance Every Week</h3>
+                </div>
+                
+                <div class="newsletter-popup-body">
+                    <ul class="newsletter-popup-benefits">
+                        <li>Real case studies from Texas parents who won their ARD meetings</li>
+                        <li>District-specific timelines and escalation strategies</li>
+                        <li>Policy updates from TEA that affect your rights</li>
+                        <li>Letter templates and meeting prep checklists</li>
+                    </ul>
+                    
+                    <form id="newsletterForm" class="newsletter-popup-form" onsubmit="handleNewsletterSubmit(event)">
+                        <input 
+                            type="email" 
+                            id="popupEmail"
+                            class="newsletter-popup-input"
+                            placeholder="Enter your email address" 
+                            required
+                        >
+                        <button type="submit" class="newsletter-popup-btn" id="submitBtn">
+                            Join 8,200+ Texas Parents →
+                        </button>
+                    </form>
+                    
+                    <p class="newsletter-popup-privacy">
+                        Free forever. Weekly emails. Unsubscribe anytime.<br>
+                        We respect your privacy and never share your email.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="popupSuccess" class="newsletter-popup-success">
+                <div class="newsletter-popup-success-icon">✓</div>
+                <h3>You're on the list!</h3>
+                <p>Check your inbox for a confirmation email. Your first newsletter arrives this Thursday with strategies from parents who successfully navigated the Texas special education system.</p>
+                <button class="newsletter-popup-btn" onclick="closeNewsletterPopup()">
+                    Continue Reading
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const POPUP_CONFIG = {
+            delaySeconds: 10,
+            sessionStorageKey: 'txSpecEdPopupShown',
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (sessionStorage.getItem(POPUP_CONFIG.sessionStorageKey)) {
+                return;
+            }
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('nopopup') === 'true') {
+                return;
+            }
+            
+            setTimeout(function() {
+                const popup = document.getElementById('newsletterPopup');
+                if (popup) {
+                    popup.classList.add('show');
+                    sessionStorage.setItem(POPUP_CONFIG.sessionStorageKey, 'true');
+                }
+            }, POPUP_CONFIG.delaySeconds * 1000);
+        });
+
+        function closeNewsletterPopup() {
+            const popup = document.getElementById('newsletterPopup');
+            if (popup) {
+                popup.classList.remove('show');
+            }
+        }
+
+        if (document.getElementById('newsletterPopup')) {
+            document.getElementById('newsletterPopup').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeNewsletterPopup();
+                }
+            });
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeNewsletterPopup();
+            }
+        });
+
+        async function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            
+            const emailInput = document.getElementById('popupEmail');
+            const submitBtn = document.getElementById('submitBtn');
+            const email = emailInput.value.trim().toLowerCase();
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Subscribing...';
+            
+            try {
+                await saveNewsletterSignup(email);
+                
+                document.getElementById('popupForm').style.display = 'none';
+                document.getElementById('popupSuccess').classList.add('show');
+                
+            } catch (error) {
+                console.error('Newsletter signup error:', error);
+                alert('Something went wrong. Please try again or email us directly.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Join 8,200+ Texas Parents →';
+            }
+        }
+
+        async function saveNewsletterSignup(email) {
+            const pageUrl = window.location.pathname;
+            const pageTitle = document.title;
+            
+            const districtMatch = pageUrl.match(/\/districts\/([^\/]+)/);
+            const district = districtMatch ? districtMatch[1] : null;
+            
+            const signupData = {
+                email: email,
+                source: 'newsletter_popup',
+                page_url: pageUrl,
+                page_title: pageTitle,
+                district: district,
+                timestamp: new Date().toISOString(),
+                subscribed: true,
+                tags: ['newsletter_popup', district].filter(Boolean)
+            };
+            
+            const response = await fetch('/api/newsletter-signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(signupData)
+            });
+            
+            if (!response.ok) {
+                throw new Error('API error');
+            }
+            
+            return await response.json();
+        }
+    </script>
+
+</body>
+</html>
