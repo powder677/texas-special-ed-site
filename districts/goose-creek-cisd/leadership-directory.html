@@ -580,7 +580,7 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.append('concern', issueSelect && issueSelect.value ? issueSelect.value : 'Not provided');
             formData.append('pageUrl', window.location.href);
 
-            const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwWpGXg3JMJnxyzUlJHPlQRnE_R2Dh6oFvapMureXQWG_0bLOBtN_e7f5s5jnKRdcG-/exec';
+            const GOOGLE_SCRIPT_URL = 'https://email-capture-api-831148457361.us-central1.run.app/api/signup';
 
             fetch(GOOGLE_SCRIPT_URL, {
                 method: 'POST',

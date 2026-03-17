@@ -166,7 +166,7 @@ Texas <em>Special Ed</em>
 </section>
 </main>
 <script>
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
+const GOOGLE_SCRIPT_URL = 'https://email-capture-api-831148457361.us-central1.run.app/api/signup';
 
 document.querySelectorAll('.subscribe-form, .footer-subscribe').forEach(function(form) {
   form.addEventListener('submit', function(e) {
@@ -182,9 +182,10 @@ document.querySelectorAll('.subscribe-form, .footer-subscribe').forEach(function
     
     fetch(GOOGLE_SCRIPT_URL, {
       method: 'POST',
-      mode: 'no-cors',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email, district: district })
+      body: JSON.stringify({
+        site: "texas_special_ed",
+        language: "en", email: email, district: district })
     })
     .then(function() {
       form.innerHTML = '<p style="color: green; font-weight: 600;">✓ You\'re subscribed!</p>';

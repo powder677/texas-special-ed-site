@@ -436,7 +436,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Subscription Form Script
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
+const GOOGLE_SCRIPT_URL = 'https://email-capture-api-831148457361.us-central1.run.app/api/signup';
 
 document.querySelectorAll('.newsletter-form').forEach(function(form) {
   form.addEventListener('submit', function(e) {
@@ -452,9 +452,10 @@ document.querySelectorAll('.newsletter-form').forEach(function(form) {
     
     fetch(GOOGLE_SCRIPT_URL, {
       method: 'POST',
-      mode: 'no-cors',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email, district: district })
+      body: JSON.stringify({
+        site: "texas_special_ed",
+        language: "en", email: email, district: district })
     })
     .then(function() {
       form.innerHTML = '<p style="color: #fff; font-weight: 600; font-size: 1.1rem; padding: 10px; border: 1px solid #fff; border-radius: 4px;">✓ You\'re subscribed!</p>';
