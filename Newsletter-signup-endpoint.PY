@@ -14,7 +14,7 @@ app = Flask(__name__)
 db = firestore.Client(project="ard-intake-bot")
 
 
-@app.route("/api/newsletter-signup", methods=["POST"])
+@app.route("Service URL: https://ard-intake-bot-831148457361.us-central1.run.app", methods=["POST"])
 def newsletter_signup():
     """
     Handle newsletter popup signups

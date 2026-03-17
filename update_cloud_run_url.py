@@ -39,11 +39,11 @@ def update_html_file(filepath):
     shutil.copy2(filepath, backup_path)
     
     # Replace the fetch URL
-    # OLD: fetch('/api/newsletter-signup',
-    # NEW: fetch('https://ard-intake-bot-831148457361.us-central1.run.app/api/newsletter-signup',
+    # OLD: fetch('Service URL: https://ard-intake-bot-831148457361.us-central1.run.app',
+    # NEW: fetch('https://ard-intake-bot-831148457361.us-central1.run.appService URL: https://ard-intake-bot-831148457361.us-central1.run.app',
     
     old_pattern = r"fetch\s*\(\s*['\"]\/api\/newsletter-signup['\"]"
-    new_url = f"fetch('{CLOUD_RUN_URL}/api/newsletter-signup'"
+    new_url = f"fetch('{CLOUD_RUN_URL}Service URL: https://ard-intake-bot-831148457361.us-central1.run.app'"
     
     content_updated = re.sub(old_pattern, new_url, content)
     
