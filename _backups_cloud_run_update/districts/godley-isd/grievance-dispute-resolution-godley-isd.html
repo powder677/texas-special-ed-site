@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+   Godley ISD Special Education
+  </title>
+<link href="/style.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<style id="universal-core-formatting">
+/* ── AUTOMATED CRO PATCH: Standardized Wide Layout ── */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
+
+/* Core Layout - Single Wide Column */
+.layout-grid { max-width: 850px; margin: 30px auto; display: block; width: 100%; box-sizing: border-box; }
+.content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; width: 100%; box-sizing: border-box; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+.content-column p { margin: 0 0 1.25rem; }
+.content-column ul, .content-column ol { padding-left: 20px; margin-bottom: 1.5rem; }
+.content-column li { margin-bottom: 8px; }
+
+/* Mobile Fixes */
+@media (max-width: 950px) {
+    .content-column { padding: 25px 20px !important; margin: 0 !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; }
+    .nav-menu { display: none !important; }
+}
+
+/* Scannable Blocks */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2, .action-steps h3 { border-top: none; margin-top: 0; padding-top: 0; color: #166534; }
+.action-steps li { color: #166534; }
+
+/* Standardized Buttons */
+.banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+.banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.banner-btn-gold { background: #d4af37; color: #0f172a !important; border: none; cursor: pointer; }
+.banner-btn-blue { background: #1a56db; color: #fff !important; border: none; cursor: pointer; }
+</style>
+
+    <!-- Newsletter Popup Styles -->
+    <style>
+        .newsletter-popup-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10, 35, 66, 0.92);
+            z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; 
+            transition: opacity 0.4s ease, visibility 0.4s;
+            backdrop-filter: blur(6px);
+        }
+        .newsletter-popup-overlay.show { opacity: 1; visibility: visible; }
+        
+        .newsletter-popup-content {
+            background: #fff; width: 92%; max-width: 520px;
+            border-radius: 16px; position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+            transform: translateY(30px) scale(0.9); 
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+        .newsletter-popup-overlay.show .newsletter-popup-content { 
+            transform: translateY(0) scale(1); 
+        }
+        
+        .newsletter-popup-close {
+            position: absolute; top: 16px; right: 16px;
+            background: rgba(255,255,255,0.15); 
+            border: none; width: 36px; height: 36px;
+            border-radius: 50%; color: #fff; font-size: 24px; 
+            cursor: pointer; z-index: 10;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.2s;
+            font-weight: 300;
+            line-height: 1;
+        }
+        .newsletter-popup-close:hover { 
+            background: rgba(255,255,255,0.25); 
+            transform: rotate(90deg);
+        }
+        
+        .newsletter-popup-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            padding: 48px 36px 36px; 
+            text-align: center; 
+            position: relative;
+            overflow: hidden;
+        }
+        .newsletter-popup-header::before {
+            content: ''; position: absolute; top: -50%; right: -20%;
+            width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .newsletter-popup-icon {
+            width: 64px; height: 64px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 3px solid rgba(212, 175, 55, 0.4);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 32px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+        
+        .newsletter-popup-tag {
+            color: #d4af37; font-size: 12px; font-weight: 700; 
+            text-transform: uppercase; letter-spacing: 0.12em; 
+            display: inline-block; margin-bottom: 12px;
+            background: rgba(212, 175, 55, 0.15); 
+            padding: 6px 16px; border-radius: 20px;
+        }
+        
+        .newsletter-popup-header h3 { 
+            font-family: 'Lora', serif; 
+            font-size: 28px; 
+            color: #fff; 
+            margin: 0; 
+            line-height: 1.25;
+            position: relative;
+        }
+        
+        .newsletter-popup-body { 
+            padding: 36px; 
+            background: #fff;
+        }
+        
+        .newsletter-popup-benefits {
+            list-style: none;
+            margin: 0 0 28px 0;
+            padding: 0;
+        }
+        .newsletter-popup-benefits li {
+            padding: 12px 0 12px 36px;
+            position: relative;
+            font-size: 15px;
+            color: #475569;
+            line-height: 1.5;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .newsletter-popup-benefits li:last-child {
+            border-bottom: none;
+        }
+        .newsletter-popup-benefits li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .newsletter-popup-input {
+            width: 100%; 
+            padding: 16px 20px; 
+            border: 2px solid #e2e8f0;
+            border-radius: 10px; 
+            font-size: 16px; 
+            font-family: 'DM Sans', -apple-system, sans-serif;
+            margin-bottom: 12px; 
+            transition: all 0.3s ease;
+            color: #0a2342;
+        }
+        .newsletter-popup-input:focus { 
+            outline: none; 
+            border-color: #1a56db;
+            box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
+        }
+        
+        .newsletter-popup-btn {
+            width: 100%; 
+            padding: 16px 24px; 
+            background: #d4af37; 
+            color: #0a2342;
+            border: none; 
+            border-radius: 10px; 
+            font-size: 16px; 
+            font-weight: 700;
+            font-family: 'DM Sans', -apple-system, sans-serif; 
+            cursor: pointer; 
+            transition: all 0.3s ease;
+        }
+        .newsletter-popup-btn:hover { 
+            background: #c29d2e; 
+            transform: translateY(-2px); 
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        .newsletter-popup-privacy { 
+            font-size: 13px !important; 
+            color: #94a3b8 !important; 
+            margin: 0 !important; 
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        .newsletter-popup-success {
+            padding: 36px;
+            text-align: center;
+            display: none;
+        }
+        .newsletter-popup-success.show {
+            display: block;
+        }
+        .newsletter-popup-success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 40px;
+            color: #fff;
+        }
+        .newsletter-popup-success h3 {
+            font-family: 'Lora', serif;
+            font-size: 24px;
+            color: #0a2342;
+            margin-bottom: 12px;
+        }
+        .newsletter-popup-success p {
+            color: #64748b;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        
+        @media (max-width: 640px) {
+            .newsletter-popup-header { padding: 40px 24px 28px; }
+            .newsletter-popup-header h3 { font-size: 24px; }
+            .newsletter-popup-body { padding: 28px 24px; }
+            .newsletter-popup-benefits li { font-size: 14px; }
+        }
+    </style>
+
+</head>
+<body>
+<header class="site-header">
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<div class="nav-logo">
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+Texas <em>Special Ed</em>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item"><a class="nav-link" href="/districts/index.html">Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/districts/es-index.html">Spanish Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Articles</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/iep-letter/index.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+   const toggle = document.querySelector('.mobile-menu-toggle');
+   const menu = document.querySelector('.nav-menu');
+   if (toggle && menu) {
+      toggle.addEventListener('click', function() {
+         menu.classList.toggle('active');
+         const expanded = toggle.getAttribute('aria-expanded') === 'true';
+         toggle.setAttribute('aria-expanded', !expanded);
+      });
+   }
+});
+</script>
+<div class="layout-grid">
+<article class="content-column">
+<div class="container">
+<h1>
+      Complete Guide to Filing Complaints and Resolving Disputes with GODLEY ISD Special Education
+     </h1>
+<div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
+<strong style="color: #334155;">Godley ISD Resources:</strong>
+<a href="/districts/godley-isd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Hub</a> •
+        <a href="/districts/godley-isd/ard-process-guide-godley-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
+        <a href="/districts/godley-isd/evaluation-child-find-godley-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
+        <a href="/districts/godley-isd/what-is-an-fie-godley-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">What Is an FIE?</a> •
+        <a href="/districts/godley-isd/how-to-request-evaluation.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Request an Eval</a> •
+        <a href="/districts/godley-isd/grievance-dispute-resolution-godley-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dispute Resolution</a>
+</div>
+<p>
+      Parents of children with special needs in GODLEY ISD deserve clear answers about their rights and options when conflicts arise. Whether you're concerned about your child's Individualized Education Program (IEP), placement decisions, or services, understanding how to file complaints and resolve disputes with GODLEY ISD is essential for advocating effectively for your child.
+     </p>
+<p>
+      This comprehensive guide walks you through every available option for addressing concerns with GODLEY ISD special education, from informal resolution to formal due process hearings.
+     </p>
+<!-- AI Tool Section -->
+<div style="
+  background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%);
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25);
+  padding: 28px 24px 24px;
+  border: 1px solid #2a4382;
+  text-align: center;
+  margin: 2.5rem 0;
+">
+<span style="
+    display: inline-block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    font-family: 'DM Sans', sans-serif;
+  ">Free AI Tool</span>
+<h3 style="
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-size: 1.35rem;
+    line-height: 1.3;
+  ">Free ARD Rights Scan</h3>
+<p style="
+    font-size: 14px;
+    color: #cbd5e1;
+    margin: 0 0 22px;
+    line-height: 1.55;
+    font-family: 'Source Sans 3', sans-serif;
+  ">
+    Wondering if the school violated your rights? Answer a few questions for an instant analysis based on Texas law.
+  </p>
+<a href="/" style="
+    display: block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    transition: background 0.2s;
+  ">Run My Free ARD Scan →</a>
+<p style="
+    font-size: 11px;
+    color: #64748b;
+    margin: 12px 0 0;
+    font-family: 'Source Sans 3', sans-serif;
+  ">🔒 Free  ·  No account needed</p>
+</div>
+<!-- AI Tool Section -->
+<h2>
+      Understanding Your Rights in GODLEY ISD Special Education
+     </h2>
+<p>
+      As a parent in GODLEY ISD, you have significant legal protections under the Individuals with Disabilities Education Act (IDEA) and the Texas Education Code. These laws guarantee your child the right to a Free Appropriate Public Education (FAPE) in the least restrictive environment.
+     </p>
+<p>
+      Before filing any formal GODLEY ISD special education complaint, it's important to understand that you have multiple dispute resolution options. The Texas Education Agency (TEA) and GODLEY ISD both provide mechanisms for parents to address concerns, and each has different purposes and timelines.
+     </p>
+<h3>
+      Key Rights You Should Know
+     </h3>
+<ul>
+<li>
+<strong>
+        The right to participate
+       </strong>
+       in all IEP meetings and decision-making processes affecting your child's special education
+      </li>
+<li>
+<strong>
+        The right to request evaluations
+       </strong>
+       and reevaluations of your child's needs and eligibility
+      </li>
+<li>
+<strong>
+        The right to access records
+       </strong>
+       and request copies of all documents related to your child's special education
+      </li>
+<li>
+<strong>
+        The right to disagree
+       </strong>
+       with GODLEY ISD recommendations and request independent evaluations
+      </li>
+<li>
+<strong>
+        The right to dispute resolution
+       </strong>
+       through multiple formal and informal channels
+      </li>
+</ul>
+<h2>
+      Step 1: Informal Resolution and Documentation
+     </h2>
+<p>
+      Most disputes with GODLEY ISD special education staff can be resolved through direct communication. Before pursuing formal complaint procedures, try addressing your concerns informally with your child's teacher, special education coordinator, or campus administrator.
+     </p>
+<h3>
+      How to Start the Conversation
+     </h3>
+<p>
+      Request a meeting with the relevant GODLEY ISD staff member and clearly explain your concerns. Be specific about what issue prompted your request and what resolution you're seeking. Document everything in writing—send follow-up emails summarizing what was discussed and agreed upon.
+     </p>
+<p>
+      Keep detailed records including dates of conversations, names of GODLEY ISD staff members you spoke with, and the content of those discussions. This documentation becomes invaluable if you need to escalate your GODLEY ISD special education complaint later.
+     </p>
+<h3>
+      When to Escalate Beyond Informal Resolution
+     </h3>
+<p>
+      If informal conversations with your child's campus don't resolve the issue within 7-10 business days, or if you're uncomfortable approaching staff directly, consider moving to the next level: contacting GODLEY ISD's Special Education Director. A formal written request often gets faster results than casual conversations.
+     </p>
+<h2>
+      Step 2: GODLEY ISD Internal Complaint Process
+     </h2>
+<p>
+      GODLEY ISD has an internal complaint resolution process separate from state and federal procedures. This is often the fastest way to resolve GODLEY ISD special education disputes without involving external agencies.
+     </p>
+<h3>
+      Filing an Internal Complaint with GODLEY ISD
+     </h3>
+<p>
+      Request a formal written complaint procedure from GODLEY ISD's Special Education Department. Your complaint should include the date the problem occurred, specific details about what happened, how it affects your child, and what resolution you're requesting.
+     </p>
+<p>
+      Submit your written complaint to the GODLEY ISD Special Education Director. Keep a copy for yourself and request written confirmation of receipt. GODLEY ISD typically responds to internal complaints within 10-15 business days.
+     </p>
+<h3>
+      What to Include in Your Letter
+     </h3>
+<ol>
+<li>
+       Your child's name, grade level, and campus
+      </li>
+<li>
+       A clear, chronological description of the problem
+      </li>
+<li>
+       Dates and names of staff involved
+      </li>
+<li>
+       How the issue violates your child's rights or IEP
+      </li>
+<li>
+       What you believe should happen to resolve the situation
+      </li>
+<li>
+       Copies of relevant documents (emails, IEP pages, evaluation reports)
+      </li>
+</ol>
+<h2>
+      Step 3: Mediation for GODLEY ISD Special Education Disputes
+     </h2>
+<p>
+<strong>
+       GODLEY ISD mediation
+      </strong>
+      is a free, confidential process where a neutral third party helps you and the district reach a voluntary agreement. Mediation is less formal than hearings and often leads to faster resolutions.
+     </p>
+<h3>
+      How GODLEY ISD Mediation Works
+     </h3>
+<p>
+      Either you or GODLEY ISD can request mediation at any time, even before filing a formal complaint. A trained mediator—not an employee of GODLEY ISD or the state—meets with both parties to facilitate discussion and find common ground.
+     </p>
+<p>
+      The mediator doesn't make decisions or impose solutions. Instead, they help both sides understand each other's concerns and work toward mutually acceptable resolutions. Mediation sessions are typically completed within 20-30 days of the request.
+     </p>
+<h3>
+      Advantages of GODLEY ISD Mediation
+     </h3>
+<ul>
+<li>
+<strong>
+        Free service
+       </strong>
+       provided by the state
+      </li>
+<li>
+<strong>
+        Confidential discussions
+       </strong>
+       that can't be used against you later
+      </li>
+<li>
+<strong>
+        Preserves relationships
+       </strong>
+       with GODLEY ISD staff
+      </li>
+<li>
+<strong>
+        Faster resolution
+       </strong>
+       than due process hearings (typically 30 days versus 6+ months)
+      </li>
+<li>
+<strong>
+        Written agreement
+       </strong>
+       that's binding if both parties sign
+      </li>
+</ul>
+<h3>
+      How to Request GODLEY ISD Mediation
+     </h3>
+<p>
+      Contact the Texas Education Agency's Special Education Mediation Program at 512-463-9414 or visit their website to request mediation. You'll need your child's name, your contact information, and a brief description of the dispute. The state will assign a mediator and contact both you and GODLEY ISD to schedule sessions.
+     </p>
+<h2>
+      Step 4: Filing a GODLEY ISD TEA Complaint
+     </h2>
+<!-- AI Tool Section -->
+<div style="
+  background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%);
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25);
+  padding: 28px 24px 24px;
+  border: 1px solid #2a4382;
+  text-align: center;
+  margin: 2.5rem 0;
+">
+<span style="
+    display: inline-block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    font-family: 'DM Sans', sans-serif;
+  ">Free AI Tool</span>
+<h3 style="
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-size: 1.35rem;
+    line-height: 1.3;
+  ">Free ARD Rights Scan</h3>
+<p style="
+    font-size: 14px;
+    color: #cbd5e1;
+    margin: 0 0 22px;
+    line-height: 1.55;
+    font-family: 'Source Sans 3', sans-serif;
+  ">
+    Wondering if the school violated your rights? Answer a few questions for an instant analysis based on Texas law.
+  </p>
+<a href="/" style="
+    display: block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    transition: background 0.2s;
+  ">Run My Free ARD Scan →</a>
+<p style="
+    font-size: 11px;
+    color: #64748b;
+    margin: 12px 0 0;
+    font-family: 'Source Sans 3', sans-serif;
+  ">🔒 Free  ·  No account needed</p>
+</div>
+<p>
+      The Texas Education Agency investigates formal complaints about special education violations. A
+      <strong>
+       GODLEY ISD TEA complaint
+      </strong>
+      is appropriate when you believe GODLEY ISD has violated state or federal special education law.
+     </p>
+<h3>
+      When to File a TEA Complaint
+     </h3>
+<p>
+      You should file a GODLEY ISD special education complaint with TEA if you believe the district has denied your child a Free Appropriate Public Education, violated your procedural rights, or failed to follow special education laws. TEA complaints must be filed within one year of the violation.
+     </p>
+<p>
+      Unlike due process hearings, which focus on what's appropriate for your child going forward, TEA complaints focus on whether GODLEY ISD followed the law. You don't need a lawyer to file, and the investigation is free.
+     </p>
+<h3>
+      How to File Your GODLEY ISD Special Education Complaint with TEA
+     </h3>
+<p>
+      Request the complaint form from TEA's Special Education Complaints and Dispute Resolution Unit or access it on their website. Your complaint must include:
+     </p>
+<ul>
+<li>
+       Your child's name and date of birth
+      </li>
+<li>
+       GODLEY ISD's name and address
+      </li>
+<li>
+       A clear description of the problem and dates it occurred
+      </li>
+<li>
+       Specific laws or regulations you believe were violated
+      </li>
+<li>
+       What resolution you're seeking
+      </li>
+<li>
+       Your signature and contact information
+      </li>
+</ul>
+<p>
+      Submit your complaint to: Special Education Complaints and Dispute Resolution Unit, Texas Education Agency, 1701 North Congress Avenue, Austin, TX 78701, or email it to the address listed on the TEA website.
+     </p>
+<h3>
+      What Happens After Filing a GODLEY ISD TEA Complaint
+     </h3>
+<p>
+      TEA typically completes investigations within 60 days. They'll contact both you and GODLEY ISD, review documents and evidence, and may conduct interviews. TEA will issue a written decision describing whether GODLEY ISD violated special education law and what corrective actions are required.
+     </p>
+<p>
+      TEA decisions are binding, though either party can appeal to the State Board of Education. TEA complaints don't award compensatory services or reimbursement like due process hearings do—they focus on systemic violations and future compliance.
+     </p>
+<h2>
+      Step 5: Due Process Hearing for GODLEY ISD Special Education
+     </h2>
+<p>
+      A
+      <strong>
+       GODLEY ISD due process hearing
+      </strong>
+      is a formal legal proceeding where a hearing officer makes binding decisions about your child's education. This option is appropriate when you and GODLEY ISD disagree about your child's evaluation, IEP, placement, or services.
+     </p>
+<h3>
+      Understanding Due Process in GODLEY ISD
+     </h3>
+<p>
+      Due process hearings are more formal and costly than other dispute resolution methods, but they're the only option that can result in compensatory education services, reimbursement for private services, or prospective IEP changes. A hearing officer—an independent third party—listens to evidence from both sides and makes a binding decision.
+     </p>
+<p>
+      Many parents in GODLEY ISD hire special education attorneys or advocates to represent them in due process hearings, though you can represent yourself if you choose.
+     </p>
+<h3>
+      Steps to Request Due Process with GODLEY ISD
+     </h3>
+<p>
+<strong>
+       Step 1: Issue a Due Process Complaint Notice
+      </strong>
+</p>
+<p>
+      Send a written notice to GODLEY ISD stating that you're requesting due process. The notice must include your child's name, the specific problems and facts you dispute, and the resolution you're seeking. Email this to GODLEY ISD's Special Education Director and keep documentation of receipt.
+     </p>
+<p>
+<strong>
+       Step 2: Participate in Mandatory Resolution Meeting
+      </strong>
+</p>
+<p>
+      GODLEY ISD must schedule a resolution meeting within 15 days of receiving your due process complaint. This informal meeting with district representatives is your last chance to settle the dispute without a hearing. If you and GODLEY ISD reach agreement, you can sign a settlement agreement and avoid the hearing process.
+     </p>
+<p>
+<strong>
+       Step 3: Proceed to Hearing if Needed
+      </strong>
+</p>
+<p>
+      If the resolution meeting doesn't produce agreement, the case moves forward to a due process hearing. Both you and GODLEY ISD will have opportunities to present evidence, examine witnesses, and argue your position. A hearing officer will issue a written decision within 45 days of the hearing.
+     </p>
+<h3>
+      What a Due Process Hearing Costs
+     </h3>
+<p>
+      You don't pay filing fees to request due process with GODLEY ISD. However, if you hire a special education attorney near GODLEY or an advocate, you'll have legal representation costs. Many parents find that having professional representation significantly improves outcomes in complex cases.
+     </p>
+<h2>
+      Finding Legal Help for GODLEY ISD Special Education Disputes
+     </h2>
+<p>
+      While you can navigate GODLEY ISD special education disputes on your own, professional guidance can be valuable, especially for formal complaints or due process hearings.
+     </p>
+<h3>
+      Special Education Attorney Near GODLEY
+     </h3>
+<p>
+      A
+      <strong>
+       special education attorney near GODLEY
+      </strong>
+      can advise you on your rights, help prepare documentation, and represent you in hearings or complaints. Texas Education Code Section 30.011 allows parents to recover attorney's fees in due process cases if you're the prevailing party.
+     </p>
+<p>
+      Search for attorneys in the GODLEY area who specialize in special education law. Many offer free initial consultations. Ask about their experience with GODLEY ISD specifically and their track record in dispute resolution.
+     </p>
+<h3>
+      Special Ed Advocate in GODLEY
+     </h3>
+<p>
+      A
+      <strong>
+       special ed advocate GODLEY
+      </strong>
+      provides support, guidance, and representation without having a law license. Advocates are often less expensive than attorneys and can attend IEP meetings, help file complaints, and support you through disputes with GODLEY ISD.
+     </p>
+<p>
+      Organizations like the Texas Project FIRST and Special Education Rights and Protections (SERP) offer free or low-cost advocacy services for families in GODLEY ISD and surrounding areas.
+     </p>
+<h3>
+      Free Resources for GODLEY ISD Families
+     </h3>
+<ul>
+<li>
+<strong>
+        Project FIRST
+       </strong>
+       : Provides free advocacy and training for Texas parents
+      </li>
+<li>
+<strong>
+        Arc of Texas
+       </strong>
+       : Offers support and advocacy for families of children with intellectual disabilities
+      </li>
+<li>
+<strong>
+        Texas Parent Training and Information Center (PTI)
+       </strong>
+       : Free training and resources for parents
+      </li>
+<li>
+<strong>
+        GODLEY ISD Special Education Department
+       </strong>
+       : Can provide information about local resources and support groups
+      </li>
+</ul>
+<h2>
+      Timelines and Important Deadlines for GODLEY ISD
+     </h2>
+<p>
+      Understanding deadlines is critical when dealing with GODLEY ISD special education disputes. Missing a deadline can affect your rights.
+     </p>
+<h3>
+      Key Timelines
+     </h3>
+<table>
+<tr>
+<td>
+<strong>
+         Action
+        </strong>
+</td>
+<td>
+<strong>
+         Deadline
+        </strong>
+</td>
+</tr>
+<tr>
+<td>
+        File TEA complaint about GODLEY ISD violation
+       </td>
+<td>
+        Within one year of violation
+       </td>
+</tr>
+<tr>
+<td>
+        GODLEY ISD responds to internal complaint
+       </td>
+<td>
+        10-15 business days
+       </td>
+</tr>
+<tr>
+<td>
+        Request mediation for GODLEY ISD dispute
+       </td>
+<td>
+        Anytime (no deadline)
+       </td>
+</tr>
+<tr>
+<td>
+        Complete mediation session
+       </td>
+<td>
+        Within 30 days of request
+       </td>
+</tr>
+<tr>
+<td>
+        GODLEY ISD holds resolution meeting
+       </td>
+<td>
+        Within 15 days of due process complaint
+       </td>
+</tr>
+<tr>
+<td>
+        Due process hearing decision issued
+       </td>
+<td>
+        Within 45 days of hearing
+       </td>
+</tr>
+<tr>
+<td>
+        Appeal hearing officer decision to State Board of Education
+       </td>
+<td>
+        Within 90 days of decision
+       </td>
+</tr>
+</table>
+<h2>
+      Moving Forward: Your Next Steps
+     </h2>
+<p>
+      If you're facing a dispute with GODLEY ISD special education, remember that you have options and advocates who can help. Start with informal resolution, move to mediation if needed, and escalate to formal complaints or due process only when other methods haven't worked.
+     </p>
+<p>
+      Document everything, know your rights, and don't hesitate to seek professional support. Parents in GODLEY ISD deserve to work with a district that provides their children with appropriate, meaningful special education services.
+     </p>
+<p>
+      Contact GODLEY ISD's Special Education Department today to start resolving your concerns, or reach out to local advocacy organizations if you need guidance navigating the process.
+     </p>
+</div>
+
+</div>
+</article>
+</div>
+
+<div id="ai-modal-overlay">
+<div class="modal-content">
+<div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
+<h3 style="margin:0; font-family:'Lora',serif;">
+      ARD Rights Analysis
+     </h3>
+<button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
+      ×
+     </button>
+</div>
+<div id="modal-body" style="padding:30px;">
+<div id="scan-form">
+<p style="color:#475569; margin-bottom:20px;">
+       Describe the situation (e.g., suspension days, manifestation hearing outcome).
+      </p>
+<textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
+<button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
+       Start Rights Scan
+      </button>
+</div>
+<div id="scan-results" style="display:none;">
+<div id="analysis-content" style="color:#1e293b; line-height:1.6;">
+</div>
+<button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
+       Close
+      </button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="blog-links-section" style="max-width: 850px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+<h3 style="font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; margin-top: 0; margin-bottom: 15px;">Helpful Special Education Articles</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 15px;">
+<a href="/blog/what-is-fie" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ What is an FIE?</a>
+<a href="/blog/manifestation-determination" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ Manifestation Determination</a>
+<a href="/blog/fie-evaluation-timeline" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ FIE Evaluation Timeline</a>
+<a href="/blog/what-is-an-ard-meeting" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ What is an ARD Meeting?</a>
+</div>
+</div>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-about">
+<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+<p>
+      © 2026 Texas Special Education Resources. Not affiliated with the TEA.
+     </p>
+</div>
+</div>
+</footer>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var toggle = document.querySelector('.mobile-menu-toggle');
+    var menu   = document.querySelector('.nav-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function() { menu.classList.toggle('active'); });
+    }
+});
+  </script>
+
+    <!-- Newsletter Popup -->
+    <div id="newsletterPopup" class="newsletter-popup-overlay">
+        <div class="newsletter-popup-content">
+            <button class="newsletter-popup-close" onclick="closeNewsletterPopup()" aria-label="Close">×</button>
+            
+            <div id="popupForm">
+                <div class="newsletter-popup-header">
+                    <div class="newsletter-popup-icon">📧</div>
+                    <span class="newsletter-popup-tag">Free Weekly Newsletter</span>
+                    <h3>Get Texas Special Ed Guidance Every Week</h3>
+                </div>
+                
+                <div class="newsletter-popup-body">
+                    <ul class="newsletter-popup-benefits">
+                        <li>Real case studies from Texas parents who won their ARD meetings</li>
+                        <li>District-specific timelines and escalation strategies</li>
+                        <li>Policy updates from TEA that affect your rights</li>
+                        <li>Letter templates and meeting prep checklists</li>
+                    </ul>
+                    
+                    <form id="newsletterForm" class="newsletter-popup-form" onsubmit="handleNewsletterSubmit(event)">
+                        <input 
+                            type="email" 
+                            id="popupEmail"
+                            class="newsletter-popup-input"
+                            placeholder="Enter your email address" 
+                            required
+                        >
+                        <button type="submit" class="newsletter-popup-btn" id="submitBtn">
+                            Join 8,200+ Texas Parents →
+                        </button>
+                    </form>
+                    
+                    <p class="newsletter-popup-privacy">
+                        Free forever. Weekly emails. Unsubscribe anytime.<br>
+                        We respect your privacy and never share your email.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="popupSuccess" class="newsletter-popup-success">
+                <div class="newsletter-popup-success-icon">✓</div>
+                <h3>You're on the list!</h3>
+                <p>Check your inbox for a confirmation email. Your first newsletter arrives this Thursday with strategies from parents who successfully navigated the Texas special education system.</p>
+                <button class="newsletter-popup-btn" onclick="closeNewsletterPopup()">
+                    Continue Reading
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const POPUP_CONFIG = {
+            delaySeconds: 10,
+            sessionStorageKey: 'txSpecEdPopupShown',
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (sessionStorage.getItem(POPUP_CONFIG.sessionStorageKey)) {
+                return;
+            }
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('nopopup') === 'true') {
+                return;
+            }
+            
+            setTimeout(function() {
+                const popup = document.getElementById('newsletterPopup');
+                if (popup) {
+                    popup.classList.add('show');
+                    sessionStorage.setItem(POPUP_CONFIG.sessionStorageKey, 'true');
+                }
+            }, POPUP_CONFIG.delaySeconds * 1000);
+        });
+
+        function closeNewsletterPopup() {
+            const popup = document.getElementById('newsletterPopup');
+            if (popup) {
+                popup.classList.remove('show');
+            }
+        }
+
+        if (document.getElementById('newsletterPopup')) {
+            document.getElementById('newsletterPopup').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeNewsletterPopup();
+                }
+            });
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeNewsletterPopup();
+            }
+        });
+
+        async function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            
+            const emailInput = document.getElementById('popupEmail');
+            const submitBtn = document.getElementById('submitBtn');
+            const email = emailInput.value.trim().toLowerCase();
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Subscribing...';
+            
+            try {
+                await saveNewsletterSignup(email);
+                
+                document.getElementById('popupForm').style.display = 'none';
+                document.getElementById('popupSuccess').classList.add('show');
+                
+            } catch (error) {
+                console.error('Newsletter signup error:', error);
+                alert('Something went wrong. Please try again or email us directly.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Join 8,200+ Texas Parents →';
+            }
+        }
+
+        async function saveNewsletterSignup(email) {
+            const pageUrl = window.location.pathname;
+            const pageTitle = document.title;
+            
+            const districtMatch = pageUrl.match(/\/districts\/([^\/]+)/);
+            const district = districtMatch ? districtMatch[1] : null;
+            
+            const signupData = {
+                email: email,
+                source: 'newsletter_popup',
+                page_url: pageUrl,
+                page_title: pageTitle,
+                district: district,
+                timestamp: new Date().toISOString(),
+                subscribed: true,
+                tags: ['newsletter_popup', district].filter(Boolean)
+            };
+            
+            const response = await fetch('/api/newsletter-signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(signupData)
+            });
+            
+            if (!response.ok) {
+                throw new Error('API error');
+            }
+            
+            return await response.json();
+        }
+    </script>
+
+</body>
+</html>

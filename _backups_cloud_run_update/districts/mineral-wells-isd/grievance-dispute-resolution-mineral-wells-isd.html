@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+   Mineral Wells ISD Special Education
+  </title>
+<link href="/style.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<style id="universal-core-formatting">
+/* ── AUTOMATED CRO PATCH: Standardized Wide Layout ── */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
+
+/* Core Layout - Single Wide Column */
+.layout-grid { max-width: 850px; margin: 30px auto; display: block; width: 100%; box-sizing: border-box; }
+.content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; width: 100%; box-sizing: border-box; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+.content-column p { margin: 0 0 1.25rem; }
+.content-column ul, .content-column ol { padding-left: 20px; margin-bottom: 1.5rem; }
+.content-column li { margin-bottom: 8px; }
+
+/* Mobile Fixes */
+@media (max-width: 950px) {
+    .content-column { padding: 25px 20px !important; margin: 0 !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; }
+    .nav-menu { display: none !important; }
+}
+
+/* Scannable Blocks */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2, .action-steps h3 { border-top: none; margin-top: 0; padding-top: 0; color: #166534; }
+.action-steps li { color: #166534; }
+
+/* Standardized Buttons */
+.banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+.banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.banner-btn-gold { background: #d4af37; color: #0f172a !important; border: none; cursor: pointer; }
+.banner-btn-blue { background: #1a56db; color: #fff !important; border: none; cursor: pointer; }
+</style>
+
+    <!-- Newsletter Popup Styles -->
+    <style>
+        .newsletter-popup-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10, 35, 66, 0.92);
+            z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; 
+            transition: opacity 0.4s ease, visibility 0.4s;
+            backdrop-filter: blur(6px);
+        }
+        .newsletter-popup-overlay.show { opacity: 1; visibility: visible; }
+        
+        .newsletter-popup-content {
+            background: #fff; width: 92%; max-width: 520px;
+            border-radius: 16px; position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+            transform: translateY(30px) scale(0.9); 
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+        .newsletter-popup-overlay.show .newsletter-popup-content { 
+            transform: translateY(0) scale(1); 
+        }
+        
+        .newsletter-popup-close {
+            position: absolute; top: 16px; right: 16px;
+            background: rgba(255,255,255,0.15); 
+            border: none; width: 36px; height: 36px;
+            border-radius: 50%; color: #fff; font-size: 24px; 
+            cursor: pointer; z-index: 10;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.2s;
+            font-weight: 300;
+            line-height: 1;
+        }
+        .newsletter-popup-close:hover { 
+            background: rgba(255,255,255,0.25); 
+            transform: rotate(90deg);
+        }
+        
+        .newsletter-popup-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            padding: 48px 36px 36px; 
+            text-align: center; 
+            position: relative;
+            overflow: hidden;
+        }
+        .newsletter-popup-header::before {
+            content: ''; position: absolute; top: -50%; right: -20%;
+            width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .newsletter-popup-icon {
+            width: 64px; height: 64px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 3px solid rgba(212, 175, 55, 0.4);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 32px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+        
+        .newsletter-popup-tag {
+            color: #d4af37; font-size: 12px; font-weight: 700; 
+            text-transform: uppercase; letter-spacing: 0.12em; 
+            display: inline-block; margin-bottom: 12px;
+            background: rgba(212, 175, 55, 0.15); 
+            padding: 6px 16px; border-radius: 20px;
+        }
+        
+        .newsletter-popup-header h3 { 
+            font-family: 'Lora', serif; 
+            font-size: 28px; 
+            color: #fff; 
+            margin: 0; 
+            line-height: 1.25;
+            position: relative;
+        }
+        
+        .newsletter-popup-body { 
+            padding: 36px; 
+            background: #fff;
+        }
+        
+        .newsletter-popup-benefits {
+            list-style: none;
+            margin: 0 0 28px 0;
+            padding: 0;
+        }
+        .newsletter-popup-benefits li {
+            padding: 12px 0 12px 36px;
+            position: relative;
+            font-size: 15px;
+            color: #475569;
+            line-height: 1.5;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .newsletter-popup-benefits li:last-child {
+            border-bottom: none;
+        }
+        .newsletter-popup-benefits li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .newsletter-popup-input {
+            width: 100%; 
+            padding: 16px 20px; 
+            border: 2px solid #e2e8f0;
+            border-radius: 10px; 
+            font-size: 16px; 
+            font-family: 'DM Sans', -apple-system, sans-serif;
+            margin-bottom: 12px; 
+            transition: all 0.3s ease;
+            color: #0a2342;
+        }
+        .newsletter-popup-input:focus { 
+            outline: none; 
+            border-color: #1a56db;
+            box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
+        }
+        
+        .newsletter-popup-btn {
+            width: 100%; 
+            padding: 16px 24px; 
+            background: #d4af37; 
+            color: #0a2342;
+            border: none; 
+            border-radius: 10px; 
+            font-size: 16px; 
+            font-weight: 700;
+            font-family: 'DM Sans', -apple-system, sans-serif; 
+            cursor: pointer; 
+            transition: all 0.3s ease;
+        }
+        .newsletter-popup-btn:hover { 
+            background: #c29d2e; 
+            transform: translateY(-2px); 
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        .newsletter-popup-privacy { 
+            font-size: 13px !important; 
+            color: #94a3b8 !important; 
+            margin: 0 !important; 
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        .newsletter-popup-success {
+            padding: 36px;
+            text-align: center;
+            display: none;
+        }
+        .newsletter-popup-success.show {
+            display: block;
+        }
+        .newsletter-popup-success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 40px;
+            color: #fff;
+        }
+        .newsletter-popup-success h3 {
+            font-family: 'Lora', serif;
+            font-size: 24px;
+            color: #0a2342;
+            margin-bottom: 12px;
+        }
+        .newsletter-popup-success p {
+            color: #64748b;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        
+        @media (max-width: 640px) {
+            .newsletter-popup-header { padding: 40px 24px 28px; }
+            .newsletter-popup-header h3 { font-size: 24px; }
+            .newsletter-popup-body { padding: 28px 24px; }
+            .newsletter-popup-benefits li { font-size: 14px; }
+        }
+    </style>
+
+</head>
+<body>
+<header class="site-header">
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<div class="nav-logo">
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+Texas <em>Special Ed</em>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item"><a class="nav-link" href="/districts/index.html">Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/districts/es-index.html">Spanish Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Articles</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/iep-letter/index.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+   const toggle = document.querySelector('.mobile-menu-toggle');
+   const menu = document.querySelector('.nav-menu');
+   if (toggle && menu) {
+      toggle.addEventListener('click', function() {
+         menu.classList.toggle('active');
+         const expanded = toggle.getAttribute('aria-expanded') === 'true';
+         toggle.setAttribute('aria-expanded', !expanded);
+      });
+   }
+});
+</script>
+<div class="layout-grid">
+<article class="content-column">
+<div class="container">
+<h1>
+      Complete Guide to Filing Complaints and Resolving Disputes with MINERAL WELLS ISD Special Education
+     </h1>
+<div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
+<strong style="color: #334155;">Mineral Wells ISD Resources:</strong>
+<a href="/districts/mineral-wells-isd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Hub</a> •
+        <a href="/districts/mineral-wells-isd/ard-process-guide-mineral-wells-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
+        <a href="/districts/mineral-wells-isd/evaluation-child-find-mineral-wells-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
+        <a href="/districts/mineral-wells-isd/what-is-an-fie-mineral-wells-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">What Is an FIE?</a> •
+        <a href="/districts/mineral-wells-isd/how-to-request-evaluation.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Request an Eval</a> •
+        <a href="/districts/mineral-wells-isd/grievance-dispute-resolution-mineral-wells-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dispute Resolution</a>
+</div>
+<p>
+      When your child receives special education services in
+      <strong>
+       MINERAL WELLS ISD
+      </strong>
+      , you have the right to advocate for their needs and challenge decisions you believe are unfair or harmful. This comprehensive guide helps parents in MINERAL WELLS ISD understand complaint procedures, dispute resolution options, and their legal rights under federal and Texas law.
+     </p>
+<!-- AI Tool Section -->
+<h2>
+      Understanding Your Rights as a MINERAL WELLS ISD Parent
+     </h2>
+<p>
+      Parents of students in
+      <strong>
+       MINERAL WELLS ISD special education
+      </strong>
+      programs have significant protections under the Individuals with Disabilities Education Act (IDEA) and Section 504 of the Rehabilitation Act. These federal laws guarantee your right to participate in all decisions affecting your child's education and to challenge the district when you believe services are inadequate or inappropriate.
+     </p>
+<!-- AI Tool Section -->
+<div style="
+  background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%);
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25);
+  padding: 28px 24px 24px;
+  border: 1px solid #2a4382;
+  text-align: center;
+  margin: 2.5rem 0;
+">
+<span style="
+    display: inline-block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    font-family: 'DM Sans', sans-serif;
+  ">Free AI Tool</span>
+<h3 style="
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-size: 1.35rem;
+    line-height: 1.3;
+  ">Free ARD Rights Scan</h3>
+<p style="
+    font-size: 14px;
+    color: #cbd5e1;
+    margin: 0 0 22px;
+    line-height: 1.55;
+    font-family: 'Source Sans 3', sans-serif;
+  ">
+    Wondering if the school violated your rights? Answer a few questions for an instant analysis based on Texas law.
+  </p>
+<a href="/" style="
+    display: block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    transition: background 0.2s;
+  ">Run My Free ARD Scan →</a>
+<p style="
+    font-size: 11px;
+    color: #64748b;
+    margin: 12px 0 0;
+    font-family: 'Source Sans 3', sans-serif;
+  ">🔒 Free  ·  No account needed</p>
+</div>
+<p>
+      MINERAL WELLS ISD families should know that you can file complaints at multiple levels, from informal discussions with your child's teacher to formal legal proceedings. Understanding these options helps you choose the most effective path for your specific situation. Many disagreements can be resolved quickly through informal communication, while others may require formal intervention.
+     </p>
+<p>
+      The Texas Education Code and IDEA regulations give you the right to request records, attend meetings, receive notices in your native language, and have representation at any hearing or mediation process. These protections exist specifically to ensure that students with disabilities receive appropriate services in MINERAL WELLS ISD.
+     </p>
+<h2>
+      Step 1: Informal Resolution and Documentation
+     </h2>
+<h3>
+      Start with Direct Communication
+     </h3>
+<p>
+      Before filing any formal complaint, attempt to resolve the issue directly with your child's special education teacher or service provider in MINERAL WELLS ISD. Request a meeting to discuss your concerns in a calm, collaborative manner. Most issues can be resolved through open dialogue when both parties approach the conversation with good faith.
+     </p>
+<p>
+      Document everything during this process. Keep records of:
+     </p>
+<ul>
+<li>
+       Dates and times of conversations
+      </li>
+<li>
+       Names of staff members you spoke with
+      </li>
+<li>
+       What was discussed and agreed upon
+      </li>
+<li>
+       Any promises made by MINERAL WELLS ISD staff
+      </li>
+<li>
+       Follow-up communications via email
+      </li>
+</ul>
+<h3>
+      Request a Meeting with the Campus Administrator
+     </h3>
+<p>
+      If your initial conversation doesn't resolve the issue, request a meeting with the special education coordinator or campus administrator at your child's MINERAL WELLS ISD school. Provide a written summary of your concerns and what resolution you're seeking. Request that the meeting be scheduled within five business days.
+     </p>
+<p>
+      Bring your documentation to this meeting and consider having another adult present as a witness. Send a follow-up email summarizing what was discussed and any next steps the administrator agreed to take. This creates an official record that may be important later.
+     </p>
+<h2>
+      Step 2: Filing a MINERAL WELLS ISD Special Education Complaint
+     </h2>
+<h3>
+      Understanding Formal Complaint Options
+     </h3>
+<p>
+      If informal resolution fails, you have two primary complaint pathways through MINERAL WELLS ISD:
+     </p>
+<ol>
+<li>
+<strong>
+        MINERAL WELLS ISD internal complaint process
+       </strong>
+       (typically faster, handled by district)
+      </li>
+<li>
+<strong>
+        Texas Education Agency (TEA) complaint process
+       </strong>
+       (independent investigation, more formal)
+      </li>
+</ol>
+<p>
+      Both processes have specific timelines and requirements. Understanding the differences helps you choose the right approach for your situation.
+     </p>
+<h3>
+      MINERAL WELLS ISD Internal Complaint Process
+     </h3>
+<p>
+      MINERAL WELLS ISD maintains a formal complaint resolution procedure. Submit your complaint in writing to the district's Special Education Director, clearly stating:
+     </p>
+<ul>
+<li>
+       The specific issue or concern
+      </li>
+<li>
+       When the problem occurred
+      </li>
+<li>
+       What resolution you're requesting
+      </li>
+<li>
+       Any documentation supporting your claim
+      </li>
+<li>
+       Dates of previous attempts to resolve the issue
+      </li>
+</ul>
+<p>
+      The district typically has
+      <strong>
+       15-20 business days
+      </strong>
+      to respond to complaints filed under IDEA. MINERAL WELLS ISD must investigate your complaint and explain their findings, even if they ultimately disagree with your position. Request a meeting to discuss their response and explore potential solutions.
+     </p>
+<h3>
+      Filing a MINERAL WELLS ISD TEA Complaint
+     </h3>
+<p>
+      The
+      <strong>
+       MINERAL WELLS ISD TEA complaint process
+      </strong>
+      allows independent investigation by the Texas Education Agency. This option is especially useful when you believe MINERAL WELLS ISD violated your child's special education rights under federal law.
+     </p>
+<p>
+      To file a TEA complaint, submit your written complaint to:
+     </p>
+<p>
+<strong>
+       Texas Education Agency
+       <br/>
+       Special Education Compliance and Monitoring
+       <br/>
+       1701 N. Congress Avenue
+       <br/>
+       Austin, TX 78701
+       <br/>
+       (512) 463-9414
+      </strong>
+</p>
+<p>
+      Your complaint must be filed within
+      <strong>
+       one year of the alleged violation
+      </strong>
+      . Include specific details, dates, and supporting documentation. The TEA will investigate independently and issue findings. This formal process carries more weight than internal MINERAL WELLS ISD complaints and may prompt faster resolution.
+     </p>
+<h2>
+      Step 3: MINERAL WELLS ISD Due Process and Mediation
+     </h2>
+<!-- AI Tool Section -->
+<div style="
+  background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%);
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25);
+  padding: 28px 24px 24px;
+  border: 1px solid #2a4382;
+  text-align: center;
+  margin: 2.5rem 0;
+">
+<span style="
+    display: inline-block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    font-family: 'DM Sans', sans-serif;
+  ">Free AI Tool</span>
+<h3 style="
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-size: 1.35rem;
+    line-height: 1.3;
+  ">Free ARD Rights Scan</h3>
+<p style="
+    font-size: 14px;
+    color: #cbd5e1;
+    margin: 0 0 22px;
+    line-height: 1.55;
+    font-family: 'Source Sans 3', sans-serif;
+  ">
+    Wondering if the school violated your rights? Answer a few questions for an instant analysis based on Texas law.
+  </p>
+<a href="/" style="
+    display: block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    transition: background 0.2s;
+  ">Run My Free ARD Scan →</a>
+<p style="
+    font-size: 11px;
+    color: #64748b;
+    margin: 12px 0 0;
+    font-family: 'Source Sans 3', sans-serif;
+  ">🔒 Free  ·  No account needed</p>
+</div>
+<h3>
+      What is Due Process in MINERAL WELLS ISD?
+     </h3>
+<p>
+<strong>
+       MINERAL WELLS ISD due process
+      </strong>
+      refers to your right to a formal hearing before an impartial hearing officer to resolve disputes about your child's special education. This is the most formal option available and is governed by federal IDEA regulations. A due process hearing allows both you and MINERAL WELLS ISD to present evidence, call witnesses, and have legal representation.
+     </p>
+<p>
+      Due process is appropriate when you strongly disagree with MINERAL WELLS ISD's decisions about your child's:
+     </p>
+<ul>
+<li>
+       Initial evaluation or re-evaluation
+      </li>
+<li>
+       Eligibility determination
+      </li>
+<li>
+       Individualized Education Program (IEP) and services
+      </li>
+<li>
+       Educational placement
+      </li>
+<li>
+       Disciplinary decisions
+      </li>
+</ul>
+<h3>
+      MINERAL WELLS ISD Mediation Process
+     </h3>
+<p>
+<strong>
+       MINERAL WELLS ISD mediation
+      </strong>
+      offers a less adversarial alternative to due process hearings. A trained neutral mediator helps you and MINERAL WELLS ISD representatives find common ground. Many families prefer mediation because it's faster, less expensive, and often preserves relationships with school staff.
+     </p>
+<p>
+      MINERAL WELLS ISD must offer mediation before due process hearings. You can request mediation at any time, even before filing a formal complaint. The mediation process typically takes two to four weeks and is confidential—statements made during mediation cannot be used in later legal proceedings.
+     </p>
+<p>
+      To request
+      <strong>
+       MINERAL WELLS ISD mediation
+      </strong>
+      , contact the district's Special Education Director. Request mediation in writing and specify the issues you want to address. Both parties must participate in good faith, though you can still pursue other options if mediation doesn't resolve your concerns.
+     </p>
+<h2>
+      Step 4: Due Process Hearing Before an Impartial Hearing Officer
+     </h2>
+<h3>
+      Filing for a MINERAL WELLS ISD Due Process Hearing
+     </h3>
+<p>
+      If mediation fails or you choose to skip that step, you can file a
+      <strong>
+       MINERAL WELLS ISD due process
+      </strong>
+      complaint with the Texas Education Agency. This initiates a formal hearing with an impartial hearing officer—someone with no connection to MINERAL WELLS ISD or your family.
+     </p>
+<p>
+      Your due process complaint must include:
+     </p>
+<ul>
+<li>
+       Your child's name and address
+      </li>
+<li>
+       MINERAL WELLS ISD name and address
+      </li>
+<li>
+       Description of the problem and proposed solutions
+      </li>
+<li>
+       Factual basis for the complaint
+      </li>
+<li>
+       All relevant dates and incidents
+      </li>
+</ul>
+<p>
+      You have
+      <strong>
+       two years from the date of the alleged violation
+      </strong>
+      to file a due process complaint in MINERAL WELLS ISD. Missing this deadline means you lose your right to a hearing.
+     </p>
+<h3>
+      The Due Process Hearing Timeline
+     </h3>
+<p>
+      Once you file a due process complaint against MINERAL WELLS ISD, specific timelines apply:
+     </p>
+<ul>
+<li>
+<strong>
+        Within 15 days:
+       </strong>
+       MINERAL WELLS ISD must respond to your complaint
+      </li>
+<li>
+<strong>
+        Within 30 days:
+       </strong>
+       The hearing officer must conduct a resolution meeting between you and MINERAL WELLS ISD
+      </li>
+<li>
+<strong>
+        Within 45 days:
+       </strong>
+       The hearing officer must issue a decision (unless extended by the parties)
+      </li>
+</ul>
+<p>
+      The hearing process is formal but structured to protect parents' rights. You can present evidence, call witnesses, cross-examine MINERAL WELLS ISD witnesses, and have an attorney represent you throughout the hearing.
+     </p>
+<h2>
+      Working with Advocates and Special Education Attorneys
+     </h2>
+<h3>
+      Special Education Advocate Near MINERAL WELLS
+     </h3>
+<p>
+      A
+      <strong>
+       special ed advocate MINERAL WELLS
+      </strong>
+      families can hire provides professional support throughout the complaint and dispute resolution process. Advocates are not attorneys but have specialized knowledge of special education law and MINERAL WELLS ISD procedures. They help parents understand their rights, gather documentation, and prepare for meetings or hearings.
+     </p>
+<p>
+      Consider hiring an advocate if you:
+     </p>
+<ul>
+<li>
+       Feel overwhelmed by the process
+      </li>
+<li>
+       Lack confidence presenting your concerns formally
+      </li>
+<li>
+       Have ongoing disputes with MINERAL WELLS ISD
+      </li>
+<li>
+       Are preparing for a due process hearing
+      </li>
+<li>
+       Need help understanding special education terminology
+      </li>
+</ul>
+<p>
+      Many advocates serve MINERAL WELLS ISD families and surrounding areas. Ask your school district or local parent organizations for referrals to experienced advocates with strong track records.
+     </p>
+<h3>
+      Special Education Attorney Near MINERAL WELLS
+     </h3>
+<p>
+      A
+      <strong>
+       special education attorney near MINERAL WELLS
+      </strong>
+      can represent you in due process hearings and appeals. Attorneys provide legal expertise and powerful advocacy but typically cost more than advocates. Many attorneys offer free initial consultations to discuss your situation.
+     </p>
+<p>
+      You should contact a special education attorney if:
+     </p>
+<ul>
+<li>
+       MINERAL WELLS ISD has denied services you believe your child needs
+      </li>
+<li>
+       Your child's health, safety, or education is at serious risk
+      </li>
+<li>
+       You're preparing for a due process hearing
+      </li>
+<li>
+       You need to appeal a hearing officer's decision
+      </li>
+<li>
+       Your case involves complex legal issues
+      </li>
+</ul>
+<p>
+      MINERAL WELLS ISD parents can find attorneys through the State Bar of Texas, disability rights organizations, or parent advocacy groups. Many special education attorneys focus on cases throughout the MINERAL WELLS area and surrounding communities.
+     </p>
+<h2>
+      Timeline and Important Deadlines in MINERAL WELLS ISD Disputes
+     </h2>
+<p>
+      Meeting deadlines is critical in special education disputes. Here are key timelines for
+      <strong>
+       MINERAL WELLS ISD special education complaint
+      </strong>
+      processes:
+     </p>
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+<tr style="background-color: #f0f0f0;">
+<td style="border: 1px solid #ddd; padding: 10px;">
+<strong>
+         Action
+        </strong>
+</td>
+<td style="border: 1px solid #ddd; padding: 10px;">
+<strong>
+         Deadline
+        </strong>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ddd; padding: 10px;">
+        File TEA complaint
+       </td>
+<td style="border: 1px solid #ddd; padding: 10px;">
+        1 year from violation
+       </td>
+</tr>
+<tr>
+<td style="border: 1px solid #ddd; padding: 10px;">
+        File due process complaint
+       </td>
+<td style="border: 1px solid #ddd; padding: 10px;">
+        2 years from violation
+       </td>
+</tr>
+<tr>
+<td style="border: 1px solid #ddd; padding: 10px;">
+        MINERAL WELLS ISD response to complaint
+       </td>
+<td style="border: 1px solid #ddd; padding: 10px;">
+        15 days
+       </td>
+</tr>
+<tr>
+<td style="border: 1px solid #ddd; padding: 10px;">
+        Resolution meeting
+       </td>
+<td style="border: 1px solid #ddd; padding: 10px;">
+        30 days
+       </td>
+</tr>
+<tr>
+<td style="border: 1px solid #ddd; padding: 10px;">
+        Due process hearing decision
+       </td>
+<td style="border: 1px solid #ddd; padding: 10px;">
+        45 days
+       </td>
+</tr>
+</table>
+<h2>
+      Key Resources for MINERAL WELLS ISD Parents
+     </h2>
+<p>
+      Several organizations provide free information and support to parents in MINERAL WELLS ISD:
+     </p>
+<ul>
+<li>
+<strong>
+        Texas Project FIRST:
+       </strong>
+       Free training and resources for families in Texas special education
+      </li>
+<li>
+<strong>
+        Disability Rights Texas:
+       </strong>
+       Advocacy and legal assistance for people with disabilities
+      </li>
+<li>
+<strong>
+        Parent Training and Information Centers:
+       </strong>
+       Free parent advocacy support throughout Texas
+      </li>
+<li>
+<strong>
+        Council of Parent Organizations:
+       </strong>
+       Networking and support for parents of children with disabilities
+      </li>
+</ul>
+<p>
+      MINERAL WELLS ISD's Special Education Department must provide you with procedural safeguards documents explaining your rights. Request these materials in writing and keep them for reference throughout your child's educational journey.
+     </p>
+<h2>
+      Protecting Your Child While Disputes Are Resolved
+     </h2>
+<p>
+      While you work toward resolution through
+      <strong>
+       MINERAL WELLS ISD due process
+      </strong>
+      or
+      <strong>
+       MINERAL WELLS ISD mediation
+      </strong>
+      , your child remains entitled to current educational services. MINERAL WELLS ISD cannot reduce or eliminate services while complaints are pending, except in specific disciplinary situations.
+     </p>
+<p>
+      If MINERAL WELLS ISD threatens to change your child's placement or services due to your complaint, request a stay-put order from the hearing officer. This protects your child's current educational status until the dispute is fully resolved.
+     </p>
+<p>
+      Document all interactions with MINERAL WELLS ISD staff during this period. Keep copies of all correspondence, meeting notes, and service records. This documentation may become important evidence if your dispute reaches a hearing.
+     </p>
+<h2>
+      Moving Forward: Next Steps for MINERAL WELLS ISD Families
+     </h2>
+<p>
+      Navigating
+      <strong>
+       MINERAL WELLS ISD special education complaint
+      </strong>
+      procedures is challenging, but you don't have to do it alone. Start by clearly documenting the issue and attempting informal resolution. If that doesn't work, move to formal complaint processes through either MINERAL WELLS ISD or the Texas Education Agency.
+     </p>
+<p>
+      Many disputes in MINERAL WELLS ISD resolve through
+      <strong>
+       MINERAL WELLS ISD mediation
+      </strong>
+      when both parties approach the process with genuine intent to solve problems. If mediation isn't successful,
+      <strong>
+       MINERAL WELLS ISD due process
+      </strong>
+      hearing offers a formal forum where your child's needs can be thoroughly examined.
+     </p>
+<p>
+      Remember that your advocacy makes a real difference in your child's education. MINERAL WELLS ISD families who understand their rights and follow proper procedures are more likely to achieve positive outcomes. Whether working with your child's school or pursuing formal resolution, your voice matters in ensuring your child with special needs receives appropriate services in MINERAL WELLS ISD.
+     </p>
+</div>
+
+</div>
+</article>
+</div>
+
+<div id="ai-modal-overlay">
+<div class="modal-content">
+<div style="padding:20px; background:#0f172a; color:white; display:flex; justify-content:space-between; align-items:center;">
+<h3 style="margin:0; font-family:'Lora',serif;">
+      ARD Rights Analysis
+     </h3>
+<button onclick="closeRightsScan()" style="background:none; border:none; color:white; font-size:24px; cursor:pointer;">
+      ×
+     </button>
+</div>
+<div id="modal-body" style="padding:30px;">
+<div id="scan-form">
+<p style="color:#475569; margin-bottom:20px;">
+       Describe the situation (e.g., suspension days, manifestation hearing outcome).
+      </p>
+<textarea id="situation-text" placeholder="Explain what happened..." style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:8px; height:120px;"></textarea>
+<button id="run-scan-btn" onclick="runAnalysis()" style="width:100%; background:#1a56db; color:white; padding:16px; border-radius:8px; font-weight:700; border:none; cursor:pointer; margin-top:15px;">
+       Start Rights Scan
+      </button>
+</div>
+<div id="scan-results" style="display:none;">
+<div id="analysis-content" style="color:#1e293b; line-height:1.6;">
+</div>
+<button onclick="closeRightsScan()" style="width:100%; margin-top:20px; background:#f1f5f9; border:none; padding:12px; border-radius:8px; cursor:pointer;">
+       Close
+      </button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="blog-links-section" style="max-width: 850px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+<h3 style="font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; margin-top: 0; margin-bottom: 15px;">Helpful Special Education Articles</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 15px;">
+<a href="/blog/what-is-fie" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ What is an FIE?</a>
+<a href="/blog/manifestation-determination" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ Manifestation Determination</a>
+<a href="/blog/fie-evaluation-timeline" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ FIE Evaluation Timeline</a>
+<a href="/blog/what-is-an-ard-meeting" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ What is an ARD Meeting?</a>
+</div>
+</div>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-about">
+<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+<p>
+      © 2026 Texas Special Education Resources. Not affiliated with the TEA.
+     </p>
+</div>
+</div>
+</footer>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var toggle = document.querySelector('.mobile-menu-toggle');
+    var menu   = document.querySelector('.nav-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function() { menu.classList.toggle('active'); });
+    }
+});
+  </script>
+
+    <!-- Newsletter Popup -->
+    <div id="newsletterPopup" class="newsletter-popup-overlay">
+        <div class="newsletter-popup-content">
+            <button class="newsletter-popup-close" onclick="closeNewsletterPopup()" aria-label="Close">×</button>
+            
+            <div id="popupForm">
+                <div class="newsletter-popup-header">
+                    <div class="newsletter-popup-icon">📧</div>
+                    <span class="newsletter-popup-tag">Free Weekly Newsletter</span>
+                    <h3>Get Texas Special Ed Guidance Every Week</h3>
+                </div>
+                
+                <div class="newsletter-popup-body">
+                    <ul class="newsletter-popup-benefits">
+                        <li>Real case studies from Texas parents who won their ARD meetings</li>
+                        <li>District-specific timelines and escalation strategies</li>
+                        <li>Policy updates from TEA that affect your rights</li>
+                        <li>Letter templates and meeting prep checklists</li>
+                    </ul>
+                    
+                    <form id="newsletterForm" class="newsletter-popup-form" onsubmit="handleNewsletterSubmit(event)">
+                        <input 
+                            type="email" 
+                            id="popupEmail"
+                            class="newsletter-popup-input"
+                            placeholder="Enter your email address" 
+                            required
+                        >
+                        <button type="submit" class="newsletter-popup-btn" id="submitBtn">
+                            Join 8,200+ Texas Parents →
+                        </button>
+                    </form>
+                    
+                    <p class="newsletter-popup-privacy">
+                        Free forever. Weekly emails. Unsubscribe anytime.<br>
+                        We respect your privacy and never share your email.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="popupSuccess" class="newsletter-popup-success">
+                <div class="newsletter-popup-success-icon">✓</div>
+                <h3>You're on the list!</h3>
+                <p>Check your inbox for a confirmation email. Your first newsletter arrives this Thursday with strategies from parents who successfully navigated the Texas special education system.</p>
+                <button class="newsletter-popup-btn" onclick="closeNewsletterPopup()">
+                    Continue Reading
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const POPUP_CONFIG = {
+            delaySeconds: 10,
+            sessionStorageKey: 'txSpecEdPopupShown',
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (sessionStorage.getItem(POPUP_CONFIG.sessionStorageKey)) {
+                return;
+            }
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('nopopup') === 'true') {
+                return;
+            }
+            
+            setTimeout(function() {
+                const popup = document.getElementById('newsletterPopup');
+                if (popup) {
+                    popup.classList.add('show');
+                    sessionStorage.setItem(POPUP_CONFIG.sessionStorageKey, 'true');
+                }
+            }, POPUP_CONFIG.delaySeconds * 1000);
+        });
+
+        function closeNewsletterPopup() {
+            const popup = document.getElementById('newsletterPopup');
+            if (popup) {
+                popup.classList.remove('show');
+            }
+        }
+
+        if (document.getElementById('newsletterPopup')) {
+            document.getElementById('newsletterPopup').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeNewsletterPopup();
+                }
+            });
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeNewsletterPopup();
+            }
+        });
+
+        async function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            
+            const emailInput = document.getElementById('popupEmail');
+            const submitBtn = document.getElementById('submitBtn');
+            const email = emailInput.value.trim().toLowerCase();
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Subscribing...';
+            
+            try {
+                await saveNewsletterSignup(email);
+                
+                document.getElementById('popupForm').style.display = 'none';
+                document.getElementById('popupSuccess').classList.add('show');
+                
+            } catch (error) {
+                console.error('Newsletter signup error:', error);
+                alert('Something went wrong. Please try again or email us directly.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Join 8,200+ Texas Parents →';
+            }
+        }
+
+        async function saveNewsletterSignup(email) {
+            const pageUrl = window.location.pathname;
+            const pageTitle = document.title;
+            
+            const districtMatch = pageUrl.match(/\/districts\/([^\/]+)/);
+            const district = districtMatch ? districtMatch[1] : null;
+            
+            const signupData = {
+                email: email,
+                source: 'newsletter_popup',
+                page_url: pageUrl,
+                page_title: pageTitle,
+                district: district,
+                timestamp: new Date().toISOString(),
+                subscribed: true,
+                tags: ['newsletter_popup', district].filter(Boolean)
+            };
+            
+            const response = await fetch('/api/newsletter-signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(signupData)
+            });
+            
+            if (!response.ok) {
+                throw new Error('API error');
+            }
+            
+            return await response.json();
+        }
+    </script>
+
+</body>
+</html>

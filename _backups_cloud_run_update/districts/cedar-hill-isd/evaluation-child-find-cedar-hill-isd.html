@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cedar Hill ISD Special Education</title>
+<link href="/style.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style id="universal-core-formatting">
+/* ── AUTOMATED CRO PATCH: Standardized Wide Layout ── */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
+
+/* Core Layout - Single Wide Column */
+.layout-grid { max-width: 850px; margin: 30px auto; display: block; width: 100%; box-sizing: border-box; }
+.content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; width: 100%; box-sizing: border-box; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+.content-column p { margin: 0 0 1.25rem; }
+.content-column ul, .content-column ol { padding-left: 20px; margin-bottom: 1.5rem; }
+.content-column li { margin-bottom: 8px; }
+
+/* Mobile Fixes */
+@media (max-width: 950px) {
+    .content-column { padding: 25px 20px !important; margin: 0 !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; }
+    .nav-menu { display: none !important; }
+}
+
+/* Scannable Blocks */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2, .action-steps h3 { border-top: none; margin-top: 0; padding-top: 0; color: #166534; }
+.action-steps li { color: #166534; }
+
+/* Standardized Buttons */
+.banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+.banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.banner-btn-gold { background: #d4af37; color: #0f172a !important; border: none; cursor: pointer; }
+.banner-btn-blue { background: #1a56db; color: #fff !important; border: none; cursor: pointer; }
+</style>
+
+    <!-- Newsletter Popup Styles -->
+    <style>
+        .newsletter-popup-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10, 35, 66, 0.92);
+            z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; 
+            transition: opacity 0.4s ease, visibility 0.4s;
+            backdrop-filter: blur(6px);
+        }
+        .newsletter-popup-overlay.show { opacity: 1; visibility: visible; }
+        
+        .newsletter-popup-content {
+            background: #fff; width: 92%; max-width: 520px;
+            border-radius: 16px; position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+            transform: translateY(30px) scale(0.9); 
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+        .newsletter-popup-overlay.show .newsletter-popup-content { 
+            transform: translateY(0) scale(1); 
+        }
+        
+        .newsletter-popup-close {
+            position: absolute; top: 16px; right: 16px;
+            background: rgba(255,255,255,0.15); 
+            border: none; width: 36px; height: 36px;
+            border-radius: 50%; color: #fff; font-size: 24px; 
+            cursor: pointer; z-index: 10;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.2s;
+            font-weight: 300;
+            line-height: 1;
+        }
+        .newsletter-popup-close:hover { 
+            background: rgba(255,255,255,0.25); 
+            transform: rotate(90deg);
+        }
+        
+        .newsletter-popup-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            padding: 48px 36px 36px; 
+            text-align: center; 
+            position: relative;
+            overflow: hidden;
+        }
+        .newsletter-popup-header::before {
+            content: ''; position: absolute; top: -50%; right: -20%;
+            width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .newsletter-popup-icon {
+            width: 64px; height: 64px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 3px solid rgba(212, 175, 55, 0.4);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 32px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+        
+        .newsletter-popup-tag {
+            color: #d4af37; font-size: 12px; font-weight: 700; 
+            text-transform: uppercase; letter-spacing: 0.12em; 
+            display: inline-block; margin-bottom: 12px;
+            background: rgba(212, 175, 55, 0.15); 
+            padding: 6px 16px; border-radius: 20px;
+        }
+        
+        .newsletter-popup-header h3 { 
+            font-family: 'Lora', serif; 
+            font-size: 28px; 
+            color: #fff; 
+            margin: 0; 
+            line-height: 1.25;
+            position: relative;
+        }
+        
+        .newsletter-popup-body { 
+            padding: 36px; 
+            background: #fff;
+        }
+        
+        .newsletter-popup-benefits {
+            list-style: none;
+            margin: 0 0 28px 0;
+            padding: 0;
+        }
+        .newsletter-popup-benefits li {
+            padding: 12px 0 12px 36px;
+            position: relative;
+            font-size: 15px;
+            color: #475569;
+            line-height: 1.5;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .newsletter-popup-benefits li:last-child {
+            border-bottom: none;
+        }
+        .newsletter-popup-benefits li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .newsletter-popup-input {
+            width: 100%; 
+            padding: 16px 20px; 
+            border: 2px solid #e2e8f0;
+            border-radius: 10px; 
+            font-size: 16px; 
+            font-family: 'DM Sans', -apple-system, sans-serif;
+            margin-bottom: 12px; 
+            transition: all 0.3s ease;
+            color: #0a2342;
+        }
+        .newsletter-popup-input:focus { 
+            outline: none; 
+            border-color: #1a56db;
+            box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
+        }
+        
+        .newsletter-popup-btn {
+            width: 100%; 
+            padding: 16px 24px; 
+            background: #d4af37; 
+            color: #0a2342;
+            border: none; 
+            border-radius: 10px; 
+            font-size: 16px; 
+            font-weight: 700;
+            font-family: 'DM Sans', -apple-system, sans-serif; 
+            cursor: pointer; 
+            transition: all 0.3s ease;
+        }
+        .newsletter-popup-btn:hover { 
+            background: #c29d2e; 
+            transform: translateY(-2px); 
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        .newsletter-popup-privacy { 
+            font-size: 13px !important; 
+            color: #94a3b8 !important; 
+            margin: 0 !important; 
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        .newsletter-popup-success {
+            padding: 36px;
+            text-align: center;
+            display: none;
+        }
+        .newsletter-popup-success.show {
+            display: block;
+        }
+        .newsletter-popup-success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 40px;
+            color: #fff;
+        }
+        .newsletter-popup-success h3 {
+            font-family: 'Lora', serif;
+            font-size: 24px;
+            color: #0a2342;
+            margin-bottom: 12px;
+        }
+        .newsletter-popup-success p {
+            color: #64748b;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        
+        @media (max-width: 640px) {
+            .newsletter-popup-header { padding: 40px 24px 28px; }
+            .newsletter-popup-header h3 { font-size: 24px; }
+            .newsletter-popup-body { padding: 28px 24px; }
+            .newsletter-popup-benefits li { font-size: 14px; }
+        }
+    </style>
+
+</head>
+<body><header class="site-header">
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<div class="nav-logo">
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+Texas <em>Special Ed</em>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item"><a class="nav-link" href="/districts/index.html">Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/districts/es-index.html">Spanish Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Articles</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/iep-letter/index.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+   const toggle = document.querySelector('.mobile-menu-toggle');
+   const menu = document.querySelector('.nav-menu');
+   if (toggle && menu) {
+      toggle.addEventListener('click', function() {
+         menu.classList.toggle('active');
+         const expanded = toggle.getAttribute('aria-expanded') === 'true';
+         toggle.setAttribute('aria-expanded', !expanded);
+      });
+   }
+});
+</script>
+<div class="container">
+<h1>Complete Guide to Requesting a Full Individual Evaluation (FIE) in CEDAR HILL ISD</h1>
+<div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
+<strong style="color: #334155;">Cedar Hill ISD Resources:</strong>
+<a href="/districts/cedar-hill-isd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Hub</a> •
+        <a href="/districts/cedar-hill-isd/ard-process-guide-cedar-hill-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
+        <a href="/districts/cedar-hill-isd/evaluation-child-find-cedar-hill-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
+        <a href="/districts/cedar-hill-isd/what-is-an-fie-cedar-hill-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">What Is an FIE?</a> •
+        <a href="/districts/cedar-hill-isd/how-to-request-evaluation.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Request an Eval</a> •
+        <a href="/districts/cedar-hill-isd/grievance-dispute-resolution-cedar-hill-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dispute Resolution</a>
+</div>
+<div class="layout-grid"><article class="content-column"><p>If you're a parent in CEDAR HILL ISD concerned about your child's learning or development, understanding how to request a <strong>Full Individual Evaluation (FIE)</strong> is one of the most important steps you can take. This comprehensive guide walks you through the entire process, timelines, and your rights as a parent in CEDAR HILL ISD special education.</p>
+<!-- AI Tool Section -->
+<div style="
+  background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%);
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25);
+  padding: 28px 24px 24px;
+  border: 1px solid #2a4382;
+  text-align: center;
+  margin: 2.5rem 0;
+">
+<span style="
+    display: inline-block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    font-family: 'DM Sans', sans-serif;
+  ">Free AI Tool</span>
+<h3 style="
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-size: 1.35rem;
+    line-height: 1.3;
+  ">Free ARD Rights Scan</h3>
+<p style="
+    font-size: 14px;
+    color: #cbd5e1;
+    margin: 0 0 22px;
+    line-height: 1.55;
+    font-family: 'Source Sans 3', sans-serif;
+  ">
+    Wondering if the school violated your rights? Answer a few questions for an instant analysis based on Texas law.
+  </p>
+<a href="/" style="
+    display: block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    transition: background 0.2s;
+  ">Run My Free ARD Scan →</a>
+<p style="
+    font-size: 11px;
+    color: #64748b;
+    margin: 12px 0 0;
+    font-family: 'Source Sans 3', sans-serif;
+  ">🔒 Free  ·  No account needed</p>
+</div>
+</div>
+<h2>Understanding the Full Individual Evaluation (FIE) in CEDAR HILL ISD</h2><div class="integrated-cta dark" id="inline-bot-1">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
+<h3 style="font-family:'Lora',serif;font-size:1.6rem;margin:0 0 10px;color:#fff;border:none;padding:0;">Draft Your FIE Request</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:16px;color:#cbd5e1;margin:0 auto 18px;line-height:1.6;max-width:600px;">Sending a casual email is a mistake. Use our AI to write a legally binding evaluation letter that forces the 15-day district response clock.</p>
+<a class="banner-btn banner-btn-gold" href="/resources/iep-letter/index.html">Draft My Letter — $25 →</a>
+</div>
+<div class="mobile-only" id="mobile-bot-1" style="margin: 2.5rem 0;">
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;box-shadow:0 10px 25px -5px rgba(0,0,0,0.15);border:1px solid #1e40af;">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
+<h3 style="font-family:'Lora',serif;font-size:1.6rem;margin:0 0 10px;color:#fff;">Draft Your FIE Request</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:15px;color:#cbd5e1;margin:0 0 18px;line-height:1.5;">Sending a casual email is a mistake. Use our AI to write a legally binding letter that forces a response.</p>
+<a class="banner-btn banner-btn-gold" href="/resources/iep-letter/index.html">Draft My Letter — $25 →</a>
+</div>
+</div>
+<p>A <strong>Full Individual Evaluation (FIE)</strong> is a comprehensive assessment designed to determine whether your child has a disability and qualifies for special education services under federal law. For families in CEDAR HILL ISD, this evaluation is the gateway to accessing specialized support and resources your child may need.</p><p>The <strong>CEDAR HILL ISD FIE evaluation</strong> process is governed by both federal regulations (IDEA) and Texas Education Code requirements. The evaluation must be thorough, individualized, and conducted in your child's native language or mode of communication.</p><p>CEDAR HILL ISD is committed to early identification through their <strong>CEDAR HILL ISD child find</strong> process, which helps identify students who may need special education services. However, you don't have to wait for the district to identify your child—you can request an evaluation at any time.</p><h2>Who Can Request a CEDAR HILL ISD Special Education Evaluation?</h2>
+<div class="mobile-only" id="mobile-bot-2" style="margin: 2.5rem 0;">
+<div style="background:#fff;border:1px solid #e2e8f0;padding:28px;border-radius:12px;text-align:center;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05);">
+<span style="background:#ef4444;color:#fff;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Diagnostic Bot</span>
+<h3 style="font-family:'Lora',serif;font-size:1.3rem;margin:0 0 10px;color:#0a2342;">Are Your Rights Being Violated?</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#475569;margin:0 0 18px;line-height:1.5;">Take our 9-question ARD assessment to find out your next legal step.</p>
+<a class="banner-btn banner-btn-blue" href="/tools/ard-rights-scan/index.html">Run Free ARD Audit →</a>
+</div>
+</div>
+<p>Any of the following individuals can initiate a request for a <strong>CEDAR HILL ISD special education evaluation</strong>:</p><ul>
+<li><strong>Parents or guardians</strong> of the child</li>
+<li><strong>Classroom teachers</strong> or other school personnel</li>
+<li><strong>Physicians or medical professionals</strong> who have evaluated the child</li>
+<li><strong>The child's counselor</strong> or other service providers</li>
+<li>In some cases, <strong>the child themselves</strong> (if age-appropriate)</li>
+</ul><p>If you suspect your child has a disability affecting their learning, you have the legal right to request an evaluation from CEDAR HILL ISD at no cost to your family.</p><h2>The CEDAR HILL ISD Evaluation Request Process: Step-by-Step</h2><h3>Step 1: Submit Your Written Request</h3><p>To initiate a <strong>CEDAR HILL ISD evaluation request</strong>, you must submit a <strong>written request</strong> to the school. This is critical—verbal requests alone are not sufficient to start the official timeline.</p><p>Your written request should include:</p><ul>
+<li>Your child's full name and date of birth</li>
+<li>Your contact information</li>
+<li>Specific concerns about your child's learning or development</li>
+<li>Examples of behaviors or academic difficulties you've observed</li>
+<li>Request for a Full Individual Evaluation</li>
+</ul><p>Send this request directly to CEDAR HILL ISD's Special Education Department. A simple email or letter to your child's school or the district's special education coordinator is appropriate. Keep a copy for your records and document the date you submitted it.</p><h3>Step 2: CEDAR HILL ISD Reviews Your Request</h3><p>Once CEDAR HILL ISD receives your <strong>evaluation request</strong>, the district has specific timelines to follow. Within a reasonable timeframe (typically 5-10 days), the school must respond to your request.</p><p>The district may:</p><ul>
+<li><strong>Approve the evaluation</strong> and move forward with assessment</li>
+<li><strong>Request a meeting</strong> to discuss your concerns before proceeding</li>
+<li><strong>Propose alternative interventions</strong> through Response to Intervention (RTI) or other support systems</li>
+</ul><p>CEDAR HILL ISD must provide you with notice of whether they approve or deny your request in writing.</p><h3>Step 3: Consent for Evaluation</h3><p>Before CEDAR HILL ISD can begin the <strong>special education evaluation</strong>, you must provide <strong>informed written consent</strong>. The district will send you a Consent for Initial Evaluation form explaining:</p><ul>
+<li>What will be evaluated and why</li>
+<li>What assessment tools will be used</li>
+<li>Your rights as a parent during the evaluation process</li>
+<li>How results will be used</li>
+</ul><p>You have the right to ask questions and request clarification before signing. Don't hesitate to ask CEDAR HILL ISD special education staff to explain any part of this document.</p><h2>The CEDAR HILL ISD 45-Day Timeline: What You Need to Know</h2><p>One of the most important aspects of requesting a <strong>CEDAR HILL ISD FIE evaluation</strong> is understanding the mandatory <strong>CEDAR HILL ISD 45 day timeline</strong>. This deadline is non-negotiable under federal special education law.</p><h3>The 45-Day Countdown</h3><p>Once you provide consent for the evaluation, CEDAR HILL ISD has <strong>45 calendar days</strong> to:</p><ul>
+<li>Complete all necessary assessments</li>
+<li>Analyze and interpret the results</li>
+<li>Hold an Initial Evaluation/ARD (Admission, Review, Dismissal) meeting</li>
+<li>Provide you with a written Evaluation Report</li>
+<li>Determine eligibility for special education services</li>
+</ul><p>This <strong>45-day timeline</strong> is critical. If CEDAR HILL ISD fails to meet this deadline without a documented reason (like parent request for extension), they may be in violation of special education law.</p><h3>What Happens After the 45 Days</h3><p>At the conclusion of the <strong>CEDAR HILL ISD 45 day timeline</strong>, you'll attend a meeting where the evaluation team presents findings. They will determine whether your child:</p><ul>
+<li>Qualifies for special education under one of 13 disability categories</li>
+<li>Does not qualify and will return to regular education</li>
+<li>Qualifies for services under Section 504 (even if not IDEA-eligible)</li>
+</ul><p>You should receive a comprehensive written report detailing all assessment results before or during this meeting.</p><h2>Types of Assessments in a CEDAR HILL ISD Special Education Evaluation</h2><p>A comprehensive <strong>CEDAR HILL ISD special education evaluation</strong> typically includes multiple assessment types:</p><h3>Cognitive/Intellectual Assessment</h3><p>Standardized intelligence tests measure your child's cognitive abilities and processing skills. These are administered by a certified school psychologist and help identify intellectual disabilities or giftedness.</p><h3>Academic Achievement Testing</h3><p>Assessments in reading, math, and writing determine your child's academic performance compared to grade-level standards. These identify specific learning disabilities in areas like dyslexia or dyscalculia.</p><h3>Speech and Language Evaluation</h3><p>A speech-language pathologist evaluates your child's communication skills, including expressive and receptive language, articulation, and pragmatic language use.</p><h3>Behavioral and Social-Emotional Assessment</h3><p>CEDAR HILL ISD evaluators may assess your child's behavior, social skills, and emotional functioning through observations, rating scales, and parent/teacher input.</p><h3>Occupational and Physical Therapy Evaluations</h3><p>If motor skills or self-care concerns are noted, occupational therapists and physical therapists conduct specialized assessments for fine motor, gross motor, and sensory processing abilities.</p><h3>Classroom Observation and Work Samples</h3><p>CEDAR HILL ISD staff observe your child in classroom settings and review actual work samples to understand how they perform in real educational environments.</p><h2>Your Rights as a CEDAR HILL ISD Parent During Evaluation</h2><p>Understanding your rights ensures you advocate effectively for your child throughout the <strong>CEDAR HILL ISD evaluation request</strong> process.</p><h3>Right to Participate</h3><p>You have the right to participate in all evaluation meetings and decisions. CEDAR HILL ISD must schedule the Initial Evaluation/ARD meeting at a time and location convenient for you. If you cannot attend in person, you can participate by phone or video conference.</p><h3>Right to Independent Educational Evaluation (IEE)</h3><p>If you disagree with CEDAR HILL ISD's evaluation results, you can request an <strong>Independent Educational Evaluation</strong> at public expense. This evaluation must be conducted by a qualified professional not employed by CEDAR HILL ISD.</p><h3>Right to Interpreter or Advocate</h3><p>You can bring a support person, translator, or <strong>special ed advocate CEDAR HILL</strong> area to any meeting. Many parents in CEDAR HILL ISD find having an advocate invaluable for navigating the special education process.</p><h3>Right to Request Records</h3><p>CEDAR HILL ISD must provide you copies of all evaluation reports, assessments, and supporting documents. You can request these records at any time.</p><h3>Right to Native Language</h3><p>If your family's primary language is not English, CEDAR HILL ISD must ensure the evaluation is conducted in your child's native language or mode of communication to the extent possible.</p><h2>When Your Evaluation Request Might Be Denied</h2><p>While CEDAR HILL ISD cannot deny an evaluation request without cause, the district may decline to evaluate if:</p><ul>
+<li>The child has already been evaluated within the past 12 months and no new concerns have emerged</li>
+<li>The child has been dismissed from special education services within the past 12 months</li>
+<li>Parent requests another evaluation very soon after an initial one (without documented reason)</li>
+</ul><p>However, CEDAR HILL ISD must provide written explanation for any denial and inform you of your right to request a hearing if you disagree.</p><h2>Common Reasons Parents Request Evaluations in CEDAR HILL ISD</h2><p>Understanding whether your situation warrants an evaluation can help you decide whether to submit a <strong>CEDAR HILL ISD FIE evaluation</strong> request.</p><p><strong>Academic concerns:</strong> Your child struggles significantly in reading, math, or writing despite quality instruction and interventions. They may reverse letters, struggle with math facts, or have difficulty with written expression.</p><p><strong>Speech and language delays:</strong> Your child has difficulty expressing themselves, understanding instructions, or has noticeable speech sound errors affecting communication.</p><p><strong>Behavioral challenges:</strong> Your child exhibits behaviors significantly different from peers—excessive aggression, extreme shyness, difficulty with transitions, or trouble following classroom rules.</p><p><strong>Attention concerns:</strong> Your child has difficulty focusing, staying organized, or controlling impulses both at home and school.</p><p><strong>Social or emotional difficulties:</strong> Your child struggles with peer relationships, expresses persistent sadness or anxiety, or has difficulty managing emotions.</p><p><strong>Motor skill delays:</strong> Your child has poor coordination, difficulty with fine motor tasks like writing or fastening buttons, or overall clumsiness compared to peers.</p><h2>What to Do if CEDAR HILL ISD Misses the 45-Day Timeline</h2><p>If CEDAR HILL ISD fails to complete the <strong>CEDAR HILL ISD 45 day timeline</strong> without your documented agreement to extend it, you have options:</p><ol>
+<li><strong>Document the violation</strong> in writing with dates and specific attempts to complete the evaluation</li>
+<li><strong>Request written explanation</strong> from CEDAR HILL ISD for the delay</li>
+<li><strong>Contact the district's special education department</strong> requesting immediate completion</li>
+<li><strong>File a special education due process complaint</strong> with the Texas Education Agency (TEA)</li>
+<li><strong>Consult a special education attorney near CEDAR HILL</strong> if violations continue</li>
+</ol><p>Timeline violations are serious. If you believe CEDAR HILL ISD is not meeting legal deadlines, don't hesitate to escalate your concern.</p><h2>After the Evaluation: What Happens Next</h2><p>Once the <strong>CEDAR HILL ISD special education evaluation</strong> is complete, several outcomes are possible.</p><h3>If Your Child Qualifies for Special Education</h3><p>CEDAR HILL ISD will develop an <strong>Individualized Education Program (IEP)</strong> detailing the specialized instruction and services your child will receive. You'll meet with the ARD committee to review assessment results and develop this plan together.</p><h3>If Your Child Does Not Qualify</h3><p>CEDAR HILL ISD must provide you written notice explaining why your child doesn't meet criteria for special education. However, your child may qualify for accommodations under Section 504 or receive support through Response to Intervention programs.</p><h3>If You Disagree with Evaluation Results</h3><p>You have the right to request an <strong>Independent Educational Evaluation</strong> at CEDAR HILL ISD's expense. You can also request a due process hearing or consult with a <strong>special education attorney near CEDAR HILL</strong> to protect your rights.</p><h2>Getting Support During the Evaluation Process</h2><p>Many parents in CEDAR HILL ISD benefit from additional support when navigating special education evaluation:</p><p><strong>Special Education Advocates:</strong> A <strong>special ed advocate CEDAR HILL</strong> area professionals can explain the process, help you prepare for meetings, and ensure CEDAR HILL ISD follows proper procedures. Advocates are not attorneys but provide valuable parent representation.</p><p><strong>Parent Training and Information Centers:</strong> Texas has regional PTI centers offering free training to parents of students with disabilities, including guidance on requesting evaluations.</p><p><strong>School Counselor or Social Worker:</strong> Your child's school counselor can discuss concerns and help connect you to CEDAR HILL ISD special education resources.</p><p><strong>Special Education Attorney:</strong> If disputes arise or you need legal guidance, consulting a <strong>special education attorney near CEDAR HILL</strong> protects your child's rights and ensures CEDAR HILL ISD compliance.</p><h2>Preparing for Your Initial Evaluation Meeting in CEDAR HILL ISD</h2><p>As the <strong>CEDAR HILL ISD 45 day timeline</strong> concludes, prepare for your Initial Evaluation/ARD meeting:</p><ul>
+<li><strong>Review all evaluation reports</strong> before the meeting—don't wait until the meeting</li>
+<li><strong>Write down questions or concerns</strong> you have about assessment results</li>
+<li><strong>Gather information</strong> about your child's functioning at home and in community settings</li>
+<li><strong>Bring a support person or advocate</strong> if desired</li>
+<li><strong>Prepare to discuss</strong> any additional concerns not covered in formal assessments</li>
+<li><strong>Ask about eligibility criteria</strong> and how your child's performance relates to special education categories</li>
+</ul><p>This meeting is a critical moment where CEDAR HILL ISD and your family work together to determine how to best support your child's education.</p><h2>Conclusion: Next Steps for CEDAR HILL ISD Families</h2><p>Requesting a <strong>CEDAR HILL ISD FIE evaluation</strong> is a significant step toward getting your child the support they need. Remember that you know your child best and have the legal right to request evaluation at any time.</p><p>Key takeaways for parents in CEDAR HILL ISD:</p><ul>
+<li>Submit your <strong>evaluation request</strong> in writing to CEDAR HILL ISD</li>
+<li>Understand the <strong>45 day timeline</strong> and hold CEDAR HILL ISD accountable</li>
+<li>Participate actively in the evaluation process and all meetings</li>
+<li>Know your rights regarding consent, interpreters, and independent evaluations</li>
+<li>Don't hesitate to advocate for
+    </li></ul></article></div>
+</div>
+<div class="blog-links-section" style="max-width: 850px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+<h3 style="font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; margin-top: 0; margin-bottom: 15px;">Helpful Special Education Articles</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 15px;">
+<a href="/blog/what-is-fie" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ What is an FIE?</a>
+<a href="/blog/manifestation-determination" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ Manifestation Determination</a>
+<a href="/blog/fie-evaluation-timeline" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ FIE Evaluation Timeline</a>
+<a href="/blog/what-is-an-ard-meeting" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ What is an ARD Meeting?</a>
+</div>
+</div>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-about">
+<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+<p>© 2026 Texas Special Education Resources. Not affiliated with the TEA.</p>
+</div>
+</div>
+</footer><script>
+document.addEventListener('DOMContentLoaded', function() {
+    var toggle = document.querySelector('.mobile-menu-toggle');
+    var menu   = document.querySelector('.nav-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function() { menu.classList.toggle('active'); });
+    }
+});
+</script>
+
+</div>
+
+
+    <!-- Newsletter Popup -->
+    <div id="newsletterPopup" class="newsletter-popup-overlay">
+        <div class="newsletter-popup-content">
+            <button class="newsletter-popup-close" onclick="closeNewsletterPopup()" aria-label="Close">×</button>
+            
+            <div id="popupForm">
+                <div class="newsletter-popup-header">
+                    <div class="newsletter-popup-icon">📧</div>
+                    <span class="newsletter-popup-tag">Free Weekly Newsletter</span>
+                    <h3>Get Texas Special Ed Guidance Every Week</h3>
+                </div>
+                
+                <div class="newsletter-popup-body">
+                    <ul class="newsletter-popup-benefits">
+                        <li>Real case studies from Texas parents who won their ARD meetings</li>
+                        <li>District-specific timelines and escalation strategies</li>
+                        <li>Policy updates from TEA that affect your rights</li>
+                        <li>Letter templates and meeting prep checklists</li>
+                    </ul>
+                    
+                    <form id="newsletterForm" class="newsletter-popup-form" onsubmit="handleNewsletterSubmit(event)">
+                        <input 
+                            type="email" 
+                            id="popupEmail"
+                            class="newsletter-popup-input"
+                            placeholder="Enter your email address" 
+                            required
+                        >
+                        <button type="submit" class="newsletter-popup-btn" id="submitBtn">
+                            Join 8,200+ Texas Parents →
+                        </button>
+                    </form>
+                    
+                    <p class="newsletter-popup-privacy">
+                        Free forever. Weekly emails. Unsubscribe anytime.<br>
+                        We respect your privacy and never share your email.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="popupSuccess" class="newsletter-popup-success">
+                <div class="newsletter-popup-success-icon">✓</div>
+                <h3>You're on the list!</h3>
+                <p>Check your inbox for a confirmation email. Your first newsletter arrives this Thursday with strategies from parents who successfully navigated the Texas special education system.</p>
+                <button class="newsletter-popup-btn" onclick="closeNewsletterPopup()">
+                    Continue Reading
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const POPUP_CONFIG = {
+            delaySeconds: 10,
+            sessionStorageKey: 'txSpecEdPopupShown',
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (sessionStorage.getItem(POPUP_CONFIG.sessionStorageKey)) {
+                return;
+            }
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('nopopup') === 'true') {
+                return;
+            }
+            
+            setTimeout(function() {
+                const popup = document.getElementById('newsletterPopup');
+                if (popup) {
+                    popup.classList.add('show');
+                    sessionStorage.setItem(POPUP_CONFIG.sessionStorageKey, 'true');
+                }
+            }, POPUP_CONFIG.delaySeconds * 1000);
+        });
+
+        function closeNewsletterPopup() {
+            const popup = document.getElementById('newsletterPopup');
+            if (popup) {
+                popup.classList.remove('show');
+            }
+        }
+
+        if (document.getElementById('newsletterPopup')) {
+            document.getElementById('newsletterPopup').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeNewsletterPopup();
+                }
+            });
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeNewsletterPopup();
+            }
+        });
+
+        async function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            
+            const emailInput = document.getElementById('popupEmail');
+            const submitBtn = document.getElementById('submitBtn');
+            const email = emailInput.value.trim().toLowerCase();
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Subscribing...';
+            
+            try {
+                await saveNewsletterSignup(email);
+                
+                document.getElementById('popupForm').style.display = 'none';
+                document.getElementById('popupSuccess').classList.add('show');
+                
+            } catch (error) {
+                console.error('Newsletter signup error:', error);
+                alert('Something went wrong. Please try again or email us directly.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Join 8,200+ Texas Parents →';
+            }
+        }
+
+        async function saveNewsletterSignup(email) {
+            const pageUrl = window.location.pathname;
+            const pageTitle = document.title;
+            
+            const districtMatch = pageUrl.match(/\/districts\/([^\/]+)/);
+            const district = districtMatch ? districtMatch[1] : null;
+            
+            const signupData = {
+                email: email,
+                source: 'newsletter_popup',
+                page_url: pageUrl,
+                page_title: pageTitle,
+                district: district,
+                timestamp: new Date().toISOString(),
+                subscribed: true,
+                tags: ['newsletter_popup', district].filter(Boolean)
+            };
+            
+            const response = await fetch('/api/newsletter-signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(signupData)
+            });
+            
+            if (!response.ok) {
+                throw new Error('API error');
+            }
+            
+            return await response.json();
+        }
+    </script>
+
+</body>
+</html>

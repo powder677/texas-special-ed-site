@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zapata County ISD Special Education</title>
+<link href="/style.css" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style id="universal-core-formatting">
+/* ── AUTOMATED CRO PATCH: Standardized Wide Layout ── */
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f8fafc; }
+h1 { font-size: 2.2rem; margin-top: 10px; font-family: 'Lora', serif; color: #0a2342; }
+
+/* Core Layout - Single Wide Column */
+.layout-grid { max-width: 850px; margin: 30px auto; display: block; width: 100%; box-sizing: border-box; }
+.content-column { font-family: 'Source Sans 3', sans-serif; font-size: 17px; line-height: 1.75; color: #1a1a2e; background: #fff; padding: 40px 60px; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #e2e8f0; width: 100%; box-sizing: border-box; }
+.content-column h2 { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: #0a2342; margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 2px solid #e8f0fe; }
+.content-column h3 { font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700; color: #1e3a8a; margin: 2rem 0 1rem; }
+.content-column p { margin: 0 0 1.25rem; }
+.content-column ul, .content-column ol { padding-left: 20px; margin-bottom: 1.5rem; }
+.content-column li { margin-bottom: 8px; }
+
+/* Mobile Fixes */
+@media (max-width: 950px) {
+    .content-column { padding: 25px 20px !important; margin: 0 !important; border: none !important; border-radius: 0 !important; box-shadow: none !important; }
+    .nav-menu { display: none !important; }
+}
+
+/* Scannable Blocks */
+.pull-quote { border-left: 4px solid #1a56db; margin: 2rem 0; padding: 20px 24px; background: #f8fbff; border-radius: 0 8px 8px 0; font-size: 1.15rem; font-style: italic; color: #1e3a8a; line-height: 1.6; }
+.action-steps { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 28px 32px; margin: 2.5rem 0; }
+.action-steps h2, .action-steps h3 { border-top: none; margin-top: 0; padding-top: 0; color: #166534; }
+.action-steps li { color: #166534; }
+
+/* Standardized Buttons */
+.banner-btn { text-decoration: none !important; display: inline-block; border-radius: 6px; font-weight: 800; font-family: 'DM Sans', sans-serif; font-size: 16px; transition: all 0.2s ease; padding: 14px 28px; margin-top: 10px;}
+.banner-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.banner-btn-gold { background: #d4af37; color: #0f172a !important; border: none; cursor: pointer; }
+.banner-btn-blue { background: #1a56db; color: #fff !important; border: none; cursor: pointer; }
+</style>
+
+    <!-- Newsletter Popup Styles -->
+    <style>
+        .newsletter-popup-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10, 35, 66, 0.92);
+            z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; 
+            transition: opacity 0.4s ease, visibility 0.4s;
+            backdrop-filter: blur(6px);
+        }
+        .newsletter-popup-overlay.show { opacity: 1; visibility: visible; }
+        
+        .newsletter-popup-content {
+            background: #fff; width: 92%; max-width: 520px;
+            border-radius: 16px; position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+            transform: translateY(30px) scale(0.9); 
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+        .newsletter-popup-overlay.show .newsletter-popup-content { 
+            transform: translateY(0) scale(1); 
+        }
+        
+        .newsletter-popup-close {
+            position: absolute; top: 16px; right: 16px;
+            background: rgba(255,255,255,0.15); 
+            border: none; width: 36px; height: 36px;
+            border-radius: 50%; color: #fff; font-size: 24px; 
+            cursor: pointer; z-index: 10;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.2s;
+            font-weight: 300;
+            line-height: 1;
+        }
+        .newsletter-popup-close:hover { 
+            background: rgba(255,255,255,0.25); 
+            transform: rotate(90deg);
+        }
+        
+        .newsletter-popup-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            padding: 48px 36px 36px; 
+            text-align: center; 
+            position: relative;
+            overflow: hidden;
+        }
+        .newsletter-popup-header::before {
+            content: ''; position: absolute; top: -50%; right: -20%;
+            width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .newsletter-popup-icon {
+            width: 64px; height: 64px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 3px solid rgba(212, 175, 55, 0.4);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 32px;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+        
+        .newsletter-popup-tag {
+            color: #d4af37; font-size: 12px; font-weight: 700; 
+            text-transform: uppercase; letter-spacing: 0.12em; 
+            display: inline-block; margin-bottom: 12px;
+            background: rgba(212, 175, 55, 0.15); 
+            padding: 6px 16px; border-radius: 20px;
+        }
+        
+        .newsletter-popup-header h3 { 
+            font-family: 'Lora', serif; 
+            font-size: 28px; 
+            color: #fff; 
+            margin: 0; 
+            line-height: 1.25;
+            position: relative;
+        }
+        
+        .newsletter-popup-body { 
+            padding: 36px; 
+            background: #fff;
+        }
+        
+        .newsletter-popup-benefits {
+            list-style: none;
+            margin: 0 0 28px 0;
+            padding: 0;
+        }
+        .newsletter-popup-benefits li {
+            padding: 12px 0 12px 36px;
+            position: relative;
+            font-size: 15px;
+            color: #475569;
+            line-height: 1.5;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .newsletter-popup-benefits li:last-child {
+            border-bottom: none;
+        }
+        .newsletter-popup-benefits li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        .newsletter-popup-input {
+            width: 100%; 
+            padding: 16px 20px; 
+            border: 2px solid #e2e8f0;
+            border-radius: 10px; 
+            font-size: 16px; 
+            font-family: 'DM Sans', -apple-system, sans-serif;
+            margin-bottom: 12px; 
+            transition: all 0.3s ease;
+            color: #0a2342;
+        }
+        .newsletter-popup-input:focus { 
+            outline: none; 
+            border-color: #1a56db;
+            box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
+        }
+        
+        .newsletter-popup-btn {
+            width: 100%; 
+            padding: 16px 24px; 
+            background: #d4af37; 
+            color: #0a2342;
+            border: none; 
+            border-radius: 10px; 
+            font-size: 16px; 
+            font-weight: 700;
+            font-family: 'DM Sans', -apple-system, sans-serif; 
+            cursor: pointer; 
+            transition: all 0.3s ease;
+        }
+        .newsletter-popup-btn:hover { 
+            background: #c29d2e; 
+            transform: translateY(-2px); 
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        .newsletter-popup-privacy { 
+            font-size: 13px !important; 
+            color: #94a3b8 !important; 
+            margin: 0 !important; 
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        .newsletter-popup-success {
+            padding: 36px;
+            text-align: center;
+            display: none;
+        }
+        .newsletter-popup-success.show {
+            display: block;
+        }
+        .newsletter-popup-success-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 40px;
+            color: #fff;
+        }
+        .newsletter-popup-success h3 {
+            font-family: 'Lora', serif;
+            font-size: 24px;
+            color: #0a2342;
+            margin-bottom: 12px;
+        }
+        .newsletter-popup-success p {
+            color: #64748b;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        
+        @media (max-width: 640px) {
+            .newsletter-popup-header { padding: 40px 24px 28px; }
+            .newsletter-popup-header h3 { font-size: 24px; }
+            .newsletter-popup-body { padding: 28px 24px; }
+            .newsletter-popup-benefits li { font-size: 14px; }
+        }
+    </style>
+
+</head>
+<body><header class="site-header">
+<nav aria-label="Main navigation" class="navbar" role="navigation">
+<div class="nav-container">
+<div class="nav-logo">
+<a aria-label="Texas Special Ed Home" class="text-logo" href="/">
+Texas <em>Special Ed</em>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Toggle menu" class="mobile-menu-toggle">
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+<span class="hamburger"></span>
+</button>
+<ul class="nav-menu">
+<li class="nav-item"><a class="nav-link" href="/districts/index.html">Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/districts/es-index.html">Spanish Districts</a></li>
+<li class="nav-item"><a class="nav-link" href="/resources/index.html">Parent Resources</a></li>
+<li class="nav-item"><a class="nav-link" href="/blog/index.html">Articles</a></li>
+<li class="nav-item"><a class="nav-link" href="/contact/index.html">Contact</a></li>
+<li class="nav-item nav-cta">
+<a class="btn-outline" href="/resources/ard-checklist.pdf" target="_blank">Free ARD Checklist</a>
+</li>
+<li class="nav-item nav-cta" style="margin-left:8px;">
+<a href="/resources/iep-letter/index.html" style="background:#d4af37;color:#0f172a;padding:10px 18px;border-radius:4px;font-weight:700;font-size:14px;text-decoration:none;font-family:'DM Sans',sans-serif;white-space:nowrap;">Get Your Letter — $25</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+   const toggle = document.querySelector('.mobile-menu-toggle');
+   const menu = document.querySelector('.nav-menu');
+   if (toggle && menu) {
+      toggle.addEventListener('click', function() {
+         menu.classList.toggle('active');
+         const expanded = toggle.getAttribute('aria-expanded') === 'true';
+         toggle.setAttribute('aria-expanded', !expanded);
+      });
+   }
+});
+</script>
+<div class="container">
+<h1>Complete Guide to Requesting a Full Individual Evaluation (FIE) in ZAPATA COUNTY ISD</h1>
+<div class="silo-nav" style="background-color: #e9ecef; padding: 14px 20px; border-radius: 8px; margin: 20px 0 30px; font-size: 15px; font-family: 'DM Sans', sans-serif; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; border-left: 4px solid #6c757d;">
+<strong style="color: #334155;">Zapata County ISD Resources:</strong>
+<a href="/districts/zapata-county-isd/index.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">District Hub</a> •
+        <a href="/districts/zapata-county-isd/ard-process-guide-zapata-county-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">ARD Guide</a> •
+        <a href="/districts/zapata-county-isd/evaluation-child-find-zapata-county-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Evaluations (FIE)</a> •
+        <a href="/districts/zapata-county-isd/what-is-an-fie-zapata-county-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">What Is an FIE?</a> •
+        <a href="/districts/zapata-county-isd/how-to-request-evaluation.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Request an Eval</a> •
+        <a href="/districts/zapata-county-isd/grievance-dispute-resolution-zapata-county-isd.html" style="text-decoration: none; color: #2563eb; font-weight: 500;">Dispute Resolution</a>
+</div>
+<div class="layout-grid"><article class="content-column"><p>If you're a parent in <strong>ZAPATA COUNTY ISD</strong> and suspect your child may have a learning disability or developmental delay, understanding how to request a <strong>ZAPATA COUNTY ISD FIE evaluation</strong> is your first step toward getting your child the support they need. This comprehensive guide walks you through the entire process, your rights, and what to expect when requesting special education services in ZAPATA COUNTY ISD.</p>
+<!-- AI Tool Section -->
+<div style="
+  background: linear-gradient(145deg, #0f172a 0%, #1e3a8a 100%);
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(30, 58, 138, 0.25);
+  padding: 28px 24px 24px;
+  border: 1px solid #2a4382;
+  text-align: center;
+  margin: 2.5rem 0;
+">
+<span style="
+    display: inline-block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    font-family: 'DM Sans', sans-serif;
+  ">Free AI Tool</span>
+<h3 style="
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-size: 1.35rem;
+    line-height: 1.3;
+  ">Free ARD Rights Scan</h3>
+<p style="
+    font-size: 14px;
+    color: #cbd5e1;
+    margin: 0 0 22px;
+    line-height: 1.55;
+    font-family: 'Source Sans 3', sans-serif;
+  ">
+    Wondering if the school violated your rights? Answer a few questions for an instant analysis based on Texas law.
+  </p>
+<a href="/" style="
+    display: block;
+    background: #d4af37;
+    color: #0f172a;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    transition: background 0.2s;
+  ">Run My Free ARD Scan →</a>
+<p style="
+    font-size: 11px;
+    color: #64748b;
+    margin: 12px 0 0;
+    font-family: 'Source Sans 3', sans-serif;
+  ">🔒 Free  ·  No account needed</p>
+</div>
+</div>
+<h2>Understanding the Full Individual Evaluation (FIE) in ZAPATA COUNTY ISD</h2><div class="integrated-cta dark" id="inline-bot-1">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
+<h3 style="font-family:'Lora',serif;font-size:1.6rem;margin:0 0 10px;color:#fff;border:none;padding:0;">Draft Your FIE Request</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:16px;color:#cbd5e1;margin:0 auto 18px;line-height:1.6;max-width:600px;">Sending a casual email is a mistake. Use our AI to write a legally binding evaluation letter that forces the 15-day district response clock.</p>
+<a class="banner-btn banner-btn-gold" href="/resources/iep-letter/index.html">Draft My Letter — $25 →</a>
+</div>
+<div class="mobile-only" id="mobile-bot-1" style="margin: 2.5rem 0;">
+<div style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%);padding:28px;border-radius:12px;text-align:center;color:#fff;box-shadow:0 10px 25px -5px rgba(0,0,0,0.15);border:1px solid #1e40af;">
+<span style="background:#d4af37;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Premium AI Tool</span>
+<h3 style="font-family:'Lora',serif;font-size:1.6rem;margin:0 0 10px;color:#fff;">Draft Your FIE Request</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:15px;color:#cbd5e1;margin:0 0 18px;line-height:1.5;">Sending a casual email is a mistake. Use our AI to write a legally binding letter that forces a response.</p>
+<a class="banner-btn banner-btn-gold" href="/resources/iep-letter/index.html">Draft My Letter — $25 →</a>
+</div>
+</div>
+<p>A Full Individual Evaluation is a thorough assessment designed to determine whether your child has a disability and needs special education services. In <strong>ZAPATA COUNTY ISD</strong>, the FIE process is governed by federal law (IDEA) and Texas Education Code, ensuring your child receives a comprehensive evaluation across all areas of suspected disability.</p><p>The <strong>ZAPATA COUNTY ISD special education evaluation</strong> process involves multiple specialists, standardized tests, and observations. This multifaceted approach ensures evaluators get a complete picture of your child's strengths and challenges before making any eligibility decisions.</p><p>Under federal law, <strong>ZAPATA COUNTY ISD</strong> must evaluate your child in all suspected areas of disability, not just the area that prompted your referral. This comprehensive approach is essential for identifying all of your child's needs.</p><h2>Initiating the Child Find Process in ZAPATA COUNTY ISD</h2>
+<div class="mobile-only" id="mobile-bot-2" style="margin: 2.5rem 0;">
+<div style="background:#fff;border:1px solid #e2e8f0;padding:28px;border-radius:12px;text-align:center;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05);">
+<span style="background:#ef4444;color:#fff;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">Diagnostic Bot</span>
+<h3 style="font-family:'Lora',serif;font-size:1.3rem;margin:0 0 10px;color:#0a2342;">Are Your Rights Being Violated?</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:14px;color:#475569;margin:0 0 18px;line-height:1.5;">Take our 9-question ARD assessment to find out your next legal step.</p>
+<a class="banner-btn banner-btn-blue" href="/tools/ard-rights-scan/index.html">Run Free ARD Audit →</a>
+</div>
+</div>
+<p><strong>Child Find</strong> is a legal requirement that mandates <strong>ZAPATA COUNTY ISD</strong> actively search for children who may have disabilities and need special education services. As a parent in ZAPATA COUNTY ISD, you have multiple ways to begin this process.</p><h3>How Parents in ZAPATA COUNTY ISD Can Request Evaluation</h3><p>You don't need to wait for a teacher or school administrator to suggest an evaluation. Parents in <strong>ZAPATA COUNTY ISD</strong> can directly request a <strong>ZAPATA COUNTY ISD child find</strong> evaluation through several methods:</p><ul>
+<li>Submit a <strong>written request</strong> to your school's special education department or the Special Education Director</li>
+<li>Request an evaluation during a parent-teacher conference or school meeting</li>
+<li>Contact ZAPATA COUNTY ISD's Special Education office directly by phone</li>
+<li>Submit your request via email if the district accepts electronic requests</li>
+</ul><p><strong>Important:</strong> While verbal requests are a starting point, always follow up with a written request to create documentation. This written record is critical if disputes arise later regarding timelines or evaluation procedures in ZAPATA COUNTY ISD.</p><h3>What to Include in Your Written Request</h3><p>Your written request for a <strong>ZAPATA COUNTY ISD evaluation request</strong> should be clear and specific. Include your child's name, date of birth, current grade, and specific concerns about their academic or behavioral performance.</p><p>Describe the behaviors or skills you've observed that concern you. Instead of saying "my child struggles in school," provide specific examples like "my child cannot recognize letters after two years of instruction" or "my child has difficulty following multi-step directions." The more detailed your written request, the better ZAPATA COUNTY ISD evaluators can target their assessment.</p><h2>Understanding the ZAPATA COUNTY ISD 45-Day Timeline</h2><p>One of the most important aspects of requesting a <strong>ZAPATA COUNTY ISD FIE evaluation</strong> is understanding the legal timeline. Under federal law, once <strong>ZAPATA COUNTY ISD</strong> receives your written request for evaluation, the district has a specific window to complete the process.</p><h3>The Legal 45-Day Window</h3><p>The <strong>ZAPATA COUNTY ISD 45 day timeline</strong> is a federal requirement that applies to all school districts in Texas, including ZAPATA COUNTY ISD. After ZAPATA COUNTY ISD receives your written request for evaluation, the district must complete the full evaluation and hold an eligibility meeting within 45 calendar days.</p><p>This timeline is important to monitor. Create a calendar with the date you submitted your request and mark the 45-day deadline. In ZAPATA COUNTY ISD, if this timeline is missed without documented justification, you have grounds to file a complaint with the Texas Education Agency.</p><p><strong>Exception:</strong> If you and ZAPATA COUNTY ISD mutually agree in writing to extend the timeline, this deadline can be extended. However, the district cannot unilaterally extend the timeline—any extension requires your written agreement.</p><h2>The ZAPATA COUNTY ISD Special Education Evaluation Process</h2><p>Once your <strong>ZAPATA COUNTY ISD child find</strong> request is accepted, ZAPATA COUNTY ISD will initiate a comprehensive <strong>ZAPATA COUNTY ISD special education evaluation</strong> process. Understanding what happens during this time helps you prepare and advocate effectively for your child.</p><h3>Initial Notification and Permission to Evaluate</h3><p>Within a few days of your request, ZAPATA COUNTY ISD must provide you with written notice of their intent to evaluate your child. This notice from ZAPATA COUNTY ISD should include the areas they plan to assess, the assessment methods they'll use, and information about your procedural rights as a parent.</p><p>ZAPATA COUNTY ISD must also obtain your written consent to conduct the evaluation. You have the right to ask questions, request clarification, and understand exactly what ZAPATA COUNTY ISD plans to assess before giving permission. Don't sign consent forms until you feel confident about the evaluation plan.</p><h3>Types of Assessments in ZAPATA COUNTY ISD Evaluations</h3><p>A comprehensive <strong>ZAPATA COUNTY ISD FIE evaluation</strong> typically includes multiple assessment methods to provide a complete picture of your child's abilities and challenges.</p><ul>
+<li><strong>Cognitive Assessment:</strong> Measures thinking, reasoning, and problem-solving skills</li>
+<li><strong>Academic Achievement Testing:</strong> Evaluates performance in reading, writing, and mathematics</li>
+<li><strong>Speech and Language Assessment:</strong> Examines communication skills if a language disability is suspected</li>
+<li><strong>Occupational or Physical Therapy Evaluation:</strong> Assesses motor skills and self-care abilities if relevant</li>
+<li><strong>Behavioral/Emotional Assessment:</strong> Evaluates social-emotional functioning and behavioral patterns</li>
+<li><strong>Classroom Observations:</strong> ZAPATA COUNTY ISD specialists observe your child in actual learning environments</li>
+<li><strong>Parent and Teacher Input:</strong> Questionnaires and rating scales from adults who know your child well</li>
+</ul><p>ZAPATA COUNTY ISD will assign qualified specialists to conduct these assessments. You can ask about the qualifications of the evaluators and request information about their credentials.</p><h2>Your Rights During the ZAPATA COUNTY ISD Evaluation Process</h2><p>As a parent in ZAPATA COUNTY ISD, you have important legal rights throughout the evaluation and special education process. Understanding these rights empowers you to advocate effectively for your child.</p><h3>Right to Participate in ZAPATA COUNTY ISD Meetings</h3><p>You have the right to participate in all meetings related to your child's <strong>ZAPATA COUNTY ISD special education evaluation</strong>. ZAPATA COUNTY ISD must schedule the eligibility meeting at a time and location that works for you. If you cannot attend in person, ZAPATA COUNTY ISD must offer alternative participation methods, such as phone or video conference.</p><h3>Right to Review Evaluation Results</h3><p>Before the eligibility meeting, <strong>ZAPATA COUNTY ISD</strong> must provide you with a copy of the evaluation results. Review these carefully and ask questions if anything is unclear. This is your opportunity to understand what the <strong>ZAPATA COUNTY ISD FIE evaluation</strong> found about your child.</p><h3>Right to Independent Educational Evaluation (IEE)</h3><p>If you disagree with ZAPATA COUNTY ISD's evaluation results, you have the right to request an Independent Educational Evaluation at public expense. This means ZAPATA COUNTY ISD must pay for an outside evaluator to assess your child if the district's evaluation is found to be inappropriate.</p><h2>Preparing for the Eligibility Meeting in ZAPATA COUNTY ISD</h2><div class="integrated-cta slate" id="inline-bot-3">
+<span style="background:#cbd5e1;color:#0f172a;padding:4px 12px;border-radius:50px;font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.1em;display:inline-block;margin-bottom:12px;">IEP &amp; 504 Planning</span>
+<h3 style="font-family:'Lora',serif;font-size:1.6rem;margin:0 0 10px;color:#fff;border:none;padding:0;">The Accommodations Encyclopedia</h3>
+<p style="font-family:'Source Sans 3',sans-serif;font-size:16px;color:#cbd5e1;margin:0 auto 18px;line-height:1.6;max-width:600px;">Once the evaluation is done, stop guessing what supports to ask for. Use our evidence-based "If/Then" decision matrix to match your child's specific diagnosis to research-backed interventions.</p>
+<a class="banner-btn banner-btn-slate" href="https://buy.stripe.com/3cIcN43JX9Yc7FZ6ixbbG0F" target="_blank">Get the Encyclopedia — $27</a>
+</div><p>The eligibility meeting is where <strong>ZAPATA COUNTY ISD</strong> determines whether your child qualifies for special education services under IDEA. This crucial meeting happens within the <strong>ZAPATA COUNTY ISD 45 day timeline</strong> for evaluation requests.</p><h3>Organize Documentation Before the Meeting</h3><p>Gather any records that support your concerns about your child's development or learning. This might include report cards, previous evaluations, medical records, or documentation of outside services your child receives. Bring this documentation to the eligibility meeting so you can provide context for the ZAPATA COUNTY ISD evaluation findings.</p><h3>Bring Support to the Meeting</h3><p>You don't have to attend the ZAPATA COUNTY ISD eligibility meeting alone. Consider bringing a trusted family member, friend, or advocate who can help you stay organized and advocate for your child's needs. Some parents in ZAPATA COUNTY ISD work with a <strong>special ed advocate ZAPATA COUNTY</strong> to ensure their voice is heard effectively.</p><h3>Prepare Questions for ZAPATA COUNTY ISD</h3><p>Write down questions before the meeting. Ask ZAPATA COUNTY ISD to explain any findings you don't understand. Specifically ask:</p><ul>
+<li>How did ZAPATA COUNTY ISD assess my child in each suspected area of disability?</li>
+<li>What do the evaluation results mean in plain language?</li>
+<li>Does my child meet eligibility criteria for any special education disability category?</li>
+<li>What services would ZAPATA COUNTY ISD recommend if my child is found eligible?</li>
+</ul><h2>If Your Child Qualifies: Next Steps in ZAPATA COUNTY ISD</h2><p>If <strong>ZAPATA COUNTY ISD</strong> determines your child is eligible for special education, the district must develop an Individualized Education Program (IEP) within 30 calendar days. This IEP outlines the special education and related services ZAPATA COUNTY ISD will provide.</p><p>The IEP meeting is another opportunity to advocate for your child's needs. Come prepared with specific goals and services you believe your child needs based on the <strong>ZAPATA COUNTY ISD FIE evaluation</strong> results.</p><h2>If You Disagree with ZAPATA COUNTY ISD Evaluation Results</h2><p>If ZAPATA COUNTY ISD determines your child is not eligible for special education, or if you disagree with their conclusions from the <strong>ZAPATA COUNTY ISD child find</strong> evaluation, you have options.</p><h3>Request an Independent Educational Evaluation</h3><p>You can request an Independent Educational Evaluation (IEE) at ZAPATA COUNTY ISD's expense if you disagree with the district's evaluation. ZAPATA COUNTY ISD must either fund the IEE or file for due process if they believe their evaluation was appropriate.</p><h3>Consider Dispute Resolution Options</h3><p>ZAPATA COUNTY ISD parents have several ways to resolve disagreements about evaluations:</p><ul>
+<li><strong>Mediation:</strong> A neutral third party helps you and ZAPATA COUNTY ISD reach agreement</li>
+<li><strong>Complaint to Texas Education Agency:</strong> File a formal complaint if ZAPATA COUNTY ISD violated procedures</li>
+<li><strong>Due Process Hearing:</strong> Request a formal hearing if disputes cannot be resolved through other means</li>
+</ul><p>Many families in ZAPATA COUNTY find that working with a <strong>special ed advocate ZAPATA COUNTY</strong> or considering a <strong>special education attorney near ZAPATA COUNTY</strong> helps them navigate complex disagreements with the district.</p><h2>Resources for ZAPATA COUNTY ISD Parents</h2><p>Parents navigating the <strong>ZAPATA COUNTY ISD special education evaluation</strong> process should access available resources and support.</p><ul>
+<li><strong>ZAPATA COUNTY ISD Special Education Department:</strong> Contact the department directly with questions about evaluation procedures</li>
+<li><strong>Texas Project FIRST:</strong> Free statewide resource connecting parents with special education information</li>
+<li><strong>Texas Education Agency (TEA):</strong> State agency overseeing special education compliance</li>
+<li><strong>Local Parent Training and Information Center:</strong> Organization providing free training and support to Texas parents</li>
+<li><strong>Special Education Attorney:</strong> Consider consultation if conflicts with ZAPATA COUNTY ISD arise</li>
+</ul><p>Knowledge is power in special education advocacy. Understanding the <strong>ZAPATA COUNTY ISD FIE evaluation</strong> process empowers you to ensure your child receives the support and services needed to succeed in school and beyond.</p></article></div>
+</div>
+<div class="blog-links-section" style="max-width: 850px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+<h3 style="font-family: 'Lora', serif; font-size: 1.3rem; color: #0a2342; margin-top: 0; margin-bottom: 15px;">Helpful Special Education Articles</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 15px;">
+<a href="/blog/what-is-fie" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ What is an FIE?</a>
+<a href="/blog/manifestation-determination" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ Manifestation Determination</a>
+<a href="/blog/fie-evaluation-timeline" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ FIE Evaluation Timeline</a>
+<a href="/blog/what-is-an-ard-meeting" style="color: #1a56db; font-weight: 600; text-decoration: none; background: #f8fbff; padding: 10px 18px; border-radius: 6px; border: 1px solid #dbe8fb; font-family: 'DM Sans', sans-serif;">→ What is an ARD Meeting?</a>
+</div>
+</div>
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-about">
+<img alt="Texas Special Ed Logo" height="auto" src="/images/texasspecialed-logo.png" width="160"/>
+<p>© 2026 Texas Special Education Resources. Not affiliated with the TEA.</p>
+</div>
+</div>
+</footer><script>
+document.addEventListener('DOMContentLoaded', function() {
+    var toggle = document.querySelector('.mobile-menu-toggle');
+    var menu   = document.querySelector('.nav-menu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function() { menu.classList.toggle('active'); });
+    }
+});
+</script>
+
+</div>
+
+
+    <!-- Newsletter Popup -->
+    <div id="newsletterPopup" class="newsletter-popup-overlay">
+        <div class="newsletter-popup-content">
+            <button class="newsletter-popup-close" onclick="closeNewsletterPopup()" aria-label="Close">×</button>
+            
+            <div id="popupForm">
+                <div class="newsletter-popup-header">
+                    <div class="newsletter-popup-icon">📧</div>
+                    <span class="newsletter-popup-tag">Free Weekly Newsletter</span>
+                    <h3>Get Texas Special Ed Guidance Every Week</h3>
+                </div>
+                
+                <div class="newsletter-popup-body">
+                    <ul class="newsletter-popup-benefits">
+                        <li>Real case studies from Texas parents who won their ARD meetings</li>
+                        <li>District-specific timelines and escalation strategies</li>
+                        <li>Policy updates from TEA that affect your rights</li>
+                        <li>Letter templates and meeting prep checklists</li>
+                    </ul>
+                    
+                    <form id="newsletterForm" class="newsletter-popup-form" onsubmit="handleNewsletterSubmit(event)">
+                        <input 
+                            type="email" 
+                            id="popupEmail"
+                            class="newsletter-popup-input"
+                            placeholder="Enter your email address" 
+                            required
+                        >
+                        <button type="submit" class="newsletter-popup-btn" id="submitBtn">
+                            Join 8,200+ Texas Parents →
+                        </button>
+                    </form>
+                    
+                    <p class="newsletter-popup-privacy">
+                        Free forever. Weekly emails. Unsubscribe anytime.<br>
+                        We respect your privacy and never share your email.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="popupSuccess" class="newsletter-popup-success">
+                <div class="newsletter-popup-success-icon">✓</div>
+                <h3>You're on the list!</h3>
+                <p>Check your inbox for a confirmation email. Your first newsletter arrives this Thursday with strategies from parents who successfully navigated the Texas special education system.</p>
+                <button class="newsletter-popup-btn" onclick="closeNewsletterPopup()">
+                    Continue Reading
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const POPUP_CONFIG = {
+            delaySeconds: 10,
+            sessionStorageKey: 'txSpecEdPopupShown',
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (sessionStorage.getItem(POPUP_CONFIG.sessionStorageKey)) {
+                return;
+            }
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('nopopup') === 'true') {
+                return;
+            }
+            
+            setTimeout(function() {
+                const popup = document.getElementById('newsletterPopup');
+                if (popup) {
+                    popup.classList.add('show');
+                    sessionStorage.setItem(POPUP_CONFIG.sessionStorageKey, 'true');
+                }
+            }, POPUP_CONFIG.delaySeconds * 1000);
+        });
+
+        function closeNewsletterPopup() {
+            const popup = document.getElementById('newsletterPopup');
+            if (popup) {
+                popup.classList.remove('show');
+            }
+        }
+
+        if (document.getElementById('newsletterPopup')) {
+            document.getElementById('newsletterPopup').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeNewsletterPopup();
+                }
+            });
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeNewsletterPopup();
+            }
+        });
+
+        async function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            
+            const emailInput = document.getElementById('popupEmail');
+            const submitBtn = document.getElementById('submitBtn');
+            const email = emailInput.value.trim().toLowerCase();
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Subscribing...';
+            
+            try {
+                await saveNewsletterSignup(email);
+                
+                document.getElementById('popupForm').style.display = 'none';
+                document.getElementById('popupSuccess').classList.add('show');
+                
+            } catch (error) {
+                console.error('Newsletter signup error:', error);
+                alert('Something went wrong. Please try again or email us directly.');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Join 8,200+ Texas Parents →';
+            }
+        }
+
+        async function saveNewsletterSignup(email) {
+            const pageUrl = window.location.pathname;
+            const pageTitle = document.title;
+            
+            const districtMatch = pageUrl.match(/\/districts\/([^\/]+)/);
+            const district = districtMatch ? districtMatch[1] : null;
+            
+            const signupData = {
+                email: email,
+                source: 'newsletter_popup',
+                page_url: pageUrl,
+                page_title: pageTitle,
+                district: district,
+                timestamp: new Date().toISOString(),
+                subscribed: true,
+                tags: ['newsletter_popup', district].filter(Boolean)
+            };
+            
+            const response = await fetch('/api/newsletter-signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(signupData)
+            });
+            
+            if (!response.ok) {
+                throw new Error('API error');
+            }
+            
+            return await response.json();
+        }
+    </script>
+
+</body>
+</html>
