@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GVLPE273XH"></script>
@@ -823,9 +824,8 @@
          background: #b8963a;
       }
    </style>
-
-    <!-- Newsletter Popup Styles -->
-    <style>
+<!-- Newsletter Popup Styles -->
+<style>
         .newsletter-popup-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(10, 35, 66, 0.92);
@@ -1021,7 +1021,6 @@
             .newsletter-popup-benefits li { font-size: 14px; }
         }
     </style>
-
 </head>
 <body>
 <!-- NAVBAR -->
@@ -1100,13 +1099,13 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- LEFT: CONTENT -->
 <article class="content-column">
 <h2 style="border-top:none;margin-top:0;padding-top:0;">FIE Meaning: The Full Individual Evaluation Explained</h2>
-<div class="sales-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%); margin: 32px 0;">
+
+<p>If you're navigating special education in Waller ISD for the first time, you've probably heard the term "FIE" and weren't sure what it meant. FIE stands for <strong>Full Individual Evaluation</strong>. It is the comprehensive, multi-area assessment that Waller ISD is legally required to complete before your child can receive special education services, be placed in any special education program, or have an IEP (Individualized Education Program) written.</p>
+<p>This isn't just a routine test — it's a federally mandated process under the Individuals with Disabilities Education Act (IDEA) and Texas Education Code Chapter 29. The FIE is the legal foundation of your child's entire special education journey in Houston.</p><div class="sales-card" style="background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 100%); margin: 32px 0;">
 <h3 style="margin-top:0; color:#fff;">Show the ISD You Mean Business</h3>
 <p style="font-size:15px; color:#cbd5e1; margin-bottom: 24px;">A verbal request has no legal weight. A written letter starts the 45-day clock and forces a response within 15 school days.</p>
 <a href="/resources/Iep-letter.html" style="background:#d4af37; color:#0f172a; padding: 16px 32px; text-decoration: none; border-radius: 6px; font-weight: 700; display: inline-block; font-family: 'DM Sans', sans-serif;">Get Your Letter — $25 →</a>
 </div>
-<p>If you're navigating special education in Waller ISD for the first time, you've probably heard the term "FIE" and weren't sure what it meant. FIE stands for <strong>Full Individual Evaluation</strong>. It is the comprehensive, multi-area assessment that Waller ISD is legally required to complete before your child can receive special education services, be placed in any special education program, or have an IEP (Individualized Education Program) written.</p>
-<p>This isn't just a routine test — it's a federally mandated process under the Individuals with Disabilities Education Act (IDEA) and Texas Education Code Chapter 29. The FIE is the legal foundation of your child's entire special education journey in Houston.</p>
 <div class="pull-quote">
                The FIE is not just a test. It is the legal gateway to services — and you have the power to start the clock the moment you put your request in writing.
             </div>
@@ -1477,59 +1476,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
       });
    </script>
-
-    <!-- Newsletter Popup -->
-    <div id="newsletterPopup" class="newsletter-popup-overlay">
-        <div class="newsletter-popup-content">
-            <button class="newsletter-popup-close" onclick="closeNewsletterPopup()" aria-label="Close">×</button>
-            
-            <div id="popupForm">
-                <div class="newsletter-popup-header">
-                    <div class="newsletter-popup-icon">📧</div>
-                    <span class="newsletter-popup-tag">Free Weekly Newsletter</span>
-                    <h3>Get Texas Special Ed Guidance Every Week</h3>
-                </div>
-                
-                <div class="newsletter-popup-body">
-                    <ul class="newsletter-popup-benefits">
-                        <li>Real case studies from Texas parents who won their ARD meetings</li>
-                        <li>District-specific timelines and escalation strategies</li>
-                        <li>Policy updates from TEA that affect your rights</li>
-                        <li>Letter templates and meeting prep checklists</li>
-                    </ul>
-                    
-                    <form id="newsletterForm" class="newsletter-popup-form" onsubmit="handleNewsletterSubmit(event)">
-                        <input 
-                            type="email" 
-                            id="popupEmail"
-                            class="newsletter-popup-input"
-                            placeholder="Enter your email address" 
-                            required
-                        >
-                        <button type="submit" class="newsletter-popup-btn" id="submitBtn">
+<!-- Newsletter Popup -->
+<div class="newsletter-popup-overlay" id="newsletterPopup">
+<div class="newsletter-popup-content">
+<button aria-label="Close" class="newsletter-popup-close" onclick="closeNewsletterPopup()">×</button>
+<div id="popupForm">
+<div class="newsletter-popup-header">
+<div class="newsletter-popup-icon">📧</div>
+<span class="newsletter-popup-tag">Free Weekly Newsletter</span>
+<h3>Get Texas Special Ed Guidance Every Week</h3>
+</div>
+<div class="newsletter-popup-body">
+<ul class="newsletter-popup-benefits">
+<li>Real case studies from Texas parents who won their ARD meetings</li>
+<li>District-specific timelines and escalation strategies</li>
+<li>Policy updates from TEA that affect your rights</li>
+<li>Letter templates and meeting prep checklists</li>
+</ul>
+<form class="newsletter-popup-form" id="newsletterForm" onsubmit="handleNewsletterSubmit(event)">
+<input class="newsletter-popup-input" id="popupEmail" placeholder="Enter your email address" required="" type="email"/>
+<button class="newsletter-popup-btn" id="submitBtn" type="submit">
                             Join 8,200+ Texas Parents →
                         </button>
-                    </form>
-                    
-                    <p class="newsletter-popup-privacy">
-                        Free forever. Weekly emails. Unsubscribe anytime.<br>
+</form>
+<p class="newsletter-popup-privacy">
+                        Free forever. Weekly emails. Unsubscribe anytime.<br/>
                         We respect your privacy and never share your email.
                     </p>
-                </div>
-            </div>
-            
-            <div id="popupSuccess" class="newsletter-popup-success">
-                <div class="newsletter-popup-success-icon">✓</div>
-                <h3>You're on the list!</h3>
-                <p>Check your inbox for a confirmation email. Your first newsletter arrives this Thursday with strategies from parents who successfully navigated the Texas special education system.</p>
-                <button class="newsletter-popup-btn" onclick="closeNewsletterPopup()">
+</div>
+</div>
+<div class="newsletter-popup-success" id="popupSuccess">
+<div class="newsletter-popup-success-icon">✓</div>
+<h3>You're on the list!</h3>
+<p>Check your inbox for a confirmation email. Your first newsletter arrives this Thursday with strategies from parents who successfully navigated the Texas special education system.</p>
+<button class="newsletter-popup-btn" onclick="closeNewsletterPopup()">
                     Continue Reading
                 </button>
-            </div>
-        </div>
-    </div>
-
-    <script>
+</div>
+</div>
+</div>
+<script>
         const POPUP_CONFIG = {
             delaySeconds: 10,
             sessionStorageKey: 'txSpecEdPopupShown',
@@ -1632,6 +1618,5 @@ document.addEventListener('DOMContentLoaded', function() {
             return await response.json();
         }
     </script>
-
 </body>
 </html>
