@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>TEFA Readiness Check — TexasSpecialEd.com</title>
+   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+   <style>
+      :root {
+         --navy: #0E2340;
+         --navy-mid: #1A3A5C;
+         --teal: #0D7A6B;
+         --teal-light: #E6F5F2;
+         --teal-dark: #084F46;
+         --amber: #C9630A;
+         --amber-light: #FEF3E8;
+         --green: #166534;
+         --green-light: #DCFCE7;
+         --yellow: #854D0E;
+         --yellow-light: #FEF9C3;
+         --orange: #9A3412;
+         --orange-light: #FFF1EB;
+         --red: #991B1B;
+         --red-light: #FEE2E2;
+         --slate: #475569;
+         --muted: #64748B;
+         --border: #E2E8F0;
+         --bg: #FAFAF8;
+         --white: #fff;
+         --text: #1E293B;
+         --serif: 'DM Serif Display', Georgia, serif;
+         --sans: 'DM Sans', system-ui, sans-serif;
+         --shadow: 0 4px 24px rgba(0, 0, 0, .10);
+         --shadow-lg: 0 8px 40px rgba(0, 0, 0, .14);
+      }
+
+      *,
+      *::before,
+      *::after {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0
+      }
+
+      html {
+         scroll-behavior: smooth
+      }
+
+      body {
+         font-family: var(--sans);
+         background: var(--bg);
+         color: var(--text);
+         min-height: 100vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-start;
+         padding: 32px 16px 64px
+      }
+
+      /* ── SHELL ── */
+      .bot-shell {
+         width: 100%;
+         max-width: 580px
+      }
+
+      /* ── HEADER ── */
+      .bot-header {
+         text-align: center;
+         margin-bottom: 28px
+      }
+
+      .bot-logo {
+         font-family: var(--serif);
+         font-size: .95rem;
+         color: var(--muted);
+         margin-bottom: 16px;
+         display: block
+      }
+
+      .bot-header h1 {
+         font-family: var(--serif);
+         font-size: 1.9rem;
+         color: var(--navy);
+         line-height: 1.2;
+         margin-bottom: 8px
+      }
+
+      .bot-header p {
+         font-size: .95rem;
+         color: var(--slate);
+         max-width: 460px;
+         margin: 0 auto
+      }
+
+      /* ── PROGRESS ── */
+      .progress-wrap {
+         margin-bottom: 24px
+      }
+
+      .progress-track {
+         height: 4px;
+         background: var(--border);
+         border-radius: 2px;
+         overflow: hidden
+      }
+
+      .progress-bar {
+         height: 4px;
+         background: var(--teal);
+         border-radius: 2px;
+         transition: width .4s ease
+      }
+
+      .progress-meta {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 8px;
+         font-size: .78rem;
+         color: var(--muted)
+      }
+
+      .progress-meta span:last-child {
+         font-weight: 600;
+         color: var(--navy)
+      }
+
+      /* ── CARD ── */
+      .card {
+         background: var(--white);
+         border-radius: 16px;
+         box-shadow: var(--shadow);
+         padding: 32px;
+         animation: card-in .3s ease;
+      }
+
+      @keyframes card-in {
+         from {
+            opacity: 0;
+            transform: translateY(12px)
+         }
+
+         to {
+            opacity: 1;
+            transform: translateY(0)
+         }
+      }
+
+      /* ── QUESTION ── */
+      .q-eyebrow {
+         font-size: .72rem;
+         font-weight: 700;
+         text-transform: uppercase;
+         letter-spacing: .08em;
+         color: var(--teal);
+         margin-bottom: 10px
+      }
+
+      .q-text {
+         font-family: var(--serif);
+         font-size: 1.3rem;
+         color: var(--navy);
+         line-height: 1.35;
+         margin-bottom: 6px
+      }
+
+      .q-sub {
+         font-size: .85rem;
+         color: var(--muted);
+         margin-bottom: 22px
+      }
+
+      /* ── OPTIONS ── */
+      .options {
+         display: flex;
+         flex-direction: column;
+         gap: 10px
+      }
+
+      .option {
+         display: flex;
+         align-items: center;
+         gap: 14px;
+         padding: 14px 16px;
+         border-radius: 10px;
+         border: 1.5px solid var(--border);
+         background: var(--bg);
+         cursor: pointer;
+         transition: all .18s;
+         text-align: left;
+         font-family: var(--sans);
+         font-size: .93rem;
+         color: var(--text);
+      }
+
+      .option:hover {
+         border-color: var(--teal);
+         background: var(--teal-light);
+         color: var(--navy)
+      }
+
+      .option.selected {
+         border-color: var(--teal);
+         background: var(--teal-light);
+         color: var(--navy);
+         font-weight: 600
+      }
+
+      .option__icon {
+         width: 36px;
+         height: 36px;
+         border-radius: 8px;
+         background: var(--border);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 1.1rem;
+         flex-shrink: 0;
+         transition: background .18s
+      }
+
+      .option:hover .option__icon,
+      .option.selected .option__icon {
+         background: rgba(13, 122, 107, .15)
+      }
+
+      .option__label {
+         flex: 1
+      }
+
+      .option__sub {
+         font-size: .78rem;
+         color: var(--muted);
+         font-weight: 400;
+         display: block;
+         margin-top: 2px
+      }
+
+      .option:hover .option__sub,
+      .option.selected .option__sub {
+         color: var(--teal)
+      }
+
+      /* ── NAV BUTTONS ── */
+      .card-footer {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 24px;
+         gap: 12px
+      }
+
+      .btn {
+         display: inline-flex;
+         align-items: center;
+         gap: 6px;
+         font-family: var(--sans);
+         font-weight: 600;
+         font-size: .9rem;
+         padding: 11px 22px;
+         border-radius: 8px;
+         cursor: pointer;
+         border: none;
+         transition: all .18s;
+         text-decoration: none
+      }
+
+      .btn--primary {
+         background: var(--teal);
+         color: #fff
+      }
+
+      .btn--primary:hover {
+         background: var(--teal-dark)
+      }
+
+      .btn--primary:disabled {
+         background: var(--border);
+         color: var(--muted);
+         cursor: not-allowed
+      }
+
+      .btn--ghost {
+         background: transparent;
+         color: var(--muted);
+         border: 1.5px solid var(--border)
+      }
+
+      .btn--ghost:hover {
+         border-color: var(--slate);
+         color: var(--text)
+      }
+
+      .btn--amber {
+         background: var(--amber);
+         color: #fff
+      }
+
+      .btn--amber:hover {
+         background: #a8520a
+      }
+
+      .btn--navy {
+         background: var(--navy);
+         color: #fff
+      }
+
+      .btn--navy:hover {
+         background: var(--navy-mid)
+      }
+
+      .btn--full {
+         width: 100%;
+         justify-content: center
+      }
+
+      /* ── LANG TOGGLE ── */
+      .lang-toggle {
+         display: flex;
+         gap: 0;
+         border: 1.5px solid var(--border);
+         border-radius: 8px;
+         overflow: hidden;
+         margin-bottom: 20px;
+         width: fit-content;
+         margin-left: auto;
+         margin-right: auto
+      }
+
+      .lang-btn {
+         padding: 7px 18px;
+         font-size: .82rem;
+         font-weight: 600;
+         background: none;
+         border: none;
+         cursor: pointer;
+         color: var(--muted);
+         transition: all .18s;
+         font-family: var(--sans)
+      }
+
+      .lang-btn.active {
+         background: var(--navy);
+         color: #fff
+      }
+
+      /* ── OUTCOME SCREEN ── */
+      .outcome-card {
+         border-radius: 16px;
+         padding: 32px;
+         box-shadow: var(--shadow-lg);
+         animation: card-in .35s ease
+      }
+
+      .outcome-card--green {
+         background: var(--green-light);
+         border: 2px solid #86EFAC
+      }
+
+      .outcome-card--yellow {
+         background: var(--yellow-light);
+         border: 2px solid #FDE047
+      }
+
+      .outcome-card--orange {
+         background: var(--orange-light);
+         border: 2px solid #FCA572
+      }
+
+      .outcome-card--red {
+         background: var(--red-light);
+         border: 2px solid #FCA5A5
+      }
+
+      .outcome-badge {
+         display: inline-flex;
+         align-items: center;
+         gap: 6px;
+         font-size: .72rem;
+         font-weight: 800;
+         text-transform: uppercase;
+         letter-spacing: .08em;
+         padding: 5px 12px;
+         border-radius: 20px;
+         margin-bottom: 14px
+      }
+
+      .outcome-badge--green {
+         background: var(--green);
+         color: #fff
+      }
+
+      .outcome-badge--yellow {
+         background: var(--yellow);
+         color: #fff
+      }
+
+      .outcome-badge--orange {
+         background: var(--orange);
+         color: #fff
+      }
+
+      .outcome-badge--red {
+         background: var(--red);
+         color: #fff
+      }
+
+      .outcome-title {
+         font-family: var(--serif);
+         font-size: 1.6rem;
+         line-height: 1.2;
+         margin-bottom: 10px
+      }
+
+      .outcome-title--green {
+         color: var(--green)
+      }
+
+      .outcome-title--yellow {
+         color: var(--yellow)
+      }
+
+      .outcome-title--orange {
+         color: var(--orange)
+      }
+
+      .outcome-title--red {
+         color: var(--red)
+      }
+
+      .outcome-body {
+         font-size: .93rem;
+         color: var(--slate);
+         margin-bottom: 20px;
+         line-height: 1.7
+      }
+
+      .next-steps {
+         background: rgba(255, 255, 255, .7);
+         border-radius: 10px;
+         padding: 18px 20px;
+         margin-bottom: 20px
+      }
+
+      .next-steps__title {
+         font-size: .78rem;
+         font-weight: 700;
+         text-transform: uppercase;
+         letter-spacing: .07em;
+         color: var(--navy);
+         margin-bottom: 10px
+      }
+
+      .next-steps__list {
+         list-style: none;
+         padding: 0
+      }
+
+      .next-steps__list li {
+         padding: 5px 0 5px 20px;
+         position: relative;
+         font-size: .88rem;
+         color: var(--text)
+      }
+
+      .next-steps__list li::before {
+         content: '→';
+         position: absolute;
+         left: 0;
+         font-weight: 700;
+         color: var(--teal)
+      }
+
+      /* ── EMAIL CAPTURE (post-outcome) ── */
+      .email-capture {
+         background: var(--navy);
+         border-radius: 12px;
+         padding: 22px;
+         margin-top: 20px
+      }
+
+      .email-capture__title {
+         color: #fff;
+         font-weight: 700;
+         font-size: .98rem;
+         margin-bottom: 4px
+      }
+
+      .email-capture__sub {
+         color: rgba(255, 255, 255, .6);
+         font-size: .82rem;
+         margin-bottom: 14px
+      }
+
+      .email-row {
+         display: flex;
+         gap: 8px
+      }
+
+      .email-input {
+         flex: 1;
+         background: rgba(255, 255, 255, .12);
+         border: 1px solid rgba(255, 255, 255, .2);
+         color: #fff;
+         padding: 10px 13px;
+         border-radius: 7px;
+         font-size: .9rem;
+         font-family: var(--sans)
+      }
+
+      .email-input:focus {
+         outline: none;
+         border-color: var(--teal)
+      }
+
+      .email-input::placeholder {
+         color: rgba(255, 255, 255, .3)
+      }
+
+      .email-note {
+         font-size: .72rem;
+         color: rgba(255, 255, 255, .35);
+         margin-top: 8px
+      }
+
+      /* ── SCORE METER ── */
+      .score-meter {
+         display: flex;
+         gap: 5px;
+         margin-bottom: 16px
+      }
+
+      .score-dot {
+         width: 12px;
+         height: 12px;
+         border-radius: 50%;
+         background: var(--border);
+         transition: background .3s
+      }
+
+      .score-dot.active-green {
+         background: #22C55E
+      }
+
+      .score-dot.active-yellow {
+         background: #EAB308
+      }
+
+      .score-dot.active-orange {
+         background: #F97316
+      }
+
+      .score-dot.active-red {
+         background: #EF4444
+      }
+
+      /* ── INTRO ── */
+      .intro-card {
+         text-align: center
+      }
+
+      .intro-card .feature-list {
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+         margin: 20px 0 24px;
+         text-align: left
+      }
+
+      .feature-item {
+         display: flex;
+         align-items: flex-start;
+         gap: 10px;
+         font-size: .88rem;
+         color: var(--slate)
+      }
+
+      .feature-item__icon {
+         font-size: 1rem;
+         flex-shrink: 0;
+         margin-top: 1px
+      }
+
+      .time-badge {
+         display: inline-flex;
+         align-items: center;
+         gap: 6px;
+         background: var(--teal-light);
+         color: var(--teal);
+         font-size: .78rem;
+         font-weight: 600;
+         padding: 5px 12px;
+         border-radius: 20px;
+         margin-bottom: 18px
+      }
+
+      /* ── SUBMITTED ── */
+      .submitted-card {
+         text-align: center;
+         padding: 40px 32px
+      }
+
+      .submitted-icon {
+         font-size: 3rem;
+         margin-bottom: 16px;
+         display: block
+      }
+
+      .submitted-card h2 {
+         font-family: var(--serif);
+         font-size: 1.6rem;
+         color: var(--navy);
+         margin-bottom: 10px
+      }
+
+      .submitted-card p {
+         color: var(--slate);
+         font-size: .93rem
+      }
+
+      /* ── RESPONSIVE ── */
+      @media(max-width:480px) {
+         body {
+            padding: 20px 12px 48px
+         }
+
+         .card {
+            padding: 22px
+         }
+
+         .outcome-card {
+            padding: 22px
+         }
+
+         .email-row {
+            flex-direction: column
+         }
+
+         .bot-header h1 {
+            font-size: 1.5rem
+         }
+
+         .q-text {
+            font-size: 1.15rem
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="bot-shell">
+
+      <!-- ── LANG TOGGLE ── -->
+      <div class="lang-toggle" id="lang-toggle">
+         <button class="lang-btn active" onclick="setLang('en')">English</button>
+         <button class="lang-btn" onclick="setLang('es')">Español</button>
+      </div>
+
+      <!-- ── HEADER ── -->
+      <div class="bot-header">
+         <span class="bot-logo">TexasSpecialEd.com</span>
+         <h1 id="bot-title">Does My Child Qualify for the $30,000 Texas ESA?</h1>
+         <p id="bot-sub">Answer 8 quick questions. We'll tell you exactly where you stand and what to do next.</p>
+      </div>
+
+      <!-- ── PROGRESS (hidden on intro/outcome) ── -->
+      <div class="progress-wrap" id="progress-wrap" style="display:none">
+         <div class="progress-track">
+            <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+         </div>
+         <div class="progress-meta">
+            <span id="progress-label">Question 1 of 8</span>
+            <span id="progress-pct">0%</span>
+         </div>
+      </div>
+
+      <!-- ── MAIN CARD ── -->
+      <div id="bot-card"></div>
+
+   </div>
+
+   <script>
+      /* ════════════════════════════════════════════════
+   COPY — English + Spanish
+════════════════════════════════════════════════ */
+      var COPY = {
+         en: {
+            title: "Does My Child Qualify for the $30,000 Texas ESA?",
+            sub: "Answer 8 quick questions. We'll tell you exactly where you stand and what to do next.",
+            start: "Check My Child's Eligibility",
+            back: "← Back",
+            next: "Next →",
+            finish: "See My Results →",
+            timeNote: "Takes about 90 seconds",
+            features: [{
+                  icon: "⚡",
+                  text: "Instant results — no waiting"
+               },
+               {
+                  icon: "📋",
+                  text: "Personalized next steps based on your answers"
+               },
+               {
+                  icon: "🔒",
+                  text: "Private — no account required to see results"
+               },
+            ],
+            of: "of",
+            question: "Question",
+            emailTitle: "Get your personalized ESA action plan",
+            emailSub: "We'll send a checklist tailored to your results — plus deadline reminders.",
+            emailPlaceholder: "your@email.com",
+            emailBtn: "Send My Action Plan →",
+            emailNote: "No spam. Unsubscribe anytime.",
+            skipEmail: "Skip — just show me resources",
+            submittedTitle: "Check your inbox!",
+            submittedBody: "Your personalized ESA action plan is on its way. Check your email in the next few minutes.",
+            submittedCta: "Back to TEFA Hub →",
+            nextStepsLabel: "Your next steps",
+            questions: [{
+                  id: "state",
+                  eyebrow: "Eligibility — Step 1",
+                  text: "Does your child currently attend or is your child zoned to a Texas public school?",
+                  sub: "TEFA is only available to Texas residents.",
+                  options: [{
+                        icon: "✅",
+                        label: "Yes, Texas public school",
+                        sub: "Enrolled or zoned",
+                        value: "yes"
+                     },
+                     {
+                        icon: "🏠",
+                        label: "We homeschool in Texas",
+                        sub: "Also eligible for TEFA ($2,000)",
+                        value: "homeschool"
+                     },
+                     {
+                        icon: "🏫",
+                        label: "Private school in Texas",
+                        sub: "May still qualify",
+                        value: "private"
+                     },
+                     {
+                        icon: "❌",
+                        label: "No, outside Texas",
+                        sub: "Unfortunately TEFA is Texas-only",
+                        value: "no"
+                     },
+                  ]
+               },
+               {
+                  id: "diagnosis",
+                  eyebrow: "Disability — Step 2",
+                  text: "Does your child have a diagnosed disability?",
+                  sub: "This can be a formal medical diagnosis, a school identification, or a suspected condition.",
+                  options: [{
+                        icon: "📄",
+                        label: "Yes — formal diagnosis",
+                        sub: "Doctor, psychologist, or specialist",
+                        value: "formal"
+                     },
+                     {
+                        icon: "🔍",
+                        label: "Suspected — not yet diagnosed",
+                        sub: "We think something is going on",
+                        value: "suspected"
+                     },
+                     {
+                        icon: "🏫",
+                        label: "School has flagged concerns",
+                        sub: "Teacher or counselor mentioned it",
+                        value: "school"
+                     },
+                     {
+                        icon: "❌",
+                        label: "No known disability",
+                        sub: "Child is generally neurotypical",
+                        value: "none"
+                     },
+                  ]
+               },
+               {
+                  id: "disability_type",
+                  eyebrow: "Disability Type — Step 3",
+                  text: "What best describes your child's disability or area of concern?",
+                  sub: "Select the closest match — this affects the funding tier.",
+                  options: [{
+                        icon: "🧠",
+                        label: "ADHD / Attention difficulties",
+                        sub: "Focus, impulse control, hyperactivity",
+                        value: "adhd"
+                     },
+                     {
+                        icon: "🌟",
+                        label: "Autism Spectrum Disorder",
+                        sub: "ASD, social communication differences",
+                        value: "autism"
+                     },
+                     {
+                        icon: "📚",
+                        label: "Learning disability",
+                        sub: "Dyslexia, dysgraphia, dyscalculia",
+                        value: "ld"
+                     },
+                     {
+                        icon: "💬",
+                        label: "Speech, emotional, or other",
+                        sub: "SLI, ED, OHI, physical/sensory",
+                        value: "other"
+                     },
+                  ]
+               },
+               {
+                  id: "iep_504",
+                  eyebrow: "Current Documentation — Step 4",
+                  text: "Does your child currently have an IEP or a 504 Plan?",
+                  sub: "An IEP (Individualized Education Program) is different from a 504 Plan.",
+                  options: [{
+                        icon: "📋",
+                        label: "Yes — we have an IEP",
+                        sub: "Developed at an ARD meeting",
+                        value: "iep"
+                     },
+                     {
+                        icon: "📑",
+                        label: "Yes — we have a 504 Plan",
+                        sub: "Accommodations only, not full services",
+                        value: "504"
+                     },
+                     {
+                        icon: "🔄",
+                        label: "IEP in progress right now",
+                        sub: "ARD meeting scheduled or evaluation underway",
+                        value: "in_progress"
+                     },
+                     {
+                        icon: "❌",
+                        label: "Neither — no documentation",
+                        sub: "We haven't started this process",
+                        value: "none"
+                     },
+                  ]
+               },
+               {
+                  id: "evaluation",
+                  eyebrow: "School Evaluation — Step 5",
+                  text: "Has the school district completed a formal special education evaluation (FIIE) for your child?",
+                  sub: "This is different from a private evaluation — it must be done by the district.",
+                  options: [{
+                        icon: "✅",
+                        label: "Yes — district evaluation complete",
+                        sub: "We have the written report",
+                        value: "complete"
+                     },
+                     {
+                        icon: "⏳",
+                        label: "In progress — evaluation underway",
+                        sub: "We signed consent, waiting for results",
+                        value: "in_progress"
+                     },
+                     {
+                        icon: "📬",
+                        label: "We requested it, district hasn't started",
+                        sub: "Sent the letter, no response yet",
+                        value: "requested"
+                     },
+                     {
+                        icon: "❌",
+                        label: "No evaluation has been requested",
+                        sub: "We haven't asked yet",
+                        value: "none"
+                     },
+                  ]
+               },
+               {
+                  id: "iep_with_tea",
+                  eyebrow: "IEP Registration — Step 6",
+                  text: "Is your child's IEP on file with the Texas Education Agency (TEA)?",
+                  sub: "The IEP must be submitted to TEA — not just kept at the school — to qualify for the $30,000 tier.",
+                  options: [{
+                        icon: "✅",
+                        label: "Yes — IEP is on file with TEA",
+                        sub: "School confirmed this",
+                        value: "yes"
+                     },
+                     {
+                        icon: "🤷",
+                        label: "Not sure — I'll need to check",
+                        sub: "I didn't know this was required",
+                        value: "unsure"
+                     },
+                     {
+                        icon: "⏳",
+                        label: "IEP exists but I don't know TEA status",
+                        sub: "Need to contact the district",
+                        value: "exists_unsure"
+                     },
+                     {
+                        icon: "❌",
+                        label: "No IEP exists yet",
+                        sub: "This step isn't done",
+                        value: "no"
+                     },
+                  ]
+               },
+               {
+                  id: "income",
+                  eyebrow: "Priority Status — Step 7",
+                  text: "What is your household's approximate annual income range?",
+                  sub: "Lower-income families receive first-priority placement in the TEFA lottery.",
+                  options: [{
+                        icon: "⭐",
+                        label: "Under $60,000",
+                        sub: "Likely ≤200% FPL — highest priority",
+                        value: "tier1"
+                     },
+                     {
+                        icon: "⭐",
+                        label: "$60,000–$150,000",
+                        sub: "May be ≤500% FPL — second priority",
+                        value: "tier2"
+                     },
+                     {
+                        icon: "📊",
+                        label: "Over $150,000",
+                        sub: "Standard applicant pool",
+                        value: "tier3"
+                     },
+                     {
+                        icon: "🔒",
+                        label: "Prefer not to say",
+                        sub: "We'll skip priority calculation",
+                        value: "skip"
+                     },
+                  ]
+               },
+               {
+                  id: "goal",
+                  eyebrow: "Your Goal — Step 8",
+                  text: "What is your primary goal with TEFA?",
+                  sub: "This helps us give you the most relevant next steps.",
+                  options: [{
+                        icon: "🏫",
+                        label: "Move to a private school",
+                        sub: "Find a better fit for my child",
+                        value: "private_school"
+                     },
+                     {
+                        icon: "🏠",
+                        label: "Homeschool my child",
+                        sub: "Use funds for curriculum and tutoring",
+                        value: "homeschool"
+                     },
+                     {
+                        icon: "📈",
+                        label: "Get better services in general",
+                        sub: "Therapy, tutoring, specialists",
+                        value: "services"
+                     },
+                     {
+                        icon: "🔍",
+                        label: "Just exploring options",
+                        sub: "Not sure yet — gathering info",
+                        value: "exploring"
+                     },
+                  ]
+               },
+            ],
+            outcomes: {
+               green: {
+                  badge: "Strong Qualifier",
+                  title: "Your child appears to qualify for the $30,000 TEFA disability tier.",
+                  body: "Based on your answers, you have the core pieces in place. The most important next step is confirming your IEP is on file with TEA before the application window closes — and making sure the IEP accurately reflects your child's needs.",
+                  steps: [
+                     "Confirm your IEP is registered with TEA (call your district's SPED office)",
+                     "Apply at educationfreedom.texas.gov before March 31",
+                     "Download our private school vetting checklist before you choose a placement",
+                     "Read: What private schools are NOT required to provide under TEFA",
+                  ],
+                  cta1Label: "Book a Free Strategy Call",
+                  cta1Url: "/consultation",
+                  cta2Label: "Go to TEFA Hub →",
+                  cta2Url: "/texas-esa-voucher-disability",
+               },
+               yellow: {
+                  badge: "Almost Ready",
+                  title: "You're close — one or two steps away from qualifying.",
+                  body: "You have a diagnosis and some documentation in place, but there's a gap we can help you close quickly. The most common issue at this stage is the IEP not being registered with TEA, or a 504 Plan that needs to be upgraded to a full IEP.",
+                  steps: [
+                     "Request an ARD meeting to convert your 504 to an IEP (you can do this now)",
+                     "Ask your district to confirm IEP submission to TEA in writing",
+                     "Get our sample letter requesting an IEP upgrade",
+                     "Don't miss the March 31 deadline — these steps can move fast with help",
+                  ],
+                  cta1Label: "Get the ESA Strategy Pack — $47",
+                  cta1Url: "/products/esa-ready-pack",
+                  cta2Label: "Read: 504 vs IEP for TEFA →",
+                  cta2Url: "/blog/tefa-504-vs-iep",
+               },
+               orange: {
+                  badge: "Need an IEP First",
+                  title: "Your child needs a formal IEP before they can qualify for the $30,000 tier.",
+                  body: "The good news: if you start the process this week, it may still be possible to get an IEP before the application window closes. The district has 45 school days to complete the evaluation after you submit a written request.",
+                  steps: [
+                     "Send a written evaluation request to your principal and SPED director TODAY",
+                     "Send it via certified mail — this starts the legal 45-day clock",
+                     "Follow up in writing on Day 15, Day 30, and Day 40",
+                     "Consider a free 15-min call with us to assess your timeline",
+                  ],
+                  cta1Label: "Book a Free 15-Min Call",
+                  cta1Url: "/consultation",
+                  cta2Label: "Get the Evaluation Request Letter Template →",
+                  cta2Url: "/products/esa-ready-pack",
+               },
+               red: {
+                  badge: "Let's Talk",
+                  title: "Your situation needs a personalized strategy.",
+                  body: "Based on your answers, there are a few factors that make your path to TEFA qualification more complex — but not impossible. The best next step is a 15-minute call so we can look at your specific situation and map out exactly what's achievable before the deadline.",
+                  steps: [
+                     "Book a free 15-minute call — no obligation",
+                     "Bring any existing school records or evaluations",
+                     "We'll tell you honestly what's possible before March 31",
+                     "And what to do if this cycle's window has passed",
+                  ],
+                  cta1Label: "Book a Free 15-Min Call",
+                  cta1Url: "/consultation",
+                  cta2Label: "Learn About the Full TEFA Process →",
+                  cta2Url: "/texas-esa-voucher-disability",
+               },
+            }
+         },
+
+         es: {
+            title: "¿Mi hijo califica para los $30,000 de la cuenta TEFA de Texas?",
+            sub: "Responde 8 preguntas rápidas. Te diremos exactamente dónde estás y cuál es tu próximo paso.",
+            start: "Verificar la elegibilidad de mi hijo",
+            back: "← Atrás",
+            next: "Siguiente →",
+            finish: "Ver mis resultados →",
+            timeNote: "Toma unos 90 segundos",
+            features: [{
+                  icon: "⚡",
+                  text: "Resultados inmediatos — sin espera"
+               },
+               {
+                  icon: "📋",
+                  text: "Pasos personalizados según tus respuestas"
+               },
+               {
+                  icon: "🔒",
+                  text: "Privado — no necesitas crear una cuenta"
+               },
+            ],
+            of: "de",
+            question: "Pregunta",
+            emailTitle: "Recibe tu plan de acción personalizado para TEFA",
+            emailSub: "Te enviaremos una lista adaptada a tus resultados y recordatorios de fechas límite.",
+            emailPlaceholder: "tu@correo.com",
+            emailBtn: "Enviar mi plan de acción →",
+            emailNote: "Sin spam. Cancela cuando quieras.",
+            skipEmail: "Omitir — solo muéstrame los recursos",
+            submittedTitle: "¡Revisa tu correo!",
+            submittedBody: "Tu plan de acción personalizado para TEFA está en camino. Revisa tu bandeja de entrada en los próximos minutos.",
+            submittedCta: "Volver al Centro de TEFA →",
+            nextStepsLabel: "Tus próximos pasos",
+            questions: [{
+                  id: "state",
+                  eyebrow: "Elegibilidad — Paso 1",
+                  text: "¿Tu hijo asiste actualmente a una escuela pública de Texas o está registrado en una?",
+                  sub: "TEFA solo está disponible para residentes de Texas.",
+                  options: [{
+                        icon: "✅",
+                        label: "Sí, escuela pública de Texas",
+                        sub: "Inscrito o registrado",
+                        value: "yes"
+                     },
+                     {
+                        icon: "🏠",
+                        label: "Educamos en casa en Texas",
+                        sub: "También elegible para TEFA ($2,000)",
+                        value: "homeschool"
+                     },
+                     {
+                        icon: "🏫",
+                        label: "Escuela privada en Texas",
+                        sub: "Puede calificar igual",
+                        value: "private"
+                     },
+                     {
+                        icon: "❌",
+                        label: "No, fuera de Texas",
+                        sub: "Desafortunadamente TEFA es solo para Texas",
+                        value: "no"
+                     },
+                  ]
+               },
+               {
+                  id: "diagnosis",
+                  eyebrow: "Discapacidad — Paso 2",
+                  text: "¿Tu hijo tiene un diagnóstico de discapacidad?",
+                  sub: "Puede ser un diagnóstico médico, una identificación escolar, o una condición sospechada.",
+                  options: [{
+                        icon: "📄",
+                        label: "Sí — diagnóstico formal",
+                        sub: "Doctor, psicólogo o especialista",
+                        value: "formal"
+                     },
+                     {
+                        icon: "🔍",
+                        label: "Sospechado — aún no diagnosticado",
+                        sub: "Creemos que algo está pasando",
+                        value: "suspected"
+                     },
+                     {
+                        icon: "🏫",
+                        label: "La escuela ha notado preocupaciones",
+                        sub: "El maestro o consejero lo mencionó",
+                        value: "school"
+                     },
+                     {
+                        icon: "❌",
+                        label: "No hay discapacidad conocida",
+                        sub: "El niño es generalmente neurotípico",
+                        value: "none"
+                     },
+                  ]
+               },
+               {
+                  id: "disability_type",
+                  eyebrow: "Tipo de Discapacidad — Paso 3",
+                  text: "¿Qué describe mejor la discapacidad o área de preocupación de tu hijo?",
+                  sub: "Selecciona la opción más cercana — esto afecta el nivel de financiamiento.",
+                  options: [{
+                        icon: "🧠",
+                        label: "TDAH / Dificultades de atención",
+                        sub: "Concentración, control de impulsos",
+                        value: "adhd"
+                     },
+                     {
+                        icon: "🌟",
+                        label: "Trastorno del Espectro Autista",
+                        sub: "TEA, diferencias de comunicación social",
+                        value: "autism"
+                     },
+                     {
+                        icon: "📚",
+                        label: "Discapacidad de aprendizaje",
+                        sub: "Dislexia, discalculia, disgrafía",
+                        value: "ld"
+                     },
+                     {
+                        icon: "💬",
+                        label: "Habla, emocional u otro",
+                        sub: "SLI, trastorno emocional, físico/sensorial",
+                        value: "other"
+                     },
+                  ]
+               },
+               {
+                  id: "iep_504",
+                  eyebrow: "Documentación Actual — Paso 4",
+                  text: "¿Tu hijo tiene actualmente un IEP o un Plan 504?",
+                  sub: "Un IEP (Plan de Educación Individualizado) es diferente a un Plan 504.",
+                  options: [{
+                        icon: "📋",
+                        label: "Sí — tenemos un IEP",
+                        sub: "Desarrollado en una reunión ARD",
+                        value: "iep"
+                     },
+                     {
+                        icon: "📑",
+                        label: "Sí — tenemos un Plan 504",
+                        sub: "Solo acomodaciones, no servicios completos",
+                        value: "504"
+                     },
+                     {
+                        icon: "🔄",
+                        label: "IEP en proceso ahora mismo",
+                        sub: "Reunión ARD programada o evaluación en curso",
+                        value: "in_progress"
+                     },
+                     {
+                        icon: "❌",
+                        label: "Ninguno — sin documentación",
+                        sub: "No hemos comenzado este proceso",
+                        value: "none"
+                     },
+                  ]
+               },
+               {
+                  id: "evaluation",
+                  eyebrow: "Evaluación Escolar — Paso 5",
+                  text: "¿El distrito escolar ha completado una evaluación formal de educación especial (FIIE) para tu hijo?",
+                  sub: "Esto es diferente a una evaluación privada — debe ser realizada por el distrito.",
+                  options: [{
+                        icon: "✅",
+                        label: "Sí — evaluación del distrito completa",
+                        sub: "Tenemos el informe escrito",
+                        value: "complete"
+                     },
+                     {
+                        icon: "⏳",
+                        label: "En proceso — evaluación en curso",
+                        sub: "Firmamos el consentimiento, esperando resultados",
+                        value: "in_progress"
+                     },
+                     {
+                        icon: "📬",
+                        label: "La solicitamos, el distrito no ha comenzado",
+                        sub: "Enviamos la carta, sin respuesta aún",
+                        value: "requested"
+                     },
+                     {
+                        icon: "❌",
+                        label: "No se ha solicitado ninguna evaluación",
+                        sub: "Aún no hemos pedido una",
+                        value: "none"
+                     },
+                  ]
+               },
+               {
+                  id: "iep_with_tea",
+                  eyebrow: "Registro del IEP — Paso 6",
+                  text: "¿El IEP de tu hijo está registrado en la Agencia de Educación de Texas (TEA)?",
+                  sub: "El IEP debe estar presentado ante la TEA — no solo guardado en la escuela — para calificar para los $30,000.",
+                  options: [{
+                        icon: "✅",
+                        label: "Sí — el IEP está registrado en TEA",
+                        sub: "La escuela lo confirmó",
+                        value: "yes"
+                     },
+                     {
+                        icon: "🤷",
+                        label: "No estoy seguro/a — debo verificar",
+                        sub: "No sabía que esto era necesario",
+                        value: "unsure"
+                     },
+                     {
+                        icon: "⏳",
+                        label: "El IEP existe pero no sé el estado en TEA",
+                        sub: "Necesito contactar al distrito",
+                        value: "exists_unsure"
+                     },
+                     {
+                        icon: "❌",
+                        label: "No existe ningún IEP todavía",
+                        sub: "Este paso aún no se ha hecho",
+                        value: "no"
+                     },
+                  ]
+               },
+               {
+                  id: "income",
+                  eyebrow: "Estado de Prioridad — Paso 7",
+                  text: "¿Cuál es el rango aproximado de ingresos anuales de tu hogar?",
+                  sub: "Las familias de menores ingresos reciben prioridad en la lotería de TEFA.",
+                  options: [{
+                        icon: "⭐",
+                        label: "Menos de $60,000",
+                        sub: "Probablemente ≤200% del nivel de pobreza — máxima prioridad",
+                        value: "tier1"
+                     },
+                     {
+                        icon: "⭐",
+                        label: "$60,000–$150,000",
+                        sub: "Puede ser ≤500% — segunda prioridad",
+                        value: "tier2"
+                     },
+                     {
+                        icon: "📊",
+                        label: "Más de $150,000",
+                        sub: "Grupo estándar de solicitantes",
+                        value: "tier3"
+                     },
+                     {
+                        icon: "🔒",
+                        label: "Prefiero no decir",
+                        sub: "Omitiremos el cálculo de prioridad",
+                        value: "skip"
+                     },
+                  ]
+               },
+               {
+                  id: "goal",
+                  eyebrow: "Tu Objetivo — Paso 8",
+                  text: "¿Cuál es tu objetivo principal con TEFA?",
+                  sub: "Esto nos ayuda a darte los próximos pasos más relevantes.",
+                  options: [{
+                        icon: "🏫",
+                        label: "Cambiar a una escuela privada",
+                        sub: "Encontrar un mejor ambiente para mi hijo",
+                        value: "private_school"
+                     },
+                     {
+                        icon: "🏠",
+                        label: "Educar a mi hijo en casa",
+                        sub: "Usar los fondos para materiales y tutores",
+                        value: "homeschool"
+                     },
+                     {
+                        icon: "📈",
+                        label: "Obtener mejores servicios en general",
+                        sub: "Terapia, tutores, especialistas",
+                        value: "services"
+                     },
+                     {
+                        icon: "🔍",
+                        label: "Solo estoy explorando opciones",
+                        sub: "Aún no estoy seguro/a — recopilando información",
+                        value: "exploring"
+                     },
+                  ]
+               },
+            ],
+            outcomes: {
+               green: {
+                  badge: "Califica Fuertemente",
+                  title: "Tu hijo parece calificar para el nivel de $30,000 de discapacidad de TEFA.",
+                  body: "Según tus respuestas, tienes los elementos principales en su lugar. El paso más importante es confirmar que el IEP de tu hijo está registrado en la TEA antes de que cierre la ventana de solicitud.",
+                  steps: [
+                     "Confirma que tu IEP está registrado en TEA (llama a la oficina de educación especial del distrito)",
+                     "Aplica en educationfreedom.texas.gov antes del 31 de marzo",
+                     "Descarga nuestra lista de verificación para escuelas privadas antes de elegir",
+                     "Lee: Lo que las escuelas privadas NO están obligadas a proporcionar bajo TEFA",
+                  ],
+                  cta1Label: "Reserva una llamada gratuita",
+                  cta1Url: "/consultation",
+                  cta2Label: "Ir al Centro de TEFA →",
+                  cta2Url: "/esa-texas-espanol",
+               },
+               yellow: {
+                  badge: "Casi Listo",
+                  title: "Estás cerca — a uno o dos pasos de calificar.",
+                  body: "Tienes un diagnóstico y algo de documentación, pero hay una brecha que podemos ayudarte a cerrar rápidamente. El problema más común en esta etapa es el IEP no registrado en TEA, o un Plan 504 que debe convertirse en un IEP completo.",
+                  steps: [
+                     "Solicita una reunión ARD para convertir tu Plan 504 en un IEP (puedes hacerlo ahora)",
+                     "Pide al distrito que confirme por escrito el envío del IEP a TEA",
+                     "Obtén nuestra carta modelo para solicitar una actualización del IEP",
+                     "No pierdas la fecha límite del 31 de marzo — estos pasos pueden avanzar rápido con ayuda",
+                  ],
+                  cta1Label: "Obtén el Paquete ESA Ready — $47",
+                  cta1Url: "/products/esa-ready-pack",
+                  cta2Label: "Leer: Plan 504 vs IEP para TEFA →",
+                  cta2Url: "/blog/tefa-504-vs-iep",
+               },
+               orange: {
+                  badge: "Necesita un IEP Primero",
+                  title: "Tu hijo necesita un IEP formal antes de calificar para el nivel de $30,000.",
+                  body: "La buena noticia: si comienzas el proceso esta semana, todavía puede ser posible obtener un IEP antes de que cierre la ventana de solicitud. El distrito tiene 45 días escolares para completar la evaluación.",
+                  steps: [
+                     "Envía una solicitud de evaluación escrita a tu director y director de educación especial HOY",
+                     "Envíala por correo certificado — esto inicia el reloj legal de 45 días",
+                     "Haz seguimiento por escrito el Día 15, Día 30 y Día 40",
+                     "Considera una llamada gratuita de 15 minutos con nosotros para evaluar tu plazo",
+                  ],
+                  cta1Label: "Reserva una llamada gratuita de 15 minutos",
+                  cta1Url: "/consultation",
+                  cta2Label: "Obtener la plantilla de carta de solicitud →",
+                  cta2Url: "/products/esa-ready-pack",
+               },
+               red: {
+                  badge: "Hablemos",
+                  title: "Tu situación necesita una estrategia personalizada.",
+                  body: "Según tus respuestas, hay varios factores que hacen que tu camino para calificar para TEFA sea más complejo, pero no imposible. El mejor paso es una llamada de 15 minutos para analizar tu situación específica.",
+                  steps: [
+                     "Reserva una llamada gratuita de 15 minutos — sin compromiso",
+                     "Trae cualquier registro escolar o evaluación existente",
+                     "Te diremos honestamente qué es posible antes del 31 de marzo",
+                     "Y qué hacer si la ventana de este ciclo ya cerró",
+                  ],
+                  cta1Label: "Reserva una llamada gratuita de 15 minutos",
+                  cta1Url: "/consultation",
+                  cta2Label: "Conocer el proceso completo de TEFA →",
+                  cta2Url: "/esa-texas-espanol",
+               },
+            }
+         }
+      };
+
+      /* ════════════════════════════════════════════════
+         STATE
+      ════════════════════════════════════════════════ */
+      var state = {
+         lang: 'en',
+         screen: 'intro', // intro | question | outcome | email-submitted
+         step: 0,
+         answers: {},
+         outcome: null, // green | yellow | orange | red
+         email: '',
+      };
+
+      /* ════════════════════════════════════════════════
+         SCORING LOGIC
+        
+        Scoring is additive. Each answer awards points
+        across three dimensions:
+          - iep_ready   (has a compliant IEP on file w/ TEA)
+          - evaluation  (district evaluation status)
+          - eligibility (disability/residency baseline)
+
+        Final outcome:
+          green  = all 3 dimensions strong
+          yellow = 2 of 3 strong, or iep close
+          orange = eligibility OK but IEP missing
+          red    = eligibility issues or TX residency fail
+      ════════════════════════════════════════════════ */
+      function score(answers) {
+         // Hard disqualifiers
+         if (answers.state === 'no') return 'red';
+         if (answers.diagnosis === 'none' && answers.iep_504 === 'none') return 'red';
+
+         // Build score
+         var iepScore = 0;
+         var evalScore = 0;
+         var eligScore = 0;
+
+         // Eligibility baseline
+         if (['yes', 'homeschool', 'private'].includes(answers.state)) eligScore += 2;
+         if (['formal', 'suspected', 'school'].includes(answers.diagnosis)) eligScore += 1;
+         if (['adhd', 'autism', 'ld', 'other'].includes(answers.disability_type)) eligScore += 1;
+
+         // IEP dimension
+         if (answers.iep_504 === 'iep') iepScore += 3;
+         else if (answers.iep_504 === 'in_progress') iepScore += 2;
+         else if (answers.iep_504 === '504') iepScore += 1;
+         // else 0
+
+         if (answers.iep_with_tea === 'yes') iepScore += 3;
+         else if (answers.iep_with_tea === 'exists_unsure') iepScore += 1;
+         else if (answers.iep_with_tea === 'unsure') iepScore += 1;
+         // no = 0
+
+         // Evaluation dimension
+         if (answers.evaluation === 'complete') evalScore += 3;
+         else if (answers.evaluation === 'in_progress') evalScore += 2;
+         else if (answers.evaluation === 'requested') evalScore += 1;
+         // none = 0
+
+         // Determine outcome
+         if (iepScore >= 5 && evalScore >= 3 && eligScore >= 3) return 'green';
+         if (iepScore >= 3 && evalScore >= 2 && eligScore >= 3) return 'yellow';
+         if (eligScore >= 3 && iepScore < 3) return 'orange';
+         return 'red';
+      }
+
+      /* ════════════════════════════════════════════════
+         RENDERERS
+      ════════════════════════════════════════════════ */
+      function setLang(lang) {
+         state.lang = lang;
+         document.getElementById('bot-title').textContent = COPY[lang].title;
+         document.getElementById('bot-sub').textContent = COPY[lang].sub;
+         document.querySelectorAll('.lang-btn').forEach(function(btn, i) {
+            btn.classList.toggle('active', (i === 0 && lang === 'en') || (i === 1 && lang === 'es'));
+         });
+         if (state.screen === 'intro') renderIntro();
+      }
+
+      function renderIntro() {
+         state.screen = 'intro';
+         document.getElementById('progress-wrap').style.display = 'none';
+         var C = COPY[state.lang];
+         var features = C.features.map(function(f) {
+            return '<div class="feature-item"><span class="feature-item__icon">' + f.icon + '</span><span>' + f.text + '</span></div>';
+         }).join('');
+         document.getElementById('bot-card').innerHTML = '<div class="card intro-card">' +
+            '<span class="time-badge">⏱ ' + C.timeNote + '</span>' +
+            '<div class="feature-list">' + features + '</div>' +
+            '<button class="btn btn--primary btn--full" onclick="startQuiz()" style="font-size:1rem;padding:14px">' + C.start + '</button>' +
+            '</div>';
+      }
+
+      function startQuiz() {
+         state.screen = 'question';
+         state.step = 0;
+         state.answers = {};
+         renderQuestion();
+      }
+
+      function renderQuestion() {
+         var C = COPY[state.lang];
+         var q = C.questions[state.step];
+         var tot = C.questions.length;
+         var pct = Math.round((state.step / tot) * 100);
+
+         // Progress
+         document.getElementById('progress-wrap').style.display = 'block';
+         document.getElementById('progress-bar').style.width = pct + '%';
+         document.getElementById('progress-label').textContent = C.question + ' ' + (state.step + 1) + ' ' + C.of + ' ' + tot;
+         document.getElementById('progress-pct').textContent = pct + '%';
+
+         var selected = state.answers[q.id] || null;
+
+         var opts = q.options.map(function(o) {
+            var sel = selected === o.value ? ' selected' : '';
+            return '<button class="option' + sel + '" onclick="selectOption(\'' + q.id + '\',\'' + o.value + '\')">' +
+               '<span class="option__icon">' + o.icon + '</span>' +
+               '<span class="option__label">' + o.label +
+               (o.sub ? '<span class="option__sub">' + o.sub + '</span>' : '') +
+               '</span></button>';
+         }).join('');
+
+         var backBtn = state.step > 0 ?
+            '<button class="btn btn--ghost" onclick="goBack()">' + C.back + '</button>' :
+            '<span></span>';
+         var isLast = state.step === tot - 1;
+         var nextDisabled = !selected ? ' disabled' : '';
+         var nextLabel = isLast ? C.finish : C.next;
+         var nextFn = isLast ? 'finishQuiz()' : 'goNext()';
+
+         document.getElementById('bot-card').innerHTML =
+            '<div class="card">' +
+            '<div class="q-eyebrow">' + q.eyebrow + '</div>' +
+            '<div class="q-text">' + q.text + '</div>' +
+            (q.sub ? '<div class="q-sub">' + q.sub + '</div>' : '') +
+            '<div class="options">' + opts + '</div>' +
+            '<div class="card-footer">' +
+            backBtn +
+            '<button class="btn btn--primary" onclick="' + nextFn + '"' + nextDisabled + '>' + nextLabel + '</button>' +
+            '</div></div>';
+      }
+
+      function selectOption(qId, value) {
+         state.answers[qId] = value;
+         renderQuestion(); // re-render to show selection + enable next
+      }
+
+      function goNext() {
+         var C = COPY[state.lang];
+         var q = C.questions[state.step];
+         if (!state.answers[q.id]) return;
+         state.step++;
+         renderQuestion();
+      }
+
+      function goBack() {
+         if (state.step > 0) {
+            state.step--;
+            renderQuestion();
+         } else renderIntro();
+      }
+
+      function finishQuiz() {
+         state.outcome = score(state.answers);
+         state.screen = 'outcome';
+         document.getElementById('progress-bar').style.width = '100%';
+         document.getElementById('progress-label').textContent = '✓ Complete';
+         document.getElementById('progress-pct').textContent = '100%';
+         renderOutcome();
+      }
+
+      function renderOutcome() {
+         var C = COPY[state.lang];
+         var out = C.outcomes[state.outcome];
+         var colorMap = {
+            green: 'green',
+            yellow: 'yellow',
+            orange: 'orange',
+            red: 'red'
+         };
+         var col = colorMap[state.outcome];
+
+         // Score dots
+         var dotOrder = ['green', 'yellow', 'orange', 'red'];
+         var dotIndex = dotOrder.indexOf(state.outcome);
+         var dots = dotOrder.map(function(d, i) {
+            var active = i <= dotIndex ? ' active-' + d : '';
+            return '<div class="score-dot' + active + '"></div>';
+         }).join('');
+
+         var steps = out.steps.map(function(s) {
+            return '<li>' + s + '</li>';
+         }).join('');
+
+         document.getElementById('bot-card').innerHTML =
+            '<div class="outcome-card outcome-card--' + col + '">' +
+            '<div class="score-meter">' + dots + '</div>' +
+            '<span class="outcome-badge outcome-badge--' + col + '">' + out.badge + '</span>' +
+            '<div class="outcome-title outcome-title--' + col + '">' + out.title + '</div>' +
+            '<div class="outcome-body">' + out.body + '</div>' +
+            '<div class="next-steps">' +
+            '<div class="next-steps__title">' + C.nextStepsLabel + '</div>' +
+            '<ul class="next-steps__list">' + steps + '</ul>' +
+            '</div>' +
+            '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px">' +
+            '<a href="' + out.cta1Url + '" class="btn btn--navy" style="flex:1;justify-content:center">' + out.cta1Label + '</a>' +
+            '<a href="' + out.cta2Url + '" class="btn btn--ghost" style="flex:1;justify-content:center">' + out.cta2Label + '</a>' +
+            '</div>' +
+            '<div class="email-capture">' +
+            '<div class="email-capture__title">' + C.emailTitle + '</div>' +
+            '<div class="email-capture__sub">' + C.emailSub + '</div>' +
+            '<div class="email-row">' +
+            '<input class="email-input" type="email" id="email-field" placeholder="' + C.emailPlaceholder + '" />' +
+            '<button class="btn btn--amber" onclick="submitEmail()">' + C.emailBtn + '</button>' +
+            '</div>' +
+            '<p class="email-note">' + C.emailNote + '</p>' +
+            '<button onclick="skipEmail()" style="background:none;border:none;color:rgba(255,255,255,.45);font-size:.78rem;cursor:pointer;margin-top:8px;font-family:var(--sans);text-decoration:underline">' + C.skipEmail + '</button>' +
+            '</div>' +
+            '</div>';
+      }
+
+      function submitEmail() {
+         var email = document.getElementById('email-field').value.trim();
+         if (!email || !email.includes('@')) {
+            document.getElementById('email-field').style.borderColor = '#EF4444';
+            return;
+         }
+         state.email = email;
+         // In production: POST to your CRM/email endpoint
+         // fetch('/api/subscribe', {method:'POST', headers:{'Content-Type':'application/json'},
+         //   body: JSON.stringify({email: email, outcome: state.outcome, lang: state.lang, answers: state.answers})
+         // });
+         renderSubmitted();
+      }
+
+      function skipEmail() {
+         renderSubmitted(true);
+      }
+
+      function renderSubmitted(skipped) {
+         var C = COPY[state.lang];
+         document.getElementById('bot-card').innerHTML =
+            '<div class="card submitted-card">' +
+            (skipped ?
+               '<span class="submitted-icon">📚</span>' +
+               '<h2>' + C.submittedTitle.replace('Check your inbox!', 'Here are your resources').replace('¡Revisa tu correo!', 'Aquí están tus recursos') + '</h2>' +
+               '<p>' + C.submittedBody.replace('Your personalized ESA action plan is on its way. Check your email in the next few minutes.', 'Visit the TEFA hub for all guides, templates, and deadlines.').replace('Tu plan de acción personalizado para TEFA está en camino. Revisa tu bandeja de entrada en los próximos minutos.', 'Visita el centro de TEFA para todas las guías, plantillas y fechas límite.') + '</p>' :
+               '<span class="submitted-icon">📬</span>' +
+               '<h2>' + C.submittedTitle + '</h2>' +
+               '<p>' + C.submittedBody + '</p>'
+            ) +
+            '<div style="margin-top:24px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap">' +
+            '<a href="/texas-esa-voucher-disability" class="btn btn--primary">' + C.submittedCta + '</a>' +
+            '<button class="btn btn--ghost" onclick="restartQuiz()">Start Over</button>' +
+            '</div>' +
+            '</div>';
+      }
+
+      function restartQuiz() {
+         state.step = 0;
+         state.answers = {};
+         state.outcome = null;
+         state.screen = 'intro';
+         document.getElementById('progress-wrap').style.display = 'none';
+         renderIntro();
+      }
+
+      /* ════════════════════════════════════════════════
+         INIT
+      ════════════════════════════════════════════════ */
+      renderIntro();
+   </script>
+</body>
+
+</html>
