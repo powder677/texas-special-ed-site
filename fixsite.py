@@ -40,8 +40,8 @@ SITE_ROOT = r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site"
 NAV_ITEMS = [
     # label                  root-relative href              extra_css         is_cta
     ("Districts",            "districts/index.html",          "",               False),
-    ("Spanish Districts",    "distritos/index.html",          "",               False),
-    ("Articles",             "articles/index.html",           "",               False),
+    ("Spanish Districts",    "districts/es-index.html",          "",               False),
+    ("Articles",             "blog/index.html",           "",               False),
     ("About",                "about/index.html",              "",               False),
     ("Contact",              "contact/index.html",            "",               False),
     ("Resources",            "resources/index.html",          "",               False),
