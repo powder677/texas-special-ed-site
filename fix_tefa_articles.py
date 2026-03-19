@@ -1,4 +1,18 @@
+import os
+import re
 
+# ======================================================================
+# CONFIGURATION
+# ======================================================================
+DIRS_TO_PROCESS = [
+    r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\tefa\en",
+    r"C:\Users\elisa\OneDrive\Documents\texas-special-ed-site\tefa\es"
+]
+
+# ======================================================================
+# INJECTION BLOCKS
+# ======================================================================
+NEW_FOOTER = """
    <footer class="site-footer">
       <div class="container">
          <div style="display:flex; flex-wrap:wrap; gap:40px; justify-content:space-between; padding-bottom:30px; border-bottom:1px solid rgba(255,255,255,0.1); margin-bottom:20px;">
@@ -21,50 +35,9 @@
          </div>
       </div>
    </footer>
+"""
 
-
-   <script>
-      /* ── Auto-generate TOC from h2 headings if TOC_AUTO=true ── */
-      (function() {
-         var auto = '';
-         if (auto !== 'true') return;
-         var headings = document.querySelectorAll('.post-body h2');
-         var tocList = document.querySelector('.toc__list');
-         if (!tocList) return;
-         tocList.innerHTML = '';
-         headings.forEach(function(h, i) {
-            var id = 'section-' + i;
-            h.id = id;
-            var li = document.createElement('li');
-            var a = document.createElement('a');
-            a.href = '#' + id;
-            a.textContent = h.textContent;
-            li.appendChild(a);
-            tocList.appendChild(li);
-         });
-      })();
-
-      /* ── Highlight active TOC item on scroll ── */
-      (function() {
-         var links = document.querySelectorAll('.toc__list a');
-         if (!links.length) return;
-         window.addEventListener('scroll', function() {
-            var scrollY = window.scrollY + 100;
-            links.forEach(function(link) {
-               var target = document.querySelector(link.getAttribute('href'));
-               if (!target) return;
-               if (target.offsetTop <= scrollY && target.offsetTop + target.offsetHeight > scrollY) {
-                  links.forEach(function(l) {
-                     l.style.color = '';
-                  });
-                  link.style.color = 'var(--teal)';
-               }
-            });
-         });
-      })();
-   </script>
-
-
+POPUP_CODE = """
     <style>
         .newsletter-popup-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
@@ -185,7 +158,48 @@
             }
         }
     </script>
+"""
 
-</body>
+def process_html_files():
+    for dir_path in DIRS_TO_PROCESS:
+        if not os.path.exists(dir_path):
+            print(f"Directory not found: {dir_path}")
+            continue
 
-</html>
+        for filename in os.listdir(dir_path):
+            if not filename.endswith(".html") or filename == "index.html":
+                continue  # Skip hub page, only modify the articles
+
+            file_path = os.path.join(dir_path, filename)
+            
+            with open(file_path, "r", encoding="utf-8") as f:
+                html = f.read()
+
+            # 1. FIX THE LAYOUT CSS (Make mobile-friendly, remove grid)
+            html = re.sub(
+                r'\.post-layout\s*\{\s*display:\s*grid;\s*grid-template-columns:\s*minmax\(0,\s*1fr\)\s*280px;',
+                r'.post-layout { display: block; max-width: 800px; margin: 0 auto;',
+                html
+            )
+
+            # 2. REMOVE THE SIDEBAR
+            html = re.sub(r'<aside class="sidebar".*?</aside>', '', html, flags=re.DOTALL)
+
+            # 3. REMOVE WEIRD EMPTY CTAs AT BOTTOM
+            html = re.sub(r'<section class="post-footer-cta">.*?</section>', '', html, flags=re.DOTALL)
+
+            # 4. REPLACE THE EMPTY FOOTER WITH THE GOOD FOOTER
+            html = re.sub(r'.*?</footer>', NEW_FOOTER, html, flags=re.DOTALL)
+
+            # 5. INJECT NEWSLETTER POPUP BEFORE </body> (Only if it doesn't already exist)
+            if "id=\"newsletterPopup\"" not in html:
+                html = html.replace('</body>', f"{POPUP_CODE}\n</body>")
+
+            # Write the clean HTML back to the file
+            with open(file_path, "w", encoding="utf-8") as f:
+                f.write(html)
+            
+            print(f"✅ Fixed layout, footer, and popup for: {filename}")
+
+if __name__ == "__main__":
+    process_html_files()

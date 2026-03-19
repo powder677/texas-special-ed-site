@@ -1,1291 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Navegando el TDAH en Familias Latinas de Texas: Guía para el Éxito Escolar y el Apoyo Familiar | TexasSpecialEd</title>
-   <meta name="description" content="" />
-   <meta name="keywords" content="" />
-   <link rel="canonical" href="" />
-
-   <!-- Open Graph -->
-   <meta property="og:title" content="Navegando el TDAH en Familias Latinas de Texas: Guía para el Éxito Escolar y el Apoyo Familiar | TexasSpecialEd" />
-   <meta property="og:description" content="" />
-   <meta property="og:url" content="" />
-   <meta property="og:type" content="article" />
-   <meta property="og:image" content="" />
-   <meta property="article:published_time" content="" />
-   <meta property="article:modified_time" content="" />
-
-   <!-- Schema: Article -->
-   <script type="application/ld+json">
-      {
-         "@context": "https://schema.org",
-         "@type": "Article",
-         "headline": "Navegando el TDAH en Familias Latinas de Texas: Guía para el Éxito Escolar y el Apoyo Familiar | TexasSpecialEd",
-         "description": "",
-         "datePublished": "",
-         "dateModified": "",
-         "author": {
-            "@type": "Organization",
-            "name": "TexasSpecialEd.com",
-            "url": ""
-         },
-         "publisher": {
-            "@type": "Organization",
-            "name": "TexasSpecialEd.com",
-            "logo": {
-               "@type": "ImageObject",
-               "url": ""
-            }
-         },
-         "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": ""
-         }
-      }
-   </script>
-
-   <!-- Schema: FAQ (optional — only include if  is true) -->
-   
-   <!--
-    When HAS_FAQ = true, Python outputs:
-    <script type="application/ld+json"></script>
-    When HAS_FAQ = false, Python outputs empty string
-  -->
-
-   <!-- Schema: BreadcrumbList -->
-   <script type="application/ld+json">
-      {
-         "@context": "https://schema.org",
-         "@type": "BreadcrumbList",
-         "itemListElement": [{
-               "@type": "ListItem",
-               "position": 1,
-               "name": "Home",
-               "item": ""
-            },
-            {
-               "@type": "ListItem",
-               "position": 2,
-               "name": "Recursos",
-               "item": ""
-            },
-            {
-               "@type": "ListItem",
-               "position": 3,
-               "name": "Navegando el TDAH en Familias Latinas de Texas: Guía para el Éxito Escolar y el Apoyo Familiar",
-               "item": ""
-            }
-         ]
-      }
-   </script>
-
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-   <style>
-      /* ── DESIGN TOKENS (matches hub template) ── */
-      :root {
-         --navy: #0E2340;
-         --navy-mid: #1A3A5C;
-         --teal: #0D7A6B;
-         --teal-light: #E6F5F2;
-         --amber: #C9630A;
-         --amber-light: #FEF3E8;
-         --red: #B91C1C;
-         --red-light: #FEF2F2;
-         --slate: #475569;
-         --muted: #64748B;
-         --border: #E2E8F0;
-         --bg: #FAFAF8;
-         --white: #FFFFFF;
-         --text: #1E293B;
-         --serif: 'DM Serif Display', Georgia, serif;
-         --sans: 'DM Sans', system-ui, sans-serif;
-         --radius-sm: 6px;
-         --radius-md: 10px;
-         --radius-lg: 16px;
-         --shadow-sm: 0 1px 3px rgba(0, 0, 0, .08);
-         --shadow-md: 0 4px 16px rgba(0, 0, 0, .10);
-      }
-
-      *,
-      *::before,
-      *::after {
-         box-sizing: border-box;
-         margin: 0;
-         padding: 0;
-      }
-
-      html {
-         scroll-behavior: smooth;
-      }
-
-      body {
-         font-family: var(--sans);
-         font-size: 16px;
-         line-height: 1.7;
-         color: var(--text);
-         background: var(--bg);
-      }
-
-      img {
-         max-width: 100%;
-         display: block;
-         border-radius: var(--radius-md);
-      }
-
-      a {
-         color: var(--teal);
-         text-decoration: none;
-      }
-
-      a:hover {
-         text-decoration: underline;
-      }
-
-      /* ── LAYOUT ── */
-      .container {
-         max-width: 900px;
-         margin: 0 auto;
-         padding: 0 24px;
-      }
-
-      /* ── NAV (same as hub) ── */
-      .site-nav {
-         background: var(--navy);
-         padding: 14px 0;
-         position: sticky;
-         top: 0;
-         z-index: 100;
-      }
-
-      .site-nav .container {
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-      }
-
-      .site-nav__logo {
-         font-family: var(--serif);
-         font-size: 1.2rem;
-         color: var(--white);
-         text-decoration: none;
-      }
-
-      .site-nav__links {
-         display: flex;
-         gap: 24px;
-      }
-
-      .site-nav__links a {
-         color: rgba(255, 255, 255, .75);
-         font-size: .9rem;
-         font-weight: 500;
-         transition: color .2s;
-      }
-
-      .site-nav__links a:hover {
-         color: var(--white);
-         text-decoration: none;
-      }
-
-      .site-nav__cta {
-         background: var(--teal);
-         color: var(--white) !important;
-         padding: 8px 18px;
-         border-radius: var(--radius-sm);
-         font-size: .85rem !important;
-      }
-
-      /* ── BREADCRUMB ── */
-      .breadcrumb {
-         background: var(--navy-mid);
-         padding: 10px 0;
-         font-size: .8rem;
-         color: rgba(255, 255, 255, .6);
-      }
-
-      .breadcrumb a {
-         color: rgba(255, 255, 255, .7);
-      }
-
-      .breadcrumb span {
-         margin: 0 6px;
-      }
-
-      /* ── POST HEADER ── */
-      .post-header {
-         background: var(--navy);
-         padding: 56px 0 48px;
-      }
-
-      .post-header__meta {
-         display: flex;
-         align-items: center;
-         gap: 10px;
-         flex-wrap: wrap;
-         margin-bottom: 18px;
-      }
-
-      .post-tag {
-         font-size: .72rem;
-         font-weight: 700;
-         text-transform: uppercase;
-         letter-spacing: .07em;
-         padding: 4px 12px;
-         border-radius: 20px;
-      }
-
-      .post-tag--topic {
-         background: var(--teal);
-         color: var(--white);
-      }
-
-      .post-tag--urgent {
-         background: var(--amber);
-         color: var(--white);
-      }
-
-      .post-tag--espanol {
-         background: #1D6FB5;
-         color: var(--white);
-      }
-
-      .post-header h1 {
-         font-family: var(--serif);
-         font-size: clamp(1.7rem, 4vw, 2.5rem);
-         color: var(--white);
-         font-weight: 400;
-         line-height: 1.2;
-         margin-bottom: 18px;
-      }
-
-      .post-header__sub {
-         font-size: 1.05rem;
-         color: rgba(255, 255, 255, .75);
-         max-width: 680px;
-         margin-bottom: 24px;
-      }
-
-      .post-byline {
-         display: flex;
-         align-items: center;
-         gap: 14px;
-         flex-wrap: wrap;
-         font-size: .83rem;
-         color: rgba(255, 255, 255, .55);
-      }
-
-      .post-byline__sep {
-         opacity: .3;
-      }
-
-      .post-byline__update {
-         color: rgba(255, 255, 255, .7);
-         font-weight: 500;
-      }
-
-      /* ── POST LAYOUT ── */
-      .post-layout {
-         display: grid;
-         grid-template-columns: minmax(0, 1fr) 280px;
-         gap: 48px;
-         padding: 56px 0 80px;
-         align-items: start;
-      }
-
-      /* ── ARTICLE BODY ── */
-      .post-body h2 {
-         font-family: var(--serif);
-         font-size: 1.65rem;
-         color: var(--navy);
-         margin: 40px 0 14px;
-         padding-top: 8px;
-         border-top: 2px solid var(--border);
-      }
-
-      .post-body h2:first-child {
-         margin-top: 0;
-         border-top: none;
-      }
-
-      .post-body h3 {
-         font-size: 1.1rem;
-         font-weight: 700;
-         color: var(--navy-mid);
-         margin: 28px 0 10px;
-      }
-
-      .post-body p {
-         margin-bottom: 18px;
-         color: var(--text);
-         font-size: .97rem;
-      }
-
-      .post-body ul,
-      .post-body ol {
-         margin: 0 0 18px 22px;
-      }
-
-      .post-body li {
-         margin-bottom: 8px;
-         font-size: .97rem;
-      }
-
-      .post-body strong {
-         font-weight: 600;
-         color: var(--navy);
-      }
-
-      .post-body a {
-         color: var(--teal);
-         font-weight: 500;
-      }
-
-      .post-body a[href*="tea.texas.gov"]::after,
-      .post-body a[href*=".gov"]::after {
-         content: ' ↗';
-         font-size: .75em;
-         opacity: .6;
-      }
-
-      /* Callout boxes */
-      .callout {
-         border-radius: var(--radius-md);
-         padding: 18px 22px;
-         margin: 24px 0;
-         font-size: .93rem;
-      }
-
-      .callout--info {
-         background: var(--teal-light);
-         border-left: 4px solid var(--teal);
-      }
-
-      .callout--warning {
-         background: var(--amber-light);
-         border-left: 4px solid var(--amber);
-      }
-
-      .callout--danger {
-         background: var(--red-light);
-         border-left: 4px solid var(--red);
-      }
-
-      .callout__title {
-         font-weight: 700;
-         margin-bottom: 6px;
-         font-size: 1rem;
-      }
-
-      .callout--info .callout__title {
-         color: var(--teal);
-      }
-
-      .callout--warning .callout__title {
-         color: var(--amber);
-      }
-
-      .callout--danger .callout__title {
-         color: var(--red);
-      }
-
-      /* Key number pull-quote */
-      .key-number {
-         background: var(--navy);
-         color: var(--white);
-         border-radius: var(--radius-lg);
-         padding: 24px 28px;
-         margin: 28px 0;
-         display: flex;
-         align-items: center;
-         gap: 20px;
-      }
-
-      .key-number__figure {
-         font-family: var(--serif);
-         font-size: 2.8rem;
-         color: var(--teal);
-         white-space: nowrap;
-      }
-
-      .key-number__text {
-         font-size: .92rem;
-         color: rgba(255, 255, 255, .8);
-      }
-
-      /* Checklist */
-      .checklist {
-         list-style: none;
-         margin: 0 0 20px;
-         padding: 0;
-      }
-
-      .checklist li {
-         padding: 10px 0 10px 32px;
-         position: relative;
-         border-bottom: 1px solid var(--border);
-         font-size: .95rem;
-      }
-
-      .checklist li:last-child {
-         border-bottom: none;
-      }
-
-      .checklist li::before {
-         content: '☐';
-         position: absolute;
-         left: 0;
-         color: var(--teal);
-         font-size: 1.1rem;
-      }
-
-      .checklist li.done::before {
-         content: '☑';
-      }
-
-      /* Step-by-step numbered */
-      .steps-list {
-         list-style: none;
-         padding: 0;
-         margin: 0 0 20px;
-         counter-reset: steps;
-      }
-
-      .steps-list li {
-         counter-increment: steps;
-         padding: 14px 14px 14px 52px;
-         position: relative;
-         margin-bottom: 10px;
-         background: var(--white);
-         border: 1.5px solid var(--border);
-         border-radius: var(--radius-md);
-      }
-
-      .steps-list li::before {
-         content: counter(steps);
-         position: absolute;
-         left: 14px;
-         top: 14px;
-         width: 26px;
-         height: 26px;
-         border-radius: 50%;
-         background: var(--navy);
-         color: var(--white);
-         font-size: .8rem;
-         font-weight: 700;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-      }
-
-      /* Table */
-      .post-table-wrap {
-         overflow-x: auto;
-         margin: 24px 0;
-      }
-
-      .post-table {
-         width: 100%;
-         border-collapse: collapse;
-         font-size: .88rem;
-      }
-
-      .post-table th {
-         background: var(--navy);
-         color: var(--white);
-         padding: 10px 14px;
-         text-align: left;
-         font-weight: 600;
-      }
-
-      .post-table td {
-         padding: 10px 14px;
-         border-bottom: 1px solid var(--border);
-      }
-
-      .post-table tr:nth-child(even) td {
-         background: var(--bg);
-      }
-
-      /* Post CTA box (inline) */
-      .post-cta {
-         background: var(--teal-light);
-         border: 1.5px solid rgba(13, 122, 107, .25);
-         border-radius: var(--radius-lg);
-         padding: 24px 28px;
-         margin: 32px 0;
-      }
-
-      .post-cta__title {
-         font-family: var(--serif);
-         font-size: 1.3rem;
-         color: var(--navy);
-         margin-bottom: 8px;
-      }
-
-      .post-cta__body {
-         font-size: .9rem;
-         color: var(--slate);
-         margin-bottom: 16px;
-      }
-
-      .btn {
-         display: inline-block;
-         font-weight: 600;
-         font-size: .9rem;
-         padding: 12px 24px;
-         border-radius: var(--radius-sm);
-         cursor: pointer;
-         border: none;
-         transition: all .2s;
-         text-decoration: none !important;
-      }
-
-      .btn--primary {
-         background: var(--teal);
-         color: var(--white);
-      }
-
-      .btn--primary:hover {
-         background: #0A6659;
-      }
-
-      .btn--amber {
-         background: var(--amber);
-         color: var(--white);
-      }
-
-      .btn--amber:hover {
-         background: #a8520a;
-      }
-
-      /* ── SIDEBAR ── */
-      .sidebar {
-         display: flex;
-         flex-direction: column;
-         gap: 20px;
-         position: sticky;
-         top: 80px;
-      }
-
-      /* TOC */
-      .toc {
-         background: var(--white);
-         border: 1.5px solid var(--border);
-         border-radius: var(--radius-lg);
-         padding: 20px 22px;
-      }
-
-      .toc__title {
-         font-size: .8rem;
-         font-weight: 700;
-         text-transform: uppercase;
-         letter-spacing: .07em;
-         color: var(--muted);
-         margin-bottom: 14px;
-      }
-
-      .toc__list {
-         list-style: none;
-         padding: 0;
-      }
-
-      .toc__list li {
-         padding: 4px 0;
-      }
-
-      .toc__list a {
-         font-size: .85rem;
-         color: var(--slate);
-         font-weight: 500;
-      }
-
-      .toc__list a:hover {
-         color: var(--teal);
-         text-decoration: none;
-      }
-
-      /* Sidebar CTA card */
-      .sidebar-cta {
-         background: var(--navy);
-         border-radius: var(--radius-lg);
-         padding: 22px;
-         color: var(--white);
-      }
-
-      .sidebar-cta__eyebrow {
-         font-size: .7rem;
-         font-weight: 700;
-         text-transform: uppercase;
-         letter-spacing: .08em;
-         color: var(--teal);
-         margin-bottom: 8px;
-      }
-
-      .sidebar-cta__title {
-         font-family: var(--serif);
-         font-size: 1.2rem;
-         color: var(--white);
-         margin-bottom: 10px;
-      }
-
-      .sidebar-cta__body {
-         font-size: .83rem;
-         color: rgba(255, 255, 255, .7);
-         margin-bottom: 16px;
-      }
-
-      /* Author card */
-      .author-card {
-         background: var(--white);
-         border: 1.5px solid var(--border);
-         border-radius: var(--radius-lg);
-         padding: 18px;
-         display: flex;
-         flex-direction: column;
-         gap: 10px;
-      }
-
-      .author-card__label {
-         font-size: .7rem;
-         font-weight: 700;
-         text-transform: uppercase;
-         letter-spacing: .08em;
-         color: var(--muted);
-      }
-
-      .author-card__name {
-         font-weight: 700;
-         font-size: .95rem;
-         color: var(--navy);
-      }
-
-      .author-card__bio {
-         font-size: .82rem;
-         color: var(--slate);
-         line-height: 1.6;
-      }
-
-      /* Related posts in sidebar */
-      .related-posts {
-         background: var(--white);
-         border: 1.5px solid var(--border);
-         border-radius: var(--radius-lg);
-         padding: 18px 20px;
-      }
-
-      .related-posts__title {
-         font-size: .8rem;
-         font-weight: 700;
-         text-transform: uppercase;
-         letter-spacing: .07em;
-         color: var(--muted);
-         margin-bottom: 12px;
-      }
-
-      .related-link {
-         display: block;
-         padding: 8px 0;
-         border-bottom: 1px solid var(--border);
-         font-size: .85rem;
-         font-weight: 500;
-         color: var(--navy-mid);
-      }
-
-      .related-link:last-child {
-         border-bottom: none;
-         padding-bottom: 0;
-      }
-
-      .related-link:hover {
-         color: var(--teal);
-         text-decoration: none;
-      }
-
-      .related-link__tag {
-         font-size: .72rem;
-         color: var(--muted);
-         display: block;
-         margin-bottom: 2px;
-      }
-
-      /* ── SOURCES / CITATIONS ── */
-      .sources-section {
-         border-top: 2px solid var(--border);
-         padding: 32px 0 0;
-         margin-top: 40px;
-      }
-
-      .sources-title {
-         font-size: .8rem;
-         font-weight: 700;
-         text-transform: uppercase;
-         letter-spacing: .07em;
-         color: var(--muted);
-         margin-bottom: 14px;
-      }
-
-      .sources-list {
-         list-style: none;
-         padding: 0;
-      }
-
-      .sources-list li {
-         font-size: .82rem;
-         color: var(--muted);
-         padding: 5px 0 5px 16px;
-         position: relative;
-      }
-
-      .sources-list li::before {
-         content: '›';
-         position: absolute;
-         left: 0;
-         color: var(--teal);
-      }
-
-      .sources-list a {
-         color: var(--teal);
-      }
-
-      /* ── DISCLAIMER ── */
-      .post-disclaimer {
-         background: var(--bg);
-         border: 1px solid var(--border);
-         border-radius: var(--radius-md);
-         padding: 14px 18px;
-         font-size: .78rem;
-         color: var(--muted);
-         margin-top: 24px;
-         line-height: 1.6;
-      }
-
-      /* ── POST FOOTER CTA ── */
-      .post-footer-cta {
-         background: var(--navy);
-         padding: 56px 0;
-      }
-
-      .post-footer-cta .container {
-         text-align: center;
-      }
-
-      .post-footer-cta h2 {
-         font-family: var(--serif);
-         color: var(--white);
-         margin-bottom: 12px;
-      }
-
-      .post-footer-cta p {
-         color: rgba(255, 255, 255, .7);
-         margin-bottom: 24px;
-         max-width: 500px;
-         margin-left: auto;
-         margin-right: auto;
-      }
-
-      /* ── SITE FOOTER ── */
-      .site-footer {
-         background: var(--navy);
-         color: rgba(255, 255, 255, .6);
-         padding: 40px 0 20px;
-         border-top: 1px solid rgba(255, 255, 255, .1);
-      }
-
-      .footer-bottom {
-         display: flex;
-         justify-content: space-between;
-         flex-wrap: wrap;
-         gap: 8px;
-         font-size: .8rem;
-      }
-
-      .footer-disclaimer {
-         font-size: .78rem;
-         color: rgba(255, 255, 255, .35);
-         margin-top: 12px;
-         line-height: 1.6;
-      }
-
-      /* ── RESPONSIVE ── */
-      @media (max-width: 768px) {
-         .post-layout {
-            grid-template-columns: 1fr;
-         }
-
-         .sidebar {
-            position: static;
-         }
-
-         .site-nav__links {
-            display: none;
-         }
-      }
-   </style>
-</head>
-
-<body>
-
-   <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
-   
-
-
-
-<style id="nav-std-css">
-/* ── Standardized TexasSpecialEd Nav ── */
-.site-nav{
-  background:#0E2340;
-  position:sticky;top:0;z-index:200;
-  box-shadow:0 2px 12px rgba(0,0,0,.25);
-  font-family:'DM Sans',system-ui,sans-serif;
-}
-.site-nav__inner{
-  display:flex;align-items:stretch;
-  justify-content:space-between;
-  height:56px;
-  max-width:1100px;margin:0 auto;padding:0 24px;
-}
-.site-nav__logo{
-  font-family:'DM Serif Display',Georgia,serif;
-  font-size:1.1rem;color:#fff;
-  display:flex;align-items:center;
-  text-decoration:none;white-space:nowrap;
-  flex-shrink:0;padding-right:12px;
-}
-.site-nav__links{display:flex;align-items:stretch;gap:0}
-.site-nav__link{
-  display:flex;align-items:center;padding:0 14px;
-  color:rgba(255,255,255,.7);font-size:.85rem;font-weight:500;
-  border-bottom:3px solid transparent;
-  text-decoration:none;white-space:nowrap;
-  transition:color .18s,background .18s;
-}
-.site-nav__link:hover{
-  color:#fff;background:rgba(255,255,255,.06);
-  text-decoration:none;
-}
-/* TEFA — pulsing amber tab */
-.site-nav__link.nav-tefa{
-  background:rgba(201,99,10,.18);
-  color:#FFB366 !important;
-  border-bottom-color:#C9630A;
-  font-weight:600;gap:7px;
-}
-.site-nav__link.nav-tefa:hover{
-  background:rgba(201,99,10,.32)!important;
-  color:#FFD0A0!important;
-}
-.nav-pulse{
-  width:7px;height:7px;border-radius:50%;
-  background:#C9630A;flex-shrink:0;
-  position:relative;display:inline-block;
-}
-.nav-pulse::before{
-  content:'';position:absolute;top:50%;left:50%;
-  transform:translate(-50%,-50%);
-  width:7px;height:7px;border-radius:50%;
-  background:#C9630A;
-  animation:nav-pulse 1.8s ease-out infinite;
-}
-@keyframes nav-pulse{
-  0%{transform:translate(-50%,-50%) scale(1);opacity:.9}
-  70%{transform:translate(-50%,-50%) scale(3.2);opacity:0}
-  100%{transform:translate(-50%,-50%) scale(1);opacity:0}
-}
-/* Get Your Letter — CTA button */
-.site-nav__link.nav-cta{
-  background:#0D7A6B;color:#fff!important;
-  font-weight:600;border-radius:0;
-  padding:0 18px;
-  border-bottom:3px solid transparent;
-}
-.site-nav__link.nav-cta:hover{background:#084F46!important}
-/* Hamburger (mobile) */
-.site-nav__hamburger{
-  display:none;flex-direction:column;justify-content:center;
-  gap:5px;padding:0 12px;cursor:pointer;background:none;border:none;
-}
-.site-nav__hamburger span{
-  display:block;width:22px;height:2px;background:rgba(255,255,255,.8);
-  border-radius:2px;transition:all .2s;
-}
-@media(max-width:768px){
-  .site-nav__links{display:none;flex-direction:column;position:absolute;
-    top:56px;left:0;right:0;background:#0E2340;padding:8px 0;z-index:300;
-    box-shadow:0 8px 20px rgba(0,0,0,.3);}
-  .site-nav__links.open{display:flex}
-  .site-nav__link{padding:12px 24px;border-bottom:none;border-left:3px solid transparent;}
-  .site-nav__link.nav-tefa{border-left-color:#C9630A}
-  .site-nav__link.nav-cta{margin:8px 16px;border-radius:6px;justify-content:center}
-  .site-nav__hamburger{display:flex}
-  .site-nav__inner{position:relative}
-}
-</style>
-
-<nav class="site-nav" role="navigation" aria-label="Main navigation">
-  <div class="site-nav__inner">
-    <a href="../../index.html" class="site-nav__logo">TexasSpecialEd.com</a>
-    <button class="site-nav__hamburger" aria-label="Toggle menu" onclick="(function(){var l=document.querySelector('.site-nav__links');l.classList.toggle('open')})()">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="site-nav__links">
-      <a href="../../districts/index.html" class="site-nav__link">Districts</a>
-      <a href="../../districts/es-index.html" class="site-nav__link">Spanish Districts</a>
-      <a href="../../blog/index.html" class="site-nav__link">Articles</a>
-      <a href="../../about/index.html" class="site-nav__link">About</a>
-      <a href="../../contact/index.html" class="site-nav__link">Contact</a>
-      <a href="../../resources/index.html" class="site-nav__link">Resources</a>
-      <a href="../en/index.html" class="site-nav__link nav-tefa"><span class="nav-pulse" aria-hidden="true"></span>TEFA</a>
-      <a href="../../tools/tefa-scan/index.html" class="site-nav__link nav-cta">Get Your Letter</a>
-    </div>
-  </div>
-</nav>
-
-   <!-- ═══════════════════════════════ BREADCRUMB ═══════════════════════ -->
-   <div class="breadcrumb">
-      <div class="container">
-         <a href="">Home</a>
-         <span>›</span>
-         <a href="">Recursos</a>
-         <span>›</span>
-         <span></span>
-      </div>
-   </div>
-
-   <!-- ═══════════════════════════════ POST HEADER ══════════════════════ -->
-   <header class="post-header">
-      <div class="container">
-         <div class="post-header__meta">
-            <span class="post-tag post-tag--topic"></span>
-            
-            <!-- Python outputs <span class="post-tag post-tag--urgent">⚡ Time-Sensitive</span> if IS_URGENT=true, else empty string -->
-            <span class="post-tag post-tag--espanol">En Español</span>
-            <!-- Python outputs <span class="post-tag post-tag--espanol">En Español</span> if IS_SPANISH=true -->
-         </div>
-         <h1>Navegando el TDAH en Familias Latinas de Texas: Guía para el Éxito Escolar y el Apoyo Familiar</h1>
-         <p class="post-header__sub"></p>
-         <div class="post-byline">
-            <span>By <strong style="color:rgba(255,255,255,.85)">TexasSpecialEd Advocate</strong></span>
-            <span class="post-byline__sep">|</span>
-            <span>March 18, 2026</span>
-            <span class="post-byline__sep">|</span>
-            <span class="post-byline__update">Updated March 18, 2026</span>
-            <span class="post-byline__sep">|</span>
-            <span> min read</span>
-         </div>
-      </div>
-   </header>
-
-   <!-- ═══════════════════════════════ POST BODY + SIDEBAR ══════════════ -->
-   <div class="container">
-      <div class="post-layout">
-
-         <!-- ── MAIN ARTICLE ── -->
-         <article class="post-body" id="post-content">
-
-            <!--
-        ════════════════════════════════════════════
-        PYTHON INSERTS RENDERED MARKDOWN HERE
-        All sections below are available as reusable
-        HTML snippets — Python selects which to inject
-        ════════════════════════════════════════════
-      -->
-
-            <p>¡Absolutamente! Aquí tienes un artículo de blog optimizado para SEO, con un tono de "Éxito Escolar" y "familismo", enfocado en recursos para la familia y el apoyo al hijo, sin etiquetas pesadas de discapacidad, y en formato Markdown limpio.</p>
-<hr />
-<h2>Navegando el TDAH en Familias Latinas de Texas: Guía para el Éxito Escolar y el Apoyo Familiar</h2>
-<p>En el corazón de cada familia latina late un deseo profundo: ver a nuestros hijos prosperar y alcanzar su máximo potencial. La educación es una piedra angular de este sueño, y cuando nuestros hijos enfrentan desafíos únicos, como el Trastorno por Déficit de Atención e Hiperactividad (TDAH), es fundamental entender cómo el sistema escolar puede ser un aliado.</p>
-<p>En Texas, las familias latinas tienen una riqueza cultural que influye en cómo entendemos y abordamos el TDAH. Este artículo es una guía para empoderar a nuestros padres, desmitificar el proceso de apoyo escolar y asegurar que cada niño reciba las herramientas para brillar.</p>
-<h3>Entendiendo el TDAH en Nuestras Familias Latinas en Texas</h3>
-<p>El TDAH (o ADHD en inglés) es una condición neurobiológica que afecta la atención, la impulsividad y la hiperactividad. No es una cuestión de "mala crianza" o falta de esfuerzo, sino una forma diferente en que el cerebro procesa la información.</p>
-<h4>El Estigma del TDAH: Un Obstáculo para el Apoyo Escolar</h4>
-<p>Para muchas familias latinas, hablar de condiciones como el TDAH puede ser difícil. Existe un <strong>estigma</strong> arraigado en torno a la salud mental y las diferencias de aprendizaje, a menudo por:</p>
-<ul>
-<li><strong>Miedo al "qué dirán":</strong> La preocupación de que un diagnóstico pueda ser visto como una falla familiar o una etiqueta negativa para el niño.</li>
-<li><strong>Creencias culturales:</strong> A veces, los comportamientos asociados con el TDAH pueden interpretarse como falta de disciplina o "mala educación" en lugar de una condición neurológica.</li>
-<li><strong>Desconfianza en el sistema:</strong> Históricamente, algunas comunidades han tenido experiencias negativas con instituciones, lo que genera reticencia a buscar ayuda externa.</li>
-</ul>
-<p>Este estigma puede llevar a que las familias duden en solicitar una evaluación escolar para sus hijos. Las <strong>tasas de solicitud de evaluación</strong> pueden ser más bajas entre las familias latinas, lo que significa que muchos niños que podrían beneficiarse de apoyo adicional no lo reciben. Es crucial recordar que buscar ayuda es un acto de amor y fortaleza, no de debilidad.</p>
-<h4>Nuestros Valores: 'Familismo' y 'Respeto' en el Camino Escolar</h4>
-<p>Nuestros valores culturales, como el <strong>'familismo'</strong> y el <strong>'respeto'</strong>, son pilares de nuestra identidad, pero pueden interactuar de maneras complejas con el proceso de educación especial:</p>
-<ul>
-<li><strong>'Familismo' (Unidad Familiar):</strong> La fuerte cohesión familiar es una gran fortaleza. Significa que la familia entera se une para apoyar al niño. Sin embargo, a veces puede llevar a la creencia de que los problemas deben resolverse "dentro de la familia", lo que puede retrasar la búsqueda de apoyo escolar o profesional. Es importante entender que el apoyo escolar es una extensión de ese cuidado familiar, una colaboración con expertos para el bienestar del niño.</li>
-<li><strong>'Respeto' (Hacia la Autoridad):</strong> El profundo respeto por los maestros y las figuras de autoridad es admirable. Sin embargo, puede hacer que los padres se sientan incómodos al cuestionar las decisiones escolares, pedir explicaciones o abogar firmemente por las necesidades de su hijo. Es vital recordar que el respeto es mutuo, y los maestros y administradores escolares también respetan el derecho de los padres a participar activamente en la educación de sus hijos. Abogar por su hijo es un acto de amor y responsabilidad, no de falta de respeto.</li>
-</ul>
-<h3>¿Reciben Nuestros Hijos el Apoyo que Necesitan? La Identificación del TDAH</h3>
-<p>La ley federal IDEA (Individuals with Disabilities Education Act) garantiza que los estudiantes con discapacidades reciban educación pública gratuita y apropiada. El TDAH a menudo califica bajo la categoría de "Otro Deterioro de la Salud" (OHI por sus siglas en inglés).</p>
-<h4>¿Están Nuestros Estudiantes Subidentificados para Servicios IDEA?</h4>
-<p>Lamentablemente, la investigación sugiere que los estudiantes latinos con TDAH pueden estar <strong>subidentificados</strong> para los servicios de educación especial de IDEA en comparación con sus compañeros. Esto puede deberse a varios factores:</p>
-<ul>
-<li><strong>Barreras lingüísticas:</strong> La comunicación puede ser un desafío si los padres no dominan el inglés y no se proporcionan intérpretes calificados.</li>
-<li><strong>Diferencias culturales en la expresión:</strong> Los síntomas del TDAH pueden manifestarse de manera diferente o interpretarse de forma distinta en diversos contextos culturales.</li>
-<li><strong>Falta de confianza o conocimiento:</strong> Los padres pueden no estar al tanto de sus derechos o de los servicios disponibles, o pueden desconfiar del sistema escolar.</li>
-<li><strong>Sesgos en la evaluación:</strong> Los evaluadores pueden no estar familiarizados con las normas culturales o lingüísticas de los estudiantes latinos, lo que lleva a diagnósticos inexactos o incompletos.</li>
-</ul>
-<p>Es fundamental que los padres latinos se sientan empoderados para preguntar, buscar información y abogar por una evaluación completa y culturalmente sensible para sus hijos.</p>
-<h3>Comunicando el TDAH: Un Enfoque Culturalmente Sensible para Padres Hispanohablantes</h3>
-<p>La forma en que hablamos sobre el TDAH puede marcar una gran diferencia en cómo las familias lo aceptan y buscan apoyo.</p>
-<h4>Enmarcando el TDAH: De Desafío a Fortaleza</h4>
-<p>En lugar de usar un lenguaje que estigmatice o etiquete, podemos usar un <strong>lenguaje positivo y empoderador</strong> que resuene con nuestros valores:</p>
-<ul>
-<li><strong>Enfoque en el cerebro:</strong> En lugar de "mi hijo tiene un trastorno", podemos decir "el cerebro de mi hijo funciona de una manera muy activa y creativa, lo que a veces le dificulta concentrarse en ciertas tareas".</li>
-<li><strong>Energía y creatividad:</strong> "Mi hijo tiene mucha energía y una mente muy rápida, lo que lo hace muy creativo, pero a veces necesita ayuda para canalizar esa energía en la escuela".</li>
-<li><strong>Estilo de aprendizaje único:</strong> "Mi hijo tiene un estilo de aprendizaje único y necesita estrategias específicas para tener éxito en el aula".</li>
-<li><strong>No es culpa de nadie:</strong> Es crucial enfatizar que el TDAH no es culpa del niño ni de los padres. Es una característica neurológica que requiere comprensión y apoyo.</li>
-<li><strong>Buscando apoyo, no una etiqueta:</strong> "Estamos buscando apoyo para ayudar a nuestro hijo a desarrollar sus habilidades y tener éxito en la escuela, no estamos buscando una etiqueta".</li>
-</ul>
-<p>Al usar este tipo de lenguaje, ayudamos a las familias a ver el TDAH no como una deficiencia, sino como una característica que, con el apoyo adecuado, puede convertirse en una fortaleza.</p>
-<h3>El Proceso de Evaluación Escolar para el TDAH: Un Camino Hacia el Éxito</h3>
-<p>Si sospecha que su hijo podría tener TDAH y necesita apoyo en la escuela, el primer paso es solicitar una evaluación escolar. Este proceso está diseñado para identificar las necesidades de su hijo y determinar si califica para servicios de educación especial.</p>
-<h4>¿Qué Implica una Evaluación Escolar para TDAH/OHI?</h4>
-<ol>
-<li><strong>Solicitud de Evaluación:</strong> Usted, como padre, o el personal de la escuela, puede solicitar una evaluación por escrito. Es mejor hacerlo por escrito para tener un registro.</li>
-<li><strong>Consentimiento de los Padres:</strong> La escuela debe obtener su consentimiento por escrito antes de realizar cualquier evaluación. Usted tiene derecho a entender lo que se evaluará y por qué.</li>
-<li><strong>Recopilación de Información:</strong> Un equipo de profesionales (psicólogos escolares, maestros, especialistas) recopilará información sobre su hijo. Esto puede incluir:<ul>
-<li><strong>Observaciones:</strong> En el aula y otros entornos escolares.</li>
-<li><strong>Entrevistas:</strong> Con usted, su hijo y los maestros.</li>
-<li><strong>Pruebas estandarizadas:</strong> Para evaluar la atención, la memoria, el funcionamiento ejecutivo y el rendimiento académico.</li>
-<li><strong>Revisión de registros:</strong> Calificaciones, informes de comportamiento, etc.</li>
-</ul>
-</li>
-<li><strong>Reunión de Elegibilidad:</strong> Una vez completadas las evaluaciones, se programará una reunión con usted y el equipo escolar. En esta reunión, se revisarán los resultados y se determinará si su hijo califica para los servicios de educación especial bajo IDEA, a menudo bajo la categoría de "Otro Deterioro de la Salud" (OHI) debido al TDAH.</li>
-<li><strong>Desarrollo del IEP o Plan 504:</strong> Si su hijo califica, el equipo trabajará con usted para desarrollar un Plan de Educación Individualizado (IEP) o un Plan 504. Estos documentos describen los objetivos, servicios, adaptaciones y apoyos que su hijo recibirá en la escuela.</li>
-</ol>
-<h4>Preparando a Nuestra Familia para la Evaluación: ¡Su Voz es Poderosa!</h4>
-<p>Como padres, ustedes son los expertos en sus hijos. Su participación activa es crucial para una evaluación exitosa:</p>
-<ul>
-<li><strong>Documente sus Observaciones:</strong> Anote ejemplos específicos de los comportamientos de su hijo en casa: cuándo tiene dificultades para concentrarse, cuándo es impulsivo, cuándo tiene mucha energía. ¿Cuándo empezó a notar estos comportamientos?</li>
-<li><strong>Prepare Preguntas:</strong> Escriba todas las preguntas que tenga sobre el proceso, los resultados o los servicios. No tenga miedo de preguntar.</li>
-<li><strong>Comparta Información Relevante:</strong> Si su hijo ha sido evaluado por un médico fuera de la escuela, comparta esos informes.</li>
-<li><strong>Pida un Intérprete:</strong> Si el inglés no es su idioma principal, solicite un intérprete calificado para todas las reuniones. Es su derecho.</li>
-<li><strong>Lleve a un Aliado:</strong> Si se siente más cómodo, lleve a un familiar o amigo de confianza a las reuniones para que le brinde apoyo y le ayude a tomar notas.</li>
-<li><strong>Recuerde sus Derechos:</strong> Usted tiene derechos como padre bajo IDEA. La escuela debe proporcionarle una copia de sus derechos parentales.</li>
-</ul>
-<h3>¡El Éxito Escolar de Nuestros Hijos es Nuestro Éxito Familiar!</h3>
-<p>Entender y navegar el TDAH en el contexto escolar puede parecer abrumador, pero no tienen que hacerlo solos. Las escuelas están ahí para apoyar a sus hijos, y sus valores familiares de 'familismo' y 'respeto' pueden ser una fuente de fortaleza en este camino. Al informarse, abogar por sus hijos y colaborar con la escuela, están abriendo las puertas a un futuro lleno de éxito y oportunidades para ellos. ¡Su voz es la más importante!</p>
-<hr />
-
-            <!--
-        Available HTML snippet components (use in <p>¡Absolutamente! Aquí tienes un artículo de blog optimizado para SEO, con un tono de "Éxito Escolar" y "familismo", enfocado en recursos para la familia y el apoyo al hijo, sin etiquetas pesadas de discapacidad, y en formato Markdown limpio.</p>
-<hr />
-<h2>Navegando el TDAH en Familias Latinas de Texas: Guía para el Éxito Escolar y el Apoyo Familiar</h2>
-<p>En el corazón de cada familia latina late un deseo profundo: ver a nuestros hijos prosperar y alcanzar su máximo potencial. La educación es una piedra angular de este sueño, y cuando nuestros hijos enfrentan desafíos únicos, como el Trastorno por Déficit de Atención e Hiperactividad (TDAH), es fundamental entender cómo el sistema escolar puede ser un aliado.</p>
-<p>En Texas, las familias latinas tienen una riqueza cultural que influye en cómo entendemos y abordamos el TDAH. Este artículo es una guía para empoderar a nuestros padres, desmitificar el proceso de apoyo escolar y asegurar que cada niño reciba las herramientas para brillar.</p>
-<h3>Entendiendo el TDAH en Nuestras Familias Latinas en Texas</h3>
-<p>El TDAH (o ADHD en inglés) es una condición neurobiológica que afecta la atención, la impulsividad y la hiperactividad. No es una cuestión de "mala crianza" o falta de esfuerzo, sino una forma diferente en que el cerebro procesa la información.</p>
-<h4>El Estigma del TDAH: Un Obstáculo para el Apoyo Escolar</h4>
-<p>Para muchas familias latinas, hablar de condiciones como el TDAH puede ser difícil. Existe un <strong>estigma</strong> arraigado en torno a la salud mental y las diferencias de aprendizaje, a menudo por:</p>
-<ul>
-<li><strong>Miedo al "qué dirán":</strong> La preocupación de que un diagnóstico pueda ser visto como una falla familiar o una etiqueta negativa para el niño.</li>
-<li><strong>Creencias culturales:</strong> A veces, los comportamientos asociados con el TDAH pueden interpretarse como falta de disciplina o "mala educación" en lugar de una condición neurológica.</li>
-<li><strong>Desconfianza en el sistema:</strong> Históricamente, algunas comunidades han tenido experiencias negativas con instituciones, lo que genera reticencia a buscar ayuda externa.</li>
-</ul>
-<p>Este estigma puede llevar a que las familias duden en solicitar una evaluación escolar para sus hijos. Las <strong>tasas de solicitud de evaluación</strong> pueden ser más bajas entre las familias latinas, lo que significa que muchos niños que podrían beneficiarse de apoyo adicional no lo reciben. Es crucial recordar que buscar ayuda es un acto de amor y fortaleza, no de debilidad.</p>
-<h4>Nuestros Valores: 'Familismo' y 'Respeto' en el Camino Escolar</h4>
-<p>Nuestros valores culturales, como el <strong>'familismo'</strong> y el <strong>'respeto'</strong>, son pilares de nuestra identidad, pero pueden interactuar de maneras complejas con el proceso de educación especial:</p>
-<ul>
-<li><strong>'Familismo' (Unidad Familiar):</strong> La fuerte cohesión familiar es una gran fortaleza. Significa que la familia entera se une para apoyar al niño. Sin embargo, a veces puede llevar a la creencia de que los problemas deben resolverse "dentro de la familia", lo que puede retrasar la búsqueda de apoyo escolar o profesional. Es importante entender que el apoyo escolar es una extensión de ese cuidado familiar, una colaboración con expertos para el bienestar del niño.</li>
-<li><strong>'Respeto' (Hacia la Autoridad):</strong> El profundo respeto por los maestros y las figuras de autoridad es admirable. Sin embargo, puede hacer que los padres se sientan incómodos al cuestionar las decisiones escolares, pedir explicaciones o abogar firmemente por las necesidades de su hijo. Es vital recordar que el respeto es mutuo, y los maestros y administradores escolares también respetan el derecho de los padres a participar activamente en la educación de sus hijos. Abogar por su hijo es un acto de amor y responsabilidad, no de falta de respeto.</li>
-</ul>
-<h3>¿Reciben Nuestros Hijos el Apoyo que Necesitan? La Identificación del TDAH</h3>
-<p>La ley federal IDEA (Individuals with Disabilities Education Act) garantiza que los estudiantes con discapacidades reciban educación pública gratuita y apropiada. El TDAH a menudo califica bajo la categoría de "Otro Deterioro de la Salud" (OHI por sus siglas en inglés).</p>
-<h4>¿Están Nuestros Estudiantes Subidentificados para Servicios IDEA?</h4>
-<p>Lamentablemente, la investigación sugiere que los estudiantes latinos con TDAH pueden estar <strong>subidentificados</strong> para los servicios de educación especial de IDEA en comparación con sus compañeros. Esto puede deberse a varios factores:</p>
-<ul>
-<li><strong>Barreras lingüísticas:</strong> La comunicación puede ser un desafío si los padres no dominan el inglés y no se proporcionan intérpretes calificados.</li>
-<li><strong>Diferencias culturales en la expresión:</strong> Los síntomas del TDAH pueden manifestarse de manera diferente o interpretarse de forma distinta en diversos contextos culturales.</li>
-<li><strong>Falta de confianza o conocimiento:</strong> Los padres pueden no estar al tanto de sus derechos o de los servicios disponibles, o pueden desconfiar del sistema escolar.</li>
-<li><strong>Sesgos en la evaluación:</strong> Los evaluadores pueden no estar familiarizados con las normas culturales o lingüísticas de los estudiantes latinos, lo que lleva a diagnósticos inexactos o incompletos.</li>
-</ul>
-<p>Es fundamental que los padres latinos se sientan empoderados para preguntar, buscar información y abogar por una evaluación completa y culturalmente sensible para sus hijos.</p>
-<h3>Comunicando el TDAH: Un Enfoque Culturalmente Sensible para Padres Hispanohablantes</h3>
-<p>La forma en que hablamos sobre el TDAH puede marcar una gran diferencia en cómo las familias lo aceptan y buscan apoyo.</p>
-<h4>Enmarcando el TDAH: De Desafío a Fortaleza</h4>
-<p>En lugar de usar un lenguaje que estigmatice o etiquete, podemos usar un <strong>lenguaje positivo y empoderador</strong> que resuene con nuestros valores:</p>
-<ul>
-<li><strong>Enfoque en el cerebro:</strong> En lugar de "mi hijo tiene un trastorno", podemos decir "el cerebro de mi hijo funciona de una manera muy activa y creativa, lo que a veces le dificulta concentrarse en ciertas tareas".</li>
-<li><strong>Energía y creatividad:</strong> "Mi hijo tiene mucha energía y una mente muy rápida, lo que lo hace muy creativo, pero a veces necesita ayuda para canalizar esa energía en la escuela".</li>
-<li><strong>Estilo de aprendizaje único:</strong> "Mi hijo tiene un estilo de aprendizaje único y necesita estrategias específicas para tener éxito en el aula".</li>
-<li><strong>No es culpa de nadie:</strong> Es crucial enfatizar que el TDAH no es culpa del niño ni de los padres. Es una característica neurológica que requiere comprensión y apoyo.</li>
-<li><strong>Buscando apoyo, no una etiqueta:</strong> "Estamos buscando apoyo para ayudar a nuestro hijo a desarrollar sus habilidades y tener éxito en la escuela, no estamos buscando una etiqueta".</li>
-</ul>
-<p>Al usar este tipo de lenguaje, ayudamos a las familias a ver el TDAH no como una deficiencia, sino como una característica que, con el apoyo adecuado, puede convertirse en una fortaleza.</p>
-<h3>El Proceso de Evaluación Escolar para el TDAH: Un Camino Hacia el Éxito</h3>
-<p>Si sospecha que su hijo podría tener TDAH y necesita apoyo en la escuela, el primer paso es solicitar una evaluación escolar. Este proceso está diseñado para identificar las necesidades de su hijo y determinar si califica para servicios de educación especial.</p>
-<h4>¿Qué Implica una Evaluación Escolar para TDAH/OHI?</h4>
-<ol>
-<li><strong>Solicitud de Evaluación:</strong> Usted, como padre, o el personal de la escuela, puede solicitar una evaluación por escrito. Es mejor hacerlo por escrito para tener un registro.</li>
-<li><strong>Consentimiento de los Padres:</strong> La escuela debe obtener su consentimiento por escrito antes de realizar cualquier evaluación. Usted tiene derecho a entender lo que se evaluará y por qué.</li>
-<li><strong>Recopilación de Información:</strong> Un equipo de profesionales (psicólogos escolares, maestros, especialistas) recopilará información sobre su hijo. Esto puede incluir:<ul>
-<li><strong>Observaciones:</strong> En el aula y otros entornos escolares.</li>
-<li><strong>Entrevistas:</strong> Con usted, su hijo y los maestros.</li>
-<li><strong>Pruebas estandarizadas:</strong> Para evaluar la atención, la memoria, el funcionamiento ejecutivo y el rendimiento académico.</li>
-<li><strong>Revisión de registros:</strong> Calificaciones, informes de comportamiento, etc.</li>
-</ul>
-</li>
-<li><strong>Reunión de Elegibilidad:</strong> Una vez completadas las evaluaciones, se programará una reunión con usted y el equipo escolar. En esta reunión, se revisarán los resultados y se determinará si su hijo califica para los servicios de educación especial bajo IDEA, a menudo bajo la categoría de "Otro Deterioro de la Salud" (OHI) debido al TDAH.</li>
-<li><strong>Desarrollo del IEP o Plan 504:</strong> Si su hijo califica, el equipo trabajará con usted para desarrollar un Plan de Educación Individualizado (IEP) o un Plan 504. Estos documentos describen los objetivos, servicios, adaptaciones y apoyos que su hijo recibirá en la escuela.</li>
-</ol>
-<h4>Preparando a Nuestra Familia para la Evaluación: ¡Su Voz es Poderosa!</h4>
-<p>Como padres, ustedes son los expertos en sus hijos. Su participación activa es crucial para una evaluación exitosa:</p>
-<ul>
-<li><strong>Documente sus Observaciones:</strong> Anote ejemplos específicos de los comportamientos de su hijo en casa: cuándo tiene dificultades para concentrarse, cuándo es impulsivo, cuándo tiene mucha energía. ¿Cuándo empezó a notar estos comportamientos?</li>
-<li><strong>Prepare Preguntas:</strong> Escriba todas las preguntas que tenga sobre el proceso, los resultados o los servicios. No tenga miedo de preguntar.</li>
-<li><strong>Comparta Información Relevante:</strong> Si su hijo ha sido evaluado por un médico fuera de la escuela, comparta esos informes.</li>
-<li><strong>Pida un Intérprete:</strong> Si el inglés no es su idioma principal, solicite un intérprete calificado para todas las reuniones. Es su derecho.</li>
-<li><strong>Lleve a un Aliado:</strong> Si se siente más cómodo, lleve a un familiar o amigo de confianza a las reuniones para que le brinde apoyo y le ayude a tomar notas.</li>
-<li><strong>Recuerde sus Derechos:</strong> Usted tiene derechos como padre bajo IDEA. La escuela debe proporcionarle una copia de sus derechos parentales.</li>
-</ul>
-<h3>¡El Éxito Escolar de Nuestros Hijos es Nuestro Éxito Familiar!</h3>
-<p>Entender y navegar el TDAH en el contexto escolar puede parecer abrumador, pero no tienen que hacerlo solos. Las escuelas están ahí para apoyar a sus hijos, y sus valores familiares de 'familismo' y 'respeto' pueden ser una fuente de fortaleza en este camino. Al informarse, abogar por sus hijos y colaborar con la escuela, están abriendo las puertas a un futuro lleno de éxito y oportunidades para ellos. ¡Su voz es la más importante!</p>
-<hr />):
-
-        ── INLINE CTA (mid-article) ──
-        <div class="post-cta">
-          <div class="post-cta__title"></div>
-          <div class="post-cta__body"></div>
-          <a href="" class="btn btn--primary"></a>
-        </div>
-
-        ── CALLOUT: INFO ──
-        <div class="callout callout--info">
-          <div class="callout__title"></div>
-          <p></p>
-        </div>
-
-        ── CALLOUT: WARNING ──
-        <div class="callout callout--warning">
-          <div class="callout__title"></div>
-          <p></p>
-        </div>
-
-        ── CALLOUT: DANGER ──
-        <div class="callout callout--danger">
-          <div class="callout__title"></div>
-          <p></p>
-        </div>
-
-        ── KEY NUMBER ──
-        <div class="key-number">
-          <div class="key-number__figure"></div>
-          <div class="key-number__text"></div>
-        </div>
-
-        ── CHECKLIST ──
-        <ul class="checklist">
-          
-        </ul>
-
-        ── NUMBERED STEPS ──
-        <ol class="steps-list">
-          
-        </ol>
-
-        ── TABLE ──
-        <div class="post-table-wrap">
-          <table class="post-table">
-            <thead><tr></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      -->
-
-            <!-- ── SOURCES ── -->
-            <div class="sources-section">
-               <div class="sources-title"></div>
-               <ul class="sources-list">
-                  
-                  <!-- Example output:
-          <li><a href="https://educationfreedom.texas.gov" target="_blank" rel="noopener">Texas Education Freedom Accounts — Official TEFA Program Site (Comptroller of Public Accounts)</a></li>
-          <li><a href="https://tea.texas.gov" target="_blank" rel="noopener">Texas Education Agency — Special Education Guidance</a></li>
-          -->
-               </ul>
-            </div>
-
-            <!-- ── DISCLAIMER ── -->
-            <div class="post-disclaimer">
-               
-            </div>
-
-         </article>
-
-         <!-- ── SIDEBAR ── -->
-         <aside class="sidebar" aria-label="Sidebar">
-
-            <!-- Table of Contents -->
-            <nav class="toc" aria-label="Table of contents">
-               <div class="toc__title"></div>
-               <ul class="toc__list">
-                  
-                  <!-- Example output:
-          <li><a href="#who-qualifies">Who Qualifies?</a></li>
-          <li><a href="#iep-requirement">The IEP Requirement</a></li>
-          <li><a href="#application-window">Application Window</a></li>
-          <li><a href="#common-traps">Common Traps</a></li>
-          -->
-               </ul>
-            </nav>
-
-            <!-- Sidebar CTA -->
-            <div class="sidebar-cta">
-               <div class="sidebar-cta__eyebrow"></div>
-               <div class="sidebar-cta__title"></div>
-               <div class="sidebar-cta__body"></div>
-               <a href="" class="btn btn--amber" style="width:100%;text-align:center;display:block"></a>
-            </div>
-
-            <!-- Author Card -->
-            <div class="author-card">
-               <div class="author-card__label"></div>
-               <div class="author-card__name">TexasSpecialEd Advocate</div>
-               <div class="author-card__bio"></div>
-            </div>
-
-            <!-- Related Posts -->
-            <div class="related-posts">
-               <div class="related-posts__title"></div>
-               
-               <!-- Example output:
-        <a href="/blog/tefa-iep-key" class="related-link">
-          <span class="related-link__tag">IEP · 6 min read</span>
-          The IEP Is the Key to the $30,000 Texas ESA
-        </a>
-        <a href="/blog/45-day-rule" class="related-link">
-          <span class="related-link__tag">Timelines · 5 min read</span>
-          The 45-Day Evaluation Rule: What Happens If Your District Misses It
-        </a>
-        -->
-            </div>
-
-         </aside>
-      </div>
-   </div>
-
-   <!-- ═══════════════════════════════ POST FOOTER CTA ══════════════════ -->
-   <section class="post-footer-cta">
-      <div class="container">
-         <h2></h2>
-         <p></p>
-         <a href="" class="btn btn--primary" style="margin-right:12px"></a>
-         <a href="" class="btn" style="background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff"></a>
-      </div>
-   </section>
-
-   <!-- ═══════════════════════════════ SITE FOOTER ══════════════════════ -->
    <footer class="site-footer">
       <div class="container">
-         <div class="footer-bottom">
-            <span></span>
-            <span></span>
+         <div style="display:flex; flex-wrap:wrap; gap:40px; justify-content:space-between; padding-bottom:30px; border-bottom:1px solid rgba(255,255,255,0.1); margin-bottom:20px;">
+            <div style="flex:1; min-width:250px;">
+               <div style="font-family:'DM Serif Display',serif; font-size:1.4rem; color:#fff; margin-bottom:15px;">TexasSpecialEd.com</div>
+               <p style="font-size:0.9rem; line-height:1.6; color:rgba(255,255,255,0.7);">Empowering Texas parents with guides, resources, and toolkits to navigate the Special Education and TEFA process with confidence.</p>
+            </div>
+            <div style="flex:1; min-width:200px;">
+               <h4 style="color:#fff; font-size:1rem; margin-bottom:15px;">Quick Links</h4>
+               <ul style="list-style:none; padding:0; line-height:2; margin:0;">
+                  <li><a href="../../index.html" style="color:rgba(255,255,255,0.7); text-decoration:none;">Home</a></li>
+                  <li><a href="../../districts/index.html" style="color:rgba(255,255,255,0.7); text-decoration:none;">Browse Districts</a></li>
+                  <li><a href="../../tools/tefa-scan/index.html" style="color:rgba(255,255,255,0.7); text-decoration:none;">Free TEFA Scan</a></li>
+                  <li><a href="../../about/index.html" style="color:rgba(255,255,255,0.7); text-decoration:none;">About Us</a></li>
+               </ul>
+            </div>
          </div>
-         <p class="footer-disclaimer"></p>
+         <div style="text-align:center; font-size:0.8rem; color:rgba(255,255,255,0.4);">
+            <p>© 2026 Texas Special Education Resources. All rights reserved. Not affiliated with the TEA or any school district.</p>
+         </div>
       </div>
    </footer>
+
 
    <script>
       /* ── Auto-generate TOC from h2 headings if TOC_AUTO=true ── */
@@ -1327,6 +63,128 @@
          });
       })();
    </script>
+
+
+    <style>
+        .newsletter-popup-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(10, 35, 66, 0.92);
+            z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; 
+            transition: opacity 0.4s ease, visibility 0.4s;
+            backdrop-filter: blur(6px);
+        }
+        .newsletter-popup-overlay.show { opacity: 1; visibility: visible; }
+        .newsletter-popup-content {
+            background: #fff; width: 92%; max-width: 520px;
+            border-radius: 16px; position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+            transform: translateY(30px) scale(0.9); 
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+        .newsletter-popup-overlay.show .newsletter-popup-content { transform: translateY(0) scale(1); }
+        .newsletter-popup-close {
+            position: absolute; top: 16px; right: 16px;
+            background: rgba(255,255,255,0.15); border: none; width: 36px; height: 36px;
+            border-radius: 50%; color: #fff; font-size: 24px; cursor: pointer; z-index: 10;
+            display: flex; align-items: center; justify-content: center; transition: all 0.2s;
+        }
+        .newsletter-popup-close:hover { background: rgba(255,255,255,0.25); transform: rotate(90deg); }
+        .newsletter-popup-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+            padding: 48px 36px 36px; text-align: center; position: relative; overflow: hidden;
+        }
+        .newsletter-popup-icon {
+            width: 64px; height: 64px; background: rgba(212, 175, 55, 0.2);
+            border: 3px solid rgba(212, 175, 55, 0.4); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 32px; margin: 0 auto 20px;
+        }
+        .newsletter-popup-tag {
+            color: #d4af37; font-size: 12px; font-weight: 700; text-transform: uppercase; 
+            letter-spacing: 0.12em; display: inline-block; margin-bottom: 12px;
+            background: rgba(212, 175, 55, 0.15); padding: 6px 16px; border-radius: 20px;
+        }
+        .newsletter-popup-header h3 { font-family: 'Lora', serif; font-size: 28px; color: #fff; margin: 0; line-height: 1.25;}
+        .newsletter-popup-body { padding: 36px; background: #fff; }
+        .newsletter-popup-input {
+            width: 100%; padding: 16px 20px; border: 2px solid #e2e8f0;
+            border-radius: 10px; font-size: 16px; font-family: 'DM Sans', sans-serif;
+            margin-bottom: 12px; color: #0a2342;
+        }
+        .newsletter-popup-btn {
+            width: 100%; padding: 16px 24px; background: #d4af37; color: #0a2342;
+            border: none; border-radius: 10px; font-size: 16px; font-weight: 700;
+            font-family: 'DM Sans', sans-serif; cursor: pointer; transition: all 0.3s ease;
+        }
+        .newsletter-popup-btn:hover { background: #c29d2e; transform: translateY(-2px); }
+        .newsletter-popup-privacy { font-size: 13px; color: #94a3b8; text-align: center; margin-top: 15px;}
+        .newsletter-popup-success { padding: 36px; text-align: center; display: none; }
+        .newsletter-popup-success.show { display: block; }
+    </style>
+
+    <div class="newsletter-popup-overlay" id="newsletterPopup">
+        <div class="newsletter-popup-content">
+            <button aria-label="Close" class="newsletter-popup-close" onclick="closeNewsletterPopup()">×</button>
+            <div id="popupForm">
+                <div class="newsletter-popup-header">
+                    <div class="newsletter-popup-icon">📧</div>
+                    <span class="newsletter-popup-tag">Free Weekly Newsletter</span>
+                    <h3>Get Texas Special Ed Guidance Every Week</h3>
+                </div>
+                <div class="newsletter-popup-body">
+                    <form id="newsletterForm" onsubmit="handleNewsletterSubmit(event)">
+                        <input class="newsletter-popup-input" id="popupEmail" placeholder="Enter your email address" required="" type="email"/>
+                        <button class="newsletter-popup-btn" id="submitBtn" type="submit">Join 8,200+ Texas Parents →</button>
+                    </form>
+                    <p class="newsletter-popup-privacy">Free forever. Weekly emails. Unsubscribe anytime.<br/>We respect your privacy and never share your email.</p>
+                </div>
+            </div>
+            <div class="newsletter-popup-success" id="popupSuccess">
+                <div style="font-size: 50px; color: #10b981; margin-bottom: 15px;">✓</div>
+                <h3 style="font-family:'Lora',serif; color:#0a2342; font-size:24px; margin-bottom:10px;">You're on the list!</h3>
+                <p style="color:#64748b; line-height:1.6; margin-bottom:20px;">Check your inbox for a confirmation email. Your first newsletter arrives this Thursday.</p>
+                <button class="newsletter-popup-btn" onclick="closeNewsletterPopup()">Continue Reading</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const POPUP_CONFIG = { delaySeconds: 15, sessionStorageKey: 'txSpecEdPopupShown' };
+        document.addEventListener("DOMContentLoaded", function() {
+            if (sessionStorage.getItem(POPUP_CONFIG.sessionStorageKey) || new URLSearchParams(window.location.search).get('nopopup') === 'true') return;
+            setTimeout(() => {
+                const popup = document.getElementById('newsletterPopup');
+                if (popup) { popup.classList.add('show'); sessionStorage.setItem(POPUP_CONFIG.sessionStorageKey, 'true'); }
+            }, POPUP_CONFIG.delaySeconds * 1000);
+        });
+        function closeNewsletterPopup() {
+            const popup = document.getElementById('newsletterPopup');
+            if (popup) popup.classList.remove('show');
+        }
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeNewsletterPopup(); });
+
+        async function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            const emailInput = document.getElementById('popupEmail');
+            const submitBtn = document.getElementById('submitBtn');
+            const email = emailInput.value.trim().toLowerCase();
+            submitBtn.disabled = true; submitBtn.textContent = 'Subscribing...';
+            try {
+                await fetch('https://email-capture-api-831148457361.us-central1.run.app/api/signup', {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: email, site: 'texas_special_ed', source: 'tefa_article_popup', timestamp: new Date().toISOString() })
+                });
+                document.getElementById('popupForm').style.display = 'none';
+                document.getElementById('popupSuccess').classList.add('show');
+            } catch (error) {
+                alert('Something went wrong. Please try again.');
+                submitBtn.disabled = false; submitBtn.textContent = 'Join 8,200+ Texas Parents →';
+            }
+        }
+    </script>
 
 </body>
 
