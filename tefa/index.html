@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{PAGE_LANG}}">
 
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Texas Education Savings Account (TEFA) Guide - 2026 | TexasSpecialEd</title>
-   <meta name="description" content="Texas Education Savings Accounts give students with disabilities up to $30,000. Learn how to qualify, get your IEP, and navigate the application window." />
-   <link rel="canonical" href="" />
-   <script type="application/ld+json"></script>
+   <title>{{META_TITLE}}</title>
+   <meta name="description" content="{{META_DESCRIPTION}}" />
+   <link rel="canonical" href="{{CANONICAL_URL}}" />
+   <script type="application/ld+json">{{FAQ_SCHEMA_JSON}}</script>
    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
    <style>
@@ -1200,12 +1200,12 @@
 <body>
 
    <!-- ══════════════════════════════════════════════
-     DEADLINE TICKER  (show/hide via block)
+     DEADLINE TICKER  (show/hide via {{SHOW_TICKER}})
      Python: set SHOW_TICKER="block" or "none"
 ══════════════════════════════════════════════ -->
-   <div class="deadline-ticker" id="ticker" style="display:block">
+   <div class="deadline-ticker" id="ticker" style="display:{{SHOW_TICKER}}">
       <div class="container--wide">
-         ⚡ TEFA Application Window Extended: <strong>Closes March 31, 2026</strong> — <a href='../tools/tefa-scan/index.html'>Act Now →</a>
+         {{TICKER_TEXT}}
          <!-- Example: ⚡ TEFA Application Window: <strong>Closes March 31, 2026</strong> — <a href="../tools/tefa-scan/index.html">Get your checklist before it's too late →</a> -->
       </div>
    </div>
@@ -1329,9 +1329,9 @@
 ══════════════════════════════════════════════ -->
    <div class="breadcrumb">
       <div class="container">
-         <a href="">Home</a>
+         <a href="{{SITE_URL}}">{{BREADCRUMB_HOME}}</a>
          <span>›</span>
-         <span>TEFA Disability Guide</span>
+         <span>{{BREADCRUMB_LABEL}}</span>
       </div>
    </div>
 
@@ -1343,20 +1343,20 @@
          <div class="hero__eyebrow">
             <span class="hero__badge">
                <span class="pulse-dot" style="width:6px;height:6px" aria-hidden="true"></span>
-               Up to $30,000 Available
+               {{HERO_BADGE_TEXT}}
             </span>
-            <span class="hero__date-badge">Updated March 2026</span>
+            <span class="hero__date-badge">{{HERO_DATE_BADGE}}</span>
          </div>
-         <h1>Texas Education Savings Accounts for Students with Disabilities</h1>
-         <p class="hero__sub">Your child may qualify for up to $30,000 to pay for private school, therapies, and curriculum. Most families don't know how to get it. We do.</p>
+         <h1>{{H1_TITLE}}</h1>
+         <p class="hero__sub">{{HERO_SUBTITLE}}</p>
          <div class="hero__cta-row">
-            <a href="../tools/tefa-scan/index.html" class="btn btn--amber">Get the Free ESA Checklist</a>
-            <a href="#contact" class="btn btn--outline">Book a Free 15-Min Call</a>
+            <a href="../tools/tefa-scan/index.html" class="btn btn--amber">{{CTA_PRIMARY_LABEL}}</a>
+            <a href="{{CTA_SECONDARY_URL}}" class="btn btn--outline">{{CTA_SECONDARY_LABEL}}</a>
          </div>
          <div class="hero__trust">
-            <span class="hero__trust-item">Based on Texas SB 2</span>
-            <span class="hero__trust-item">March 31 Deadline</span>
-            <span class="hero__trust-item">IEP Strategy Experts</span>
+            <span class="hero__trust-item">{{TRUST_ITEM_1}}</span>
+            <span class="hero__trust-item">{{TRUST_ITEM_2}}</span>
+            <span class="hero__trust-item">{{TRUST_ITEM_3}}</span>
          </div>
       </div>
    </section>
@@ -1366,27 +1366,27 @@
 ══════════════════════════════════════════════ -->
    <section class="money-section">
       <div class="container">
-         <h2 class="section-title">The Funding Gap You Need to Know</h2>
-         <p class="section-intro">The state offers two different funding amounts. The difference between getting $10,500 and $30,000 comes down to one piece of paper: a developed IEP.</p>
+         <h2 class="section-title">{{MONEY_SECTION_TITLE}}</h2>
+         <p class="section-intro">{{MONEY_SECTION_INTRO}}</p>
          <div class="money-cards">
             <div class="money-card money-card--std">
-               <div class="money-card__label">Standard TEFA</div>
-               <div class="money-card__amount">~$10,500</div>
-               <div class="money-card__note">For general education students</div>
+               <div class="money-card__label">{{MONEY_STD_LABEL}}</div>
+               <div class="money-card__amount">{{MONEY_STD_AMOUNT}}</div>
+               <div class="money-card__note">{{MONEY_STD_NOTE}}</div>
             </div>
             <div class="money-card money-card--dis">
-               <div class="money-card__label">Disability TEFA</div>
-               <div class="money-card__amount">Up to $30,000</div>
-               <div class="money-card__note">For students with an IEP</div>
+               <div class="money-card__label">{{MONEY_DIS_LABEL}}</div>
+               <div class="money-card__amount">{{MONEY_DIS_AMOUNT}}</div>
+               <div class="money-card__note">{{MONEY_DIS_NOTE}}</div>
             </div>
          </div>
          <div class="money-callout">
-            <strong>The Catch:</strong> A 504 plan is usually not enough. You need a full public school evaluation and an Individualized Education Program (IEP).
+            <strong>{{MONEY_CALLOUT_BOLD}}</strong> {{MONEY_CALLOUT_TEXT}}
          </div>
          <div class="priority-box">
-            <div class="priority-box__title">Lottery Priority Order Confirmed</div>
+            <div class="priority-box__title">{{PRIORITY_BOX_TITLE}}</div>
             <ul class="priority-list">
-               <li><strong>First:</strong> Disability + Income ≤500% FPL</li><li><strong>Second:</strong> Income ≤200% FPL</li><li><strong>Third:</strong> Income 201–500% FPL</li><li><strong>Fourth:</strong> All other applicants</li>
+               {{PRIORITY_LIST_HTML}}
                <!-- Example output:
         <li><strong>First priority:</strong> Students with disability + household income ≤500% federal poverty level</li>
         <li><strong>Second priority:</strong> Students with income ≤200% FPL</li>
@@ -1403,13 +1403,13 @@
 ══════════════════════════════════════════════ -->
    <section class="section section--alt">
       <div class="container">
-         <h2 class="section-title">Does My Child Qualify?</h2>
-         <p class="section-intro">To trigger the higher disability tier, your child needs an official diagnosis recognized by Texas and IDEA.</p>
-         <div class="disability-tags"><span class='disability-tag'>Autism</span><span class='disability-tag'>ADHD (OHI)</span><span class='disability-tag'>Dyslexia</span><span class='disability-tag'>Speech Impairment</span><span class='disability-tag'>Intellectual Disability</span></div>
-         <h3 style="color:var(--navy);margin-bottom:14px">The 3 Non-Negotiables</h3>
-         <div class="req-cards"><div class='req-card'><div class='req-card__num'>1</div><strong>Texas Resident</strong><br><span style='font-size:.85rem;color:var(--slate)'>Must live in Texas and meet age requirements.</span></div><div class='req-card'><div class='req-card__num'>2</div><strong>School Evaluation</strong><br><span style='font-size:.85rem;color:var(--slate)'>Completed Full Individual Evaluation (FIE) from a public district.</span></div><div class='req-card'><div class='req-card__num'>3</div><strong>Developed IEP</strong><br><span style='font-size:.85rem;color:var(--slate)'>An active ARD committee document detailing services.</span></div></div>
+         <h2 class="section-title">{{QUALIFY_TITLE}}</h2>
+         <p class="section-intro">{{QUALIFY_INTRO}}</p>
+         <div class="disability-tags">{{DISABILITY_TAGS_HTML}}</div>
+         <h3 style="color:var(--navy);margin-bottom:14px">{{REQUIREMENTS_TITLE}}</h3>
+         <div class="req-cards">{{REQUIREMENTS_CARDS_HTML}}</div>
          <p style="margin-top:18px;font-size:.83rem;color:var(--muted)">
-             <a href="" target="_blank" rel="noopener"></a>.
+            {{QUALIFY_TEA_LINK_TEXT}} <a href="{{QUALIFY_TEA_URL}}" target="_blank" rel="noopener">{{QUALIFY_TEA_LINK_ANCHOR}}</a>.
          </p>
       </div>
    </section>
@@ -1419,11 +1419,11 @@
 ══════════════════════════════════════════════ -->
    <section class="section">
       <div class="container">
-         <h2 class="section-title">Your Action Timeline</h2>
-         <p class="section-intro">Districts are backlogged. If you don't start the evaluation process now, you will miss the application window.</p>
-         <div class="timeline" role="list"><div class='timeline__step'><div class='timeline__dot'>1</div><div class='timeline__title'>Request Evaluation</div><div class='timeline__note'>Send a certified letter to your district.</div></div><div class='timeline__step'><div class='timeline__dot'>2</div><div class='timeline__title'>45-Day Clock <span class='tag tag--warn'>Legal Deadline</span></div><div class='timeline__note'>The district has 45 school days to evaluate.</div></div><div class='timeline__step'><div class='timeline__dot'>3</div><div class='timeline__title'>ARD Meeting</div><div class='timeline__note'>Review results and develop the IEP.</div></div><div class='timeline__step'><div class='timeline__dot'>4</div><div class='timeline__title'>Apply for TEFA <span class='tag tag--dead'>Closes Mar 31</span></div><div class='timeline__note'>Submit your IEP to the state portal.</div></div></div>
+         <h2 class="section-title">{{TIMELINE_TITLE}}</h2>
+         <p class="section-intro">{{TIMELINE_INTRO}}</p>
+         <div class="timeline" role="list">{{TIMELINE_STEPS_HTML}}</div>
          <p style="margin-top:22px;font-size:.83rem;color:var(--muted)">
-             <a href="" target="_blank" rel="noopener"></a>.
+            {{TIMELINE_TEA_LINK_TEXT}} <a href="{{TIMELINE_TEA_URL}}" target="_blank" rel="noopener">{{TIMELINE_TEA_LINK_ANCHOR}}</a>.
          </p>
       </div>
    </section>
@@ -1433,13 +1433,13 @@
 ══════════════════════════════════════════════ -->
    <section class="section section--alt">
       <div class="container">
-         <h2 class="section-title">The Hidden Traps</h2>
-         <p class="section-intro">Districts lose funding when you take the TEFA voucher. Here is what to watch out for.</p>
+         <h2 class="section-title">{{TRAPS_TITLE}}</h2>
+         <p class="section-intro">{{TRAPS_INTRO}}</p>
          <div class="critical-alert">
-            <div class="critical-alert__title">Private School 'Gotcha'</div>
-            <div class="critical-alert__body">While an IEP gets you the money, private schools are NOT legally required to provide the services in it. You lose your IDEA rights.</div>
+            <div class="critical-alert__title">{{CRITICAL_ALERT_TITLE}}</div>
+            <div class="critical-alert__body">{{CRITICAL_ALERT_BODY}}</div>
          </div>
-         <div class="traps-grid"><div class='trap-card'><div class='trap-card__title'>The Backlog Delay</div><div class='trap-card__body'>Districts push your evaluation past the 45-day mark, making you miss the TEFA window.</div><div class='trap-card__solution'>File a Due Process complaint</div></div><div class='trap-card'><div class='trap-card__title'>The Minimum IEP</div><div class='trap-card__body'>They offer a bare-bones IEP that undersells your child's needs to save the district money.</div><div class='trap-card__solution'>Bring an advocate to ARD</div></div></div>
+         <div class="traps-grid">{{TRAPS_CARDS_HTML}}</div>
       </div>
    </section>
 
@@ -1450,29 +1450,29 @@
       <div class="container">
          <div class="magnet-inner">
             <div>
-               <h2 class="section-title section-title--white">Get the Free ESA Checklist</h2>
-               <p class="magnet__sub">The 12 steps you must take before you apply to guarantee your $30,000 eligibility.</p>
-               <ul class="magnet__list"><li>Evaluation request templates</li><li>IEP goal bank for max funding</li><li>Application timeline tracker</li></ul>
+               <h2 class="section-title section-title--white">{{MAGNET_TITLE}}</h2>
+               <p class="magnet__sub">{{MAGNET_SUBTITLE}}</p>
+               <ul class="magnet__list">{{MAGNET_LIST_ITEMS_HTML}}</ul>
             </div>
             <div class="magnet-form">
-               <div class="magnet-form__title">Download Instantly</div>
-               <div class="magnet-form__sub">Sent directly to your inbox.</div>
-               <form action="#" method="POST">
+               <div class="magnet-form__title">{{MAGNET_FORM_TITLE}}</div>
+               <div class="magnet-form__sub">{{MAGNET_FORM_SUBTITLE}}</div>
+               <form action="{{FORM_ACTION_URL}}" method="POST">
                   <div class="form-group">
-                     <label for="fn">First Name</label>
-                     <input class="form-input" type="text" id="fn" name="first_name" placeholder="Enter your name" required />
+                     <label for="fn">{{FORM_LABEL_NAME}}</label>
+                     <input class="form-input" type="text" id="fn" name="first_name" placeholder="{{FORM_PLACEHOLDER_NAME}}" required />
                   </div>
                   <div class="form-group">
-                     <label for="em">Email Address</label>
-                     <input class="form-input" type="email" id="em" name="email" placeholder="Enter your email" required />
+                     <label for="em">{{FORM_LABEL_EMAIL}}</label>
+                     <input class="form-input" type="email" id="em" name="email" placeholder="{{FORM_PLACEHOLDER_EMAIL}}" required />
                   </div>
                   <div class="form-group">
-                     <label for="dist">School District (Optional)</label>
-                     <input class="form-input" type="text" id="dist" name="district" placeholder="e.g. Socorro ISD" />
+                     <label for="dist">{{FORM_LABEL_DISTRICT}}</label>
+                     <input class="form-input" type="text" id="dist" name="district" placeholder="{{FORM_PLACEHOLDER_DISTRICT}}" />
                   </div>
-                  <button type="submit" class="btn btn--amber" style="width:100%;margin-top:6px;justify-content:center">Send Me The Checklist</button>
+                  <button type="submit" class="btn btn--amber" style="width:100%;margin-top:6px;justify-content:center">{{FORM_SUBMIT_LABEL}}</button>
                </form>
-               <p class="form-privacy">We never share your information.</p>
+               <p class="form-privacy">{{FORM_PRIVACY_TEXT}}</p>
             </div>
          </div>
       </div>
@@ -1483,9 +1483,9 @@
 ══════════════════════════════════════════════ -->
    <section class="section">
       <div class="container">
-         <h2 class="section-title"></h2>
-         <p class="section-intro"></p>
-         <div class="product-ladder"></div>
+         <h2 class="section-title">{{PRODUCTS_TITLE}}</h2>
+         <p class="section-intro">{{PRODUCTS_INTRO}}</p>
+         <div class="product-ladder">{{PRODUCT_ITEMS_HTML}}</div>
       </div>
    </section>
 
@@ -1494,132 +1494,17 @@
 ══════════════════════════════════════════════ -->
    <section class="section section--alt">
       <div class="container">
-         <h2 class="section-title">Master the ESA Process</h2>
-         <p class="section-intro">Everything you need to know to secure your funding and place your child in the right school.</p>
+         <h2 class="section-title">{{BLOGS_TITLE}}</h2>
+         <p class="section-intro">{{BLOGS_INTRO}}</p>
 
          <!-- EN tab shown by default; Python renders both grids, JS toggles visibility -->
          <div style="display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:22px" role="tablist">
-            <button id="tab-en" role="tab" aria-selected="true" onclick="switchTab('en')" style="padding:9px 22px;font-size:.88rem;font-weight:600;background:none;border:none;border-bottom:2px solid var(--teal);color:var(--navy);margin-bottom:-2px;cursor:pointer">English Guides</button>
-            <button id="tab-es" role="tab" aria-selected="false" onclick="switchTab('es')" style="padding:9px 22px;font-size:.88rem;font-weight:500;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);margin-bottom:-2px;cursor:pointer">Guías en Español</button>
+            <button id="tab-en" role="tab" aria-selected="true" onclick="switchTab('en')" style="padding:9px 22px;font-size:.88rem;font-weight:600;background:none;border:none;border-bottom:2px solid var(--teal);color:var(--navy);margin-bottom:-2px;cursor:pointer">{{BLOG_TAB_EN}}</button>
+            <button id="tab-es" role="tab" aria-selected="false" onclick="switchTab('es')" style="padding:9px 22px;font-size:.88rem;font-weight:500;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);margin-bottom:-2px;cursor:pointer">{{BLOG_TAB_ES}}</button>
          </div>
 
-         <div id="grid-en" class="blog-grid">
-        <a href="URGENT-tefa-deadline-extended-march-31-2026.html" class="blog-card blog-card--urgent">
-           <div class="blog-card__tag">⚡ Breaking News</div>
-           <div class="blog-card__title">Missed the TEFA Deadline? Here's What Families Need to Know</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="WARNING-texas-tefa-private-school-idea-rights-gotcha.html" class="blog-card blog-card--urgent">
-           <div class="blog-card__tag">⚠️ Warning</div>
-           <div class="blog-card__title">The Private School 'Gotcha': TEFA Funding vs. IDEA Rights</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="texas-esa-tefa-complete-guide-2026.html" class="blog-card ">
-           <div class="blog-card__tag">Master Guide</div>
-           <div class="blog-card__title">Texas Education Savings Accounts 2026: Complete Guide</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="texas-esa-30000-disability-iep-requirements.html" class="blog-card ">
-           <div class="blog-card__tag">IEP Strategy</div>
-           <div class="blog-card__title">How to Get the $30,000 ESA: The IEP Is the Key</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="texas-special-education-evaluation-45-day-timeline.html" class="blog-card ">
-           <div class="blog-card__tag">Timelines</div>
-           <div class="blog-card__title">The 45-Day Rule: If Your District Misses the Deadline</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="tefa-voucher-504-plan-vs-iep-texas.html" class="blog-card ">
-           <div class="blog-card__tag">504 vs IEP</div>
-           <div class="blog-card__title">TEFA vs. 504 Plan: Which Gets the Funding?</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="ard-meeting-prep-guide-texas-tefa-voucher.html" class="blog-card ">
-           <div class="blog-card__tag">ARD Prep</div>
-           <div class="blog-card__title">The ARD Meeting Playbook for TEFA Parents</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="texas-esa-application-window-dates-2026.html" class="blog-card ">
-           <div class="blog-card__tag">Deadlines</div>
-           <div class="blog-card__title">Application Window 2026: Dates & Deadlines</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="adhd-texas-esa-disability-funding-guide.html" class="blog-card ">
-           <div class="blog-card__tag">ADHD</div>
-           <div class="blog-card__title">ADHD and the Texas ESA: Does My Child Qualify?</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="what-texas-school-districts-wont-tell-you-esa.html" class="blog-card ">
-           <div class="blog-card__tag">Advocacy</div>
-           <div class="blog-card__title">What Districts Won't Tell You About ESAs</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="tefa-approved-private-schools-texas-disability.html" class="blog-card ">
-           <div class="blog-card__tag">Private Schools</div>
-           <div class="blog-card__title">How to Choose a TEFA-Approved Private School</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="autism-texas-esa-voucher-30000-funding.html" class="blog-card ">
-           <div class="blog-card__tag">Autism</div>
-           <div class="blog-card__title">Texas ESA for Autism: A Step-by-Step Guide</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a></div>
-         <div id="grid-es" class="blog-grid" style="display:none">
-        <a href="URGENTE-loteria-tefa-prioridad-ingresos-familias-latinas.html" class="blog-card blog-card--urgent">
-           <div class="blog-card__tag">⚡ Urgente</div>
-           <div class="blog-card__title">Prioridad TEFA: Por Qué las Familias Latinas Van Primero</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="guia-completa-cuentas-ahorro-educativo-texas-2026.html" class="blog-card ">
-           <div class="blog-card__tag">Guía Principal</div>
-           <div class="blog-card__title">Guía Completa: Cuentas de Ahorro Educativo 2026</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="como-obtener-30000-esa-texas-iep-espanol.html" class="blog-card ">
-           <div class="blog-card__tag">Estrategia IEP</div>
-           <div class="blog-card__title">¿Cómo Obtener los $30,000? El IEP Es la Clave</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="evaluacion-educacion-especial-texas-regla-45-dias.html" class="blog-card ">
-           <div class="blog-card__tag">Tiempos</div>
-           <div class="blog-card__title">La Regla de los 45 Días: Si el Distrito se Retrasa</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="tdah-texas-voucher-discapacidad-guia-familias.html" class="blog-card ">
-           <div class="blog-card__tag">TDAH</div>
-           <div class="blog-card__title">Mi Hijo Tiene TDAH: ¿Califica para la Ayuda?</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="preparacion-reunion-ard-texas-espanol.html" class="blog-card ">
-           <div class="blog-card__tag">Preparación ARD</div>
-           <div class="blog-card__title">La Reunión ARD: Cómo Prepararte para el Éxito</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="fechas-limite-cuenta-ahorro-educativo-texas-2026.html" class="blog-card ">
-           <div class="blog-card__tag">Fechas Límite</div>
-           <div class="blog-card__title">Fechas Límite 2026: Lo Que Debes Hacer Ahora</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="autismo-texas-esa-voucher-familias-hispanas.html" class="blog-card ">
-           <div class="blog-card__tag">Autismo</div>
-           <div class="blog-card__title">Autismo y Cuentas de Ahorro: Guía Paso a Paso</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="lo-que-distritos-escolares-texas-no-dicen-esa.html" class="blog-card ">
-           <div class="blog-card__tag">Defensa</div>
-           <div class="blog-card__title">Lo Que Tu Distrito Escolar No Te Dirá</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="escuelas-privadas-aprobadas-tefa-texas-discapacidad.html" class="blog-card ">
-           <div class="blog-card__tag">Escuelas Privadas</div>
-           <div class="blog-card__title">Cómo Elegir una Escuela Privada Aprobada</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a>
-        <a href="recursos-espanol-educacion-especial-texas-2026.html" class="blog-card ">
-           <div class="blog-card__tag">Recursos</div>
-           <div class="blog-card__title">Guía de Recursos en Español para Familias</div>
-           <div class="blog-card__meta">March 2026 · 5 min read</div>
-        </a></div>
+         <div id="grid-en" class="blog-grid">{{BLOG_CARDS_EN_HTML}}</div>
+         <div id="grid-es" class="blog-grid" style="display:none">{{BLOG_CARDS_ES_HTML}}</div>
       </div>
    </section>
 
@@ -1628,8 +1513,8 @@
 ══════════════════════════════════════════════ -->
    <section class="section" id="faq">
       <div class="container">
-         <h2 class="section-title"></h2>
-         <div class="faq-list"></div>
+         <h2 class="section-title">{{FAQ_TITLE}}</h2>
+         <div class="faq-list">{{FAQ_ITEMS_HTML}}</div>
       </div>
    </section>
 
@@ -1642,11 +1527,11 @@
             <div style="display:flex;align-items:center;gap:16px">
                <span style="font-size:2rem">🇲🇽</span>
                <div>
-                  <h2 style="font-family:var(--serif);font-size:1.5rem;color:var(--navy);margin-bottom:5px"></h2>
-                  <p style="color:var(--slate);margin:0"></p>
+                  <h2 style="font-family:var(--serif);font-size:1.5rem;color:var(--navy);margin-bottom:5px">{{SPANISH_TITLE}}</h2>
+                  <p style="color:var(--slate);margin:0">{{SPANISH_BODY}}</p>
                </div>
             </div>
-            <a href="" class="btn btn--dark"></a>
+            <a href="{{SPANISH_URL}}" class="btn btn--dark">{{SPANISH_CTA_LABEL}}</a>
          </div>
       </div>
    </div>
@@ -1656,9 +1541,9 @@
 ══════════════════════════════════════════════ -->
    <section class="section section--alt">
       <div class="container">
-         <h2 class="section-title"></h2>
-         <p class="section-intro"></p>
-         <div class="district-pills"></div>
+         <h2 class="section-title">{{DISTRICTS_TITLE}}</h2>
+         <p class="section-intro">{{DISTRICTS_INTRO}}</p>
+         <div class="district-pills">{{DISTRICT_PILLS_HTML}}</div>
       </div>
    </section>
 
@@ -1669,22 +1554,22 @@
       <div class="container">
          <div class="footer-grid">
             <div>
-               <div class="footer-logo">TexasSpecialEd</div>
-               <p class="footer-about">We help Texas families navigate the special education system, secure IEPs, and access Education Freedom Accounts.</p>
-               <p class="footer-disclaimer"></p>
+               <div class="footer-logo">{{SITE_NAME}}</div>
+               <p class="footer-about">{{FOOTER_ABOUT_TEXT}}</p>
+               <p class="footer-disclaimer">{{FOOTER_DISCLAIMER}}</p>
             </div>
             <div class="footer-col">
-               <h4></h4>
-               
+               <h4>{{FOOTER_COL1_TITLE}}</h4>
+               {{FOOTER_COL1_LINKS_HTML}}
             </div>
             <div class="footer-col">
-               <h4></h4>
-               
+               <h4>{{FOOTER_COL2_TITLE}}</h4>
+               {{FOOTER_COL2_LINKS_HTML}}
             </div>
          </div>
          <div class="footer-bottom">
-            <span>© 2026 TexasSpecialEd.com. All rights reserved.</span>
-            <span></span>
+            <span>{{FOOTER_COPYRIGHT}}</span>
+            <span>{{FOOTER_LEGAL_LINKS_HTML}}</span>
          </div>
       </div>
    </footer>
@@ -1704,7 +1589,7 @@
 
       /* ── Countdown ticker (days remaining) ── */
       (function() {
-         var deadline = new Date(''); /* e.g. 2026-03-31 */
+         var deadline = new Date('{{TICKER_DEADLINE_DATE}}'); /* e.g. 2026-03-31 */
          var ticker = document.getElementById('ticker');
          if (!ticker || ticker.style.display === 'none') return;
 
