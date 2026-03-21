@@ -1,57 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{PAGE_LANG}}">
 
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Missed the TEFA Deadline? Here's What Families Need to Know | TexasSpecialEd</title>
-   <meta name="description" content="" />
-   <meta name="keywords" content="" />
-   <link rel="canonical" href="" />
+   <title>{{META_TITLE}}</title>
+   <meta name="description" content="{{META_DESCRIPTION}}" />
+   <meta name="keywords" content="{{META_KEYWORDS}}" />
+   <link rel="canonical" href="{{CANONICAL_URL}}" />
 
    <!-- Open Graph -->
-   <meta property="og:title" content="Missed the TEFA Deadline? Here's What Families Need to Know | TexasSpecialEd" />
-   <meta property="og:description" content="" />
-   <meta property="og:url" content="" />
+   <meta property="og:title" content="{{META_TITLE}}" />
+   <meta property="og:description" content="{{META_DESCRIPTION}}" />
+   <meta property="og:url" content="{{CANONICAL_URL}}" />
    <meta property="og:type" content="article" />
-   <meta property="og:image" content="" />
-   <meta property="article:published_time" content="" />
-   <meta property="article:modified_time" content="" />
+   <meta property="og:image" content="{{OG_IMAGE_URL}}" />
+   <meta property="article:published_time" content="{{DATE_PUBLISHED_ISO}}" />
+   <meta property="article:modified_time" content="{{DATE_MODIFIED_ISO}}" />
 
    <!-- Schema: Article -->
    <script type="application/ld+json">
       {
          "@context": "https://schema.org",
          "@type": "Article",
-         "headline": "Missed the TEFA Deadline? Here's What Families Need to Know | TexasSpecialEd",
-         "description": "",
-         "datePublished": "",
-         "dateModified": "",
+         "headline": "{{META_TITLE}}",
+         "description": "{{META_DESCRIPTION}}",
+         "datePublished": "{{DATE_PUBLISHED_ISO}}",
+         "dateModified": "{{DATE_MODIFIED_ISO}}",
          "author": {
             "@type": "Organization",
-            "name": "TexasSpecialEd.com",
-            "url": ""
+            "name": "{{SITE_NAME}}",
+            "url": "{{SITE_URL}}"
          },
          "publisher": {
             "@type": "Organization",
-            "name": "TexasSpecialEd.com",
+            "name": "{{SITE_NAME}}",
             "logo": {
                "@type": "ImageObject",
-               "url": ""
+               "url": "{{LOGO_URL}}"
             }
          },
          "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": ""
+            "@id": "{{CANONICAL_URL}}"
          }
       }
    </script>
 
-   <!-- Schema: FAQ (optional — only include if  is true) -->
-
+   <!-- Schema: FAQ (optional — only include if {{HAS_FAQ}} is true) -->
+   {{FAQ_SCHEMA_BLOCK}}
    <!--
     When HAS_FAQ = true, Python outputs:
-    <script type="application/ld+json"></script>
+    <script type="application/ld+json">{{FAQ_SCHEMA_JSON}}</script>
     When HAS_FAQ = false, Python outputs empty string
   -->
 
@@ -63,20 +63,20 @@
          "itemListElement": [{
                "@type": "ListItem",
                "position": 1,
-               "name": "Home",
-               "item": ""
+               "name": "{{BREADCRUMB_HOME}}",
+               "item": "{{SITE_URL}}"
             },
             {
                "@type": "ListItem",
                "position": 2,
-               "name": "Guides",
-               "item": ""
+               "name": "{{BREADCRUMB_SECTION_LABEL}}",
+               "item": "{{BREADCRUMB_SECTION_URL}}"
             },
             {
                "@type": "ListItem",
                "position": 3,
-               "name": "Missed the TEFA Deadline? Here's What Families Need to Know",
-               "item": ""
+               "name": "{{H1_TITLE}}",
+               "item": "{{CANONICAL_URL}}"
             }
          ]
       }
@@ -832,213 +832,14 @@
 <body>
 
    <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
-
-   <style id="nav-std-css">
-      /* ── Standardized TexasSpecialEd Nav ── */
-      .site-nav {
-         background: #0E2340;
-         position: sticky;
-         top: 0;
-         z-index: 200;
-         box-shadow: 0 2px 12px rgba(0, 0, 0, .25);
-         font-family: 'DM Sans', system-ui, sans-serif;
-      }
-
-      .site-nav__inner {
-         display: flex;
-         align-items: stretch;
-         justify-content: space-between;
-         height: 56px;
-         max-width: 1100px;
-         margin: 0 auto;
-         padding: 0 24px;
-      }
-
-      .site-nav__logo {
-         font-family: 'DM Serif Display', Georgia, serif;
-         font-size: 1.1rem;
-         color: #fff;
-         display: flex;
-         align-items: center;
-         text-decoration: none;
-         white-space: nowrap;
-         flex-shrink: 0;
-         padding-right: 12px;
-      }
-
-      .site-nav__links {
-         display: flex;
-         align-items: stretch;
-         gap: 0
-      }
-
-      .site-nav__link {
-         display: flex;
-         align-items: center;
-         padding: 0 14px;
-         color: rgba(255, 255, 255, .7);
-         font-size: .85rem;
-         font-weight: 500;
-         border-bottom: 3px solid transparent;
-         text-decoration: none;
-         white-space: nowrap;
-         transition: color .18s, background .18s;
-      }
-
-      .site-nav__link:hover {
-         color: #fff;
-         background: rgba(255, 255, 255, .06);
-         text-decoration: none;
-      }
-
-      /* TEFA — pulsing amber tab */
-      .site-nav__link.nav-tefa {
-         background: rgba(201, 99, 10, .18);
-         color: #FFB366 !important;
-         border-bottom-color: #C9630A;
-         font-weight: 600;
-         gap: 7px;
-      }
-
-      .site-nav__link.nav-tefa:hover {
-         background: rgba(201, 99, 10, .32) !important;
-         color: #FFD0A0 !important;
-      }
-
-      .nav-pulse {
-         width: 7px;
-         height: 7px;
-         border-radius: 50%;
-         background: #C9630A;
-         flex-shrink: 0;
-         position: relative;
-         display: inline-block;
-      }
-
-      .nav-pulse::before {
-         content: '';
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         width: 7px;
-         height: 7px;
-         border-radius: 50%;
-         background: #C9630A;
-         animation: nav-pulse 1.8s ease-out infinite;
-      }
-
-      @keyframes nav-pulse {
-         0% {
-            transform: translate(-50%, -50%) scale(1);
-            opacity: .9
-         }
-
-         70% {
-            transform: translate(-50%, -50%) scale(3.2);
-            opacity: 0
-         }
-
-         100% {
-            transform: translate(-50%, -50%) scale(1);
-            opacity: 0
-         }
-      }
-
-      /* Get Your Letter — CTA button */
-      .site-nav__link.nav-cta {
-         background: #0D7A6B;
-         color: #fff !important;
-         font-weight: 600;
-         border-radius: 0;
-         padding: 0 18px;
-         border-bottom: 3px solid transparent;
-      }
-
-      .site-nav__link.nav-cta:hover {
-         background: #084F46 !important
-      }
-
-      /* Hamburger (mobile) */
-      .site-nav__hamburger {
-         display: none;
-         flex-direction: column;
-         justify-content: center;
-         gap: 5px;
-         padding: 0 12px;
-         cursor: pointer;
-         background: none;
-         border: none;
-      }
-
-      .site-nav__hamburger span {
-         display: block;
-         width: 22px;
-         height: 2px;
-         background: rgba(255, 255, 255, .8);
-         border-radius: 2px;
-         transition: all .2s;
-      }
-
-      @media(max-width:768px) {
-         .site-nav__links {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 56px;
-            left: 0;
-            right: 0;
-            background: #0E2340;
-            padding: 8px 0;
-            z-index: 300;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
-         }
-
-         .site-nav__links.open {
-            display: flex
-         }
-
-         .site-nav__link {
-            padding: 12px 24px;
-            border-bottom: none;
-            border-left: 3px solid transparent;
-         }
-
-         .site-nav__link.nav-tefa {
-            border-left-color: #C9630A
-         }
-
-         .site-nav__link.nav-cta {
-            margin: 8px 16px;
-            border-radius: 6px;
-            justify-content: center
-         }
-
-         .site-nav__hamburger {
-            display: flex
-         }
-
-         .site-nav__inner {
-            position: relative
-         }
-      }
-   </style>
-
-   <nav class="site-nav" role="navigation" aria-label="Main navigation">
-      <div class="site-nav__inner">
-         <a href="../../index.html" class="site-nav__logo">TexasSpecialEd.com</a>
-         <button class="site-nav__hamburger" aria-label="Toggle menu" onclick="(function(){var l=document.querySelector('.site-nav__links');l.classList.toggle('open')})()">
-            <span></span><span></span><span></span>
-         </button>
+   <nav class="site-nav" role="navigation">
+      <div class="container">
+         <a href="{{SITE_URL}}" class="site-nav__logo">{{SITE_NAME}}</a>
          <div class="site-nav__links">
-            <a href="../../districts/index.html" class="site-nav__link">Districts</a>
-            <a href="../../distritos/index.html" class="site-nav__link">Spanish Districts</a>
-            <a href="../../articles/index.html" class="site-nav__link">Articles</a>
-            <a href="../../about/index.html" class="site-nav__link">About</a>
-            <a href="../../contact/index.html" class="site-nav__link">Contact</a>
-            <a href="../../resources/index.html" class="site-nav__link">Resources</a>
-            <a href="../../index.html" class="site-nav__link nav-tefa"><span class="nav-pulse" aria-hidden="true"></span>TEFA</a>
-            <a href="../../tools/tefa-scan/index.html" class="site-nav__link nav-cta">Get Your Letter</a>
+            <a href="{{NAV_LINK_1_URL}}">{{NAV_LINK_1_LABEL}}</a>
+            <a href="{{NAV_LINK_2_URL}}">{{NAV_LINK_2_LABEL}}</a>
+            <a href="{{NAV_LINK_3_URL}}">{{NAV_LINK_3_LABEL}}</a>
+            <a href="{{NAV_CTA_URL}}" class="site-nav__cta">{{NAV_CTA_LABEL}}</a>
          </div>
       </div>
    </nav>
@@ -1046,11 +847,11 @@
    <!-- ═══════════════════════════════ BREADCRUMB ═══════════════════════ -->
    <div class="breadcrumb">
       <div class="container">
-         <a href="">Home</a>
+         <a href="{{SITE_URL}}">{{BREADCRUMB_HOME}}</a>
          <span>›</span>
-         <a href="">Guides</a>
+         <a href="{{BREADCRUMB_SECTION_URL}}">{{BREADCRUMB_SECTION_LABEL}}</a>
          <span>›</span>
-         <span></span>
+         <span>{{BREADCRUMB_POST_LABEL}}</span>
       </div>
    </div>
 
@@ -1058,22 +859,22 @@
    <header class="post-header">
       <div class="container">
          <div class="post-header__meta">
-            <span class="post-tag post-tag--topic"></span>
-            <span class="post-tag post-tag--urgent">⚡ Time-Sensitive</span>
+            <span class="post-tag post-tag--topic">{{POST_TAG_TOPIC}}</span>
+            {{POST_TAG_URGENT_HTML}}
             <!-- Python outputs <span class="post-tag post-tag--urgent">⚡ Time-Sensitive</span> if IS_URGENT=true, else empty string -->
-
+            {{POST_TAG_ESPANOL_HTML}}
             <!-- Python outputs <span class="post-tag post-tag--espanol">En Español</span> if IS_SPANISH=true -->
          </div>
-         <h1>Missed the TEFA Deadline? Here's What Families Need to Know</h1>
-         <p class="post-header__sub"></p>
+         <h1>{{H1_TITLE}}</h1>
+         <p class="post-header__sub">{{POST_SUBTITLE}}</p>
          <div class="post-byline">
-            <span>By <strong style="color:rgba(255,255,255,.85)">TexasSpecialEd Advocate</strong></span>
+            <span>By <strong style="color:rgba(255,255,255,.85)">{{AUTHOR_NAME}}</strong></span>
             <span class="post-byline__sep">|</span>
-            <span>March 18, 2026</span>
+            <span>{{DATE_PUBLISHED_DISPLAY}}</span>
             <span class="post-byline__sep">|</span>
-            <span class="post-byline__update">Updated March 18, 2026</span>
+            <span class="post-byline__update">Updated {{DATE_MODIFIED_DISPLAY}}</span>
             <span class="post-byline__sep">|</span>
-            <span> min read</span>
+            <span>{{READ_TIME}} min read</span>
          </div>
       </div>
    </header>
@@ -1093,150 +894,66 @@
         ════════════════════════════════════════════
       -->
 
-            <h1>Missed the TEFA Deadline? Here's What Families Need to Know</h1>
-            <p>The last few days have been a whirlwind of anxiety for hundreds of thousands of families across the nation. If you were among the many parents scrambling to submit your TEFA application by the original March 17th deadline, only to find yourself caught in the overwhelming rush or simply running out of time, you're not alone. The sheer volume – over 200,000 applications flooding in – created a bottleneck of stress and uncertainty. Many of you felt that sinking feeling, believing you'd missed a crucial opportunity for your child's education.</p>
-            <p>But take a deep breath. We have critical, breaking news that could change everything for your family.</p>
-            <h2>Did You Miss the March 17th TEFA Deadline? You're Not Alone.</h2>
-            <p>The panic was palpable. As the clock ticked down to March 17th, countless families faced technical glitches, missing documents, or simply the daunting complexity of the TEFA application process. The fear of missing out on vital financial assistance for education was a heavy burden. We heard your concerns, your frustrations, and your desperate pleas for more time. That feeling of a missed chance, of letting an opportunity slip away, is incredibly stressful – especially when it concerns your child's future.</p>
-            <h2>BREAKING NEWS: A Lifeline Has Been Thrown!</h2>
-            <p>In a monumental decision that offers a second chance to all affected families, the TEFA application deadline has been officially <strong>extended to March 31, 2026!</strong></p>
-            <p>This is not a drill. This is a genuine, unprecedented extension designed to give every family the opportunity to secure the educational funding they deserve. However, while the new deadline seems far off, this is a <strong>critical window of opportunity that demands immediate action.</strong> Do NOT fall into the trap of procrastination again. The time to act is NOW, to ensure you don't face the same panic next year.</p>
-            <h2>Your Immediate Action Plan: What to Do RIGHT NOW</h2>
-            <p>This extension is a gift, but it's one you must seize without delay. Here’s exactly what you need to do today:</p>
-            <h3>Step 1: Breathe, Then Gather Your Information</h3>
-            <p>Take a moment to calm your nerves. Then, immediately begin compiling all necessary documents. This typically includes:
-               * Your child's academic records (transcripts, test scores).
-               * Proof of residency.
-               * Income verification (tax returns, pay stubs).
-               * Any other specific documents requested by the TEFA program.
-               * A list of schools or programs your child is applying to or attending.</p>
-            <h3>Step 2: Access the TEFA Application Portal</h3>
-            <p>Don't wait. Log back into the official TEFA application portal. If you started an application, it should still be there. If not, begin a new one. Familiarize yourself with the updated interface and any new instructions.</p>
-            <h3>Step 3: Start Your Application (Even If Incomplete!)</h3>
-            <p>The most crucial step is to <strong>begin the application process today.</strong> Even if you don't have every single document perfectly in order, start filling out what you can. This creates a timestamp, shows your intent, and allows you to save your progress. Don't let the pursuit of perfection prevent you from starting.</p>
-            <h2>Missing Documents? Here's How to Fast-Track Your Application</h2>
-            <p>One of the biggest hurdles for families was missing documentation. The extension gives you time, but you can still fast-track your submission.</p>
-            <h3>Provisional Submission Strategy</h3>
-            <p>Many programs allow for a provisional submission. If you're missing a specific document that will take time to acquire (e.g., a new transcript, a specific tax form), complete the rest of your application and make a clear note in the relevant section about the missing item and when you expect to provide it. Some systems allow you to upload a placeholder document explaining the delay.</p>
-            <h3>Contacting Support Immediately</h3>
-            <p>Don't guess. If you're unsure about a missing document, contact TEFA support services <em>today</em>. Ask for specific guidance on how to proceed with an incomplete application or what alternatives are accepted. Get their advice in writing if possible.</p>
-            <h3>Prioritize Key Information</h3>
-            <p>Focus on accurately completing the most critical sections first:
-               * Applicant and family demographic information.
-               * Financial data that you <em>do</em> have readily available.
-               * School choices.</p>
-            <p>This ensures the core of your application is solid while you chase down the remaining pieces.</p>
-            <h2>Why "Later" Is Not an Option: The Urgency of Today</h2>
-            <p>While March 31, 2026, seems like a distant future, waiting is a dangerous gamble. Here's why acting <em>today</em> is absolutely critical:</p>
-            <ul>
-               <li><strong>Avoid the Next Rush:</strong> The original deadline saw unprecedented traffic. Waiting until closer to the new deadline will likely result in the same system overloads, technical issues, and immense stress. Get ahead of the curve now.</li>
-               <li><strong>Limited Funds:</strong> While the deadline is extended, TEFA funds are often allocated on a first-come, first-served basis or are subject to availability. Submitting early increases your chances of securing the maximum possible aid.</li>
-               <li><strong>Peace of Mind:</strong> Imagine the relief of having this critical task completed, knowing your child's educational funding is secured. Don't carry this burden for another year.</li>
-               <li><strong>Time for Corrections:</strong> Submitting early gives you ample time to address any potential errors or requests for additional information without the pressure of an impending deadline.</li>
-               <li><strong>Don't Procrastinate Again:</strong> This is your second chance. Use it wisely. Break the cycle of last-minute panic.</li>
-            </ul>
-            <p>This extension is a rare opportunity – a true lifeline for families who felt they'd missed their shot. Do not let this second chance slip through your fingers. Take action <em>today</em>. Log in, start your application, and secure your child's future. Share this vital information with every family you know who might have been impacted by the original deadline. Let's ensure no one misses out this time.</p>
+            {{POST_BODY_HTML}}
 
             <!--
-        Available HTML snippet components (use in <h1>Missed the TEFA Deadline? Here's What Families Need to Know</h1>
-<p>The last few days have been a whirlwind of anxiety for hundreds of thousands of families across the nation. If you were among the many parents scrambling to submit your TEFA application by the original March 17th deadline, only to find yourself caught in the overwhelming rush or simply running out of time, you're not alone. The sheer volume – over 200,000 applications flooding in – created a bottleneck of stress and uncertainty. Many of you felt that sinking feeling, believing you'd missed a crucial opportunity for your child's education.</p>
-<p>But take a deep breath. We have critical, breaking news that could change everything for your family.</p>
-<h2>Did You Miss the March 17th TEFA Deadline? You're Not Alone.</h2>
-<p>The panic was palpable. As the clock ticked down to March 17th, countless families faced technical glitches, missing documents, or simply the daunting complexity of the TEFA application process. The fear of missing out on vital financial assistance for education was a heavy burden. We heard your concerns, your frustrations, and your desperate pleas for more time. That feeling of a missed chance, of letting an opportunity slip away, is incredibly stressful – especially when it concerns your child's future.</p>
-<h2>BREAKING NEWS: A Lifeline Has Been Thrown!</h2>
-<p>In a monumental decision that offers a second chance to all affected families, the TEFA application deadline has been officially <strong>extended to March 31, 2026!</strong></p>
-<p>This is not a drill. This is a genuine, unprecedented extension designed to give every family the opportunity to secure the educational funding they deserve. However, while the new deadline seems far off, this is a <strong>critical window of opportunity that demands immediate action.</strong> Do NOT fall into the trap of procrastination again. The time to act is NOW, to ensure you don't face the same panic next year.</p>
-<h2>Your Immediate Action Plan: What to Do RIGHT NOW</h2>
-<p>This extension is a gift, but it's one you must seize without delay. Here’s exactly what you need to do today:</p>
-<h3>Step 1: Breathe, Then Gather Your Information</h3>
-<p>Take a moment to calm your nerves. Then, immediately begin compiling all necessary documents. This typically includes:
-*   Your child's academic records (transcripts, test scores).
-*   Proof of residency.
-*   Income verification (tax returns, pay stubs).
-*   Any other specific documents requested by the TEFA program.
-*   A list of schools or programs your child is applying to or attending.</p>
-<h3>Step 2: Access the TEFA Application Portal</h3>
-<p>Don't wait. Log back into the official TEFA application portal. If you started an application, it should still be there. If not, begin a new one. Familiarize yourself with the updated interface and any new instructions.</p>
-<h3>Step 3: Start Your Application (Even If Incomplete!)</h3>
-<p>The most crucial step is to <strong>begin the application process today.</strong> Even if you don't have every single document perfectly in order, start filling out what you can. This creates a timestamp, shows your intent, and allows you to save your progress. Don't let the pursuit of perfection prevent you from starting.</p>
-<h2>Missing Documents? Here's How to Fast-Track Your Application</h2>
-<p>One of the biggest hurdles for families was missing documentation. The extension gives you time, but you can still fast-track your submission.</p>
-<h3>Provisional Submission Strategy</h3>
-<p>Many programs allow for a provisional submission. If you're missing a specific document that will take time to acquire (e.g., a new transcript, a specific tax form), complete the rest of your application and make a clear note in the relevant section about the missing item and when you expect to provide it. Some systems allow you to upload a placeholder document explaining the delay.</p>
-<h3>Contacting Support Immediately</h3>
-<p>Don't guess. If you're unsure about a missing document, contact TEFA support services <em>today</em>. Ask for specific guidance on how to proceed with an incomplete application or what alternatives are accepted. Get their advice in writing if possible.</p>
-<h3>Prioritize Key Information</h3>
-<p>Focus on accurately completing the most critical sections first:
-*   Applicant and family demographic information.
-*   Financial data that you <em>do</em> have readily available.
-*   School choices.</p>
-<p>This ensures the core of your application is solid while you chase down the remaining pieces.</p>
-<h2>Why "Later" Is Not an Option: The Urgency of Today</h2>
-<p>While March 31, 2026, seems like a distant future, waiting is a dangerous gamble. Here's why acting <em>today</em> is absolutely critical:</p>
-<ul>
-<li><strong>Avoid the Next Rush:</strong> The original deadline saw unprecedented traffic. Waiting until closer to the new deadline will likely result in the same system overloads, technical issues, and immense stress. Get ahead of the curve now.</li>
-<li><strong>Limited Funds:</strong> While the deadline is extended, TEFA funds are often allocated on a first-come, first-served basis or are subject to availability. Submitting early increases your chances of securing the maximum possible aid.</li>
-<li><strong>Peace of Mind:</strong> Imagine the relief of having this critical task completed, knowing your child's educational funding is secured. Don't carry this burden for another year.</li>
-<li><strong>Time for Corrections:</strong> Submitting early gives you ample time to address any potential errors or requests for additional information without the pressure of an impending deadline.</li>
-<li><strong>Don't Procrastinate Again:</strong> This is your second chance. Use it wisely. Break the cycle of last-minute panic.</li>
-</ul>
-<p>This extension is a rare opportunity – a true lifeline for families who felt they'd missed their shot. Do not let this second chance slip through your fingers. Take action <em>today</em>. Log in, start your application, and secure your child's future. Share this vital information with every family you know who might have been impacted by the original deadline. Let's ensure no one misses out this time.</p>):
+        Available HTML snippet components (use in {{POST_BODY_HTML}}):
 
         ── INLINE CTA (mid-article) ──
         <div class="post-cta">
-          <div class="post-cta__title"></div>
-          <div class="post-cta__body"></div>
-          <a href="" class="btn btn--primary"></a>
+          <div class="post-cta__title">{{INLINE_CTA_TITLE}}</div>
+          <div class="post-cta__body">{{INLINE_CTA_BODY}}</div>
+          <a href="{{INLINE_CTA_URL}}" class="btn btn--primary">{{INLINE_CTA_LABEL}}</a>
         </div>
 
         ── CALLOUT: INFO ──
         <div class="callout callout--info">
-          <div class="callout__title"></div>
-          <p></p>
+          <div class="callout__title">{{CALLOUT_TITLE}}</div>
+          <p>{{CALLOUT_BODY}}</p>
         </div>
 
         ── CALLOUT: WARNING ──
         <div class="callout callout--warning">
-          <div class="callout__title"></div>
-          <p></p>
+          <div class="callout__title">{{CALLOUT_TITLE}}</div>
+          <p>{{CALLOUT_BODY}}</p>
         </div>
 
         ── CALLOUT: DANGER ──
         <div class="callout callout--danger">
-          <div class="callout__title"></div>
-          <p></p>
+          <div class="callout__title">{{CALLOUT_TITLE}}</div>
+          <p>{{CALLOUT_BODY}}</p>
         </div>
 
         ── KEY NUMBER ──
         <div class="key-number">
-          <div class="key-number__figure"></div>
-          <div class="key-number__text"></div>
+          <div class="key-number__figure">{{KEY_NUMBER_FIGURE}}</div>
+          <div class="key-number__text">{{KEY_NUMBER_TEXT}}</div>
         </div>
 
         ── CHECKLIST ──
         <ul class="checklist">
-          
+          {{CHECKLIST_ITEMS_HTML}}
         </ul>
 
         ── NUMBERED STEPS ──
         <ol class="steps-list">
-          
+          {{STEPS_ITEMS_HTML}}
         </ol>
 
         ── TABLE ──
         <div class="post-table-wrap">
           <table class="post-table">
-            <thead><tr></tr></thead>
-            <tbody></tbody>
+            <thead><tr>{{TABLE_HEADERS_HTML}}</tr></thead>
+            <tbody>{{TABLE_ROWS_HTML}}</tbody>
           </table>
         </div>
       -->
 
             <!-- ── SOURCES ── -->
             <div class="sources-section">
-               <div class="sources-title"></div>
+               <div class="sources-title">{{SOURCES_TITLE}}</div>
                <ul class="sources-list">
-
+                  {{SOURCES_LIST_HTML}}
                   <!-- Example output:
           <li><a href="https://educationfreedom.texas.gov" target="_blank" rel="noopener">Texas Education Freedom Accounts — Official TEFA Program Site (Comptroller of Public Accounts)</a></li>
           <li><a href="https://tea.texas.gov" target="_blank" rel="noopener">Texas Education Agency — Special Education Guidance</a></li>
@@ -1246,7 +963,7 @@
 
             <!-- ── DISCLAIMER ── -->
             <div class="post-disclaimer">
-
+               {{POST_DISCLAIMER_TEXT}}
             </div>
 
          </article>
@@ -1256,9 +973,9 @@
 
             <!-- Table of Contents -->
             <nav class="toc" aria-label="Table of contents">
-               <div class="toc__title"></div>
+               <div class="toc__title">{{TOC_TITLE}}</div>
                <ul class="toc__list">
-
+                  {{TOC_ITEMS_HTML}}
                   <!-- Example output:
           <li><a href="#who-qualifies">Who Qualifies?</a></li>
           <li><a href="#iep-requirement">The IEP Requirement</a></li>
@@ -1270,23 +987,23 @@
 
             <!-- Sidebar CTA -->
             <div class="sidebar-cta">
-               <div class="sidebar-cta__eyebrow"></div>
-               <div class="sidebar-cta__title"></div>
-               <div class="sidebar-cta__body"></div>
-               <a href="" class="btn btn--amber" style="width:100%;text-align:center;display:block"></a>
+               <div class="sidebar-cta__eyebrow">{{SIDEBAR_CTA_EYEBROW}}</div>
+               <div class="sidebar-cta__title">{{SIDEBAR_CTA_TITLE}}</div>
+               <div class="sidebar-cta__body">{{SIDEBAR_CTA_BODY}}</div>
+               <a href="{{SIDEBAR_CTA_URL}}" class="btn btn--amber" style="width:100%;text-align:center;display:block">{{SIDEBAR_CTA_LABEL}}</a>
             </div>
 
             <!-- Author Card -->
             <div class="author-card">
-               <div class="author-card__label"></div>
-               <div class="author-card__name">TexasSpecialEd Advocate</div>
-               <div class="author-card__bio"></div>
+               <div class="author-card__label">{{AUTHOR_CARD_LABEL}}</div>
+               <div class="author-card__name">{{AUTHOR_NAME}}</div>
+               <div class="author-card__bio">{{AUTHOR_BIO}}</div>
             </div>
 
             <!-- Related Posts -->
             <div class="related-posts">
-               <div class="related-posts__title"></div>
-
+               <div class="related-posts__title">{{RELATED_TITLE}}</div>
+               {{RELATED_LINKS_HTML}}
                <!-- Example output:
         <a href="/blog/tefa-iep-key" class="related-link">
           <span class="related-link__tag">IEP · 6 min read</span>
@@ -1306,10 +1023,10 @@
    <!-- ═══════════════════════════════ POST FOOTER CTA ══════════════════ -->
    <section class="post-footer-cta">
       <div class="container">
-         <h2></h2>
-         <p></p>
-         <a href="" class="btn btn--primary" style="margin-right:12px"></a>
-         <a href="" class="btn" style="background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff"></a>
+         <h2>{{FOOTER_CTA_TITLE}}</h2>
+         <p>{{FOOTER_CTA_BODY}}</p>
+         <a href="{{FOOTER_CTA_PRIMARY_URL}}" class="btn btn--primary" style="margin-right:12px">{{FOOTER_CTA_PRIMARY_LABEL}}</a>
+         <a href="{{FOOTER_CTA_SECONDARY_URL}}" class="btn" style="background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff">{{FOOTER_CTA_SECONDARY_LABEL}}</a>
       </div>
    </section>
 
@@ -1317,17 +1034,17 @@
    <footer class="site-footer">
       <div class="container">
          <div class="footer-bottom">
-            <span></span>
-            <span></span>
+            <span>{{FOOTER_COPYRIGHT}}</span>
+            <span>{{FOOTER_LEGAL_LINKS_HTML}}</span>
          </div>
-         <p class="footer-disclaimer"></p>
+         <p class="footer-disclaimer">{{FOOTER_DISCLAIMER}}</p>
       </div>
    </footer>
 
    <script>
       /* ── Auto-generate TOC from h2 headings if TOC_AUTO=true ── */
       (function() {
-         var auto = '';
+         var auto = '{{TOC_AUTO}}';
          if (auto !== 'true') return;
          var headings = document.querySelectorAll('.post-body h2');
          var tocList = document.querySelector('.toc__list');
