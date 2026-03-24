@@ -41,24 +41,17 @@
          overflow-x: hidden;
       }
 
-      /* Background texture */
       body::before {
          content: '';
          position: fixed;
          inset: 0;
-         background:
-            radial-gradient(ellipse 80% 60% at 10% 0%, #1e3a6e44 0%, transparent 60%),
+         background: radial-gradient(ellipse 80% 60% at 10% 0%, #1e3a6e44 0%, transparent 60%),
             radial-gradient(ellipse 60% 50% at 90% 100%, #c9820a18 0%, transparent 55%),
-            repeating-linear-gradient(0deg,
-               transparent,
-               transparent 80px,
-               rgba(255, 255, 255, 0.014) 80px,
-               rgba(255, 255, 255, 0.014) 81px);
+            repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(255, 255, 255, 0.014) 80px, rgba(255, 255, 255, 0.014) 81px);
          pointer-events: none;
          z-index: 0;
       }
 
-      /* Seal / emblem top */
       .page-wrap {
          position: relative;
          z-index: 1;
@@ -66,7 +59,6 @@
          max-width: 740px;
       }
 
-      /* Header banner */
       .banner {
          text-align: center;
          padding: 20px 0 36px;
@@ -137,7 +129,6 @@
          line-height: 1.7;
       }
 
-      /* Decorative rule */
       .rule {
          display: flex;
          align-items: center;
@@ -165,20 +156,15 @@
          transform: rotate(45deg);
       }
 
-      /* Card */
       .card {
          background: var(--cream);
          border-radius: 16px;
          padding: 40px 44px 44px;
-         box-shadow:
-            0 2px 0 rgba(255, 255, 255, .06) inset,
-            0 32px 80px rgba(0, 0, 0, .45),
-            0 2px 12px rgba(0, 0, 0, .25);
+         box-shadow: 0 2px 0 rgba(255, 255, 255, .06) inset, 0 32px 80px rgba(0, 0, 0, .45), 0 2px 12px rgba(0, 0, 0, .25);
          animation: fadeUp .6s .1s ease both;
          position: relative;
       }
 
-      /* Top accent line */
       .card-accent {
          position: absolute;
          top: 0;
@@ -190,7 +176,6 @@
          z-index: 0;
       }
 
-      /* Texas star watermark */
       .card-star {
          position: absolute;
          bottom: -20px;
@@ -228,7 +213,6 @@
          flex-shrink: 0;
       }
 
-      /* Notice strip */
       .notice-strip {
          background: #fff8e6;
          border: 1px solid #fbd878;
@@ -249,7 +233,6 @@
          flex-shrink: 0;
       }
 
-      /* Form fields */
       .field-group {
          margin-bottom: 22px;
       }
@@ -308,7 +291,6 @@
          min-height: 130px;
       }
 
-      /* Two-col row */
       .row-2 {
          display: grid;
          grid-template-columns: 1fr 1fr;
@@ -321,7 +303,6 @@
          }
       }
 
-      /* Urgency chips */
       .chip-group {
          display: flex;
          flex-wrap: wrap;
@@ -353,14 +334,25 @@
          color: #fff;
       }
 
-      /* Divider */
       .divider {
          border: none;
          border-top: 1px dashed var(--border);
          margin: 28px 0;
       }
 
-      /* Submit button */
+      /* --- STICKY BUTTON CONTAINER --- */
+      .action-footer {
+         position: sticky;
+         bottom: 0;
+         /* Locks to the bottom of the scroll container */
+         background: var(--cream);
+         padding: 20px 0 10px 0;
+         margin-top: 10px;
+         z-index: 99;
+         /* Creates a smooth blur effect above the button so text fading behind it looks clean */
+         box-shadow: 0 -20px 20px -10px var(--cream);
+      }
+
       .submit-btn {
          width: 100%;
          padding: 16px 24px;
@@ -379,9 +371,6 @@
          gap: 10px;
          box-shadow: 0 4px 20px rgba(192, 57, 43, .4);
          transition: transform .15s, box-shadow .15s;
-         position: relative;
-         z-index: 10;
-         margin-top: 8px;
       }
 
       .submit-btn:hover {
@@ -408,7 +397,6 @@
          transform: none;
       }
 
-      /* Disclaimer */
       .disclaimer {
          text-align: center;
          font-size: 11.5px;
@@ -417,12 +405,6 @@
          line-height: 1.6;
       }
 
-      .disclaimer a {
-         color: var(--navy);
-         text-decoration: underline;
-      }
-
-      /* Loading */
       .loading {
          display: none;
          text-align: center;
@@ -452,7 +434,6 @@
          font-size: 15px;
       }
 
-      /* Results */
       #results-area {
          display: none;
          margin-top: 28px;
@@ -528,7 +509,6 @@
          box-shadow: 0 6px 20px rgba(37, 99, 235, .45);
       }
 
-      /* Footer */
       .footer {
          text-align: center;
          margin-top: 32px;
@@ -537,7 +517,6 @@
          animation: fadeUp .6s .3s ease both;
       }
 
-      /* Animations */
       @keyframes fadeDown {
          from {
             opacity: 0;
@@ -560,24 +539,6 @@
             opacity: 1;
             transform: translateY(0);
          }
-      }
-
-      /* Progress bar */
-      .progress-bar {
-         width: 100%;
-         height: 3px;
-         background: var(--border);
-         border-radius: 2px;
-         margin-bottom: 24px;
-         overflow: hidden;
-      }
-
-      .progress-fill {
-         height: 100%;
-         background: linear-gradient(90deg, var(--navy), var(--amber));
-         border-radius: 2px;
-         width: 0%;
-         transition: width .3s ease;
       }
    </style>
 </head>
@@ -610,11 +571,6 @@
          </div>
 
          <form id="analyzer-form">
-
-            <div class="progress-bar">
-               <div class="progress-fill" id="progress"></div>
-            </div>
-
             <div class="row-2">
                <div class="field-group">
                   <label for="district">School District <span class="opt">optional</span></label>
