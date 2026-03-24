@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Emergency IEP Violation Analyzer | Texas Special Ed</title>
+   <style>
+      body {
+         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         line-height: 1.6;
+         color: #333;
+         max-width: 800px;
+         margin: 0 auto;
+         padding: 20px;
+         background-color: #f9fafb;
+      }
+
+      .container {
+         background: white;
+         padding: 30px;
+         border-radius: 8px;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+         color: #1a365d;
+         margin-top: 0;
+      }
+
+      label {
+         font-weight: bold;
+         display: block;
+         margin-bottom: 8px;
+      }
+
+      textarea,
+      input {
+         width: 100%;
+         padding: 10px;
+         margin-bottom: 20px;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         box-sizing: border-box;
+         font-family: inherit;
+      }
+
+      button {
+         background-color: #e53e3e;
+         color: white;
+         border: none;
+         padding: 15px 20px;
+         font-size: 18px;
+         font-weight: bold;
+         border-radius: 4px;
+         cursor: pointer;
+         width: 100%;
+      }
+
+      button:hover {
+         background-color: #c53030;
+      }
+
+      .loading {
+         display: none;
+         text-align: center;
+         font-style: italic;
+         color: #666;
+         margin-top: 20px;
+      }
+
+      /* The Results Area */
+      #results-area {
+         display: none;
+         margin-top: 30px;
+         padding-top: 20px;
+         border-top: 2px solid #edf2f7;
+      }
+
+      .alert-box {
+         background-color: #fffaf0;
+         border-left: 4px solid #dd6b20;
+         padding: 15px;
+         margin-bottom: 20px;
+      }
+
+      .paywall-box {
+         background-color: #ebf8ff;
+         border: 1px solid #90cdf4;
+         padding: 20px;
+         text-align: center;
+         border-radius: 8px;
+      }
+
+      .paywall-button {
+         background-color: #3182ce;
+         margin-top: 15px;
+      }
+
+      .paywall-button:hover {
+         background-color: #2b6cb0;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="container">
+      <h1>Emergency IEP Violation Analyzer</h1>
+      <p>Find out if your Texas school district is violating special education law before summer begins.</p>
+
+      <form id="analyzer-form">
+         <label for="district">School District (Optional but helpful):</label>
+         <input type="text" id="district" placeholder="e.g., Houston ISD">
+
+         <label for="situation">What is happening right now?</label>
+         <textarea id="situation" rows="6" placeholder="Example: I requested an FIE on March 1st, but the school says they won't have time until next year..." required>
