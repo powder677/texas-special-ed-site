@@ -5,113 +5,663 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Emergency IEP Violation Analyzer | Texas Special Ed</title>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
    <style>
-      body {
-         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-         line-height: 1.6;
-         color: #333;
-         max-width: 800px;
-         margin: 0 auto;
-         padding: 20px;
-         background-color: #f9fafb;
+      :root {
+         --navy: #0f1f3d;
+         --navy-mid: #1a3260;
+         --amber: #c9820a;
+         --amber-light: #f0a52a;
+         --cream: #fdf8f0;
+         --slate: #4a5568;
+         --border: #dde3ef;
+         --red: #c0392b;
+         --red-dark: #96291f;
+         --blue-soft: #eef4fc;
+         --success: #2d7a4f;
       }
 
-      .container {
-         background: white;
-         padding: 30px;
-         border-radius: 8px;
-         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      *,
+      *::before,
+      *::after {
+         box-sizing: border-box;
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+         font-family: 'DM Sans', sans-serif;
+         background: var(--navy);
+         min-height: 100vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 40px 20px 60px;
+         position: relative;
+         overflow-x: hidden;
+      }
+
+      /* Background texture */
+      body::before {
+         content: '';
+         position: fixed;
+         inset: 0;
+         background:
+            radial-gradient(ellipse 80% 60% at 10% 0%, #1e3a6e44 0%, transparent 60%),
+            radial-gradient(ellipse 60% 50% at 90% 100%, #c9820a18 0%, transparent 55%),
+            repeating-linear-gradient(0deg,
+               transparent,
+               transparent 80px,
+               rgba(255, 255, 255, 0.014) 80px,
+               rgba(255, 255, 255, 0.014) 81px);
+         pointer-events: none;
+         z-index: 0;
+      }
+
+      /* Seal / emblem top */
+      .page-wrap {
+         position: relative;
+         z-index: 1;
+         width: 100%;
+         max-width: 740px;
+      }
+
+      /* Header banner */
+      .banner {
+         text-align: center;
+         padding: 20px 0 36px;
+         animation: fadeDown .55s ease both;
+      }
+
+      .banner-eyebrow {
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
+         font-family: 'DM Sans', sans-serif;
+         font-size: 11px;
+         font-weight: 600;
+         letter-spacing: .18em;
+         text-transform: uppercase;
+         color: var(--amber-light);
+         background: rgba(201, 130, 10, .12);
+         border: 1px solid rgba(201, 130, 10, .3);
+         border-radius: 100px;
+         padding: 6px 14px;
+         margin-bottom: 20px;
+      }
+
+      .banner-eyebrow::before {
+         content: '';
+         width: 6px;
+         height: 6px;
+         background: var(--amber-light);
+         border-radius: 50%;
+         animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+
+         0%,
+         100% {
+            opacity: 1;
+            transform: scale(1);
+         }
+
+         50% {
+            opacity: .5;
+            transform: scale(.75);
+         }
       }
 
       h1 {
-         color: #1a365d;
-         margin-top: 0;
+         font-family: 'Playfair Display', serif;
+         font-size: clamp(28px, 5vw, 42px);
+         font-weight: 700;
+         color: #fff;
+         line-height: 1.15;
+         letter-spacing: -.01em;
+         margin-bottom: 14px;
+      }
+
+      h1 span {
+         color: var(--amber-light);
+      }
+
+      .banner-sub {
+         font-family: 'Lora', serif;
+         font-style: italic;
+         color: rgba(255, 255, 255, .55);
+         font-size: 16px;
+         max-width: 500px;
+         margin: 0 auto;
+         line-height: 1.7;
+      }
+
+      /* Decorative rule */
+      .rule {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         justify-content: center;
+         margin: 0 auto 30px;
+      }
+
+      .rule::before,
+      .rule::after {
+         content: '';
+         height: 1px;
+         width: 60px;
+         background: linear-gradient(to right, transparent, rgba(201, 130, 10, .4));
+      }
+
+      .rule::after {
+         background: linear-gradient(to left, transparent, rgba(201, 130, 10, .4));
+      }
+
+      .rule-diamond {
+         width: 6px;
+         height: 6px;
+         background: var(--amber);
+         transform: rotate(45deg);
+      }
+
+      /* Card */
+      .card {
+         background: var(--cream);
+         border-radius: 16px;
+         padding: 40px 44px 44px;
+         box-shadow:
+            0 2px 0 rgba(255, 255, 255, .06) inset,
+            0 32px 80px rgba(0, 0, 0, .45),
+            0 2px 12px rgba(0, 0, 0, .25);
+         animation: fadeUp .6s .1s ease both;
+         position: relative;
+         overflow: hidden;
+      }
+
+      /* Top accent line */
+      .card::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         height: 3px;
+         background: linear-gradient(90deg, var(--navy) 0%, var(--amber) 50%, var(--navy) 100%);
+      }
+
+      /* Texas star watermark */
+      .card::after {
+         content: '★';
+         position: absolute;
+         bottom: -30px;
+         right: -10px;
+         font-size: 180px;
+         color: rgba(15, 31, 61, .04);
+         pointer-events: none;
+         line-height: 1;
+      }
+
+      .section-title {
+         font-family: 'Playfair Display', serif;
+         font-size: 20px;
+         font-weight: 600;
+         color: var(--navy);
+         margin-bottom: 24px;
+         padding-bottom: 14px;
+         border-bottom: 1px solid var(--border);
+         display: flex;
+         align-items: center;
+         gap: 10px;
+      }
+
+      .section-title .icon {
+         width: 28px;
+         height: 28px;
+         background: var(--navy);
+         border-radius: 6px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 13px;
+         flex-shrink: 0;
+      }
+
+      /* Notice strip */
+      .notice-strip {
+         background: #fff8e6;
+         border: 1px solid #fbd878;
+         border-radius: 8px;
+         padding: 12px 16px;
+         display: flex;
+         align-items: flex-start;
+         gap: 12px;
+         margin-bottom: 28px;
+         font-size: 13px;
+         color: #7a5200;
+         line-height: 1.5;
+      }
+
+      .notice-strip .notice-icon {
+         font-size: 16px;
+         margin-top: 1px;
+         flex-shrink: 0;
+      }
+
+      /* Form fields */
+      .field-group {
+         margin-bottom: 22px;
       }
 
       label {
-         font-weight: bold;
          display: block;
+         font-size: 13px;
+         font-weight: 600;
+         color: var(--navy);
+         letter-spacing: .03em;
+         text-transform: uppercase;
          margin-bottom: 8px;
       }
 
+      label span.opt {
+         font-size: 11px;
+         font-weight: 400;
+         text-transform: none;
+         letter-spacing: 0;
+         color: var(--slate);
+         margin-left: 6px;
+      }
+
+      input[type="text"],
       textarea,
-      input {
+      select {
          width: 100%;
-         padding: 10px;
-         margin-bottom: 20px;
-         border: 1px solid #ccc;
-         border-radius: 4px;
-         box-sizing: border-box;
-         font-family: inherit;
+         padding: 12px 16px;
+         border: 1.5px solid var(--border);
+         border-radius: 8px;
+         font-family: 'DM Sans', sans-serif;
+         font-size: 15px;
+         color: #1a202c;
+         background: #fff;
+         transition: border-color .2s, box-shadow .2s;
+         outline: none;
+         appearance: none;
       }
 
-      button {
-         background-color: #e53e3e;
-         color: white;
-         border: none;
-         padding: 15px 20px;
-         font-size: 18px;
-         font-weight: bold;
-         border-radius: 4px;
+      input[type="text"]::placeholder,
+      textarea::placeholder {
+         color: #a0aec0;
+         font-style: italic;
+      }
+
+      input[type="text"]:focus,
+      textarea:focus,
+      select:focus {
+         border-color: var(--navy);
+         box-shadow: 0 0 0 3px rgba(15, 31, 61, .1);
+      }
+
+      textarea {
+         resize: vertical;
+         line-height: 1.65;
+         min-height: 130px;
+      }
+
+      /* Two-col row */
+      .row-2 {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         gap: 16px;
+      }
+
+      @media (max-width: 540px) {
+         .row-2 {
+            grid-template-columns: 1fr;
+         }
+      }
+
+      /* Urgency chips */
+      .chip-group {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 8px;
+         margin-top: 2px;
+      }
+
+      .chip {
+         padding: 7px 14px;
+         border-radius: 100px;
+         border: 1.5px solid var(--border);
+         font-size: 13px;
+         font-weight: 500;
+         color: var(--slate);
          cursor: pointer;
+         background: #fff;
+         transition: all .18s;
+         user-select: none;
+      }
+
+      .chip:hover {
+         border-color: var(--navy);
+         color: var(--navy);
+      }
+
+      .chip.active {
+         background: var(--navy);
+         border-color: var(--navy);
+         color: #fff;
+      }
+
+      /* Divider */
+      .divider {
+         border: none;
+         border-top: 1px dashed var(--border);
+         margin: 28px 0;
+      }
+
+      /* Submit button */
+      .submit-btn {
          width: 100%;
+         padding: 16px 24px;
+         background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+         color: #fff;
+         border: none;
+         border-radius: 10px;
+         font-family: 'DM Sans', sans-serif;
+         font-size: 17px;
+         font-weight: 600;
+         letter-spacing: .02em;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 10px;
+         box-shadow: 0 4px 20px rgba(192, 57, 43, .4), 0 1px 0 rgba(255, 255, 255, .1) inset;
+         transition: transform .15s, box-shadow .15s, background .15s;
+         position: relative;
+         overflow: hidden;
       }
 
-      button:hover {
-         background-color: #c53030;
+      .submit-btn::before {
+         content: '';
+         position: absolute;
+         inset: 0;
+         background: linear-gradient(135deg, rgba(255, 255, 255, .1) 0%, transparent 60%);
+         pointer-events: none;
       }
 
+      .submit-btn:hover {
+         transform: translateY(-1px);
+         box-shadow: 0 8px 28px rgba(192, 57, 43, .5), 0 1px 0 rgba(255, 255, 255, .1) inset;
+      }
+
+      .submit-btn:active {
+         transform: translateY(0);
+      }
+
+      .submit-btn .arrow {
+         font-size: 18px;
+         transition: transform .2s;
+      }
+
+      .submit-btn:hover .arrow {
+         transform: translateX(4px);
+      }
+
+      .submit-btn:disabled {
+         opacity: .6;
+         cursor: not-allowed;
+         transform: none;
+      }
+
+      /* Disclaimer */
+      .disclaimer {
+         text-align: center;
+         font-size: 11.5px;
+         color: #718096;
+         margin-top: 14px;
+         line-height: 1.6;
+      }
+
+      .disclaimer a {
+         color: var(--navy);
+         text-decoration: underline;
+      }
+
+      /* Loading */
       .loading {
          display: none;
          text-align: center;
-         font-style: italic;
-         color: #666;
-         margin-top: 20px;
+         padding: 32px 20px;
       }
 
-      /* The Results Area */
+      .spinner {
+         width: 36px;
+         height: 36px;
+         border: 3px solid var(--border);
+         border-top-color: var(--navy);
+         border-radius: 50%;
+         animation: spin .8s linear infinite;
+         margin: 0 auto 16px;
+      }
+
+      @keyframes spin {
+         to {
+            transform: rotate(360deg);
+         }
+      }
+
+      .loading p {
+         font-family: 'Lora', serif;
+         font-style: italic;
+         color: var(--slate);
+         font-size: 15px;
+      }
+
+      /* Results */
       #results-area {
          display: none;
-         margin-top: 30px;
-         padding-top: 20px;
-         border-top: 2px solid #edf2f7;
+         margin-top: 28px;
+         animation: fadeUp .4s ease both;
+      }
+
+      .result-header {
+         font-family: 'Playfair Display', serif;
+         font-size: 19px;
+         color: var(--navy);
+         margin-bottom: 16px;
+         padding-bottom: 12px;
+         border-bottom: 1px solid var(--border);
       }
 
       .alert-box {
-         background-color: #fffaf0;
+         background: #fff8f0;
          border-left: 4px solid #dd6b20;
-         padding: 15px;
-         margin-bottom: 20px;
+         border-radius: 0 8px 8px 0;
+         padding: 16px 20px;
+         margin-bottom: 16px;
+         font-size: 14.5px;
+         line-height: 1.65;
+         color: #5a3010;
+      }
+
+      .alert-box strong {
+         display: block;
+         margin-bottom: 4px;
+         font-size: 15px;
       }
 
       .paywall-box {
-         background-color: #ebf8ff;
-         border: 1px solid #90cdf4;
-         padding: 20px;
+         background: linear-gradient(135deg, #eef4fc 0%, #e8f0fb 100%);
+         border: 1px solid #b8d0f0;
+         border-radius: 12px;
+         padding: 28px 24px;
          text-align: center;
+      }
+
+      .paywall-box h3 {
+         font-family: 'Playfair Display', serif;
+         font-size: 20px;
+         color: var(--navy);
+         margin-bottom: 10px;
+      }
+
+      .paywall-box p {
+         color: var(--slate);
+         font-size: 14.5px;
+         line-height: 1.6;
+         margin-bottom: 20px;
+      }
+
+      .paywall-btn {
+         display: inline-block;
+         padding: 13px 28px;
+         background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+         color: #fff;
+         border: none;
          border-radius: 8px;
+         font-family: 'DM Sans', sans-serif;
+         font-size: 15px;
+         font-weight: 600;
+         cursor: pointer;
+         box-shadow: 0 4px 14px rgba(37, 99, 235, .35);
+         transition: transform .15s, box-shadow .15s;
+         text-decoration: none;
       }
 
-      .paywall-button {
-         background-color: #3182ce;
-         margin-top: 15px;
+      .paywall-btn:hover {
+         transform: translateY(-1px);
+         box-shadow: 0 6px 20px rgba(37, 99, 235, .45);
       }
 
-      .paywall-button:hover {
-         background-color: #2b6cb0;
+      /* Footer */
+      .footer {
+         text-align: center;
+         margin-top: 32px;
+         color: rgba(255, 255, 255, .3);
+         font-size: 12px;
+         animation: fadeUp .6s .3s ease both;
+      }
+
+      /* Animations */
+      @keyframes fadeDown {
+         from {
+            opacity: 0;
+            transform: translateY(-18px);
+         }
+
+         to {
+            opacity: 1;
+            transform: translateY(0);
+         }
+      }
+
+      @keyframes fadeUp {
+         from {
+            opacity: 0;
+            transform: translateY(16px);
+         }
+
+         to {
+            opacity: 1;
+            transform: translateY(0);
+         }
+      }
+
+      /* Progress bar */
+      .progress-bar {
+         width: 100%;
+         height: 3px;
+         background: var(--border);
+         border-radius: 2px;
+         margin-bottom: 24px;
+         overflow: hidden;
+      }
+
+      .progress-fill {
+         height: 100%;
+         background: linear-gradient(90deg, var(--navy), var(--amber));
+         border-radius: 2px;
+         width: 0%;
+         transition: width .3s ease;
       }
    </style>
 </head>
 
 <body>
 
-   <div class="container">
-      <h1>Emergency IEP Violation Analyzer</h1>
-      <p>Find out if your Texas school district is violating special education law before summer begins.</p>
+   <div class="page-wrap">
 
-      <form id="analyzer-form">
-         <label for="district">School District (Optional but helpful):</label>
-         <input type="text" id="district" placeholder="e.g., Houston ISD">
+      <!-- Header -->
+      <div class="banner">
+         <div class="banner-eyebrow">⚖ Texas Special Education Law · Free Analysis</div>
+         <h1>Emergency IEP<br><span>Violation Analyzer</span></h1>
+         <div class="rule">
+            <div class="rule-diamond"></div>
+         </div>
+         <p class="banner-sub">Find out if your Texas school district is violating federal or state special education law — before summer begins.</p>
+      </div>
 
-         <label for="situation">What is happening right now?</label>
-         <textarea id="situation" rows="6" placeholder="Example: I requested an FIE on March 1st, but the school says they won't have time until next year..." required>
+      <!-- Main Card -->
+      <div class="card">
+
+         <!-- Notice -->
+         <div class="notice-strip">
+            <span class="notice-icon">⏱</span>
+            <div><strong style="display:inline;font-weight:600;">Timelines matter.</strong> Many IEP violations have strict legal deadlines — including 60-day FIE timelines and ARD meeting requirements. Answer the questions below to get an immediate assessment.</div>
+         </div>
+
+         <div class="section-title">
+            <div class="icon">📋</div>
+            Tell Us What's Happening
+         </div>
+
+         <form id="analyzer-form">
+
+            <!-- Progress bar -->
+            <div class="progress-bar">
+               <div class="progress-fill" id="progress"></div>
+            </div>
+
+            <div class="row-2">
+               <div class="field-group">
+                  <label for="district">School District <span class="opt">optional</span></label>
+                  <input type="text" id="district" placeholder="e.g., Houston ISD">
+               </div>
+               <div class="field-group">
+                  <label for="grade">Student's Grade <span class="opt">optional</span></label>
+                  <select id="grade">
+                     <option value="" disabled selected>Select grade…</option>
+                     <option>Pre-K</option>
+                     <option>Kindergarten</option>
+                     <option>1st Grade</option>
+                     <option>2nd Grade</option>
+                     <option>3rd Grade</option>
+                     <option>4th Grade</option>
+                     <option>5th Grade</option>
+                     <option>6th Grade</option>
+                     <option>7th Grade</option>
+                     <option>8th Grade</option>
+                     <option>9th Grade</option>
+                     <option>10th Grade</option>
+                     <option>11th Grade</option>
+                     <option>12th Grade</option>
+                  </select>
+               </div>
+            </div>
+
+            <div class="field-group">
+               <label>Urgency Level</label>
+               <div class="chip-group" id="urgency-chips">
+                  <div class="chip" data-val="routine">📅 Routine concern</div>
+                  <div class="chip" data-val="soon">⚠️ Needs attention soon</div>
+                  <div class="chip active" data-val="urgent">🚨 Urgent / time-sensitive</div>
+                  <div class="chip" data-val="crisis">🔴 Crisis / immediate action</div>
+               </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="field-group">
+               <label for="situation">Describe What Is Happening Right Now <span class="opt">required</span></label>
+               <textarea id="situation" rows="6" placeholder="Example: I requested a Full Individual Evaluation (FIE) on March 1st, but the school says they won't have time until next year. My child is failing and I believe they may qualify for services…" required>
