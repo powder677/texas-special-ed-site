@@ -176,30 +176,31 @@
             0 2px 12px rgba(0, 0, 0, .25);
          animation: fadeUp .6s .1s ease both;
          position: relative;
-         overflow: hidden;
       }
 
       /* Top accent line */
-      .card::before {
-         content: '';
+      .card-accent {
          position: absolute;
          top: 0;
          left: 0;
          right: 0;
          height: 3px;
          background: linear-gradient(90deg, var(--navy) 0%, var(--amber) 50%, var(--navy) 100%);
+         border-radius: 16px 16px 0 0;
+         z-index: 0;
       }
 
       /* Texas star watermark */
-      .card::after {
-         content: '★';
+      .card-star {
          position: absolute;
-         bottom: -30px;
-         right: -10px;
+         bottom: -20px;
+         right: 10px;
          font-size: 180px;
          color: rgba(15, 31, 61, .04);
          pointer-events: none;
          line-height: 1;
+         z-index: 0;
+         user-select: none;
       }
 
       .section-title {
@@ -376,18 +377,11 @@
          align-items: center;
          justify-content: center;
          gap: 10px;
-         box-shadow: 0 4px 20px rgba(192, 57, 43, .4), 0 1px 0 rgba(255, 255, 255, .1) inset;
-         transition: transform .15s, box-shadow .15s, background .15s;
+         box-shadow: 0 4px 20px rgba(192, 57, 43, .4);
+         transition: transform .15s, box-shadow .15s;
          position: relative;
-         overflow: hidden;
-      }
-
-      .submit-btn::before {
-         content: '';
-         position: absolute;
-         inset: 0;
-         background: linear-gradient(135deg, rgba(255, 255, 255, .1) 0%, transparent 60%);
-         pointer-events: none;
+         z-index: 10;
+         margin-top: 8px;
       }
 
       .submit-btn:hover {
@@ -604,6 +598,8 @@
 
       <!-- Main Card -->
       <div class="card">
+         <div class="card-accent"></div>
+         <div class="card-star">★</div>
 
          <!-- Notice -->
          <div class="notice-strip">
