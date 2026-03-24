@@ -287,6 +287,7 @@
          transition: border-color .2s, box-shadow .2s;
          outline: none;
          appearance: none;
+         -webkit-appearance: none;
       }
 
       input[type="text"]::placeholder,
@@ -360,8 +361,10 @@
          margin: 28px 0;
       }
 
-      /* Submit button */
-      .submit-btn {
+      /* UNIQUE SUBMIT BUTTON STYLES */
+      .analyze-submit-btn {
+         -webkit-appearance: none;
+         appearance: none;
          width: 100%;
          padding: 16px 24px;
          background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
@@ -384,25 +387,25 @@
          margin-top: 8px;
       }
 
-      .submit-btn:hover {
+      .analyze-submit-btn:hover:not(:disabled) {
          transform: translateY(-1px);
          box-shadow: 0 8px 28px rgba(192, 57, 43, .5), 0 1px 0 rgba(255, 255, 255, .1) inset;
       }
 
-      .submit-btn:active {
+      .analyze-submit-btn:active:not(:disabled) {
          transform: translateY(0);
       }
 
-      .submit-btn .arrow {
+      .analyze-submit-btn .arrow {
          font-size: 18px;
          transition: transform .2s;
       }
 
-      .submit-btn:hover .arrow {
+      .analyze-submit-btn:hover:not(:disabled) .arrow {
          transform: translateX(4px);
       }
 
-      .submit-btn:disabled {
+      .analyze-submit-btn:disabled {
          opacity: .6;
          cursor: not-allowed;
          transform: none;
@@ -586,7 +589,6 @@
 
    <div class="page-wrap">
 
-      <!-- Header -->
       <div class="banner">
          <div class="banner-eyebrow">⚖ Texas Special Education Law · Free Analysis</div>
          <h1>Emergency IEP<br><span>Violation Analyzer</span></h1>
@@ -596,12 +598,10 @@
          <p class="banner-sub">Find out if your Texas school district is violating federal or state special education law — before summer begins.</p>
       </div>
 
-      <!-- Main Card -->
       <div class="card">
          <div class="card-accent"></div>
          <div class="card-star">★</div>
 
-         <!-- Notice -->
          <div class="notice-strip">
             <span class="notice-icon">⏱</span>
             <div><strong style="display:inline;font-weight:600;">Timelines matter.</strong> Many IEP violations have strict legal deadlines — including 60-day FIE timelines and ARD meeting requirements. Answer the questions below to get an immediate assessment.</div>
@@ -614,7 +614,6 @@
 
          <form id="analyzer-form">
 
-            <!-- Progress bar -->
             <div class="progress-bar">
                <div class="progress-fill" id="progress"></div>
             </div>
