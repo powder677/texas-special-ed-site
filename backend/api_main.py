@@ -7,10 +7,16 @@ from vertexai.preview.generative_models import grounding
 from google.cloud import firestore
 import uuid
 import os
+import stripe
+from fastapi import Request, Header
 
 # --- Configuration & Initialization ---
 PROJECT_ID = "texasspecialed"
 LOCATION = "us-central1"
+# Stripe Configuration (Use your TEST keys for now)
+stripe.api_key = "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"
+STRIPE_WEBHOOK_SECRET = "whsec_02a8c1e32bab35eae548a48451242fdec5dca16fa0687e3195c9422609d3a7c2"
+DOMAIN_URL = "http://localhost:8000" # Change to texasspecialed.com in production
 
 # Your specific Data Store details
 DATA_STORE_ID = "texas-sped-knowledge-base"
@@ -43,12 +49,14 @@ datastore_tool = Tool.from_retrieval(
 )
 
 system_instruction = """
-You are a strict, retrieval-grounded legal analysis assistant specializing in Texas special education law (TEA rules, TAC, TEC, and IDEA). 
+You are a strict, retrieval-grounded legal analysis assistant specializing ONLY in Texas special education law. 
+
 CRITICAL RULES:
 1. ZERO HALLUCINATION: You MUST ONLY use the provided retrieved documents.
-2. MANDATORY CITATION: Every claim must be backed by a specific citation from the retrieved context.
-3. THE SAFETY VALVE: If the documents do not contain the answer, state: "The provided legal documents do not contain enough specific information to verify this issue."
-4. TONE: Objective, authoritative, clear. Do not claim to be a lawyer.
+2. TEXAS SUPREMACY: If there is a conflict between Federal IDEA timelines and Texas Education Code (TEC) timelines, you MUST use the strict Texas timelines (e.g., the 45-school-day FIE rule). 
+3. MANDATORY CITATION: Every claim or timeline must be backed by a specific citation from the retrieved context (e.g., TEC §29.004 or TAC §89.1011).
+4. THE SAFETY VALVE: If the documents do not specifically mention Texas law for the user's issue, state: "The provided documents do not contain enough specific Texas information to verify this issue."
+5. TONE: Objective, authoritative, clear. Do not claim to be a lawyer.
 """
 
 model = GenerativeModel(
@@ -163,3 +171,66 @@ async def get_full_report(session_id: str):
         raise HTTPException(status_code=403, detail="Payment required to view full analysis")
         
     return {"full_paid_analysis": data.get("full_paid_analysis")}
+    # --- Request Model for Checkout ---
+class CheckoutSessionRequest(BaseModel):
+    session_id: str
+
+# --- 1. Create the Stripe Checkout Page ---
+@app.post("/api/create-checkout-session")
+async def create_checkout_session(request: CheckoutSessionRequest):
+    try:
+        # Create a Stripe Checkout Session
+        checkout_session = stripe.checkout.Session.create(
+            payment_method_types=['card'],
+            line_items=[{
+                'price_data': {
+                    'currency': 'usd',
+                    'unit_amount': 2900, # $29.00 in cents
+                    'product_data': {"price_1TEfZMAx6JDn4AuAiB3i7QRR"
+                        'name': 'Full IEP Violation & Strategy Report',
+                        'description': 'Exact legal citations, missed deadlines, and next steps.',
+                    },
+                },
+                'quantity': 1,
+            }],
+            mode='payment',
+            # Pass the Firestore document ID so Stripe remembers it!
+            metadata={'session_id': request.session_id},
+            # Where Stripe sends them after payment
+            success_url=f"http://localhost:8000/success.html?session_id={request.session_id}",
+            cancel_url="http://localhost:8000/dashboard.html",
+        )
+        return {"checkout_url": checkout_session.url}
+    
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+# --- 2. The Webhook (Stripe talks to your API) ---
+@app.post("/api/stripe-webhook")
+async def stripe_webhook(request: Request, stripe_signature: str = Header(None)):
+    # Stripe requires the raw request body to verify the signature
+    payload = await request.body()
+    
+    try:
+        event = stripe.Webhook.construct_event(
+            payload, stripe_signature, STRIPE_WEBHOOK_SECRET
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail="Invalid payload")
+    except stripe.error.SignatureVerificationError as e:
+        raise HTTPException(status_code=400, detail="Invalid signature")
+
+    # If the payment was successful...
+    if event['type'] == 'checkout.session.completed':
+        session = event['data']['object']
+        
+        # Grab the session_id we hid in the metadata earlier
+        document_id = session.get('metadata', {}).get('session_id')
+        
+        if document_id:
+            # FLIP THE SWITCH IN FIRESTORE!
+            doc_ref = db.collection("violation_reports").document(document_id)
+            doc_ref.update({"payment_status": "paid"})
+            print(f"✅ Successfully unlocked report for {document_id}")
+
+    return {"status": "success"}
