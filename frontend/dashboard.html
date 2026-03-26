@@ -710,37 +710,59 @@
       updateProgress();
 
       // Form submit
-      document.getElementById('analyzer-form').addEventListener('submit', async function (e) {
-         e.preventDefault();
-         const situation = document.getElementById('situation').value.trim();
-         if (!situation) return;
-
-         this.style.display = 'none';
+    document.getElementById('analyzer-form').addEventListener('submit', async function(e) {
+         e.preventDefault(); 
+         
+         // 1. Safely grab all 4 values directly from the page
+         const districtVal = document.getElementById('district').value || "Unknown";
+         const gradeVal = document.getElementById('grade').value || "Unknown";
+         const urgencyVal = document.querySelector('.chip.active')?.getAttribute('data-val') || "urgent";
+         const situationVal = document.getElementById('situation').value;
+         
+         // 2. Hide the button and show the loading spinner
+         document.getElementById('submit-container').style.display = 'none';
          document.getElementById('loading').style.display = 'block';
+         document.getElementById('results-area').style.display = 'none';
 
          try {
-           const response = await fetch('http://localhost:8000/api/analyze-violation', {
-               method: 'POST',
-               headers: { 'Content-Type': 'application/json' },
-               body: JSON.stringify({
-                  district: document.getElementById('district').value,
-                  grade: document.getElementById('grade').value,
-                  urgency: document.querySelector('.chip.active')?.dataset.val || 'urgent',
-                  situation
-               })
-            });
-            const data = await response.json();
-            currentSessionId = data.session_id || null;
-            renderResults(data);
-         } catch (err) {
-            console.error(err);
-            alert("Could not connect to the analysis server. Please try again.");
-            document.getElementById('analyzer-form').style.display = 'block';
-         } finally {
-            document.getElementById('loading').style.display = 'none';
+               // 3. Send the perfectly formatted package to Python
+               const response = await fetch('http://localhost:8000/api/analyze-violation', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ 
+                     district: districtVal,
+                     grade: gradeVal,
+                     urgency: urgencyVal,
+                     situation: situationVal
+                  })
+               });
+
+               if (!response.ok) {
+                  // If we still get a 422, this will print the exact reason in your browser!
+                  const errorDetails = await response.text();
+                  console.error("Server Error Details:", errorDetails);
+                  throw new Error(`API failed with status: ${response.status}`);
+               }
+               
+               const data = await response.json();
+               
+               // Save the ID for Stripe!
+               currentSessionId = data.session_id;
+
+               // Update the page with the AI's response
+               document.getElementById('teaser-text').innerText = data.teaser_summary;
+               document.getElementById('issue-count').innerText = data.issues_found_count;
+
+               document.getElementById('loading').style.display = 'none';
+               document.getElementById('results-area').style.display = 'block';
+
+         } catch (error) {
+               console.error('Error:', error);
+               alert("Sorry, we couldn't connect to the analysis engine. Check the browser console for details.");
+               document.getElementById('loading').style.display = 'none';
+               document.getElementById('submit-container').style.display = 'block'; 
          }
       });
-
       function renderResults(data) {
          const area = document.getElementById('results-area');
          area.style.display = 'block';
