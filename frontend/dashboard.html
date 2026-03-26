@@ -16,7 +16,7 @@
          --slate: #4a5568;
          --border: #dde3ef;
          --red: #c0392b;
-         --red-dark: #96291f
+         --red-dark: #96291f;
          --blue-soft: #eef4fc;
          --success: #2d7a4f;
       }
@@ -662,11 +662,12 @@
                <textarea id="situation" rows="6" placeholder="Example: I requested a Full Individual Evaluation (FIE) on March 1st, but the school says they won't have time until next year. My child is failing and I believe they may qualify for services…" required></textarea>
             </div>
 
-            <button type="submit" class="analyze-submit-btn">
-               Analyze My Situation <span class="arrow">→</span>
-            </button>
-
-            <p class="disclaimer">Your information is private and never shared. This tool provides general legal information, not legal advice.</p>
+            <div id="submit-container">
+               <button type="submit" class="analyze-submit-btn">
+                  Analyze My Situation <span class="arrow">→</span>
+               </button>
+               <p class="disclaimer">Your information is private and never shared. This tool provides general legal information, not legal advice.</p>
+            </div>
 
          </form>
 
@@ -677,15 +678,11 @@
 
          <div id="results-area"></div>
 
-      </div><!-- /card -->
-
-      <div class="footer">
+      </div><div class="footer">
          &copy; 2025 Texas IEP Violation Analyzer &mdash; For informational purposes only
       </div>
 
-   </div><!-- /page-wrap -->
-
-   <script>
+   </div><script>
       let currentSessionId = null;
 
       // Chip selection
@@ -710,7 +707,7 @@
       updateProgress();
 
       // Form submit
-    document.getElementById('analyzer-form').addEventListener('submit', async function(e) {
+      document.getElementById('analyzer-form').addEventListener('submit', async function(e) {
          e.preventDefault(); 
          
          // 1. Safely grab all 4 values directly from the page
@@ -719,7 +716,7 @@
          const urgencyVal = document.querySelector('.chip.active')?.getAttribute('data-val') || "urgent";
          const situationVal = document.getElementById('situation').value;
          
-         // 2. Hide the button and show the loading spinner
+         // 2. Hide the button container and show the loading spinner
          document.getElementById('submit-container').style.display = 'none';
          document.getElementById('loading').style.display = 'block';
          document.getElementById('results-area').style.display = 'none';
@@ -738,7 +735,6 @@
                });
 
                if (!response.ok) {
-                  // If we still get a 422, this will print the exact reason in your browser!
                   const errorDetails = await response.text();
                   console.error("Server Error Details:", errorDetails);
                   throw new Error(`API failed with status: ${response.status}`);
@@ -746,15 +742,14 @@
                
                const data = await response.json();
                
-               // Save the ID for Stripe!
+               // 4. Save the ID for Stripe!
                currentSessionId = data.session_id;
 
-               // Update the page with the AI's response
-               document.getElementById('teaser-text').innerText = data.teaser_summary;
-               document.getElementById('issue-count').innerText = data.issues_found_count;
-
+               // 5. Hide the loading spinner
                document.getElementById('loading').style.display = 'none';
-               document.getElementById('results-area').style.display = 'block';
+
+               // 6. Call your custom render function to display the results!
+               renderResults(data);
 
          } catch (error) {
                console.error('Error:', error);
@@ -762,26 +757,29 @@
                document.getElementById('loading').style.display = 'none';
                document.getElementById('submit-container').style.display = 'block'; 
          }
-      })
+      });
+
       function renderResults(data) {
          const area = document.getElementById('results-area');
          area.style.display = 'block';
+         
+         // Map the data to your HTML
          area.innerHTML = `
             <div class="result-header">📋 Potential Concerns Worth Reviewing</div>
             <div class="alert-box">
                <strong>What We Found</strong>
-               ${data.summary || 'We identified some areas that may be worth discussing with a special education advocate or attorney.'}
+               ${data.teaser_summary || 'We identified some areas that may be worth discussing with a special education advocate or attorney.'}
             </div>
             <div class="paywall-box">
                <h3>Get Your Full Concern Summary</h3>
                <p>See a detailed breakdown of potential concerns, what questions to ask your district, suggested next steps, and a letter template to help you start the conversation.</p>
-               <button class="paywall-btn">Unlock Full Report ($29)</button>
+               <button type="button" class="paywall-btn">Unlock Full Report ($29)</button>
             </div>
          `;
 
          // Handle the Paywall Button Click
          document.querySelector('.paywall-btn').addEventListener('click', async function (e) {
-            e.preventDefault(); // <-- This line stops the page jump!
+            e.preventDefault(); 
 
             if (!currentSessionId) return alert("No active session found. Please run a scan first.");
 
