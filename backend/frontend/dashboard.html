@@ -21,13 +21,7 @@
          --success: #2d7a4f;
       }
 
-      *,
-      *::before,
-      *::after {
-         box-sizing: border-box;
-         margin: 0;
-         padding: 0;
-      }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
       body {
          font-family: 'DM Sans', sans-serif;
@@ -41,7 +35,6 @@
          overflow-x: hidden;
       }
 
-      /* Background texture */
       body::before {
          content: '';
          position: fixed;
@@ -49,16 +42,11 @@
          background:
             radial-gradient(ellipse 80% 60% at 10% 0%, #1e3a6e44 0%, transparent 60%),
             radial-gradient(ellipse 60% 50% at 90% 100%, #c9820a18 0%, transparent 55%),
-            repeating-linear-gradient(0deg,
-               transparent,
-               transparent 80px,
-               rgba(255, 255, 255, 0.014) 80px,
-               rgba(255, 255, 255, 0.014) 81px);
+            repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(255,255,255,.014) 80px, rgba(255,255,255,.014) 81px);
          pointer-events: none;
          z-index: 0;
       }
 
-      /* Seal / emblem top */
       .page-wrap {
          position: relative;
          z-index: 1;
@@ -66,7 +54,7 @@
          max-width: 740px;
       }
 
-      /* Header banner */
+      /* ── Banner ── */
       .banner {
          text-align: center;
          padding: 20px 0 36px;
@@ -77,14 +65,13 @@
          display: inline-flex;
          align-items: center;
          gap: 8px;
-         font-family: 'DM Sans', sans-serif;
          font-size: 11px;
          font-weight: 600;
          letter-spacing: .18em;
          text-transform: uppercase;
          color: var(--amber-light);
-         background: rgba(201, 130, 10, .12);
-         border: 1px solid rgba(201, 130, 10, .3);
+         background: rgba(201,130,10,.12);
+         border: 1px solid rgba(201,130,10,.3);
          border-radius: 100px;
          padding: 6px 14px;
          margin-bottom: 20px;
@@ -92,25 +79,15 @@
 
       .banner-eyebrow::before {
          content: '';
-         width: 6px;
-         height: 6px;
+         width: 6px; height: 6px;
          background: var(--amber-light);
          border-radius: 50%;
          animation: pulse 2s infinite;
       }
 
       @keyframes pulse {
-
-         0%,
-         100% {
-            opacity: 1;
-            transform: scale(1);
-         }
-
-         50% {
-            opacity: .5;
-            transform: scale(.75);
-         }
+         0%,100% { opacity:1; transform:scale(1); }
+         50%      { opacity:.5; transform:scale(.75); }
       }
 
       h1 {
@@ -123,21 +100,18 @@
          margin-bottom: 14px;
       }
 
-      h1 span {
-         color: var(--amber-light);
-      }
+      h1 span { color: var(--amber-light); }
 
       .banner-sub {
          font-family: 'Lora', serif;
          font-style: italic;
-         color: rgba(255, 255, 255, .55);
+         color: rgba(255,255,255,.55);
          font-size: 16px;
          max-width: 500px;
          margin: 0 auto;
          line-height: 1.7;
       }
 
-      /* Decorative rule */
       .rule {
          display: flex;
          align-items: center;
@@ -145,90 +119,125 @@
          justify-content: center;
          margin: 0 auto 30px;
       }
-
-      .rule::before,
-      .rule::after {
+      .rule::before, .rule::after {
          content: '';
-         height: 1px;
-         width: 60px;
-         background: linear-gradient(to right, transparent, rgba(201, 130, 10, .4));
+         height: 1px; width: 60px;
+         background: linear-gradient(to right, transparent, rgba(201,130,10,.4));
       }
+      .rule::after { background: linear-gradient(to left, transparent, rgba(201,130,10,.4)); }
+      .rule-diamond { width:6px; height:6px; background:var(--amber); transform:rotate(45deg); }
 
-      .rule::after {
-         background: linear-gradient(to left, transparent, rgba(201, 130, 10, .4));
-      }
-
-      .rule-diamond {
-         width: 6px;
-         height: 6px;
-         background: var(--amber);
-         transform: rotate(45deg);
-      }
-
-      /* Card */
+      /* ── Card ── */
       .card {
          background: var(--cream);
          border-radius: 16px;
          padding: 40px 44px 44px;
          box-shadow:
-            0 2px 0 rgba(255, 255, 255, .06) inset,
-            0 32px 80px rgba(0, 0, 0, .45),
-            0 2px 12px rgba(0, 0, 0, .25);
+            0 2px 0 rgba(255,255,255,.06) inset,
+            0 32px 80px rgba(0,0,0,.45),
+            0 2px 12px rgba(0,0,0,.25);
          animation: fadeUp .6s .1s ease both;
          position: relative;
       }
 
-      /* Top accent line */
       .card-accent {
          position: absolute;
-         top: 0;
-         left: 0;
-         right: 0;
+         top: 0; left: 0; right: 0;
          height: 3px;
          background: linear-gradient(90deg, var(--navy) 0%, var(--amber) 50%, var(--navy) 100%);
          border-radius: 16px 16px 0 0;
-         z-index: 0;
       }
 
-      /* Texas star watermark */
       .card-star {
          position: absolute;
-         bottom: -20px;
-         right: 10px;
+         bottom: -20px; right: 10px;
          font-size: 180px;
-         color: rgba(15, 31, 61, .04);
+         color: rgba(15,31,61,.04);
          pointer-events: none;
          line-height: 1;
-         z-index: 0;
          user-select: none;
       }
 
-      .section-title {
-         font-family: 'Playfair Display', serif;
-         font-size: 20px;
-         font-weight: 600;
-         color: var(--navy);
-         margin-bottom: 24px;
-         padding-bottom: 14px;
-         border-bottom: 1px solid var(--border);
+      /* ── Step indicator ── */
+      .steps {
          display: flex;
          align-items: center;
-         gap: 10px;
+         gap: 0;
+         margin-bottom: 28px;
       }
 
-      .section-title .icon {
-         width: 28px;
-         height: 28px;
-         background: var(--navy);
-         border-radius: 6px;
+      .step {
          display: flex;
          align-items: center;
-         justify-content: center;
-         font-size: 13px;
+         gap: 8px;
+         flex: 1;
+         position: relative;
+      }
+
+      .step:not(:last-child)::after {
+         content: '';
+         position: absolute;
+         left: calc(50% + 14px);
+         right: calc(-50% + 14px);
+         height: 2px;
+         background: var(--border);
+         top: 14px;
+         transition: background .3s;
+         z-index: 0;
+      }
+
+      .step.complete:not(:last-child)::after {
+         background: linear-gradient(90deg, var(--amber), var(--border));
+      }
+
+      .step-num {
+         width: 28px; height: 28px;
+         border-radius: 50%;
+         border: 2px solid var(--border);
+         background: #fff;
+         display: flex; align-items: center; justify-content: center;
+         font-size: 11px;
+         font-weight: 700;
+         color: var(--slate);
+         transition: all .3s;
          flex-shrink: 0;
+         position: relative;
+         z-index: 1;
       }
 
-      /* Notice strip */
+      .step.active .step-num {
+         background: var(--navy);
+         border-color: var(--navy);
+         color: #fff;
+         box-shadow: 0 0 0 3px rgba(15,31,61,.15);
+      }
+
+      .step.complete .step-num {
+         background: var(--amber);
+         border-color: var(--amber);
+         color: #fff;
+      }
+
+      .step-label {
+         font-size: 10px;
+         font-weight: 600;
+         letter-spacing: .07em;
+         text-transform: uppercase;
+         color: var(--slate);
+         opacity: .6;
+         transition: opacity .3s, color .3s;
+         white-space: nowrap;
+      }
+
+      .step.active .step-label  { opacity: 1; color: var(--navy); }
+      .step.complete .step-label { opacity: 1; color: var(--amber); }
+
+      @media (max-width: 480px) {
+         .step-label { display: none; }
+         .step:not(:last-child)::after { left: calc(14px + 14px); right: calc(-14px + 14px); }
+      }
+
+      /* ── Notice strip ── */
       .notice-strip {
          background: #fff8e6;
          border: 1px solid #fbd878;
@@ -243,16 +252,33 @@
          line-height: 1.5;
       }
 
-      .notice-strip .notice-icon {
-         font-size: 16px;
-         margin-top: 1px;
+      .notice-icon { font-size: 16px; margin-top: 1px; flex-shrink: 0; }
+
+      /* ── Section title ── */
+      .section-title {
+         font-family: 'Playfair Display', serif;
+         font-size: 20px;
+         font-weight: 600;
+         color: var(--navy);
+         margin-bottom: 24px;
+         padding-bottom: 14px;
+         border-bottom: 1px solid var(--border);
+         display: flex;
+         align-items: center;
+         gap: 10px;
+      }
+
+      .section-title .icon {
+         width: 28px; height: 28px;
+         background: var(--navy);
+         border-radius: 6px;
+         display: flex; align-items: center; justify-content: center;
+         font-size: 13px;
          flex-shrink: 0;
       }
 
-      /* Form fields */
-      .field-group {
-         margin-bottom: 22px;
-      }
+      /* ── Form fields ── */
+      .field-group { margin-bottom: 22px; }
 
       label {
          display: block;
@@ -273,7 +299,18 @@
          margin-left: 6px;
       }
 
+      label span.req {
+         font-size: 11px;
+         font-weight: 500;
+         text-transform: none;
+         letter-spacing: 0;
+         color: var(--red);
+         margin-left: 6px;
+      }
+
       input[type="text"],
+      input[type="date"],
+      input[type="number"],
       textarea,
       select {
          width: 100%;
@@ -290,39 +327,164 @@
          -webkit-appearance: none;
       }
 
-      input[type="text"]::placeholder,
-      textarea::placeholder {
+      input::placeholder, textarea::placeholder {
          color: #a0aec0;
          font-style: italic;
       }
 
-      input[type="text"]:focus,
-      textarea:focus,
-      select:focus {
+      input:focus, textarea:focus, select:focus {
          border-color: var(--navy);
-         box-shadow: 0 0 0 3px rgba(15, 31, 61, .1);
+         box-shadow: 0 0 0 3px rgba(15,31,61,.1);
+      }
+
+      select {
+         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234a5568' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+         background-repeat: no-repeat;
+         background-position: right 14px center;
+         padding-right: 38px;
+         cursor: pointer;
       }
 
       textarea {
          resize: vertical;
          line-height: 1.65;
-         min-height: 130px;
+         min-height: 120px;
       }
 
-      /* Two-col row */
       .row-2 {
          display: grid;
          grid-template-columns: 1fr 1fr;
          gap: 16px;
       }
 
-      @media (max-width: 540px) {
-         .row-2 {
-            grid-template-columns: 1fr;
-         }
+      @media (max-width: 540px) { .row-2 { grid-template-columns: 1fr; } }
+
+      /* ── Category select (big primary) ── */
+      .category-select-wrap {
+         position: relative;
       }
 
-      /* Urgency chips */
+      .category-select-wrap select {
+         font-size: 15px;
+         border-width: 2px;
+         padding: 14px 40px 14px 16px;
+         border-color: var(--border);
+         transition: border-color .2s, box-shadow .2s, background .2s;
+      }
+
+      .category-select-wrap.has-value select {
+         border-color: var(--navy);
+         background-color: #f7f9ff;
+         font-weight: 500;
+      }
+
+      /* ── Category "chip" hint row ── */
+      .category-hint {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         margin-top: 10px;
+         font-size: 12px;
+         color: var(--slate);
+         opacity: .7;
+      }
+
+      .category-hint::before {
+         content: '↓';
+         width: 18px; height: 18px;
+         background: var(--amber);
+         color: #fff;
+         border-radius: 50%;
+         display: flex; align-items: center; justify-content: center;
+         font-size: 10px;
+         font-weight: 700;
+         flex-shrink: 0;
+         line-height: 1;
+         padding-top: 1px;
+      }
+
+      /* ── Conditional follow-up block ── */
+      .followup-block {
+         display: none;
+         background: linear-gradient(135deg, #f7f9ff 0%, #f0f4fb 100%);
+         border: 1.5px solid #c8d8f0;
+         border-radius: 10px;
+         padding: 20px 22px 6px;
+         margin-top: 16px;
+         animation: slideIn .28s ease both;
+      }
+
+      .followup-block.visible { display: block; }
+
+      @keyframes slideIn {
+         from { opacity: 0; transform: translateY(-8px); }
+         to   { opacity: 1; transform: translateY(0); }
+      }
+
+      .followup-header {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         font-size: 11.5px;
+         font-weight: 600;
+         letter-spacing: .08em;
+         text-transform: uppercase;
+         color: var(--navy-mid);
+         margin-bottom: 16px;
+         padding-bottom: 10px;
+         border-bottom: 1px solid #d0dff0;
+      }
+
+      .followup-badge {
+         background: var(--navy);
+         color: #fff;
+         font-size: 9px;
+         font-weight: 700;
+         letter-spacing: .08em;
+         padding: 2px 7px;
+         border-radius: 100px;
+         text-transform: uppercase;
+      }
+
+      /* ── Yes/No toggles ── */
+      .yn-group {
+         display: flex;
+         gap: 8px;
+      }
+
+      .yn-btn {
+         flex: 1;
+         padding: 9px 12px;
+         border-radius: 8px;
+         border: 1.5px solid var(--border);
+         background: #fff;
+         font-family: 'DM Sans', sans-serif;
+         font-size: 13.5px;
+         font-weight: 500;
+         color: var(--slate);
+         cursor: pointer;
+         text-align: center;
+         transition: all .18s;
+         user-select: none;
+      }
+
+      .yn-btn:hover { border-color: var(--navy-mid); color: var(--navy); }
+
+      .yn-btn.yn-yes.active {
+         background: #ecfdf5;
+         border-color: var(--success);
+         color: var(--success);
+         font-weight: 600;
+      }
+
+      .yn-btn.yn-no.active {
+         background: #fff5f5;
+         border-color: var(--red);
+         color: var(--red);
+         font-weight: 600;
+      }
+
+      /* ── Urgency chips ── */
       .chip-group {
          display: flex;
          flex-wrap: wrap;
@@ -343,10 +505,7 @@
          user-select: none;
       }
 
-      .chip:hover {
-         border-color: var(--navy);
-         color: var(--navy);
-      }
+      .chip:hover { border-color: var(--navy); color: var(--navy); }
 
       .chip.active {
          background: var(--navy);
@@ -354,14 +513,115 @@
          color: #fff;
       }
 
-      /* Divider */
+      /* ── Other textarea with friction ── */
+      .other-wrap { display: none; }
+      .other-wrap.visible { display: block; }
+
+      .other-helper {
+         background: #fffbf0;
+         border: 1px solid #f0d070;
+         border-radius: 7px;
+         padding: 10px 14px;
+         font-size: 12.5px;
+         color: #6b4c00;
+         line-height: 1.55;
+         margin-bottom: 10px;
+      }
+
+      .other-helper strong { display: block; margin-bottom: 4px; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; }
+
+      .char-counter {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin-top: 6px;
+         font-size: 11.5px;
+      }
+
+      .char-count-num {
+         font-weight: 600;
+         color: var(--slate);
+         transition: color .2s;
+      }
+
+      .char-count-num.warn  { color: #dd6b20; }
+      .char-count-num.ok    { color: var(--success); }
+
+      .char-friction {
+         font-style: italic;
+         color: var(--slate);
+         opacity: .7;
+         font-size: 11px;
+      }
+
+      /* ── Divider ── */
       .divider {
          border: none;
          border-top: 1px dashed var(--border);
          margin: 28px 0;
       }
 
-      /* UNIQUE SUBMIT BUTTON STYLES */
+      /* ── Additional details ── */
+      .additional-label-row {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin-bottom: 8px;
+      }
+
+      .additional-label-row label { margin-bottom: 0; }
+
+      .label-tag {
+         font-size: 10.5px;
+         font-weight: 600;
+         letter-spacing: .06em;
+         text-transform: uppercase;
+         color: #7a8799;
+         background: #edf1f7;
+         padding: 3px 8px;
+         border-radius: 100px;
+      }
+
+      .nuance-tip {
+         font-size: 12px;
+         color: var(--slate);
+         opacity: .7;
+         margin-top: 7px;
+         font-style: italic;
+      }
+
+      /* ── Progress bar ── */
+      .progress-wrap {
+         margin-bottom: 26px;
+      }
+
+      .progress-bar {
+         width: 100%;
+         height: 4px;
+         background: var(--border);
+         border-radius: 2px;
+         overflow: hidden;
+      }
+
+      .progress-fill {
+         height: 100%;
+         background: linear-gradient(90deg, var(--navy), var(--amber));
+         border-radius: 2px;
+         width: 0%;
+         transition: width .35s ease;
+      }
+
+      .progress-label {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 7px;
+         font-size: 11.5px;
+         color: var(--slate);
+         opacity: .7;
+      }
+
+      /* ── Submit button ── */
       .analyze-submit-btn {
          -webkit-appearance: none;
          appearance: none;
@@ -380,38 +640,27 @@
          align-items: center;
          justify-content: center;
          gap: 10px;
-         box-shadow: 0 4px 20px rgba(192, 57, 43, .4);
-         transition: transform .15s, box-shadow .15s;
-         position: relative;
-         z-index: 10;
+         box-shadow: 0 4px 20px rgba(192,57,43,.4);
+         transition: transform .15s, box-shadow .15s, opacity .15s;
          margin-top: 8px;
       }
 
       .analyze-submit-btn:hover:not(:disabled) {
          transform: translateY(-1px);
-         box-shadow: 0 8px 28px rgba(192, 57, 43, .5), 0 1px 0 rgba(255, 255, 255, .1) inset;
+         box-shadow: 0 8px 28px rgba(192,57,43,.5), 0 1px 0 rgba(255,255,255,.1) inset;
       }
 
-      .analyze-submit-btn:active:not(:disabled) {
-         transform: translateY(0);
-      }
-
-      .analyze-submit-btn .arrow {
-         font-size: 18px;
-         transition: transform .2s;
-      }
-
-      .analyze-submit-btn:hover:not(:disabled) .arrow {
-         transform: translateX(4px);
-      }
+      .analyze-submit-btn:active:not(:disabled) { transform: translateY(0); }
+      .analyze-submit-btn .arrow { font-size: 18px; transition: transform .2s; }
+      .analyze-submit-btn:hover:not(:disabled) .arrow { transform: translateX(4px); }
 
       .analyze-submit-btn:disabled {
-         opacity: .6;
+         opacity: .5;
          cursor: not-allowed;
          transform: none;
       }
 
-      /* Disclaimer */
+      /* ── Disclaimer ── */
       .disclaimer {
          text-align: center;
          font-size: 11.5px;
@@ -420,12 +669,7 @@
          line-height: 1.6;
       }
 
-      .disclaimer a {
-         color: var(--navy);
-         text-decoration: underline;
-      }
-
-      /* Loading */
+      /* ── Loading ── */
       .loading {
          display: none;
          text-align: center;
@@ -433,8 +677,7 @@
       }
 
       .spinner {
-         width: 36px;
-         height: 36px;
+         width: 36px; height: 36px;
          border: 3px solid var(--border);
          border-top-color: var(--navy);
          border-radius: 50%;
@@ -442,11 +685,7 @@
          margin: 0 auto 16px;
       }
 
-      @keyframes spin {
-         to {
-            transform: rotate(360deg);
-         }
-      }
+      @keyframes spin { to { transform: rotate(360deg); } }
 
       .loading p {
          font-family: 'Lora', serif;
@@ -455,12 +694,8 @@
          font-size: 15px;
       }
 
-      /* Results */
-      #results-area {
-         display: none;
-         margin-top: 28px;
-         animation: fadeUp .4s ease both;
-      }
+      /* ── Results ── */
+      #results-area { display: none; margin-top: 28px; animation: fadeUp .4s ease both; }
 
       .result-header {
          font-family: 'Playfair Display', serif;
@@ -482,11 +717,7 @@
          color: #5a3010;
       }
 
-      .alert-box strong {
-         display: block;
-         margin-bottom: 4px;
-         font-size: 15px;
-      }
+      .alert-box strong { display: block; margin-bottom: 4px; font-size: 15px; }
 
       .paywall-box {
          background: linear-gradient(135deg, #eef4fc 0%, #e8f0fb 100%);
@@ -521,272 +752,788 @@
          font-size: 15px;
          font-weight: 600;
          cursor: pointer;
-         box-shadow: 0 4px 14px rgba(37, 99, 235, .35);
+         box-shadow: 0 4px 14px rgba(37,99,235,.35);
          transition: transform .15s, box-shadow .15s;
-         text-decoration: none;
       }
 
       .paywall-btn:hover {
          transform: translateY(-1px);
-         box-shadow: 0 6px 20px rgba(37, 99, 235, .45);
+         box-shadow: 0 6px 20px rgba(37,99,235,.45);
       }
 
-      /* Footer */
+      /* ── Footer ── */
       .footer {
          text-align: center;
          margin-top: 32px;
-         color: rgba(255, 255, 255, .3);
+         color: rgba(255,255,255,.3);
          font-size: 12px;
          animation: fadeUp .6s .3s ease both;
       }
 
-      /* Animations */
-      @keyframes fadeDown {
-         from {
-            opacity: 0;
-            transform: translateY(-18px);
-         }
+      /* ── Input richness warning ── */
+      .input-thin-warn {
+         border-color: #e8a830 !important;
+         box-shadow: 0 0 0 3px rgba(232,168,48,.12) !important;
+      }
 
-         to {
-            opacity: 1;
-            transform: translateY(0);
-         }
+      .thin-warn-msg {
+         font-size: 11.5px;
+         color: #9a6000;
+         margin-top: 5px;
+         display: none;
+         font-style: italic;
+      }
+
+      .thin-warn-msg.visible { display: block; }
+
+      /* ── Animations ── */
+      @keyframes fadeDown {
+         from { opacity:0; transform:translateY(-18px); }
+         to   { opacity:1; transform:translateY(0); }
       }
 
       @keyframes fadeUp {
-         from {
-            opacity: 0;
-            transform: translateY(16px);
-         }
-
-         to {
-            opacity: 1;
-            transform: translateY(0);
-         }
+         from { opacity:0; transform:translateY(16px); }
+         to   { opacity:1; transform:translateY(0); }
       }
 
-      /* Progress bar */
-      .progress-bar {
-         width: 100%;
-         height: 3px;
-         background: var(--border);
-         border-radius: 2px;
-         margin-bottom: 24px;
-         overflow: hidden;
-      }
-
-      .progress-fill {
-         height: 100%;
-         background: linear-gradient(90deg, var(--navy), var(--amber));
-         border-radius: 2px;
-         width: 0%;
-         transition: width .3s ease;
+      /* ── Mobile tweaks ── */
+      @media (max-width: 540px) {
+         .card { padding: 28px 22px 32px; }
       }
    </style>
 </head>
 
 <body>
+<div class="page-wrap">
 
-   <div class="page-wrap">
+   <div class="banner">
+      <div class="banner-eyebrow">📋 Texas Special Education · Free Parent Tool</div>
+      <h1>IEP Concern<br><span>Review Tool</span></h1>
+      <div class="rule"><div class="rule-diamond"></div></div>
+      <p class="banner-sub">Answer a few targeted questions to get a free summary of potential IEP concerns — then decide if it's time to talk to an advocate or attorney.</p>
+   </div>
 
-      <div class="banner">
-         <div class="banner-eyebrow">📋 Texas Special Education · Free Parent Tool</div>
-         <h1>IEP Concern<br><span>Review Tool</span></h1>
-         <div class="rule">
-            <div class="rule-diamond"></div>
-         </div>
-         <p class="banner-sub">Answer a few questions to get a free summary of potential IEP concerns — then decide if it's time to talk to an advocate or attorney.</p>
+   <div class="card">
+      <div class="card-accent"></div>
+      <div class="card-star">★</div>
+
+      <div class="notice-strip">
+         <span class="notice-icon">⏱</span>
+         <div><strong style="display:inline;font-weight:600;">Timelines matter.</strong> Many IEP concerns involve strict deadlines — including 45-school-day FIE timelines. Answer the questions below and we'll flag anything worth discussing with an advocate.</div>
       </div>
 
-      <div class="card">
-         <div class="card-accent"></div>
-         <div class="card-star">★</div>
-
-         <div class="notice-strip">
-            <span class="notice-icon">⏱</span>
-            <div><strong style="display:inline;font-weight:600;">Timelines matter.</strong> Many IEP concerns involve strict deadlines — including 60-day FIE timelines and ARD meeting requirements. Answer the questions below and we'll flag anything worth discussing with an advocate.</div>
+      <div class="steps" id="step-indicator">
+         <div class="step active" id="step-1">
+            <div class="step-num">1</div>
+            <span class="step-label">Your Situation</span>
          </div>
-
-         <div class="section-title">
-            <div class="icon">📋</div>
-            Tell Us What's Happening
+         <div class="step" id="step-2">
+            <div class="step-num">2</div>
+            <span class="step-label">Key Details</span>
          </div>
+         <div class="step" id="step-3">
+            <div class="step-num">3</div>
+            <span class="step-label">Context</span>
+         </div>
+         <div class="step" id="step-4">
+            <div class="step-num">4</div>
+            <span class="step-label">Review</span>
+         </div>
+      </div>
 
-         <form id="analyzer-form">
+      <div class="section-title">
+         <div class="icon">📋</div>
+         Tell Us What's Happening
+      </div>
 
+      <form id="analyzer-form">
+
+         <div class="progress-wrap">
+            <div class="progress-label">
+               <span id="progress-text">Start by selecting your situation below</span>
+               <span id="progress-pct">0%</span>
+            </div>
             <div class="progress-bar">
                <div class="progress-fill" id="progress"></div>
             </div>
-
-            <div class="row-2">
-               <div class="field-group">
-                  <label for="district">School District <span class="opt">optional</span></label>
-                  <input type="text" id="district" placeholder="e.g., Houston ISD">
-               </div>
-               <div class="field-group">
-                  <label for="grade">Student's Grade <span class="opt">optional</span></label>
-                  <select id="grade">
-                     <option value="" disabled selected>Select grade…</option>
-                     <option>Pre-K</option>
-                     <option>Kindergarten</option>
-                     <option>1st Grade</option>
-                     <option>2nd Grade</option>
-                     <option>3rd Grade</option>
-                     <option>4th Grade</option>
-                     <option>5th Grade</option>
-                     <option>6th Grade</option>
-                     <option>7th Grade</option>
-                     <option>8th Grade</option>
-                     <option>9th Grade</option>
-                     <option>10th Grade</option>
-                     <option>11th Grade</option>
-                     <option>12th Grade</option>
-                  </select>
-               </div>
-            </div>
-
-            <div class="field-group">
-               <label>Urgency Level</label>
-               <div class="chip-group" id="urgency-chips">
-                  <div class="chip" data-val="routine">📅 Routine concern</div>
-                  <div class="chip" data-val="soon">⚠️ Needs attention soon</div>
-                  <div class="chip active" data-val="urgent">🚨 Urgent / time-sensitive</div>
-                  <div class="chip" data-val="crisis">🔴 Crisis / immediate action</div>
-               </div>
-            </div>
-
-            <hr class="divider">
-
-            <div class="field-group">
-               <label for="situation">Describe What Is Happening Right Now <span class="opt">required</span></label>
-               <textarea id="situation" rows="6" placeholder="Example: I requested a Full Individual Evaluation (FIE) on March 1st, but the school says they won't have time until next year. My child is failing and I believe they may qualify for services…" required></textarea>
-            </div>
-
-            <button type="submit" class="analyze-submit-btn">
-               Analyze My Situation <span class="arrow">→</span>
-            </button>
-
-            <p class="disclaimer">Your information is private and never shared. This tool provides general legal information, not legal advice.</p>
-
-         </form>
-
-         <div class="loading" id="loading">
-            <div class="spinner"></div>
-            <p>Analyzing your situation against Texas special education law…</p>
          </div>
 
-         <div id="results-area"></div>
+         <div class="row-2">
+            <div class="field-group">
+               <label for="district">School District <span class="opt">optional</span></label>
+               <input type="text" id="district" placeholder="e.g., Houston ISD">
+            </div>
+            <div class="field-group">
+               <label for="grade">Student's Grade <span class="opt">optional</span></label>
+               <select id="grade">
+                  <option value="" disabled selected>Select grade…</option>
+                  <option>Pre-K</option><option>Kindergarten</option>
+                  <option>1st Grade</option><option>2nd Grade</option><option>3rd Grade</option>
+                  <option>4th Grade</option><option>5th Grade</option><option>6th Grade</option>
+                  <option>7th Grade</option><option>8th Grade</option><option>9th Grade</option>
+                  <option>10th Grade</option><option>11th Grade</option><option>12th Grade</option>
+               </select>
+            </div>
+         </div>
 
-      </div><!-- /card -->
+         <div class="field-group">
+            <label>Urgency Level</label>
+            <div class="chip-group" id="urgency-chips">
+               <div class="chip" data-val="routine">📅 Routine concern</div>
+               <div class="chip" data-val="soon">⚠️ Needs attention soon</div>
+               <div class="chip active" data-val="urgent">🚨 Urgent / time-sensitive</div>
+               <div class="chip" data-val="crisis">🔴 Crisis / immediate action</div>
+            </div>
+         </div>
 
-      <div class="footer">
-         &copy; 2025 Texas IEP Violation Analyzer &mdash; For informational purposes only
+         <hr class="divider">
+
+         <div class="field-group">
+            <label for="category">What best describes your situation? <span class="req">required</span></label>
+            <div class="category-select-wrap" id="category-wrap">
+               <select id="category" required>
+                  <option value="" disabled selected>Choose a category to get started…</option>
+                  <option value="evaluation_delay">📅  Evaluation delay — FIE not completed in time</option>
+                  <option value="denied_evaluation">🚫  School denied evaluation or services</option>
+                  <option value="iep_not_followed">📄  IEP not being followed</option>
+                  <option value="ard_meeting">🤝  ARD / IEP meeting issues</option>
+                  <option value="behavior_discipline">⚠️  Behavior or discipline concern</option>
+                  <option value="communication">📬  Communication breakdown with school</option>
+                  <option value="other">✏️  Other — describe below</option>
+               </select>
+            </div>
+            <div class="category-hint" id="category-hint" style="display:none;">
+               Select a category and specific follow-up questions will appear
+            </div>
+         </div>
+
+         <div class="followup-block" id="fu-evaluation_delay">
+            <div class="followup-header">
+               📅 Evaluation Delay Details
+               <span class="followup-badge">Key Facts</span>
+            </div>
+            <div class="field-group">
+               <label for="fu-eval-date">When did you formally request the evaluation? <span class="req">required</span></label>
+               <input type="date" id="fu-eval-date">
+            </div>
+            <div class="field-group">
+               <label for="fu-eval-status">Current status of the evaluation? <span class="req">required</span></label>
+               <select id="fu-eval-status">
+                  <option value="" disabled selected>Select status...</option>
+                  <option>Waiting for school to reply to my request</option>
+                  <option>School agreed, but hasn't started testing</option>
+                  <option>Testing started, but 45 school days have passed</option>
+                  <option>Testing finished, waiting for ARD meeting</option>
+               </select>
+            </div>
+            <div class="field-group">
+               <label for="fu-eval-impact">Describe how this delay is impacting your child: <span class="req">required</span></label>
+               <input type="text" id="fu-eval-impact" placeholder="e.g., 'Failing math, increasing anxiety, getting sent to the office daily'">
+               <p class="thin-warn-msg" id="warn-eval-impact">⚠ Add more detail — vague descriptions lead to generic legal analysis.</p>
+            </div>
+            <div class="field-group">
+               <label>Did the school respond to your initial request in writing?</label>
+               <div class="yn-group">
+                  <button type="button" class="yn-btn yn-yes" data-group="eval-written">✓ Yes, in writing</button>
+                  <button type="button" class="yn-btn yn-no"  data-group="eval-written">✗ No written response</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="followup-block" id="fu-denied_evaluation">
+            <div class="followup-header">
+               🚫 Denial Details
+               <span class="followup-badge">Key Facts</span>
+            </div>
+            <div class="field-group">
+               <label for="fu-denied-reason">What reason did the school give for the denial? <span class="req">required</span></label>
+               <select id="fu-denied-reason">
+                  <option value="" disabled selected>Select reason...</option>
+                  <option>Said child must complete RTI/MTSS first</option>
+                  <option>Said child's grades/test scores are too high</option>
+                  <option>Said the issue is behavioral, not a disability</option>
+                  <option>Said a doctor's diagnosis is required first</option>
+                  <option>No reason given / ignored request</option>
+                  <option>Other reason</option>
+               </select>
+            </div>
+            <div class="field-group">
+               <label for="fu-denied-what">What specifically did you request? <span class="req">required</span></label>
+               <input type="text" id="fu-denied-what" placeholder="Be specific: e.g., 'Full Individual Evaluation for dyslexia and ADHD'">
+               <p class="thin-warn-msg" id="warn-denied-what">⚠ Add more detail — vague descriptions lead to generic legal analysis.</p>
+            </div>
+            <div class="field-group">
+               <label>Did the school provide a written denial (Prior Written Notice)?</label>
+               <div class="yn-group">
+                  <button type="button" class="yn-btn yn-yes" data-group="denied-written">✓ Yes — I have it</button>
+                  <button type="button" class="yn-btn yn-no"  data-group="denied-written">✗ No written denial</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="followup-block" id="fu-iep_not_followed">
+            <div class="followup-header">
+               📄 IEP Compliance Details
+               <span class="followup-badge">Key Facts</span>
+            </div>
+            <div class="field-group">
+               <label for="fu-iep-freq">How often is the violation happening? <span class="req">required</span></label>
+               <select id="fu-iep-freq">
+                  <option value="" disabled selected>Select frequency…</option>
+                  <option>Daily</option>
+                  <option>Several times a week</option>
+                  <option>Weekly</option>
+                  <option>Monthly</option>
+                  <option>Ongoing / consistent pattern</option>
+                  <option>It happened once but was severe</option>
+               </select>
+            </div>
+            <div class="field-group">
+               <label for="fu-iep-service">Describe the specific service or accommodation being missed: <span class="req">required</span></label>
+               <input type="text" id="fu-iep-service" placeholder="Be specific: e.g., 'Speech therapy 2x/week since Sept,' or 'Extended time on tests — teacher refuses.'">
+               <p class="thin-warn-msg" id="warn-iep-service">⚠ Add more detail — vague descriptions lead to generic legal analysis.</p>
+            </div>
+            <div class="field-group">
+               <label>Has the school acknowledged the problem?</label>
+               <div class="yn-group">
+                  <button type="button" class="yn-btn yn-yes" data-group="iep-ack">✓ Yes</button>
+                  <button type="button" class="yn-btn yn-no"  data-group="iep-ack">✗ No / denying it</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="followup-block" id="fu-ard_meeting">
+            <div class="followup-header">
+               🤝 Meeting Issue Details
+               <span class="followup-badge">Key Facts</span>
+            </div>
+            <div class="field-group">
+               <label for="fu-ard-type">What type of meeting issue occurred? <span class="req">required</span></label>
+               <select id="fu-ard-type">
+                  <option value="" disabled selected>Select the issue…</option>
+                  <option>Meeting was not scheduled within timeline</option>
+                  <option>Parent was excluded or pressured to not attend</option>
+                  <option>IEP decisions made without parent present</option>
+                  <option>School refused parent's request to hold an ARD</option>
+                  <option>Required team members (e.g., Gen Ed teacher) were absent</option>
+                  <option>Other procedural issue</option>
+               </select>
+            </div>
+            <div class="field-group">
+               <label for="fu-ard-impact">Describe how this affected the meeting or your child's services: <span class="req">required</span></label>
+               <input type="text" id="fu-ard-impact" placeholder="e.g., 'Because the speech therapist wasn't there, we couldn't update his goals.'">
+               <p class="thin-warn-msg" id="warn-ard-impact">⚠ Add more detail — vague descriptions lead to generic legal analysis.</p>
+            </div>
+            <div class="field-group">
+               <label>Did you request the meeting in writing?</label>
+               <div class="yn-group">
+                  <button type="button" class="yn-btn yn-yes" data-group="ard-written">✓ Yes, in writing</button>
+                  <button type="button" class="yn-btn yn-no"  data-group="ard-written">✗ Verbal request only</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="followup-block" id="fu-behavior_discipline">
+            <div class="followup-header">
+               ⚠️ Behavior &amp; Discipline Details
+               <span class="followup-badge">Key Facts</span>
+            </div>
+            <div class="field-group">
+               <label for="fu-beh-status">What is the student's current placement status? <span class="req">required</span></label>
+               <select id="fu-beh-status">
+                  <option value="" disabled selected>Select status...</option>
+                  <option>In regular classroom, but facing constant write-ups</option>
+                  <option>In-School Suspension (ISS)</option>
+                  <option>Out-of-School Suspension (OSS)</option>
+                  <option>Sent to Alternative School (DAEP)</option>
+                  <option>Expelled</option>
+               </select>
+            </div>
+            <div class="field-group">
+               <label for="fu-beh-desc">Describe the incident and how the school reacted: <span class="req">required</span></label>
+               <input type="text" id="fu-beh-desc" placeholder="e.g., 'He had a meltdown related to his autism, and they suspended him for 3 days without calling me first.'">
+               <p class="thin-warn-msg" id="warn-beh-desc">⚠ Add more detail — vague descriptions lead to generic legal analysis.</p>
+            </div>
+            <div class="field-group">
+               <label>Was a Manifestation Determination Review (MDR) held?</label>
+               <div class="yn-group">
+                  <button type="button" class="yn-btn yn-yes" data-group="beh-mdr">✓ Yes</button>
+                  <button type="button" class="yn-btn yn-no"  data-group="beh-mdr">✗ No / I don't know</button>
+               </div>
+            </div>
+            <div class="field-group">
+               <label>Was there a formal suspension/removal from campus?</label>
+               <div class="yn-group">
+                  <button type="button" class="yn-btn yn-yes" data-group="beh-suspend">✓ Yes</button>
+                  <button type="button" class="yn-btn yn-no"  data-group="beh-suspend">✗ No</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="followup-block" id="fu-communication">
+            <div class="followup-header">
+               📬 Communication Details
+               <span class="followup-badge">Key Facts</span>
+            </div>
+            <div class="field-group">
+               <label for="fu-comm-how-long">How long has the school been unresponsive? <span class="req">required</span></label>
+               <select id="fu-comm-how-long">
+                  <option value="" disabled selected>Select timeframe…</option>
+                  <option>A few days</option>
+                  <option>1–2 weeks</option>
+                  <option>2–4 weeks</option>
+                  <option>1–2 months</option>
+                  <option>More than 2 months</option>
+                  <option>They respond but completely ignore my questions</option>
+               </select>
+            </div>
+            <div class="field-group">
+               <label for="fu-comm-what">Describe your attempts to communicate: <span class="req">required</span></label>
+               <input type="text" id="fu-comm-what" placeholder="Be specific: e.g., 'Sent 4 emails to the case manager since Oct 1 asking for progress reports, called principal twice.'">
+               <p class="thin-warn-msg" id="warn-comm-what">⚠ Add more detail — vague descriptions lead to generic legal analysis.</p>
+            </div>
+         </div>
+
+         <div class="other-wrap" id="fu-other">
+            <div class="followup-block visible" style="margin-top:0">
+               <div class="followup-header">
+                  ✏️ Describe Your Situation
+                  <span class="followup-badge">Required Detail</span>
+               </div>
+               <div class="field-group">
+                  <label for="fu-other-type">Primary area of concern: <span class="req">required</span></label>
+                  <select id="fu-other-type">
+                     <option value="" disabled selected>Select category...</option>
+                     <option>Academic Progress / Failing Grades</option>
+                     <option>Behavioral / Emotional Support</option>
+                     <option>Medical Needs / Accommodations</option>
+                     <option>Placement (e.g., LRE, Inclusion)</option>
+                     <option>Bullying / Harassment</option>
+                     <option>Something else entirely</option>
+                  </select>
+               </div>
+               <div class="other-helper">
+                  <strong>📌 Please include all three of the following:</strong>
+                  What you asked the school for &nbsp;·&nbsp; What the school did or didn't do &nbsp;·&nbsp; When this happened
+               </div>
+               <div class="field-group" style="margin-bottom:8px">
+                  <textarea id="other-text" rows="5"
+                     placeholder="Example: In October I requested an evaluation for my 3rd grader. The principal said they'd 'look into it' but never followed up in writing. It's now been 11 weeks with no response…"
+                     minlength="200"></textarea>
+                  <div class="char-counter">
+                     <span>
+                        <span class="char-count-num" id="other-char-count">0</span>
+                        <span style="color:var(--slate);opacity:.6"> / 200 minimum characters</span>
+                     </span>
+                     <span class="char-friction">More detail = more accurate legal scan</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <hr class="divider">
+
+         <div class="field-group">
+            <div class="additional-label-row">
+               <label for="situation">Additional Details</label>
+               <span class="label-tag">Optional but recommended</span>
+            </div>
+            <textarea id="situation" rows="4"
+               placeholder="Add any context that doesn't fit above — what you've already tried, prior communications, your child's specific diagnoses, or anything else you think is relevant…"></textarea>
+            <p class="nuance-tip">💡 The structured fields above drive the analysis — use this space for nuance and additional context.</p>
+         </div>
+
+         <button type="submit" class="analyze-submit-btn" id="submit-btn" disabled>
+            Analyze My Situation <span class="arrow">→</span>
+         </button>
+
+         <p class="disclaimer">Your information is private and never shared. This tool provides general legal information, not legal advice.</p>
+
+      </form>
+
+      <div class="loading" id="loading">
+         <div class="spinner"></div>
+         <p>Analyzing your situation against Texas special education law…</p>
       </div>
 
-   </div><!-- /page-wrap -->
+      <div id="results-area"></div>
 
-   <script>
-      let currentSessionId = null;
+   </div><div class="footer">
+      &copy; 2025 Texas IEP Violation Analyzer &mdash; For informational purposes only
+   </div>
 
-      // Chip selection
-      document.querySelectorAll('.chip').forEach(chip => {
-         chip.addEventListener('click', function () {
-            this.closest('.chip-group').querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-            this.classList.add('active');
-            updateProgress();
-         });
-      });
+</div><script>
+   let currentSessionId = null;
 
-      // Progress bar
-      function updateProgress() {
-         const fields = ['situation'];
-         let filled = 0;
-         fields.forEach(id => { if (document.getElementById(id)?.value.trim()) filled++; });
-         const urgencySelected = document.querySelector('.chip.active');
-         if (urgencySelected) filled++;
-         document.getElementById('progress').style.width = Math.min(100, (filled / (fields.length + 1)) * 100) + '%';
+   // ═══════════════════════════════════════════════════════
+   // CORE HELPERS 
+   // ═══════════════════════════════════════════════════════
+
+   function getVal(id)               { return (document.getElementById(id)?.value || '').trim(); }
+   function isStrongText(id, min)    { return getVal(id).length >= (min || 25); }
+   function ynChecked(group)         { return !!document.querySelector(`.yn-btn[data-group="${group}"].active`); }
+   function selChosen(id)            { return !!document.getElementById(id)?.value; }
+
+   const MIN_OTHER_CHARS = 200;
+   function otherLongEnough()        { return (document.getElementById('other-text')?.value || '').length >= MIN_OTHER_CHARS; }
+
+   // ═══════════════════════════════════════════════════════
+   // CATEGORY COMPLETION ENGINE (1 Dropdown + 1 Text Rule Enforced)
+   // ═══════════════════════════════════════════════════════
+
+   function isCategoryComplete(category) {
+      switch (category) {
+
+         case 'evaluation_delay':
+            return selChosen('fu-eval-date') && selChosen('fu-eval-status') && isStrongText('fu-eval-impact', 25) && ynChecked('eval-written');
+
+         case 'denied_evaluation':
+            return selChosen('fu-denied-reason') && isStrongText('fu-denied-what', 25) && ynChecked('denied-written');
+
+         case 'iep_not_followed':
+            return selChosen('fu-iep-freq') && isStrongText('fu-iep-service', 25);
+
+         case 'ard_meeting':
+            return selChosen('fu-ard-type') && isStrongText('fu-ard-impact', 25) && ynChecked('ard-written');
+
+         case 'behavior_discipline':
+            return selChosen('fu-beh-status') && isStrongText('fu-beh-desc', 25) && ynChecked('beh-suspend') && ynChecked('beh-mdr');
+
+         case 'communication':
+            return selChosen('fu-comm-how-long') && isStrongText('fu-comm-what', 25);
+
+         case 'other':
+            return selChosen('fu-other-type') && otherLongEnough();
+
+         default:
+            return false;
       }
-      document.getElementById('situation').addEventListener('input', updateProgress);
+   }
+
+   // ═══════════════════════════════════════════════════════
+   // SUBMIT GATE
+   // ═══════════════════════════════════════════════════════
+
+   const submitBtn  = document.getElementById('submit-btn');
+   const categoryEl = document.getElementById('category');
+
+   function updateSubmitState() {
+      const category = categoryEl.value;
+      submitBtn.disabled = !category || !isCategoryComplete(category);
+   }
+
+   // ═══════════════════════════════════════════════════════
+   // PROGRESS BAR + DIRECTIVE MESSAGING
+   // ═══════════════════════════════════════════════════════
+
+   function getCategorySteps(cat) {
+      switch (cat) {
+         case 'evaluation_delay':     return [
+            { done: selChosen('fu-eval-date'),           label: 'Enter the date you requested the evaluation' },
+            { done: selChosen('fu-eval-status'),         label: 'Select the current evaluation status' },
+            { done: isStrongText('fu-eval-impact', 25),  label: 'Describe the impact on your child (25+ chars)' },
+            { done: ynChecked('eval-written'),           label: 'Answer whether the school responded in writing' },
+         ];
+         case 'denied_evaluation':    return [
+            { done: selChosen('fu-denied-reason'),       label: 'Select the reason given for denial' },
+            { done: isStrongText('fu-denied-what', 25),  label: 'Describe what you requested in detail (25+ chars)' },
+            { done: ynChecked('denied-written'),         label: 'Answer whether you received a written denial' },
+         ];
+         case 'iep_not_followed':     return [
+            { done: selChosen('fu-iep-freq'),            label: 'Select how often the violation is happening' },
+            { done: isStrongText('fu-iep-service', 25),  label: 'Describe the missing service in detail (25+ chars)' },
+         ];
+         case 'ard_meeting':          return [
+            { done: selChosen('fu-ard-type'),            label: 'Select the type of meeting issue' },
+            { done: isStrongText('fu-ard-impact', 25),   label: 'Describe how this affected the meeting (25+ chars)' },
+            { done: ynChecked('ard-written'),            label: 'Answer whether you made a written request' },
+         ];
+         case 'behavior_discipline':  return [
+            { done: selChosen('fu-beh-status'),          label: 'Select the student\'s current placement status' },
+            { done: isStrongText('fu-beh-desc', 25),     label: 'Describe the incident in detail (25+ chars)' },
+            { done: ynChecked('beh-mdr'),                label: 'Answer whether an MDR was held' },
+            { done: ynChecked('beh-suspend'),            label: 'Answer whether a formal suspension occurred' },
+         ];
+         case 'communication':        return [
+            { done: selChosen('fu-comm-how-long'),       label: 'Select how long the school has been unresponsive' },
+            { done: isStrongText('fu-comm-what', 25),    label: 'Describe your communication attempts in detail (25+ chars)' },
+         ];
+         case 'other':                return [
+            { done: selChosen('fu-other-type'),          label: 'Select the primary area of concern' },
+            { done: otherLongEnough(),                   label: `Write at least ${MIN_OTHER_CHARS} characters — include what you asked, what happened, and when` },
+         ];
+         default:                     return [];
+      }
+   }
+
+   function updateProgress() {
+      const cat   = categoryEl.value;
+      const steps = getCategorySteps(cat);
+
+      const base    = cat ? 1 : 0;
+      const urgency = document.querySelector('.chip.active') ? 1 : 0;
+      const done    = steps.filter(s => s.done).length;
+      const total   = 2 + (steps.length || 1);
+      const pct     = Math.round(((base + urgency + done) / total) * 100);
+
+      document.getElementById('progress').style.width  = pct + '%';
+      document.getElementById('progress-pct').textContent = pct + '%';
+
+      const progressText = document.getElementById('progress-text');
+      if (!cat) {
+         progressText.textContent = 'Select your situation to begin';
+      } else if (!document.querySelector('.chip.active')) {
+         progressText.textContent = 'Select your urgency level above';
+      } else if (!isCategoryComplete(cat)) {
+         const next = steps.find(s => !s.done);
+         progressText.textContent = next ? next.label : 'Answer the required questions to unlock your analysis';
+      } else {
+         progressText.textContent = '✓ Ready to analyze — add optional details below if helpful';
+      }
+   }
+
+   function updateStepIndicator() {
+      const cat            = categoryEl.value;
+      const complete       = cat && isCategoryComplete(cat);
+      const hasAdditional  = document.getElementById('situation').value.trim().length > 20;
+
+      const s1 = document.getElementById('step-1');
+      const s2 = document.getElementById('step-2');
+      const s3 = document.getElementById('step-3');
+      const s4 = document.getElementById('step-4');
+
+      if (!cat) {
+         s1.className = 'step active';    s2.className = 'step';
+         s3.className = 'step';           s4.className = 'step';
+      } else if (!complete) {
+         s1.className = 'step complete';  s2.className = 'step active';
+         s3.className = 'step';           s4.className = 'step';
+      } else if (!hasAdditional) {
+         s1.className = 'step complete';  s2.className = 'step complete';
+         s3.className = 'step active';    s4.className = 'step';
+      } else {
+         s1.className = 'step complete';  s2.className = 'step complete';
+         s3.className = 'step complete';  s4.className = 'step active';
+      }
+   }
+
+   // ═══════════════════════════════════════════════════════
+   // THIN-INPUT WARNINGS 
+   // ═══════════════════════════════════════════════════════
+
+   function handleThinInput(inputId, warnId, min) {
+      const input = document.getElementById(inputId);
+      const warn  = document.getElementById(warnId);
+      if (!input || !warn) return;
+      input.addEventListener('input', function () {
+         const len = this.value.trim().length;
+         const thin = len > 0 && len < min;
+         this.classList.toggle('input-thin-warn', thin);
+         warn.classList.toggle('visible', thin);
+      });
+   }
+
+   // Bind warnings to all the new strong text fields
+   handleThinInput('fu-eval-impact', 'warn-eval-impact', 25);
+   handleThinInput('fu-denied-what', 'warn-denied-what', 25);
+   handleThinInput('fu-iep-service', 'warn-iep-service', 25);
+   handleThinInput('fu-ard-impact',  'warn-ard-impact',  25);
+   handleThinInput('fu-beh-desc',    'warn-beh-desc',    25);
+   handleThinInput('fu-comm-what',   'warn-comm-what',   25);
+
+   // ═══════════════════════════════════════════════════════
+   // OTHER-TEXTAREA char counter
+   // ═══════════════════════════════════════════════════════
+
+   document.getElementById('other-text').addEventListener('input', function () {
+      const len   = this.value.length;
+      const count = document.getElementById('other-char-count');
+      count.textContent = len;
+      count.classList.remove('warn', 'ok');
+      if      (len >= MIN_OTHER_CHARS) count.classList.add('ok');
+      else if (len > 80)               count.classList.add('warn');
+   });
+
+   // ═══════════════════════════════════════════════════════
+   // CHIP & YN-BTN CLICK HANDLERS
+   // ═══════════════════════════════════════════════════════
+
+   document.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('click', function () {
+         this.closest('.chip-group').querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+         this.classList.add('active');
+      });
+   });
+
+   document.querySelectorAll('.yn-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+         const group = this.dataset.group;
+         document.querySelectorAll(`.yn-btn[data-group="${group}"]`).forEach(b => b.classList.remove('active'));
+         this.classList.add('active');
+      });
+   });
+
+   // ═══════════════════════════════════════════════════════
+   // CATEGORY CHANGE
+   // ═══════════════════════════════════════════════════════
+
+   const ALL_FOLLOWUP_IDS = [
+      'fu-evaluation_delay', 'fu-denied_evaluation', 'fu-iep_not_followed',
+      'fu-ard_meeting', 'fu-behavior_discipline', 'fu-communication'
+   ];
+
+   categoryEl.addEventListener('change', function () {
+      const chosen = this.value;
+      document.getElementById('category-wrap').classList.add('has-value');
+      document.getElementById('category-hint').style.display = 'none';
+
+      ALL_FOLLOWUP_IDS.forEach(id => document.getElementById(id)?.classList.remove('visible'));
+      document.getElementById('fu-other').classList.remove('visible');
+
+      if (chosen === 'other') {
+         document.getElementById('fu-other').classList.add('visible');
+      } else {
+         document.getElementById('fu-' + chosen)?.classList.add('visible');
+      }
+   });
+
+   // ═══════════════════════════════════════════════════════
+   // UNIVERSAL EVENT WIRING
+   // ═══════════════════════════════════════════════════════
+
+   function syncAll() {
+      updateSubmitState();
       updateProgress();
+      updateStepIndicator();
+   }
 
-      // Form submit
-      document.getElementById('analyzer-form').addEventListener('submit', async function (e) {
+   document.addEventListener('input',  syncAll);
+   document.addEventListener('change', syncAll);
+
+   document.addEventListener('click', function (e) {
+      if (e.target.classList.contains('yn-btn') || e.target.classList.contains('chip')) {
+         setTimeout(syncAll, 10);  
+      }
+   });
+
+   syncAll();
+
+   // ═══════════════════════════════════════════════════════
+   // SUBMIT LOGIC 
+   // ═══════════════════════════════════════════════════════
+
+   function collectFormData() {
+      const cat = categoryEl.value;
+      const base = {
+         district: document.getElementById('district').value,
+         grade: document.getElementById('grade').value,
+         urgency: document.querySelector('.chip.active')?.dataset.val || 'urgent',
+         category: cat,
+         additional_details: document.getElementById('situation').value
+      };
+
+      const followUp = {};
+
+      if (cat === 'evaluation_delay') {
+         followUp.eval_request_date        = document.getElementById('fu-eval-date').value;
+         followUp.eval_status              = document.getElementById('fu-eval-status').value;
+         followUp.eval_impact              = document.getElementById('fu-eval-impact').value;
+         followUp.school_responded_writing = document.querySelector('.yn-btn[data-group="eval-written"].active')?.textContent || '';
+      } else if (cat === 'denied_evaluation') {
+         followUp.denial_reason            = document.getElementById('fu-denied-reason').value;
+         followUp.what_was_requested       = document.getElementById('fu-denied-what').value;
+         followUp.written_denial           = document.querySelector('.yn-btn[data-group="denied-written"].active')?.textContent || '';
+      } else if (cat === 'iep_not_followed') {
+         followUp.frequency                = document.getElementById('fu-iep-freq').value;
+         followUp.missing_service          = document.getElementById('fu-iep-service').value;
+         followUp.school_acknowledged      = document.querySelector('.yn-btn[data-group="iep-ack"].active')?.textContent || '';
+      } else if (cat === 'ard_meeting') {
+         followUp.meeting_issue_type       = document.getElementById('fu-ard-type').value;
+         followUp.meeting_impact           = document.getElementById('fu-ard-impact').value;
+         followUp.written_request          = document.querySelector('.yn-btn[data-group="ard-written"].active')?.textContent || '';
+      } else if (cat === 'behavior_discipline') {
+         followUp.placement_status         = document.getElementById('fu-beh-status').value;
+         followUp.incident_description     = document.getElementById('fu-beh-desc').value;
+         followUp.mdr_held                 = document.querySelector('.yn-btn[data-group="beh-mdr"].active')?.textContent || '';
+         followUp.suspension               = document.querySelector('.yn-btn[data-group="beh-suspend"].active')?.textContent || '';
+      } else if (cat === 'communication') {
+         followUp.unresponsive_duration    = document.getElementById('fu-comm-how-long').value;
+         followUp.comm_attempted           = document.getElementById('fu-comm-what').value;
+      } else if (cat === 'other') {
+         followUp.primary_concern_type     = document.getElementById('fu-other-type').value;
+         followUp.other_description        = document.getElementById('other-text').value;
+      }
+
+      return { ...base, follow_up: followUp };
+   }
+
+   document.getElementById('analyzer-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const payload = collectFormData();
+
+      this.style.display = 'none';
+      document.getElementById('loading').style.display = 'block';
+
+      try {
+         const response = await fetch('http://localhost:8000/api/analyze', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+         });
+         const data = await response.json();
+         currentSessionId = data.session_id || null;
+         renderResults(data);
+      } catch (err) {
+         console.error(err);
+         alert("Could not connect to the analysis server. Please try again.");
+         document.getElementById('analyzer-form').style.display = 'block';
+      } finally {
+         document.getElementById('loading').style.display = 'none';
+      }
+   });
+
+   function renderResults(data) {
+      const area = document.getElementById('results-area');
+      area.style.display = 'block';
+      area.innerHTML = `
+         <div class="result-header">📋 Potential Concerns Worth Reviewing</div>
+         <div class="alert-box">
+            <strong>What We Found</strong>
+            ${data.summary || 'We identified some areas that may be worth discussing with a special education advocate or attorney.'}
+         </div>
+         <div class="paywall-box">
+            <h3>Get Your Full Concern Summary</h3>
+            <p>See a detailed breakdown of potential concerns, what questions to ask your district, suggested next steps, and a letter template to help you start the conversation.</p>
+            <button class="paywall-btn">Unlock Full Report ($29)</button>
+         </div>
+      `;
+
+      document.querySelector('.paywall-btn').addEventListener('click', async function (e) {
          e.preventDefault();
-         const situation = document.getElementById('situation').value.trim();
-         if (!situation) return;
-
-         this.style.display = 'none';
-         document.getElementById('loading').style.display = 'block';
-
+         if (!currentSessionId) return alert("No active session found. Please run a scan first.");
+         this.innerText = "Redirecting securely...";
+         this.disabled = true;
          try {
-            const response = await fetch('http://localhost:8000/api/analyze', {
+            const response = await fetch('http://localhost:8000/api/create-checkout-session', {
                method: 'POST',
                headers: { 'Content-Type': 'application/json' },
-               body: JSON.stringify({
-                  district: document.getElementById('district').value,
-                  grade: document.getElementById('grade').value,
-                  urgency: document.querySelector('.chip.active')?.dataset.val || 'urgent',
-                  situation
-               })
+               body: JSON.stringify({ session_id: currentSessionId })
             });
             const data = await response.json();
-            currentSessionId = data.session_id || null;
-            renderResults(data);
-         } catch (err) {
-            console.error(err);
-            alert("Could not connect to the analysis server. Please try again.");
-            document.getElementById('analyzer-form').style.display = 'block';
-         } finally {
-            document.getElementById('loading').style.display = 'none';
+            if (data.checkout_url) {
+               window.location.href = data.checkout_url;
+            } else {
+               throw new Error("No checkout URL returned");
+            }
+         } catch (error) {
+            console.error(error);
+            alert("Could not connect to the secure payment processor.");
+            this.innerText = "Unlock Full Report ($29)";
+            this.disabled = false;
          }
       });
-
-      function renderResults(data) {
-         const area = document.getElementById('results-area');
-         area.style.display = 'block';
-         area.innerHTML = `
-            <div class="result-header">📋 Potential Concerns Worth Reviewing</div>
-            <div class="alert-box">
-               <strong>What We Found</strong>
-               ${data.summary || 'We identified some areas that may be worth discussing with a special education advocate or attorney.'}
-            </div>
-            <div class="paywall-box">
-               <h3>Get Your Full Concern Summary</h3>
-               <p>See a detailed breakdown of potential concerns, what questions to ask your district, suggested next steps, and a letter template to help you start the conversation.</p>
-               <button class="paywall-btn">Unlock Full Report ($29)</button>
-            </div>
-         `;
-
-         // Handle the Paywall Button Click
-         document.querySelector('.paywall-btn').addEventListener('click', async function (e) {
-            e.preventDefault(); // <-- This line stops the page jump!
-
-            if (!currentSessionId) return alert("No active session found. Please run a scan first.");
-
-            this.innerText = "Redirecting securely...";
-            this.disabled = true;
-            try {
-               const response = await fetch('http://localhost:8000/api/create-checkout-session', {
-                  method: 'POST',
-                  headers: { 'Content-Type': 'application/json' },
-                  body: JSON.stringify({ session_id: currentSessionId })
-               });
-               const data = await response.json();
-
-               if (data.checkout_url) {
-                  window.location.href = data.checkout_url;
-               } else {
-                  throw new Error("No checkout URL returned");
-               }
-            } catch (error) {
-               console.error(error);
-               alert("Could not connect to the secure payment processor.");
-               this.innerText = "Unlock Full Report ($29)";
-               this.disabled = false;
-            }
-         });
-      }
-   </script>
-
+   }
+</script>
 </body>
 </html>
