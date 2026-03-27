@@ -6,6 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Your Full Report | Texas Special Ed Analyzer</title>
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+   
+   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
    <style>
       :root {
          --navy: #0f1f3d;
@@ -94,7 +97,7 @@
          to { transform: rotate(360deg); }
       }
 
-      /* ── Premium Report Formatting ── */
+      /* ── Premium Report Formatting (Updated for Marked.js) ── */
       .report-content {
          display: none;
          font-size: 15px;
@@ -102,12 +105,13 @@
          color: #2d3748;
       }
 
-      .report-content h3 {
+      /* AI outputs ## which translates to h2 in Markdown */
+      .report-content h2 {
          font-family: 'Playfair Display', serif;
          color: var(--navy);
          font-size: 22px;
-         margin-top: 32px;
-         margin-bottom: 12px;
+         margin-top: 36px;
+         margin-bottom: 16px;
          padding-bottom: 8px;
          border-bottom: 1px solid var(--border);
       }
@@ -121,9 +125,9 @@
          font-weight: 600;
       }
 
-      .report-content ul {
-         margin-bottom: 16px;
-         padding-left: 20px;
+      .report-content ul, .report-content ol {
+         margin-bottom: 20px;
+         padding-left: 24px;
       }
 
       .report-content li {
@@ -323,28 +327,6 @@
       const successUi = document.getElementById('success-ui');
       const reportText = document.getElementById('report-text');
 
-      // Simple Markdown Parser to remove "##" and format cleanly
-      function parseMarkdown(text) {
-         let html = text;
-         // Convert headers (## Header text) to <h3>
-         html = html.replace(/^##\s+(.*)$/gim, '<h3>$1</h3>');
-         // Convert bold (**text**) to <strong>
-         html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-         // Convert bullet points (* text) to <li>
-         html = html.replace(/^\*\s+(.*)$/gim, '<ul><li>$1</li></ul>');
-         // Clean up adjacent ul tags
-         html = html.replace(/<\/ul>\n<ul>/g, '\n');
-         // Wrap remaining paragraphs in <p> (basic split by double newline)
-         html = html.split('\n\n').map(p => {
-            if (!p.trim().startsWith('<h') && !p.trim().startsWith('<u')) {
-               return `<p>${p}</p>`;
-            }
-            return p;
-         }).join('\n');
-         
-         return html;
-      }
-
       async function fetchReport() {
          if (!sessionId) {
             showError("Missing Session ID", "No report ID was found in the URL. Please return to the dashboard and try again.");
@@ -364,8 +346,8 @@
 
             const data = await response.json();
 
-            // Run the raw text through the parser
-            reportText.innerHTML = parseMarkdown(data.full_paid_analysis);
+            // 🛑 FIXED: Using marked.js to perfectly parse the AI output
+            reportText.innerHTML = marked.parse(data.full_paid_analysis);
             
             loadingUi.style.display = 'none';
             reportText.style.display = 'block';
