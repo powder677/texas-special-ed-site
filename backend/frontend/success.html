@@ -337,7 +337,7 @@
          errorUi.style.display = 'none';
 
          try {
-            const response = await fetch(`http://localhost:8000/api/get-full-report/${sessionId}`);
+           const response = await fetch(`/api/get-full-report/${sessionId}`);
 
             if (!response.ok) {
                const errData = await response.json();
