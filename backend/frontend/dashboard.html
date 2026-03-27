@@ -808,10 +808,10 @@
 <div class="page-wrap">
 
    <div class="banner">
-      <div class="banner-eyebrow">📋 Texas Special Education · Free Parent Tool</div>
+      <div class="banner-eyebrow">📋 Texas Special Education · Parent Tool</div>
       <h1>IEP Concern<br><span>Review Tool</span></h1>
       <div class="rule"><div class="rule-diamond"></div></div>
-      <p class="banner-sub">Answer a few targeted questions to get a free summary of potential IEP concerns — then decide if it's time to talk to an advocate or attorney.</p>
+      <p class="banner-sub">Answer a few targeted questions to get a summary of potential IEP concerns — then decide if it's time to talk to an advocate or attorney.</p>
    </div>
 
    <div class="card">
@@ -843,8 +843,8 @@
       </div>
 
       <div class="section-title">
-         <div class="icon">📋</div>
-         Tell Us What's Happening
+         <div class="icon">👤</div>
+         Basic Information
       </div>
 
       <form id="analyzer-form">
@@ -861,12 +861,30 @@
 
          <div class="row-2">
             <div class="field-group">
+               <label for="parent_name">Your First Name <span class="req">required</span></label>
+               <input type="text" id="parent_name" placeholder="e.g., Sarah" required>
+            </div>
+            <div class="field-group">
+               <label for="student_name">Child's First Name <span class="req">required</span></label>
+               <input type="text" id="student_name" placeholder="e.g., Leo" required>
+            </div>
+         </div>
+
+         <div class="row-2">
+            <div class="field-group">
                <label for="district">School District <span class="opt">optional</span></label>
                <input type="text" id="district" placeholder="e.g., Houston ISD">
             </div>
             <div class="field-group">
-               <label for="grade">Student's Grade <span class="opt">optional</span></label>
-               <select id="grade">
+               <label for="school_name">Specific School Name <span class="opt">optional</span></label>
+               <input type="text" id="school_name" placeholder="e.g., Oak Elementary">
+            </div>
+         </div>
+         
+         <div class="row-2">
+            <div class="field-group">
+               <label for="grade">Student's Grade <span class="req">required</span></label>
+               <select id="grade" required>
                   <option value="" disabled selected>Select grade…</option>
                   <option>Pre-K</option><option>Kindergarten</option>
                   <option>1st Grade</option><option>2nd Grade</option><option>3rd Grade</option>
@@ -1220,7 +1238,10 @@
 
    function updateSubmitState() {
       const category = categoryEl.value;
-      submitBtn.disabled = !category || !isCategoryComplete(category);
+      // Ensure the newly added required text fields are filled
+      const baseFilled = getVal('parent_name').length > 0 && getVal('student_name').length > 0 && selChosen('grade');
+      
+      submitBtn.disabled = !baseFilled || !category || !isCategoryComplete(category);
    }
 
    // ═══════════════════════════════════════════════════════
@@ -1230,7 +1251,7 @@
    function getCategorySteps(cat) {
       switch (cat) {
          case 'evaluation_delay':     return [
-            { done: selChosen('fu-eval-date'),           label: 'Enter the date you requested the evaluation' },
+            { done: selChosen('fu-eval-date'),            label: 'Enter the date you requested the evaluation' },
             { done: selChosen('fu-eval-status'),         label: 'Select the current evaluation status' },
             { done: isStrongText('fu-eval-impact', 25),  label: 'Describe the impact on your child (25+ chars)' },
             { done: ynChecked('eval-written'),           label: 'Answer whether the school responded in writing' },
@@ -1241,11 +1262,11 @@
             { done: ynChecked('denied-written'),         label: 'Answer whether you received a written denial' },
          ];
          case 'iep_not_followed':     return [
-            { done: selChosen('fu-iep-freq'),            label: 'Select how often the violation is happening' },
+            { done: selChosen('fu-iep-freq'),             label: 'Select how often the violation is happening' },
             { done: isStrongText('fu-iep-service', 25),  label: 'Describe the missing service in detail (25+ chars)' },
          ];
          case 'ard_meeting':          return [
-            { done: selChosen('fu-ard-type'),            label: 'Select the type of meeting issue' },
+            { done: selChosen('fu-ard-type'),             label: 'Select the type of meeting issue' },
             { done: isStrongText('fu-ard-impact', 25),   label: 'Describe how this affected the meeting (25+ chars)' },
             { done: ynChecked('ard-written'),            label: 'Answer whether you made a written request' },
          ];
@@ -1426,7 +1447,10 @@
    function collectFormData() {
       const cat = categoryEl.value;
       const base = {
+         parent_name: document.getElementById('parent_name').value,
+         student_name: document.getElementById('student_name').value,
          district: document.getElementById('district').value,
+         school_name: document.getElementById('school_name').value,
          grade: document.getElementById('grade').value,
          urgency: document.querySelector('.chip.active')?.dataset.val || 'urgent',
          category: cat,
@@ -1476,17 +1500,37 @@
       document.getElementById('loading').style.display = 'block';
 
       try {
-         const response = await fetch('http://localhost:8000/api/analyze', {
+         // UPDATED: Now pointing directly to your Cloud Run service URL
+         const response = await fetch('https://texas-sped-app-196104920649.us-central1.run.app/api/analyze', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
          });
+         
+         if (!response.ok) {
+            let errorMsg = "Server error";
+            try {
+               const errData = await response.json();
+               errorMsg = errData.detail || `Error ${response.status}`;
+               if (Array.isArray(errData.detail)) {
+                   errorMsg = "API Validation Error: " + errData.detail[0].loc.join('.') + " - " + errData.detail[0].msg;
+               }
+            } catch(e) {}
+            throw new Error(errorMsg);
+         }
+
          const data = await response.json();
-         currentSessionId = data.session_id || null;
+         
+         if (!data.session_id) {
+             throw new Error("Backend succeeded but failed to return a session_id.");
+         }
+         
+         currentSessionId = data.session_id;
          renderResults(data);
+         
       } catch (err) {
-         console.error(err);
-         alert("Could not connect to the analysis server. Please try again.");
+         console.error("Analysis Failed:", err);
+         alert("Could not analyze situation: " + err.message);
          document.getElementById('analyzer-form').style.display = 'block';
       } finally {
          document.getElementById('loading').style.display = 'none';
@@ -1515,7 +1559,8 @@
          this.innerText = "Redirecting securely...";
          this.disabled = true;
          try {
-            const response = await fetch('http://localhost:8000/api/create-checkout-session', {
+            // UPDATED: Now pointing directly to your Cloud Run service URL
+            const response = await fetch('https://texas-sped-app-196104920649.us-central1.run.app/api/create-checkout-session', {
                method: 'POST',
                headers: { 'Content-Type': 'application/json' },
                body: JSON.stringify({ session_id: currentSessionId })
