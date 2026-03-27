@@ -1251,7 +1251,7 @@
    function getCategorySteps(cat) {
       switch (cat) {
          case 'evaluation_delay':     return [
-            { done: selChosen('fu-eval-date'),           label: 'Enter the date you requested the evaluation' },
+            { done: selChosen('fu-eval-date'),            label: 'Enter the date you requested the evaluation' },
             { done: selChosen('fu-eval-status'),         label: 'Select the current evaluation status' },
             { done: isStrongText('fu-eval-impact', 25),  label: 'Describe the impact on your child (25+ chars)' },
             { done: ynChecked('eval-written'),           label: 'Answer whether the school responded in writing' },
@@ -1262,11 +1262,11 @@
             { done: ynChecked('denied-written'),         label: 'Answer whether you received a written denial' },
          ];
          case 'iep_not_followed':     return [
-            { done: selChosen('fu-iep-freq'),            label: 'Select how often the violation is happening' },
+            { done: selChosen('fu-iep-freq'),             label: 'Select how often the violation is happening' },
             { done: isStrongText('fu-iep-service', 25),  label: 'Describe the missing service in detail (25+ chars)' },
          ];
          case 'ard_meeting':          return [
-            { done: selChosen('fu-ard-type'),            label: 'Select the type of meeting issue' },
+            { done: selChosen('fu-ard-type'),             label: 'Select the type of meeting issue' },
             { done: isStrongText('fu-ard-impact', 25),   label: 'Describe how this affected the meeting (25+ chars)' },
             { done: ynChecked('ard-written'),            label: 'Answer whether you made a written request' },
          ];
@@ -1500,7 +1500,8 @@
       document.getElementById('loading').style.display = 'block';
 
       try {
-         const response = await fetch('/api/analyze', {
+         // UPDATED: Now pointing directly to your Cloud Run service URL
+         const response = await fetch('https://texas-sped-app-196104920649.us-central1.run.app/api/analyze', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
@@ -1558,7 +1559,8 @@
          this.innerText = "Redirecting securely...";
          this.disabled = true;
          try {
-            const response = await fetch('/api/create-checkout-session', {
+            // UPDATED: Now pointing directly to your Cloud Run service URL
+            const response = await fetch('https://texas-sped-app-196104920649.us-central1.run.app/api/create-checkout-session', {
                method: 'POST',
                headers: { 'Content-Type': 'application/json' },
                body: JSON.stringify({ session_id: currentSessionId })
